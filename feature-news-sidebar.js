@@ -1,6 +1,8 @@
 // ============================================================
-//  feature-news-sidebar.js - 📰 نافذة الأخبار العربية
-//  تجيب أخبار 22 دولة عربية وتحلل مزاجها
+//  feature-news-sidebar.js - 📰 نافذة الأخبار العربية الطويلة
+//  تجيب أخبار حقيقية من 22 دولة عربية وتحللها
+//  ملاحظة: تخزن البيانات في window.__realCountryMoods و window.__realNewsMood
+//  عشان تستخدمها باقي الميزات (مرآة المشاعر + نبض البشرية)
 // ============================================================
 
 console.log('📰 جاري تحميل نافذة الأخبار...');
@@ -9,8 +11,8 @@ console.log('📰 جاري تحميل نافذة الأخبار...');
 //  🌍 الدول العربية الـ22
 // ============================================================
 const ARAB_COUNTRIES = [
-    { code: 'SA', name: 'السعودية', flag: '🇸🇦', q: 'Saudi Arabia', lat: 24.7, lng: 46.7 },
-    { code: 'AE', name: 'الإمارات', flag: '🇦🇪', q: 'United Arab Emirates', lat: 25.2, lng: 55.3 },
+    { code: 'SA', name: 'السعودية', flag: '🇸🇦', q: 'Saudi', lat: 24.7, lng: 46.7 },
+    { code: 'AE', name: 'الإمارات', flag: '🇦🇪', q: 'Emirates', lat: 25.2, lng: 55.3 },
     { code: 'QA', name: 'قطر', flag: '🇶🇦', q: 'Qatar', lat: 25.3, lng: 51.5 },
     { code: 'KW', name: 'الكويت', flag: '🇰🇼', q: 'Kuwait', lat: 29.4, lng: 47.9 },
     { code: 'BH', name: 'البحرين', flag: '🇧🇭', q: 'Bahrain', lat: 26.2, lng: 50.6 },
@@ -34,26 +36,26 @@ const ARAB_COUNTRIES = [
 ];
 
 // ============================================================
-//  🎭 تصنيف الأخبار → مشاعر
+//  🎭 تصنيفات الأخبار
 // ============================================================
 const NEWS_CATEGORIES = {
-    war:      { emoji: '⚔️', label: 'حرب/نزاع', color: '#FF4500', mood: 'غضب وحزن',
-               keywords: ['war','attack','bomb','conflict','military','strike','kill','قتال','حرب','هجوم','قصف','عسكري','قتل'] },
-    disaster: { emoji: '🌊', label: 'كارثة', color: '#4A90E2', mood: 'حزن',
-               keywords: ['earthquake','flood','fire','storm','disaster','زلزال','فيضان','حريق','كارثة','عاصفة'] },
-    crisis:   { emoji: '⚠️', label: 'أزمة', color: '#8A2BE2', mood: 'قلق',
+    war:      { emoji: '⚔️', label: 'حرب', color: '#FF4500', mood: 'غضب', emotion: 'angry',
+               keywords: ['war','attack','bomb','conflict','military','قتال','حرب','هجوم','قصف','عسكري','قتل'] },
+    disaster: { emoji: '🌊', label: 'كارثة', color: '#4A90E2', mood: 'حزن', emotion: 'sad',
+               keywords: ['earthquake','flood','fire','storm','زلزال','فيضان','حريق','كارثة','عاصفة'] },
+    crisis:   { emoji: '⚠️', label: 'أزمة', color: '#8A2BE2', mood: 'قلق', emotion: 'anxious',
                keywords: ['crisis','emergency','collapse','inflation','أزمة','طوارئ','انهيار','تضخم'] },
-    economy:  { emoji: '💹', label: 'اقتصاد', color: '#00CED1', mood: 'ترقب',
-               keywords: ['economy','market','trade','investment','stock','اقتصاد','سوق','تجارة','استثمار','بورصة'] },
-    politics: { emoji: '🏛️', label: 'سياسة', color: '#9370DB', mood: 'ترقب',
+    economy:  { emoji: '💹', label: 'اقتصاد', color: '#00CED1', mood: 'ترقب', emotion: 'calm',
+               keywords: ['economy','market','trade','investment','econom','اقتصاد','سوق','تجارة','استثمار'] },
+    politics: { emoji: '🏛️', label: 'سياسة', color: '#9370DB', mood: 'ترقب', emotion: 'neutral',
                keywords: ['election','president','minister','parliament','government','انتخابات','رئيس','وزير','برلمان','حكومة'] },
-    sports:   { emoji: '⚽', label: 'رياضة', color: '#FFD700', mood: 'فرح',
+    sports:   { emoji: '⚽', label: 'رياضة', color: '#FFD700', mood: 'فرح', emotion: 'joy',
                keywords: ['football','match','olympic','championship','goal','كرة','مباراة','أولمبياد','بطولة','هدف'] },
-    health:   { emoji: '🏥', label: 'صحة', color: '#FF69B4', mood: 'قلق',
+    health:   { emoji: '🏥', label: 'صحة', color: '#FF69B4', mood: 'قلق', emotion: 'anxious',
                keywords: ['health','hospital','vaccine','disease','virus','صحة','مستشفى','لقاح','مرض','فيروس'] },
-    culture:  { emoji: '🎭', label: 'ثقافة', color: '#FFB300', mood: 'فرح',
-               keywords: ['culture','festival','art','museum','heritage','ثقافة','مهرجان','فن','متحف','تراث'] },
-    positive: { emoji: '✨', label: 'إيجابي', color: '#00ff96', mood: 'أمل',
+    culture:  { emoji: '🎭', label: 'ثقافة', color: '#FFB300', mood: 'فرح', emotion: 'joy',
+               keywords: ['culture','festival','art','museum','ثقافة','مهرجان','فن','متحف','تراث'] },
+    positive: { emoji: '✨', label: 'إيجابي', color: '#00ff96', mood: 'أمل', emotion: 'hope',
                keywords: ['peace','agreement','growth','success','reform','سلام','اتفاق','نمو','نجاح','إصلاح'] }
 };
 
@@ -64,17 +66,22 @@ function classifyNews(text) {
             if (lower.includes(w.toLowerCase())) return key;
         }
     }
-    return 'politics'; // افتراضي
+    return 'politics';
 }
 
 // ============================================================
-//  📊 تتبع مزاج كل دولة
+//  💾 المتغيرات العامة (تستخدمها باقي الميزات)
 // ============================================================
-const countryMood = {}; // { SA: { war: 3, economy: 2, ... } }
-ARAB_COUNTRIES.forEach(c => countryMood[c.code] = {});
+window.__realNewsMood = {};      // { war: 5, economy: 3, ... } - إجمالي عالمي
+window.__realCountryMoods = {};  // { SA: { war: 2, economy: 1 }, EG: {...} }
+
+// تهيئة كل دولة
+ARAB_COUNTRIES.forEach(c => {
+    window.__realCountryMoods[c.code] = {};
+});
 
 // ============================================================
-//  🎨 CSS للنافذة
+//  🎨 CSS
 // ============================================================
 function injectNewsStyles() {
     if (document.getElementById('news-styles')) return;
@@ -83,53 +90,59 @@ function injectNewsStyles() {
     style.textContent = `
         #news-panel {
             position: fixed;
-            top: 80px;
-            right: 12px;
-            width: 340px;
-            max-height: calc(100vh - 200px);
-            background: rgba(10, 18, 30, 0.97);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            border-radius: 16px;
+            top: 110px;
+            right: 0;
+            bottom: 0;
+            width: 380px;
+            background: rgba(10, 18, 30, 0.98);
+            border-left: 1px solid rgba(56, 189, 248, 0.3);
             z-index: 900;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
-            overflow: hidden;
+            backdrop-filter: blur(20px);
             display: flex;
             flex-direction: column;
             font-family: inherit;
+            box-shadow: -5px 0 30px rgba(0,0,0,0.5);
+        }
+
+        body.lang-en #news-panel {
+            right: auto;
+            left: 0;
+            border-left: none;
+            border-right: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 5px 0 30px rgba(0,0,0,0.5);
         }
 
         .news-header {
-            padding: 12px 16px;
+            padding: 14px 18px;
             background: linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(139, 92, 246, 0.15));
             border-bottom: 1px solid rgba(56, 189, 248, 0.2);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             color: #38bdf8;
             font-weight: 700;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+            flex-shrink: 0;
         }
         .news-header .live-dot {
-            width: 8px; height: 8px;
+            width: 9px; height: 9px;
             background: #ff4444;
             border-radius: 50%;
             animation: livePulse 1.5s infinite;
         }
         @keyframes livePulse {
             0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.5); }
-            50%      { opacity: 0.6; box-shadow: 0 0 0 8px rgba(255, 68, 68, 0); }
+            50%      { opacity: 0.6; box-shadow: 0 0 0 10px rgba(255, 68, 68, 0); }
         }
 
         .news-body {
             flex: 1;
             overflow-y: auto;
-            padding: 12px;
-            min-height: 200px;
-            max-height: 400px;
+            padding: 12px 14px;
+            min-height: 0;
         }
-        .news-body::-webkit-scrollbar { width: 4px; }
-        .news-body::-webkit-scrollbar-thumb { background: rgba(56,189,248,0.3); border-radius: 4px; }
+        .news-body::-webkit-scrollbar { width: 5px; }
+        .news-body::-webkit-scrollbar-thumb { background: rgba(56,189,248,0.3); border-radius: 5px; }
 
         .news-card {
             background: rgba(255, 255, 255, 0.04);
@@ -138,7 +151,13 @@ function injectNewsStyles() {
             margin-bottom: 10px;
             border-right: 3px solid;
             animation: newsIn 0.5s ease;
+            cursor: pointer;
+            transition: background 0.2s;
         }
+        .news-card:hover { background: rgba(255,255,255,0.08); }
+
+        body.lang-en .news-card { border-right: none; border-left: 3px solid; }
+
         @keyframes newsIn {
             from { opacity: 0; transform: translateX(20px); }
             to   { opacity: 1; transform: translateX(0); }
@@ -169,85 +188,34 @@ function injectNewsStyles() {
 
         .news-title {
             color: #fff;
-            font-size: 0.82rem;
+            font-size: 0.85rem;
             line-height: 1.55;
             margin-bottom: 6px;
         }
         .news-mood {
             font-size: 0.7rem;
             color: #94a3b8;
-            display: flex;
-            align-items: center;
-            gap: 4px;
         }
 
         .news-empty {
             text-align: center;
             color: #64748b;
             padding: 40px 20px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
         }
 
-        /* لوحة المزاج العربي */
-        .arabic-mood-board {
-            border-top: 1px solid rgba(56, 189, 248, 0.2);
-            padding: 12px;
-            background: rgba(0,0,0,0.3);
-            max-height: 220px;
-            overflow-y: auto;
-        }
-        .arabic-mood-board::-webkit-scrollbar { width: 4px; }
-        .arabic-mood-board::-webkit-scrollbar-thumb { background: rgba(56,189,248,0.3); border-radius: 4px; }
-
-        .mood-board-title {
-            font-size: 0.72rem;
-            color: #38bdf8;
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .mood-row {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 4px;
-            font-size: 0.72rem;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        .mood-row:last-child { border-bottom: none; }
-        .mood-row .flag { font-size: 0.95rem; }
-        .mood-row .name { flex: 1; color: #cbd5e1; }
-        .mood-row .bar {
-            width: 60px;
-            height: 6px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        .mood-row .bar-fill {
-            height: 100%;
-            transition: width 0.5s;
-        }
-        .mood-row .mood-label {
-            font-size: 0.68rem;
-            font-weight: 700;
-            min-width: 50px;
-            text-align: left;
-        }
-
-        /* للجوال */
         @media (max-width: 768px) {
             #news-panel {
                 top: auto;
-                bottom: 10px;
-                right: 10px;
-                left: 10px;
-                width: auto;
-                max-height: 45vh;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                max-height: 55vh;
+                border-left: none;
+                border-top: 1px solid rgba(56, 189, 248, 0.3);
+                border-radius: 20px 20px 0 0;
             }
-            .news-body { max-height: 180px; }
-            .arabic-mood-board { max-height: 140px; }
         }
     `;
     document.head.appendChild(style);
@@ -256,11 +224,8 @@ function injectNewsStyles() {
 // ============================================================
 //  🏗️ بناء النافذة
 // ============================================================
-let newsPanel, newsBody, moodBoard;
-let currentCountryIdx = 0;
-let newsQueue = [];
-let displayInterval = null;
-let fetchInterval = null;
+let newsPanel, newsBody;
+let countryIdx = 0;
 
 function buildNewsPanel() {
     if (document.getElementById('news-panel')) return;
@@ -273,94 +238,102 @@ function buildNewsPanel() {
             <span>🌍 أخبار العالم العربي — مباشر</span>
         </div>
         <div class="news-body" id="newsBody">
-            <div class="news-empty">⏳ جاري تحميل الأخبار...</div>
-        </div>
-        <div class="arabic-mood-board" id="moodBoard">
-            <div class="mood-board-title">📊 مزاج الدول العربية</div>
-            <div id="moodRows"></div>
+            <div class="news-empty">⏳ جاري تحميل الأخبار من 22 دولة عربية...</div>
         </div>
     `;
     document.body.appendChild(newsPanel);
-
     newsBody = document.getElementById('newsBody');
-    moodBoard = document.getElementById('moodRows');
 }
 
 // ============================================================
-//  📰 جلب الأخبار من GDELT (لكل دولة)
+//  📰 جلب الأخبار من GDELT
 // ============================================================
 async function fetchCountryNews(country) {
     try {
-        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${encodeURIComponent(country.q)}&mode=artlist&maxrecords=5&format=json&sort=DateDesc&timespan=24h`;
+        const query = encodeURIComponent(country.q);
+        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=artlist&maxrecords=10&format=json&sort=datedesc`;
+
         const res = await fetch(url);
-        if (!res.ok) throw new Error('fetch failed');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+
         const data = await res.json();
-        return (data.articles || []).map(a => ({
-            country: country,
-            title: a.title || '',
-            url: a.url || '',
-            date: a.seendate || ''
-        }));
+        if (!data.articles || data.articles.length === 0) return [];
+
+        return data.articles
+            .filter(a => a.title && a.title.length > 15)
+            .map(a => ({
+                country: country,
+                title: a.title,
+                url: a.url || '#',
+                date: a.seendate || ''
+            }));
     } catch (err) {
-        console.warn(`⚠️ فشل جلب أخبار ${country.name}:`, err.message);
+        console.warn(`⚠️ فشل جلب ${country.name}:`, err.message);
         return [];
     }
 }
 
 // ============================================================
-//  🔄 دورة الجلب (كل 5 ثواني دولة)
+//  🔄 جلب دوري
 // ============================================================
 async function fetchNextCountry() {
-    const country = ARAB_COUNTRIES[currentCountryIdx];
+    const country = ARAB_COUNTRIES[countryIdx];
+
     const articles = await fetchCountryNews(country);
 
-    if (articles.length > 0) {
-        // حلل كل خبر وأضفه للطابور
-        articles.forEach(a => {
-            const cat = classifyNews(a.title);
-            a.category = cat;
+    articles.forEach(a => {
+        const cat = classifyNews(a.title);
+        a.category = cat;
 
-            // حدث مزاج الدولة
-            if (!countryMood[country.code][cat]) countryMood[country.code][cat] = 0;
-            countryMood[country.code][cat]++;
+        // ✅ تحديث الإحصائيات الحقيقية
+        // عالمية
+        window.__realNewsMood[cat] = (window.__realNewsMood[cat] || 0) + 1;
 
-            // ضع الخبر في الطابور
-            newsQueue.push(a);
+        // لكل دولة
+        if (!window.__realCountryMoods[country.code]) {
+            window.__realCountryMoods[country.code] = {};
+        }
+        window.__realCountryMoods[country.code][cat] =
+            (window.__realCountryMoods[country.code][cat] || 0) + 1;
 
-            // أضف نقطة على الخريطة
-            try {
-                if (typeof dropEmotion === 'function' && typeof EMOTIONS !== 'undefined') {
-                    const emoKey = NEWS_CATEGORIES[cat].emotion || 'neutral';
-                    const jitterLat = country.lat + (Math.random() - 0.5) * 1.5;
-                    const jitterLng = country.lng + (Math.random() - 0.5) * 1.5;
-                    dropEmotion(jitterLat, jitterLng, emoKey, `${country.flag} ${country.name}`);
-                }
-            } catch (e) {}
-        });
+        // عرض البطاقة
+        displayNewsCard(a);
 
-        updateMoodBoard();
-    }
+        // نقطة على الخريطة
+        if (typeof dropEmotion === 'function' && typeof EMOTIONS !== 'undefined') {
+            const emoKey = NEWS_CATEGORIES[cat].emotion;
+            if (EMOTIONS[emoKey]) {
+                dropEmotion(
+                    country.lat + (Math.random() - 0.5) * 2,
+                    country.lng + (Math.random() - 0.5) * 2,
+                    emoKey,
+                    `${country.flag} ${country.name}`
+                );
+            }
+        }
+    });
 
-    // انتقل للدولة التالية
-    currentCountryIdx = (currentCountryIdx + 1) % ARAB_COUNTRIES.length;
+    countryIdx = (countryIdx + 1) % ARAB_COUNTRIES.length;
 }
 
 // ============================================================
-//  🎬 عرض الأخبار (كل 5 ثواني)
+//  🎬 عرض بطاقة
 // ============================================================
-function displayNextNews() {
-    if (newsQueue.length === 0) return;
+function displayNewsCard(news) {
+    if (!newsBody) return;
 
-    const news = newsQueue.shift();
-    const cat = NEWS_CATEGORIES[news.category] || NEWS_CATEGORIES.politics;
-
-    // إذا الـ body فيه رسالة "جاري التحميل"، امسحها
     const empty = newsBody.querySelector('.news-empty');
     if (empty) empty.remove();
+
+    const cat = NEWS_CATEGORIES[news.category] || NEWS_CATEGORIES.politics;
 
     const card = document.createElement('div');
     card.className = 'news-card';
     card.style.borderRightColor = cat.color;
+    if (document.body.classList.contains('lang-en')) {
+        card.style.borderLeftColor = cat.color;
+    }
+
     card.innerHTML = `
         <div class="news-card-top">
             <div class="news-country">
@@ -370,85 +343,21 @@ function displayNextNews() {
             <span class="news-tag" style="background:${cat.color};">${cat.emoji} ${cat.label}</span>
         </div>
         <div class="news-title">${escapeHTML(news.title)}</div>
-        <div class="news-mood">💭 المزاج المتوقع: <strong style="color:${cat.color};">${cat.mood}</strong></div>
+        <div class="news-mood">💭 المزاج: <strong style="color:${cat.color};">${cat.mood}</strong></div>
     `;
 
-    // أضف في الأعلى
+    card.onclick = () => {
+        if (news.url && news.url !== '#') window.open(news.url, '_blank');
+    };
+
     newsBody.insertBefore(card, newsBody.firstChild);
 
-    // احتفظ بآخر 15 خبر فقط
-    while (newsBody.children.length > 15) {
+    // احتفظ بآخر 40 خبر
+    while (newsBody.children.length > 40) {
         newsBody.removeChild(newsBody.lastChild);
     }
 }
 
-// ============================================================
-//  📊 تحديث لوحة المزاج
-// ============================================================
-function updateMoodBoard() {
-    if (!moodBoard) return;
-    moodBoard.innerHTML = '';
-
-    // احسب مزاج كل دولة
-    const countryMoods = ARAB_COUNTRIES.map(c => {
-        const moods = countryMood[c.code] || {};
-        const total = Object.values(moods).reduce((a, b) => a + b, 0);
-
-        if (total === 0) {
-            return { country: c, total: 0, dominant: null, score: 0 };
-        }
-
-        // المشعر السائد
-        let dominant = null, max = 0;
-        for (const [k, v] of Object.entries(moods)) {
-            if (v > max) { max = v; dominant = k; }
-        }
-
-        // حساب "درجة المزاج" (0-100)
-        const goodCats = ['sports', 'culture', 'positive'];
-        const badCats = ['war', 'disaster', 'crisis'];
-        let score = 50;
-        for (const [k, v] of Object.entries(moods)) {
-            const ratio = v / total;
-            if (goodCats.includes(k)) score += ratio * 50;
-            if (badCats.includes(k)) score -= ratio * 50;
-        }
-        score = Math.max(0, Math.min(100, score));
-
-        return { country: c, total, dominant, score };
-    });
-
-    // رتب حسب الدرجة تنازلياً
-    countryMoods.sort((a, b) => b.score - a.score);
-
-    // اعرض كل الدول
-    countryMoods.forEach(cm => {
-        if (cm.total === 0) return;
-
-        const cat = NEWS_CATEGORIES[cm.dominant] || NEWS_CATEGORIES.politics;
-        let moodLabel, moodColor;
-        if (cm.score >= 70) { moodLabel = 'إيجابي'; moodColor = '#00ff96'; }
-        else if (cm.score >= 50) { moodLabel = 'مستقر'; moodColor = '#38bdf8'; }
-        else if (cm.score >= 30) { moodLabel = 'متوتر'; moodColor = '#FFB300'; }
-        else { moodLabel = 'متأزم'; moodColor = '#ff5555'; }
-
-        const row = document.createElement('div');
-        row.className = 'mood-row';
-        row.innerHTML = `
-            <span class="flag">${cm.country.flag}</span>
-            <span class="name">${cm.country.name}</span>
-            <div class="bar">
-                <div class="bar-fill" style="width:${cm.score}%; background:${moodColor};"></div>
-            </div>
-            <span class="mood-label" style="color:${moodColor};">${moodLabel}</span>
-        `;
-        moodBoard.appendChild(row);
-    });
-}
-
-// ============================================================
-//  🔐 حماية HTML
-// ============================================================
 function escapeHTML(str) {
     const div = document.createElement('div');
     div.textContent = str || '';
@@ -462,16 +371,13 @@ function initNewsFeature() {
     injectNewsStyles();
     buildNewsPanel();
 
-    // أول جلب فوري
+    // جلب أول دولة فوراً
     fetchNextCountry();
 
-    // جلب كل 5 ثواني (دولة)
-    fetchInterval = setInterval(fetchNextCountry, 5000);
+    // جلب كل 8 ثواني دولة
+    setInterval(fetchNextCountry, 8000);
 
-    // عرض كل 5 ثواني
-    displayInterval = setInterval(displayNextNews, 5000);
-
-    console.log('✅ تم تفعيل نافذة الأخبار!');
+    console.log('✅ تم تفعيل نافذة الأخبار (حقيقية)!');
 }
 
 if (document.readyState === 'loading') {

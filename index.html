@@ -126,35 +126,8 @@ body {
 }
 #privacy-btn.private { color: #FFD700; border-color: #FFD700; }
 
-#emotions {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 6px;
-    padding: 10px 12px 14px;
-    background: rgba(10, 15, 25, 0.95);
-    backdrop-filter: blur(12px);
-    border-top: 1px solid rgba(80, 110, 140, 0.15);
-    z-index: 1000;
-}
-.emo-btn {
-    padding: 9px 4px;
-    border: 1.5px solid;
-    border-radius: 12px;
-    background: rgba(0,0,0,0.3);
-    color: #fff;
-    font-size: 0.7rem;
-    cursor: pointer;
-    font-family: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    font-weight: 600;
-}
-.emo-btn .emo-icon { font-size: 1.25rem; line-height: 1; }
-.emo-btn:hover, .emo-btn:active { transform: translateY(-2px); }
-.emo-btn.active { box-shadow: 0 0 15px currentColor; }
+/* ❌ شريط المشاعر مخفي */
+#emotions { display: none !important; }
 
 #send-modal {
     position: fixed;
@@ -278,12 +251,10 @@ body {
 
 @media (max-width: 500px) {
     #header h1 { font-size: 1.15rem; }
-    .emo-btn { font-size: 0.62rem; padding: 7px 2px; }
-    .emo-btn .emo-icon { font-size: 1.05rem; }
     #top-bar { top: 58px; }
     .search-box input { font-size: 0.78rem; padding: 9px 38px 9px 12px; }
 }
-<style>#emotions { display: none !important; }</style>
+</style>
 </head>
 <body>
 
@@ -324,13 +295,45 @@ if (typeof L === 'undefined') {
     throw new Error('Leaflet not loaded');
 }
 
+// ============================================================
+//  المشاعر الكاملة (30+)
+// ============================================================
 const EMOTIONS = {
-    joy:      { name: 'فرح',    color: '#FFD700', emoji: '😊' },
-    sad:      { name: 'حزن',    color: '#4A90E2', emoji: '😢' },
-    angry:    { name: 'غضب',    color: '#FF4500', emoji: '😠' },
-    calm:     { name: 'هدوء',   color: '#00CED1', emoji: '😌' },
-    anxious:  { name: 'قلق',    color: '#8A2BE2', emoji: '😰' },
-    grateful: { name: 'امتنان', color: '#FF69B4', emoji: '🙏' }
+    joy:         { name: 'فرح',      color: '#FFD700', emoji: '😊' },
+    sad:         { name: 'حزن',      color: '#4A90E2', emoji: '😢' },
+    angry:       { name: 'غضب',      color: '#FF4500', emoji: '😠' },
+    calm:        { name: 'هدوء',     color: '#00CED1', emoji: '😌' },
+    anxious:     { name: 'قلق',      color: '#8A2BE2', emoji: '😰' },
+    grateful:    { name: 'امتنان',   color: '#FF69B4', emoji: '🙏' },
+    love:        { name: 'حب',       color: '#FF1493', emoji: '❤️' },
+    fear:        { name: 'خوف',      color: '#6A0DAD', emoji: '😨' },
+    hope:        { name: 'أمل',      color: '#FFA500', emoji: '🌟' },
+    frustration: { name: 'إحباط',    color: '#B22222', emoji: '😤' },
+    surprise:    { name: 'دهشة',     color: '#FFB300', emoji: '😲' },
+    bored:       { name: 'ملل',      color: '#696969', emoji: '😒' },
+    proud:       { name: 'فخر',      color: '#9370DB', emoji: '😎' },
+    shy:         { name: 'خجل',      color: '#FFB6C1', emoji: '😳' },
+    excited:     { name: 'حماس',     color: '#FF4500', emoji: '🤩' },
+    lonely:      { name: 'وحدة',     color: '#483D8B', emoji: '🥺' },
+    relief:      { name: 'ارتياح',   color: '#00FA9A', emoji: '😮‍💨' },
+    guilty:      { name: 'ذنب',      color: '#8B4513', emoji: '😔' },
+    longing:     { name: 'شوق',      color: '#DA70D6', emoji: '🥹' },
+    curious:     { name: 'فضول',     color: '#20B2AA', emoji: '🤔' },
+    thoughtful:  { name: 'تأمل',     color: '#708090', emoji: '🤨' },
+    confused:    { name: 'حيرة',     color: '#B8860B', emoji: '😕' },
+    nostalgic:   { name: 'حنين',     color: '#CD853F', emoji: '😌' },
+    inspired:    { name: 'إلهام',    color: '#FF69B4', emoji: '✨' },
+    neutral:     { name: 'محايد',    color: '#94a3b8', emoji: '😐' },
+    tired:       { name: 'متعب',     color: '#64748b', emoji: '😴' },
+    sick:        { name: 'مريض',     color: '#7F1D1D', emoji: '🤒' },
+    stressed:    { name: 'توتر',     color: '#DC2626', emoji: '😖' },
+    peaceful:    { name: 'سلام',     color: '#0EA5E9', emoji: '🕊️' },
+    overwhelmed: { name: 'إنهاك',    color: '#5B21B6', emoji: '😵' },
+    determined:  { name: 'عزيمة',    color: '#059669', emoji: '💪' },
+    playful:     { name: 'مرح',      color: '#F59E0B', emoji: '🤪' },
+    disgusted:   { name: 'اشمئزاز',  color: '#65A30D', emoji: '🤢' },
+    awed:        { name: 'انبهار',   color: '#8B5CF6', emoji: '🤯' },
+    sympathetic: { name: 'تعاطف',    color: '#EC4899', emoji: '🤗' }
 };
 
 // ============================================================
@@ -345,17 +348,13 @@ const map = L.map('map', {
     maxZoom: 18
 });
 
-// 🎨 Esri World Dark Gray — مجاني، بدون مفتاح، خريطة داكنة احترافية
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     attribution: '&copy; Esri &copy; OpenStreetMap',
-    maxZoom: 16,
-    subdomains: []
+    maxZoom: 16
 }).addTo(map);
 
-// طبقة تسميات الدول والمدن فوق الخريطة
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 16,
-    subdomains: [],
     pane: 'overlayPane'
 }).addTo(map);
 
@@ -372,7 +371,7 @@ const activeMarkers = {};
 let markerIdCounter = 0;
 
 // ============================================================
-//  بناء أزرار المشاعر
+//  بناء أزرار المشاعر (مخفية)
 // ============================================================
 function buildEmotionButtons() {
     const container = document.getElementById('emotions');
@@ -402,12 +401,13 @@ function buildModalEmotions() {
 }
 
 // ============================================================
-//  عند اختيار مشعر من الشريط السفلي
+//  عند اختيار مشعر
 // ============================================================
 function onEmotionButtonClick(key) {
     selectedEmotion = key;
     document.querySelectorAll('.emo-btn').forEach(b => b.classList.remove('active'));
-    document.querySelector(`.emo-btn[data-key="${key}"]`).classList.add('active');
+    const targetBtn = document.querySelector(`.emo-btn[data-key="${key}"]`);
+    if (targetBtn) targetBtn.classList.add('active');
 
     if (!userLocation) {
         showToast('⏳ جاري تحديد موقعك...');
@@ -425,6 +425,8 @@ function onEmotionButtonClick(key) {
 // ============================================================
 function dropEmotion(lat, lng, emotionKey, label) {
     const emo = EMOTIONS[emotionKey];
+    if (!emo) return;
+
     const id = 'm_' + (++markerIdCounter);
 
     const icon = L.divIcon({
@@ -440,10 +442,10 @@ function dropEmotion(lat, lng, emotionKey, label) {
     const timeout = setTimeout(() => {
         map.removeLayer(marker);
         delete activeMarkers[id];
-    }, 20000);
+    }, 25000);
 
     activeMarkers[id] = { marker, timeout };
-    showToast(`${emo.emoji} تم إرسال "${emo.name}" إلى ${label}`);
+    showToast(`${emo.emoji} ${label}`);
 }
 
 // ============================================================
@@ -480,9 +482,6 @@ map.on('click', async (e) => {
     }
 });
 
-// ============================================================
-//  جلب اسم المكان
-// ============================================================
 async function reverseGeocode(lat, lng) {
     const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=ar`;
     const res = await fetch(url);
@@ -616,58 +615,22 @@ function showToast(msg) {
 }
 
 // ============================================================
-//  محاكاة نشاط المستخدمين
-// ============================================================
-const BIG_CITIES = [
-    [24.7, 46.7],  [25.2, 55.3],  [30.0, 31.2],  [41.0, 28.9],  [35.7, 51.4],
-    [40.7, -74.0], [34.0, -118.2],[51.5, -0.1],  [48.8, 2.3],   [55.7, 37.6],
-    [39.9, 116.4], [35.6, 139.7],[-33.8, 151.2],[19.4, -99.1], [23.5, 77.2],
-    [-23.5, -46.6],[31.2, 121.5],[1.35, 103.8], [13.7, 100.5], [37.5, 127.0]
-];
-
-function simulateActivity() {
-    setInterval(() => {
-        const keys = Object.keys(EMOTIONS);
-        const count = 1 + Math.floor(Math.random() * 3);
-        for (let i = 0; i < count; i++) {
-            const city = BIG_CITIES[Math.floor(Math.random() * BIG_CITIES.length)];
-            const lat = city[0] + (Math.random() - 0.5) * 0.3;
-            const lng = city[1] + (Math.random() - 0.5) * 0.3;
-            const key = keys[Math.floor(Math.random() * keys.length)];
-            const emo = EMOTIONS[key];
-            const id = 'sim_' + (++markerIdCounter);
-            const icon = L.divIcon({
-                className: 'emo-marker',
-                html: `<div class="emo-marker-inner" style="color:${emo.color};">
-                         <span class="emo-marker-emoji">${emo.emoji}</span>
-                       </div>`,
-                iconSize: [36, 36],
-                iconAnchor: [18, 18]
-            });
-            const marker = L.marker([lat, lng], { icon, interactive: false }).addTo(map);
-            const timeout = setTimeout(() => {
-                map.removeLayer(marker);
-                delete activeMarkers[id];
-            }, 15000);
-            activeMarkers[id] = { marker, timeout };
-        }
-    }, 2500);
-}
-
-// ============================================================
 //  تشغيل
 // ============================================================
 buildEmotionButtons();
 buildModalEmotions();
 initUserLocation();
-setTimeout(simulateActivity, 2000);
 map.on('contextmenu', e => e.originalEvent.preventDefault());
 </script>
-<script src="features.js"></script>
+
+<!-- ============================================================
+     الميزات الإضافية
+     ============================================================ -->
 <script src="feature-support.js"></script>
 <script src="feature-news-sidebar.js"></script>
-<script src="feature-i18n.js"></script>
 <script src="feature-mirror.js"></script>
 <script src="feature-heartbeat.js"></script>
+<script src="feature-i18n.js"></script>
+
 </body>
 </html>

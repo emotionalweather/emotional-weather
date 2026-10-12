@@ -1,5 +1,6 @@
 // ============================================================
-//  feature-heartbeat.js - 🌍 نبض البشرية
+//  feature-heartbeat.js - 🌍 نبض البشرية (نسخة حقيقية 100%)
+//  يبني الإحصائيات من الأخبار الحقيقية فقط — بدون محاكاة
 // ============================================================
 
 console.log('🌍 جاري تحميل نبض البشرية...');
@@ -35,7 +36,7 @@ function injectHeartbeatStyles() {
 
         #heartbeat-modal {
             position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
+            inset: 0;
             background: radial-gradient(ellipse at center, rgba(5, 10, 20, 0.97), rgba(0, 0, 0, 0.99));
             z-index: 6000;
             display: none;
@@ -55,9 +56,7 @@ function injectHeartbeatStyles() {
             color: #fff;
         }
 
-        .heartbeat-header {
-            margin-bottom: 24px;
-        }
+        .heartbeat-header { margin-bottom: 24px; }
         .heartbeat-header h2 {
             font-size: 1.5rem;
             font-weight: 800;
@@ -79,7 +78,6 @@ function injectHeartbeatStyles() {
             margin: 0 auto 26px;
         }
 
-        /* النبضات المنتشرة */
         .pulse-wave {
             position: absolute;
             top: 50%; left: 50%;
@@ -95,7 +93,6 @@ function injectHeartbeatStyles() {
             100% { width: 320px; height: 320px; opacity: 0; }
         }
 
-        /* الكرة الأساسية */
         .heartbeat-globe {
             position: absolute;
             top: 50%; left: 50%;
@@ -126,15 +123,12 @@ function injectHeartbeatStyles() {
             inset: 0;
             border-radius: 50%;
             background: radial-gradient(circle at 30% 30%,
-                rgba(255,255,255,0.35) 0%,
-                transparent 55%),
+                rgba(255,255,255,0.35) 0%, transparent 55%),
                 radial-gradient(circle at center,
-                currentColor 0%,
-                rgba(0,0,0,0.85) 100%);
+                currentColor 0%, rgba(0,0,0,0.85) 100%);
             opacity: 0.95;
         }
 
-        /* قلب في الوسط */
         .heartbeat-core {
             position: absolute;
             top: 50%; left: 50%;
@@ -152,10 +146,7 @@ function injectHeartbeatStyles() {
             60%      { transform: translate(-50%, -50%) scale(1.08); }
         }
 
-        /* معلومات المشعر السائد */
-        .heartbeat-dominant {
-            margin-bottom: 26px;
-        }
+        .heartbeat-dominant { margin-bottom: 26px; }
         .heartbeat-dominant-label {
             color: #94a3b8;
             font-size: 0.8rem;
@@ -174,7 +165,6 @@ function injectHeartbeatStyles() {
             margin-top: 4px;
         }
 
-        /* إحصائيات المشاعر */
         .heartbeat-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -219,7 +209,6 @@ function injectHeartbeatStyles() {
         }
         .heartbeat-close:hover { background: rgba(255,255,255,0.15); }
 
-        /* نجمة دائمة */
         .star-particle {
             position: absolute;
             width: 2px; height: 2px;
@@ -232,6 +221,13 @@ function injectHeartbeatStyles() {
         @keyframes starTwinkle {
             0%, 100% { opacity: 0.2; }
             50%      { opacity: 0.9; }
+        }
+
+        .heartbeat-empty {
+            text-align: center;
+            color: #94a3b8;
+            padding: 30px 20px;
+            font-size: 0.85rem;
         }
 
         @media (max-width: 500px) {
@@ -262,6 +258,51 @@ function addHeartbeatButton() {
 }
 
 // ============================================================
+//  📊 الإحصائيات الحقيقية (مبنية على الأخبار)
+// ============================================================
+function getRealGlobalStats() {
+    const newsMood = window.__realNewsMood || {};
+
+    // تحويل تصنيفات الأخبار إلى مشاعر
+    const newsToEmotion = {
+        war: 'angry',
+        disaster: 'sad',
+        crisis: 'anxious',
+        economy: 'calm',
+        politics: 'neutral',
+        sports: 'joy',
+        health: 'anxious',
+        culture: 'joy',
+        positive: 'hope'
+    };
+
+    const counts = {};
+    Object.entries(newsMood).forEach(([cat, count]) => {
+        const emoKey = newsToEmotion[cat] || 'neutral';
+        counts[emoKey] = (counts[emoKey] || 0) + count;
+    });
+
+    // لو ما فيه بيانات بعد
+    if (Object.keys(counts).length === 0) {
+        return [];
+    }
+
+    const stats = [];
+    let total = 0;
+    Object.entries(counts).forEach(([key, weight]) => {
+        stats.push({ key, weight });
+        total += weight;
+    });
+
+    stats.sort((a, b) => b.weight - a.weight);
+
+    return stats.map(s => ({
+        key: s.key,
+        percent: (s.weight / total) * 100
+    }));
+}
+
+// ============================================================
 //  🪟 النافذة
 // ============================================================
 let heartbeatInterval = null;
@@ -276,7 +317,7 @@ function openHeartbeat() {
             <div class="heartbeat-scene">
                 <div class="heartbeat-header">
                     <h2>🌍 نبض البشرية</h2>
-                    <p>مشاعر 8 مليارات إنسان في هذه اللحظة</p>
+                    <p>مشاعر العالم العربي في هذه اللحظة — مبني على الأخبار الحقيقية</p>
                 </div>
 
                 <div class="heartbeat-stage" id="heartbeatStage">
@@ -306,13 +347,11 @@ function openHeartbeat() {
     }
     modal.classList.add('show');
 
-    // إضافة نجوم
     if (!heartbeatStarsAdded) {
         addStars();
         heartbeatStarsAdded = true;
     }
 
-    // بدء التحديث
     updateHeartbeat();
     if (heartbeatInterval) clearInterval(heartbeatInterval);
     heartbeatInterval = setInterval(updateHeartbeat, 5000);
@@ -328,7 +367,7 @@ function closeHeartbeat() {
 }
 
 // ============================================================
-//  ⭐ نجوم في الخلفية
+//  ⭐ نجوم
 // ============================================================
 function addStars() {
     const stage = document.getElementById('heartbeatStage');
@@ -344,69 +383,45 @@ function addStars() {
 }
 
 // ============================================================
-//  📊 توليد إحصائيات المشاعر
-// ============================================================
-function generateGlobalStats() {
-    const keys = Object.keys(EMOTIONS);
-    const stats = [];
-    let total = 0;
-
-    // نستخدم نمطاً واقعياً: كل مشعر له وزن عشوائي
-    keys.forEach(key => {
-        // بعض المشاعر أكثر شيوعاً (وزن أعلى)
-        const commonEmotions = ['calm', 'neutral', 'anxious', 'joy', 'tired', 'hopeful'];
-        const baseWeight = commonEmotions.includes(key) ? 3 : 1;
-        const weight = (0.5 + Math.random() * 2) * baseWeight;
-        stats.push({ key, weight });
-        total += weight;
-    });
-
-    // نرتب تنازلياً
-    stats.sort((a, b) => b.weight - a.weight);
-
-    // نحول إلى نسب مئوية
-    return stats.map(s => ({
-        key: s.key,
-        percent: (s.weight / total) * 100
-    }));
-}
-
-// ============================================================
 //  🎨 تحديث النبض
 // ============================================================
 function updateHeartbeat() {
-    const stats = generateGlobalStats();
-    const dominant = stats[0];
-    const emo = EMOTIONS[dominant.key];
-
-    // تحديث الكرة
-    const globe = document.getElementById('heartbeatGlobe');
-    if (globe) globe.style.color = emo.color;
-
-    // تحديث القلب
-    const core = document.getElementById('heartbeatCore');
-    if (core) core.textContent = emo.emoji;
-
-    // تحديث النص
+    const stats = getRealGlobalStats();
     const nameEl = document.getElementById('hbDominantName');
     const pctEl = document.getElementById('hbDominantPct');
+    const statsEl = document.getElementById('hbStats');
+    const globe = document.getElementById('heartbeatGlobe');
+    const core = document.getElementById('heartbeatCore');
+
+    // لو ما فيه بيانات بعد
+    if (stats.length === 0) {
+        if (nameEl) { nameEl.textContent = 'جاري التحليل...'; nameEl.style.color = '#94a3b8'; }
+        if (pctEl) pctEl.textContent = 'في انتظار الأخبار';
+        if (statsEl) statsEl.innerHTML = '<div class="heartbeat-empty">📡 ننتظر الأخبار عشان نحلل المزاج...</div>';
+        return;
+    }
+
+    const dominant = stats[0];
+    const emo = EMOTIONS[dominant.key] || EMOTIONS.neutral;
+
+    if (globe) globe.style.color = emo.color;
+    if (core) core.textContent = emo.emoji;
     if (nameEl) {
         nameEl.textContent = emo.name;
         nameEl.style.color = emo.color;
     }
     if (pctEl) {
-        pctEl.textContent = `يمثل ${dominant.percent.toFixed(1)}% من البشرية الآن`;
+        pctEl.textContent = `يمثل ${dominant.percent.toFixed(1)}% من الأخبار`;
     }
 
-    // تحديث الإحصائيات
     renderStats(stats, dominant.key);
 
-    // إضافة نبضة جديدة
+    // نبضة جديدة
     spawnPulseWave(emo.color);
 }
 
 // ============================================================
-//  🌊 موجة نبض
+//  🌊 موجة
 // ============================================================
 function spawnPulseWave(color) {
     const stage = document.getElementById('heartbeatStage');
@@ -427,9 +442,9 @@ function renderStats(stats, dominantKey) {
     if (!container) return;
     container.innerHTML = '';
 
-    // نعرض فقط أعلى 10 مشاعر
-    stats.slice(0, 10).forEach(s => {
+    stats.forEach(s => {
         const emo = EMOTIONS[s.key];
+        if (!emo) return;
         const item = document.createElement('div');
         item.className = 'stat-item' + (s.key === dominantKey ? ' dominant' : '');
         item.innerHTML = `
@@ -447,7 +462,7 @@ function renderStats(stats, dominantKey) {
 function initHeartbeatFeature() {
     injectHeartbeatStyles();
     addHeartbeatButton();
-    console.log('✅ تم تفعيل نبض البشرية!');
+    console.log('✅ تم تفعيل نبض البشرية (حقيقي)!');
 }
 
 if (document.readyState === 'loading') {
