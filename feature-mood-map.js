@@ -1,28 +1,25 @@
 // ============================================================
 //  feature-mood-map.js - 🎨 تلوين الخريطة حسب المزاج
-//  - 7 مستويات من الأحمر (سيء) للأخضر (مزدهر)
-//  - شريط ألوان في الأسفل: "مزاج العالم"
-//  - يدعم 195 دولة
+//  يدعم 195 دولة + شريط ألوان
 // ============================================================
 
 console.log('🎨 جاري تحميل خريطة المزاج...');
 
 // ============================================================
-//  🗺️ خريطة ISO3 → ISO2 (من data-countries.js)
+//  🗺️ استخدام ISO3_TO_ISO2 من data-countries.js
+//  ⚠️ لا نعرّفه هنا مرة ثانية (كان يسبب SyntaxError)
 // ============================================================
-const ISO3_TO_ISO2 = (typeof window !== 'undefined' && window.ISO3_TO_ISO2)
-    ? window.ISO3_TO_ISO2
-    : {};
-
-// fallback آمن للدول العربية
-if (Object.keys(ISO3_TO_ISO2).length === 0) {
-    Object.assign(ISO3_TO_ISO2, {
-        'SAU': 'SA', 'ARE': 'AE', 'QAT': 'QA', 'KWT': 'KW', 'BHR': 'BH',
-        'OMN': 'OM', 'YEM': 'YE', 'EGY': 'EG', 'SDN': 'SD', 'LBY': 'LY',
-        'TUN': 'TN', 'DZA': 'DZ', 'MAR': 'MA', 'MRT': 'MR', 'JOR': 'JO',
-        'LBN': 'LB', 'SYR': 'SY', 'IRQ': 'IQ', 'PSE': 'PS', 'DJI': 'DJ',
-        'SOM': 'SO', 'COM': 'KM'
-    });
+function getISO3Map() {
+    if (typeof window !== 'undefined' && window.ISO3_TO_ISO2) {
+        return window.ISO3_TO_ISO2;
+    }
+    return {
+        'SAU':'SA','ARE':'AE','QAT':'QA','KWT':'KW','BHR':'BH',
+        'OMN':'OM','YEM':'YE','EGY':'EG','SDN':'SD','LBY':'LY',
+        'TUN':'TN','DZA':'DZ','MAR':'MA','MRT':'MR','JOR':'JO',
+        'LBN':'LB','SYR':'SY','IRQ':'IQ','PSE':'PS','DJI':'DJ',
+        'SOM':'SO','COM':'KM'
+    };
 }
 
 // ============================================================
@@ -38,9 +35,6 @@ const MOOD_LEVELS = [
     { min: 82, max: 101, color: '#00AA00', ar: 'مزدهر',       en: 'Thriving' }
 ];
 
-// ============================================================
-//  📊 التصنيفات المؤثرة
-// ============================================================
 const GOOD_CATS = ['sports', 'culture', 'positive', 'economy'];
 const BAD_CATS = ['war', 'disaster', 'crisis', 'health'];
 
@@ -50,7 +44,6 @@ const BAD_CATS = ['war', 'disaster', 'crisis', 'health'];
 function computeMoodScore(countryCode) {
     const moods = (window.__realCountryMoods || {})[countryCode];
     if (!moods) return null;
-
     const total = Object.values(moods).reduce((a, b) => a + b, 0);
     if (total === 0) return null;
 
@@ -60,7 +53,6 @@ function computeMoodScore(countryCode) {
         if (GOOD_CATS.includes(cat)) score += ratio * 35;
         if (BAD_CATS.includes(cat)) score -= ratio * 35;
     });
-
     return Math.max(0, Math.min(100, score));
 }
 
@@ -87,7 +79,8 @@ function getMoodLabel(score, lang) {
 let moodLayer = null;
 
 function buildMoodStyle(feature) {
-    const iso2 = ISO3_TO_ISO2[feature.id];
+    const isoMap = getISO3Map();
+    const iso2 = isoMap[feature.id];
     if (!iso2) return { fillOpacity: 0, weight: 0, opacity: 0 };
 
     const score = computeMoodScore(iso2);
@@ -100,7 +93,6 @@ function buildMoodStyle(feature) {
             opacity: 0.25
         };
     }
-
     const color = getMoodColor(score);
     return {
         fillColor: color,
@@ -123,11 +115,9 @@ async function loadMoodMap() {
             map.getPane('moodPane').style.zIndex = 350;
         }
 
-        // جرب 3 مصادر لـ GeoJSON
         const urls = [
             'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json',
-            'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson',
-            'https://unpkg.com/world-atlas@2/countries-110m.json'
+            'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
         ];
 
         let data = null;
@@ -136,28 +126,26 @@ async function loadMoodMap() {
                 const res = await fetch(url);
                 if (res.ok) {
                     data = await res.json();
-                    console.log(`✅ GeoJSON من: ${url.slice(0, 50)}...`);
+                    console.log(`✅ GeoJSON من: ${url.slice(0, 60)}`);
                     break;
                 }
-            } catch (e) {
-                console.warn(`⚠️ فشل: ${url.slice(0, 50)}`);
-            }
+            } catch (e) {}
         }
 
         if (!data) throw new Error('ما لقينا GeoJSON');
+
+        const isoMap = getISO3Map();
 
         moodLayer = L.geoJSON(data, {
             pane: 'moodPane',
             style: buildMoodStyle,
             onEachFeature: (feature, layer) => {
-                const iso2 = ISO3_TO_ISO2[feature.id];
+                const iso2 = isoMap[feature.id];
                 if (!iso2) {
                     layer.options.interactive = false;
                     return;
                 }
-
                 const countryName = (feature.properties && (feature.properties.name || feature.properties.NAME)) || iso2;
-
                 layer.on('mouseover', () => {
                     const score = computeMoodScore(iso2);
                     if (score !== null) {
@@ -185,7 +173,7 @@ function refreshMoodMap() {
 }
 
 // ============================================================
-//  📊 شريط الألوان في الأسفل
+//  📊 شريط الألوان
 // ============================================================
 function addLegendBar() {
     if (document.getElementById('mood-legend')) return;
@@ -231,12 +219,10 @@ function injectMoodMapStyles() {
             font-family: inherit;
             gap: 10px;
         }
-
         body.lang-en #mood-legend {
             right: 0;
             left: 380px;
         }
-
         .legend-title {
             color: #38bdf8;
             font-size: 0.8rem;
@@ -244,7 +230,6 @@ function injectMoodMapStyles() {
             white-space: nowrap;
             flex-shrink: 0;
         }
-
         .legend-items-wrap {
             display: flex;
             align-items: center;
@@ -256,7 +241,6 @@ function injectMoodMapStyles() {
             scrollbar-width: none;
         }
         .legend-items-wrap::-webkit-scrollbar { display: none; }
-
         .legend-item {
             display: flex;
             align-items: center;
@@ -266,7 +250,6 @@ function injectMoodMapStyles() {
             white-space: nowrap;
             flex-shrink: 0;
         }
-
         .legend-color {
             width: 16px;
             height: 16px;
@@ -275,33 +258,21 @@ function injectMoodMapStyles() {
             flex-shrink: 0;
             border: 1px solid rgba(255,255,255,0.15);
         }
-
-        .legend-label {
-            font-weight: 600;
-        }
-
+        .legend-label { font-weight: 600; }
         @media (max-width: 768px) {
             #mood-legend {
-                right: 0;
-                left: 0;
-                bottom: 0;
-                height: auto;
-                min-height: 52px;
+                right: 0; left: 0; bottom: 0;
+                height: auto; min-height: 52px;
                 padding: 6px 10px;
                 flex-direction: column;
                 gap: 4px;
             }
-
-            .legend-title {
-                font-size: 0.7rem;
-            }
-
+            .legend-title { font-size: 0.7rem; }
             .legend-items-wrap {
                 width: 100%;
                 justify-content: center;
                 gap: 8px;
             }
-
             .legend-item { font-size: 0.6rem; gap: 3px; }
             .legend-color { width: 12px; height: 12px; }
         }
@@ -310,7 +281,7 @@ function injectMoodMapStyles() {
 }
 
 // ============================================================
-//  🔄 تحديث التسميات عند تغيير اللغة
+//  🔄 تحديث اللغة
 // ============================================================
 function updateLegendLanguage() {
     const isEn = document.body.classList.contains('lang-en');
@@ -320,7 +291,6 @@ function updateLegendLanguage() {
     if (titleEl) {
         titleEl.textContent = isEn ? '🎨 World Mood' : '🎨 مزاج العالم';
     }
-
     document.querySelectorAll('.legend-label').forEach(el => {
         const text = el.getAttribute('data-' + lang);
         if (text) el.textContent = text;
@@ -332,16 +302,21 @@ window.addEventListener('languageChanged', () => {
 });
 
 // ============================================================
+//  🌐 تصدير الدوال عالمياً
+// ============================================================
+window.loadMoodMap = loadMoodMap;
+window.addLegendBar = addLegendBar;
+window.refreshMoodMap = refreshMoodMap;
+window.computeMoodScore = computeMoodScore;
+
+// ============================================================
 //  🚀 التشغيل
 // ============================================================
 function initMoodMap() {
     injectMoodMapStyles();
     addLegendBar();
     loadMoodMap();
-
-    // تحديث كل 10 ثواني
     setInterval(refreshMoodMap, 10000);
-
     console.log('✅ تم تفعيل خريطة المزاج!');
 }
 
