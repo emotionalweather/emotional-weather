@@ -1,39 +1,159 @@
 // ============================================================
-//  feature-news-sidebar.js - 📰 نافذة الأخبار
-//  - جلب عشوائي من الدول
-//  - تصنيف بالذكاء الاصطناعي (مع تدوير الوكلاء)
-//  - عرض فوري + تحديث تلقائي عند وصول نتيجة AI
+//  feature-news-sidebar.js - 📰 نافذة الأخبار (RSS Edition)
+//  - مصادر RSS عربية وعالمية موثوقة
+//  - بدون rate limits
+//  - تصنيف بالـ AI (مع تدوير الوكلاء)
+//  - كشف تلقائي للدولة من عنوان الخبر
 // ============================================================
 
-console.log('📰 جاري تحميل نافذة الأخبار...');
+console.log('📰 جاري تحميل نافذة الأخبار (RSS)...');
 
 // ============================================================
-//  🌍 الدول العربية
+//  🌐 مصادر RSS (عربية + عالمية)
 // ============================================================
-const ARAB_COUNTRIES = [
-    { code: 'SA', name: 'السعودية', flag: '🇸🇦', q: 'Saudi', lat: 24.7, lng: 46.7 },
-    { code: 'AE', name: 'الإمارات', flag: '🇦🇪', q: 'Emirates', lat: 25.2, lng: 55.3 },
-    { code: 'QA', name: 'قطر', flag: '🇶🇦', q: 'Qatar', lat: 25.3, lng: 51.5 },
-    { code: 'KW', name: 'الكويت', flag: '🇰🇼', q: 'Kuwait', lat: 29.4, lng: 47.9 },
-    { code: 'BH', name: 'البحرين', flag: '🇧🇭', q: 'Bahrain', lat: 26.2, lng: 50.6 },
-    { code: 'OM', name: 'عُمان', flag: '🇴🇲', q: 'Oman', lat: 23.6, lng: 58.4 },
-    { code: 'YE', name: 'اليمن', flag: '🇾🇪', q: 'Yemen', lat: 15.4, lng: 44.2 },
-    { code: 'EG', name: 'مصر', flag: '🇪🇬', q: 'Egypt', lat: 30.0, lng: 31.2 },
-    { code: 'SD', name: 'السودان', flag: '🇸🇩', q: 'Sudan', lat: 15.5, lng: 32.5 },
-    { code: 'LY', name: 'ليبيا', flag: '🇱🇾', q: 'Libya', lat: 32.9, lng: 13.2 },
-    { code: 'TN', name: 'تونس', flag: '🇹🇳', q: 'Tunisia', lat: 36.8, lng: 10.2 },
-    { code: 'DZ', name: 'الجزائر', flag: '🇩🇿', q: 'Algeria', lat: 36.7, lng: 3.1 },
-    { code: 'MA', name: 'المغرب', flag: '🇲🇦', q: 'Morocco', lat: 34.0, lng: -6.8 },
-    { code: 'MR', name: 'موريتانيا', flag: '🇲🇷', q: 'Mauritania', lat: 18.1, lng: -15.9 },
-    { code: 'JO', name: 'الأردن', flag: '🇯🇴', q: 'Jordan', lat: 31.9, lng: 35.9 },
-    { code: 'LB', name: 'لبنان', flag: '🇱🇧', q: 'Lebanon', lat: 33.9, lng: 35.5 },
-    { code: 'SY', name: 'سوريا', flag: '🇸🇾', q: 'Syria', lat: 33.5, lng: 36.3 },
-    { code: 'IQ', name: 'العراق', flag: '🇮🇶', q: 'Iraq', lat: 33.3, lng: 44.4 },
-    { code: 'PS', name: 'فلسطين', flag: '🇵🇸', q: 'Palestine', lat: 31.9, lng: 35.2 },
-    { code: 'DJ', name: 'جيبوتي', flag: '🇩🇯', q: 'Djibouti', lat: 11.6, lng: 43.1 },
-    { code: 'SO', name: 'الصومال', flag: '🇸🇴', q: 'Somalia', lat: 2.0, lng: 45.3 },
-    { code: 'KM', name: 'جزر القمر', flag: '🇰🇲', q: 'Comoros', lat: -11.7, lng: 43.3 }
+const RSS_SOURCES = [
+    // ============ قنوات عربية ============
+    {
+        id: 'bbc_ar',
+        name: 'BBC عربي',
+        url: 'https://feeds.bbci.co.uk/arabic/rss.xml'
+    },
+    {
+        id: 'aljazeera_ar',
+        name: 'الجزيرة',
+        url: 'https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9'
+    },
+    {
+        id: 'dw_ar',
+        name: 'DW عربية',
+        url: 'https://rss.dw.com/rdf/rss-ar-all'
+    },
+    {
+        id: 'cnn_ar',
+        name: 'CNN عربي',
+        url: 'https://arabic.cnn.com/api/v1/rss/rss.xml'
+    },
+    {
+        id: 'rt_ar',
+        name: 'RT عربي',
+        url: 'https://arabic.rt.com/rss/'
+    },
+    {
+        id: 'skynews_ar',
+        name: 'سكاي نيوز عربية',
+        url: 'https://www.skynewsarabia.com/web/rss/'
+    },
+    {
+        id: 'alarabiya_ar',
+        name: 'العربية',
+        url: 'http://www.alarabiya.net/.mrss/ar/arab-and-world.xml'
+    },
+    {
+        id: 'alhadath_ar',
+        name: 'الحدث',
+        url: 'https://www.alhadath.net/rss'
+    },
+    {
+        id: 'asharq_ar',
+        name: 'الشرق للأخبار',
+        url: 'https://asharq.com/rss'
+    },
+    {
+        id: 'alhurra_ar',
+        name: 'الحرة',
+        url: 'https://www.alhurra.com/rss'
+    },
+    {
+        id: 'almayadeen_ar',
+        name: 'الميادين',
+        url: 'https://www.almayadeen.net/rss'
+    },
+    {
+        id: 'almanar_ar',
+        name: 'المنار',
+        url: 'https://www.almanar.com.lb/rss'
+    },
+
+    // ============ قنوات عالمية ============
+    {
+        id: 'bbc_en',
+        name: 'BBC World',
+        url: 'https://feeds.bbci.co.uk/news/world/rss.xml'
+    },
+    {
+        id: 'cnn_en',
+        name: 'CNN World',
+        url: 'http://rss.cnn.com/rss/edition_world.rss'
+    },
+    {
+        id: 'aljazeera_en',
+        name: 'Al Jazeera English',
+        url: 'https://www.aljazeera.com/xml/rss/all.xml'
+    },
+    {
+        id: 'reuters_en',
+        name: 'Reuters',
+        url: 'https://www.reutersagency.com/feed/?best-regions=world&post_type=best'
+    },
+    {
+        id: 'ap_en',
+        name: 'Associated Press',
+        url: 'https://apnews.com/hub/ap-top-news/rss'
+    },
+    {
+        id: 'france24_en',
+        name: 'France 24 English',
+        url: 'https://www.france24.com/en/rss'
+    },
+    {
+        id: 'dw_en',
+        name: 'DW English',
+        url: 'https://rss.dw.com/rdf/rss-en-all'
+    },
+    {
+        id: 'skynews_en',
+        name: 'Sky News',
+        url: 'https://feeds.skynews.com/feeds/rss/world.xml'
+    },
+    {
+        id: 'guardian_en',
+        name: 'The Guardian',
+        url: 'https://www.theguardian.com/world/rss'
+    },
+    {
+        id: 'nytimes_en',
+        name: 'New York Times',
+        url: 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml'
+    }
 ];
+
+// ============================================================
+//  🏳️ كلمات مفتاحية للدول (لكشف الدولة من العنوان)
+// ============================================================
+const COUNTRY_KEYWORDS = {
+    SA: ['السعودية', 'الرياض', 'جدة', 'الدمام', 'مكة', 'المدينة المنورة', 'أبها', 'الطائف', 'Saudi', 'Riyadh', 'Jeddah'],
+    AE: ['الإمارات', 'دبي', 'أبوظبي', 'الشارقة', 'عجمان', 'الفجيرة', 'UAE', 'Dubai', 'Abu Dhabi'],
+    QA: ['قطر', 'الدوحة', 'Qatar', 'Doha'],
+    KW: ['الكويت', 'Kuwait'],
+    BH: ['البحرين', 'المنامة', 'Bahrain', 'Manama'],
+    OM: ['عُمان', 'عمان', 'مسقط', 'Oman', 'Muscat'],
+    YE: ['اليمن', 'صنعاء', 'عدن', 'تعز', 'الحديدة', 'Yemen', 'Sanaa', 'Aden'],
+    EG: ['مصر', 'القاهرة', 'الإسكندرية', 'الجيزة', 'الأقصر', 'أسوان', 'Egypt', 'Cairo', 'Alexandria'],
+    SD: ['السودان', 'الخرطوم', 'أم درمان', 'Sudan', 'Khartoum'],
+    LY: ['ليبيا', 'طرابلس', 'بنغازي', 'مصراتة', 'Libya', 'Tripoli', 'Benghazi'],
+    TN: ['تونس', 'قرطاج', 'صفاقس', 'Tunisia', 'Tunis', 'Sfax'],
+    DZ: ['الجزائر', 'وهران', 'قسنطينة', 'Algeria', 'Algiers', 'Oran'],
+    MA: ['المغرب', 'الرباط', 'الدار البيضاء', 'مراكش', 'فاس', 'طنجة', 'Morocco', 'Rabat', 'Casablanca', 'Marrakech'],
+    MR: ['موريتانيا', 'نواكشوط', 'Mauritania', 'Nouakchott'],
+    JO: ['الأردن', 'عمّان', 'إربد', 'الزرقاء', 'Jordan', 'Amman', 'Irbid'],
+    LB: ['لبنان', 'بيروت', 'طرابلس', 'صيدا', 'صور', 'Lebanon', 'Beirut', 'Sidon'],
+    SY: ['سوريا', 'دمشق', 'حلب', 'حمص', 'اللاذقية', 'Syria', 'Damascus', 'Aleppo', 'Homs'],
+    IQ: ['العراق', 'بغداد', 'البصرة', 'الموصل', 'أربيل', 'النجف', 'Iraq', 'Baghdad', 'Basra', 'Mosul', 'Erbil'],
+    PS: ['فلسطين', 'غزة', 'القدس', 'رام الله', 'نابلس', 'الخليل', 'Palestine', 'Gaza', 'Jerusalem', 'Ramallah'],
+    DJ: ['جيبوتي', 'Djibouti'],
+    SO: ['الصومال', 'مقديشو', 'Somalia', 'Mogadishu'],
+    KM: ['جزر القمر', 'موروني', 'Comoros', 'Moroni']
+};
 
 // ============================================================
 //  💾 متغيرات عامة
@@ -42,9 +162,9 @@ window.__realNewsMood = {};
 window.__realCountryMoods = {};
 window.__realCountryImpact = {};
 
-ARAB_COUNTRIES.forEach(c => {
-    window.__realCountryMoods[c.code] = {};
-    window.__realCountryImpact[c.code] = [];
+Object.keys(COUNTRY_KEYWORDS).forEach(code => {
+    window.__realCountryMoods[code] = {};
+    window.__realCountryImpact[code] = [];
 });
 
 // ============================================================
@@ -126,7 +246,7 @@ function injectNewsStyles() {
             border-radius: 12px;
             padding: 12px;
             margin-bottom: 10px;
-            border-right: 3px solid;
+            border-right: 3px solid #94a3b8;
             animation: newsIn 0.5s ease;
             cursor: pointer;
             transition: background 0.2s;
@@ -150,7 +270,7 @@ function injectNewsStyles() {
             display: flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             color: #cbd5e1;
             font-weight: 700;
         }
@@ -161,12 +281,10 @@ function injectNewsStyles() {
             border-radius: 10px;
             font-weight: 700;
             color: #fff;
+            background: rgba(148, 163, 184, 0.3);
             transition: all 0.3s;
         }
-        .news-tag.loading {
-            background: rgba(148, 163, 184, 0.3) !important;
-            animation: pulseTag 1.5s infinite;
-        }
+        .news-tag.loading { animation: pulseTag 1.5s infinite; }
         @keyframes pulseTag {
             0%, 100% { opacity: 0.5; }
             50%      { opacity: 1; }
@@ -192,6 +310,11 @@ function injectNewsStyles() {
             margin-top: 4px;
             font-style: italic;
         }
+        .news-source {
+            font-size: 0.62rem;
+            color: #64748b;
+            margin-top: 4px;
+        }
 
         .news-empty {
             text-align: center;
@@ -199,7 +322,6 @@ function injectNewsStyles() {
             padding: 40px 20px;
             font-size: 0.85rem;
         }
-
         .news-warning {
             background: rgba(255, 200, 0, 0.1);
             border: 1px solid rgba(255, 200, 0, 0.3);
@@ -243,12 +365,12 @@ function buildNewsPanel() {
     newsPanel.innerHTML = `
         <div class="news-header">
             <span class="live-dot"></span>
-            <span>🌍 أخبار العالم العربي — مباشر</span>
+            <span>🌍 أخبار العالم — مباشر</span>
             <span class="news-ai-status" id="aiStatus">${hasKey ? '🤖 AI مُفعّل' : '⚠️ بدون AI'}</span>
         </div>
         <div class="news-body" id="newsBody">
-            ${hasKey ? '' : '<div class="news-warning">⚠️ مفتاح AI غير مُعد. التصنيف يعمل بالكلمات المفتاحية فقط.</div>'}
-            <div class="news-empty">⏳ جاري تحميل الأخبار...</div>
+            ${hasKey ? '' : '<div class="news-warning">⚠️ مفتاح AI غير مُعد.</div>'}
+            <div class="news-empty">⏳ جاري تحميل الأخبار من BBC، الجزيرة، DW...</div>
         </div>
     `;
     document.body.appendChild(newsPanel);
@@ -256,245 +378,288 @@ function buildNewsPanel() {
 }
 
 // ============================================================
-//  📰 جلب أخبار دولة
+//  🌐 وكلاء CORS Proxy (للتعامل مع قيود المتصفح)
 // ============================================================
-async function fetchCountryNews(country) {
+const CORS_PROXIES = [
+    (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    (url) => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
+    (url) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`
+];
+
+// ============================================================
+//  📡 جلب RSS مع تدوير الـ Proxy
+// ============================================================
+async function fetchRSSWithProxy(rssUrl) {
+    for (let i = 0; i < CORS_PROXIES.length; i++) {
+        try {
+            const proxyUrl = CORS_PROXIES[i](rssUrl);
+            const res = await fetch(proxyUrl, {
+                method: 'GET',
+                headers: { 'Accept': 'application/xml, text/xml, */*' }
+            });
+
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+
+            const text = await res.text();
+            if (!text || text.length < 100) throw new Error('رد فاضي');
+
+            return text;
+        } catch (err) {
+            console.warn(`⚠️ Proxy ${i + 1} فشل:`, err.message);
+            // ننتقل للـ proxy التالي
+        }
+    }
+    return null;
+}
+
+// ============================================================
+//  📖 تحليل XML واستخراج الأخبار
+// ============================================================
+function parseRSS(xmlText, source) {
     try {
-        const query = encodeURIComponent(country.q);
-        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}%20sourcelang:arabic%20OR%20sourcelang:english&mode=artlist&maxrecords=6&format=json&sort=datedesc`;
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
-        const res = await fetch(url);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const parseError = xmlDoc.querySelector('parsererror');
+        if (parseError) throw new Error('XML غير صالح');
 
-        const data = await res.json();
-        if (!data.articles || data.articles.length === 0) return [];
+        const items = xmlDoc.querySelectorAll('item, entry');
+        const articles = [];
 
-        return data.articles
-            .filter(a => a.title && a.title.length > 15)
-            .map(a => ({
-                country: country,
-                title: a.title,
-                url: a.url || '#',
-                date: a.seendate || ''
-            }));
+        items.forEach(item => {
+            const titleEl = item.querySelector('title');
+            const title = titleEl ? titleEl.textContent.trim() : '';
+
+            let link = '';
+            const linkEl = item.querySelector('link');
+            if (linkEl) {
+                link = linkEl.textContent.trim() || linkEl.getAttribute('href') || '';
+            }
+
+            const dateEl = item.querySelector('pubDate, published, updated, dc\\:date');
+            const date = dateEl ? dateEl.textContent.trim() : '';
+
+            if (title && title.length > 15) {
+                articles.push({
+                    title,
+                    link: link || '#',
+                    date,
+                    source: source.name,
+                    sourceId: source.id
+                });
+            }
+        });
+
+        return articles;
     } catch (err) {
-        console.warn(`⚠️ فشل جلب ${country.name}:`, err.message);
+        console.warn(`⚠️ فشل تحليل ${source.name}:`, err.message);
         return [];
     }
 }
 
 // ============================================================
-//  🔄 جلب عشوائي
+//  🎯 كشف الدولة من عنوان الخبر
 // ============================================================
-let recentCountries = [];
-
-async function fetchRandomCountry() {
-    let country;
-    let attempts = 0;
-    do {
-        country = ARAB_COUNTRIES[Math.floor(Math.random() * ARAB_COUNTRIES.length)];
-        attempts++;
-    } while (recentCountries.includes(country.code) && attempts < 15);
-
-    recentCountries.push(country.code);
-    if (recentCountries.length > 5) recentCountries.shift();
-
-    const articles = await fetchCountryNews(country);
-    processArticles(country, articles);
+function detectCountry(title) {
+    const lower = title.toLowerCase();
+    for (const [code, keywords] of Object.entries(COUNTRY_KEYWORDS)) {
+        for (const kw of keywords) {
+            if (lower.includes(kw.toLowerCase())) {
+                return code;
+            }
+        }
+    }
+    return null;
 }
 
 // ============================================================
-//  📊 معالجة الأخبار (مع AI)
+//  🌍 الحصول على معلومات الدولة
 // ============================================================
-function processArticles(country, articles) {
-    articles.forEach(a => {
-        // 1. تصنيف فوري بالكلمات المفتاحية (fast)
-        const initial = typeof keywordClassify === 'function'
-            ? keywordClassify(a.title)
-            : { category: 'politics', sentiment: 'neutral', mood: 'neutral', impact: 30, reason: '' };
+const COUNTRY_INFO = {
+    SA: { flag: '🇸🇦', name: 'السعودية', lat: 24.7, lng: 46.7 },
+    AE: { flag: '🇦🇪', name: 'الإمارات', lat: 25.2, lng: 55.3 },
+    QA: { flag: '🇶🇦', name: 'قطر', lat: 25.3, lng: 51.5 },
+    KW: { flag: '🇰🇼', name: 'الكويت', lat: 29.4, lng: 47.9 },
+    BH: { flag: '🇧🇭', name: 'البحرين', lat: 26.2, lng: 50.6 },
+    OM: { flag: '🇴🇲', name: 'عُمان', lat: 23.6, lng: 58.4 },
+    YE: { flag: '🇾🇪', name: 'اليمن', lat: 15.4, lng: 44.2 },
+    EG: { flag: '🇪🇬', name: 'مصر', lat: 30.0, lng: 31.2 },
+    SD: { flag: '🇸🇩', name: 'السودان', lat: 15.5, lng: 32.5 },
+    LY: { flag: '🇱🇾', name: 'ليبيا', lat: 32.9, lng: 13.2 },
+    TN: { flag: '🇹🇳', name: 'تونس', lat: 36.8, lng: 10.2 },
+    DZ: { flag: '🇩🇿', name: 'الجزائر', lat: 36.7, lng: 3.1 },
+    MA: { flag: '🇲🇦', name: 'المغرب', lat: 34.0, lng: -6.8 },
+    MR: { flag: '🇲🇷', name: 'موريتانيا', lat: 18.1, lng: -15.9 },
+    JO: { flag: '🇯🇴', name: 'الأردن', lat: 31.9, lng: 35.9 },
+    LB: { flag: '🇱🇧', name: 'لبنان', lat: 33.9, lng: 35.5 },
+    SY: { flag: '🇸🇾', name: 'سوريا', lat: 33.5, lng: 36.3 },
+    IQ: { flag: '🇮🇶', name: 'العراق', lat: 33.3, lng: 44.4 },
+    PS: { flag: '🇵🇸', name: 'فلسطين', lat: 31.9, lng: 35.2 },
+    DJ: { flag: '🇩🇯', name: 'جيبوتي', lat: 11.6, lng: 43.1 },
+    SO: { flag: '🇸🇴', name: 'الصومال', lat: 2.0, lng: 45.3 },
+    KM: { flag: '🇰🇲', name: 'جزر القمر', lat: -11.7, lng: 43.3 }
+};
 
-        a.category = initial.category;
-        a.sentiment = initial.sentiment;
-        a.mood = initial.mood;
-        a.impact = initial.impact;
-        a.reason = initial.reason;
-        a.aiPending = true;
-        a.source = 'keyword';
+// ============================================================
+//  📊 معالجة مقال واحد
+// ============================================================
+async function processArticle(article) {
+    const countryCode = detectCountry(article.title);
+    article.countryCode = countryCode;
+    article.countryInfo = countryCode ? COUNTRY_INFO[countryCode] : null;
 
-        // 2. حدّث الإحصائيات مبدئياً
-        updateStats(country, a);
+    const initial = typeof keywordClassify === 'function'
+        ? keywordClassify(article.title)
+        : { category: 'politics', sentiment: 'neutral', mood: 'neutral', impact: 30, reason: '' };
 
-        // 3. اظهر البطاقة فوراً (بحالة loading)
-        const cardEl = displayNewsCard(a);
+    article.category = initial.category;
+    article.sentiment = initial.sentiment;
+    article.mood = initial.mood;
+    article.impact = initial.impact;
+    article.reason = initial.reason;
+    article.source_type = 'keyword';
+    article.aiPending = true;
 
-        // 4. نقطة على الخريطة
-        dropMapMarker(country, a.mood);
+    const cardEl = displayNewsCard(article);
 
-        // 5. شغّل التصنيف بالـ AI في الخلفية
-        if (typeof classifyWithSmartAI === 'function' && typeof getAIKey === 'function' && getAIKey()) {
-            classifyInBackground(a, country, cardEl);
-        }
-    });
+    updateStats(article);
+
+    if (countryCode) dropMapMarker(article.countryInfo, article.mood);
+
+    if (typeof classifyWithSmartAI === 'function' && typeof getAIKey === 'function' && getAIKey()) {
+        classifyInBackground(article, cardEl);
+    }
 }
 
 // ============================================================
 //  🤖 التصنيف بالـ AI في الخلفية
 // ============================================================
-async function classifyInBackground(news, country, cardEl) {
+async function classifyInBackground(article, cardEl) {
     try {
-        const result = await classifyWithSmartAI(news.title, country.name);
+        const countryName = article.countryInfo ? article.countryInfo.name : 'العالم';
+        const result = await classifyWithSmartAI(article.title, countryName);
 
         if (!result) {
-            // فشل الـ AI — خلي التصنيف بالكلمات
-            if (cardEl) {
-                cardEl.dataset.aiPending = 'false';
-                updateCardAIState(cardEl, null);
-            }
+            if (cardEl) updateCardAIState(cardEl, null);
             return;
         }
 
-        // ✅ نجح الـ AI — حدّث الخبر
-        // احذف التصنيف القديم من الإحصائيات
-        removeFromStats(country, news);
+        removeFromStats(article);
 
-        // حدّث الحقول
-        news.category = result.category;
-        news.sentiment = result.sentiment;
-        news.mood = result.mood;
-        news.impact = result.impact;
-        news.reason = result.reason;
-        news.source = result.source || 'ai';
-        news.aiPending = false;
+        article.category = result.category;
+        article.sentiment = result.sentiment;
+        article.mood = result.mood;
+        article.impact = result.impact;
+        article.reason = result.reason;
+        article.source_type = result.source || 'ai';
+        article.aiPending = false;
 
-        // أضف للإحصائيات الجديدة
-        updateStats(country, news);
+        updateStats(article);
 
-        // حدّث البطاقة
-        if (cardEl) {
-            cardEl.dataset.aiPending = 'false';
-            updateCardAIState(cardEl, news);
-        }
+        if (cardEl) updateCardAIState(cardEl, article);
 
-        // حدّث الخريطة
-        refreshMapMarker(country, news.mood);
+        if (article.countryCode) dropMapMarker(article.countryInfo, article.mood);
 
     } catch (err) {
         console.warn('⚠️ فشل تصنيف AI:', err.message);
-        if (cardEl) {
-            cardEl.dataset.aiPending = 'false';
-            updateCardAIState(cardEl, null);
-        }
+        if (cardEl) updateCardAIState(cardEl, null);
     }
 }
 
 // ============================================================
 //  📊 الإحصائيات
 // ============================================================
-function updateStats(country, news) {
-    const cat = news.category;
+function updateStats(article) {
+    const cat = article.category;
 
-    // عالمية
     window.__realNewsMood[cat] = (window.__realNewsMood[cat] || 0) + 1;
 
-    // الدولة
-    if (!window.__realCountryMoods[country.code]) {
-        window.__realCountryMoods[country.code] = {};
-    }
-    window.__realCountryMoods[country.code][cat] =
-        (window.__realCountryMoods[country.code][cat] || 0) + 1;
+    if (article.countryCode) {
+        const code = article.countryCode;
+        if (!window.__realCountryMoods[code]) window.__realCountryMoods[code] = {};
+        window.__realCountryMoods[code][cat] = (window.__realCountryMoods[code][cat] || 0) + 1;
 
-    // قوة التأثير
-    if (!window.__realCountryImpact[country.code]) {
-        window.__realCountryImpact[country.code] = [];
+        if (!window.__realCountryImpact[code]) window.__realCountryImpact[code] = [];
+        window.__realCountryImpact[code].push(article.impact);
     }
-    window.__realCountryImpact[country.code].push(news.impact);
 }
 
-function removeFromStats(country, news) {
-    const cat = news.category;
+function removeFromStats(article) {
+    const cat = article.category;
 
     if (window.__realNewsMood[cat]) {
         window.__realNewsMood[cat] = Math.max(0, window.__realNewsMood[cat] - 1);
     }
 
-    if (window.__realCountryMoods[country.code] && window.__realCountryMoods[country.code][cat]) {
-        window.__realCountryMoods[country.code][cat] = Math.max(0,
-            window.__realCountryMoods[country.code][cat] - 1
-        );
-    }
-
-    if (window.__realCountryImpact[country.code]) {
-        const idx = window.__realCountryImpact[country.code].indexOf(news.impact);
-        if (idx > -1) window.__realCountryImpact[country.code].splice(idx, 1);
+    if (article.countryCode) {
+        const code = article.countryCode;
+        if (window.__realCountryMoods[code] && window.__realCountryMoods[code][cat]) {
+            window.__realCountryMoods[code][cat] = Math.max(0,
+                window.__realCountryMoods[code][cat] - 1
+            );
+        }
+        if (window.__realCountryImpact[code]) {
+            const idx = window.__realCountryImpact[code].indexOf(article.impact);
+            if (idx > -1) window.__realCountryImpact[code].splice(idx, 1);
+        }
     }
 }
 
 // ============================================================
 //  🎬 عرض بطاقة
 // ============================================================
-function displayNewsCard(news) {
+function displayNewsCard(article) {
     if (!newsBody) return null;
 
     const empty = newsBody.querySelector('.news-empty');
     if (empty) empty.remove();
 
-    const cat = (typeof AI_CATEGORIES !== 'undefined' && AI_CATEGORIES[news.category])
-        ? AI_CATEGORIES[news.category]
-        : { emoji: '🏛️', label: 'أخبار', color: '#9370DB' };
-
     const card = document.createElement('div');
     card.className = 'news-card';
     card.dataset.aiPending = 'true';
-    card.style.borderRightColor = cat.color;
-    if (document.body.classList.contains('lang-en')) {
-        card.style.borderLeftColor = cat.color;
-    }
+
+    const sourceTag = article.countryInfo
+        ? `<div class="news-country"><span class="flag">${article.countryInfo.flag}</span><span>${article.countryInfo.name}</span></div>`
+        : `<div class="news-country"><span class="flag">🌍</span><span>عالمي</span></div>`;
 
     card.innerHTML = `
         <div class="news-card-top">
-            <div class="news-country">
-                <span class="flag">${news.country.flag}</span>
-                <span>${news.country.name}</span>
-            </div>
-            <span class="news-tag loading" data-cat>⏳ جاري التحليل...</span>
+            ${sourceTag}
+            <span class="news-tag loading" data-cat>⏳ تحليل...</span>
         </div>
-        <div class="news-title">${escapeHTML(news.title)}</div>
+        <div class="news-title">${escapeHTML(article.title)}</div>
         <div class="news-meta" data-meta></div>
         <div class="news-reason" data-reason style="display:none;"></div>
+        <div class="news-source">📡 ${article.source || 'مصدر'}</div>
     `;
 
     card.onclick = () => {
-        if (news.url && news.url !== '#') window.open(news.url, '_blank');
+        if (article.link && article.link !== '#') window.open(article.link, '_blank');
     };
 
     newsBody.insertBefore(card, newsBody.firstChild);
 
-    while (newsBody.children.length > 40) {
+    while (newsBody.children.length > 50) {
         newsBody.removeChild(newsBody.lastChild);
     }
 
-    // حدّث الحالة الأولية
     updateCardAIState(card, null);
-
-    // ربط البطاقة بالخبر
-    news._card = card;
+    article._card = card;
 
     return card;
 }
 
 // ============================================================
-//  🎨 تحديث البطاقة حسب حالة AI
+//  🎨 تحديث البطاقة
 // ============================================================
-function updateCardAIState(cardEl, news) {
+function updateCardAIState(cardEl, article) {
     if (!cardEl) return;
 
     const tagEl = cardEl.querySelector('[data-cat]');
     const metaEl = cardEl.querySelector('[data-meta]');
     const reasonEl = cardEl.querySelector('[data-reason]');
 
-    if (!news) {
-        // لا يوجد AI — استخدم الكلمات المفتاحية (نستخرج من dataset)
-        // (يعني البطاقة راح تبقى loading، بس نغير النص)
+    if (!article) {
         if (tagEl) {
             tagEl.classList.remove('loading');
             tagEl.textContent = '📊 تصنيف أساسي';
@@ -503,12 +668,12 @@ function updateCardAIState(cardEl, news) {
         return;
     }
 
-    const cat = (typeof AI_CATEGORIES !== 'undefined' && AI_CATEGORIES[news.category])
-        ? AI_CATEGORIES[news.category]
+    const cat = (typeof AI_CATEGORIES !== 'undefined' && AI_CATEGORIES[article.category])
+        ? AI_CATEGORIES[article.category]
         : { emoji: '🏛️', label: 'أخبار', color: '#9370DB' };
 
-    const sentiment = (typeof AI_IMPACT_LABELS !== 'undefined' && AI_IMPACT_LABELS[news.sentiment])
-        ? AI_IMPACT_LABELS[news.sentiment]
+    const sentiment = (typeof AI_IMPACT_LABELS !== 'undefined' && AI_IMPACT_LABELS[article.sentiment])
+        ? AI_IMPACT_LABELS[article.sentiment]
         : { label: 'محايد', color: '#94a3b8' };
 
     if (tagEl) {
@@ -518,20 +683,19 @@ function updateCardAIState(cardEl, news) {
     }
 
     if (metaEl) {
-        const source = news.source === 'ai' ? '🤖 AI' : '🔤 أساسي';
+        const sourceLabel = article.source_type === 'ai' ? '🤖 AI' : '🔤 أساسي';
         metaEl.innerHTML = `
             <span style="color:${sentiment.color};">💭 ${sentiment.label}</span>
-            <span>💥 ${news.impact}/100</span>
-            <span style="opacity:0.7;">${source}</span>
+            <span>💥 ${article.impact}/100</span>
+            <span style="opacity:0.7;">${sourceLabel}</span>
         `;
     }
 
-    if (reasonEl && news.reason) {
-        reasonEl.textContent = '📝 ' + news.reason;
+    if (reasonEl && article.reason) {
+        reasonEl.textContent = '📝 ' + article.reason;
         reasonEl.style.display = 'block';
     }
 
-    // حدّث لون الحدود
     cardEl.style.borderRightColor = cat.color;
     if (document.body.classList.contains('lang-en')) {
         cardEl.style.borderLeftColor = cat.color;
@@ -539,45 +703,20 @@ function updateCardAIState(cardEl, news) {
 }
 
 // ============================================================
-//  📍 النقاط على الخريطة
+//  📍 نقاط على الخريطة
 // ============================================================
-const mapMarkers = new Map();
-
-function dropMapMarker(country, mood) {
-    if (typeof dropEmotion !== 'function' || typeof EMOTIONS === 'undefined') return;
+function dropMapMarker(countryInfo, mood) {
+    if (!countryInfo || typeof dropEmotion !== 'function' || typeof EMOTIONS === 'undefined') return;
 
     const emoKey = mood || 'neutral';
     if (!EMOTIONS[emoKey]) return;
 
-    const lat = country.lat + (Math.random() - 0.5) * 2;
-    const lng = country.lng + (Math.random() - 0.5) * 2;
-    const id = `${country.code}_${Date.now()}_${Math.random()}`;
+    const lat = countryInfo.lat + (Math.random() - 0.5) * 2;
+    const lng = countryInfo.lng + (Math.random() - 0.5) * 2;
 
     try {
-        const emo = EMOTIONS[emoKey];
-        const icon = L.divIcon({
-            className: 'emo-marker',
-            html: `<div class="emo-marker-inner" style="color:${emo.color};">
-                     <span class="emo-marker-emoji">${emo.emoji}</span>
-                   </div>`,
-            iconSize: [36, 36],
-            iconAnchor: [18, 18]
-        });
-
-        const marker = L.marker([lat, lng], { icon, interactive: false }).addTo(map);
-        const timeout = setTimeout(() => {
-            map.removeLayer(marker);
-            mapMarkers.delete(id);
-        }, 25000);
-
-        mapMarkers.set(id, { marker, timeout, country, mood });
+        dropEmotion(lat, lng, emoKey, `${countryInfo.flag} ${countryInfo.name}`);
     } catch (e) {}
-}
-
-function refreshMapMarker(country, newMood) {
-    // ما نعدل الموجود — الماركرز تختفي بعد 25 ثانية.
-    // لما AI يخلص، راح نحط ماركر جديد بلون صحيح.
-    dropMapMarker(country, newMood);
 }
 
 // ============================================================
@@ -590,25 +729,51 @@ function escapeHTML(str) {
 }
 
 // ============================================================
-//  🚀 جلب أولي
+//  🚀 جلب كل المصادر
 // ============================================================
-async function fetchAllInitial() {
-    console.log('🚀 جاري جلب أخبار الدول العربية...');
+async function fetchAllSources() {
+    console.log('🚀 جاري جلب الأخبار من RSS...');
 
-    const shuffled = [...ARAB_COUNTRIES].sort(() => Math.random() - 0.5);
-    const batchSize = 3;
+    const fetchPromises = RSS_SOURCES.map(async (source) => {
+        const xml = await fetchRSSWithProxy(source.url);
+        if (!xml) return [];
+        return parseRSS(xml, source);
+    });
 
-    for (let i = 0; i < shuffled.length; i += batchSize) {
-        const batch = shuffled.slice(i, i + batchSize);
-        await Promise.all(batch.map(async country => {
-            const articles = await fetchCountryNews(country);
-            processArticles(country, articles);
-        }));
-        // تأخير بسيط بين الدفعات
-        await new Promise(r => setTimeout(r, 800));
+    const results = await Promise.all(fetchPromises);
+    const allArticles = results.flat();
+
+    const seen = new Set();
+    const uniqueArticles = allArticles.filter(a => {
+        const key = a.title.slice(0, 40);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+
+    console.log(`✅ تم جلب ${uniqueArticles.length} خبر من ${RSS_SOURCES.length} مصدر`);
+
+    for (let i = 0; i < uniqueArticles.length; i++) {
+        await processArticle(uniqueArticles[i]);
+        if (i % 5 === 0) await new Promise(r => setTimeout(r, 200));
     }
+}
 
-    console.log('✅ تم جلب كل الأخبار الأولية');
+// ============================================================
+//  🔄 تحديث دوري
+// ============================================================
+async function refreshNews() {
+    const source = RSS_SOURCES[Math.floor(Math.random() * RSS_SOURCES.length)];
+    const xml = await fetchRSSWithProxy(source.url);
+    if (!xml) return;
+
+    const articles = parseRSS(xml, source);
+    if (articles.length === 0) return;
+
+    const shuffled = articles.sort(() => Math.random() - 0.5).slice(0, 3);
+    for (const article of shuffled) {
+        await processArticle(article);
+    }
 }
 
 // ============================================================
@@ -618,10 +783,10 @@ function initNewsFeature() {
     injectNewsStyles();
     buildNewsPanel();
 
-    fetchAllInitial();
-    setInterval(fetchRandomCountry, 8000);
+    fetchAllSources();
+    setInterval(refreshNews, 30000);
 
-    console.log('✅ تم تفعيل نافذة الأخبار!');
+    console.log('✅ تم تفعيل نافذة الأخبار (RSS)!');
 }
 
 if (document.readyState === 'loading') {
