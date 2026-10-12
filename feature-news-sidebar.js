@@ -74,6 +74,33 @@ const RSS_SOURCES = [
         url: 'https://www.almanar.com.lb/rss'
     },
 
+    // ============ قنوات عربية محايدة (جديدة) ============
+    {
+        id: 'france24_ar',
+        name: 'فرانس 24 عربي',
+        url: 'https://www.france24.com/ar/rss'
+    },
+    {
+        id: 'euronews_ar',
+        name: 'يورونيوز عربي',
+        url: 'https://arabic.euronews.com/rss'
+    },
+    {
+        id: 'trt_ar',
+        name: 'TRT عربي',
+        url: 'https://www.trtarabi.com/rss'
+    },
+    {
+        id: 'independent_ar',
+        name: 'اندبندنت عربية',
+        url: 'https://www.independentarabia.com/rss'
+    },
+    {
+        id: 'asharq_awsat_ar',
+        name: 'الشرق الأوسط',
+        url: 'https://aawsat.com/feed'
+    },
+
     // ============ قنوات عالمية ============
     {
         id: 'bbc_en',
