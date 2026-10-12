@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>الطقس العاطفي - Emotional Weather</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow: hidden; }
+body {
+    background: #0a0f1a;
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+#map { flex: 1; z-index: 1; background: #0a0f1a; }
+.leaflet-container { background: #0a0f1a !important; }
+.leaflet-control-attribution {
+    background: rgba(10, 15, 25, 0.7) !important;
+    color: #66788c !important;
+    font-size: 9px !important;
+}
+.leaflet-control-attribution a { color: #38bdf8 !important; }
+.leaflet-bar a {
+    background: rgba(15, 25, 40, 0.9) !important;
+    color: #38bdf8 !important;
+    border-color: rgba(80, 120, 160, 0.3) !important;
+}
+.leaflet-bar a:hover { background: rgba(30, 45, 70, 0.9) !important; }
+
+#header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 12px 15px 8px;
+    text-align: center;
+    z-index: 1000;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(10, 15, 25, 0.85), transparent);
+}
+#header h1 {
+    font-size: 1.4rem;
+    background: linear-gradient(90deg, #FFD700, #FF69B4, #00CED1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+#header p { font-size: 0.7rem; color: #66788c; margin-top: 2px; }
+
+#top-bar {
+    position: absolute;
+    top: 65px; left: 12px; right: 12px;
+    z-index: 1000;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#top-bar > * { pointer-events: auto; }
+
+.search-box { flex: 1; position: relative; }
+.search-box input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    background: rgba(15, 25, 40, 0.92);
+    border: 1px solid rgba(80, 120, 160, 0.3);
+    border-radius: 25px;
+    color: #fff;
+    font-size: 0.85rem;
+    font-family: inherit;
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+.search-box input::placeholder { color: #66788c; }
+.search-box input:focus { border-color: #38bdf8; }
+.search-box .search-icon {
+    position: absolute;
+    right: 14px; top: 50%;
+    transform: translateY(-50%);
+    color: #66788c;
+    font-size: 1rem;
+    pointer-events: none;
+}
+.search-results {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    margin-top: 6px;
+    background: rgba(15, 25, 40, 0.97);
+    border: 1px solid rgba(80, 120, 160, 0.3);
+    border-radius: 12px;
+    max-height: 240px;
+    overflow-y: auto;
+    display: none;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+.search-results.show { display: block; }
+.search-result-item {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(80, 120, 160, 0.1);
+    color: #cbd5e1;
+}
+.search-result-item:hover { background: rgba(56, 189, 248, 0.1); }
+.search-result-item:last-child { border-bottom: none; }
+
+#privacy-btn {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    background: rgba(15, 25, 40, 0.92);
+    border: 1px solid rgba(80, 120, 160, 0.3);
+    color: #38bdf8;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+#privacy-btn.private { color: #FFD700; border-color: #FFD700; }
+
+#emotions {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    padding: 10px 12px 14px;
+    background: rgba(10, 15, 25, 0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(80, 110, 140, 0.15);
+    z-index: 1000;
+}
+.emo-btn {
+    padding: 9px 4px;
+    border: 1.5px solid;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 0.7rem;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-weight: 600;
+}
+.emo-btn .emo-icon { font-size: 1.25rem; line-height: 1; }
+.emo-btn:hover, .emo-btn:active { transform: translateY(-2px); }
+.emo-btn.active { box-shadow: 0 0 15px currentColor; }
+
+#send-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+#send-modal.show { display: flex; }
+.modal-card {
+    background: rgba(20, 30, 45, 0.98);
+    border: 1px solid rgba(80, 120, 160, 0.3);
+    border-radius: 18px;
+    padding: 22px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+.modal-card h3 { color: #38bdf8; margin-bottom: 8px; font-size: 1.1rem; }
+.modal-card .target-name { color: #fff; font-size: 0.9rem; margin-bottom: 16px; word-break: break-word; }
+.modal-card .emotions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.modal-card .modal-emo {
+    padding: 12px 5px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.modal-card .modal-emo:hover { transform: translateY(-2px); }
+.modal-card .modal-emo .emo-icon { font-size: 1.5rem; }
+.modal-card .cancel-btn {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 100, 100, 0.4);
+    color: #ff8080;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+.modal-card .cancel-btn:hover { background: rgba(255, 100, 100, 0.1); }
+
+#toast {
+    position: fixed;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    background: rgba(10, 20, 30, 0.97);
+    padding: 11px 22px;
+    border-radius: 30px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+    z-index: 3000;
+    font-size: 0.85rem;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+}
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.emo-marker { background: transparent !important; border: none !important; }
+.emo-marker-inner {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.emo-marker-inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.3;
+    animation: pulse 2s infinite ease-out;
+}
+@keyframes pulse {
+    0%   { transform: scale(1); opacity: 0.4; }
+    100% { transform: scale(2.2); opacity: 0; }
+}
+.emo-marker-emoji {
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 4px currentColor);
+}
+.user-marker { background: transparent !important; border: none !important; }
+.user-dot {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 15px rgba(56, 189, 248, 0.8);
+    animation: userPulse 2s infinite;
+}
+@keyframes userPulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 15px rgba(56, 189, 248, 0.8); }
+    50%      { box-shadow: 0 0 0 8px rgba(56, 189, 248, 0.2), 0 0 25px rgba(56, 189, 248, 1); }
+}
+
+@media (max-width: 500px) {
+    #header h1 { font-size: 1.15rem; }
+    .emo-btn { font-size: 0.62rem; padding: 7px 2px; }
+    .emo-btn .emo-icon { font-size: 1.05rem; }
+    #top-bar { top: 58px; }
+    .search-box input { font-size: 0.78rem; padding: 9px 38px 9px 12px; }
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+    <h1>الطقس العاطفي</h1>
+    <p>نبض مشاعر البشرية في اللحظة هذه</p>
+</div>
+
+<div id="top-bar">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="ابحث عن مدينة، حي، أو شارع..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+    <button id="privacy-btn" onclick="togglePrivacy()" title="الخصوصية">👁️</button>
+</div>
+
+<div id="map"></div>
+<div id="emotions"></div>
+
+<div id="send-modal">
+    <div class="modal-card">
+        <h3>أرسل مشعرك إلى</h3>
+        <div class="target-name" id="targetName"></div>
+        <div class="emotions-grid" id="modalEmotions"></div>
+        <button class="cancel-btn" onclick="closeModal()">إلغاء</button>
+    </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ============================================================
+//  التحقق من تحميل Leaflet
+// ============================================================
+if (typeof L === 'undefined') {
+    document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#ff8080;font-size:18px;">❌ فشل تحميل مكتبة الخرائط. تأكد من اتصالك بالإنترنت ثم أعد تحديث الصفحة.</div>';
+    throw new Error('Leaflet not loaded');
+}
+
+const EMOTIONS = {
+    joy:      { name: 'فرح',    color: '#FFD700', emoji: '😊' },
+    sad:      { name: 'حزن',    color: '#4A90E2', emoji: '😢' },
+    angry:    { name: 'غضب',    color: '#FF4500', emoji: '😠' },
+    calm:     { name: 'هدوء',   color: '#00CED1', emoji: '😌' },
+    anxious:  { name: 'قلق',    color: '#8A2BE2', emoji: '😰' },
+    grateful: { name: 'امتنان', color: '#FF69B4', emoji: '🙏' }
+};
+
+// ============================================================
+//  تهيئة الخريطة
+// ============================================================
+const map = L.map('map', {
+    center: [25, 45],
+    zoom: 3,
+    zoomControl: true,
+    worldCopyJump: true,
+    minZoom: 2,
+    maxZoom: 18
+});
+
+// 🎨 Esri World Dark Gray — مجاني، بدون مفتاح، خريطة داكنة احترافية
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri &copy; OpenStreetMap',
+    maxZoom: 16,
+    subdomains: []
+}).addTo(map);
+
+// طبقة تسميات الدول والمدن فوق الخريطة
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16,
+    subdomains: [],
+    pane: 'overlayPane'
+}).addTo(map);
+
+// ============================================================
+//  متغيرات عامة
+// ============================================================
+let userLocation = null;
+let userMarker = null;
+let userCircle = null;
+let isPrivateMode = false;
+let selectedEmotion = null;
+let pendingTarget = null;
+const activeMarkers = {};
+let markerIdCounter = 0;
+
+// ============================================================
+//  بناء أزرار المشاعر
+// ============================================================
+function buildEmotionButtons() {
+    const container = document.getElementById('emotions');
+    Object.entries(EMOTIONS).forEach(([key, emo]) => {
+        const btn = document.createElement('button');
+        btn.className = 'emo-btn';
+        btn.dataset.key = key;
+        btn.style.borderColor = emo.color;
+        btn.style.color = emo.color;
+        btn.innerHTML = `<span class="emo-icon">${emo.emoji}</span><span>${emo.name}</span>`;
+        btn.onclick = () => onEmotionButtonClick(key);
+        container.appendChild(btn);
+    });
+}
+
+function buildModalEmotions() {
+    const container = document.getElementById('modalEmotions');
+    Object.entries(EMOTIONS).forEach(([key, emo]) => {
+        const btn = document.createElement('button');
+        btn.className = 'modal-emo';
+        btn.style.borderColor = emo.color;
+        btn.style.color = emo.color;
+        btn.innerHTML = `<span class="emo-icon">${emo.emoji}</span><span>${emo.name}</span>`;
+        btn.onclick = () => sendEmotionToTarget(key);
+        container.appendChild(btn);
+    });
+}
+
+// ============================================================
+//  عند اختيار مشعر من الشريط السفلي
+// ============================================================
+function onEmotionButtonClick(key) {
+    selectedEmotion = key;
+    document.querySelectorAll('.emo-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.emo-btn[data-key="${key}"]`).classList.add('active');
+
+    if (!userLocation) {
+        showToast('⏳ جاري تحديد موقعك...');
+        return;
+    }
+    const target = isPrivateMode ? 'حيّك' : 'موقعك';
+    const jitter = isPrivateMode ? 0.02 : 0.0005;
+    const lat = userLocation.lat + (Math.random() - 0.5) * jitter;
+    const lng = userLocation.lng + (Math.random() - 0.5) * jitter;
+    dropEmotion(lat, lng, key, `📍 ${target}`);
+}
+
+// ============================================================
+//  إسقاط مشعر على الخريطة
+// ============================================================
+function dropEmotion(lat, lng, emotionKey, label) {
+    const emo = EMOTIONS[emotionKey];
+    const id = 'm_' + (++markerIdCounter);
+
+    const icon = L.divIcon({
+        className: 'emo-marker',
+        html: `<div class="emo-marker-inner" style="color:${emo.color};">
+                 <span class="emo-marker-emoji">${emo.emoji}</span>
+               </div>`,
+        iconSize: [36, 36],
+        iconAnchor: [18, 18]
+    });
+
+    const marker = L.marker([lat, lng], { icon, interactive: false }).addTo(map);
+    const timeout = setTimeout(() => {
+        map.removeLayer(marker);
+        delete activeMarkers[id];
+    }, 20000);
+
+    activeMarkers[id] = { marker, timeout };
+    showToast(`${emo.emoji} تم إرسال "${emo.name}" إلى ${label}`);
+}
+
+// ============================================================
+//  نافذة الإرسال
+// ============================================================
+function openSendModal(lat, lng, name) {
+    pendingTarget = { lat, lng, name };
+    document.getElementById('targetName').textContent = '📍 ' + name;
+    document.getElementById('send-modal').classList.add('show');
+}
+
+function closeModal() {
+    document.getElementById('send-modal').classList.remove('show');
+    pendingTarget = null;
+}
+
+function sendEmotionToTarget(emotionKey) {
+    if (!pendingTarget) return;
+    dropEmotion(pendingTarget.lat, pendingTarget.lng, emotionKey, pendingTarget.name);
+    closeModal();
+}
+
+// ============================================================
+//  الضغط على الخريطة
+// ============================================================
+map.on('click', async (e) => {
+    const { lat, lng } = e.latlng;
+    showToast('⏳ جاري تحديد المكان...');
+    try {
+        const name = await reverseGeocode(lat, lng);
+        openSendModal(lat, lng, name);
+    } catch {
+        openSendModal(lat, lng, `${lat.toFixed(3)}, ${lng.toFixed(3)}`);
+    }
+});
+
+// ============================================================
+//  جلب اسم المكان
+// ============================================================
+async function reverseGeocode(lat, lng) {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=ar`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('failed');
+    const data = await res.json();
+    const a = data.address || {};
+    return a.city || a.town || a.village || a.county || a.state || a.country || data.display_name || `${lat.toFixed(3)}, ${lng.toFixed(3)}`;
+}
+
+// ============================================================
+//  البحث
+// ============================================================
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+let searchTimeout;
+
+searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    const q = searchInput.value.trim();
+    if (q.length < 2) { searchResults.classList.remove('show'); return; }
+    searchTimeout = setTimeout(() => performSearch(q), 500);
+});
+
+searchInput.addEventListener('blur', () => {
+    setTimeout(() => searchResults.classList.remove('show'), 250);
+});
+
+async function performSearch(query) {
+    try {
+        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=8&accept-language=ar`;
+        const res = await fetch(url);
+        const data = await res.json();
+        renderSearchResults(data);
+    } catch (err) { console.error(err); }
+}
+
+function renderSearchResults(items) {
+    searchResults.innerHTML = '';
+    if (!items || items.length === 0) {
+        searchResults.innerHTML = '<div class="search-result-item">لا توجد نتائج</div>';
+        searchResults.classList.add('show');
+        return;
+    }
+    items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'search-result-item';
+        div.textContent = '📍 ' + item.display_name;
+        div.onclick = () => {
+            const lat = parseFloat(item.lat);
+            const lng = parseFloat(item.lon);
+            const shortName = item.name || item.display_name.split(',')[0];
+            map.setView([lat, lng], 12, { animate: true });
+            searchInput.value = '';
+            searchResults.classList.remove('show');
+            setTimeout(() => openSendModal(lat, lng, shortName), 700);
+        };
+        searchResults.appendChild(div);
+    });
+    searchResults.classList.add('show');
+}
+
+// ============================================================
+//  موقع المستخدم
+// ============================================================
+function initUserLocation() {
+    if (!navigator.geolocation) {
+        showToast('⚠️ المتصفح لا يدعم تحديد الموقع');
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(
+        pos => {
+            userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            drawUserMarker();
+            map.setView([userLocation.lat, userLocation.lng], 12, { animate: true });
+            showToast('📍 تم تحديد موقعك');
+        },
+        err => {
+            console.warn('Geolocation failed', err);
+            showToast('⚠️ تعذر تحديد موقعك، اختر مكاناً على الخريطة');
+        },
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
+    );
+}
+
+function drawUserMarker() {
+    if (!userLocation) return;
+    if (userMarker) map.removeLayer(userMarker);
+    if (userCircle) map.removeLayer(userCircle);
+
+    const icon = L.divIcon({
+        className: 'user-marker',
+        html: '<div class="user-dot"></div>',
+        iconSize: [18, 18],
+        iconAnchor: [9, 9]
+    });
+
+    if (isPrivateMode) {
+        userCircle = L.circle([userLocation.lat, userLocation.lng], {
+            radius: 2000,
+            color: '#FFD700',
+            weight: 1,
+            fillColor: '#FFD700',
+            fillOpacity: 0.1,
+            dashArray: '5, 5'
+        }).addTo(map);
+    }
+    userMarker = L.marker([userLocation.lat, userLocation.lng], { icon }).addTo(map);
+}
+
+// ============================================================
+//  زر الخصوصية
+// ============================================================
+function togglePrivacy() {
+    isPrivateMode = !isPrivateMode;
+    const btn = document.getElementById('privacy-btn');
+    btn.classList.toggle('private', isPrivateMode);
+    btn.textContent = isPrivateMode ? '🙈' : '👁️';
+    drawUserMarker();
+    showToast(isPrivateMode ? '🔒 وضع الخصوصية: يظهر الحي فقط' : '👁️ وضع دقيق: يظهر موقعك بالضبط');
+}
+
+// ============================================================
+//  إشعار
+// ============================================================
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(window._toastTimer);
+    window._toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ============================================================
+//  محاكاة نشاط المستخدمين
+// ============================================================
+const BIG_CITIES = [
+    [24.7, 46.7],  [25.2, 55.3],  [30.0, 31.2],  [41.0, 28.9],  [35.7, 51.4],
+    [40.7, -74.0], [34.0, -118.2],[51.5, -0.1],  [48.8, 2.3],   [55.7, 37.6],
+    [39.9, 116.4], [35.6, 139.7],[-33.8, 151.2],[19.4, -99.1], [23.5, 77.2],
+    [-23.5, -46.6],[31.2, 121.5],[1.35, 103.8], [13.7, 100.5], [37.5, 127.0]
+];
+
+function simulateActivity() {
+    setInterval(() => {
+        const keys = Object.keys(EMOTIONS);
+        const count = 1 + Math.floor(Math.random() * 3);
+        for (let i = 0; i < count; i++) {
+            const city = BIG_CITIES[Math.floor(Math.random() * BIG_CITIES.length)];
+            const lat = city[0] + (Math.random() - 0.5) * 0.3;
+            const lng = city[1] + (Math.random() - 0.5) * 0.3;
+            const key = keys[Math.floor(Math.random() * keys.length)];
+            const emo = EMOTIONS[key];
+            const id = 'sim_' + (++markerIdCounter);
+            const icon = L.divIcon({
+                className: 'emo-marker',
+                html: `<div class="emo-marker-inner" style="color:${emo.color};">
+                         <span class="emo-marker-emoji">${emo.emoji}</span>
+                       </div>`,
+                iconSize: [36, 36],
+                iconAnchor: [18, 18]
+            });
+            const marker = L.marker([lat, lng], { icon, interactive: false }).addTo(map);
+            const timeout = setTimeout(() => {
+                map.removeLayer(marker);
+                delete activeMarkers[id];
+            }, 15000);
+            activeMarkers[id] = { marker, timeout };
+        }
+    }, 2500);
+}
+
+// ============================================================
+//  تشغيل
+// ============================================================
+buildEmotionButtons();
+buildModalEmotions();
+initUserLocation();
+setTimeout(simulateActivity, 2000);
+map.on('contextmenu', e => e.originalEvent.preventDefault());
+</script>
+<script src="features.js"></script>
+<script src="feature-mirror.js"></script>
+<script src="feature-heartbeat.js"></script>
+<script src="feature-chat.js"></script>
+<script src="feature-daily-card.js"></script>
+</body>
+</html>
