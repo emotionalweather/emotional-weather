@@ -1,9 +1,5 @@
 // ============================================================
-//  feature-news-sidebar.js - 📰 نافذة الأخبار
-//  يقرأ من data/news.json (يُحدّث تلقائياً كل ساعة)
-//  - صياغة AI < 30 كلمة
-//  - أولوية ذكية (حرب/كوارث أولاً)
-//  - بدون ذكر المصدر
+//  feature-news-sidebar.js - 📰 نافذة الأخبار + زر تصغير للجوال
 // ============================================================
 
 console.log('📰 جاري تحميل نافذة الأخبار...');
@@ -11,10 +7,7 @@ console.log('📰 جاري تحميل نافذة الأخبار...');
 const NEWS_JSON_URL = 'data/news.json';
 
 // ============================================================
-//  🏳️ كلمات الدول
-// ============================================================
-// ============================================================
-//  🏳️ الدول — من data-countries.js
+//  🏳️ الدول من data-countries.js
 // ============================================================
 const COUNTRY_KEYWORDS = {};
 const COUNTRY_INFO = {};
@@ -30,13 +23,8 @@ if (typeof window.ALL_COUNTRIES !== 'undefined') {
         };
     });
     console.log(`✅ تم تحميل ${Object.keys(COUNTRY_KEYWORDS).length} دولة`);
-} else {
-    console.warn('⚠️ data-countries.js ما حمّل بعد');
 }
 
-// ============================================================
-//  💾 متغيرات عامة
-// ============================================================
 window.__realNewsMood = {};
 window.__realCountryMoods = {};
 window.__realCountryImpact = {};
@@ -82,11 +70,40 @@ function injectNewsStyles() {
         .news-header .live-dot {
             width: 9px; height: 9px; background: #ff4444;
             border-radius: 50%; animation: livePulse 1.5s infinite;
+            flex-shrink: 0;
         }
         @keyframes livePulse {
             0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,68,68,0.5); }
             50% { opacity: 0.6; box-shadow: 0 0 0 10px rgba(255,68,68,0); }
         }
+
+        /* 🔽 زر التصغير — يظهر فقط على الجوال */
+        #news-toggle-btn {
+            display: none;
+            margin-left: auto;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(56, 189, 248, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            color: #38bdf8;
+            font-size: 1rem;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.3s ease, background 0.2s;
+            font-family: inherit;
+            padding: 0;
+        }
+        #news-toggle-btn:active {
+            background: rgba(56, 189, 248, 0.3);
+        }
+        body.lang-en #news-toggle-btn {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
         .news-body {
             flex: 1; overflow-y: auto; padding: 12px 14px; min-height: 0;
         }
@@ -122,9 +139,7 @@ function injectNewsStyles() {
             background: rgba(148,163,184,0.3); transition: all 0.3s;
         }
         .news-tag.loading { animation: pulseTag 1.5s infinite; }
-        @keyframes pulseTag {
-            0%,100% { opacity: 0.5; } 50% { opacity: 1; }
-        }
+        @keyframes pulseTag { 0%,100%{opacity:0.5;} 50%{opacity:1;} }
         .news-title {
             color: #fff; font-size: 0.85rem; line-height: 1.6;
             margin-bottom: 6px; font-weight: 500;
@@ -146,6 +161,8 @@ function injectNewsStyles() {
             margin-bottom: 12px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* 📱 للجوال */
         @media (max-width: 768px) {
             #news-panel {
                 top: auto; bottom: 80px; right: 0; left: 0;
@@ -153,6 +170,36 @@ function injectNewsStyles() {
                 border-left: none;
                 border-top: 1px solid rgba(56,189,248,0.3);
                 border-radius: 20px 20px 0 0;
+                transition: max-height 0.35s ease;
+            }
+
+            #news-toggle-btn {
+                display: flex;
+            }
+
+            /* 🔽 الوضع المصغر */
+            #news-panel.collapsed {
+                max-height: 58px;
+                bottom: 80px;
+            }
+            #news-panel.collapsed .news-body {
+                display: none;
+            }
+            #news-panel.collapsed #news-toggle-btn {
+                transform: rotate(180deg);
+            }
+
+            /* تلميح بسيط على الحافة */
+            #news-panel.collapsed::after {
+                content: '↕ اسحب للأعلى للمزيد';
+                position: absolute;
+                bottom: -22px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0.6rem;
+                color: #64748b;
+                white-space: nowrap;
+                pointer-events: none;
             }
         }
     `;
@@ -172,6 +219,7 @@ function buildNewsPanel() {
         <div class="news-header">
             <span class="live-dot"></span>
             <span>🌍 أخبار العالم — مباشر</span>
+            <button id="news-toggle-btn" title="تصغير / تكبير">▼</button>
         </div>
         <div class="news-body" id="newsBody">
             <div class="news-empty">
@@ -182,15 +230,45 @@ function buildNewsPanel() {
     `;
     document.body.appendChild(newsPanel);
     newsBody = document.getElementById('newsBody');
+
+    // 🔽 زر التصغير
+    const toggleBtn = document.getElementById('news-toggle-btn');
+    if (toggleBtn) {
+        toggleBtn.onclick = (e) => {
+            e.stopPropagation();
+            toggleNewsPanel();
+        };
+    }
+
+    // استرجاع الحالة المحفوظة
+    const savedState = localStorage.getItem('news_panel_collapsed');
+    if (savedState === '1') {
+        newsPanel.classList.add('collapsed');
+    }
 }
+
+// ============================================================
+//  🔽 فتح/إغلاق النافذة (للموبايل)
+// ============================================================
+function toggleNewsPanel() {
+    if (!newsPanel) return;
+    newsPanel.classList.toggle('collapsed');
+    const isCollapsed = newsPanel.classList.contains('collapsed');
+    localStorage.setItem('news_panel_collapsed', isCollapsed ? '1' : '0');
+}
+
+// نصدّرها عشان نقدر نستخدمها من أي مكان
+window.toggleNewsPanel = toggleNewsPanel;
 
 // ============================================================
 //  🎯 كشف الدولة
 // ============================================================
 function detectCountry(title) {
+    if (!title) return null;
     const lower = title.toLowerCase();
     for (const [code, keywords] of Object.entries(COUNTRY_KEYWORDS)) {
         for (const kw of keywords) {
+            if (kw.length < 3) continue;
             if (lower.includes(kw.toLowerCase())) return code;
         }
     }
@@ -278,7 +356,6 @@ function removeFromStats(article) {
     if (window.__realNewsMood[cat]) {
         window.__realNewsMood[cat] = Math.max(0, window.__realNewsMood[cat] - 1);
     }
-
     if (article.countryCode) {
         const code = article.countryCode;
         if (window.__realCountryMoods[code] && window.__realCountryMoods[code][cat]) {
@@ -356,14 +433,12 @@ function updateCardContent(cardEl, article) {
         tagEl.textContent = `${cat.emoji} ${cat.label}`;
         tagEl.style.background = cat.color;
     }
-
     if (metaEl) {
         metaEl.innerHTML = `
             <span style="color:${sentiment.color};">💭 ${sentiment.label}</span>
             <span>💥 ${article.impact}/100</span>
         `;
     }
-
     if (titleEl && article.summary) {
         titleEl.style.opacity = '0.5';
         setTimeout(() => {
@@ -371,7 +446,6 @@ function updateCardContent(cardEl, article) {
             titleEl.style.opacity = '1';
         }, 200);
     }
-
     cardEl.style.borderRightColor = cat.color;
     if (document.body.classList.contains('lang-en')) {
         cardEl.style.borderLeftColor = cat.color;
@@ -394,9 +468,6 @@ function dropMapMarker(countryInfo, mood) {
     } catch (e) {}
 }
 
-// ============================================================
-//  🛡️ حماية
-// ============================================================
 function escapeHTML(str) {
     const div = document.createElement('div');
     div.textContent = str || '';
