@@ -10,7 +10,8 @@ console.log('🎨 جاري تحميل خريطة المزاج...');
 //  🌍 ربط أكواد الدول
 //  GeoJSON يستخدم ISO3 (SAU)، وأكوادنا ISO2 (SA)
 // ============================================================
-const ISO3_TO_ISO2 = {
+// نستخدم ISO3_TO_ISO2 من data-countries.js
+const ISO3_TO_ISO2 = window.ISO3_TO_ISO2 || {
     'SAU': 'SA', 'ARE': 'AE', 'QAT': 'QA', 'KWT': 'KW', 'BHR': 'BH',
     'OMN': 'OM', 'YEM': 'YE', 'EGY': 'EG', 'SDN': 'SD', 'LBY': 'LY',
     'TUN': 'TN', 'DZA': 'DZ', 'MAR': 'MA', 'MRT': 'MR', 'JOR': 'JO',

@@ -13,55 +13,26 @@ const NEWS_JSON_URL = 'data/news.json';
 // ============================================================
 //  🏳️ كلمات الدول
 // ============================================================
-const COUNTRY_KEYWORDS = {
-    SA: ['السعودية','الرياض','جدة','Saudi','Riyadh'],
-    AE: ['الإمارات','دبي','أبوظبي','UAE','Dubai'],
-    QA: ['قطر','الدوحة','Qatar','Doha'],
-    KW: ['الكويت','Kuwait'],
-    BH: ['البحرين','المنامة','Bahrain'],
-    OM: ['عُمان','مسقط','Oman'],
-    YE: ['اليمن','صنعاء','عدن','Yemen'],
-    EG: ['مصر','القاهرة','الإسكندرية','Egypt','Cairo'],
-    SD: ['السودان','الخرطوم','Sudan'],
-    LY: ['ليبيا','طرابلس','Libya'],
-    TN: ['تونس','Tunisia'],
-    DZ: ['الجزائر','وهران','Algeria'],
-    MA: ['المغرب','الرباط','Morocco'],
-    MR: ['موريتانيا','نواكشوط','Mauritania'],
-    JO: ['الأردن','عمّان','Jordan'],
-    LB: ['لبنان','بيروت','Lebanon'],
-    SY: ['سوريا','دمشق','Syria'],
-    IQ: ['العراق','بغداد','Iraq'],
-    PS: ['فلسطين','غزة','القدس','Palestine','Gaza'],
-    DJ: ['جيبوتي','Djibouti'],
-    SO: ['الصومال','Somalia'],
-    KM: ['جزر القمر','Comoros']
-};
+// ============================================================
+//  🏳️ الدول — من data-countries.js
+// ============================================================
+const COUNTRY_KEYWORDS = {};
+const COUNTRY_INFO = {};
 
-const COUNTRY_INFO = {
-    SA:{flag:'🇸🇦',name:'السعودية',lat:24.7,lng:46.7},
-    AE:{flag:'🇦🇪',name:'الإمارات',lat:25.2,lng:55.3},
-    QA:{flag:'🇶🇦',name:'قطر',lat:25.3,lng:51.5},
-    KW:{flag:'🇰🇼',name:'الكويت',lat:29.4,lng:47.9},
-    BH:{flag:'🇧🇭',name:'البحرين',lat:26.2,lng:50.6},
-    OM:{flag:'🇴🇲',name:'عُمان',lat:23.6,lng:58.4},
-    YE:{flag:'🇾🇪',name:'اليمن',lat:15.4,lng:44.2},
-    EG:{flag:'🇪🇬',name:'مصر',lat:30.0,lng:31.2},
-    SD:{flag:'🇸🇩',name:'السودان',lat:15.5,lng:32.5},
-    LY:{flag:'🇱🇾',name:'ليبيا',lat:32.9,lng:13.2},
-    TN:{flag:'🇹🇳',name:'تونس',lat:36.8,lng:10.2},
-    DZ:{flag:'🇩🇿',name:'الجزائر',lat:36.7,lng:3.1},
-    MA:{flag:'🇲🇦',name:'المغرب',lat:34.0,lng:-6.8},
-    MR:{flag:'🇲🇷',name:'موريتانيا',lat:18.1,lng:-15.9},
-    JO:{flag:'🇯🇴',name:'الأردن',lat:31.9,lng:35.9},
-    LB:{flag:'🇱🇧',name:'لبنان',lat:33.9,lng:35.5},
-    SY:{flag:'🇸🇾',name:'سوريا',lat:33.5,lng:36.3},
-    IQ:{flag:'🇮🇶',name:'العراق',lat:33.3,lng:44.4},
-    PS:{flag:'🇵🇸',name:'فلسطين',lat:31.9,lng:35.2},
-    DJ:{flag:'🇩🇯',name:'جيبوتي',lat:11.6,lng:43.1},
-    SO:{flag:'🇸🇴',name:'الصومال',lat:2.0,lng:45.3},
-    KM:{flag:'🇰🇲',name:'جزر القمر',lat:-11.7,lng:43.3}
-};
+if (typeof window.ALL_COUNTRIES !== 'undefined') {
+    window.ALL_COUNTRIES.forEach(c => {
+        COUNTRY_KEYWORDS[c.code] = c.kw;
+        COUNTRY_INFO[c.code] = {
+            flag: c.flag,
+            name: c.ar,
+            lat: c.lat,
+            lng: c.lng
+        };
+    });
+    console.log(`✅ تم تحميل ${Object.keys(COUNTRY_KEYWORDS).length} دولة`);
+} else {
+    console.warn('⚠️ data-countries.js ما حمّل بعد');
+}
 
 // ============================================================
 //  💾 متغيرات عامة
