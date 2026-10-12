@@ -1,9 +1,21 @@
 // ============================================================
-//  feature-heartbeat.js - 🌍 نبض البشرية (نسخة حقيقية 100%)
-//  يبني الإحصائيات من الأخبار الحقيقية فقط — بدون محاكاة
+//  feature-heartbeat.js - 🌍 نبض البشرية (حقيقي 100%)
+//  مبني على الأخبار الحقيقية من news-sidebar
+//  بدون أي محاكاة
 // ============================================================
 
 console.log('🌍 جاري تحميل نبض البشرية...');
+
+// ============================================================
+//  🌐 دالة مساعدة للترجمة
+// ============================================================
+function getLangHB() {
+    return document.body.classList.contains('lang-en') ? 'en' : 'ar';
+}
+
+function tHB(ar, en) {
+    return getLangHB() === 'ar' ? ar : en;
+}
 
 // ============================================================
 //  🎨 CSS
@@ -242,7 +254,7 @@ function injectHeartbeatStyles() {
 }
 
 // ============================================================
-//  🔘 إضافة الزر
+//  🔘 الزر
 // ============================================================
 function addHeartbeatButton() {
     if (document.getElementById('heartbeat-btn')) return;
@@ -251,19 +263,18 @@ function addHeartbeatButton() {
 
     const btn = document.createElement('button');
     btn.id = 'heartbeat-btn';
-    btn.title = 'نبض البشرية';
+    btn.title = tHB('نبض البشرية', 'Humanity\'s Pulse');
     btn.textContent = '🌍';
     btn.onclick = openHeartbeat;
     topBar.appendChild(btn);
 }
 
 // ============================================================
-//  📊 الإحصائيات الحقيقية (مبنية على الأخبار)
+//  📊 الإحصائيات الحقيقية (من الأخبار)
 // ============================================================
 function getRealGlobalStats() {
     const newsMood = window.__realNewsMood || {};
 
-    // تحويل تصنيفات الأخبار إلى مشاعر
     const newsToEmotion = {
         war: 'angry',
         disaster: 'sad',
@@ -282,10 +293,7 @@ function getRealGlobalStats() {
         counts[emoKey] = (counts[emoKey] || 0) + count;
     });
 
-    // لو ما فيه بيانات بعد
-    if (Object.keys(counts).length === 0) {
-        return [];
-    }
+    if (Object.keys(counts).length === 0) return [];
 
     const stats = [];
     let total = 0;
@@ -316,8 +324,8 @@ function openHeartbeat() {
         modal.innerHTML = `
             <div class="heartbeat-scene">
                 <div class="heartbeat-header">
-                    <h2>🌍 نبض البشرية</h2>
-                    <p>مشاعر العالم العربي في هذه اللحظة — مبني على الأخبار الحقيقية</p>
+                    <h2>🌍 ${tHB('نبض البشرية', 'Humanity\'s Pulse')}</h2>
+                    <p>${tHB('مشاعر العالم العربي في هذه اللحظة — مبني على الأخبار الحقيقية', 'Arab World\'s emotions right now — based on real news')}</p>
                 </div>
 
                 <div class="heartbeat-stage" id="heartbeatStage">
@@ -328,14 +336,14 @@ function openHeartbeat() {
                 </div>
 
                 <div class="heartbeat-dominant">
-                    <div class="heartbeat-dominant-label">المشعر السائد الآن</div>
+                    <div class="heartbeat-dominant-label">${tHB('المشعر السائد الآن', 'Dominant Emotion Now')}</div>
                     <div class="heartbeat-dominant-emotion" id="hbDominantName">—</div>
                     <div class="heartbeat-dominant-percent" id="hbDominantPct">—</div>
                 </div>
 
                 <div class="heartbeat-stats" id="hbStats"></div>
 
-                <button class="heartbeat-close" id="heartbeatCloseBtn">إغلاق</button>
+                <button class="heartbeat-close" id="heartbeatCloseBtn">${tHB('إغلاق', 'Close')}</button>
             </div>
         `;
         document.body.appendChild(modal);
@@ -383,7 +391,7 @@ function addStars() {
 }
 
 // ============================================================
-//  🎨 تحديث النبض
+//  🎨 التحديث
 // ============================================================
 function updateHeartbeat() {
     const stats = getRealGlobalStats();
@@ -393,30 +401,31 @@ function updateHeartbeat() {
     const globe = document.getElementById('heartbeatGlobe');
     const core = document.getElementById('heartbeatCore');
 
-    // لو ما فيه بيانات بعد
     if (stats.length === 0) {
-        if (nameEl) { nameEl.textContent = 'جاري التحليل...'; nameEl.style.color = '#94a3b8'; }
-        if (pctEl) pctEl.textContent = 'في انتظار الأخبار';
-        if (statsEl) statsEl.innerHTML = '<div class="heartbeat-empty">📡 ننتظر الأخبار عشان نحلل المزاج...</div>';
+        if (nameEl) { nameEl.textContent = tHB('جاري التحليل...', 'Analyzing...'); nameEl.style.color = '#94a3b8'; }
+        if (pctEl) pctEl.textContent = tHB('في انتظار الأخبار', 'Waiting for news');
+        if (statsEl) statsEl.innerHTML = `<div class="heartbeat-empty">📡 ${tHB('ننتظر الأخبار عشان نحلل المزاج...', 'Waiting for news to analyze mood...')}</div>`;
         return;
     }
 
     const dominant = stats[0];
     const emo = EMOTIONS[dominant.key] || EMOTIONS.neutral;
+    const lang = getLangHB();
 
     if (globe) globe.style.color = emo.color;
     if (core) core.textContent = emo.emoji;
     if (nameEl) {
-        nameEl.textContent = emo.name;
+        nameEl.textContent = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
         nameEl.style.color = emo.color;
     }
     if (pctEl) {
-        pctEl.textContent = `يمثل ${dominant.percent.toFixed(1)}% من الأخبار`;
+        pctEl.textContent = tHB(
+            `يمثل ${dominant.percent.toFixed(1)}% من الأخبار`,
+            `Represents ${dominant.percent.toFixed(1)}% of news`
+        );
     }
 
     renderStats(stats, dominant.key);
-
-    // نبضة جديدة
     spawnPulseWave(emo.color);
 }
 
@@ -442,19 +451,40 @@ function renderStats(stats, dominantKey) {
     if (!container) return;
     container.innerHTML = '';
 
+    const lang = getLangHB();
+
     stats.forEach(s => {
         const emo = EMOTIONS[s.key];
         if (!emo) return;
         const item = document.createElement('div');
         item.className = 'stat-item' + (s.key === dominantKey ? ' dominant' : '');
+        const emoName = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
         item.innerHTML = `
             <span class="stat-emoji">${emo.emoji}</span>
-            <span class="stat-name">${emo.name}</span>
+            <span class="stat-name">${emoName}</span>
             <span class="stat-pct" style="color:${emo.color};">${s.percent.toFixed(1)}%</span>
         `;
         container.appendChild(item);
     });
 }
+
+// ============================================================
+//  🔄 تحديث عند تغيير اللغة
+// ============================================================
+window.addEventListener('languageChanged', () => {
+    const btn = document.getElementById('heartbeat-btn');
+    if (btn) btn.title = tHB('نبض البشرية', 'Humanity\'s Pulse');
+
+    const modal = document.getElementById('heartbeat-modal');
+    if (modal) {
+        const isOpen = modal.classList.contains('show');
+        modal.remove();
+        heartbeatStarsAdded = false;
+        if (isOpen) {
+            setTimeout(openHeartbeat, 100);
+        }
+    }
+});
 
 // ============================================================
 //  🚀 التشغيل

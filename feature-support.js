@@ -1,18 +1,64 @@
 // ============================================================
-//  feature-support.js - ☕ زر الدعم
+//  feature-support.js - ☕ زر الدعم (عربي + إنجليزي)
+//  محفظة BNB Chain على MetaMask
 // ============================================================
 
 console.log('☕ جاري تحميل زر الدعم...');
 
 // ============================================================
-//  ⚙️ عدل هذي المعلومات بمعلوماتك
+//  ⚙️ إعدادات المحفظة
 // ============================================================
 const SUPPORT_CONFIG = {
-    walletName: 'BNB Chain (BSC) - MetaMask',
     walletNumber: '0xC3fe99402A56Cf9d50B8A12d1F30548B7d58938d',
-    message: 'ساهم في استمرار الموقع وتطويره 🤍',
-    note: 'أي مبلغ، حتى لو صغير، يساعدنا نستمر'
+    walletName: {
+        ar: 'MetaMask (شبكة BNB Chain)',
+        en: 'MetaMask (BNB Chain)'
+    },
+    message: {
+        ar: 'ساهم في استمرار الموقع وتطويره 🤍',
+        en: 'Contribute to keeping this site running and improving 🤍'
+    },
+    note: {
+        ar: 'أي مبلغ، حتى لو صغير، يساعدنا نستمر',
+        en: 'Any amount, however small, helps us continue'
+    },
+    title: {
+        ar: 'ادعم الموقع',
+        en: 'Support the Site'
+    },
+    walletLabel: {
+        ar: 'محفظة الدعم',
+        en: 'Support Wallet'
+    },
+    closeBtn: {
+        ar: 'إغلاق',
+        en: 'Close'
+    },
+    copiedMsg: {
+        ar: '✓ تم النسخ',
+        en: '✓ Copied'
+    },
+    copyHint: {
+        ar: 'اضغط على العنوان لنسخه',
+        en: 'Click address to copy'
+    }
 };
+
+// ============================================================
+//  🌐 الترجمة
+// ============================================================
+function getLangSup() {
+    return document.body.classList.contains('lang-en') ? 'en' : 'ar';
+}
+
+function getText(key) {
+    const lang = getLangSup();
+    const val = SUPPORT_CONFIG[key];
+    if (typeof val === 'object' && val !== null) {
+        return val[lang] || val.ar;
+    }
+    return val;
+}
 
 // ============================================================
 //  🎨 CSS
@@ -105,8 +151,8 @@ function injectSupportStyles() {
             border-radius: 14px;
             padding: 16px;
             margin-bottom: 18px;
-            text-align: left;
             direction: ltr;
+            text-align: left;
         }
         .support-wallet-label {
             color: #94a3b8;
@@ -114,16 +160,20 @@ function injectSupportStyles() {
             margin-bottom: 6px;
             letter-spacing: 1px;
             text-transform: uppercase;
+            direction: inherit;
+            text-align: inherit;
         }
         .support-wallet-name {
             color: #FFD700;
             font-size: 0.85rem;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            direction: inherit;
+            text-align: inherit;
         }
         .support-wallet-number {
             color: #fff;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-family: 'Courier New', monospace;
             word-break: break-all;
             background: rgba(0,0,0,0.4);
@@ -132,10 +182,12 @@ function injectSupportStyles() {
             cursor: pointer;
             transition: background 0.2s;
             position: relative;
+            direction: ltr;
+            text-align: left;
         }
         .support-wallet-number:hover { background: rgba(0,0,0,0.6); }
         .support-wallet-number.copied::after {
-            content: '✓ تم النسخ';
+            content: attr(data-copied);
             position: absolute;
             right: 8px;
             top: 50%;
@@ -143,6 +195,17 @@ function injectSupportStyles() {
             color: #00ff96;
             font-size: 0.7rem;
             font-weight: 700;
+            background: rgba(0,0,0,0.7);
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .support-copy-hint {
+            color: #64748b;
+            font-size: 0.68rem;
+            margin-top: 8px;
+            direction: inherit;
+            text-align: inherit;
         }
 
         .support-note {
@@ -168,7 +231,7 @@ function injectSupportStyles() {
 }
 
 // ============================================================
-//  🔘 إضافة الزر
+//  🔘 الزر
 // ============================================================
 function addSupportButton() {
     if (document.getElementById('support-btn')) return;
@@ -177,55 +240,118 @@ function addSupportButton() {
 
     const btn = document.createElement('button');
     btn.id = 'support-btn';
-    btn.title = 'ادعمني';
+    btn.title = getText('title');
     btn.textContent = '☕';
     btn.onclick = openSupport;
     topBar.appendChild(btn);
 }
 
 // ============================================================
-//  🪟 فتح وإغلاق
+//  🪟 فتح النافذة
 // ============================================================
 function openSupport() {
     let modal = document.getElementById('support-modal');
     if (!modal) {
         modal = document.createElement('div');
         modal.id = 'support-modal';
-        modal.innerHTML = `
-            <div class="support-card">
-                <div class="support-emoji">🤍</div>
-                <div class="support-title">ادعم الموقع</div>
-                <div class="support-msg">${SUPPORT_CONFIG.message}</div>
-                <div class="support-wallet">
-                    <div class="support-wallet-label">محفظة الدعم</div>
-                    <div class="support-wallet-name">${SUPPORT_CONFIG.walletName}</div>
-                    <div class="support-wallet-number" id="walletNum">${SUPPORT_CONFIG.walletNumber}</div>
-                </div>
-                <div class="support-note">${SUPPORT_CONFIG.note}</div>
-                <button class="support-close" onclick="closeSupport()">إغلاق</button>
-            </div>
-        `;
         document.body.appendChild(modal);
         modal.addEventListener('click', e => {
             if (e.target === modal) closeSupport();
         });
-        document.getElementById('walletNum').onclick = copyWallet;
     }
+    renderSupportContent();
     modal.classList.add('show');
 }
 
+function renderSupportContent() {
+    const modal = document.getElementById('support-modal');
+    if (!modal) return;
+
+    const lang = getLangSup();
+    const isAr = lang === 'ar';
+
+    modal.innerHTML = `
+        <div class="support-card" style="direction: ${isAr ? 'rtl' : 'ltr'};">
+            <div class="support-emoji">🤍</div>
+            <div class="support-title">${getText('title')}</div>
+            <div class="support-msg">${getText('message')}</div>
+
+            <div class="support-wallet">
+                <div class="support-wallet-label">${getText('walletLabel')}</div>
+                <div class="support-wallet-name">${getText('walletName')}</div>
+                <div class="support-wallet-number" id="walletNum" data-copied="${getText('copiedMsg')}">${SUPPORT_CONFIG.walletNumber}</div>
+                <div class="support-copy-hint">${getText('copyHint')}</div>
+            </div>
+
+            <div class="support-note">${getText('note')}</div>
+
+            <button class="support-close" onclick="closeSupport()">${getText('closeBtn')}</button>
+        </div>
+    `;
+
+    document.getElementById('walletNum').onclick = copyWallet;
+}
+
+// ============================================================
+//  📋 نسخ
+// ============================================================
+function copyWallet() {
+    const el = document.getElementById('walletNum');
+    if (!el) return;
+    const wallet = SUPPORT_CONFIG.walletNumber;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(wallet).then(() => {
+            showCopiedState(el);
+        }).catch(() => {
+            fallbackCopy(wallet, el);
+        });
+    } else {
+        fallbackCopy(wallet, el);
+    }
+}
+
+function fallbackCopy(text, el) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+        document.execCommand('copy');
+        showCopiedState(el);
+    } catch (e) {
+        console.warn('copy failed', e);
+    }
+    document.body.removeChild(ta);
+}
+
+function showCopiedState(el) {
+    el.classList.add('copied');
+    setTimeout(() => el.classList.remove('copied'), 2000);
+}
+
+// ============================================================
+//  ❌ إغلاق
+// ============================================================
 function closeSupport() {
     const modal = document.getElementById('support-modal');
     if (modal) modal.classList.remove('show');
 }
 
-function copyWallet() {
-    const el = document.getElementById('walletNum');
-    navigator.clipboard.writeText(SUPPORT_CONFIG.walletNumber).then(() => {
-        el.classList.add('copied');
-        setTimeout(() => el.classList.remove('copied'), 2000);
-    });
-}
+// ============================================================
+//  🔄 تحديث عند تغيير اللغة
+// ============================================================
+window.addEventListener('languageChanged', () => {
+    const btn = document.getElementById('support-btn');
+    if (btn) btn.title = getText('title');
+
+    const modal = document.getElementById('support-modal');
+    if (modal && modal.classList.contains('show')) {
+        renderSupportContent();
+    }
+});
 
 // ============================================================
 //  🚀 التشغيل

@@ -1,8 +1,8 @@
 // ============================================================
-//  feature-news-sidebar.js - 📰 نافذة الأخبار العربية الطويلة
-//  تجيب أخبار حقيقية من 22 دولة عربية وتحللها
-//  ملاحظة: تخزن البيانات في window.__realCountryMoods و window.__realNewsMood
-//  عشان تستخدمها باقي الميزات (مرآة المشاعر + نبض البشرية)
+//  feature-news-sidebar.js - 📰 نافذة الأخبار العربية (كامل)
+//  - جلب عشوائي من 22 دولة
+//  - فلترة اللغات (عربي/إنجليزي)
+//  - تخزين البيانات لـ mirror + heartbeat + mood-map
 // ============================================================
 
 console.log('📰 جاري تحميل نافذة الأخبار...');
@@ -72,10 +72,9 @@ function classifyNews(text) {
 // ============================================================
 //  💾 المتغيرات العامة (تستخدمها باقي الميزات)
 // ============================================================
-window.__realNewsMood = {};      // { war: 5, economy: 3, ... } - إجمالي عالمي
-window.__realCountryMoods = {};  // { SA: { war: 2, economy: 1 }, EG: {...} }
+window.__realNewsMood = {};
+window.__realCountryMoods = {};
 
-// تهيئة كل دولة
 ARAB_COUNTRIES.forEach(c => {
     window.__realCountryMoods[c.code] = {};
 });
@@ -92,7 +91,7 @@ function injectNewsStyles() {
             position: fixed;
             top: 110px;
             right: 0;
-            bottom: 0;
+            bottom: 60px;
             width: 380px;
             background: rgba(10, 18, 30, 0.98);
             border-left: 1px solid rgba(56, 189, 248, 0.3);
@@ -207,11 +206,11 @@ function injectNewsStyles() {
         @media (max-width: 768px) {
             #news-panel {
                 top: auto;
-                bottom: 0;
+                bottom: 80px;
                 right: 0;
                 left: 0;
                 width: 100%;
-                max-height: 55vh;
+                max-height: 50vh;
                 border-left: none;
                 border-top: 1px solid rgba(56, 189, 248, 0.3);
                 border-radius: 20px 20px 0 0;
@@ -225,7 +224,6 @@ function injectNewsStyles() {
 //  🏗️ بناء النافذة
 // ============================================================
 let newsPanel, newsBody;
-let countryIdx = 0;
 
 function buildNewsPanel() {
     if (document.getElementById('news-panel')) return;
@@ -246,12 +244,13 @@ function buildNewsPanel() {
 }
 
 // ============================================================
-//  📰 جلب الأخبار من GDELT
+//  📰 جلب أخبار دولة (فلتر لغات)
 // ============================================================
 async function fetchCountryNews(country) {
     try {
         const query = encodeURIComponent(country.q);
-        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}&mode=artlist&maxrecords=10&format=json&sort=datedesc`;
+        // فلتر: عربي أو إنجليزي فقط
+        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${query}%20sourcelang:arabic%20OR%20sourcelang:english&mode=artlist&maxrecords=10&format=json&sort=datedesc`;
 
         const res = await fetch(url);
         if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -274,22 +273,37 @@ async function fetchCountryNews(country) {
 }
 
 // ============================================================
-//  🔄 جلب دوري
+//  🔄 جلب عشوائي (بدون تكرار متتابع)
 // ============================================================
-async function fetchNextCountry() {
-    const country = ARAB_COUNTRIES[countryIdx];
+let recentCountries = [];
+
+async function fetchRandomCountry() {
+    let country;
+    let attempts = 0;
+    do {
+        country = ARAB_COUNTRIES[Math.floor(Math.random() * ARAB_COUNTRIES.length)];
+        attempts++;
+    } while (recentCountries.includes(country.code) && attempts < 20);
+
+    recentCountries.push(country.code);
+    if (recentCountries.length > 6) recentCountries.shift();
 
     const articles = await fetchCountryNews(country);
+    processArticles(country, articles);
+}
 
+// ============================================================
+//  📊 معالجة الأخبار
+// ============================================================
+function processArticles(country, articles) {
     articles.forEach(a => {
         const cat = classifyNews(a.title);
         a.category = cat;
 
-        // ✅ تحديث الإحصائيات الحقيقية
-        // عالمية
+        // إحصائيات عالمية
         window.__realNewsMood[cat] = (window.__realNewsMood[cat] || 0) + 1;
 
-        // لكل دولة
+        // إحصائيات الدولة
         if (!window.__realCountryMoods[country.code]) {
             window.__realCountryMoods[country.code] = {};
         }
@@ -312,8 +326,6 @@ async function fetchNextCountry() {
             }
         }
     });
-
-    countryIdx = (countryIdx + 1) % ARAB_COUNTRIES.length;
 }
 
 // ============================================================
@@ -352,7 +364,6 @@ function displayNewsCard(news) {
 
     newsBody.insertBefore(card, newsBody.firstChild);
 
-    // احتفظ بآخر 40 خبر
     while (newsBody.children.length > 40) {
         newsBody.removeChild(newsBody.lastChild);
     }
@@ -365,19 +376,36 @@ function escapeHTML(str) {
 }
 
 // ============================================================
+//  🚀 جلب أولي لكل الدول (مرة وحدة)
+// ============================================================
+async function fetchAllInitial() {
+    console.log('🚀 جاري جلب أخبار كل الدول العربية...');
+
+    // نخلط الترتيب عشان ما يكون ثابت
+    const shuffled = [...ARAB_COUNTRIES].sort(() => Math.random() - 0.5);
+
+    for (const country of shuffled) {
+        const articles = await fetchCountryNews(country);
+        processArticles(country, articles);
+        await new Promise(r => setTimeout(r, 400));
+    }
+    console.log('✅ تم جلب كل الأخبار الأولية');
+}
+
+// ============================================================
 //  🚀 التشغيل
 // ============================================================
 function initNewsFeature() {
     injectNewsStyles();
     buildNewsPanel();
 
-    // جلب أول دولة فوراً
-    fetchNextCountry();
+    // جلب أولي لكل الدول
+    fetchAllInitial();
 
-    // جلب كل 8 ثواني دولة
-    setInterval(fetchNextCountry, 8000);
+    // بعدها جلب عشوائي كل 5 ثواني
+    setInterval(fetchRandomCountry, 5000);
 
-    console.log('✅ تم تفعيل نافذة الأخبار (حقيقية)!');
+    console.log('✅ تم تفعيل نافذة الأخبار!');
 }
 
 if (document.readyState === 'loading') {

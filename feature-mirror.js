@@ -1,37 +1,69 @@
 // ============================================================
-//  feature-mirror.js - 🪞 مرآة المشاعر (نسخة حقيقية 100%)
-//  تعتمد على بيانات الأخبار الحقيقية — بدون أي محاكاة
+//  feature-mirror.js - 🪞 مرآة المشاعر (حقيقية 100%)
+//  تعتمد على بيانات الأخبار الحقيقية من news-sidebar
+//  بدون أي محاكاة
 // ============================================================
 
 console.log('🪞 جاري تحميل مرآة المشاعر...');
 
 // ============================================================
-//  🌍 قائمة الدول العربية (نستخدمها للطيران)
+//  🌍 الدول العربية (نفس القائمة عشان تتطابق)
 // ============================================================
 const MIRROR_COUNTRIES = {
-    SA: { name: 'السعودية', flag: '🇸🇦', lat: 24.7, lng: 46.7 },
-    AE: { name: 'الإمارات', flag: '🇦🇪', lat: 25.2, lng: 55.3 },
-    QA: { name: 'قطر', flag: '🇶🇦', lat: 25.3, lng: 51.5 },
-    KW: { name: 'الكويت', flag: '🇰🇼', lat: 29.4, lng: 47.9 },
-    BH: { name: 'البحرين', flag: '🇧🇭', lat: 26.2, lng: 50.6 },
-    OM: { name: 'عُمان', flag: '🇴🇲', lat: 23.6, lng: 58.4 },
-    YE: { name: 'اليمن', flag: '🇾🇪', lat: 15.4, lng: 44.2 },
-    EG: { name: 'مصر', flag: '🇪🇬', lat: 30.0, lng: 31.2 },
-    SD: { name: 'السودان', flag: '🇸🇩', lat: 15.5, lng: 32.5 },
-    LY: { name: 'ليبيا', flag: '🇱🇾', lat: 32.9, lng: 13.2 },
-    TN: { name: 'تونس', flag: '🇹🇳', lat: 36.8, lng: 10.2 },
-    DZ: { name: 'الجزائر', flag: '🇩🇿', lat: 36.7, lng: 3.1 },
-    MA: { name: 'المغرب', flag: '🇲🇦', lat: 34.0, lng: -6.8 },
-    MR: { name: 'موريتانيا', flag: '🇲🇷', lat: 18.1, lng: -15.9 },
-    JO: { name: 'الأردن', flag: '🇯🇴', lat: 31.9, lng: 35.9 },
-    LB: { name: 'لبنان', flag: '🇱🇧', lat: 33.9, lng: 35.5 },
-    SY: { name: 'سوريا', flag: '🇸🇾', lat: 33.5, lng: 36.3 },
-    IQ: { name: 'العراق', flag: '🇮🇶', lat: 33.3, lng: 44.4 },
-    PS: { name: 'فلسطين', flag: '🇵🇸', lat: 31.9, lng: 35.2 },
-    DJ: { name: 'جيبوتي', flag: '🇩🇯', lat: 11.6, lng: 43.1 },
-    SO: { name: 'الصومال', flag: '🇸🇴', lat: 2.0, lng: 45.3 },
-    KM: { name: 'جزر القمر', flag: '🇰🇲', lat: -11.7, lng: 43.3 }
+    SA: { name: 'السعودية', nameEn: 'Saudi Arabia', flag: '🇸🇦', lat: 24.7, lng: 46.7 },
+    AE: { name: 'الإمارات', nameEn: 'UAE', flag: '🇦🇪', lat: 25.2, lng: 55.3 },
+    QA: { name: 'قطر', nameEn: 'Qatar', flag: '🇶🇦', lat: 25.3, lng: 51.5 },
+    KW: { name: 'الكويت', nameEn: 'Kuwait', flag: '🇰🇼', lat: 29.4, lng: 47.9 },
+    BH: { name: 'البحرين', nameEn: 'Bahrain', flag: '🇧🇭', lat: 26.2, lng: 50.6 },
+    OM: { name: 'عُمان', nameEn: 'Oman', flag: '🇴🇲', lat: 23.6, lng: 58.4 },
+    YE: { name: 'اليمن', nameEn: 'Yemen', flag: '🇾🇪', lat: 15.4, lng: 44.2 },
+    EG: { name: 'مصر', nameEn: 'Egypt', flag: '🇪🇬', lat: 30.0, lng: 31.2 },
+    SD: { name: 'السودان', nameEn: 'Sudan', flag: '🇸🇩', lat: 15.5, lng: 32.5 },
+    LY: { name: 'ليبيا', nameEn: 'Libya', flag: '🇱🇾', lat: 32.9, lng: 13.2 },
+    TN: { name: 'تونس', nameEn: 'Tunisia', flag: '🇹🇳', lat: 36.8, lng: 10.2 },
+    DZ: { name: 'الجزائر', nameEn: 'Algeria', flag: '🇩🇿', lat: 36.7, lng: 3.1 },
+    MA: { name: 'المغرب', nameEn: 'Morocco', flag: '🇲🇦', lat: 34.0, lng: -6.8 },
+    MR: { name: 'موريتانيا', nameEn: 'Mauritania', flag: '🇲🇷', lat: 18.1, lng: -15.9 },
+    JO: { name: 'الأردن', nameEn: 'Jordan', flag: '🇯🇴', lat: 31.9, lng: 35.9 },
+    LB: { name: 'لبنان', nameEn: 'Lebanon', flag: '🇱🇧', lat: 33.9, lng: 35.5 },
+    SY: { name: 'سوريا', nameEn: 'Syria', flag: '🇸🇾', lat: 33.5, lng: 36.3 },
+    IQ: { name: 'العراق', nameEn: 'Iraq', flag: '🇮🇶', lat: 33.3, lng: 44.4 },
+    PS: { name: 'فلسطين', nameEn: 'Palestine', flag: '🇵🇸', lat: 31.9, lng: 35.2 },
+    DJ: { name: 'جيبوتي', nameEn: 'Djibouti', flag: '🇩🇯', lat: 11.6, lng: 43.1 },
+    SO: { name: 'الصومال', nameEn: 'Somalia', flag: '🇸🇴', lat: 2.0, lng: 45.3 },
+    KM: { name: 'جزر القمر', nameEn: 'Comoros', flag: '🇰🇲', lat: -11.7, lng: 43.3 }
 };
+
+// ============================================================
+//  🎭 ربط المشاعر بتصنيفات الأخبار
+// ============================================================
+const EMOTION_TO_CATEGORIES = {
+    angry:       ['war'],
+    sad:         ['disaster'],
+    anxious:     ['crisis', 'health'],
+    calm:        ['economy'],
+    neutral:     ['politics'],
+    joy:         ['sports', 'culture'],
+    hope:        ['positive'],
+    // مشاعر ما لها تصنيف مباشر → نعتبرها عامة
+    grateful:    ['positive'],
+    love:        ['culture'],
+    fear:        ['war', 'crisis'],
+    frustration: ['crisis'],
+    stress:      ['crisis'],
+    stress:      ['crisis']
+};
+
+// ============================================================
+//  🌐 دالة مساعدة للترجمة
+// ============================================================
+function getLang() {
+    return document.body.classList.contains('lang-en') ? 'en' : 'ar';
+}
+
+function tMirror(ar, en) {
+    return getLang() === 'ar' ? ar : en;
+}
 
 // ============================================================
 //  🎨 CSS
@@ -85,6 +117,7 @@ function injectMirrorStyles() {
             text-align: center;
             box-shadow: 0 0 60px rgba(255, 105, 180, 0.3);
             animation: mirrorIn 0.5s ease;
+            color: #fff;
         }
         @keyframes mirrorIn {
             from { opacity: 0; transform: scale(0.9); }
@@ -104,6 +137,7 @@ function injectMirrorStyles() {
             color: #94a3b8;
             font-size: 0.85rem;
             margin-bottom: 24px;
+            line-height: 1.6;
         }
 
         .mirror-emotions {
@@ -164,7 +198,7 @@ function injectMirrorStyles() {
             margin-bottom: 6px;
         }
         .mirror-result-country {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #94a3b8;
             margin-bottom: 20px;
         }
@@ -235,7 +269,7 @@ function injectMirrorStyles() {
 }
 
 // ============================================================
-//  🔘 إضافة الزر
+//  🔘 الزر
 // ============================================================
 function addMirrorButton() {
     if (document.getElementById('mirror-btn')) return;
@@ -244,14 +278,14 @@ function addMirrorButton() {
 
     const btn = document.createElement('button');
     btn.id = 'mirror-btn';
-    btn.title = 'مرآة المشاعر';
+    btn.title = tMirror('مرآة المشاعر', 'Emotion Mirror');
     btn.textContent = '🪞';
     btn.onclick = openMirrorModal;
     topBar.appendChild(btn);
 }
 
 // ============================================================
-//  🪟 فتح النافذة
+//  🪟 فتح وإغلاق
 // ============================================================
 function openMirrorModal() {
     let modal = document.getElementById('mirror-modal');
@@ -274,48 +308,56 @@ function closeMirrorModal() {
 }
 
 // ============================================================
-//  🎭 عرض المشاعر للاختيار
+//  🎭 اختيار المشعر
 // ============================================================
 function showMirrorEmotionPicker() {
     const inner = document.getElementById('mirrorCardInner');
     if (!inner) return;
 
     inner.innerHTML = `
-        <div class="mirror-title">🪞 مرآة المشاعر</div>
-        <div class="mirror-subtitle">اختر مشعرك، ودعنا نجد دولة عربية تشعر مثلك الآن (مبني على الأخبار الحقيقية)</div>
+        <div class="mirror-title">🪞 ${tMirror('مرآة المشاعر', 'Emotion Mirror')}</div>
+        <div class="mirror-subtitle">${tMirror(
+            'اختر مشعرك، ودعنا نجد دولة عربية تشعر مثلك الآن (مبني على الأخبار الحقيقية)',
+            'Pick your emotion, and we\'ll find an Arab country feeling the same way right now (based on real news)'
+        )}</div>
         <div class="mirror-emotions" id="mirrorEmotionsGrid"></div>
     `;
 
     const grid = document.getElementById('mirrorEmotionsGrid');
+    const lang = getLang();
+
     Object.entries(EMOTIONS).forEach(([key, emo]) => {
         const b = document.createElement('button');
         b.className = 'mirror-emo-btn';
         b.style.borderColor = emo.color;
         b.style.color = emo.color;
-        b.innerHTML = `<span class="emo-icon">${emo.emoji}</span><span>${emo.name}</span>`;
+        const emoName = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
+        b.innerHTML = `<span class="emo-icon">${emo.emoji}</span><span>${emoName}</span>`;
         b.onclick = () => startMirrorSearch(key);
         grid.appendChild(b);
     });
 }
 
 // ============================================================
-//  ⏳ تحميل ونتيجة
+//  🔍 البحث
 // ============================================================
 function startMirrorSearch(emotionKey) {
     const inner = document.getElementById('mirrorCardInner');
     const emo = EMOTIONS[emotionKey];
+    const lang = getLang();
+    const emoName = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
+
     inner.innerHTML = `
         <div class="mirror-loading">
             <div class="pulse-ring"></div>
             <div class="mirror-loading-text">
-                🔍 نبحث في الأخبار الحقيقية عن دولة تشعر بـ "${emo.name}"...
+                🔍 ${tMirror('نبحث في الأخبار الحقيقية عن دولة تشعر بـ', 'Searching real news for a country feeling')} "${emoName}"...
             </div>
         </div>
     `;
 
     setTimeout(() => {
         const result = findCountryByEmotion(emotionKey);
-
         if (result) {
             showMirrorResult(result.country, result.count, emotionKey);
         } else {
@@ -325,26 +367,14 @@ function startMirrorSearch(emotionKey) {
 }
 
 // ============================================================
-//  🎯 البحث عن دولة حقيقية بمشعر معين
+//  🎯 البحث الحقيقي
 // ============================================================
 function findCountryByEmotion(emotionKey) {
-    // نقرأ بيانات المزاج الحقيقية اللي جمعها news-sidebar
     const countryMoods = window.__realCountryMoods || {};
+    const targetCats = EMOTION_TO_CATEGORIES[emotionKey] || [];
 
-    // تحويل المشعر لمشاعر الأخبار
-    const emotionToCategories = {
-        angry: ['war'],
-        sad: ['disaster'],
-        anxious: ['crisis', 'health'],
-        calm: ['economy'],
-        neutral: ['politics'],
-        joy: ['sports', 'culture'],
-        hope: ['positive']
-    };
+    if (targetCats.length === 0) return null;
 
-    const targetCats = emotionToCategories[emotionKey] || [];
-
-    // نبحث عن دول عندها أخبار بهذي الفئات
     const matches = [];
     Object.entries(countryMoods).forEach(([code, moods]) => {
         let count = 0;
@@ -356,12 +386,12 @@ function findCountryByEmotion(emotionKey) {
 
     if (matches.length === 0) return null;
 
-    // نرتب حسب العدد
+    // رتب تنازلياً حسب العدد
     matches.sort((a, b) => b.count - a.count);
 
-    // نختار دولة عشوائية من أعلى 3
-    const topMatches = matches.slice(0, 3);
-    const picked = topMatches[Math.floor(Math.random() * topMatches.length)];
+    // اختار عشوائياً من أفضل 3
+    const top = matches.slice(0, 3);
+    const picked = top[Math.floor(Math.random() * top.length)];
 
     const country = MIRROR_COUNTRIES[picked.code];
     if (!country) return null;
@@ -370,28 +400,31 @@ function findCountryByEmotion(emotionKey) {
 }
 
 // ============================================================
-//  ✅ عرض النتيجة
+//  ✅ النتيجة
 // ============================================================
 function showMirrorResult(country, count, emotionKey) {
     const inner = document.getElementById('mirrorCardInner');
     const emo = EMOTIONS[emotionKey];
+    const lang = getLang();
+    const countryName = lang === 'en' ? country.nameEn : country.name;
+    const emoName = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
 
     inner.innerHTML = `
         <div class="mirror-result">
             <div style="font-size: 3rem; margin-bottom: 10px;">${emo.emoji}</div>
-            <div class="mirror-result-city">${country.flag} ${country.name}</div>
-            <div class="mirror-result-country">تشعر بـ "${emo.name}" الآن</div>
+            <div class="mirror-result-city">${country.flag} ${countryName}</div>
+            <div class="mirror-result-country">${tMirror('تشعر بـ', 'feeling')} "${emoName}" ${tMirror('الآن', 'now')}</div>
             <div class="mirror-result-count">${count}</div>
-            <div class="mirror-result-label">خبر حقيقي مصنّف بهذا المشعر</div>
+            <div class="mirror-result-label">${tMirror('خبر حقيقي مصنّف بهذا المشعر', 'real news article classified with this emotion')}</div>
             <div class="mirror-actions">
                 <button class="mirror-action-btn mirror-action-primary" id="mirrorFlyBtn">
-                    ✈️ طِر إلى هناك
+                    ✈️ ${tMirror('طِر إلى هناك', 'Fly There')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorAgainBtn">
-                    🔄 جرب مشعراً آخر
+                    🔄 ${tMirror('جرب مشعراً آخر', 'Try Another')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorCloseBtn">
-                    ✕ إغلاق
+                    ✕ ${tMirror('إغلاق', 'Close')}
                 </button>
             </div>
         </div>
@@ -408,21 +441,26 @@ function showMirrorResult(country, count, emotionKey) {
 function showMirrorEmpty(emotionKey) {
     const inner = document.getElementById('mirrorCardInner');
     const emo = EMOTIONS[emotionKey];
+    const lang = getLang();
+    const emoName = lang === 'en' ? (emo.nameEn || emo.name) : emo.name;
 
     inner.innerHTML = `
         <div class="mirror-empty">
             <div class="mirror-empty-emoji">${emo.emoji}</div>
-            <div class="mirror-empty-title">لا توجد أخبار حقيقية بهذا المشعر حالياً</div>
-            <div class="mirror-empty-text">
-                لم نجد في الأخبار الحقيقية لدول العالم العربي، حالياً، أي خبر مصنّف بهذا المشعر.<br>
-                جرّب مشعراً آخر، أو عد لاحقاً بعد تحديث الأخبار.
-            </div>
+            <div class="mirror-empty-title">${tMirror(
+                'لا توجد أخبار حقيقية بهذا المشعر حالياً',
+                'No real news with this emotion right now'
+            )}</div>
+            <div class="mirror-empty-text">${tMirror(
+                `لم نجد حالياً أي خبر حقيقي مصنّف بـ "${emoName}" في الدول العربية.<br>جرّب مشعراً آخر، أو عد لاحقاً بعد تحديث الأخبار.`,
+                `We couldn't find any real news classified as "${emoName}" in Arab countries.<br>Try another emotion, or come back later.`
+            )}</div>
             <div class="mirror-actions" style="margin-top: 20px;">
                 <button class="mirror-action-btn mirror-action-primary" id="mirrorBackBtn">
-                    🔄 اختر مشعراً آخر
+                    🔄 ${tMirror('اختر مشعراً آخر', 'Pick Another')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorCloseBtn2">
-                    ✕ إغلاق
+                    ✕ ${tMirror('إغلاق', 'Close')}
                 </button>
             </div>
         </div>
@@ -433,7 +471,7 @@ function showMirrorEmpty(emotionKey) {
 }
 
 // ============================================================
-//  ✈️ الطيران إلى الدولة
+//  ✈️ الطيران
 // ============================================================
 function flyToMirrorCountry(country, emotionKey) {
     closeMirrorModal();
@@ -442,10 +480,27 @@ function flyToMirrorCountry(country, emotionKey) {
         map.flyTo([country.lat, country.lng], 7, { duration: 2.5 });
     }
 
+    const emo = EMOTIONS[emotionKey];
+    const lang = getLang();
+    const countryName = lang === 'en' ? country.nameEn : country.name;
+
     if (typeof showToast === 'function') {
-        showToast(`✈️ وصلت إلى ${country.flag} ${country.name}`);
+        showToast(`✈️ ${tMirror('وصلت إلى', 'Arrived at')} ${country.flag} ${countryName} ${emo.emoji}`);
     }
 }
+
+// ============================================================
+//  🔄 تحديث الزر عند تغيير اللغة
+// ============================================================
+window.addEventListener('languageChanged', () => {
+    const btn = document.getElementById('mirror-btn');
+    if (btn) btn.title = tMirror('مرآة المشاعر', 'Emotion Mirror');
+
+    const modal = document.getElementById('mirror-modal');
+    if (modal && modal.classList.contains('show')) {
+        showMirrorEmotionPicker();
+    }
+});
 
 // ============================================================
 //  🚀 التشغيل

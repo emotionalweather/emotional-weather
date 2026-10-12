@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>الطقس العاطفي - Emotional Weather</title>
+<title>Weather - الطقس العاطفي</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
@@ -126,7 +126,6 @@ body {
 }
 #privacy-btn.private { color: #FFD700; border-color: #FFD700; }
 
-/* ❌ شريط المشاعر مخفي */
 #emotions { display: none !important; }
 
 #send-modal {
@@ -157,6 +156,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     margin-bottom: 16px;
+    max-height: 350px;
+    overflow-y: auto;
 }
 .modal-card .modal-emo {
     padding: 12px 5px;
@@ -287,17 +288,11 @@ body {
 <div id="toast"></div>
 
 <script>
-// ============================================================
-//  التحقق من تحميل Leaflet
-// ============================================================
 if (typeof L === 'undefined') {
     document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#ff8080;font-size:18px;">❌ فشل تحميل مكتبة الخرائط. تأكد من اتصالك بالإنترنت ثم أعد تحديث الصفحة.</div>';
     throw new Error('Leaflet not loaded');
 }
 
-// ============================================================
-//  المشاعر الكاملة (30+)
-// ============================================================
 const EMOTIONS = {
     joy:         { name: 'فرح',      color: '#FFD700', emoji: '😊' },
     sad:         { name: 'حزن',      color: '#4A90E2', emoji: '😢' },
@@ -336,9 +331,6 @@ const EMOTIONS = {
     sympathetic: { name: 'تعاطف',    color: '#EC4899', emoji: '🤗' }
 };
 
-// ============================================================
-//  تهيئة الخريطة
-// ============================================================
 const map = L.map('map', {
     center: [25, 45],
     zoom: 3,
@@ -358,9 +350,6 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
     pane: 'overlayPane'
 }).addTo(map);
 
-// ============================================================
-//  متغيرات عامة
-// ============================================================
 let userLocation = null;
 let userMarker = null;
 let userCircle = null;
@@ -370,9 +359,6 @@ let pendingTarget = null;
 const activeMarkers = {};
 let markerIdCounter = 0;
 
-// ============================================================
-//  بناء أزرار المشاعر (مخفية)
-// ============================================================
 function buildEmotionButtons() {
     const container = document.getElementById('emotions');
     Object.entries(EMOTIONS).forEach(([key, emo]) => {
@@ -400,9 +386,6 @@ function buildModalEmotions() {
     });
 }
 
-// ============================================================
-//  عند اختيار مشعر
-// ============================================================
 function onEmotionButtonClick(key) {
     selectedEmotion = key;
     document.querySelectorAll('.emo-btn').forEach(b => b.classList.remove('active'));
@@ -420,9 +403,6 @@ function onEmotionButtonClick(key) {
     dropEmotion(lat, lng, key, `📍 ${target}`);
 }
 
-// ============================================================
-//  إسقاط مشعر على الخريطة
-// ============================================================
 function dropEmotion(lat, lng, emotionKey, label) {
     const emo = EMOTIONS[emotionKey];
     if (!emo) return;
@@ -448,9 +428,6 @@ function dropEmotion(lat, lng, emotionKey, label) {
     showToast(`${emo.emoji} ${label}`);
 }
 
-// ============================================================
-//  نافذة الإرسال
-// ============================================================
 function openSendModal(lat, lng, name) {
     pendingTarget = { lat, lng, name };
     document.getElementById('targetName').textContent = '📍 ' + name;
@@ -468,9 +445,6 @@ function sendEmotionToTarget(emotionKey) {
     closeModal();
 }
 
-// ============================================================
-//  الضغط على الخريطة
-// ============================================================
 map.on('click', async (e) => {
     const { lat, lng } = e.latlng;
     showToast('⏳ جاري تحديد المكان...');
@@ -491,9 +465,6 @@ async function reverseGeocode(lat, lng) {
     return a.city || a.town || a.village || a.county || a.state || a.country || data.display_name || `${lat.toFixed(3)}, ${lng.toFixed(3)}`;
 }
 
-// ============================================================
-//  البحث
-// ============================================================
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 let searchTimeout;
@@ -543,9 +514,6 @@ function renderSearchResults(items) {
     searchResults.classList.add('show');
 }
 
-// ============================================================
-//  موقع المستخدم
-// ============================================================
 function initUserLocation() {
     if (!navigator.geolocation) {
         showToast('⚠️ المتصفح لا يدعم تحديد الموقع');
@@ -591,9 +559,6 @@ function drawUserMarker() {
     userMarker = L.marker([userLocation.lat, userLocation.lng], { icon }).addTo(map);
 }
 
-// ============================================================
-//  زر الخصوصية
-// ============================================================
 function togglePrivacy() {
     isPrivateMode = !isPrivateMode;
     const btn = document.getElementById('privacy-btn');
@@ -603,9 +568,6 @@ function togglePrivacy() {
     showToast(isPrivateMode ? '🔒 وضع الخصوصية: يظهر الحي فقط' : '👁️ وضع دقيق: يظهر موقعك بالضبط');
 }
 
-// ============================================================
-//  إشعار
-// ============================================================
 function showToast(msg) {
     const t = document.getElementById('toast');
     t.textContent = msg;
@@ -614,23 +576,18 @@ function showToast(msg) {
     window._toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
 }
 
-// ============================================================
-//  تشغيل
-// ============================================================
 buildEmotionButtons();
 buildModalEmotions();
 initUserLocation();
 map.on('contextmenu', e => e.originalEvent.preventDefault());
 </script>
 
-<!-- ============================================================
-     الميزات الإضافية
-     ============================================================ -->
 <script src="feature-support.js"></script>
 <script src="feature-news-sidebar.js"></script>
 <script src="feature-mirror.js"></script>
 <script src="feature-heartbeat.js"></script>
 <script src="feature-i18n.js"></script>
+<script src="feature-mood-map.js"></script>
 
 </body>
 </html>
