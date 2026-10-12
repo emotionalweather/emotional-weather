@@ -1,8 +1,9 @@
 // ============================================================
 //  feature-news-sidebar.js - 📰 أخبار العالم (54 مصدر)
-//  - أولوية ذكية: حرب/كوارث أولاً
+//  - allorigins Proxy (بدون مفتاح API)
 //  - صياغة AI < 30 كلمة
-//  - إخفاء المصدر من المستخدم
+//  - نظام أولوية ذكي
+//  - بدون ذكر المصدر
 // ============================================================
 
 console.log('📰 جاري تحميل نافذة الأخبار (54 مصدر)...');
@@ -11,7 +12,7 @@ console.log('📰 جاري تحميل نافذة الأخبار (54 مصدر)...
 //  🌐 54 مصدر
 // ============================================================
 const RSS_SOURCES = [
-    // ============ عربية (10) ============
+    // عربية (10)
     { id: 'bbc_ar', name: 'BBC عربي', url: 'https://feeds.bbci.co.uk/arabic/rss.xml' },
     { id: 'dw_ar', name: 'DW عربية', url: 'https://rss.dw.com/rdf/rss-ar-all' },
     { id: 'france24_ar', name: 'France24 عربي', url: 'https://www.france24.com/ar/rss' },
@@ -23,7 +24,7 @@ const RSS_SOURCES = [
     { id: 'alarabiya_ar', name: 'العربية', url: 'https://www.alarabiya.net/.mrss/ar/arab-and-world.xml' },
     { id: 'aawsat_ar', name: 'الشرق الأوسط', url: 'https://aawsat.com/feed' },
 
-    // ============ أوروبا (10) ============
+    // أوروبا (10)
     { id: 'bbc_en', name: 'BBC World', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
     { id: 'guardian_en', name: 'The Guardian', url: 'https://www.theguardian.com/world/rss' },
     { id: 'telegraph_en', name: 'The Telegraph', url: 'https://www.telegraph.co.uk/news/worldnews/rss' },
@@ -35,13 +36,13 @@ const RSS_SOURCES = [
     { id: 'lemonde', name: 'Le Monde', url: 'https://www.lemonde.fr/rss/une.xml' },
     { id: 'corriere', name: 'Corriere della Sera', url: 'https://www.corriere.it/rss/homepage.xml' },
 
-    // ============ روسيا وأوروبا الشرقية (4) ============
+    // روسيا وأوروبا الشرقية (4)
     { id: 'rt_en', name: 'RT', url: 'https://www.rt.com/rss/news/' },
     { id: 'tass', name: 'TASS', url: 'https://tass.com/rss/v2.xml' },
     { id: 'kyivindependent', name: 'Kyiv Independent', url: 'https://kyivindependent.com/feed/' },
     { id: 'meduza', name: 'Meduza', url: 'https://meduza.io/rss/en/all' },
 
-    // ============ أمريكا الشمالية (8) ============
+    // أمريكا الشمالية (8)
     { id: 'cnn_en', name: 'CNN World', url: 'http://rss.cnn.com/rss/edition_world.rss' },
     { id: 'nytimes_en', name: 'NY Times', url: 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml' },
     { id: 'wapo', name: 'Washington Post', url: 'https://feeds.washingtonpost.com/rss/world' },
@@ -51,21 +52,21 @@ const RSS_SOURCES = [
     { id: 'cbc', name: 'CBC Canada', url: 'https://www.cbc.ca/webfeed/rss/rss-world' },
     { id: 'politico', name: 'Politico', url: 'https://www.politico.com/rss/politicopicks.xml' },
 
-    // ============ أمريكا الجنوبية (5) ============
+    // أمريكا الجنوبية (5)
     { id: 'infobae', name: 'Infobae', url: 'https://www.infobae.com/feeds/rss/' },
     { id: 'mercopress', name: 'MercoPress', url: 'https://en.mercopress.com/rss/' },
     { id: 'globo', name: 'Globo', url: 'https://g1.globo.com/rss/g1/' },
     { id: 'eltiempo', name: 'El Tiempo', url: 'https://www.eltiempo.com/rss/' },
     { id: 'clarin', name: 'Clarín', url: 'https://www.clarin.com/rss/' },
 
-    // ============ أفريقيا (5) ============
+    // أفريقيا (5)
     { id: 'allafrica', name: 'AllAfrica', url: 'https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf' },
     { id: 'africanews', name: 'Africanews', url: 'https://www.africanews.com/feed/rss' },
     { id: 'news24', name: 'News24', url: 'https://feeds.24.com/articles/news24/TopStories/rss' },
     { id: 'dailynation', name: 'Daily Nation', url: 'https://nation.africa/kenya/rss' },
     { id: 'premiumtimes', name: 'Premium Times', url: 'https://www.premiumtimesng.com/feed' },
 
-    // ============ آسيا (7) ============
+    // آسيا (7)
     { id: 'aljazeera_en', name: 'Al Jazeera', url: 'https://www.aljazeera.com/xml/rss/all.xml' },
     { id: 'scmp', name: 'SCMP', url: 'https://www.scmp.com/rss/91/feed' },
     { id: 'japantimes', name: 'Japan Times', url: 'https://www.japantimes.co.jp/feed/' },
@@ -74,12 +75,12 @@ const RSS_SOURCES = [
     { id: 'straitstimes', name: 'Straits Times', url: 'https://www.straitstimes.com/news/world/rss.xml' },
     { id: 'bangkokpost', name: 'Bangkok Post', url: 'https://www.bangkokpost.com/rss/data/most-recent.xml' },
 
-    // ============ الشرق الأوسط (غير عربي) (3) ============
+    // الشرق الأوسط (3)
     { id: 'toi', name: 'Times of Israel', url: 'https://www.timesofisrael.com/feed/' },
     { id: 'haaretz', name: 'Haaretz', url: 'https://www.haaretz.com/srv/haaretz-latest-headlines-rss' },
     { id: 'iranintl', name: 'Iran International', url: 'https://www.iranintl.com/en/rss' },
 
-    // ============ أوقيانوسيا (2) ============
+    // أوقيانوسيا (2)
     { id: 'abc_au', name: 'ABC Australia', url: 'https://www.abc.net.au/news/feed/51120/rss.xml' },
     { id: 'rnz', name: 'RNZ', url: 'https://www.rnz.co.nz/rss/news.xml' }
 ];
@@ -251,10 +252,7 @@ function buildNewsPanel() {
         <div class="news-body" id="newsBody">
             <div class="news-empty">
                 <div class="news-loading-spinner"></div>
-                <div>جاري تحميل الأخبار من 54 مصدر...</div>
-                <div style="font-size:0.72rem;color:#64748b;margin-top:8px;">
-                    الأخبار المهمة تظهر أولاً
-                </div>
+                <div>جاري تحميل الأخبار...</div>
             </div>
         </div>
     `;
@@ -263,20 +261,65 @@ function buildNewsPanel() {
 }
 
 // ============================================================
-//  📡 جلب RSS
+//  📡 جلب RSS عبر CORS Proxies + XML Parser
 // ============================================================
 async function fetchRSSAsJSON(rssUrl) {
-    try {
-        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}&count=3`;
-        const res = await fetch(apiUrl);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-        if (data.status !== 'ok') throw new Error(data.message || 'فشل');
-        return data.items || [];
-    } catch (err) {
-        console.warn(`⚠️ فشل:`, err.message);
-        return null;
+    const proxies = [
+        (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+        (u) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`,
+        (u) => `https://corsproxy.io/?url=${encodeURIComponent(u)}`
+    ];
+
+    for (const proxyFn of proxies) {
+        try {
+            const proxyUrl = proxyFn(rssUrl);
+            const res = await fetch(proxyUrl);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+
+            const text = await res.text();
+            if (!text || text.length < 100) throw new Error('رد فاضي');
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(text, 'text/xml');
+
+            const parseError = xmlDoc.querySelector('parsererror');
+            if (parseError) throw new Error('XML غير صالح');
+
+            const items = xmlDoc.querySelectorAll('item, entry');
+            const articles = [];
+
+            items.forEach(item => {
+                const titleEl = item.querySelector('title');
+                const title = titleEl ? titleEl.textContent.trim() : '';
+
+                let link = '';
+                const linkEl = item.querySelector('link');
+                if (linkEl) {
+                    link = linkEl.textContent.trim() || linkEl.getAttribute('href') || '';
+                }
+
+                const descEl = item.querySelector('description, summary');
+                const description = descEl ? descEl.textContent.trim() : '';
+
+                const contentEl = item.querySelector('encoded, content');
+                const content = contentEl ? contentEl.textContent.trim() : '';
+
+                const dateEl = item.querySelector('pubDate, published, updated');
+                const pubDate = dateEl ? dateEl.textContent.trim() : '';
+
+                if (title && title.length > 10) {
+                    articles.push({ title, description, content, link: link || '#', pubDate });
+                }
+            });
+
+            return articles;
+
+        } catch (err) {
+            console.warn(`   ⚠️ Proxy فشل: ${err.message}`);
+        }
     }
+
+    return null;
 }
 
 function stripHTML(html) {
@@ -378,7 +421,7 @@ function removeFromStats(article) {
 }
 
 // ============================================================
-//  🎬 البطاقة (بدون المصدر)
+//  🎬 البطاقة
 // ============================================================
 function displayNewsCard(article) {
     if (!newsBody) return null;
@@ -473,17 +516,14 @@ function escapeHTML(str) {
 //  🎯 إضافة بترتيب الأولوية
 // ============================================================
 function addToQueueWithPriority(articles) {
-    // نحسب الأولوية لكل خبر مبدئياً
     articles.forEach(a => {
         const initial = typeof keywordClassify === 'function' ? keywordClassify(a.title) : { category:'politics', impact:30 };
         a.category = initial.category;
         a.impact = initial.impact;
     });
 
-    // نضيفهم
     newsQueue.push(...articles);
 
-    // نرتب الطابور: الأولوية للعاجل (حرب/كوارث)
     if (typeof CATEGORY_PRIORITY !== 'undefined') {
         newsQueue.sort((a, b) => {
             const pa = (CATEGORY_PRIORITY[a.category] || 5) * 1000 - a.impact;
@@ -552,6 +592,8 @@ async function fetchAllSources() {
 
                 results.push(...articles);
                 console.log(`   ✅ ${articles.length}`);
+            } else {
+                console.log(`   ⚠️ لا يوجد أخبار`);
             }
         } catch (err) {
             console.warn(`   ❌ ${err.message}`);
