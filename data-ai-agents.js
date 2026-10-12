@@ -1,7 +1,9 @@
 // ============================================================
-//  data-ai-agents.js - 🤖 نظام تدوير وكلاء AI المجانيين
-//  يستخدم OpenRouter مع عدة موديلات مجانية
-//  إذا فشل موديل، ينتقل للتالي تلقائياً
+//  data-ai-agents.js - 🤖 نظام تدوير وكلاء AI
+//  - 5 موديلات مجانية على OpenRouter
+//  - تدوير تلقائي عند 429
+//  - تأخير 10 ثواني قبل كل طلب (بطيء ومريح)
+//  - تأخير 8 ثواني بعد كل فشل
 // ============================================================
 
 console.log('🤖 جاري تحميل وكلاء AI...');
@@ -16,8 +18,9 @@ function getAIKey() {
 }
 
 function setAIKey(key) {
-    localStorage.setItem(AI_KEY_STORAGE, key);
+    localStorage.setItem(AI_KEY_STORAGE, key.trim());
     console.log('🔑 تم حفظ مفتاح OpenRouter');
+    return true;
 }
 
 // ============================================================
@@ -30,7 +33,7 @@ const AI_AGENTS = [
         emoji: '🥇',
         model: 'nvidia/nemotron-3-super-120b-a12b:free',
         priority: 1,
-        cooldownMs: 60000,
+        cooldownMs: 90000,
         lastFailure: 0,
         enabled: true
     },
@@ -40,7 +43,7 @@ const AI_AGENTS = [
         emoji: '🥈',
         model: 'nvidia/nemotron-3.5-lightning:free',
         priority: 2,
-        cooldownMs: 60000,
+        cooldownMs: 90000,
         lastFailure: 0,
         enabled: true
     },
@@ -50,7 +53,7 @@ const AI_AGENTS = [
         emoji: '🥉',
         model: 'nvidia/nemotron-3-ultra-550b-a55b:free',
         priority: 3,
-        cooldownMs: 90000,
+        cooldownMs: 120000,
         lastFailure: 0,
         enabled: true
     },
@@ -60,7 +63,7 @@ const AI_AGENTS = [
         emoji: '4️⃣',
         model: 'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free',
         priority: 4,
-        cooldownMs: 60000,
+        cooldownMs: 90000,
         lastFailure: 0,
         enabled: true
     },
@@ -147,14 +150,38 @@ function setCache(title, result) {
 //  🔤 التصنيف الاحتياطي (كلمات مفتاحية)
 // ============================================================
 const KEYWORD_CATEGORIES = {
-    war:      { keywords: ['war','attack','bomb','conflict','military','قتال','حرب','هجوم','قصف','عسكري','قتل'], emotion: 'angry', impact: 90 },
-    disaster: { keywords: ['earthquake','flood','fire','storm','زلزال','فيضان','حريق','كارثة','عاصفة'], emotion: 'sad', impact: 80 },
-    crisis:   { keywords: ['crisis','emergency','collapse','inflation','أزمة','طوارئ','انهيار','تضخم'], emotion: 'anxious', impact: 70 },
-    economy:  { keywords: ['economy','market','trade','investment','اقتصاد','سوق','تجارة','استثمار'], emotion: 'calm', impact: 35 },
-    sports:   { keywords: ['football','match','olympic','championship','goal','كرة','مباراة','أولمبياد','بطولة'], emotion: 'joy', impact: 30 },
-    health:   { keywords: ['health','hospital','vaccine','disease','virus','صحة','مستشفى','لقاح','مرض','فيروس'], emotion: 'anxious', impact: 60 },
-    culture:  { keywords: ['culture','festival','art','museum','ثقافة','مهرجان','فن','متحف','تراث'], emotion: 'joy', impact: 30 },
-    positive: { keywords: ['peace','agreement','growth','success','reform','سلام','اتفاق','نمو','نجاح'], emotion: 'hope', impact: 75 }
+    war: {
+        keywords: ['war','attack','bomb','conflict','military','قتال','حرب','هجوم','قصف','عسكري','قتل','اشتباك'],
+        emotion: 'angry', impact: 90
+    },
+    disaster: {
+        keywords: ['earthquake','flood','fire','storm','disaster','زلزال','فيضان','حريق','كارثة','عاصفة','انفجار'],
+        emotion: 'sad', impact: 80
+    },
+    crisis: {
+        keywords: ['crisis','emergency','collapse','inflation','أزمة','طوارئ','انهيار','تضخم','احتجاج','إضراب'],
+        emotion: 'anxious', impact: 70
+    },
+    economy: {
+        keywords: ['economy','market','trade','investment','econom','اقتصاد','سوق','تجارة','استثمار','بورصة'],
+        emotion: 'calm', impact: 35
+    },
+    sports: {
+        keywords: ['football','match','olympic','championship','goal','كرة','مباراة','أولمبياد','بطولة','هدف'],
+        emotion: 'joy', impact: 30
+    },
+    health: {
+        keywords: ['health','hospital','vaccine','disease','virus','صحة','مستشفى','لقاح','مرض','فيروس','وباء'],
+        emotion: 'anxious', impact: 60
+    },
+    culture: {
+        keywords: ['culture','festival','art','museum','ثقافة','مهرجان','فن','متحف','تراث','معرض'],
+        emotion: 'joy', impact: 30
+    },
+    positive: {
+        keywords: ['peace','agreement','growth','success','reform','سلام','اتفاق','نمو','نجاح','إصلاح','تقدم'],
+        emotion: 'hope', impact: 75
+    }
 };
 
 function keywordClassify(title) {
@@ -164,7 +191,8 @@ function keywordClassify(title) {
             if (lower.includes(w.toLowerCase())) {
                 return {
                     category: cat,
-                    sentiment: cat === 'war' || cat === 'disaster' || cat === 'crisis' ? 'negative' : 'neutral',
+                    sentiment: (cat === 'war' || cat === 'disaster' || cat === 'crisis') ? 'negative' :
+                               (cat === 'sports' || cat === 'culture' || cat === 'positive') ? 'positive' : 'neutral',
                     mood: data.emotion,
                     impact: data.impact,
                     reason: 'تصنيف بالكلمات المفتاحية',
@@ -198,7 +226,7 @@ function getAvailableAgents() {
 }
 
 // ============================================================
-//  🤖 التصنيف بالـ AI مع تدوير
+//  🤖 التصنيف بالـ AI مع تدوير (بطيء ومريح)
 // ============================================================
 async function classifyWithSmartAI(title, countryName) {
     const apiKey = getAIKey();
@@ -209,7 +237,10 @@ async function classifyWithSmartAI(title, countryName) {
 
     // تحقق من الذاكرة المؤقتة
     const cached = getCached(title);
-    if (cached) return cached;
+    if (cached) {
+        console.log('📦 من الذاكرة المؤقتة');
+        return cached;
+    }
 
     const agents = getAvailableAgents();
     if (agents.length === 0) {
@@ -219,7 +250,12 @@ async function classifyWithSmartAI(title, countryName) {
 
     for (const agent of agents) {
         try {
+            // 🐢 تأخير 10 ثواني قبل كل طلب (بطيء ومريح)
+            console.log(`⏳ انتظار 10 ثواني قبل ${agent.emoji} ${agent.name}...`);
+            await new Promise(r => setTimeout(r, 10000));
+
             const result = await tryAgent(agent, apiKey, title, countryName);
+
             if (result) {
                 agent.lastFailure = 0;
                 AGENT_STATS.successfulRequests++;
@@ -235,10 +271,15 @@ async function classifyWithSmartAI(title, countryName) {
             AGENT_STATS.failedRequests++;
             AGENT_STATS.perAgent[agent.id].fail++;
             console.warn(`❌ ${agent.emoji} ${agent.name}: ${err.message}`);
+
+            // 🐢 تأخير 8 ثواني بعد كل فشل
+            console.log(`⏳ انتظار 8 ثواني قبل المحاولة التالية...`);
+            await new Promise(r => setTimeout(r, 8000));
         }
     }
 
     AGENT_STATS.fallbackCount++;
+    console.warn('⚠️ كل الوكلاء فشلوا');
     return null;
 }
 
@@ -255,7 +296,7 @@ async function tryAgent(agent, apiKey, title, countryName) {
         headers: {
             'Authorization': 'Bearer ' + apiKey,
             'Content-Type': 'application/json',
-            'HTTP-Referer': 'https://waleed1624.github.io/emotional-weather',
+            'HTTP-Referer': 'https://emotionalweather.github.io/emotional-weather',
             'X-Title': 'Emotional Weather'
         },
         body: JSON.stringify({
@@ -345,4 +386,4 @@ window.classifyWithSmartAI = classifyWithSmartAI;
 window.keywordClassify = keywordClassify;
 window.getAvailableAgents = getAvailableAgents;
 
-console.log(`✅ تم تحميل ${AI_AGENTS.length} وكلاء AI`);
+console.log(`✅ تم تحميل ${AI_AGENTS.length} وكلاء AI (بطيء)`);
