@@ -1,15 +1,15 @@
 // ============================================================
-//  data-ai-agents.js - 🤖 نظام تدوير وكلاء AI
+//  data-ai-agents.js - 🤖 وكلاء AI + نظام الأولوية
 //  - 5 موديلات مجانية على OpenRouter
 //  - تدوير تلقائي عند 429
-//  - تأخير 10 ثواني قبل كل طلب (بطيء ومريح)
-//  - تأخير 8 ثواني بعد كل فشل
+//  - تأخير 10 ثواني قبل كل طلب
+//  - نظام أولوية للخبر (حرب/كوارث أولاً)
 // ============================================================
 
 console.log('🤖 جاري تحميل وكلاء AI...');
 
 // ============================================================
-//  🔑 المفتاح (محفوظ في localStorage)
+//  🔑 المفتاح
 // ============================================================
 const AI_KEY_STORAGE = 'ai_openrouter_key';
 
@@ -24,7 +24,7 @@ function setAIKey(key) {
 }
 
 // ============================================================
-//  ⚙️ الوكلاء (الموديلات) — بالترتيب حسب الأولوية
+//  ⚙️ الوكلاء
 // ============================================================
 const AI_AGENTS = [
     {
@@ -118,6 +118,22 @@ const AI_IMPACT_LABELS = {
 };
 
 // ============================================================
+//  🎯 نظام الأولوية للخبر
+//  رقم أصغر = أولوية أعلى
+// ============================================================
+const CATEGORY_PRIORITY = {
+    war: 1,        // حرب (أعلى أولوية)
+    disaster: 2,   // كارثة
+    crisis: 3,     // أزمة
+    health: 4,     // صحة
+    politics: 5,   // سياسة
+    economy: 6,    // اقتصاد
+    sports: 7,     // رياضة
+    culture: 8,    // ثقافة
+    positive: 9    // إيجابي (أقل أولوية)
+};
+
+// ============================================================
 //  📚 الذاكرة المؤقتة
 // ============================================================
 const memoryCache = new Map();
@@ -147,39 +163,43 @@ function setCache(title, result) {
 }
 
 // ============================================================
-//  🔤 التصنيف الاحتياطي (كلمات مفتاحية)
+//  🔤 التصنيف السريع (قبل AI)
 // ============================================================
 const KEYWORD_CATEGORIES = {
     war: {
-        keywords: ['war','attack','bomb','conflict','military','قتال','حرب','هجوم','قصف','عسكري','قتل','اشتباك'],
+        keywords: ['war','attack','bomb','conflict','military','قتال','حرب','هجوم','قصف','عسكري','قتل','اشتباك','صاروخ','غارة'],
         emotion: 'angry', impact: 90
     },
     disaster: {
-        keywords: ['earthquake','flood','fire','storm','disaster','زلزال','فيضان','حريق','كارثة','عاصفة','انفجار'],
+        keywords: ['earthquake','flood','fire','storm','disaster','زلزال','فيضان','حريق','كارثة','عاصفة','انفجار','انهيار'],
         emotion: 'sad', impact: 80
     },
     crisis: {
         keywords: ['crisis','emergency','collapse','inflation','أزمة','طوارئ','انهيار','تضخم','احتجاج','إضراب'],
         emotion: 'anxious', impact: 70
     },
+    health: {
+        keywords: ['health','hospital','vaccine','disease','virus','صحة','مستشفى','لقاح','مرض','فيروس','وباء','جائحة'],
+        emotion: 'anxious', impact: 60
+    },
+    politics: {
+        keywords: ['election','president','minister','parliament','government','انتخابات','رئيس','وزير','برلمان','حكومة','قرار'],
+        emotion: 'neutral', impact: 40
+    },
     economy: {
-        keywords: ['economy','market','trade','investment','econom','اقتصاد','سوق','تجارة','استثمار','بورصة'],
+        keywords: ['economy','market','trade','investment','econom','اقتصاد','سوق','تجارة','استثمار','بورصة','دولار'],
         emotion: 'calm', impact: 35
     },
     sports: {
-        keywords: ['football','match','olympic','championship','goal','كرة','مباراة','أولمبياد','بطولة','هدف'],
+        keywords: ['football','match','olympic','championship','goal','كرة','مباراة','أولمبياد','بطولة','دوري','هدف'],
         emotion: 'joy', impact: 30
     },
-    health: {
-        keywords: ['health','hospital','vaccine','disease','virus','صحة','مستشفى','لقاح','مرض','فيروس','وباء'],
-        emotion: 'anxious', impact: 60
-    },
     culture: {
-        keywords: ['culture','festival','art','museum','ثقافة','مهرجان','فن','متحف','تراث','معرض'],
+        keywords: ['culture','festival','art','museum','ثقافة','مهرجان','فن','متحف','تراث','معرض','موسيقى'],
         emotion: 'joy', impact: 30
     },
     positive: {
-        keywords: ['peace','agreement','growth','success','reform','سلام','اتفاق','نمو','نجاح','إصلاح','تقدم'],
+        keywords: ['peace','agreement','growth','success','reform','سلام','اتفاق','نمو','نجاح','إصلاح','تقدم','تعاون'],
         emotion: 'hope', impact: 75
     }
 };
@@ -195,7 +215,8 @@ function keywordClassify(title) {
                                (cat === 'sports' || cat === 'culture' || cat === 'positive') ? 'positive' : 'neutral',
                     mood: data.emotion,
                     impact: data.impact,
-                    reason: 'تصنيف بالكلمات المفتاحية',
+                    summary: title,
+                    reason: '',
                     source: 'keyword'
                 };
             }
@@ -205,40 +226,49 @@ function keywordClassify(title) {
         category: 'politics',
         sentiment: 'neutral',
         mood: 'neutral',
-        impact: 25,
-        reason: 'تصنيف افتراضي',
+        impact: 30,
+        summary: title,
+        reason: '',
         source: 'keyword'
     };
 }
 
 // ============================================================
-//  🎯 الوكلاء المتاحون (بدون فترة تبريد)
+//  🎯 حساب درجة الأولوية (رقم أصغر = أولوية أعلى)
+// ============================================================
+function computePriorityScore(article) {
+    const cat = article.category || 'politics';
+    const categoryScore = CATEGORY_PRIORITY[cat] || 5;
+    const impact = article.impact || 30;
+
+    // (التصنيف × 1000) - قوة التأثير
+    // الرقم الأصغر = أولوية أعلى
+    return categoryScore * 1000 - impact;
+}
+
+// ============================================================
+//  🎯 الوكلاء المتاحون
 // ============================================================
 function getAvailableAgents() {
     const now = Date.now();
     return AI_AGENTS
-        .filter(a => {
-            if (!a.enabled) return false;
-            if (now - a.lastFailure < a.cooldownMs) return false;
-            return true;
-        })
+        .filter(a => a.enabled && (now - a.lastFailure >= a.cooldownMs))
         .sort((a, b) => a.priority - b.priority);
 }
 
 // ============================================================
-//  🤖 التصنيف بالـ AI مع تدوير (بطيء ومريح)
+//  🤖 التصنيف + الصياغة
 // ============================================================
-async function classifyWithSmartAI(title, countryName) {
+async function classifyWithSmartAI(title, countryName, fullText) {
     const apiKey = getAIKey();
     if (!apiKey) {
-        console.warn('⚠️ لا يوجد مفتاح OpenRouter');
+        console.warn('⚠️ لا يوجد مفتاح');
         return null;
     }
 
-    // تحقق من الذاكرة المؤقتة
     const cached = getCached(title);
     if (cached) {
-        console.log('📦 من الذاكرة المؤقتة');
+        console.log('📦 من الذاكرة');
         return cached;
     }
 
@@ -250,11 +280,10 @@ async function classifyWithSmartAI(title, countryName) {
 
     for (const agent of agents) {
         try {
-            // 🐢 تأخير 10 ثواني قبل كل طلب (بطيء ومريح)
             console.log(`⏳ انتظار 10 ثواني قبل ${agent.emoji} ${agent.name}...`);
             await new Promise(r => setTimeout(r, 10000));
 
-            const result = await tryAgent(agent, apiKey, title, countryName);
+            const result = await tryAgent(agent, apiKey, title, countryName, fullText);
 
             if (result) {
                 agent.lastFailure = 0;
@@ -272,7 +301,6 @@ async function classifyWithSmartAI(title, countryName) {
             AGENT_STATS.perAgent[agent.id].fail++;
             console.warn(`❌ ${agent.emoji} ${agent.name}: ${err.message}`);
 
-            // 🐢 تأخير 8 ثواني بعد كل فشل
             console.log(`⏳ انتظار 8 ثواني قبل المحاولة التالية...`);
             await new Promise(r => setTimeout(r, 8000));
         }
@@ -286,10 +314,10 @@ async function classifyWithSmartAI(title, countryName) {
 // ============================================================
 //  🎬 محاولة وكيل واحد
 // ============================================================
-async function tryAgent(agent, apiKey, title, countryName) {
+async function tryAgent(agent, apiKey, title, countryName, fullText) {
     AGENT_STATS.totalRequests++;
 
-    const prompt = buildPrompt(title, countryName);
+    const prompt = buildPrompt(title, countryName, fullText);
 
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
@@ -302,8 +330,8 @@ async function tryAgent(agent, apiKey, title, countryName) {
         body: JSON.stringify({
             model: agent.model,
             messages: [{ role: 'user', content: prompt }],
-            temperature: 0.2,
-            max_tokens: 200
+            temperature: 0.3,
+            max_tokens: 300
         })
     });
 
@@ -337,31 +365,45 @@ async function tryAgent(agent, apiKey, title, countryName) {
         sentiment: parsed.sentiment || 'neutral',
         mood: parsed.mood || 'neutral',
         impact: Math.max(0, Math.min(100, parseInt(parsed.impact) || 30)),
+        summary: parsed.summary || title,
         reason: parsed.reason || ''
     };
 }
 
 // ============================================================
-//  📝 بناء البروموت
+//  📝 بناء البروموت (تصنيف + صياغة)
 // ============================================================
-function buildPrompt(title, countryName) {
-    return `You are an expert news classifier for a "Mood Map" that shows countries' emotional state.
+function buildPrompt(title, countryName, fullText) {
+    const textSection = fullText ? `\n\nFULL ARTICLE:\n"""${fullText.slice(0, 1500)}"""` : '';
 
-Classify this news:
+    return `You are a professional neutral journalist working for a global news agency (like Reuters/BBC).
 
-TITLE: "${title}"
-COUNTRY: ${countryName}
+TASK:
+1. Read the news article carefully.
+2. Rewrite it as a SHORT, professional news summary in UNDER 30 words.
+3. Classify it for a "Mood Map" app.
 
-Return ONLY valid JSON (no markdown, no extra text):
+NEWS TITLE: "${title}"
+COUNTRY: ${countryName}${textSection}
+
+RULES FOR SUMMARY:
+- MUST be under 30 words.
+- MUST be neutral and journalistic.
+- MUST preserve the original meaning — never invent facts.
+- MUST NOT copy the original title verbatim.
+- Same language as the title (Arabic if Arabic, English if English).
+
+Return ONLY valid JSON:
 {
   "category": "war" | "disaster" | "crisis" | "economy" | "politics" | "sports" | "health" | "culture" | "positive",
   "sentiment": "very_negative" | "negative" | "neutral" | "positive" | "very_positive",
   "mood": "angry" | "sad" | "anxious" | "calm" | "neutral" | "joy" | "hope",
   "impact": 0-100,
-  "reason": "Arabic explanation, max 12 words"
+  "summary": "Rewritten news in under 30 words",
+  "reason": "Brief Arabic explanation (max 10 words)"
 }
 
-RULES:
+CLASSIFICATION RULES:
 - War/Bombing/Attack → war, very_negative, angry, 85-100
 - Disaster/Casualties → disaster, negative, sad, 70-95
 - Economic crisis/Inflation → crisis, negative, anxious, 60-85
@@ -370,7 +412,7 @@ RULES:
 - Peace/Recovery/Reform → positive, very_positive, hope, 70-90
 - Regular economy news → economy, neutral, neutral, 25-45
 
-Be ACCURATE. Read carefully. Don't default to politics.`;
+Be ACCURATE. Read carefully. Never default to politics.`;
 }
 
 // ============================================================
@@ -380,10 +422,12 @@ window.AI_AGENTS = AI_AGENTS;
 window.AGENT_STATS = AGENT_STATS;
 window.AI_CATEGORIES = AI_CATEGORIES;
 window.AI_IMPACT_LABELS = AI_IMPACT_LABELS;
+window.CATEGORY_PRIORITY = CATEGORY_PRIORITY;
 window.getAIKey = getAIKey;
 window.setAIKey = setAIKey;
 window.classifyWithSmartAI = classifyWithSmartAI;
 window.keywordClassify = keywordClassify;
 window.getAvailableAgents = getAvailableAgents;
+window.computePriorityScore = computePriorityScore;
 
-console.log(`✅ تم تحميل ${AI_AGENTS.length} وكلاء AI (بطيء)`);
+console.log(`✅ تم تحميل ${AI_AGENTS.length} وكلاء AI + نظام الأولوية`);
