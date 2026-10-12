@@ -317,7 +317,7 @@ function showMirrorEmotionPicker() {
     inner.innerHTML = `
         <div class="mirror-title">🪞 ${tMirror('مرآة المشاعر', 'Emotion Mirror')}</div>
         <div class="mirror-subtitle">${tMirror(
-            'اختر مشعرك، ودعنا نجد دولة عربية تشعر مثلك الآن (مبني على الأخبار الحقيقية)',
+            'اختر مشاعرك، ودعنا نجد دولة تشعر مثلك الآن (مبني على الأخبار الحقيقية)',
             'Pick your emotion, and we\'ll find an Arab country feeling the same way right now (based on real news)'
         )}</div>
         <div class="mirror-emotions" id="mirrorEmotionsGrid"></div>
@@ -421,7 +421,7 @@ function showMirrorResult(country, count, emotionKey) {
                     ✈️ ${tMirror('طِر إلى هناك', 'Fly There')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorAgainBtn">
-                    🔄 ${tMirror('جرب مشعراً آخر', 'Try Another')}
+                    🔄 ${tMirror('جرب مشاعراً آخرى', 'Try Another')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorCloseBtn">
                     ✕ ${tMirror('إغلاق', 'Close')}
@@ -452,12 +452,12 @@ function showMirrorEmpty(emotionKey) {
                 'No real news with this emotion right now'
             )}</div>
             <div class="mirror-empty-text">${tMirror(
-                `لم نجد حالياً أي خبر حقيقي مصنّف بـ "${emoName}" في الدول العربية.<br>جرّب مشعراً آخر، أو عد لاحقاً بعد تحديث الأخبار.`,
+                `لم نجد حالياً أي خبر حقيقي مصنّف بـ "${emoName}" في الدول العربية.<br جرب مشاعراً آخرى',  أو عد لاحقاً بعد تحديث الأخبار.`,
                 `We couldn't find any real news classified as "${emoName}" in Arab countries.<br>Try another emotion, or come back later.`
             )}</div>
             <div class="mirror-actions" style="margin-top: 20px;">
                 <button class="mirror-action-btn mirror-action-primary" id="mirrorBackBtn">
-                    🔄 ${tMirror('اختر مشعراً آخر', 'Pick Another')}
+                    🔄 ${tMirror('اختر مشاعراً آخرى', 'Pick Another')}
                 </button>
                 <button class="mirror-action-btn mirror-action-secondary" id="mirrorCloseBtn2">
                     ✕ ${tMirror('إغلاق', 'Close')}
