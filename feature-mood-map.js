@@ -1,16 +1,26 @@
 // ============================================================
-//  feature-mood-map.js - 🎨 تلوين الخريطة حسب المزاج
-//  يدعم 195 دولة + شريط ألوان
+//  feature-mood-map.js - 🎨 خريطة المزاج (يقرأ من news.json)
 // ============================================================
 
 console.log('🎨 جاري تحميل خريطة المزاج...');
 
+const NEWS_JSON_URL = 'data/news.json';
+
 // ============================================================
-//  🗺️ استخدام ISO3_TO_ISO2 من data-countries.js
-//  ⚠️ لا نعرّفه هنا مرة ثانية (كان يسبب SyntaxError)
+//  🎨 7 مستويات
 // ============================================================
+const MOOD_LEVELS = [
+    { min: 0,  max: 15,  color: '#8B0000', ar: 'متأزم جداً', en: 'Severe Crisis' },
+    { min: 15, max: 30,  color: '#FF2200', ar: 'متأزم',      en: 'Crisis' },
+    { min: 30, max: 44,  color: '#FF8C00', ar: 'متوتر',      en: 'Tense' },
+    { min: 44, max: 56,  color: '#FFD700', ar: 'محايد',      en: 'Neutral' },
+    { min: 56, max: 70,  color: '#9ACD32', ar: 'هادئ',       en: 'Calm' },
+    { min: 70, max: 85,  color: '#32CD32', ar: 'إيجابي',     en: 'Positive' },
+    { min: 85, max: 101, color: '#00AA00', ar: 'مزدهر',      en: 'Thriving' }
+];
+
 function getISO3Map() {
-    if (typeof window !== 'undefined' && window.ISO3_TO_ISO2) {
+    if (window.ISO3_TO_ISO2 && Object.keys(window.ISO3_TO_ISO2).length > 0) {
         return window.ISO3_TO_ISO2;
     }
     return {
@@ -23,37 +33,16 @@ function getISO3Map() {
 }
 
 // ============================================================
-//  🎨 مستويات المزاج
+//  💾 بيانات الدول
 // ============================================================
-const MOOD_LEVELS = [
-    { min: 0,  max: 20,  color: '#8B0000', ar: 'متأزم جداً',  en: 'Severe Crisis' },
-    { min: 20, max: 35,  color: '#FF2200', ar: 'متأزم',       en: 'Crisis' },
-    { min: 35, max: 48,  color: '#FF8C00', ar: 'متوتر',       en: 'Tense' },
-    { min: 48, max: 55,  color: '#FFD700', ar: 'محايد',       en: 'Neutral' },
-    { min: 55, max: 68,  color: '#9ACD32', ar: 'هادئ',        en: 'Calm' },
-    { min: 68, max: 82,  color: '#32CD32', ar: 'إيجابي',      en: 'Positive' },
-    { min: 82, max: 101, color: '#00AA00', ar: 'مزدهر',       en: 'Thriving' }
-];
+let countryScores = {};
+let moodLayer = null;
 
-const GOOD_CATS = ['sports', 'culture', 'positive', 'economy'];
-const BAD_CATS = ['war', 'disaster', 'crisis', 'health'];
-
-// ============================================================
-//  🎯 حساب درجة المزاج
-// ============================================================
-function computeMoodScore(countryCode) {
-    const moods = (window.__realCountryMoods || {})[countryCode];
-    if (!moods) return null;
-    const total = Object.values(moods).reduce((a, b) => a + b, 0);
-    if (total === 0) return null;
-
-    let score = 50;
-    Object.entries(moods).forEach(([cat, count]) => {
-        const ratio = count / total;
-        if (GOOD_CATS.includes(cat)) score += ratio * 35;
-        if (BAD_CATS.includes(cat)) score -= ratio * 35;
-    });
-    return Math.max(0, Math.min(100, score));
+function getCountryScore(code) {
+    if (countryScores[code] && typeof countryScores[code].score === 'number') {
+        return countryScores[code].score;
+    }
+    return null;
 }
 
 function getMoodColor(score) {
@@ -74,29 +63,27 @@ function getMoodLabel(score, lang) {
 }
 
 // ============================================================
-//  🗺️ طبقة تلوين الدول
+//  🗺️ طبقة الخريطة
 // ============================================================
-let moodLayer = null;
-
 function buildMoodStyle(feature) {
     const isoMap = getISO3Map();
     const iso2 = isoMap[feature.id];
     if (!iso2) return { fillOpacity: 0, weight: 0, opacity: 0 };
 
-    const score = computeMoodScore(iso2);
+    const score = getCountryScore(iso2);
     if (score === null) {
         return {
             fillColor: '#1e293b',
-            fillOpacity: 0.1,
-            color: '#475569',
+            fillOpacity: 0.08,
+            color: '#334155',
             weight: 0.4,
-            opacity: 0.25
+            opacity: 0.2
         };
     }
     const color = getMoodColor(score);
     return {
         fillColor: color,
-        fillOpacity: 0.55,
+        fillOpacity: 0.65,
         color: color,
         weight: 1.5,
         opacity: 0.9
@@ -106,7 +93,7 @@ function buildMoodStyle(feature) {
 async function loadMoodMap() {
     try {
         if (typeof map === 'undefined') {
-            console.warn('⚠️ الخريطة ما تحملت بعد');
+            console.warn('⚠️ الخريطة ما تحملت');
             return;
         }
 
@@ -124,11 +111,7 @@ async function loadMoodMap() {
         for (const url of urls) {
             try {
                 const res = await fetch(url);
-                if (res.ok) {
-                    data = await res.json();
-                    console.log(`✅ GeoJSON من: ${url.slice(0, 60)}`);
-                    break;
-                }
+                if (res.ok) { data = await res.json(); break; }
             } catch (e) {}
         }
 
@@ -141,35 +124,68 @@ async function loadMoodMap() {
             style: buildMoodStyle,
             onEachFeature: (feature, layer) => {
                 const iso2 = isoMap[feature.id];
-                if (!iso2) {
-                    layer.options.interactive = false;
-                    return;
-                }
-                const countryName = (feature.properties && (feature.properties.name || feature.properties.NAME)) || iso2;
+                if (!iso2) { layer.options.interactive = false; return; }
+
+                const countryInfo = (window.ALL_COUNTRIES || []).find(c => c.code === iso2);
+                const displayName = countryInfo ? countryInfo.ar : feature.id;
+
                 layer.on('mouseover', () => {
-                    const score = computeMoodScore(iso2);
+                    const score = getCountryScore(iso2);
                     if (score !== null) {
                         const label = getMoodLabel(score, 'ar');
+                        const info = countryScores[iso2];
                         layer.bindTooltip(
-                            `<strong>${countryName}</strong><br>المزاج: ${label} (${score.toFixed(0)}%)`,
+                            `<strong>${displayName}</strong><br>المزاج: ${label} (${score}%)<br>أخبار: ${info.articleCount || 0}`,
                             { sticky: true }
                         ).openTooltip();
                     } else {
-                        layer.bindTooltip(countryName, { sticky: true }).openTooltip();
+                        layer.bindTooltip(`${displayName}<br>لا توجد أخبار`, { sticky: true }).openTooltip();
                     }
                 });
             }
         }).addTo(map);
 
         console.log('✅ تم تحميل خريطة المزاج');
+
+        // بعد ما تحملت الخريطة، حدّث الألوان
+        setTimeout(refreshMoodMap, 2000);
     } catch (err) {
-        console.warn('⚠️ فشل تحميل الخريطة:', err.message);
+        console.warn('⚠️ فشل:', err.message);
     }
 }
 
 function refreshMoodMap() {
     if (!moodLayer) return;
     moodLayer.setStyle(buildMoodStyle);
+}
+
+// ============================================================
+//  📥 قراءة news.json (بشكل مستقل)
+// ============================================================
+async function loadNewsData() {
+    try {
+        const res = await fetch(NEWS_JSON_URL + '?t=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+
+        const data = await res.json();
+
+        countryScores = data.countries || {};
+        window.__realCountryScores = countryScores;
+        window.__realNewsMood = (data.global && data.global.categories) || {};
+
+        console.log(`✅ تم تحميل ${Object.keys(countryScores).length} دولة`);
+        console.log(`📊 المزاج العالمي: ${data.global ? data.global.score : '?'}/100`);
+
+        // حدّث الخريطة
+        if (moodLayer) {
+            moodLayer.setStyle(buildMoodStyle);
+        } else {
+            // إذا الخريطة لسه ما تحملت، انتظر
+            setTimeout(refreshMoodMap, 1500);
+        }
+    } catch (err) {
+        console.warn('⚠️ فشل قراءة news.json:', err.message);
+    }
 }
 
 // ============================================================
@@ -203,76 +219,49 @@ function injectMoodMapStyles() {
     style.id = 'mood-map-styles';
     style.textContent = `
         #mood-legend {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 380px;
+            position: fixed; bottom: 0; left: 0; right: 380px;
             height: 55px;
-            background: rgba(10, 18, 30, 0.98);
-            border-top: 1px solid rgba(56, 189, 248, 0.3);
+            background: rgba(10, 18, 30, 0.85);
+            border-top: 1px solid rgba(56, 189, 248, 0.25);
             z-index: 850;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 16px;
-            backdrop-filter: blur(15px);
-            font-family: inherit;
-            gap: 10px;
+            display: flex; align-items: center;
+            justify-content: space-between; padding: 0 16px;
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            font-family: inherit; gap: 10px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
         }
-        body.lang-en #mood-legend {
-            right: 0;
-            left: 380px;
-        }
+        body.lang-en #mood-legend { right: 0; left: 380px; }
         .legend-title {
-            color: #38bdf8;
-            font-size: 0.8rem;
-            font-weight: 700;
-            white-space: nowrap;
-            flex-shrink: 0;
+            color: #38bdf8; font-size: 0.8rem; font-weight: 700;
+            white-space: nowrap; flex-shrink: 0;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
         }
         .legend-items-wrap {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex: 1;
-            justify-content: flex-end;
-            overflow-x: auto;
-            padding: 4px 0;
-            scrollbar-width: none;
+            display: flex; align-items: center; gap: 12px;
+            flex: 1; justify-content: flex-end;
+            overflow-x: auto; padding: 4px 0; scrollbar-width: none;
         }
         .legend-items-wrap::-webkit-scrollbar { display: none; }
         .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.72rem;
-            color: #cbd5e1;
-            white-space: nowrap;
-            flex-shrink: 0;
+            display: flex; align-items: center; gap: 5px;
+            font-size: 0.72rem; color: #cbd5e1;
+            white-space: nowrap; flex-shrink: 0;
         }
         .legend-color {
-            width: 16px;
-            height: 16px;
-            border-radius: 4px;
-            box-shadow: 0 0 8px rgba(255,255,255,0.15), inset 0 0 4px rgba(0,0,0,0.3);
-            flex-shrink: 0;
-            border: 1px solid rgba(255,255,255,0.15);
+            width: 16px; height: 16px; border-radius: 4px;
+            box-shadow: 0 0 10px currentColor;
+            flex-shrink: 0; border: 1px solid rgba(255,255,255,0.2);
         }
         .legend-label { font-weight: 600; }
         @media (max-width: 768px) {
             #mood-legend {
                 right: 0; left: 0; bottom: 0;
                 height: auto; min-height: 52px;
-                padding: 6px 10px;
-                flex-direction: column;
-                gap: 4px;
+                padding: 6px 10px; flex-direction: column; gap: 4px;
             }
             .legend-title { font-size: 0.7rem; }
-            .legend-items-wrap {
-                width: 100%;
-                justify-content: center;
-                gap: 8px;
-            }
+            .legend-items-wrap { width: 100%; justify-content: center; gap: 8px; }
             .legend-item { font-size: 0.6rem; gap: 3px; }
             .legend-color { width: 12px; height: 12px; }
         }
@@ -280,34 +269,18 @@ function injectMoodMapStyles() {
     document.head.appendChild(style);
 }
 
-// ============================================================
-//  🔄 تحديث اللغة
-// ============================================================
 function updateLegendLanguage() {
     const isEn = document.body.classList.contains('lang-en');
     const lang = isEn ? 'en' : 'ar';
-
     const titleEl = document.getElementById('legendTitle');
-    if (titleEl) {
-        titleEl.textContent = isEn ? '🎨 World Mood' : '🎨 مزاج العالم';
-    }
+    if (titleEl) titleEl.textContent = isEn ? '🎨 World Mood' : '🎨 مزاج العالم';
     document.querySelectorAll('.legend-label').forEach(el => {
         const text = el.getAttribute('data-' + lang);
         if (text) el.textContent = text;
     });
 }
 
-window.addEventListener('languageChanged', () => {
-    setTimeout(updateLegendLanguage, 100);
-});
-
-// ============================================================
-//  🌐 تصدير الدوال عالمياً
-// ============================================================
-window.loadMoodMap = loadMoodMap;
-window.addLegendBar = addLegendBar;
-window.refreshMoodMap = refreshMoodMap;
-window.computeMoodScore = computeMoodScore;
+window.addEventListener('languageChanged', () => setTimeout(updateLegendLanguage, 100));
 
 // ============================================================
 //  🚀 التشغيل
@@ -316,12 +289,21 @@ function initMoodMap() {
     injectMoodMapStyles();
     addLegendBar();
     loadMoodMap();
-    setInterval(refreshMoodMap, 10000);
+    loadNewsData();
+
+    // تحديث كل 5 دقائق
+    setInterval(loadNewsData, 5 * 60 * 1000);
+
     console.log('✅ تم تفعيل خريطة المزاج!');
 }
 
+window.loadMoodMap = loadMoodMap;
+window.addLegendBar = addLegendBar;
+window.refreshMoodMap = refreshMoodMap;
+window.loadNewsData = loadNewsData;
+
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(initMoodMap, 2000));
+    document.addEventListener('DOMContentLoaded', () => setTimeout(initMoodMap, 1500));
 } else {
-    setTimeout(initMoodMap, 2000);
+    setTimeout(initMoodMap, 1500);
 }
