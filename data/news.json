@@ -1,48 +1,99 @@
 {
-  "updated_at": "2026-10-13T21:22:13.198Z",
-  "total": 398,
-  "new_count": 38,
+  "updated_at": "2026-10-13T22:21:07.869Z",
+  "total": 434,
+  "new_count": 36,
   "ai_success": 0,
-  "ai_fallback": 38,
+  "ai_fallback": 36,
   "global": {
     "score": 45,
-    "totalArticles": 398,
+    "totalArticles": 434,
     "categories": {
-      "politics": 291,
-      "culture": 15,
-      "war": 46,
-      "positive": 9,
-      "disaster": 8,
+      "politics": 313,
+      "war": 50,
+      "culture": 20,
+      "disaster": 10,
+      "positive": 11,
+      "sports": 4,
       "crisis": 11,
       "economy": 10,
-      "sports": 3,
       "health": 5
     }
   },
   "countries": {
-    "NZ": {
-      "score": 50,
-      "articleCount": 2,
+    "AU": {
+      "score": 25,
+      "articleCount": 4,
       "categories": {
-        "politics": 2
+        "war": 1,
+        "politics": 3
+      }
+    },
+    "GB": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
+      }
+    },
+    "UA": {
+      "score": 21,
+      "articleCount": 14,
+      "categories": {
+        "war": 5,
+        "politics": 8,
+        "disaster": 1
       }
     },
     "CN": {
+      "score": 50,
+      "articleCount": 7,
+      "categories": {
+        "politics": 7
+      }
+    },
+    "JP": {
       "score": 50,
       "articleCount": 5,
       "categories": {
         "politics": 5
       }
     },
-    "SA": {
-      "score": 37,
-      "articleCount": 27,
+    "ES": {
+      "score": 50,
+      "articleCount": 9,
       "categories": {
-        "war": 3,
+        "politics": 7,
+        "culture": 1,
+        "crisis": 1
+      }
+    },
+    "SA": {
+      "score": 35,
+      "articleCount": 29,
+      "categories": {
+        "politics": 22,
+        "war": 4,
         "disaster": 1,
-        "politics": 21,
         "sports": 1,
         "economy": 1
+      }
+    },
+    "RU": {
+      "score": 36,
+      "articleCount": 9,
+      "categories": {
+        "positive": 1,
+        "war": 3,
+        "politics": 3,
+        "economy": 1,
+        "culture": 1
+      }
+    },
+    "NZ": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
       }
     },
     "US": {
@@ -61,15 +112,6 @@
         "health": 1
       }
     },
-    "UA": {
-      "score": 25,
-      "articleCount": 13,
-      "categories": {
-        "war": 4,
-        "politics": 8,
-        "disaster": 1
-      }
-    },
     "GR": {
       "score": 44,
       "articleCount": 11,
@@ -84,25 +126,6 @@
       "categories": {
         "politics": 5,
         "war": 4
-      }
-    },
-    "ES": {
-      "score": 50,
-      "articleCount": 7,
-      "categories": {
-        "politics": 5,
-        "culture": 1,
-        "crisis": 1
-      }
-    },
-    "RU": {
-      "score": 27,
-      "articleCount": 8,
-      "categories": {
-        "war": 3,
-        "politics": 3,
-        "economy": 1,
-        "culture": 1
       }
     },
     "NG": {
@@ -149,32 +172,11 @@
         "culture": 1
       }
     },
-    "AU": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
     "IQ": {
       "score": 50,
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "JP": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
-    "GB": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
       }
     },
     "IL": {
@@ -361,6 +363,474 @@
     }
   },
   "articles": [
+    {
+      "hash": "a087a09ed71b",
+      "title": "Cash, drugs, rifle and Taser seized in Taranaki raids, six arrested",
+      "summary": "Cash, drugs, rifle and Taser seized in Taranaki raids, six arrested",
+      "link": "https://www.rnz.co.nz/news/crime-and-justice/1890394/cash-drugs-rifle-and-taser-seized-in-taranaki-raids-six-arrested",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930066867
+    },
+    {
+      "hash": "45a7e369727e",
+      "title": "'No sense': Outrage over government order to limit nurse enrolments",
+      "summary": "'No sense': Outrage over government order to limit nurse enrolments",
+      "link": "https://www.rnz.co.nz/news/political/1891371/no-sense-outrage-over-government-order-to-limit-nurse-enrolments",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1791930061749
+    },
+    {
+      "hash": "df7833b61df3",
+      "title": "NZ First wants to change fast-track regime, to save Kiwis 'suffering' through developments",
+      "summary": "NZ First wants to change fast-track regime, to save Kiwis 'suffering' through developments",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1887394/nz-first-wants-to-change-fast-track-regime-to-save-kiwis-suffering-through-developments",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930056445
+    },
+    {
+      "hash": "0ad42d64f08e",
+      "title": "'Sluggish' Australia joins criticism of Trump administration's ICC attack",
+      "summary": "'Sluggish' Australia joins criticism of Trump administration's ICC attack",
+      "link": "https://www.abc.net.au/news/2026-10-14/australia-joins-criticism-of-trump-administration-assault-on-icc/107262112",
+      "source": "ABC Australia",
+      "countryCode": "AU",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791930051323
+    },
+    {
+      "hash": "8af83ed34e52",
+      "title": "De Minaur sets up Shanghai quarterfinal with Zverev",
+      "summary": "De Minaur sets up Shanghai quarterfinal with Zverev",
+      "link": "https://www.abc.net.au/news/2026-10-14/alex-de-minuar-advances-to-quarterfinals-of-shanghai-masters/107263278",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791930046224
+    },
+    {
+      "hash": "d800d9ce7588",
+      "title": "'Beautiful weed' steadily choking landscapes across southern WA",
+      "summary": "'Beautiful weed' steadily choking landscapes across southern WA",
+      "link": "https://www.abc.net.au/news/2026-10-14/questions-over-wa-government-arum-lily-eradication/107172158",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930041095
+    },
+    {
+      "hash": "dc9b4120a56b",
+      "title": "Zelenskiy visits Britain as Burnham pledges fresh support for Ukraine",
+      "summary": "Zelenskiy visits Britain as Burnham pledges fresh support for Ukraine",
+      "link": "https://www.straitstimes.com/world/europe/zelenskiy-visits-britain-as-burnham-pledges-fresh-support-for-ukraine",
+      "source": "Straits Times",
+      "countryCode": "GB",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930035986
+    },
+    {
+      "hash": "a54ae095147a",
+      "title": "Russian missile attack on Kyiv kills one",
+      "summary": "Russian missile attack on Kyiv kills one",
+      "link": "https://www.straitstimes.com/world/europe/russian-missile-attack-on-kyiv-kills-one",
+      "source": "Straits Times",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791930030899
+    },
+    {
+      "hash": "970435d32803",
+      "title": "Bill to tweak FCRA similar to UPA-era law: JPC chief",
+      "summary": "Bill to tweak FCRA similar to UPA-era law: JPC chief",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/bill-to-tweak-fcra-similar-to-upa-era-law-jpc-chief/articleshow/134926661.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930025805
+    },
+    {
+      "hash": "a61a19bff9d2",
+      "title": "'It's a no-brainer': EAM underlines need for stable border for normal ties with China",
+      "summary": "'It's a no-brainer': EAM underlines need for stable border for normal ties with China",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/its-a-no-brainer-eam-jaishankar-underlines-need-for-stable-border-to-normalise-china-ties/articleshow/134926481.cms]]>",
+      "source": "Times of India",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930020701
+    },
+    {
+      "hash": "872f61816a8b",
+      "title": "Trump’s ‘golden age’ push hands top science honours to big tech. Will it work?",
+      "summary": "Trump’s ‘golden age’ push hands top science honours to big tech. Will it work?",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3370777/trumps-golden-age-push-hands-top-science-honours-big-tech-will-it-work?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930015609
+    },
+    {
+      "hash": "3ddb7b150d8a",
+      "title": "Russia detains Japanese journalist on suspicion of spying",
+      "summary": "Russia detains Japanese journalist on suspicion of spying",
+      "link": "https://www.scmp.com/news/world/russia-central-asia/article/3370789/russia-detains-japanese-journalist-suspicion-spying?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "JP",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930010504
+    },
+    {
+      "hash": "c895eadf0aa1",
+      "title": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+      "summary": "Public comments flood US government websites over proposed H-1B, OPT fee hikes",
+      "link": "https://www.scmp.com/news/us/article/3370790/public-comments-flood-us-government-websites-over-proposed-h-1b-opt-fee-hikes?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1791930005395
+    },
+    {
+      "hash": "759b0557d8d9",
+      "title": "Atletico Madrid beat Manchester United 2-0 as winless run continues",
+      "summary": "Atletico Madrid beat Manchester United 2-0 as winless run continues",
+      "link": "https://www.aljazeera.com/sports/2026/10/13/atletico-madrid-beat-manchester-united-2-0-as-winless-run-continues?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791930000268
+    },
+    {
+      "hash": "7aa9a6881493",
+      "title": "Pope Leo diagnosed with cancer after surgery to remove part of lung",
+      "summary": "Pope Leo diagnosed with cancer after surgery to remove part of lung",
+      "link": "https://www.aljazeera.com/news/2026/10/13/pope-leo-diagnosed-with-cancer-after-surgery-to-remove-part-of-lung?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791929995171
+    },
+    {
+      "hash": "8752a30c496e",
+      "title": "Arsenal beat Lille 3-0 as perfect Champions League start continues",
+      "summary": "Arsenal beat Lille 3-0 as perfect Champions League start continues",
+      "link": "https://www.aljazeera.com/sports/2026/10/13/arsenal-beat-lille-3-0-as-perfect-champions-league-start-continues?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791929990059
+    },
+    {
+      "hash": "7c8b785868f4",
+      "title": "Tinubu can&#8217;t handle insecurity: Why does he want another term?, By Ugoji Egbujo",
+      "summary": "Tinubu can&#8217;t handle insecurity: Why does he want another term?, By Ugoji Egbujo",
+      "link": "https://www.premiumtimesng.com/opinion/916928-tinubu-cant-handle-insecurity-why-does-he-want-another-term-by-ugoji-egbujo.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929984950
+    },
+    {
+      "hash": "716452f0930b",
+      "title": "Afrilition: Mental models, By Adéwálé Àjàdí",
+      "summary": "Afrilition: Mental models, By Adéwálé Àjàdí",
+      "link": "https://www.premiumtimesng.com/opinion/916935-afrilition-mental-models-by-adewale-ajadi.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929979844
+    },
+    {
+      "hash": "78e733a8a12a",
+      "title": "DAQUI A POUCO: TSE julga processos envolvendo publicações de propaganda eleitoral de Flávio e Lula",
+      "summary": "DAQUI A POUCO: TSE julga processos envolvendo publicações de propaganda eleitoral de Flávio e Lula",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/ao-vivo/tse-julga-processos-propaganda-eleitoral.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929974732
+    },
+    {
+      "hash": "dfba4e75975a",
+      "title": "Rapaz de 21 anos é preso suspeito de matar jovem esfaqueado durante discussão em Narandiba",
+      "summary": "Rapaz de 21 anos é preso suspeito de matar jovem esfaqueado durante discussão em Narandiba",
+      "link": "https://g1.globo.com/sp/presidente-prudente-e-regiao/noticia/2026/10/13/rapaz-de-21-anos-e-preso-suspeito-de-matar-jovem-esfaqueado-durante-discussao-em-narandiba.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929969640
+    },
+    {
+      "hash": "6be540ec513c",
+      "title": "Assista ao JAP2 desta terça (13)",
+      "summary": "Assista ao JAP2 desta terça (13)",
+      "link": "https://g1.globo.com/ap/ao-vivo/assista-ao-bom-dia-amapa-desta-terca-13.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929964549
+    },
+    {
+      "hash": "676bd374f5ec",
+      "title": "EN DIRECT, budget 2027 : la motion de rejet déposée par le Parti socialiste rejetée par les députés",
+      "summary": "EN DIRECT, budget 2027 : la motion de rejet déposée par le Parti socialiste rejetée par les députés",
+      "link": "https://www.lemonde.fr/politique/live/2026/10/13/en-direct-budget-2027-les-debats-sur-le-projet-de-loi-de-finances-commencent-a-l-assemblee-nationale_6793072_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791929959434
+    },
+    {
+      "hash": "7827e8ddbaf0",
+      "title": "OpenAI says employee caught planting listening device",
+      "summary": "OpenAI says employee caught planting listening device",
+      "link": "https://www.dw.com/en/openai-says-employee-caught-planting-listening-device/a-79655491?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929954335
+    },
+    {
+      "hash": "3f0fc7732057",
+      "title": "China is bringing car production to EU",
+      "summary": "China is bringing car production to EU",
+      "link": "https://www.france24.com/en/tv-shows/business/20261013-china-is-bringing-car-production-to-eu",
+      "source": "France24 English",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929949224
+    },
+    {
+      "hash": "806fc33de94c",
+      "title": "Pope Leo has cancerous growth removed in lung operation",
+      "summary": "Pope Leo has cancerous growth removed in lung operation",
+      "link": "https://www.france24.com/en/pope-leo-has-cancerous-growth-removed-in-lung-operation",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791929944092
+    },
+    {
+      "hash": "3e90037c9343",
+      "title": "Arsenal thrash Lille as Atletico Madrid beat Manchester United",
+      "summary": "Arsenal thrash Lille as Atletico Madrid beat Manchester United",
+      "link": "https://www.france24.com/en/sport/20261013-arsenal-thrash-lille-as-atletico-madrid-beat-manchester-united",
+      "source": "France24 English",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929938986
+    },
+    {
+      "hash": "ebd06bf8a264",
+      "title": "Japanese journalist arrested in Russia on suspicion of spying",
+      "summary": "Japanese journalist arrested in Russia on suspicion of spying",
+      "link": "https://news.sky.com/story/japanese-journalist-arrested-in-russia-on-suspicion-of-spying-13598988",
+      "source": "Sky News",
+      "countryCode": "JP",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929933893
+    },
+    {
+      "hash": "55053ece33c5",
+      "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "summary": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
+      "link": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929928797
+    },
+    {
+      "hash": "97f071b608a1",
+      "title": "«أبطال أوروبا»: كلوب بروج يُسقط إنتر ميلان في «سان سيرو»",
+      "summary": "«أبطال أوروبا»: كلوب بروج يُسقط إنتر ميلان في «سان سيرو»",
+      "link": "https://aawsat.com/node/5329335",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929923702
+    },
+    {
+      "hash": "d8a31eb87629",
+      "title": "فيسينغ: التوقف الطويل أثّر على الاتحاد… والأخطاء المبكرة كلّفتنا الخسارة",
+      "summary": "فيسينغ: التوقف الطويل أثّر على الاتحاد… والأخطاء المبكرة كلّفتنا الخسارة",
+      "link": "https://aawsat.com/node/5329338",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791929918609
+    },
+    {
+      "hash": "f6103325082a",
+      "title": "«أبطال أوروبا»: نابولي يسقط في فياريال... ولايبزيغ يُطيح بأيندهوفن",
+      "summary": "«أبطال أوروبا»: نابولي يسقط في فياريال... ولايبزيغ يُطيح بأيندهوفن",
+      "link": "https://aawsat.com/node/5329339",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791929913504
+    },
+    {
+      "hash": "049a312f2b39",
+      "title": "النيران تلتهم مئات المنازل وتجبر السكان على الفرار.. حرائق مدمرة تجتاح سومطرة الإندونيسية",
+      "summary": "النيران تلتهم مئات المنازل وتجبر السكان على الفرار.. حرائق مدمرة تجتاح سومطرة الإندونيسية",
+      "link": "https://arabic.euronews.com/2026/10/13/sumatra-wildfires-300-homes-destroyed",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791929908401
+    },
+    {
+      "hash": "cd618bfb0c91",
+      "title": "الداخلية السورية: مقتل 4 عناصر أمن إثر استهداف دوريتين بحماة",
+      "summary": "الداخلية السورية: مقتل 4 عناصر أمن إثر استهداف دوريتين بحماة",
+      "link": "https://www.skynewsarabia.com/middle-east/1898130-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A%D8%A9-%D9%85%D9%82%D8%AA%D9%84-4-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A3%D9%85%D9%86-%D8%A5%D8%AB%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%AF%D9%88%D8%B1%D9%8A%D8%AA%D9%8A%D9%86-%D8%A8%D8%AD%D9%85%D8%A7%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791929903306
+    },
+    {
+      "hash": "3e969fad3d0f",
+      "title": "\"خيانة للحلفاء\".. مطالب لترامب بإلغاء اتفاق الديزل مع روسيا",
+      "summary": "\"خيانة للحلفاء\".. مطالب لترامب بإلغاء اتفاق الديزل مع روسيا",
+      "link": "https://www.skynewsarabia.com/world/1898131-%D8%AE%D9%8A%D8%A7%D9%86%D8%A9-%D9%84%D9%84%D8%AD%D9%84%D9%81%D8%A7%D8%A1-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%84%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%A8%D8%A5%D9%84%D8%BA%D8%A7%D8%A1-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%84%D8%AF%D9%8A%D8%B2%D9%84-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": "RU",
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791929898204
+    },
+    {
+      "hash": "6b09f7063b89",
+      "title": "حريق محدود إثر استهداف مبنى إداري تابع لشركة أرامكو بالظهران",
+      "summary": "حريق محدود إثر استهداف مبنى إداري تابع لشركة أرامكو بالظهران",
+      "link": "https://www.skynewsarabia.com/middle-east/1898132-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D8%A5%D8%AB%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%84%D8%B4%D8%B1%D9%83%D8%A9-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D8%A8%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1791929893073
+    },
+    {
+      "hash": "1102b4cc8de5",
+      "title": "الرياض تسجّل 4 إصابات وتضرر 15 منزلاً إثر هجمات صاروخية، واندلاع حريق في مبنى تابع لأرامكو في الظهران",
+      "summary": "الرياض تسجّل 4 إصابات وتضرر 15 منزلاً إثر هجمات صاروخية، واندلاع حريق في مبنى تابع لأرامكو في الظهران",
+      "link": "https://www.bbc.co.uk/arabic/live/cmy4xv0nyy0nt?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791929887980
+    },
     {
       "hash": "c099222b91e9",
       "title": "National promises to remove Auckland's ban on minimum car parking rules",
