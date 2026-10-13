@@ -1,59 +1,91 @@
 {
-  "updated_at": "2026-10-13T12:34:36.869Z",
-  "total": 40,
+  "updated_at": "2026-10-13T13:22:43.974Z",
+  "total": 80,
   "new_count": 40,
   "ai_success": 0,
   "ai_fallback": 40,
   "global": {
-    "score": 45,
-    "totalArticles": 40,
+    "score": 44,
+    "totalArticles": 80,
     "categories": {
-      "politics": 30,
-      "crisis": 2,
-      "war": 3,
-      "disaster": 1,
-      "positive": 1,
-      "health": 1,
-      "economy": 2
+      "politics": 58,
+      "disaster": 2,
+      "war": 8,
+      "health": 2,
+      "crisis": 3,
+      "economy": 4,
+      "culture": 1,
+      "positive": 2
     }
   },
   "countries": {
-    "KZ": {
-      "score": 50,
+    "US": {
+      "score": 64,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
+        "positive": 1
+      }
+    },
+    "BR": {
+      "score": 20,
       "articleCount": 1,
       "categories": {
-        "politics": 1
+        "disaster": 1
       }
     },
     "UA": {
-      "score": 50,
-      "articleCount": 2,
+      "score": 24,
+      "articleCount": 3,
       "categories": {
+        "war": 1,
         "politics": 2
       }
     },
-    "DE": {
+    "IT": {
+      "score": 20,
+      "articleCount": 1,
+      "categories": {
+        "health": 1
+      }
+    },
+    "PK": {
       "score": 20,
       "articleCount": 1,
       "categories": {
         "crisis": 1
       }
     },
-    "SA": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
-    "SK": {
+    "IL": {
       "score": 0,
       "articleCount": 1,
       "categories": {
         "war": 1
       }
     },
-    "IN": {
+    "CN": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "SA": {
+      "score": 50,
+      "articleCount": 7,
+      "categories": {
+        "politics": 7
+      }
+    },
+    "FR": {
+      "score": 66,
+      "articleCount": 2,
+      "categories": {
+        "culture": 1,
+        "politics": 1
+      }
+    },
+    "QA": {
       "score": 50,
       "articleCount": 1,
       "categories": {
@@ -61,6 +93,42 @@
       }
     },
     "GR": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "SK": {
+      "score": 0,
+      "articleCount": 2,
+      "categories": {
+        "war": 2
+      }
+    },
+    "DE": {
+      "score": 9,
+      "articleCount": 2,
+      "categories": {
+        "war": 1,
+        "crisis": 1
+      }
+    },
+    "TH": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "KZ": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "IN": {
       "score": 50,
       "articleCount": 1,
       "categories": {
@@ -95,13 +163,6 @@
         "politics": 1
       }
     },
-    "US": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "ES": {
       "score": 50,
       "articleCount": 1,
@@ -118,6 +179,526 @@
     }
   },
   "articles": [
+    {
+      "hash": "b74aeb815efc",
+      "title": "Jovem é morto a tiros dentro de bar em Belém; dono do estabelecimento também é baleado",
+      "summary": "Jovem é morto a tiros dentro de bar em Belém; dono do estabelecimento também é baleado",
+      "link": "https://g1.globo.com/pa/para/noticia/2026/10/13/jovem-e-morto-a-tiros-dentro-de-bar-em-belem-dono-do-estabelecimento-tambem-e-baleado.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897762974
+    },
+    {
+      "hash": "253158a60c13",
+      "title": "IMF trims Latin America’s outlook to 2.3% and sharply cuts Argentina’s",
+      "summary": "IMF trims Latin America’s outlook to 2.3% and sharply cuts Argentina’s",
+      "link": "<![CDATA[https://en.mercopress.com/2026/10/13/imf-trims-latin-america-s-outlook-to-2.3-and-sharply-cuts-argentina-s?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
+      "source": "MercoPress",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897757918
+    },
+    {
+      "hash": "a3520ac16cac",
+      "title": "Brazil blames human action for the fires sweeping the Amazon",
+      "summary": "Brazil blames human action for the fires sweeping the Amazon",
+      "link": "<![CDATA[https://en.mercopress.com/2026/10/13/brazil-blames-human-action-for-the-fires-sweeping-the-amazon?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
+      "source": "MercoPress",
+      "countryCode": "BR",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1791897752866
+    },
+    {
+      "hash": "219bb76d3be3",
+      "title": "“Falkland Islanders will is to remain British, and we will uphold it”, PM Burnham told Trump",
+      "summary": "“Falkland Islanders will is to remain British, and we will uphold it”, PM Burnham told Trump",
+      "link": "<![CDATA[https://en.mercopress.com/2026/10/13/falkland-islanders-will-is-to-remain-british-and-we-will-uphold-it-pm-burnham-told-trump?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
+      "source": "MercoPress",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897747807
+    },
+    {
+      "hash": "7c8d0120e1c8",
+      "title": "Ukraine caught between escalating war and growing pressure from Trump administration",
+      "summary": "Ukraine caught between escalating war and growing pressure from Trump administration",
+      "link": "https://www.cbc.ca/news/world/trump-kyiv-russia-energy-9.7378047?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791897742751
+    },
+    {
+      "hash": "09c5189a5937",
+      "title": "Pope Leo admitted to Rome hospital for surgery to remove lung nodule",
+      "summary": "Pope Leo admitted to Rome hospital for surgery to remove lung nodule",
+      "link": "https://www.cbc.ca/news/world/pope-leo-hospital-surgery-9.7378399?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": "IT",
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1791897737693
+    },
+    {
+      "hash": "d9f7c5384b6c",
+      "title": "Canadians are still boycotting Las Vegas. The Sin City slump is now a major election issue",
+      "summary": "Canadians are still boycotting Las Vegas. The Sin City slump is now a major election issue",
+      "link": "https://www.cbc.ca/news/world/canadians-boycotting-las-vegas-election-issue-9.7375873?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1791897732627
+    },
+    {
+      "hash": "334076d7d758",
+      "title": "Trump&apos;s diesel deal with Putin angers Europe",
+      "summary": "Trump&apos;s diesel deal with Putin angers Europe",
+      "link": "https://www.npr.org/2026/10/13/nx-s1-5998764/trumps-diesel-deal-with-putin-angers-europe",
+      "source": "NPR World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897727565
+    },
+    {
+      "hash": "b787deae47d2",
+      "title": "Pakistan imposes emergency rule in former prime minister&apos;s stronghold",
+      "summary": "Pakistan imposes emergency rule in former prime minister&apos;s stronghold",
+      "link": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
+      "source": "NPR World",
+      "countryCode": "PK",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1791897722511
+    },
+    {
+      "hash": "bee19209bb89",
+      "title": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar&apos;s home",
+      "summary": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar&apos;s home",
+      "link": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
+      "source": "NPR World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1791897717459
+    },
+    {
+      "hash": "19621688fcf9",
+      "title": "Zelensky Comment Raises Fear That U.S. Is Cutting Intelligence Sharing",
+      "summary": "Zelensky Comment Raises Fear That U.S. Is Cutting Intelligence Sharing",
+      "link": "https://www.nytimes.com/2026/10/13/world/europe/ukraine-trump-intelligence.html",
+      "source": "NY Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897712396
+    },
+    {
+      "hash": "ad8be58c3e83",
+      "title": "U.K. and Europe Recoil From Trump’s Diesel Deal With Putin",
+      "summary": "U.K. and Europe Recoil From Trump’s Diesel Deal With Putin",
+      "link": "https://www.nytimes.com/2026/10/13/world/europe/trump-putin-diesel-uk-europe-gift.html",
+      "source": "NY Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897707334
+    },
+    {
+      "hash": "12e4b2058be2",
+      "title": "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+      "summary": "The Oct. 7 Attack Changed Israel, but Not Its Politics",
+      "link": "https://www.nytimes.com/2026/10/13/world/middleeast/israel-october-7-attacks-elections.html",
+      "source": "NY Times",
+      "countryCode": "IL",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791897702272
+    },
+    {
+      "hash": "561e2710083d",
+      "title": "Retail spending fell in March as consumers pull back",
+      "summary": "Retail spending fell in March as consumers pull back",
+      "link": "https://www.cnn.com/2023/04/14/economy/march-retail-sales/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897697218
+    },
+    {
+      "hash": "fb84aa302aa8",
+      "title": "Still haven't filed your taxes? Here's what you need to know",
+      "summary": "Still haven't filed your taxes? Here's what you need to know",
+      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897692162
+    },
+    {
+      "hash": "94654941a6c4",
+      "title": "Markets digest bank earnings after recent turmoil",
+      "summary": "Markets digest bank earnings after recent turmoil",
+      "link": "https://www.cnn.com/business/live-news/stock-market-bank-earnings/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1791897687106
+    },
+    {
+      "hash": "29622f3dc503",
+      "title": "Trump slams ‘radical lunatics’ over claims Russia and China aid Iran",
+      "summary": "Trump slams ‘radical lunatics’ over claims Russia and China aid Iran",
+      "link": "<![CDATA[https://rt-english.com/news/647128-trump-russia-china-iran-aid/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897682053
+    },
+    {
+      "hash": "1f9e673d8944",
+      "title": "Zelensky prolonging fighting to avoid answering for corruption – Polish MEP",
+      "summary": "Zelensky prolonging fighting to avoid answering for corruption – Polish MEP",
+      "link": "<![CDATA[https://rt-english.com/news/647106-zelensky-prolong-fighting-answer-corruption/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897676985
+    },
+    {
+      "hash": "f8865fe6f5e2",
+      "title": "West condemns Houthis but stays silent on Saudi strikes – former British diplomat (VIDEO)",
+      "summary": "West condemns Houthis but stays silent on Saudi strikes – former British diplomat (VIDEO)",
+      "link": "<![CDATA[https://rt-english.com/news/647127-sanchez-murrey-saudi-yemen/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897671931
+    },
+    {
+      "hash": "4969066a8cea",
+      "title": "Jeanne Robles, nacionalizada por la ‘ley de nietos’: “Estoy dispuesta a todo para recuperar el voto”",
+      "summary": "Jeanne Robles, nacionalizada por la ‘ley de nietos’: “Estoy dispuesta a todo para recuperar el voto”",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-10-13/jeanne-robles-nacionalizada-por-la-ley-de-nietos-estoy-dispuesta-a-todo-para-recuperar-el-voto.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897666694
+    },
+    {
+      "hash": "d949d6e18abe",
+      "title": "Miles de personas reciben con entusiasmo a los Reyes en Ceuta: “Hoy toda España es caballa”",
+      "summary": "Miles de personas reciben con entusiasmo a los Reyes en Ceuta: “Hoy toda España es caballa”",
+      "link": "https://elpais.com/espana/2026-10-13/miles-de-personas-reciben-con-entusiasmo-a-los-reyes-en-ceuta-hoy-toda-espana-es-caballa.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897661645
+    },
+    {
+      "hash": "1847fd32526e",
+      "title": "Aubagne : le Parquet national antiterroriste saisi ; le tireur soupçonné d’adhérer à la mouvance TCC, glorifiant les tueries de masse",
+      "summary": "Aubagne : le Parquet national antiterroriste saisi ; le tireur soupçonné d’adhérer à la mouvance TCC, glorifiant les tueries de masse",
+      "link": "https://www.lemonde.fr/societe/article/2026/10/13/aubagne-le-parquet-national-antiterroriste-saisi-le-tireur-soupconne-d-adherer-a-la-mouvance-tcc-glorifiant-les-tueries-de-masse_6793103_3224.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897656588
+    },
+    {
+      "hash": "2107e11bc5df",
+      "title": "EN DIRECT, budget 2027 : les députés du RN voteront contre la motion de rejet déposée par les socialistes",
+      "summary": "EN DIRECT, budget 2027 : les députés du RN voteront contre la motion de rejet déposée par les socialistes",
+      "link": "https://www.lemonde.fr/politique/live/2026/10/13/en-direct-budget-2027-les-socialistes-rejettent-la-main-tendue-de-sebastien-lecornu-qui-les-a-appeles-a-depasser-leurs-desaccords_6793072_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897651532
+    },
+    {
+      "hash": "f1b4aac24161",
+      "title": "EN DIRECT, mouvement lycéen : à Paris, un cortège est parti de l’Hôtel de ville pour cette nouvelle journée de mobilisation",
+      "summary": "EN DIRECT, mouvement lycéen : à Paris, un cortège est parti de l’Hôtel de ville pour cette nouvelle journée de mobilisation",
+      "link": "https://www.lemonde.fr/societe/live/2026/10/13/en-direct-mouvement-lyceen-147-membres-de-l-education-nationale-ont-ete-blesses-depuis-le-debut-de-la-mobilisation-214-lycees-restent-fermes-mardi-annonce-le-ministere_6793059_3224.html",
+      "source": "Le Monde",
+      "countryCode": "FR",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791897646472
+    },
+    {
+      "hash": "9e6db9584195",
+      "title": "Pearls, diamonds and the stories behind Doha’s international jewellery show",
+      "summary": "Pearls, diamonds and the stories behind Doha’s international jewellery show",
+      "link": "https://www.euronews.com/2026/10/13/pearls-diamonds-and-the-stories-behind-dohas-international-jewellery-show",
+      "source": "Euronews English",
+      "countryCode": "QA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897641405
+    },
+    {
+      "hash": "2560c346b6c7",
+      "title": "Lake Tuzkan – life and tourism around Jizzakh’s desert lakes",
+      "summary": "Lake Tuzkan – life and tourism around Jizzakh’s desert lakes",
+      "link": "https://www.euronews.com/2026/10/13/lake-tuzkan-life-and-tourism-around-jizzakhs-desert-lakes",
+      "source": "Euronews English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897636348
+    },
+    {
+      "hash": "df39a2ecf40a",
+      "title": "'We are looking into it, we are not satisfied,' says Trump as he mulls fate of US ambassador to Greece",
+      "summary": "'We are looking into it, we are not satisfied,' says Trump as he mulls fate of US ambassador to Greece",
+      "link": "https://www.euronews.com/2026/10/13/we-are-looking-into-it-we-are-not-satisfied-says-trump-as-he-mulls-fate-of-us-ambassador-t",
+      "source": "Euronews English",
+      "countryCode": "GR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897631288
+    },
+    {
+      "hash": "27add1009aff",
+      "title": "Critics warn of espionage risks as Slovakia restores military-diplomatic representation with Russia",
+      "summary": "Critics warn of espionage risks as Slovakia restores military-diplomatic representation with Russia",
+      "link": "https://www.dw.com/en/critics-warn-of-espionage-risks-as-slovakia-restores-military-diplomatic-representation-with-russia/a-79649641?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "SK",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791897626217
+    },
+    {
+      "hash": "bc2ac359deba",
+      "title": "Nord Stream: Trial of Ukrainian attack suspect begins in Germany",
+      "summary": "Nord Stream: Trial of Ukrainian attack suspect begins in Germany",
+      "link": "https://www.dw.com/en/nord-stream-trial-of-ukrainian-attack-suspect-begins-in-germany/a-79647617?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "DE",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791897621160
+    },
+    {
+      "hash": "9b95f74b52f9",
+      "title": "Asia's fertility hub: Thailand emerges as top destination for IVF treatment",
+      "summary": "Asia's fertility hub: Thailand emerges as top destination for IVF treatment",
+      "link": "https://www.france24.com/en/tv-shows/focus/20261013-asia-s-fertility-hub-thailand-emerges-as-top-destination-for-ivf-treatment",
+      "source": "France24 English",
+      "countryCode": "TH",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897616080
+    },
+    {
+      "hash": "ed900dac0095",
+      "title": "IMF upgrades 2026 growth forecast but warns of 'split' outlook",
+      "summary": "IMF upgrades 2026 growth forecast but warns of 'split' outlook",
+      "link": "https://www.france24.com/en/imf-upgrades-2026-growth-forecast-but-warns-of-split-outlook",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791897611017
+    },
+    {
+      "hash": "57d82a85a191",
+      "title": "In France, new day of demonstrations against learning conditions, teaching gaps",
+      "summary": "In France, new day of demonstrations against learning conditions, teaching gaps",
+      "link": "https://www.france24.com/en/in-france-new-day-of-demonstrations-against-learning-conditions-teaching-gaps",
+      "source": "France24 English",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897605208
+    },
+    {
+      "hash": "c3aef0d26a6e",
+      "title": "حبوب الميلاتونين للنوم... متى تصبح خطيرة؟",
+      "summary": "حبوب الميلاتونين للنوم... متى تصبح خطيرة؟",
+      "link": "https://aawsat.com/node/5329132",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897600143
+    },
+    {
+      "hash": "734e57da444e",
+      "title": "نمو القروض وزيادة الفوائد يرفعان أرباح «ويلز فارغو» في الربع الثالث",
+      "summary": "نمو القروض وزيادة الفوائد يرفعان أرباح «ويلز فارغو» في الربع الثالث",
+      "link": "https://aawsat.com/node/5329133",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1791897595089
+    },
+    {
+      "hash": "7fd340e8e393",
+      "title": "طرق غير مكلفة للوقاية من خشونة المفاصل",
+      "summary": "طرق غير مكلفة للوقاية من خشونة المفاصل",
+      "link": "https://aawsat.com/node/5329134",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897590044
+    },
+    {
+      "hash": "056e745ca130",
+      "title": "السعودية تدعو المدنيين إلى إخلاء موقع في صنعاء",
+      "summary": "السعودية تدعو المدنيين إلى إخلاء موقع في صنعاء",
+      "link": "https://www.skynewsarabia.com/middle-east/1898063-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AF%D8%B9%D9%88-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D8%A5%D8%AE%D9%84%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%B5%D9%86%D8%B9%D8%A7%D8%A1",
+      "source": "Sky News عربية",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897584986
+    },
+    {
+      "hash": "3f03dbb53c80",
+      "title": "لماذا تتنافس واشنطن وبكين لفرض توقيتها على سطح القمر؟ اجتماع في باريس للتوصل لاتفاق",
+      "summary": "لماذا تتنافس واشنطن وبكين لفرض توقيتها على سطح القمر؟ اجتماع في باريس للتوصل لاتفاق",
+      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D8%AA%D9%83%D9%86%D9%88/20261013-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%AA%D9%86%D8%A7%D9%81%D8%B3-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D9%88%D8%A8%D9%83%D9%8A%D9%86-%D9%84%D9%81%D8%B1%D8%B6-%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D8%B3%D8%B7%D8%AD-%D8%A7%D9%84%D9%82%D9%85%D8%B1-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D9%81%D9%8A-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D9%84%D9%84%D8%AA%D9%88%D8%B5%D9%84-%D9%84%D8%A7%D8%AA%D9%81%D8%A7%D9%82",
+      "source": "France24 عربي",
+      "countryCode": "US",
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791897579931
+    },
+    {
+      "hash": "b57b373e074f",
+      "title": "🔴 الحوثيون يحذرون السعودية من استهداف صنعاء إثر إنذار التحالف للمدنيين بإخلاء موقع بالعاصمة",
+      "summary": "🔴 الحوثيون يحذرون السعودية من استهداف صنعاء إثر إنذار التحالف للمدنيين بإخلاء موقع بالعاصمة",
+      "link": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261013-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D8%B5%D8%A7%D8%B1%D9%88%D8%AE-%D8%A8%D8%A7%D9%84%D8%B3%D8%AA%D9%8A-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86",
+      "source": "France24 عربي",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897574854
+    },
+    {
+      "hash": "08e9bcbf1d09",
+      "title": "البابا ليون الرابع عشر يجري عملية جراحية لاستئصال ورم في الرئة",
+      "summary": "البابا ليون الرابع عشر يجري عملية جراحية لاستئصال ورم في الرئة",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261013-%D8%A7%D9%84%D8%A8%D8%A7%D8%A8%D8%A7-%D9%84%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9-%D8%B9%D8%B4%D8%B1-%D8%B5%D8%AD%D8%A9-%D8%B9%D9%85%D9%84%D9%8A%D8%A9-%D8%AC%D8%B1%D8%A7%D8%AD%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D8%A6%D8%B5%D8%A7%D9%84-%D9%88%D8%B1%D9%85-%D8%B1%D8%A6%D8%A9",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897569782
+    },
+    {
+      "hash": "56e0092001ad",
+      "title": "التحالف يدعو إلى إخلاء منشأة نفطية في صنعاء وأنصار الله تتوعد بالرد في الرياض",
+      "summary": "التحالف يدعو إلى إخلاء منشأة نفطية في صنعاء وأنصار الله تتوعد بالرد في الرياض",
+      "link": "https://www.bbc.com/arabic/articles/cm20wxqqg9ddo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791897564497
+    },
     {
       "hash": "1f9a02694efd",
       "title": "Última hora de la visita de los Reyes a Ceuta, en directo | Vivas avisa ante los Reyes de que Ceuta “es una olla a presión que en cualquier momento puede estallar”",
