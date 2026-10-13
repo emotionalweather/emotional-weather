@@ -3,167 +3,401 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Weather - الطقس العاطفي</title>
+<title>Emotional Weather - الطقس العاطفي</title>
+
+<!-- GoatCounter -->
+<script data-goatcounter="https://emotionalweather.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<!-- Leaflet -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { height: 100%; overflow: hidden; }
+/* ============================================================
+   🎨 Reset & Base
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --bg-deep: #05080f;
+    --bg-mid: #0a0f1a;
+    --glass-bg: rgba(15, 23, 42, 0.55);
+    --glass-border: rgba(148, 163, 184, 0.15);
+    --glass-hover: rgba(30, 41, 59, 0.7);
+    --accent-cyan: #38bdf8;
+    --accent-violet: #8b5cf6;
+    --accent-pink: #ec4899;
+    --accent-gold: #fbbf24;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --shadow-glow: 0 0 40px rgba(56, 189, 248, 0.15);
+    --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --font-ar: 'Tajawal', 'Segoe UI', sans-serif;
+    --font-en: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg-deep);
+}
+
 body {
-    background: #0a0f1a;
-    color: #fff;
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-family: var(--font-ar);
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     user-select: none;
+    position: relative;
 }
 
-#map { flex: 1; z-index: 1; background: #0a0f1a; }
-.leaflet-container { background: #0a0f1a !important; }
+/* ============================================================
+   ✨ الخلفية السينمائية (Gradient animations)
+   ============================================================ */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 34, 0, 0.12), transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.1), transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(139, 92, 246, 0.12), transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(0, 255, 150, 0.08), transparent 45%);
+    z-index: 0;
+    pointer-events: none;
+    animation: bgShift 30s ease-in-out infinite;
+}
+
+@keyframes bgShift {
+    0%, 100% { opacity: 0.85; transform: scale(1) rotate(0deg); }
+    50% { opacity: 1; transform: scale(1.15) rotate(3deg); }
+}
+
+/* نجوم متلألئة */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1.5px 1.5px at 80% 40%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 90% 90%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 10% 60%, rgba(255,255,255,0.5), transparent);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 400px 400px, 300px 300px, 200px 200px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 20px 30px, 90px 150px;
+    z-index: 0;
+    pointer-events: none;
+    animation: starTwinkle 8s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+@keyframes starTwinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.9; }
+}
+
+/* ============================================================
+   🗺️ الخريطة
+   ============================================================ */
+#map {
+    flex: 1;
+    z-index: 1;
+    background: transparent;
+}
+
+.leaflet-container {
+    background: transparent !important;
+    font-family: var(--font-ar) !important;
+}
+
 .leaflet-control-attribution {
-    background: rgba(10, 15, 25, 0.7) !important;
-    color: #66788c !important;
+    background: rgba(10, 15, 25, 0.6) !important;
+    color: var(--text-muted) !important;
     font-size: 9px !important;
+    backdrop-filter: blur(8px);
+    border-radius: 6px 0 0 0;
 }
-.leaflet-control-attribution a { color: #38bdf8 !important; }
-.leaflet-bar a {
-    background: rgba(15, 25, 40, 0.9) !important;
-    color: #38bdf8 !important;
-    border-color: rgba(80, 120, 160, 0.3) !important;
-}
-.leaflet-bar a:hover { background: rgba(30, 45, 70, 0.9) !important; }
 
+.leaflet-control-attribution a { color: var(--accent-cyan) !important; }
+
+.leaflet-bar {
+    border: none !important;
+    box-shadow: var(--shadow-soft) !important;
+}
+
+.leaflet-bar a {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(20px);
+    color: var(--accent-cyan) !important;
+    border-color: var(--glass-border) !important;
+    transition: all 0.3s ease !important;
+}
+
+.leaflet-bar a:hover {
+    background: var(--glass-hover) !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ============================================================
+   🎯 الهيدر
+   ============================================================ */
 #header {
     position: absolute;
     top: 0; left: 0; right: 0;
-    padding: 12px 15px 8px;
+    padding: 16px 20px 12px;
     text-align: center;
     z-index: 1000;
     pointer-events: none;
-    background: linear-gradient(to bottom, rgba(10, 15, 25, 0.85), transparent);
+    background: linear-gradient(to bottom, rgba(5,8,15,0.85) 0%, transparent 100%);
 }
+
 #header h1 {
-    font-size: 1.4rem;
-    background: linear-gradient(90deg, #FFD700, #FF69B4, #00CED1);
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #FF2200 0%, #FFB800 40%, #00ff96 70%, #00CED1 100%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: 1px;
-    font-weight: 800;
+    animation: titleShine 4s linear infinite;
+    text-shadow: 0 0 40px rgba(255, 100, 50, 0.4);
 }
-#header p { font-size: 0.7rem; color: #66788c; margin-top: 2px; }
 
+@keyframes titleShine {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+#header p {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+/* ============================================================
+   🎛️ الشريط العلوي (Glassmorphism)
+   ============================================================ */
 #top-bar {
     position: absolute;
-    top: 65px; left: 12px; right: 12px;
+    top: 78px; left: 16px; right: 16px;
     z-index: 1000;
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
+    pointer-events: none;
 }
+
 #top-bar > * { pointer-events: auto; }
 
 .search-box { flex: 1; position: relative; }
+
 .search-box input {
     width: 100%;
-    padding: 10px 40px 10px 15px;
-    background: rgba(15, 25, 40, 0.92);
-    border: 1px solid rgba(80, 120, 160, 0.3);
-    border-radius: 25px;
-    color: #fff;
-    font-size: 0.85rem;
+    padding: 13px 44px 13px 18px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    color: var(--text-primary);
+    font-size: 0.88rem;
     font-family: inherit;
     outline: none;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
 }
-.search-box input::placeholder { color: #66788c; }
-.search-box input:focus { border-color: #38bdf8; }
+
+.search-box input::placeholder { color: var(--text-muted); }
+
+.search-box input:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15), 0 0 30px rgba(56, 189, 248, 0.25);
+    background: rgba(15, 23, 42, 0.75);
+}
+
 .search-box .search-icon {
     position: absolute;
-    right: 14px; top: 50%;
+    right: 16px; top: 50%;
     transform: translateY(-50%);
-    color: #66788c;
+    color: var(--text-secondary);
     font-size: 1rem;
     pointer-events: none;
+    transition: color 0.3s;
 }
+
+.search-box input:focus + .search-icon { color: var(--accent-cyan); }
+
 .search-results {
     position: absolute;
     top: 100%; left: 0; right: 0;
-    margin-top: 6px;
-    background: rgba(15, 25, 40, 0.97);
-    border: 1px solid rgba(80, 120, 160, 0.3);
-    border-radius: 12px;
-    max-height: 240px;
+    margin-top: 8px;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    max-height: 280px;
     overflow-y: auto;
     display: none;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    animation: dropIn 0.3s ease;
 }
+
+@keyframes dropIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .search-results.show { display: block; }
+
 .search-result-item {
-    padding: 10px 14px;
-    font-size: 0.8rem;
+    padding: 12px 16px;
+    font-size: 0.82rem;
     cursor: pointer;
-    border-bottom: 1px solid rgba(80, 120, 160, 0.1);
-    color: #cbd5e1;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    color: var(--text-primary);
+    transition: all 0.2s;
 }
-.search-result-item:hover { background: rgba(56, 189, 248, 0.1); }
+
+.search-result-item:hover {
+    background: rgba(56, 189, 248, 0.08);
+    padding-right: 22px;
+}
+
 .search-result-item:last-child { border-bottom: none; }
 
+/* ============================================================
+   👁️ زر الخصوصية (Glassmorphism)
+   ============================================================ */
 #privacy-btn {
-    width: 42px; height: 42px;
-    border-radius: 50%;
-    background: rgba(15, 25, 40, 0.92);
-    border: 1px solid rgba(80, 120, 160, 0.3);
-    color: #38bdf8;
-    font-size: 1.1rem;
+    width: 46px; height: 46px;
+    border-radius: 14px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--accent-cyan);
+    font-size: 1.15rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: var(--shadow-soft);
     flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
 }
-#privacy-btn.private { color: #FFD700; border-color: #FFD700; }
 
+#privacy-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.35), var(--shadow-soft);
+}
+
+#privacy-btn:active { transform: translateY(0) scale(0.95); }
+
+#privacy-btn.private {
+    color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 25px rgba(251, 191, 36, 0.35), var(--shadow-soft);
+}
+
+/* ============================================================
+   📊 إخفاء شريط المشاعر
+   ============================================================ */
 #emotions { display: none !important; }
 
+/* ============================================================
+   💬 نافذة الإرسال (Glassmorphism)
+   ============================================================ */
 #send-modal {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.75);
+    inset: 0;
+    background: rgba(5, 8, 15, 0.75);
     z-index: 2000;
     display: none;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
-#send-modal.show { display: flex; }
+
+#send-modal.show {
+    display: flex;
+    animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .modal-card {
-    background: rgba(20, 30, 45, 0.98);
-    border: 1px solid rgba(80, 120, 160, 0.3);
-    border-radius: 18px;
-    padding: 22px;
-    max-width: 400px;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 28px;
+    max-width: 440px;
     width: 100%;
     text-align: center;
+    backdrop-filter: blur(30px) saturate(200%);
+    -webkit-backdrop-filter: blur(30px) saturate(200%);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 80px rgba(56, 189, 248, 0.1);
+    animation: cardPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.modal-card h3 { color: #38bdf8; margin-bottom: 8px; font-size: 1.1rem; }
-.modal-card .target-name { color: #fff; font-size: 0.9rem; margin-bottom: 16px; word-break: break-word; }
+
+@keyframes cardPop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-card h3 {
+    color: var(--accent-cyan);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.modal-card .target-name {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+
 .modal-card .emotions-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-bottom: 16px;
-    max-height: 350px;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-height: 400px;
     overflow-y: auto;
+    padding: 4px;
 }
+
 .modal-card .modal-emo {
-    padding: 12px 5px;
-    border: 1.5px solid;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.3);
+    padding: 14px 6px;
+    border: 1px solid;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.25);
     color: #fff;
     cursor: pointer;
     font-size: 0.8rem;
@@ -171,100 +405,155 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
 }
-.modal-card .modal-emo:hover { transform: translateY(-2px); }
-.modal-card .modal-emo .emo-icon { font-size: 1.5rem; }
+
+.modal-card .modal-emo:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-card .modal-emo .emo-icon { font-size: 1.6rem; }
+
 .modal-card .cancel-btn {
     width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 1px solid rgba(255, 100, 100, 0.4);
+    padding: 13px;
+    background: rgba(255, 100, 100, 0.1);
+    border: 1px solid rgba(255, 100, 100, 0.35);
     color: #ff8080;
-    border-radius: 10px;
+    border-radius: 14px;
     cursor: pointer;
     font-family: inherit;
-    font-size: 0.9rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: all 0.25s;
 }
-.modal-card .cancel-btn:hover { background: rgba(255, 100, 100, 0.1); }
 
+.modal-card .cancel-btn:hover {
+    background: rgba(255, 100, 100, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ============================================================
+   🔔 الإشعار (Toast)
+   ============================================================ */
 #toast {
     position: fixed;
     bottom: 130px;
     left: 50%;
     transform: translateX(-50%) translateY(30px);
-    background: rgba(10, 20, 30, 0.97);
-    padding: 11px 22px;
-    border-radius: 30px;
-    border: 1px solid rgba(56, 189, 248, 0.3);
-    color: #fff;
+    background: rgba(15, 23, 42, 0.92);
+    padding: 14px 28px;
+    border-radius: 40px;
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     pointer-events: none;
     z-index: 3000;
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     max-width: 90%;
     text-align: center;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.15);
+    font-weight: 500;
 }
-#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+#toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ============================================================
+   🎭 نقاط المشاعر على الخريطة
+   ============================================================ */
 .emo-marker { background: transparent !important; border: none !important; }
+
 .emo-marker-inner {
-    width: 36px; height: 36px;
+    width: 38px; height: 38px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    animation: markerFloat 3s ease-in-out infinite;
 }
+
+@keyframes markerFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
 .emo-marker-inner::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: 50%;
     background: currentColor;
-    opacity: 0.3;
-    animation: pulse 2s infinite ease-out;
+    opacity: 0.4;
+    animation: pulseGlow 2s infinite ease-out;
+    filter: blur(4px);
 }
-@keyframes pulse {
-    0%   { transform: scale(1); opacity: 0.4; }
-    100% { transform: scale(2.2); opacity: 0; }
+
+@keyframes pulseGlow {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(2.4); opacity: 0; }
 }
+
 .emo-marker-emoji {
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 4px currentColor);
+    filter: drop-shadow(0 0 6px currentColor);
 }
+
 .user-marker { background: transparent !important; border: none !important; }
+
 .user-dot {
-    width: 18px; height: 18px;
+    width: 20px; height: 20px;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 15px rgba(56, 189, 248, 0.8);
+    box-shadow:
+        0 0 0 4px rgba(56, 189, 248, 0.6),
+        0 0 20px rgba(56, 189, 248, 0.9),
+        0 0 40px rgba(56, 189, 248, 0.5);
     animation: userPulse 2s infinite;
 }
+
 @keyframes userPulse {
-    0%, 100% { box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 15px rgba(56, 189, 248, 0.8); }
-    50%      { box-shadow: 0 0 0 8px rgba(56, 189, 248, 0.2), 0 0 25px rgba(56, 189, 248, 1); }
+    0%, 100% {
+        box-shadow: 0 0 0 4px rgba(56,189,248,0.6), 0 0 20px rgba(56,189,248,0.9), 0 0 40px rgba(56,189,248,0.5);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(56,189,248,0.2), 0 0 30px rgba(56,189,248,1), 0 0 60px rgba(56,189,248,0.7);
+    }
+}
+
+/* ============================================================
+   📱 للجوال
+   ============================================================ */
+@media (max-width: 768px) {
+    #header h1 { font-size: 1.25rem; }
+    #header p { font-size: 0.65rem; }
+    #top-bar { top: 68px; left: 12px; right: 12px; }
+    .search-box input { font-size: 0.82rem; padding: 11px 40px 11px 14px; }
+    #privacy-btn { width: 42px; height: 42px; font-size: 1rem; }
+    #toast { bottom: 160px; font-size: 0.82rem; padding: 12px 22px; }
 }
 
 @media (max-width: 500px) {
-    #header h1 { font-size: 1.15rem; }
-    #top-bar { top: 58px; }
-    .search-box input { font-size: 0.78rem; padding: 9px 38px 9px 12px; }
+    #header h1 { font-size: 1.1rem; }
 }
 </style>
-<!-- GoatCounter Analytics -->
-<script data-goatcounter="https://emotionalweather.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 
 <div id="header">
     <h1>الطقس العاطفي</h1>
-    <p>نبض مشاعر البشرية في اللحظة هذه</p>
+    <p>نبض مشاعر العالم في اللحظة هذه</p>
 </div>
 
 <div id="top-bar">
@@ -292,10 +581,13 @@ body {
 
 <script>
 if (typeof L === 'undefined') {
-    document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#ff8080;font-size:18px;">❌ فشل تحميل مكتبة الخرائط. تأكد من اتصالك بالإنترنت ثم أعد تحديث الصفحة.</div>';
+    document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#ff8080;font-size:18px;">❌ فشل تحميل مكتبة الخرائط.</div>';
     throw new Error('Leaflet not loaded');
 }
 
+// ============================================================
+//  🎭 المشاعر
+// ============================================================
 const EMOTIONS = {
     joy:         { name: 'فرح',      color: '#FFD700', emoji: '😊' },
     sad:         { name: 'حزن',      color: '#4A90E2', emoji: '😢' },
@@ -334,13 +626,19 @@ const EMOTIONS = {
     sympathetic: { name: 'تعاطف',    color: '#EC4899', emoji: '🤗' }
 };
 
+// ============================================================
+//  🗺️ الخريطة
+// ============================================================
 const map = L.map('map', {
     center: [25, 45],
     zoom: 3,
     zoomControl: true,
     worldCopyJump: true,
     minZoom: 2,
-    maxZoom: 18
+    maxZoom: 18,
+    zoomAnimation: true,
+    fadeAnimation: true,
+    markerZoomAnimation: true
 });
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -353,6 +651,9 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_D
     pane: 'overlayPane'
 }).addTo(map);
 
+// ============================================================
+//  💾 المتغيرات
+// ============================================================
 let userLocation = null;
 let userMarker = null;
 let userCircle = null;
@@ -362,6 +663,9 @@ let pendingTarget = null;
 const activeMarkers = {};
 let markerIdCounter = 0;
 
+// ============================================================
+//  🎭 بناء الأزرار
+// ============================================================
 function buildEmotionButtons() {
     const container = document.getElementById('emotions');
     Object.entries(EMOTIONS).forEach(([key, emo]) => {
@@ -389,6 +693,9 @@ function buildModalEmotions() {
     });
 }
 
+// ============================================================
+//  🎯 عند اختيار مشعر
+// ============================================================
 function onEmotionButtonClick(key) {
     selectedEmotion = key;
     document.querySelectorAll('.emo-btn').forEach(b => b.classList.remove('active'));
@@ -406,6 +713,9 @@ function onEmotionButtonClick(key) {
     dropEmotion(lat, lng, key, `📍 ${target}`);
 }
 
+// ============================================================
+//  📍 إسقاط مشعر
+// ============================================================
 function dropEmotion(lat, lng, emotionKey, label) {
     const emo = EMOTIONS[emotionKey];
     if (!emo) return;
@@ -417,8 +727,8 @@ function dropEmotion(lat, lng, emotionKey, label) {
         html: `<div class="emo-marker-inner" style="color:${emo.color};">
                  <span class="emo-marker-emoji">${emo.emoji}</span>
                </div>`,
-        iconSize: [36, 36],
-        iconAnchor: [18, 18]
+        iconSize: [38, 38],
+        iconAnchor: [19, 19]
     });
 
     const marker = L.marker([lat, lng], { icon, interactive: false }).addTo(map);
@@ -431,6 +741,9 @@ function dropEmotion(lat, lng, emotionKey, label) {
     showToast(`${emo.emoji} ${label}`);
 }
 
+// ============================================================
+//  🪟 نافذة الإرسال
+// ============================================================
 function openSendModal(lat, lng, name) {
     pendingTarget = { lat, lng, name };
     document.getElementById('targetName').textContent = '📍 ' + name;
@@ -448,6 +761,9 @@ function sendEmotionToTarget(emotionKey) {
     closeModal();
 }
 
+// ============================================================
+//  🗺️ الضغط على الخريطة
+// ============================================================
 map.on('click', async (e) => {
     const { lat, lng } = e.latlng;
     showToast('⏳ جاري تحديد المكان...');
@@ -468,6 +784,9 @@ async function reverseGeocode(lat, lng) {
     return a.city || a.town || a.village || a.county || a.state || a.country || data.display_name || `${lat.toFixed(3)}, ${lng.toFixed(3)}`;
 }
 
+// ============================================================
+//  🔍 البحث
+// ============================================================
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 let searchTimeout;
@@ -517,6 +836,9 @@ function renderSearchResults(items) {
     searchResults.classList.add('show');
 }
 
+// ============================================================
+//  📍 موقع المستخدم
+// ============================================================
 function initUserLocation() {
     if (!navigator.geolocation) {
         showToast('⚠️ المتصفح لا يدعم تحديد الموقع');
@@ -531,7 +853,7 @@ function initUserLocation() {
         },
         err => {
             console.warn('Geolocation failed', err);
-            showToast('⚠️ تعذر تحديد موقعك، اختر مكاناً على الخريطة');
+            showToast('⚠️ تعذر تحديد موقعك');
         },
         { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
     );
@@ -545,8 +867,8 @@ function drawUserMarker() {
     const icon = L.divIcon({
         className: 'user-marker',
         html: '<div class="user-dot"></div>',
-        iconSize: [18, 18],
-        iconAnchor: [9, 9]
+        iconSize: [20, 20],
+        iconAnchor: [10, 10]
     });
 
     if (isPrivateMode) {
@@ -562,6 +884,9 @@ function drawUserMarker() {
     userMarker = L.marker([userLocation.lat, userLocation.lng], { icon }).addTo(map);
 }
 
+// ============================================================
+//  👁️ زر الخصوصية
+// ============================================================
 function togglePrivacy() {
     isPrivateMode = !isPrivateMode;
     const btn = document.getElementById('privacy-btn');
@@ -571,6 +896,9 @@ function togglePrivacy() {
     showToast(isPrivateMode ? '🔒 وضع الخصوصية: يظهر الحي فقط' : '👁️ وضع دقيق: يظهر موقعك بالضبط');
 }
 
+// ============================================================
+//  🔔 Toast
+// ============================================================
 function showToast(msg) {
     const t = document.getElementById('toast');
     t.textContent = msg;
@@ -579,19 +907,23 @@ function showToast(msg) {
     window._toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
 }
 
+// ============================================================
+//  🚀 التشغيل
+// ============================================================
 buildEmotionButtons();
 buildModalEmotions();
 initUserLocation();
 map.on('contextmenu', e => e.originalEvent.preventDefault());
 </script>
 
+<script src="feature-support.js"></script>
 <script src="data-ai-agents.js"></script>
 <script src="data-countries.js"></script>
 <script src="feature-news-sidebar.js"></script>
 <script src="feature-mirror.js"></script>
 <script src="feature-heartbeat.js"></script>
-<script src="feature-support.js"></script>
 <script src="feature-i18n.js"></script>
 <script src="feature-mood-map.js"></script>
+
 </body>
 </html>
