@@ -1,25 +1,134 @@
 {
-  "updated_at": "2026-10-13T19:26:36.041Z",
-  "total": 320,
+  "updated_at": "2026-10-13T20:24:09.475Z",
+  "total": 360,
   "new_count": 40,
   "ai_success": 0,
   "ai_fallback": 40,
   "global": {
     "score": 44,
-    "totalArticles": 320,
+    "totalArticles": 360,
     "categories": {
-      "politics": 237,
-      "culture": 9,
+      "politics": 263,
+      "war": 42,
+      "positive": 8,
+      "crisis": 11,
+      "culture": 11,
+      "economy": 10,
+      "sports": 3,
       "disaster": 7,
-      "war": 38,
-      "positive": 5,
-      "economy": 9,
-      "sports": 2,
-      "crisis": 8,
       "health": 5
     }
   },
   "countries": {
+    "NZ": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "RU": {
+      "score": 27,
+      "articleCount": 8,
+      "categories": {
+        "war": 3,
+        "politics": 3,
+        "economy": 1,
+        "culture": 1
+      }
+    },
+    "CN": {
+      "score": 50,
+      "articleCount": 4,
+      "categories": {
+        "politics": 4
+      }
+    },
+    "NG": {
+      "score": 36,
+      "articleCount": 5,
+      "categories": {
+        "politics": 4,
+        "war": 1
+      }
+    },
+    "ZA": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "MA": {
+      "score": 41,
+      "articleCount": 7,
+      "categories": {
+        "crisis": 1,
+        "politics": 6
+      }
+    },
+    "DE": {
+      "score": 40,
+      "articleCount": 7,
+      "categories": {
+        "politics": 3,
+        "economy": 2,
+        "war": 1,
+        "crisis": 1
+      }
+    },
+    "FR": {
+      "score": 39,
+      "articleCount": 18,
+      "categories": {
+        "crisis": 2,
+        "politics": 13,
+        "disaster": 1,
+        "war": 1,
+        "culture": 1
+      }
+    },
+    "SA": {
+      "score": 43,
+      "articleCount": 24,
+      "categories": {
+        "politics": 20,
+        "war": 2,
+        "sports": 1,
+        "economy": 1
+      }
+    },
+    "ES": {
+      "score": 50,
+      "articleCount": 5,
+      "categories": {
+        "politics": 3,
+        "culture": 1,
+        "crisis": 1
+      }
+    },
+    "AU": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
+      }
+    },
+    "IR": {
+      "score": 16,
+      "articleCount": 8,
+      "categories": {
+        "war": 4,
+        "politics": 4
+      }
+    },
+    "IQ": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
     "GR": {
       "score": 44,
       "articleCount": 10,
@@ -33,14 +142,6 @@
       "articleCount": 3,
       "categories": {
         "politics": 3
-      }
-    },
-    "NG": {
-      "score": 33,
-      "articleCount": 4,
-      "categories": {
-        "politics": 3,
-        "war": 1
       }
     },
     "GB": {
@@ -59,40 +160,12 @@
         "war": 2
       }
     },
-    "RU": {
-      "score": 25,
-      "articleCount": 5,
-      "categories": {
-        "culture": 1,
-        "war": 2,
-        "politics": 2
-      }
-    },
     "US": {
       "score": 54,
       "articleCount": 9,
       "categories": {
         "politics": 8,
         "positive": 1
-      }
-    },
-    "ES": {
-      "score": 50,
-      "articleCount": 4,
-      "categories": {
-        "culture": 1,
-        "politics": 2,
-        "crisis": 1
-      }
-    },
-    "SA": {
-      "score": 48,
-      "articleCount": 22,
-      "categories": {
-        "politics": 19,
-        "sports": 1,
-        "war": 1,
-        "economy": 1
       }
     },
     "IL": {
@@ -111,13 +184,6 @@
         "war": 2
       }
     },
-    "MA": {
-      "score": 50,
-      "articleCount": 6,
-      "categories": {
-        "politics": 6
-      }
-    },
     "OM": {
       "score": 29,
       "articleCount": 3,
@@ -132,21 +198,6 @@
       "categories": {
         "politics": 4,
         "war": 1
-      }
-    },
-    "CN": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
-    "IR": {
-      "score": 21,
-      "articleCount": 7,
-      "categories": {
-        "politics": 4,
-        "war": 3
       }
     },
     "CA": {
@@ -168,16 +219,6 @@
       "articleCount": 3,
       "categories": {
         "crisis": 3
-      }
-    },
-    "FR": {
-      "score": 44,
-      "articleCount": 16,
-      "categories": {
-        "politics": 13,
-        "disaster": 1,
-        "war": 1,
-        "culture": 1
       }
     },
     "EG": {
@@ -225,16 +266,6 @@
         "health": 1
       }
     },
-    "DE": {
-      "score": 39,
-      "articleCount": 6,
-      "categories": {
-        "politics": 2,
-        "economy": 2,
-        "war": 1,
-        "crisis": 1
-      }
-    },
     "PH": {
       "score": 0,
       "articleCount": 1,
@@ -254,13 +285,6 @@
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "AU": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
       }
     },
     "DZ": {
@@ -285,13 +309,6 @@
       }
     },
     "LY": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "ZA": {
       "score": 50,
       "articleCount": 1,
       "categories": {
@@ -342,6 +359,526 @@
     }
   },
   "articles": [
+    {
+      "hash": "a857c26cafc4",
+      "title": "ACT promises tax relief for landlords with offset rental losses",
+      "summary": "ACT promises tax relief for landlords with offset rental losses",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1888418/act-promises-tax-relief-for-landlords-with-offset-rental-losses",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791923048473
+    },
+    {
+      "hash": "b0cf677d609f",
+      "title": "Morning Report: Winston Peters and John Campbell in fiery clash over UN document",
+      "summary": "Morning Report: Winston Peters and John Campbell in fiery clash over UN document",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1886541/morning-report-winston-peters-and-john-campbell-in-fiery-clash-over-un-document",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791923043312
+    },
+    {
+      "hash": "2dae998ebb18",
+      "title": "Election live: Tax cuts for landlords, parking for Auckland and a faster fast-track",
+      "summary": "Election live: Tax cuts for landlords, parking for Auckland and a faster fast-track",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1885729/election-live-tax-cuts-for-landlords-parking-for-auckland-and-a-faster-fast-track",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1791923038142
+    },
+    {
+      "hash": "7f8fd19b05ea",
+      "title": "Live: PM confirms he intervened to delay ATO credit card ban",
+      "summary": "Live: PM confirms he intervened to delay ATO credit card ban",
+      "link": "https://www.abc.net.au/news/2026-10-14/federal-politics-live-blog-october-14/107261908",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791923033006
+    },
+    {
+      "hash": "988b97091ba6",
+      "title": "Great-grandmother learns her native language at very special preschool",
+      "summary": "Great-grandmother learns her native language at very special preschool",
+      "link": "https://www.abc.net.au/news/2026-10-14/great-grandmother-learns-language-at-indigenous-preschool/107169750",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791923027857
+    },
+    {
+      "hash": "4ed8a11982d9",
+      "title": "Police investigate arson attacks in neighbouring Melbourne suburbs",
+      "summary": "Police investigate arson attacks in neighbouring Melbourne suburbs",
+      "link": "https://www.abc.net.au/news/2026-10-14/essendon-and-moonee-ponds-suspicious-fires/107263002",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791923022707
+    },
+    {
+      "hash": "a46c1d418ed6",
+      "title": "Pope Leo’s lung operation ‘successfully completed’: Vatican",
+      "summary": "Pope Leo’s lung operation ‘successfully completed’: Vatican",
+      "link": "https://www.straitstimes.com/world/europe/pope-leos-lung-operation-successfully-completed-vatican",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791923017502
+    },
+    {
+      "hash": "2cb7af451aeb",
+      "title": "Zelenskiy seeks new talks with US envoys on ending Russia war",
+      "summary": "Zelenskiy seeks new talks with US envoys on ending Russia war",
+      "link": "https://www.straitstimes.com/world/europe/zelenskiy-seeks-new-talks-with-us-envoys-on-ending-russia-war",
+      "source": "Straits Times",
+      "countryCode": "RU",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791923012359
+    },
+    {
+      "hash": "0e25b30719ff",
+      "title": "Tupac Shakur murder: ex-gang leader sentenced to 40 years to life in prison",
+      "summary": "Tupac Shakur murder: ex-gang leader sentenced to 40 years to life in prison",
+      "link": "https://www.scmp.com/news/world/united-states-canada/article/3370784/tupac-shakur-murder-ex-gang-leader-sentenced-40-years-life-prison?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791923007218
+    },
+    {
+      "hash": "4216ed9953c4",
+      "title": "Pope Leo’s lung surgery successfully completed, Vatican says",
+      "summary": "Pope Leo’s lung surgery successfully completed, Vatican says",
+      "link": "https://www.scmp.com/news/world/europe/article/3370785/pope-leos-lung-surgery-successfully-completed-vatican-says?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791923002088
+    },
+    {
+      "hash": "613fcc684b22",
+      "title": "Peru governor touts Chinese interest in deep-water port pitched as Chancay alternative",
+      "summary": "Peru governor touts Chinese interest in deep-water port pitched as Chancay alternative",
+      "link": "https://www.scmp.com/news/china/article/3370786/peru-governor-touts-chinese-interest-deep-water-port-pitched-chancay-alternative?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922996914
+    },
+    {
+      "hash": "d7ebc3ac85a0",
+      "title": "Iconic Iguazu Falls walkway dismantled amid record water levels",
+      "summary": "Iconic Iguazu Falls walkway dismantled amid record water levels",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/iconic-iguazu-falls-walkway-dismantled-amid-record-water-levels?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922991737
+    },
+    {
+      "hash": "f43c3f098244",
+      "title": "Scientists urge tighter AI controls to prevent global cyber risks",
+      "summary": "Scientists urge tighter AI controls to prevent global cyber risks",
+      "link": "https://www.aljazeera.com/economy/2026/10/13/scientists-urge-tighter-ai-controls-to-prevent-global-cyber-risks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922986575
+    },
+    {
+      "hash": "bd002d687b88",
+      "title": "How podcasts became political powerhouses",
+      "summary": "How podcasts became political powerhouses",
+      "link": "https://www.aljazeera.com/video/lets-focus/2026/10/13/how-podcasts-became-political-powerhouses?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922981411
+    },
+    {
+      "hash": "b34e3863a7e2",
+      "title": "The secrets hiding in our environment, By &#8216;Tope Fasua",
+      "summary": "The secrets hiding in our environment, By &#8216;Tope Fasua",
+      "link": "https://www.premiumtimesng.com/opinion/916906-the-secrets-hiding-in-our-environment-by-tope-fasua.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922976225
+    },
+    {
+      "hash": "f56c84bcc2c5",
+      "title": "Lagos publishes nationwide directory to help GBV survivors access support",
+      "summary": "Lagos publishes nationwide directory to help GBV survivors access support",
+      "link": "https://www.premiumtimesng.com/gender/916913-lagos-publishes-nationwide-directory-to-help-gbv-survivors-access-support.html",
+      "source": "Premium Times",
+      "countryCode": "NG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922971050
+    },
+    {
+      "hash": "8c0a44dc0641",
+      "title": "Nigeria condemns death of citizen in South African police custody",
+      "summary": "Nigeria condemns death of citizen in South African police custody",
+      "link": "https://www.premiumtimesng.com/news/headlines/916915-nigeria-condemns-death-of-citizen-in-south-african-police-custody.html",
+      "source": "Premium Times",
+      "countryCode": "ZA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922965898
+    },
+    {
+      "hash": "dd628d2fff86",
+      "title": "Spain seeks ‘good neighbourly relations’ with Morocco as migration crisis shadows royal visit",
+      "summary": "Spain seeks ‘good neighbourly relations’ with Morocco as migration crisis shadows royal visit",
+      "link": "http://www.africanews.com/2026/10/13/spain-seeks-good-neighbourly-relations-with-morocco-as-migration-crisis-shadows-royal-visi/",
+      "source": "Africanews",
+      "countryCode": "MA",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1791922960762
+    },
+    {
+      "hash": "55c16fdd5629",
+      "title": "Papa Leão XIV é diagnosticado com câncer de pulmão após retirada de nódulo",
+      "summary": "Papa Leão XIV é diagnosticado com câncer de pulmão após retirada de nódulo",
+      "link": "https://g1.globo.com/mundo/noticia/2026/10/13/papa-leao-xiv-e-diagnosticado-com-cancer-de-pulmao-apos-retirada-de-novulo.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922955615
+    },
+    {
+      "hash": "fd823f3c3509",
+      "title": "Prefeitura de Caraguatatuba e IFSP articulam parceria para ampliar acesso à EJA",
+      "summary": "Prefeitura de Caraguatatuba e IFSP articulam parceria para ampliar acesso à EJA",
+      "link": "https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-caraguatatuba/prefeitura-de-caraguatatuba/noticia/2026/10/13/prefeitura-de-caraguatatuba-e-ifsp-articulam-parceria-para-ampliar-acesso-a-eja.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791922950461
+    },
+    {
+      "hash": "45e8cd87f3cc",
+      "title": "Magnésio: por que esse mineral ganhou tanto espaço na suplementação?",
+      "summary": "Magnésio: por que esse mineral ganhou tanto espaço na suplementação?",
+      "link": "https://g1.globo.com/pr/parana/especial-publicitario/maltta-nutrition/noticia/2026/10/13/magnesio-por-que-esse-mineral-ganhou-tanto-espaco-na-suplementacao.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922945271
+    },
+    {
+      "hash": "3e0b581f9f3a",
+      "title": "12 U.S. senators, including 6 Republicans, tell Trump to drop diesel deal with Russia",
+      "summary": "12 U.S. senators, including 6 Republicans, tell Trump to drop diesel deal with Russia",
+      "link": "https://www.cbc.ca/news/world/us-senators-trump-russia-diesel-deal-9.7379187?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922940093
+    },
+    {
+      "hash": "59e1d9080b8a",
+      "title": "How will a diesel deal with Russia impact the U.S. market?",
+      "summary": "How will a diesel deal with Russia impact the U.S. market?",
+      "link": "https://www.npr.org/2026/10/13/nx-s1-6000118/how-will-a-diesel-deal-with-russia-impact-the-u-s-market",
+      "source": "NPR World",
+      "countryCode": "RU",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1791922934929
+    },
+    {
+      "hash": "36c18a72bafd",
+      "title": "Humanity without family is unlikely to remain humaity",
+      "summary": "Humanity without family is unlikely to remain humaity",
+      "link": "<![CDATA[https://rt-english.com/news/647156-no-family-no-humanity/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922929762
+    },
+    {
+      "hash": "0bfea7bd84bb",
+      "title": "EN DIRECT, budget 2027 : la séance reprend à l’Assemblée sur le projet de loi des finances ; les députés vont se prononcer sur une motion de rejet déposée par le PS",
+      "summary": "EN DIRECT, budget 2027 : la séance reprend à l’Assemblée sur le projet de loi des finances ; les députés vont se prononcer sur une motion de rejet déposée par le PS",
+      "link": "https://www.lemonde.fr/politique/live/2026/10/13/en-direct-budget-2027-les-debats-sur-le-projet-de-loi-de-finances-commencent-a-l-assemblee-nationale_6793072_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922924626
+    },
+    {
+      "hash": "d50266576d71",
+      "title": "Germany news: Left-leaning Berlin coalition talks break down",
+      "summary": "Germany news: Left-leaning Berlin coalition talks break down",
+      "link": "https://www.dw.com/en/germany-news-left-leaning-berlin-coalition-talks-break-down/live-79647092?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "DE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922919477
+    },
+    {
+      "hash": "ecdc974161f6",
+      "title": "Tupac Shakur murder trial: Former gang leader Duane Davis sentenced to 40 years",
+      "summary": "Tupac Shakur murder trial: Former gang leader Duane Davis sentenced to 40 years",
+      "link": "https://www.dw.com/en/tupac-shakur-murder-trial-former-gang-leader-duane-davis-sentenced-to-40-years/a-79655189?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922914295
+    },
+    {
+      "hash": "65a6e45efc41",
+      "title": "Pope Leo lung surgery &apos;successful,&apos; Vatican says",
+      "summary": "Pope Leo lung surgery &apos;successful,&apos; Vatican says",
+      "link": "https://www.dw.com/en/pope-leo-lung-surgery-successful-vatican-says/a-79647264?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791922909128
+    },
+    {
+      "hash": "3f17e91de448",
+      "title": "France's youth undergoing 'a crisis of hope'",
+      "summary": "France's youth undergoing 'a crisis of hope'",
+      "link": "https://www.france24.com/en/france-s-youth-undergoing-a-crisis-of-hope",
+      "source": "France24 English",
+      "countryCode": "FR",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1791922903985
+    },
+    {
+      "hash": "12e8e835f754",
+      "title": "Former gang leader sentenced to 40 years to life for Tupac Shakur murder",
+      "summary": "Former gang leader sentenced to 40 years to life for Tupac Shakur murder",
+      "link": "https://www.france24.com/en/americas/20261013-former-gang-leader-sentenced-to-40-years-to-life-for-tupac-shakur-murder",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922898769
+    },
+    {
+      "hash": "b7f68c9dcdf8",
+      "title": "Cancer found after Pope had part of his lung removed during 'successful' surgery",
+      "summary": "Cancer found after Pope had part of his lung removed during 'successful' surgery",
+      "link": "https://news.sky.com/story/popes-lung-surgery-was-successful-and-went-as-planned-vatican-says-13598965",
+      "source": "Sky News",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791922893605
+    },
+    {
+      "hash": "e5f80501d8fb",
+      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "summary": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "link": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922888464
+    },
+    {
+      "hash": "8aa640db8de6",
+      "title": "بسبب وفاة والدته... كوكي قائد أتلتيكو مدريد خارج مواجهة مان يونايتد",
+      "summary": "بسبب وفاة والدته... كوكي قائد أتلتيكو مدريد خارج مواجهة مان يونايتد",
+      "link": "https://aawsat.com/node/5329293",
+      "source": "الشرق الأوسط",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922883311
+    },
+    {
+      "hash": "7170a06440f9",
+      "title": "إنريكي: مان سيتي «يستحق ألقابه»",
+      "summary": "إنريكي: مان سيتي «يستحق ألقابه»",
+      "link": "https://aawsat.com/node/5329296",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922878127
+    },
+    {
+      "hash": "2936b244a8fa",
+      "title": "رابطة الدوري السعودي تؤجل قمة النصر والأهلي إلى 6 مارس المقبل",
+      "summary": "رابطة الدوري السعودي تؤجل قمة النصر والأهلي إلى 6 مارس المقبل",
+      "link": "https://aawsat.com/node/5329297",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1791922872985
+    },
+    {
+      "hash": "865a7665f482",
+      "title": "الأردن يستعيد من أستراليا قطعة أثرية تعود إلى نحو 12 ألف عام قبل الميلاد",
+      "summary": "الأردن يستعيد من أستراليا قطعة أثرية تعود إلى نحو 12 ألف عام قبل الميلاد",
+      "link": "https://arabic.euronews.com/2026/10/13/jordan-australia-artifact-return-ancient-sculpture",
+      "source": "Euronews عربي",
+      "countryCode": "AU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922867761
+    },
+    {
+      "hash": "67a6095d793f",
+      "title": "هجوم واسع على إيران قبل الانتخابات؟.. تقرير يكشف ما دار بين ترامب ونتنياهو",
+      "summary": "هجوم واسع على إيران قبل الانتخابات؟.. تقرير يكشف ما دار بين ترامب ونتنياهو",
+      "link": "https://arabic.euronews.com/2026/10/13/netanyahu-trump-iran-israel-strike-elections-nuclear-program",
+      "source": "Euronews عربي",
+      "countryCode": "IR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791922862577
+    },
+    {
+      "hash": "c7815db03d01",
+      "title": "أعمال عنف في باريس وسط احتجاجات طلابية حاشدة في أنحاء فرنسا",
+      "summary": "أعمال عنف في باريس وسط احتجاجات طلابية حاشدة في أنحاء فرنسا",
+      "link": "https://arabic.euronews.com/2026/10/13/france-paris-protests-students-education-police-violence",
+      "source": "Euronews عربي",
+      "countryCode": "FR",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1791922857414
+    },
+    {
+      "hash": "6cf47917b11a",
+      "title": "الدينار العراقي.. اتهامات تربّح سياسي من رفع سعر الصرف  مصادر قالت لـ\"الحرة\" إن جهات سياسية عراقية اشترت كميات كبيرة من الدولار الأميركي قبل قرار زيادة قيمته رسميا.",
+      "summary": "الدينار العراقي.. اتهامات تربّح سياسي من رفع سعر الصرف  مصادر قالت لـ\"الحرة\" إن جهات سياسية عراقية اشترت كميات كبيرة من الدولار الأميركي قبل قرار زيادة قيمته رسميا.",
+      "link": "https://alhurra.com/46015",
+      "source": "الحرة",
+      "countryCode": "IQ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791922852213
+    },
+    {
+      "hash": "5319bd5ebc29",
+      "title": "التحالف بقيادة السعودية يؤكد قصف منشأة نفطية قرب صنعاء",
+      "summary": "التحالف بقيادة السعودية يؤكد قصف منشأة نفطية قرب صنعاء",
+      "link": "https://www.bbc.co.uk/arabic/live/cmy4xv0nyy0nt?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791922847047
+    },
     {
       "hash": "e2a930be9de2",
       "title": "Top US diplomat to Nicaragua returns after US pick for ambassador rejected",
