@@ -1,6 +1,5 @@
 // ============================================================
-//  scripts/fetch-news.js - يجلب + يصنّف + يحسب المزاج
-//  يشتغل على GitHub Actions (كل ساعة)
+//  scripts/fetch-news.js - نسخة محسّنة (سريعة + محدودة)
 // ============================================================
 
 const fs = require('fs');
@@ -10,8 +9,10 @@ const crypto = require('crypto');
 const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || '';
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
+console.log(`🔑 API Key: ${OPENROUTER_KEY ? 'مضاف ✅' : 'مفقود ❌'}`);
+
 // ============================================================
-//  🌐 54 مصدر
+//  🌐 المصادر
 // ============================================================
 const RSS_SOURCES = [
     { id:'bbc_ar', name:'BBC عربي', url:'https://feeds.bbci.co.uk/arabic/rss.xml' },
@@ -58,7 +59,7 @@ const RSS_SOURCES = [
 ];
 
 // ============================================================
-//  🏳️ كلمات الدول (195 دولة)
+//  🏳️ كلمات الدول
 // ============================================================
 const COUNTRY_KEYWORDS = {
     SA:['السعودية','الرياض','جدة','Saudi','Riyadh','Jeddah'],
@@ -156,7 +157,7 @@ const COUNTRY_KEYWORDS = {
 };
 
 // ============================================================
-//  📰 تحليل RSS (regex)
+//  📰 RSS Parser
 // ============================================================
 function parseRSS(xml) {
     const articles = [];
@@ -193,7 +194,6 @@ function hashTitle(title) {
 function detectCountry(title) {
     if (!title) return null;
     const lower = title.toLowerCase();
-    // نرتب الكلمات حسب الطول (الأطول أول)
     const entries = Object.entries(COUNTRY_KEYWORDS).sort((a,b) => {
         const aMax = Math.max(...a[1].map(k=>k.length));
         const bMax = Math.max(...b[1].map(k=>k.length));
@@ -209,7 +209,7 @@ function detectCountry(title) {
 }
 
 // ============================================================
-//  🔤 تصنيف احتياطي
+//  🔤 Fallback
 // ============================================================
 const KEYWORDS = {
     war:['war','attack','bomb','قتال','حرب','هجوم','قصف','عسكري','قتل','غارة','صاروخ','اشتباك'],
@@ -236,11 +236,11 @@ function keywordClassify(title) {
                 else if (cat === 'positive') { sentiment = 'positive'; mood = 'hope'; impact = 75; }
                 else if (cat === 'sports' || cat === 'culture') { sentiment = 'positive'; mood = 'joy'; impact = 35; }
                 else if (cat === 'economy') { sentiment = 'slightly_positive'; mood = 'calm'; impact = 45; }
-                return { category: cat, sentiment, mood, impact, summary: title, reason: 'تصنيف أساسي' };
+                return { category: cat, sentiment, mood, impact, summary: title, reason: 'keyword' };
             }
         }
     }
-    return { category: 'politics', sentiment: 'neutral', mood: 'neutral', impact: 25, summary: title, reason: '' };
+    return { category: 'politics', sentiment: 'neutral', mood: 'neutral', impact: 25, summary: title, reason: 'keyword' };
 }
 
 // ============================================================
@@ -248,50 +248,30 @@ function keywordClassify(title) {
 // ============================================================
 const AI_MODELS = [
     'nvidia/nemotron-3-super-120b-a12b:free',
-    'nvidia/nemotron-3.5-lightning:free',
-    'google/gemma-4-26b-a4b-it:free',
-    'nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free'
+    'nvidia/nemotron-3.5-lightning:free'
 ];
 
-let currentModel = 0;
-
-async function classifyWithAI(title, description) {
-    if (!OPENROUTER_KEY) return keywordClassify(title);
-
-    const prompt = `You are a professional news analyst. Analyze this news and return JSON only.
-
-TITLE: "${title}"
-${description ? `DESCRIPTION: "${description.slice(0, 600)}"` : ''}
-
-Return ONLY this JSON (no markdown):
-{
-  "category": "war" | "disaster" | "crisis" | "health" | "politics" | "economy" | "sports" | "culture" | "positive",
-  "sentiment": "very_negative" | "negative" | "slightly_negative" | "neutral" | "slightly_positive" | "positive" | "very_positive",
-  "mood": "angry" | "sad" | "anxious" | "calm" | "neutral" | "joy" | "hope",
-  "impact": 0-100,
-  "summary": "A neutral journalistic summary in under 25 words, in the SAME language as the title"
+function extractJSON(text) {
+    if (!text) return null;
+    let clean = text.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+    try { return JSON.parse(clean); } catch (e) {}
+    const match = clean.match(/\{[\s\S]*?\}/);
+    if (match) { try { return JSON.parse(match[0]); } catch (e) {} }
+    return null;
 }
 
-SENTIMENT RULES:
-- War/mass casualties → very_negative
-- Disasters/severe crises → negative
-- Minor issues/protests → slightly_negative
-- Regular political/economic news → neutral
-- Minor improvements → slightly_positive
-- Good economic/social news → positive
-- Peace agreements/major achievements → very_positive
+async function classifyWithAI(title) {
+    if (!OPENROUTER_KEY) return keywordClassify(title);
 
-IMPACT RULES:
-- War/natural disasters → 80-100
-- Major crises → 60-80
-- Regular politics → 30-55
-- Economy/sports/culture → 20-50
-- Minor news → 10-30
+    const prompt = `Classify this news and return ONLY JSON:
 
-Be ACCURATE. Do not default to politics or neutral.`;
+Title: "${title}"
 
-    for (let attempt = 0; attempt < AI_MODELS.length; attempt++) {
-        const model = AI_MODELS[currentModel];
+Return: {"category":"war|disaster|crisis|health|politics|economy|sports|culture|positive","sentiment":"very_negative|negative|slightly_negative|neutral|slightly_positive|positive|very_positive","mood":"angry|sad|anxious|calm|neutral|joy|hope","impact":50,"summary":"ملخص عربي أقل من 25 كلمة"}
+
+Return ONLY the JSON, nothing else.`;
+
+    for (const model of AI_MODELS) {
         try {
             const res = await fetch(OPENROUTER_URL, {
                 method: 'POST',
@@ -301,125 +281,100 @@ Be ACCURATE. Do not default to politics or neutral.`;
                 },
                 body: JSON.stringify({
                     model,
-                    messages: [{ role: 'user', content: prompt }],
-                    temperature: 0.2,
+                    messages: [
+                        { role: 'system', content: 'You return only valid JSON.' },
+                        { role: 'user', content: prompt }
+                    ],
+                    temperature: 0.1,
                     max_tokens: 250
                 }),
-                signal: AbortSignal.timeout(30000)
+                signal: AbortSignal.timeout(20000)
             });
 
             if (!res.ok) {
-                if (res.status === 429) {
-                    currentModel = (currentModel + 1) % AI_MODELS.length;
-                    await new Promise(r => setTimeout(r, 3000));
-                    continue;
-                }
-                throw new Error('HTTP ' + res.status);
+                if (res.status === 429) await new Promise(r => setTimeout(r, 2000));
+                continue;
             }
 
             const data = await res.json();
             const content = data.choices?.[0]?.message?.content || '';
-            const clean = content.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
-            const match = clean.match(/\{[\s\S]*\}/);
-            if (!match) throw new Error('ما لقينا JSON');
+            const parsed = extractJSON(content);
+            if (!parsed) continue;
 
-            const parsed = JSON.parse(match[0]);
             return {
                 category: parsed.category || 'politics',
                 sentiment: parsed.sentiment || 'neutral',
                 mood: parsed.mood || 'neutral',
                 impact: Math.max(0, Math.min(100, parseInt(parsed.impact) || 30)),
                 summary: parsed.summary || title,
-                reason: ''
+                reason: 'ai'
             };
-        } catch (err) {
-            console.log(`   ⚠️ فشل ${model}: ${err.message}`);
-        }
+        } catch (err) {}
     }
     return keywordClassify(title);
 }
 
 // ============================================================
-//  📊 حساب مزاج الدولة (تراكم + وقت + تأثير)
+//  📊 المزاج
 // ============================================================
 const SENTIMENT_SCORE = {
-    'very_negative': -100,
-    'negative': -60,
-    'slightly_negative': -25,
-    'neutral': 0,
-    'slightly_positive': 25,
-    'positive': 60,
-    'very_positive': 100
+    'very_negative': -100, 'negative': -60, 'slightly_negative': -25,
+    'neutral': 0, 'slightly_positive': 25, 'positive': 60, 'very_positive': 100
 };
 
 function computeCountryScore(articles) {
-    // مقالات آخر 24 ساعة فقط
     const now = Date.now();
-    const DAY = 24 * 60 * 60 * 1000;
-    const recent = articles.filter(a => (now - a.timestamp) < DAY);
+    const recent = articles.filter(a => (now - a.timestamp) < 24*60*60*1000);
     if (recent.length === 0) return null;
 
-    const HALF_LIFE_HOURS = 8; // نصف الوزن كل 8 ساعات
-    let weightedSum = 0;
-    let weightSum = 0;
-
+    let weightedSum = 0, weightSum = 0;
     recent.forEach(a => {
         const ageHours = (now - a.timestamp) / (1000 * 60 * 60);
-        const timeWeight = Math.pow(0.5, ageHours / HALF_LIFE_HOURS);
-        const impactWeight = 0.3 + (a.impact / 100) * 0.7; // التأثير
+        const timeWeight = Math.pow(0.5, ageHours / 8);
+        const impactWeight = 0.3 + (a.impact / 100) * 0.7;
         const weight = timeWeight * impactWeight;
-
-        const sentScore = SENTIMENT_SCORE[a.sentiment] || 0;
-        weightedSum += sentScore * weight;
+        weightedSum += (SENTIMENT_SCORE[a.sentiment] || 0) * weight;
         weightSum += weight;
     });
-
-    const avgSent = weightSum > 0 ? weightedSum / weightSum : 0;
-    // تحويل -100..100 إلى 0..100
-    // مع انحياز طفيف للإيجابية (الناس بطبعهم يفضلون الرضا)
-    let score = 50 + (avgSent * 0.5);
-    return Math.round(Math.max(0, Math.min(100, score)));
+    const avg = weightSum > 0 ? weightedSum / weightSum : 0;
+    return Math.round(Math.max(0, Math.min(100, 50 + avg * 0.5)));
 }
 
 // ============================================================
-//  🚀 الجلب
+//  🚀 Main
 // ============================================================
-async function fetchAll() {
+async function main() {
     console.log(`🚀 جلب ${RSS_SOURCES.length} مصدر...`);
-    const rawArticles = [];
+    const raw = [];
 
     for (let i = 0; i < RSS_SOURCES.length; i++) {
         const src = RSS_SOURCES[i];
         console.log(`📡 [${i+1}/${RSS_SOURCES.length}] ${src.name}`);
         try {
             const res = await fetch(src.url, {
-                headers: { 'User-Agent': 'Mozilla/5.0 (NewsBot)' },
-                signal: AbortSignal.timeout(15000)
+                headers: { 'User-Agent': 'Mozilla/5.0' },
+                signal: AbortSignal.timeout(12000)
             });
-            if (!res.ok) { console.log(`   ❌ HTTP ${res.status}`); continue; }
+            if (!res.ok) continue;
             const text = await res.text();
             const items = parseRSS(text);
-            items.slice(0, 5).forEach(item => {
-                rawArticles.push({
+            items.slice(0, 3).forEach(item => {
+                raw.push({
                     title: stripHTML(item.title),
-                    description: stripHTML(item.description).slice(0, 500),
+                    description: stripHTML(item.description).slice(0, 400),
                     link: item.link,
-                    source: src.name,
-                    sourceId: src.id
+                    source: src.name
                 });
             });
             console.log(`   ✅ ${items.length}`);
         } catch (err) {
             console.log(`   ❌ ${err.message}`);
         }
-        await new Promise(r => setTimeout(r, 800));
+        await new Promise(r => setTimeout(r, 500));
     }
 
-    console.log(`\n📊 ${rawArticles.length} خبر خام`);
-
-    // إزالة المكرر
     const seen = new Set();
-    const unique = rawArticles.filter(a => {
+    const unique = raw.filter(a => {
         const k = hashTitle(a.title);
         if (seen.has(k)) return false;
         seen.add(k);
@@ -427,128 +382,96 @@ async function fetchAll() {
     });
     console.log(`📊 ${unique.length} خبر فريد`);
 
-    // تحميل الذاكرة السابقة
+    // ذاكرة سابقة
     let previous = { articles: [], byHash: {} };
-    const outputPath = path.join(__dirname, '..', 'data', 'news.json');
-    if (fs.existsSync(outputPath)) {
+    const outPath = path.join(__dirname, '..', 'data', 'news.json');
+    if (fs.existsSync(outPath)) {
         try {
-            const old = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+            const old = JSON.parse(fs.readFileSync(outPath, 'utf8'));
             if (old.articles) {
-                old.articles.forEach(a => {
-                    previous.byHash[a.hash] = a;
-                });
+                old.articles.forEach(a => { previous.byHash[a.hash] = a; });
                 previous.articles = old.articles;
-                console.log(`📦 ذاكرة سابقة: ${old.articles.length} خبر`);
+                console.log(`📦 ذاكرة: ${old.articles.length} خبر`);
             }
         } catch (e) {}
     }
 
-    // احتفظ بمقالات آخر 48 ساعة فقط من الذاكرة
     const now = Date.now();
-    const DAY2 = 48 * 60 * 60 * 1000;
-    const keptOld = previous.articles.filter(a => (now - a.timestamp) < DAY2);
-
-    // حدد الأخبار الجديدة
+    const kept = previous.articles.filter(a => (now - a.timestamp) < 48*60*60*1000);
     const newArticles = unique.filter(a => !previous.byHash[hashTitle(a.title)]);
-    console.log(`🆕 ${newArticles.length} خبر جديد للتصنيف`);
+    console.log(`🆕 ${newArticles.length} خبر جديد`);
 
-    // صنّف الأخبار الجديدة
-    const classifiedNew = [];
-    for (let i = 0; i < newArticles.length; i++) {
-        const a = newArticles[i];
-        const hash = hashTitle(a.title);
-        const countryCode = detectCountry(a.title);
-        console.log(`   [${i+1}/${newArticles.length}] ${a.title.slice(0,60)}...`);
-
-        const cls = await classifyWithAI(a.title, a.description);
-
-        classifiedNew.push({
-            hash,
-            title: a.title,
-            summary: cls.summary,
-            link: a.link,
-            source: a.source,
-            countryCode,
-            category: cls.category,
-            sentiment: cls.sentiment,
-            mood: cls.mood,
-            impact: cls.impact,
-            timestamp: Date.now()
-        });
-
-        // تأخير 2 ثانية بين كل خبر
-        await new Promise(r => setTimeout(r, 2000));
+    // ⚠️ الحد الأقصى 40 خبر لكل دورة
+    const MAX = 40;
+    const toProcess = newArticles.slice(0, MAX);
+    if (newArticles.length > MAX) {
+        console.log(`⚠️ سنعالج ${MAX} فقط من ${newArticles.length}`);
     }
 
-    // ادمج الجديد + القديم
-    const allArticles = [...classifiedNew, ...keptOld];
+    const classified = [];
+    let aiOk = 0, kwFallback = 0;
 
-    // احتفظ بآخر 600 خبر فقط
-    allArticles.sort((a,b) => b.timestamp - a.timestamp);
-    const finalArticles = allArticles.slice(0, 600);
+    for (let i = 0; i < toProcess.length; i++) {
+        const a = toProcess[i];
+        const hash = hashTitle(a.title);
+        const country = detectCountry(a.title);
 
-    // احسب مزاج كل دولة
+        console.log(`\n   [${i+1}/${toProcess.length}] ${a.title.slice(0,60)}`);
+
+        const cls = await classifyWithAI(a.title);
+        if (cls.reason === 'ai') aiOk++; else kwFallback++;
+
+        classified.push({
+            hash, title: a.title, summary: cls.summary, link: a.link,
+            source: a.source, countryCode: country,
+            category: cls.category, sentiment: cls.sentiment,
+            mood: cls.mood, impact: cls.impact, timestamp: Date.now()
+        });
+
+        await new Promise(r => setTimeout(r, 1000));
+    }
+
+    console.log(`\n📊 النتائج: AI=${aiOk}, Fallback=${kwFallback}`);
+
+    const all = [...classified, ...kept].sort((a,b) => b.timestamp - a.timestamp).slice(0, 600);
+
     const countries = {};
-    const countryCodes = new Set();
-    finalArticles.forEach(a => { if (a.countryCode) countryCodes.add(a.countryCode); });
-
-    countryCodes.forEach(code => {
-        const countryArticles = finalArticles.filter(a => a.countryCode === code);
-        const score = computeCountryScore(countryArticles);
+    const codes = new Set();
+    all.forEach(a => { if (a.countryCode) codes.add(a.countryCode); });
+    codes.forEach(code => {
+        const arr = all.filter(a => a.countryCode === code);
+        const score = computeCountryScore(arr);
         if (score !== null) {
-            const moods = {};
-            countryArticles.forEach(a => {
-                moods[a.category] = (moods[a.category] || 0) + 1;
-            });
-            countries[code] = {
-                score,
-                articleCount: countryArticles.length,
-                categories: moods
-            };
+            const cats = {};
+            arr.forEach(a => { cats[a.category] = (cats[a.category] || 0) + 1; });
+            countries[code] = { score, articleCount: arr.length, categories: cats };
         }
     });
 
-    // الإحصائيات العالمية
-    const globalCounts = {};
-    finalArticles.forEach(a => {
-        globalCounts[a.category] = (globalCounts[a.category] || 0) + 1;
-    });
+    const globalCats = {};
+    all.forEach(a => { globalCats[a.category] = (globalCats[a.category] || 0) + 1; });
 
-    const globalScore = (() => {
-        let sum = 0, count = 0;
-        finalArticles.forEach(a => {
-            sum += SENTIMENT_SCORE[a.sentiment] || 0;
-            count++;
-        });
-        if (count === 0) return 50;
-        const avg = sum / count;
-        return Math.round(50 + avg * 0.5);
-    })();
+    let sum = 0;
+    all.forEach(a => { sum += SENTIMENT_SCORE[a.sentiment] || 0; });
+    const globalScore = all.length > 0 ? Math.round(50 + (sum / all.length) * 0.5) : 50;
 
     const output = {
         updated_at: new Date().toISOString(),
-        total: finalArticles.length,
-        new_count: classifiedNew.length,
-        global: {
-            score: globalScore,
-            totalArticles: finalArticles.length,
-            categories: globalCounts
-        },
+        total: all.length,
+        new_count: classified.length,
+        ai_success: aiOk,
+        ai_fallback: kwFallback,
+        global: { score: globalScore, totalArticles: all.length, categories: globalCats },
         countries,
-        articles: finalArticles
+        articles: all
     };
 
-    if (!fs.existsSync(path.dirname(outputPath))) {
-        fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-    }
-    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
-    console.log(`\n💾 تم الحفظ في data/news.json`);
-    console.log(`📊 إجمالي: ${finalArticles.length} خبر`);
-    console.log(`🌍 ${Object.keys(countries).length} دولة محدّثة`);
+    if (!fs.existsSync(path.dirname(outPath))) fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
+
+    console.log(`\n💾 تم الحفظ: ${all.length} خبر`);
+    console.log(`🌍 ${Object.keys(countries).length} دولة`);
     console.log(`🎯 المزاج العالمي: ${globalScore}/100`);
 }
 
-fetchAll().catch(err => {
-    console.error('❌ خطأ:', err);
-    process.exit(1);
-});
+main().catch(err => { console.error('❌', err); process.exit(1); });
