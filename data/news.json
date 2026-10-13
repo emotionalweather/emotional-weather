@@ -1,24 +1,113 @@
 {
-  "updated_at": "2026-10-13T16:15:35.552Z",
-  "total": 200,
+  "updated_at": "2026-10-13T17:14:13.527Z",
+  "total": 240,
   "new_count": 40,
   "ai_success": 0,
   "ai_fallback": 40,
   "global": {
     "score": 42,
-    "totalArticles": 200,
+    "totalArticles": 240,
     "categories": {
-      "war": 29,
-      "politics": 143,
+      "war": 34,
+      "politics": 174,
+      "positive": 4,
+      "health": 5,
+      "crisis": 7,
       "disaster": 5,
-      "crisis": 6,
       "economy": 8,
-      "health": 3,
-      "culture": 3,
-      "positive": 3
+      "culture": 3
     }
   },
   "countries": {
+    "ET": {
+      "score": 13,
+      "articleCount": 2,
+      "categories": {
+        "war": 1,
+        "politics": 1
+      }
+    },
+    "YE": {
+      "score": 29,
+      "articleCount": 4,
+      "categories": {
+        "politics": 3,
+        "war": 1
+      }
+    },
+    "SA": {
+      "score": 45,
+      "articleCount": 18,
+      "categories": {
+        "politics": 16,
+        "war": 1,
+        "economy": 1
+      }
+    },
+    "US": {
+      "score": 56,
+      "articleCount": 7,
+      "categories": {
+        "politics": 6,
+        "positive": 1
+      }
+    },
+    "PL": {
+      "score": 9,
+      "articleCount": 3,
+      "categories": {
+        "war": 2,
+        "politics": 1
+      }
+    },
+    "QA": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "PT": {
+      "score": 20,
+      "articleCount": 1,
+      "categories": {
+        "health": 1
+      }
+    },
+    "PK": {
+      "score": 20,
+      "articleCount": 2,
+      "categories": {
+        "crisis": 2
+      }
+    },
+    "FR": {
+      "score": 43,
+      "articleCount": 14,
+      "categories": {
+        "politics": 11,
+        "disaster": 1,
+        "war": 1,
+        "culture": 1
+      }
+    },
+    "TR": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "DE": {
+      "score": 39,
+      "articleCount": 6,
+      "categories": {
+        "politics": 2,
+        "economy": 2,
+        "war": 1,
+        "crisis": 1
+      }
+    },
     "JP": {
       "score": 50,
       "articleCount": 2,
@@ -31,14 +120,6 @@
       "articleCount": 1,
       "categories": {
         "war": 1
-      }
-    },
-    "SA": {
-      "score": 51,
-      "articleCount": 15,
-      "categories": {
-        "politics": 14,
-        "economy": 1
       }
     },
     "SE": {
@@ -60,16 +141,6 @@
       "articleCount": 1,
       "categories": {
         "war": 1
-      }
-    },
-    "FR": {
-      "score": 41,
-      "articleCount": 11,
-      "categories": {
-        "politics": 8,
-        "disaster": 1,
-        "war": 1,
-        "culture": 1
       }
     },
     "ES": {
@@ -108,14 +179,6 @@
         "politics": 3
       }
     },
-    "YE": {
-      "score": 23,
-      "articleCount": 3,
-      "categories": {
-        "war": 1,
-        "politics": 2
-      }
-    },
     "IR": {
       "score": 23,
       "articleCount": 5,
@@ -146,14 +209,6 @@
         "politics": 2
       }
     },
-    "US": {
-      "score": 59,
-      "articleCount": 5,
-      "categories": {
-        "politics": 4,
-        "positive": 1
-      }
-    },
     "EG": {
       "score": 67,
       "articleCount": 2,
@@ -176,15 +231,6 @@
         "war": 2
       }
     },
-    "DE": {
-      "score": 34,
-      "articleCount": 4,
-      "categories": {
-        "economy": 2,
-        "war": 1,
-        "crisis": 1
-      }
-    },
     "ZA": {
       "score": 50,
       "articleCount": 1,
@@ -198,14 +244,6 @@
       "categories": {
         "war": 2,
         "politics": 2
-      }
-    },
-    "PL": {
-      "score": 17,
-      "articleCount": 2,
-      "categories": {
-        "war": 1,
-        "politics": 1
       }
     },
     "HU": {
@@ -250,20 +288,6 @@
         "health": 1
       }
     },
-    "PK": {
-      "score": 20,
-      "articleCount": 1,
-      "categories": {
-        "crisis": 1
-      }
-    },
-    "QA": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "SK": {
       "score": 0,
       "articleCount": 2,
@@ -292,13 +316,6 @@
         "politics": 1
       }
     },
-    "ET": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "MA": {
       "score": 50,
       "articleCount": 3,
@@ -308,6 +325,526 @@
     }
   },
   "articles": [
+    {
+      "hash": "1f58473cb5e2",
+      "title": "Ethiopian troops enter town on border with Eritrea, stoking war fears",
+      "summary": "Ethiopian troops enter town on border with Eritrea, stoking war fears",
+      "link": "https://www.straitstimes.com/world/ethiopian-troops-enter-town-on-border-with-eritrea-stoking-war-fears",
+      "source": "Straits Times",
+      "countryCode": "ET",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791911652526
+    },
+    {
+      "hash": "aab2f5f363a9",
+      "title": "In Yemen's Taiz, shelling worsens and prices spiral",
+      "summary": "In Yemen's Taiz, shelling worsens and prices spiral",
+      "link": "https://www.straitstimes.com/world/middle-east/in-yemens-taiz-shelling-worsens-and-prices-spiral",
+      "source": "Straits Times",
+      "countryCode": "YE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911647473
+    },
+    {
+      "hash": "9503f6ca8ac7",
+      "title": "Saudi Arabia strikes Yemen capital as Houthis vow to retaliate",
+      "summary": "Saudi Arabia strikes Yemen capital as Houthis vow to retaliate",
+      "link": "https://www.straitstimes.com/world/middle-east/saudi-arabia-strikes-yemen-capital-as-houthis-vow-to-retaliate",
+      "source": "Straits Times",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911642395
+    },
+    {
+      "hash": "d26f08bc1392",
+      "title": "FIR against CJP leaders after Jantar Mantar entry, breach of peace bond alleged",
+      "summary": "FIR against CJP leaders after Jantar Mantar entry, breach of peace bond alleged",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/delhi/jantar-mantar-row-delhi-police-allege-cjps-ashutosh-ranka-saurav-das-breached-peace-bond-fir-filed/articleshow/134922437.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1791911637326
+    },
+    {
+      "hash": "f77d204f4e93",
+      "title": "'Heights of irony': Congress hits back at Shah over 2029 poll claim with '3 Bs'",
+      "summary": "'Heights of irony': Congress hits back at Shah over 2029 poll claim with '3 Bs'",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/heights-of-irony-congress-hits-back-at-amit-shah-over-2029-poll-claim-with-3-bs/articleshow/134922785.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911632266
+    },
+    {
+      "hash": "998adfb5d893",
+      "title": "Majority in US say Trump prioritises personal wealth over all else: Poll",
+      "summary": "Majority in US say Trump prioritises personal wealth over all else: Poll",
+      "link": "https://www.aljazeera.com/news/2026/10/13/majority-in-us-say-trump-prioritises-personal-wealth-over-all-else-poll?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911627208
+    },
+    {
+      "hash": "ba080d5bd5c9",
+      "title": "Drivers queue for hours in Bali amid fuel shortage",
+      "summary": "Drivers queue for hours in Bali amid fuel shortage",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/drivers-queue-for-hours-in-bali-amid-fuel-shortage?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911622151
+    },
+    {
+      "hash": "b7abe098b6b3",
+      "title": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah",
+      "summary": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/13/jerusalem-daily-israeli-forces-raid-ngos-in-ramallah?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911617097
+    },
+    {
+      "hash": "dab39c810260",
+      "title": "Ekiti recruits 8,358 workers, generates N88.4bn IGR in four years – Gov Oyebanji",
+      "summary": "Ekiti recruits 8,358 workers, generates N88.4bn IGR in four years – Gov Oyebanji",
+      "link": "https://www.premiumtimesng.com/regional/ssouth-west/916826-ekiti-recruits-8358-workers-generates-n88-4bn-igr-in-four-years-gov-oyebanji.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911612037
+    },
+    {
+      "hash": "312db81c968e",
+      "title": "Tinubu transmits bills on genocide, war crimes prosecution to House of Reps",
+      "summary": "Tinubu transmits bills on genocide, war crimes prosecution to House of Reps",
+      "link": "https://www.premiumtimesng.com/news/headlines/916828-tinubu-transmits-bills-on-genocide-war-crimes-prosecution-to-house-of-reps.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791911606967
+    },
+    {
+      "hash": "f610cbbc7767",
+      "title": "Providing free health insurance in Eti-Osa, By Gbolahan Olusegun Yishawu",
+      "summary": "Providing free health insurance in Eti-Osa, By Gbolahan Olusegun Yishawu",
+      "link": "https://www.premiumtimesng.com/opinion/916831-providing-free-health-insurance-in-eti-osa-by-gbolahan-olusegun-yishawu.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1791911601912
+    },
+    {
+      "hash": "e691dd85b8e0",
+      "title": "Environmentalists protest at African Energy Week in Cape Town",
+      "summary": "Environmentalists protest at African Energy Week in Cape Town",
+      "link": "http://www.africanews.com/2026/10/13/environmentalists-protest-at-african-energy-week-in-cape-town/",
+      "source": "Africanews",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911596855
+    },
+    {
+      "hash": "b9d0ef6f052f",
+      "title": "Formula One to return to Africa in 'early 2030s' in Rwanda",
+      "summary": "Formula One to return to Africa in 'early 2030s' in Rwanda",
+      "link": "http://www.africanews.com/2026/10/13/formula-one-to-return-to-africa-in-early-2030s-in-rwanda/",
+      "source": "Africanews",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911591807
+    },
+    {
+      "hash": "840fe655dcc2",
+      "title": "Eleições 2026: como consultar meu local de votação para o segundo turno?",
+      "summary": "Eleições 2026: como consultar meu local de votação para o segundo turno?",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/13/eleicoes-2026-como-consultar-meu-local-de-votacao-para-o-segundo-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911586745
+    },
+    {
+      "hash": "e03ab5cc2789",
+      "title": "Casal morre após carro capotar e bater em construção na PA-320, no Pará",
+      "summary": "Casal morre após carro capotar e bater em construção na PA-320, no Pará",
+      "link": "https://g1.globo.com/pa/para/noticia/2026/10/13/casal-morre-apos-carro-capotar-e-bater-na-pa-320-no-para.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911581696
+    },
+    {
+      "hash": "519b9c2e0954",
+      "title": "Eleições no AM: Omar Aziz e Maria do Carmo trocam críticas, discutem filas na saúde e escala 6x1 em primeiro debate do 2º turno",
+      "summary": "Eleições no AM: Omar Aziz e Maria do Carmo trocam críticas, discutem filas na saúde e escala 6x1 em primeiro debate do 2º turno",
+      "link": "https://g1.globo.com/am/amazonas/eleicoes/2026/noticia/2026/10/13/eleicoes-no-am-omar-aziz-e-maria-do-carmo-trocam-criticas-discutem-filas-na-saude-e-escala-6x1-em-primeiro-debate-do-2o-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911576628
+    },
+    {
+      "hash": "285f159ed5bf",
+      "title": "Poland wants EU military production in ‘war-mode’",
+      "summary": "Poland wants EU military production in ‘war-mode’",
+      "link": "<![CDATA[https://rt-english.com/news/647151-poland-eu-war-production/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "PL",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791911571336
+    },
+    {
+      "hash": "828389b9576f",
+      "title": "Última hora de la visita de los Reyes a Ceuta, en directo | Los Reyes rinden homenaje a las víctimas de la entrada masiva en el cementerio musulmán de Sidi Embarek",
+      "summary": "Última hora de la visita de los Reyes a Ceuta, en directo | Los Reyes rinden homenaje a las víctimas de la entrada masiva en el cementerio musulmán de Sidi Embarek",
+      "link": "https://elpais.com/espana/2026-10-13/ultima-hora-de-la-visita-de-los-reyes-a-ceuta-en-directo.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911566274
+    },
+    {
+      "hash": "41373d15c1f6",
+      "title": "VSS : l’Assemblée adopte la proposition de loi intégrale contre les violences sexistes et sexuelles, à l’unanimité des votants",
+      "summary": "VSS : l’Assemblée adopte la proposition de loi intégrale contre les violences sexistes et sexuelles, à l’unanimité des votants",
+      "link": "https://www.lemonde.fr/politique/article/2026/10/13/vss-l-assemblee-adopte-la-proposition-de-loi-integrale-contre-les-violences-sexistes-et-sexuelles-a-l-unanimite-des-votants_6793147_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911561224
+    },
+    {
+      "hash": "000c1a183094",
+      "title": "EN DIRECT, budget 2027 : le débat sur la dette, préalable aux discussions sur le projet de loi de finances, commence à l’Assemblée nationale",
+      "summary": "EN DIRECT, budget 2027 : le débat sur la dette, préalable aux discussions sur le projet de loi de finances, commence à l’Assemblée nationale",
+      "link": "https://www.lemonde.fr/politique/live/2026/10/13/en-direct-budget-2027-les-debats-sur-le-projet-de-loi-de-finances-commencent-a-l-assemblee-nationale_6793072_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911556158
+    },
+    {
+      "hash": "cbb0ab50ccba",
+      "title": "Qatar’s emir vows that country will emerge stronger as he outlines national strategies",
+      "summary": "Qatar’s emir vows that country will emerge stronger as he outlines national strategies",
+      "link": "https://www.euronews.com/2026/10/13/qatars-emir-vows-that-country-will-emerge-stronger-as-he-outlines-national-strategies",
+      "source": "Euronews English",
+      "countryCode": "QA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911551095
+    },
+    {
+      "hash": "aee4d1c60bed",
+      "title": "Europe’s satellite sovereignty push faces funding test as EU space budget cycle ends",
+      "summary": "Europe’s satellite sovereignty push faces funding test as EU space budget cycle ends",
+      "link": "https://www.euronews.com/2026/10/13/europes-satellite-sovereignty-push-faces-funding-test-as-eu-space-budget-cycle-ends",
+      "source": "Euronews English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911545775
+    },
+    {
+      "hash": "23f9ea902c50",
+      "title": "Secret lies in hospitality: Porto tops ranking as Europe's most welcoming city, Lisbon close behind",
+      "summary": "Secret lies in hospitality: Porto tops ranking as Europe's most welcoming city, Lisbon close behind",
+      "link": "https://www.euronews.com/2026/10/13/secret-lies-in-hospitality-porto-tops-ranking-as-europes-most-welcoming-city-lisbon-close",
+      "source": "Euronews English",
+      "countryCode": "PT",
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1791911540714
+    },
+    {
+      "hash": "bb0361dc17ff",
+      "title": "Saudi Arabia&apos;s military struggle against Houthi attacks",
+      "summary": "Saudi Arabia&apos;s military struggle against Houthi attacks",
+      "link": "https://www.dw.com/en/saudi-arabia-s-military-struggle-against-houthi-attacks/a-79650857?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791911535661
+    },
+    {
+      "hash": "77ac5a8312f5",
+      "title": "How will emergency rule in Pakistan&apos;s KP affect Afghan ties?",
+      "summary": "How will emergency rule in Pakistan&apos;s KP affect Afghan ties?",
+      "link": "https://www.dw.com/en/how-will-emergency-rule-in-pakistan-s-kp-affect-afghan-ties/a-79654262?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "PK",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1791911530595
+    },
+    {
+      "hash": "32257a2b8a99",
+      "title": "🔴 Live: French students ‘not giving up the fight’ as 480,000 join new day of school protests",
+      "summary": "🔴 Live: French students ‘not giving up the fight’ as 480,000 join new day of school protests",
+      "link": "https://www.france24.com/en/europe/20261013-live-france-braces-for-fresh-nationwide-protests-over-school-conditions",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911525549
+    },
+    {
+      "hash": "45ec3028cb6b",
+      "title": "Student protesters tell police to join them in Paris demonstrations",
+      "summary": "Student protesters tell police to join them in Paris demonstrations",
+      "link": "https://www.france24.com/en/video/20261013-student-protesters-tell-police-to-join-them-in-paris-demonstrations",
+      "source": "France24 English",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911520498
+    },
+    {
+      "hash": "05707cf37972",
+      "title": "تركيا: تحذير لليونان من استشعار القوة استناداً لدعم إسرائيلي - أميركي",
+      "summary": "تركيا: تحذير لليونان من استشعار القوة استناداً لدعم إسرائيلي - أميركي",
+      "link": "https://aawsat.com/node/5329221",
+      "source": "الشرق الأوسط",
+      "countryCode": "TR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911515421
+    },
+    {
+      "hash": "64a16105e301",
+      "title": "مدرب الريان: التعاون فريق قوي رغم ظروفه… وجميع لاعبينا جاهزون",
+      "summary": "مدرب الريان: التعاون فريق قوي رغم ظروفه… وجميع لاعبينا جاهزون",
+      "link": "https://aawsat.com/node/5329224",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911510368
+    },
+    {
+      "hash": "a104a7d5ffe4",
+      "title": "الأمن الداخلي في شوارع الحسكة يطبق قرار حظر حمل السلاح وإطلاق النار",
+      "summary": "الأمن الداخلي في شوارع الحسكة يطبق قرار حظر حمل السلاح وإطلاق النار",
+      "link": "https://aawsat.com/node/5329226",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911505316
+    },
+    {
+      "hash": "b25464ead964",
+      "title": "اتهامات تطال سفيرة الولايات المتحدة لدى اليونان.. والبيت الأبيض يطلب منها تقديم استقالتها",
+      "summary": "اتهامات تطال سفيرة الولايات المتحدة لدى اليونان.. والبيت الأبيض يطلب منها تقديم استقالتها",
+      "link": "https://arabic.euronews.com/2026/10/13/kimberly-guilfoyle-trump-greece-us-ambassador-white-house",
+      "source": "Euronews عربي",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911500247
+    },
+    {
+      "hash": "2f8abc060b3f",
+      "title": "سر الضيافة يضع بورتو في صدارة المدن الأوروبية الأكثر ترحيبا ولشبونة تليها",
+      "summary": "سر الضيافة يضع بورتو في صدارة المدن الأوروبية الأكثر ترحيبا ولشبونة تليها",
+      "link": "https://arabic.euronews.com/2026/10/13/the-secret-is-in-hospitality-porto-is-elected-the-most-welcoming-city-in-europe-with-lisbo",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911495167
+    },
+    {
+      "hash": "b11b4ba80827",
+      "title": "بينهم فتيات بعمر 11 عاماً: رصد أكثر من 350 زواجا لقاصرات في إحدى الولايات بجنوب ألمانيا",
+      "summary": "بينهم فتيات بعمر 11 عاماً: رصد أكثر من 350 زواجا لقاصرات في إحدى الولايات بجنوب ألمانيا",
+      "link": "https://arabic.euronews.com/2026/10/13/over-350-child-marriages-recorded-in-german-state-baden-wurttemberg",
+      "source": "Euronews عربي",
+      "countryCode": "DE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911490113
+    },
+    {
+      "hash": "85e00d9eefe7",
+      "title": "فرنسا: الجمعية الوطنية تقر مشروع القانون الشامل لمكافحة العنف القائم على النوع الاجتماعي والعنف الجنسي",
+      "summary": "فرنسا: الجمعية الوطنية تقر مشروع القانون الشامل لمكافحة العنف القائم على النوع الاجتماعي والعنف الجنسي",
+      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261013-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D8%B1%D9%86%D8%B3%D9%8A%D8%A9-%D8%AA%D8%B5%D9%88%D9%8A%D8%AA-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D8%AC%D9%86%D8%B3%D9%8A",
+      "source": "France24 عربي",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911485061
+    },
+    {
+      "hash": "ef4ac30b51d9",
+      "title": "🔴 فرنسا: الجمعية الوطنية تقر مشروع القانون الشامل لمكافحة العنف الجنسي والقائم على النوع الاجتماعي",
+      "summary": "🔴 فرنسا: الجمعية الوطنية تقر مشروع القانون الشامل لمكافحة العنف الجنسي والقائم على النوع الاجتماعي",
+      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261013-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%81%D8%B1%D9%86%D8%B3%D9%8A%D8%A9-%D8%AA%D8%B5%D9%88%D9%8A%D8%AA-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D8%AC%D9%86%D8%B3%D9%8A",
+      "source": "France24 عربي",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911480005
+    },
+    {
+      "hash": "d1bbefb6640a",
+      "title": "هجوم سيبراني \"غير مسبوق\" يستهدف أنظمة تبريد سلاسل متاجر فرنسية وخسائر تقدر بالملايين",
+      "summary": "هجوم سيبراني \"غير مسبوق\" يستهدف أنظمة تبريد سلاسل متاجر فرنسية وخسائر تقدر بالملايين",
+      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261013-%D9%87%D8%AC%D9%88%D9%85-%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A-%D8%BA%D9%8A%D8%B1-%D9%85%D8%B3%D8%A8%D9%88%D9%82-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D8%B3%D9%84%D8%A7%D8%B3%D9%84-%D9%85%D8%AA%D8%A7%D8%AC%D8%B1-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%AE%D8%B3%D8%A7%D8%A6%D8%B1-%D8%AA%D9%82%D8%AF%D8%B1-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1791911474954
+    },
+    {
+      "hash": "7c1cabd1fbd2",
+      "title": "فايكينغ يبدأ المواجهة مبكرا.. محاولة لحرمان بايرن ميونيخ من النوم",
+      "summary": "فايكينغ يبدأ المواجهة مبكرا.. محاولة لحرمان بايرن ميونيخ من النوم",
+      "link": "https://www.dw.com/ar/فايكينغ-يبدأ-المواجهة-مبكرا-محاولة-لحرمان-بايرن-ميونيخ-من-النوم/a-79649617?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911469898
+    },
+    {
+      "hash": "a0a435d88fd9",
+      "title": "ألمانيا ـ الضغوط تزداد على المستشار ميرتس وحكومته الائتلافية في مهب الريح",
+      "summary": "ألمانيا ـ الضغوط تزداد على المستشار ميرتس وحكومته الائتلافية في مهب الريح",
+      "link": "https://www.dw.com/ar/ألمانيا-ـ-الضغوط-تزداد-على-المستشار-ميرتس-وحكومته-الائتلافية-في-مهب-الريح/a-79654002?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "DE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911464844
+    },
+    {
+      "hash": "02462327aa24",
+      "title": "السعودية في مواجهة الحوثيين .. ضغوط متزايدة ومعركة معقدة",
+      "summary": "السعودية في مواجهة الحوثيين .. ضغوط متزايدة ومعركة معقدة",
+      "link": "https://www.dw.com/ar/السعودية-في-مواجهة-الحوثيين-ضغوط-متزايدة-ومعركة-معقدة/a-79652697?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911459778
+    },
+    {
+      "hash": "ac6612a50600",
+      "title": "البابا لاون يخضع لجراحة في الرئة، ماذا نعرف عن حالته الصحية؟",
+      "summary": "البابا لاون يخضع لجراحة في الرئة، ماذا نعرف عن حالته الصحية؟",
+      "link": "https://www.bbc.com/arabic/articles/c60rl59wr2qko?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1791911454714
+    },
     {
       "hash": "2314cfd45b9f",
       "title": "'Even a 3-time CM is not safe': TMC alleges knife attack bid on Mamata Banerjee",
