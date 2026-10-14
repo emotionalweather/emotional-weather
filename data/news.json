@@ -1,30 +1,57 @@
 {
-  "updated_at": "2026-10-14T22:22:42.993Z",
+  "updated_at": "2026-10-14T23:20:26.841Z",
   "total": 600,
-  "new_count": 38,
+  "new_count": 23,
   "ai_success": 0,
-  "ai_fallback": 38,
+  "ai_fallback": 23,
   "global": {
-    "score": 45,
+    "score": 46,
     "totalArticles": 600,
     "categories": {
-      "politics": 453,
-      "crisis": 17,
-      "health": 6,
-      "sports": 9,
-      "war": 64,
-      "culture": 22,
-      "economy": 8,
-      "disaster": 10,
+      "health": 7,
+      "politics": 448,
+      "crisis": 18,
+      "disaster": 13,
+      "culture": 24,
+      "economy": 9,
+      "sports": 10,
+      "war": 60,
       "positive": 11
     }
   },
   "countries": {
     "NZ": {
-      "score": 50,
-      "articleCount": 3,
+      "score": 39,
+      "articleCount": 4,
       "categories": {
+        "health": 1,
         "politics": 3
+      }
+    },
+    "UA": {
+      "score": 39,
+      "articleCount": 34,
+      "categories": {
+        "politics": 28,
+        "war": 5,
+        "culture": 1
+      }
+    },
+    "NG": {
+      "score": 48,
+      "articleCount": 15,
+      "categories": {
+        "disaster": 1,
+        "politics": 12,
+        "culture": 1,
+        "economy": 1
+      }
+    },
+    "KR": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
       }
     },
     "AU": {
@@ -81,15 +108,6 @@
         "culture": 1
       }
     },
-    "NG": {
-      "score": 54,
-      "articleCount": 15,
-      "categories": {
-        "politics": 13,
-        "culture": 1,
-        "economy": 1
-      }
-    },
     "ZA": {
       "score": 50,
       "articleCount": 2,
@@ -113,9 +131,9 @@
     },
     "KE": {
       "score": 45,
-      "articleCount": 8,
+      "articleCount": 7,
       "categories": {
-        "politics": 7,
+        "politics": 6,
         "health": 1
       }
     },
@@ -137,22 +155,13 @@
       }
     },
     "IL": {
-      "score": 43,
-      "articleCount": 16,
+      "score": 45,
+      "articleCount": 14,
       "categories": {
-        "war": 2,
-        "politics": 10,
+        "war": 1,
+        "politics": 9,
         "positive": 2,
         "disaster": 2
-      }
-    },
-    "UA": {
-      "score": 39,
-      "articleCount": 33,
-      "categories": {
-        "politics": 26,
-        "war": 6,
-        "culture": 1
       }
     },
     "DE": {
@@ -189,12 +198,12 @@
       }
     },
     "SA": {
-      "score": 18,
-      "articleCount": 34,
+      "score": 19,
+      "articleCount": 31,
       "categories": {
         "politics": 9,
         "economy": 2,
-        "war": 20,
+        "war": 17,
         "sports": 1,
         "disaster": 1,
         "culture": 1
@@ -202,9 +211,9 @@
     },
     "PS": {
       "score": 53,
-      "articleCount": 11,
+      "articleCount": 10,
       "categories": {
-        "politics": 8,
+        "politics": 7,
         "culture": 1,
         "positive": 1,
         "war": 1
@@ -257,10 +266,10 @@
       }
     },
     "EG": {
-      "score": 26,
-      "articleCount": 7,
+      "score": 25,
+      "articleCount": 6,
       "categories": {
-        "politics": 4,
+        "politics": 3,
         "war": 2,
         "disaster": 1
       }
@@ -396,15 +405,313 @@
       }
     },
     "CL": {
-      "score": 30,
-      "articleCount": 2,
+      "score": 20,
+      "articleCount": 1,
       "categories": {
-        "disaster": 1,
-        "politics": 1
+        "disaster": 1
       }
     }
   },
   "articles": [
+    {
+      "hash": "38ec247de56a",
+      "title": "Auckland's Starship Hospital delays some cancer treatments due to nurse shortage",
+      "summary": "Auckland's Starship Hospital delays some cancer treatments due to nurse shortage",
+      "link": "https://www.rnz.co.nz/news/health/1918105/auckland-s-starship-hospital-delays-some-cancer-treatments-due-to-nurse-shortage",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792020025838
+    },
+    {
+      "hash": "1f5f0a13c76b",
+      "title": "Greens vow to reverse National's $2.4b public service cuts at cost of $3.17b",
+      "summary": "Greens vow to reverse National's $2.4b public service cuts at cost of $3.17b",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1921798/greens-vow-to-reverse-national-s-2-point-4b-public-service-cuts-at-cost-of-3-point-17b",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792020020787
+    },
+    {
+      "hash": "69720ece56b7",
+      "title": "Qld tourism businesses say fuel prices behind drop in visitor numbers",
+      "summary": "Qld tourism businesses say fuel prices behind drop in visitor numbers",
+      "link": "https://www.abc.net.au/news/2026-10-15/tourist-numbers-down-in-regional-qld-amid-high-fuel-prices/107263850",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792020015742
+    },
+    {
+      "hash": "9410b7e9abf1",
+      "title": "Automated feedlot proposal draws community ire in Victoria's south-east",
+      "summary": "Automated feedlot proposal draws community ire in Victoria's south-east",
+      "link": "https://www.abc.net.au/news/2026-10-15/victoria-automated-feedlot-concerns-gippsland/106922316",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792020010683
+    },
+    {
+      "hash": "5ac37b35a5a4",
+      "title": "City man says he wants to help farmers deal with silent mental health crisis",
+      "summary": "City man says he wants to help farmers deal with silent mental health crisis",
+      "link": "https://www.abc.net.au/news/2026-10-15/long-drive-convoy-puts-spotlight-on-farmer-mental-health/107261762",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1792020005629
+    },
+    {
+      "hash": "c538fe4cef9d",
+      "title": "Musk suggests US govt behind any slowdown in Ukraine’s Starshield system",
+      "summary": "Musk suggests US govt behind any slowdown in Ukraine’s Starshield system",
+      "link": "https://www.straitstimes.com/world/united-states/musk-suggests-us-govt-behind-any-slowdown-in-ukraines-starshield-system",
+      "source": "Straits Times",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792020000530
+    },
+    {
+      "hash": "2c0a006c8683",
+      "title": "What is Starshield, SpaceX’s military version of Starlink?",
+      "summary": "What is Starshield, SpaceX’s military version of Starlink?",
+      "link": "https://www.straitstimes.com/world/united-states/what-is-starshield-spacexs-military-version-of-starlink",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019995480
+    },
+    {
+      "hash": "57d305a725dd",
+      "title": "How Jardine Matheson’s street-shop sale reflects Hong Kong retail property’s struggles",
+      "summary": "How Jardine Matheson’s street-shop sale reflects Hong Kong retail property’s struggles",
+      "link": "https://www.scmp.com/business/article/3370889/how-jardine-mathesons-street-shop-sale-reflects-hong-kong-retail-propertys-struggles?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019990427
+    },
+    {
+      "hash": "517e5dfdad6b",
+      "title": "Lagos govt announces demolition of fire-damaged GNI building",
+      "summary": "Lagos govt announces demolition of fire-damaged GNI building",
+      "link": "https://www.premiumtimesng.com/news/top-news/917183-lagos-govt-announces-demolition-of-fire-damaged-gni-building.html",
+      "source": "Premium Times",
+      "countryCode": "NG",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792019985349
+    },
+    {
+      "hash": "cd358cebd5bd",
+      "title": "4º Festival da Cerveja reúne shows e bebidas artesanais em Santos; veja a programação",
+      "summary": "4º Festival da Cerveja reúne shows e bebidas artesanais em Santos; veja a programação",
+      "link": "https://g1.globo.com/sp/santos-regiao/culinaria-013/noticia/2026/10/14/4o-festival-da-cerveja-reune-shows-e-bebidas-artesanais-em-santos-veja-a-programacao.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792019980063
+    },
+    {
+      "hash": "e3b93c4d29f7",
+      "title": "VÍDEOS: NSC Notícias de quarta-feira, 14 de outubro de 2026",
+      "summary": "VÍDEOS: NSC Notícias de quarta-feira, 14 de outubro de 2026",
+      "link": "https://g1.globo.com/sc/santa-catarina/edicao/2026/10/14/videos-nsc-noticias-de-quarta-feira-14-de-outubro-de-2026.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792019975017
+    },
+    {
+      "hash": "4de514267212",
+      "title": "Homem é preso por agressão, perseguição e divulgação de registros íntimos da ex-companheira em Tomar do Geru",
+      "summary": "Homem é preso por agressão, perseguição e divulgação de registros íntimos da ex-companheira em Tomar do Geru",
+      "link": "https://g1.globo.com/se/sergipe/noticia/2026/10/14/quatro-casos-violencia-contra-mulher-nesta-quarta-feira.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019969962
+    },
+    {
+      "hash": "561e2710083d",
+      "title": "Retail spending fell in March as consumers pull back",
+      "summary": "Retail spending fell in March as consumers pull back",
+      "link": "https://www.cnn.com/2023/04/14/economy/march-retail-sales/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019964913
+    },
+    {
+      "hash": "fb84aa302aa8",
+      "title": "Still haven't filed your taxes? Here's what you need to know",
+      "summary": "Still haven't filed your taxes? Here's what you need to know",
+      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019959862
+    },
+    {
+      "hash": "94654941a6c4",
+      "title": "Markets digest bank earnings after recent turmoil",
+      "summary": "Markets digest bank earnings after recent turmoil",
+      "link": "https://www.cnn.com/business/live-news/stock-market-bank-earnings/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1792019954815
+    },
+    {
+      "hash": "aeaf3b63b575",
+      "title": "Musk blames Trump for throttling Starlink in Ukraine",
+      "summary": "Musk blames Trump for throttling Starlink in Ukraine",
+      "link": "<![CDATA[https://rt-english.com/news/647213-ukraine-musk-starlink-limits/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019949753
+    },
+    {
+      "hash": "6e5d4da15ccb",
+      "title": "Albania protests turn violent as protestors demand PM Rama's resignation",
+      "summary": "Albania protests turn violent as protestors demand PM Rama's resignation",
+      "link": "https://www.france24.com/en/europe/20261014-albania-protests-protestors-demand-pm-rama-resignation",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019944704
+    },
+    {
+      "hash": "590c41daca3b",
+      "title": "North Korea test-fires submarine-launched cruise missiles amid rising tensions",
+      "summary": "North Korea test-fires submarine-launched cruise missiles amid rising tensions",
+      "link": "https://www.france24.com/en/asia-pacific/20261014-north-korea-test-fires-submarine-launched-cruise-missiles",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792019939651
+    },
+    {
+      "hash": "fab8ae1bfb3c",
+      "title": "بودو غليمت يفاجئ دورتموند ويحقق فوزه الأول في دوري الأبطال",
+      "summary": "بودو غليمت يفاجئ دورتموند ويحقق فوزه الأول في دوري الأبطال",
+      "link": "https://aawsat.com/node/5329745",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792019934601
+    },
+    {
+      "hash": "df21b17abbbc",
+      "title": "كوريا الشمالية تختبر إطلاق صواريخ «كروز» استراتيجية من غواصات",
+      "summary": "كوريا الشمالية تختبر إطلاق صواريخ «كروز» استراتيجية من غواصات",
+      "link": "https://aawsat.com/node/5329747",
+      "source": "الشرق الأوسط",
+      "countryCode": "KR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792019929538
+    },
+    {
+      "hash": "086845d233b9",
+      "title": "روسيا والصين تناقشان التعاون وحربي أوكرانيا وإيران و«العلاقات مع أميركا»",
+      "summary": "روسيا والصين تناقشان التعاون وحربي أوكرانيا وإيران و«العلاقات مع أميركا»",
+      "link": "https://aawsat.com/node/5329755",
+      "source": "الشرق الأوسط",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792019924478
+    },
+    {
+      "hash": "608d13f5b29e",
+      "title": "دراسة تحدّد موعدًا لنهاية البشرية هذا العام.. هل نحن أمام كارثة وشيكة؟",
+      "summary": "دراسة تحدّد موعدًا لنهاية البشرية هذا العام.. هل نحن أمام كارثة وشيكة؟",
+      "link": "https://arabic.euronews.com/2026/10/15/end-of-humanity-overpopulation-heinz-von-foerster-doomsday",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792019919429
+    },
+    {
+      "hash": "eeb2aae84845",
+      "title": "ترامب متهم بالسخرية من مقتل شاب بين فكي نمر.ما القصة؟",
+      "summary": "ترامب متهم بالسخرية من مقتل شاب بين فكي نمر.ما القصة؟",
+      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%A3%D9%85-%D9%81%D8%A8%D8%B1%D9%83%D8%A9/20261014-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%85%D8%AA%D9%87%D9%85-%D8%A8%D8%A7%D9%84%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D9%85%D9%86-%D9%85%D9%82%D8%AA%D9%84-%D8%B4%D8%A7%D8%A8-%D8%A8%D9%8A%D9%86-%D9%81%D9%83%D9%8A-%D9%86%D9%85%D8%B1-%D9%85%D8%A7-%D8%A7%D9%84%D9%82%D8%B5%D8%A9",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792019914379
+    },
     {
       "hash": "ac330853e67a",
       "title": "New Zealand First pledges to increase Coastguard funding",
@@ -7905,305 +8212,6 @@
       "mood": "joy",
       "impact": 35,
       "timestamp": 1791966245466
-    },
-    {
-      "hash": "7ff3022d75d3",
-      "title": "«دورة ووهان»: فوز ساحق لشفيونتيك في مواجهة بولندية خالصة",
-      "summary": "«دورة ووهان»: فوز ساحق لشفيونتيك في مواجهة بولندية خالصة",
-      "link": "https://aawsat.com/node/5329424",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791966240386
-    },
-    {
-      "hash": "35ded5ee1c68",
-      "title": "أوكرانيا: صواريخ روسية تضرب منازل ومحطة كهرباء في كييف تقتل 3 وتصيب 22",
-      "summary": "أوكرانيا: صواريخ روسية تضرب منازل ومحطة كهرباء في كييف تقتل 3 وتصيب 22",
-      "link": "https://arabic.euronews.com/video/2026/10/14/ukraine-russian-missiles-hit-homes-and-a-power-plant-in-kyiv-killing-three-and-injuring-22",
-      "source": "Euronews عربي",
-      "countryCode": "UA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791966235186
-    },
-    {
-      "hash": "71d53f8957f7",
-      "title": "\"شتاء غزة يقترب.. كيف تحولت البيوت والخيام إلى مصيدة للمطر والخطر؟",
-      "summary": "\"شتاء غزة يقترب.. كيف تحولت البيوت والخيام إلى مصيدة للمطر والخطر؟",
-      "link": "https://arabic.euronews.com/2026/10/14/gaza-winter-flooding-tents-displacement-shelter-crisis-building-collapse",
-      "source": "Euronews عربي",
-      "countryCode": "PS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791966230090
-    },
-    {
-      "hash": "28068ca18c36",
-      "title": "ترامب ينتقد الحوثيين بوصفهم غير لطيفين بعد هجوم على منشأة أرامكو السعودية",
-      "summary": "ترامب ينتقد الحوثيين بوصفهم غير لطيفين بعد هجوم على منشأة أرامكو السعودية",
-      "link": "https://arabic.euronews.com/2026/10/14/trump-criticises-the-houthis-as-not-nice-following-an-attack-on-a-saudi-aramco-facility",
-      "source": "Euronews عربي",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791966225001
-    },
-    {
-      "hash": "673eda6b2f47",
-      "title": "الخزانة الأميركية تغرم بنك أوف أميركا بـ 1.2 مليار دولار",
-      "summary": "الخزانة الأميركية تغرم بنك أوف أميركا بـ 1.2 مليار دولار",
-      "link": "https://www.skynewsarabia.com/business/1898171-%D8%A7%D9%84%D8%AE%D8%B2%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D8%A9-%D8%AA%D8%BA%D8%B1%D9%85-%D8%A8%D9%86%D9%83-%D8%A3%D9%88%D9%81-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7-%D8%A8-1-2-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791966219919
-    },
-    {
-      "hash": "6bd80025d399",
-      "title": "عقب مداهمتها فجرا.. الشرطة التركية توقف بث قناة معارضة",
-      "summary": "عقب مداهمتها فجرا.. الشرطة التركية توقف بث قناة معارضة",
-      "link": "https://www.skynewsarabia.com/middle-east/1898169-%D8%B9%D9%82%D8%A8-%D9%85%D8%AF%D8%A7%D9%87%D9%85%D8%AA%D9%87%D8%A7-%D9%81%D8%AC%D8%B1%D8%A7-%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D8%AA%D9%88%D9%82%D9%81-%D8%A8%D8%AB-%D9%82%D9%86%D8%A7%D8%A9-%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%D8%A9",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791966212439
-    },
-    {
-      "hash": "bee39acc3c4a",
-      "title": "سماع انفجارات في الرياض.. والسعودية تعلن اعتراض صاروخ",
-      "summary": "سماع انفجارات في الرياض.. والسعودية تعلن اعتراض صاروخ",
-      "link": "https://www.skynewsarabia.com/middle-east/1898172-%D8%B3%D9%85%D8%A7%D8%B9-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%88%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D8%B5%D8%A7%D8%B1%D9%88%D8%AE",
-      "source": "Sky News عربية",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791966207353
-    },
-    {
-      "hash": "6fabd0e78295",
-      "title": "الخرف: لماذا تتحمّل النساء عبئاً أكبر مع توقّع تضاعف عدد الإصابات بحلول 2050؟",
-      "summary": "الخرف: لماذا تتحمّل النساء عبئاً أكبر مع توقّع تضاعف عدد الإصابات بحلول 2050؟",
-      "link": "https://www.bbc.com/arabic/articles/cq0ld078x1l5o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791966202272
-    },
-    {
-      "hash": "1597dd363c51",
-      "title": "السعودية تعلن اعتراض صاروخ باليستي باتجاه الرياض، وغارات على منشآت نفطية في اليمن",
-      "summary": "السعودية تعلن اعتراض صاروخ باليستي باتجاه الرياض، وغارات على منشآت نفطية في اليمن",
-      "link": "https://www.bbc.com/arabic/articles/cqm24e4kzj72o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791966197209
-    },
-    {
-      "hash": "8a634affc757",
-      "title": "‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote",
-      "summary": "‘Like we don’t exist’: Palestinians in West Bank denied say in Israel vote",
-      "link": "https://www.aljazeera.com/features/2026/10/14/like-we-dont-exist-palestinians-in-west-bank-denied-say-in-israel-vote?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963386834
-    },
-    {
-      "hash": "0350e29d7028",
-      "title": "‘Massive’ Russian attack on Ukraine kills at least six, cuts power in Kyiv",
-      "summary": "‘Massive’ Russian attack on Ukraine kills at least six, cuts power in Kyiv",
-      "link": "https://www.aljazeera.com/news/2026/10/14/massive-russian-attack-on-ukraine-kills-at-least-six-cuts-power-in-kyiv?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "UA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791963381667
-    },
-    {
-      "hash": "6497b29aec0b",
-      "title": "APC announces Kano campaign council",
-      "summary": "APC announces Kano campaign council",
-      "link": "https://www.premiumtimesng.com/news/top-news/916952-apc-announces-kano-campaign-council.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963376617
-    },
-    {
-      "hash": "ec50562b547a",
-      "title": "INEC explains exclusion of Pantami, Adebutu from 2027 governorship candidates’ list",
-      "summary": "INEC explains exclusion of Pantami, Adebutu from 2027 governorship candidates’ list",
-      "link": "https://www.premiumtimesng.com/news/top-news/916946-inec-explains-exclusion-of-pantami-adebutu-from-2027-governorship-candidates-list.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963371538
-    },
-    {
-      "hash": "931efb9608b4",
-      "title": "What African countries, others can learn from Nigeria’s economic reforms – Minister",
-      "summary": "What African countries, others can learn from Nigeria’s economic reforms – Minister",
-      "link": "https://www.premiumtimesng.com/news/headlines/916945-what-african-countries-others-can-learn-from-nigerias-economic-reforms-minister.html",
-      "source": "Premium Times",
-      "countryCode": "NG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1791963366467
-    },
-    {
-      "hash": "797965aebd45",
-      "title": "Egypt to build a rail link as an alternative to the blocked Suez Canal",
-      "summary": "Egypt to build a rail link as an alternative to the blocked Suez Canal",
-      "link": "http://www.africanews.com/2026/10/14/egypt-to-build-a-rail-link-as-an-alternative-to-the-blocked-suez-canal/",
-      "source": "Africanews",
-      "countryCode": "EG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963361381
-    },
-    {
-      "hash": "401b4c360525",
-      "title": "Kenya: Gachagua Accuses Ruto of Using Fuel Price Hikes to Fund 2027 Campaigns",
-      "summary": "Kenya: Gachagua Accuses Ruto of Using Fuel Price Hikes to Fund 2027 Campaigns",
-      "link": "https://allafrica.com/stories/202610140115.html",
-      "source": "AllAfrica",
-      "countryCode": "KE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963356238
-    },
-    {
-      "hash": "e74b91a0f42a",
-      "title": "Africa: All of Africa Today - October 14, 2026",
-      "summary": "Africa: All of Africa Today - October 14, 2026",
-      "link": "https://allafrica.com/stories/202610140117.html",
-      "source": "AllAfrica",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963351147
-    },
-    {
-      "hash": "498a5c721386",
-      "title": "Adriana Calcanhotto e Arnaldo Antunes sobre parceria: 'O impulso de ir ao dicionário é o mesmo'",
-      "summary": "Adriana Calcanhotto e Arnaldo Antunes sobre parceria: 'O impulso de ir ao dicionário é o mesmo'",
-      "link": "https://g1.globo.com/pop-arte/musica/noticia/2026/10/14/adriana-calcanhotto-e-arnaldo-antunes-sobre-parceria-o-impulso-de-ir-ao-dicionario-e-o-mesmo.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963346056
-    },
-    {
-      "hash": "5104ce17fa47",
-      "title": "Emprego: confira as 218 vagas disponíveis em Petrolina, Salgueiro e Araripina",
-      "summary": "Emprego: confira as 218 vagas disponíveis em Petrolina, Salgueiro e Araripina",
-      "link": "https://g1.globo.com/pe/petrolina-regiao/noticia/2026/10/14/emprego-confira-as-218-vagas-disponiveis-em-petrolina-salgueiro-e-araripina.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963340981
-    },
-    {
-      "hash": "60def032cdec",
-      "title": "Renda média de R$ 87 mil e 25,9 mil perfis: Campinas tem um 'daddy' para cada 5 sugar babies",
-      "summary": "Renda média de R$ 87 mil e 25,9 mil perfis: Campinas tem um 'daddy' para cada 5 sugar babies",
-      "link": "https://g1.globo.com/sp/campinas-regiao/noticia/2026/10/14/renda-media-de-r-87-mil-e-259-mil-perfis-campinas-tem-um-daddy-para-cada-5-sugar-babies.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963335915
-    },
-    {
-      "hash": "d0efc85a2191",
-      "title": "A tornado and an unusual spring hailstorm overwhelm Santiago, Chile",
-      "summary": "A tornado and an unusual spring hailstorm overwhelm Santiago, Chile",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/14/a-tornado-and-an-unusual-spring-hailstorm-overwhelm-santiago-chile?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "CL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1791963330827
-    },
-    {
-      "hash": "bee19209bb89",
-      "title": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar&apos;s home",
-      "summary": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar&apos;s home",
-      "link": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
-      "source": "NPR World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1791963325724
-    },
-    {
-      "hash": "12e4b2058be2",
-      "title": "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-      "summary": "The Oct. 7 Attack Changed Israel, but Not Its Politics",
-      "link": "https://www.nytimes.com/2026/10/13/world/middleeast/israel-october-7-attacks-elections.html",
-      "source": "NY Times",
-      "countryCode": "IL",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1791963320650
     }
   ]
 }
