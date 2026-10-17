@@ -1,25 +1,40 @@
 {
-  "updated_at": "2026-10-17T00:24:12.910Z",
+  "updated_at": "2026-10-17T01:29:32.639Z",
   "total": 600,
-  "new_count": 23,
-  "ai_success": 2,
-  "ai_fallback": 21,
+  "new_count": 15,
+  "ai_success": 1,
+  "ai_fallback": 14,
   "global": {
     "score": 47,
     "totalArticles": 600,
     "categories": {
-      "politics": 473,
+      "politics": 472,
+      "culture": 23,
+      "economy": 11,
+      "disaster": 15,
       "sports": 7,
-      "war": 38,
-      "economy": 10,
-      "disaster": 14,
+      "war": 36,
       "crisis": 9,
-      "culture": 22,
       "positive": 12,
       "health": 15
     }
   },
   "countries": {
+    "NZ": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "CN": {
+      "score": 52,
+      "articleCount": 17,
+      "categories": {
+        "economy": 1,
+        "politics": 16
+      }
+    },
     "PH": {
       "score": 50,
       "articleCount": 1,
@@ -35,19 +50,19 @@
       }
     },
     "IR": {
-      "score": 24,
-      "articleCount": 6,
+      "score": 27,
+      "articleCount": 5,
       "categories": {
-        "war": 3,
+        "war": 2,
         "culture": 1,
         "politics": 2
       }
     },
     "US": {
       "score": 35,
-      "articleCount": 22,
+      "articleCount": 20,
       "categories": {
-        "politics": 17,
+        "politics": 15,
         "war": 4,
         "culture": 1
       }
@@ -85,11 +100,11 @@
       }
     },
     "RU": {
-      "score": 27,
-      "articleCount": 10,
+      "score": 25,
+      "articleCount": 8,
       "categories": {
         "war": 2,
-        "politics": 8
+        "politics": 6
       }
     },
     "AU": {
@@ -101,11 +116,11 @@
     },
     "IN": {
       "score": 53,
-      "articleCount": 15,
+      "articleCount": 13,
       "categories": {
         "economy": 1,
         "positive": 1,
-        "politics": 11,
+        "politics": 9,
         "war": 1,
         "culture": 1
       }
@@ -127,11 +142,11 @@
       }
     },
     "IL": {
-      "score": 25,
-      "articleCount": 20,
+      "score": 26,
+      "articleCount": 19,
       "categories": {
         "politics": 13,
-        "war": 7
+        "war": 6
       }
     },
     "BR": {
@@ -144,9 +159,9 @@
     },
     "UA": {
       "score": 45,
-      "articleCount": 41,
+      "articleCount": 40,
       "categories": {
-        "politics": 36,
+        "politics": 35,
         "positive": 1,
         "disaster": 2,
         "war": 2
@@ -160,13 +175,6 @@
         "crisis": 2,
         "disaster": 2,
         "politics": 1
-      }
-    },
-    "CN": {
-      "score": 50,
-      "articleCount": 16,
-      "categories": {
-        "politics": 16
       }
     },
     "YE": {
@@ -201,11 +209,11 @@
       }
     },
     "PS": {
-      "score": 42,
-      "articleCount": 15,
+      "score": 41,
+      "articleCount": 13,
       "categories": {
         "war": 1,
-        "politics": 11,
+        "politics": 9,
         "positive": 1,
         "crisis": 1,
         "economy": 1
@@ -448,6 +456,201 @@
     }
   },
   "articles": [
+    {
+      "hash": "7fa94f0ef678",
+      "title": "Transport delays expected for Auckland's 'super Saturday of sports and sounds'",
+      "summary": "Transport delays expected for Auckland's 'super Saturday of sports and sounds'",
+      "link": "https://www.rnz.co.nz/news/regions_auckland/1970175/transport-delays-expected-for-auckland-s-super-saturday-of-sports-and-sounds",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200571636
+    },
+    {
+      "hash": "83826dc9e84a",
+      "title": "Work starts on Bundaberg's first hotel development in 20 years",
+      "summary": "Work starts on Bundaberg's first hotel development in 20 years",
+      "link": "https://www.abc.net.au/news/2026-10-17/work-starts-on-first-new-bundaberg-hotel-in-decades/107274230",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792200566489
+    },
+    {
+      "hash": "73029eb6b0d4",
+      "title": "Indigenous rockers record third album in outback shed",
+      "summary": "Indigenous rockers record third album in outback shed",
+      "link": "https://www.abc.net.au/news/2026-10-17/desert-stars-rock-band-records-in-shed-in-outback/107167544",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200561376
+    },
+    {
+      "hash": "847a313daad0",
+      "title": "CCTV captures moment flames engulf family home in suspected arson",
+      "summary": "CCTV captures moment flames engulf family home in suspected arson",
+      "link": "https://www.abc.net.au/news/2026-10-17/cctv-released-after-cobden-house-fire/107278974",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200556279
+    },
+    {
+      "hash": "bf296e34e523",
+      "title": "Teacher and armed parent teamed up to stop Oregon school shooter, police say",
+      "summary": "Teacher and armed parent teamed up to stop Oregon school shooter, police say",
+      "link": "https://www.straitstimes.com/world/teacher-tackled-and-fought-oregon-school-shooter",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200551098
+    },
+    {
+      "hash": "93cfd9a97c02",
+      "title": "Dipke held under preventive detention, to be produced before court; Neha Bora released",
+      "summary": "Dipke held under preventive detention, to be produced before court; Neha Bora released",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/dipke-held-under-preventive-detention-to-be-produced-before-magistrate-delhi-police/articleshow/135005725.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200546022
+    },
+    {
+      "hash": "98ca8a28ec44",
+      "title": "Trump mocks popularity of Mohammad as Muslim name during campaign speech",
+      "summary": "Trump mocks popularity of Mohammad as Muslim name during campaign speech",
+      "link": "https://www.scmp.com/news/world/united-states-canada/article/3371220/trump-mocks-popularity-mohammad-muslim-name-during-campaign-speech?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200540902
+    },
+    {
+      "hash": "97ba6fe43d11",
+      "title": "‘Hot economics, cold politics’: why China gave nod for expanded Japanese trade trip",
+      "summary": "‘Hot economics, cold politics’: why China gave nod for expanded Japanese trade trip",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3371192/hot-economics-cold-politics-why-china-gave-nod-expanded-japanese-trade-trip?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1792200535748
+    },
+    {
+      "hash": "8a49c63b5711",
+      "title": "Growing number of ex-officials enter race for Hong Kong Election Committee seats",
+      "summary": "Growing number of ex-officials enter race for Hong Kong Election Committee seats",
+      "link": "https://www.scmp.com/news/hong-kong/politics/article/3371204/growing-number-ex-officials-enter-race-hong-kong-election-committee-seats?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792200526119
+    },
+    {
+      "hash": "bf6339cb284c",
+      "title": "Oregon school shooter was former special needs student, police say",
+      "summary": "Oregon school shooter was former special needs student, police say",
+      "link": "https://www.aljazeera.com/news/2026/10/17/oregon-school-shooter-was-former-special-needs-student-police-say?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200497581
+    },
+    {
+      "hash": "e2f23079d030",
+      "title": "Congresso aprova exame obrigatório para estudantes de Medicina exercerem a profissão",
+      "summary": "Congresso aprova exame obrigatório para estudantes de Medicina exercerem a profissão",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/16/congresso-aprova-exame-obrigatorio-para-estudantes-de-medicina-exercerem-a-profissao.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200467010
+    },
+    {
+      "hash": "be2fee3e1d86",
+      "title": "Renata Lo Prete entrevista Flávio Bolsonaro, candidato à Presidência pelo PL",
+      "summary": "Renata Lo Prete entrevista Flávio Bolsonaro, candidato à Presidência pelo PL",
+      "link": "https://g1.globo.com/jornal-nacional/ao-vivo/flavio-bolsonaro-entrevista-candidatos-presidente-segundo-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200439805
+    },
+    {
+      "hash": "1e6be1be94d0",
+      "title": "Incêndio atinge área de lavrado em Boa Vista",
+      "summary": "Incêndio atinge área de lavrado em Boa Vista",
+      "link": "https://g1.globo.com/rr/roraima/noticia/2026/10/16/incendio-atinge-area-de-lavrado-em-boa-vista.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200410899
+    },
+    {
+      "hash": "ddba2ed1c23c",
+      "title": "October 7 becomes Netanyahu’s ‘political kryptonite’ – RT reports (VIDEO)",
+      "summary": "October 7 becomes Netanyahu’s ‘political kryptonite’ – RT reports (VIDEO)",
+      "link": "<![CDATA[https://rt-english.com/news/647288-israel-netanyahu-elections-hamas/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792200384814
+    },
+    {
+      "hash": "df928d3a1656",
+      "title": "حريق غابات سريع الانتشار يلتهم منازل في جنوب كاليفورنيا",
+      "summary": "حريق غابات سريع الانتشار في جنوب كاليفورنيا يدمر منازل ويهدد السكان.",
+      "link": "https://www.skynewsarabia.com/world/1898761-%D8%AD%D8%B1%D9%8A%D9%82-%D8%BA%D8%A7%D8%A8%D8%A7%D8%AA-%D8%B3%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%AC%D9%86%D9%88%D8%A8-%D9%83%D8%A7%D9%84%D9%8A%D9%81%D9%88%D8%B1%D9%86%D9%8A%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "very_negative",
+      "mood": "anxious",
+      "impact": 80,
+      "timestamp": 1792200357685
+    },
     {
       "hash": "03cc40c0b3bf",
       "title": "Country Life: The evolution of the country pub",
@@ -8052,201 +8255,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792142639701
-    },
-    {
-      "hash": "144624392f57",
-      "title": "أوكرانيا تكشف عن \"درون\" إسعاف طائر يمكنه إنقاذ الأرواح خلال دقائق",
-      "summary": "أوكرانيا تكشف عن \"درون\" إسعاف طائر يمكنه إنقاذ الأرواح خلال دقائق",
-      "link": "https://arabic.euronews.com/video/2026/10/16/ukraine-unveils-flying-ambulance-drone-that-could-save-lives-in-minutes",
-      "source": "Euronews عربي",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142634645
-    },
-    {
-      "hash": "8d7613a16827",
-      "title": "تعز في قلب معركة باب المندب.. تحذير يمني من سيناريو خطير يهدد الملاحة العالمية",
-      "summary": "تعز في قلب معركة باب المندب.. تحذير يمني من سيناريو خطير يهدد الملاحة العالمية",
-      "link": "https://arabic.euronews.com/2026/10/16/former-yemeni-pm-taiz-fall-opens-houthi-path-to-bab-al-mandab",
-      "source": "Euronews عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142629564
-    },
-    {
-      "hash": "7e5e27e35b97",
-      "title": "إطلاق صاروخ اعتراضي في شمال إسرائيل.. والجيش يستعد لشن غارات في جنوب لبنان",
-      "summary": "إطلاق صاروخ اعتراضي في شمال إسرائيل.. والجيش يستعد لشن غارات في جنوب لبنان",
-      "link": "https://arabic.euronews.com/2026/10/16/interceptor-launched-northern-israel-strikes-south-lebanon",
-      "source": "Euronews عربي",
-      "countryCode": "IL",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792142624506
-    },
-    {
-      "hash": "2b9e06a154b7",
-      "title": "ترامب يرسم حدود مواجهة إيران.. لا حرب برية ولا سلاح نووي",
-      "summary": "ترامب يرسم حدود مواجهة إيران.. لا حرب برية ولا سلاح نووي",
-      "link": "https://www.skynewsarabia.com/world/1898593-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%AD%D8%AF%D8%AF-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AD%D8%B1%D8%A8-%D8%A8%D8%B1%D9%8A%D8%A9-%D9%88%D9%84%D8%A7-%D8%B3%D9%84%D8%A7%D8%AD-%D9%86%D9%88%D9%88%D9%8A",
-      "source": "Sky News عربية",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792142619445
-    },
-    {
-      "hash": "4a4e0ccfa422",
-      "title": "من نيويورك إلى سويسرا.. ضغوط دولية تحاصر مناورة البرهان",
-      "summary": "من نيويورك إلى سويسرا.. ضغوط دولية تحاصر مناورة البرهان",
-      "link": "https://www.skynewsarabia.com/middle-east/1898608-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%B3%D9%88%D9%8A%D8%B3%D8%B1%D8%A7-%D8%B6%D8%BA%D9%88%D8%B7-%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%AA%D8%AD%D8%A7%D8%B5%D8%B1-%D9%85%D9%86%D8%A7%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%A7%D9%86",
-      "source": "Sky News عربية",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142614383
-    },
-    {
-      "hash": "33bdde59c44c",
-      "title": "\"متى سيعود أبي؟\".. أطفال غزة ينتظرون لم الشمل",
-      "summary": "\"متى سيعود أبي؟\".. أطفال غزة ينتظرون لم الشمل",
-      "link": "https://www.skynewsarabia.com/middle-east/1898606-%D9%85%D8%AA%D9%89-%D8%B3%D9%8A%D8%B9%D9%88%D8%AF-%D8%A3%D8%A8%D9%8A-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%BA%D8%B2%D8%A9-%D9%8A%D9%86%D8%AA%D8%B8%D8%B1%D9%88%D9%86-%D8%A7%D9%84%D8%B4%D9%85%D9%84",
-      "source": "Sky News عربية",
-      "countryCode": "PS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142609278
-    },
-    {
-      "hash": "c6ac3d239afc",
-      "title": "زيلينسكي في بروكسل لحشد الدعم وأوروبا تقر \"بضعف التحالف\" دون مشاركة الولايات المتحدة",
-      "summary": "زيلينسكي في بروكسل لحشد الدعم وأوروبا تقر \"بضعف التحالف\" دون مشاركة الولايات المتحدة",
-      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261016-%D8%B2%D9%8A%D9%84%D9%8A%D9%86%D8%B3%D9%83%D9%8A-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%A8%D8%B1%D9%88%D9%83%D8%B3%D9%84-%D8%AF%D8%B9%D9%85-%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A-%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D9%83%D9%8A%D9%8A%D9%81-%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA-%D9%85%D8%B5%D8%A7%D9%81%D9%8A-%D8%B1%D9%88%D8%B3%D9%8A%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142604156
-    },
-    {
-      "hash": "f9f52e762654",
-      "title": "الاستيطان في الضفة الغربية: \"هضبة بعد أخرى.. تهجير الفلسطينيين على قدم وساق\"!",
-      "summary": "الاستيطان في الضفة الغربية: \"هضبة بعد أخرى.. تهجير الفلسطينيين على قدم وساق\"!",
-      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A7%D8%AA/20261016-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A7%D8%AA-%D8%AE%D8%B7%D8%B7-%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D9%8A%D8%B7%D8%A7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D8%AA%D9%87%D8%AC%D9%8A%D8%B1",
-      "source": "France24 عربي",
-      "countryCode": "PS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142599085
-    },
-    {
-      "hash": "a887d5aea135",
-      "title": "ترامب: زيلينسكي صعب التفاوض.. وهجماته على روسيا \"مخزية\"",
-      "summary": "ترامب: زيلينسكي صعب التفاوض.. وهجماته على روسيا \"مخزية\"",
-      "link": "https://www.dw.com/ar/ترامب-زيلينسكي-صعب-التفاوض-وهجماته-على-روسيا-مخزية/a-79676282?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792142594001
-    },
-    {
-      "hash": "d5abe100b95d",
-      "title": "UK cabby is handed counterfeit money, drives fraudster straight to police station",
-      "summary": "UK cabby is handed counterfeit money, drives fraudster straight to police station",
-      "link": "https://www.straitstimes.com/world/europe/uk-cabbie-is-handed-counterfeit-money-drives-fraudster-straight-to-police-station",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792139091239
-    },
-    {
-      "hash": "2a299226fc24",
-      "title": "EU leaders rally around Zelenskiy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
-      "summary": "EU leaders rally around Zelenskiy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
-      "link": "https://www.straitstimes.com/world/europe/eu-leaders-rally-around-zelenskiy-as-trump-calls-ukrainian-strikes-on-russia-a-disgrace",
-      "source": "Straits Times",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792139086162
-    },
-    {
-      "hash": "a21c868e2759",
-      "title": "UN chief says ‘subsidising fossil fuels is subsidising suicide’",
-      "summary": "UN chief says ‘subsidising fossil fuels is subsidising suicide’",
-      "link": "https://www.straitstimes.com/world/europe/un-chief-says-subsidising-fossil-fuels-is-subsidising-suicide",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792139080896
-    },
-    {
-      "hash": "8b4769373420",
-      "title": "'I'll get her killed': Uttarakhand minister Rekha Arya's husband in explosive audio",
-      "summary": "'I'll get her killed': Uttarakhand minister Rekha Arya's husband in explosive audio",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/dehradun/uttarakhand-minister-rekha-aryas-husband-to-woman-in-audio-ill-get-her-killed-youll-get-bail-dont-worry/articleshow/134984361.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792139075834
-    },
-    {
-      "hash": "a3396f03e5af",
-      "title": "CERT-In issues 'critical' alert as AI agents access 'confidential' data of Indian firms'",
-      "summary": "CERT-In issues 'critical' alert as AI agents access 'confidential' data of Indian firms'",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/business/india-business/cert-in-issues-critical-alert-as-ai-agents-access-confidential-data-of-indian-firms/articleshow/134985798.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792139070765
-    },
-    {
-      "hash": "999efa0566a0",
-      "title": "'Hope better sense prevails': SC flags livelihood concerns as Delhi braces for CJP stir",
-      "summary": "'Hope better sense prevails': SC flags livelihood concerns as Delhi braces for CJP stir",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/hope-better-sense-prevails-sc-flags-traders-livelihood-concerns-as-delhi-braces-for-cjps-tiranga-march/articleshow/134985437.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792139065691
     }
   ]
 }
