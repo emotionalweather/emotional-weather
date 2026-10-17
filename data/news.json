@@ -1,31 +1,92 @@
 {
-  "updated_at": "2026-10-17T03:21:27.759Z",
+  "updated_at": "2026-10-17T04:21:01.680Z",
   "total": 600,
-  "new_count": 25,
+  "new_count": 22,
   "ai_success": 0,
-  "ai_fallback": 25,
+  "ai_fallback": 22,
   "global": {
     "score": 47,
     "totalArticles": 600,
     "categories": {
-      "politics": 469,
-      "war": 36,
+      "politics": 471,
+      "health": 16,
       "culture": 24,
-      "economy": 11,
-      "disaster": 16,
+      "disaster": 17,
+      "war": 35,
+      "economy": 8,
       "crisis": 10,
-      "health": 15,
       "sports": 7,
       "positive": 12
     }
   },
   "countries": {
-    "BR": {
-      "score": 46,
-      "articleCount": 8,
+    "FR": {
+      "score": 45,
+      "articleCount": 15,
       "categories": {
-        "politics": 7,
+        "politics": 11,
+        "crisis": 2,
+        "culture": 2
+      }
+    },
+    "IN": {
+      "score": 52,
+      "articleCount": 15,
+      "categories": {
+        "politics": 11,
+        "economy": 1,
+        "positive": 1,
+        "war": 1,
+        "culture": 1
+      }
+    },
+    "GB": {
+      "score": 74,
+      "articleCount": 2,
+      "categories": {
+        "culture": 1,
+        "politics": 1
+      }
+    },
+    "CN": {
+      "score": 56,
+      "articleCount": 17,
+      "categories": {
+        "culture": 1,
+        "politics": 15,
+        "economy": 1
+      }
+    },
+    "BR": {
+      "score": 47,
+      "articleCount": 9,
+      "categories": {
+        "politics": 8,
         "disaster": 1
+      }
+    },
+    "CM": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "ES": {
+      "score": 54,
+      "articleCount": 7,
+      "categories": {
+        "politics": 6,
+        "sports": 1
+      }
+    },
+    "RU": {
+      "score": 43,
+      "articleCount": 16,
+      "categories": {
+        "politics": 13,
+        "economy": 1,
+        "war": 2
       }
     },
     "JP": {
@@ -36,39 +97,13 @@
         "war": 1
       }
     },
-    "RU": {
-      "score": 42,
-      "articleCount": 16,
-      "categories": {
-        "politics": 13,
-        "economy": 1,
-        "war": 2
-      }
-    },
-    "FR": {
-      "score": 43,
-      "articleCount": 13,
-      "categories": {
-        "crisis": 2,
-        "politics": 9,
-        "culture": 2
-      }
-    },
     "US": {
       "score": 35,
-      "articleCount": 19,
-      "categories": {
-        "politics": 14,
-        "war": 4,
-        "culture": 1
-      }
-    },
-    "CN": {
-      "score": 52,
       "articleCount": 17,
       "categories": {
-        "politics": 16,
-        "economy": 1
+        "politics": 12,
+        "war": 4,
+        "culture": 1
       }
     },
     "MX": {
@@ -109,10 +144,10 @@
       }
     },
     "IR": {
-      "score": 27,
-      "articleCount": 5,
+      "score": 32,
+      "articleCount": 4,
       "categories": {
-        "war": 2,
+        "war": 1,
         "culture": 1,
         "politics": 2
       }
@@ -156,17 +191,6 @@
         "politics": 1
       }
     },
-    "IN": {
-      "score": 53,
-      "articleCount": 13,
-      "categories": {
-        "economy": 1,
-        "positive": 1,
-        "politics": 9,
-        "war": 1,
-        "culture": 1
-      }
-    },
     "BE": {
       "score": 32,
       "articleCount": 5,
@@ -185,17 +209,17 @@
     },
     "IL": {
       "score": 25,
-      "articleCount": 18,
+      "articleCount": 17,
       "categories": {
-        "politics": 12,
+        "politics": 11,
         "war": 6
       }
     },
     "UA": {
       "score": 44,
-      "articleCount": 34,
+      "articleCount": 33,
       "categories": {
-        "politics": 29,
+        "politics": 28,
         "positive": 1,
         "disaster": 2,
         "war": 2
@@ -223,15 +247,6 @@
       "articleCount": 2,
       "categories": {
         "politics": 2
-      }
-    },
-    "ES": {
-      "score": 56,
-      "articleCount": 7,
-      "categories": {
-        "politics": 5,
-        "sports": 1,
-        "economy": 1
       }
     },
     "PS": {
@@ -378,13 +393,6 @@
         "culture": 1
       }
     },
-    "GB": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "JO": {
       "score": 50,
       "articleCount": 1,
@@ -447,16 +455,295 @@
       "categories": {
         "positive": 1
       }
-    },
-    "AR": {
-      "score": 63,
-      "articleCount": 1,
-      "categories": {
-        "economy": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "0c8658a97edb",
+      "title": "Black Ferns try spree sparks WXV domination of France",
+      "summary": "Black Ferns try spree sparks WXV domination of France",
+      "link": "https://www.rnz.co.nz/news/sport/1970593/black-ferns-try-spree-sparks-wxv-domination-of-france",
+      "source": "RNZ",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210860678
+    },
+    {
+      "hash": "af07828dae37",
+      "title": "New menopause guidelines designed to cut through misinformation",
+      "summary": "New menopause guidelines designed to cut through misinformation",
+      "link": "https://www.abc.net.au/news/health/2026-10-17/ranzcog-new-guidelines-for-managing-menopausal-symptoms/107269850",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210855576
+    },
+    {
+      "hash": "98d87e3f62f1",
+      "title": "No record of mother or deceased baby in SA health system",
+      "summary": "No record of mother or deceased baby in SA health system",
+      "link": "https://www.abc.net.au/news/2026-10-17/tollgate-motel-sa-health-no-records-of-deceased-baby/107279052",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792210850498
+    },
+    {
+      "hash": "4a759a01a8fb",
+      "title": "US lawmakers urge Rubio to 'prioritize rights & freedoms when meeting Indian officials'",
+      "summary": "US lawmakers urge Rubio to 'prioritize rights & freedoms when meeting Indian officials'",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/prioritize-rights-freedoms-when-you-meet-indian-officials-us-lawmakers-urge-marco-rubio-amid-anti-sir-stir/articleshow/135006516.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210845418
+    },
+    {
+      "hash": "9eee81713735",
+      "title": "‘I love you’ on clothes & a chilling note: What preceded Gurgaon techie couple’s deaths",
+      "summary": "‘I love you’ on clothes & a chilling note: What preceded Gurgaon techie couple’s deaths",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/gurgaon/a-7am-email-to-employer-i-love-you-on-clothes-and-a-chilling-leaving-this-world-note-on-wifes-birthday-what-preceded-malayali-techie-couples-deaths-in-gurgaon-flat/articleshow/135006150.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210840265
+    },
+    {
+      "hash": "987e454dd041",
+      "title": "Trump waives Russia oil curbs amid 100% tariff threat: What it means for India",
+      "summary": "Trump waives Russia oil curbs amid 100% tariff threat: What it means for India",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/business/india-business/trump-waives-us-sanctions-tariffs-on-russian-oil-gas-what-it-means-for-india/articleshow/135006269.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210835134
+    },
+    {
+      "hash": "a00ed04eb595",
+      "title": "Trump’s new press secretary out after less than a week",
+      "summary": "Trump’s new press secretary out after less than a week",
+      "link": "https://www.japantimes.co.jp/news/2026/10/17/world/politics/white-house-press-secretary-ousted/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210830046
+    },
+    {
+      "hash": "bd141125512c",
+      "title": "Hong Kong touts distinct features to set it apart from London in global gold hub push",
+      "summary": "Hong Kong touts distinct features to set it apart from London in global gold hub push",
+      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3371228/hong-kong-touts-distinct-features-set-it-apart-london-global-gold-hub-push?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "GB",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792210824989
+    },
+    {
+      "hash": "3e3aec04cc06",
+      "title": "Chinese kindergarten owner given life sentence over lead paint poisoning scandal",
+      "summary": "Chinese kindergarten owner given life sentence over lead paint poisoning scandal",
+      "link": "https://www.scmp.com/news/china/politics/article/3371229/chinese-kindergarten-owner-given-life-sentence-over-lead-paint-poisoning-scandal?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792210819876
+    },
+    {
+      "hash": "0f700951d52f",
+      "title": "The butterfly effect: one man’s mission to help nature and communities coexist",
+      "summary": "The butterfly effect: one man’s mission to help nature and communities coexist",
+      "link": "https://www.scmp.com/news/hong-kong/society/article/3371129/butterfly-effect-one-mans-mission-help-nature-and-communities-coexist?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210814795
+    },
+    {
+      "hash": "f41266ecd144",
+      "title": "Brazil’s Amazon deforestation hits lowest level on record",
+      "summary": "Brazil’s Amazon deforestation hits lowest level on record",
+      "link": "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210809673
+    },
+    {
+      "hash": "8f0890422db4",
+      "title": "Cameroonians await government reshuffle after Biya’s return",
+      "summary": "Cameroonians await government reshuffle after Biya’s return",
+      "link": "https://www.aljazeera.com/news/2026/10/17/cameroonians-await-government-reshuffle-after-biyas-return?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "CM",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792210804583
+    },
+    {
+      "hash": "e9c612cacafa",
+      "title": "Southern California wildfire engulfs homes, prompts evacuation orders",
+      "summary": "Southern California wildfire engulfs homes, prompts evacuation orders",
+      "link": "https://www.aljazeera.com/news/2026/10/17/southern-california-wildfire-engulfs-homes-prompts-evacuation-orders?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792210799447
+    },
+    {
+      "hash": "6a264ab8509a",
+      "title": "The cost of the gospel: A story that should humble every generation (1), By Ayo Akerele",
+      "summary": "The cost of the gospel: A story that should humble every generation (1), By Ayo Akerele",
+      "link": "https://www.premiumtimesng.com/opinion/917692-the-cost-of-the-gospel-a-story-that-should-humble-every-generation-1-by-ayo-akerele.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210794353
+    },
+    {
+      "hash": "69981ab0c687",
+      "title": "Previsão do tempo hoje para Contagem (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "summary": "Previsão do tempo hoje para Contagem (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "link": "https://g1.globo.com/mg/minas-gerais/previsao-do-tempo/noticia/2026/10/17/previsao-do-tempo-hoje-para-contagem-mg-sol-com-algumas-nuvens-chove-rapido-durante-o-dia-e-a-noite.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210789224
+    },
+    {
+      "hash": "b41b34d15474",
+      "title": "Previsão do tempo hoje para Ribeirão das Neves (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "summary": "Previsão do tempo hoje para Ribeirão das Neves (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "link": "https://g1.globo.com/mg/minas-gerais/previsao-do-tempo/noticia/2026/10/17/previsao-do-tempo-hoje-para-ribeirao-das-neves-mg-sol-com-algumas-nuvens-chove-rapido-durante-o-dia-e-a-noite.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210784150
+    },
+    {
+      "hash": "2b294e014ff7",
+      "title": "Previsão do tempo hoje para Sete Lagoas (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "summary": "Previsão do tempo hoje para Sete Lagoas (MG): sol com algumas nuvens; chove rápido durante o dia e à noite",
+      "link": "https://g1.globo.com/mg/minas-gerais/previsao-do-tempo/noticia/2026/10/17/previsao-do-tempo-hoje-para-sete-lagoas-mg-sol-com-algumas-nuvens-chove-rapido-durante-o-dia-e-a-noite.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210779058
+    },
+    {
+      "hash": "79466b2098c0",
+      "title": "¿Tiene razón Pablo Iglesias? Lo que dicen las encuestas sobre ir separados en Madrid",
+      "summary": "¿Tiene razón Pablo Iglesias? Lo que dicen las encuestas sobre ir separados en Madrid",
+      "link": "https://elpais.com/actualidad/newsletter-kiko-llaneras/2026-10-17/tiene-razon-iglesias-lo-que-dicen-las-encuestas-sobre-ir-separados-en-madrid.html",
+      "source": "El País",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210773925
+    },
+    {
+      "hash": "59123b438581",
+      "title": "Mobilisation du 17 octobre : la préfecture interdit de manifester dans plusieurs secteurs de Paris, autour de l’Elysée et Matignon notamment",
+      "summary": "Mobilisation du 17 octobre : la préfecture interdit de manifester dans plusieurs secteurs de Paris, autour de l’Elysée et Matignon notamment",
+      "link": "https://www.lemonde.fr/societe/article/2026/10/16/mobilisation-du-17-octobre-la-prefecture-interdit-de-manifester-dans-plusieurs-secteurs-de-paris-autour-de-l-elysee-et-matignon-notamment_6795587_3224.html",
+      "source": "Le Monde",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210768826
+    },
+    {
+      "hash": "80927e291b60",
+      "title": "Entre Emmanuel Macron et la jeunesse, un divorce consommé",
+      "summary": "Entre Emmanuel Macron et la jeunesse, un divorce consommé",
+      "link": "https://www.lemonde.fr/politique/article/2026/10/17/entre-emmanuel-macron-et-la-jeunesse-un-divorce-consomme_6795811_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210763759
+    },
+    {
+      "hash": "bff40edbdd20",
+      "title": "ترمب يوقّع أمراً تنفيذياً يعفي روسيا من عقوبات أقرّها «الكونغرس»",
+      "summary": "ترمب يوقّع أمراً تنفيذياً يعفي روسيا من عقوبات أقرّها «الكونغرس»",
+      "link": "https://aawsat.com/node/5330444",
+      "source": "الشرق الأوسط",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210758618
+    },
+    {
+      "hash": "bc023e7f3bcc",
+      "title": "تخطيط الرحلات والرفاهية والخصوصية.. ما أبرز اتجاهات السفر الفاخر في عام 2027؟",
+      "summary": "تخطيط الرحلات والرفاهية والخصوصية.. ما أبرز اتجاهات السفر الفاخر في عام 2027؟",
+      "link": "https://arabic.euronews.com/2026/10/17/trip-designers-wellness-and-privacy-whats-trending-in-luxury-travel-for-2027",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792210753535
+    },
     {
       "hash": "c587da7818dc",
       "title": "St John introduces female-form manikins to address cardiac arrest survival gender gap",
@@ -7970,292 +8257,6 @@
       "mood": "joy",
       "impact": 35,
       "timestamp": 1792146326842
-    },
-    {
-      "hash": "836c4d06a529",
-      "title": "Goiana que se tornou a 1ª aprovada em cota quilombola para concurso de diplomata sonha em ser embaixadora, diz universidade",
-      "summary": "Goiana que se tornou a 1ª aprovada em cota quilombola para concurso de diplomata sonha em ser embaixadora, diz universidade",
-      "link": "https://g1.globo.com/go/goias/noticia/2026/10/16/goiana-que-se-tornou-a-1a-aprovada-em-cota-quilombola-para-concurso-de-diplomata-sonha-em-ser-embaixadora-diz-universidade.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146321795
-    },
-    {
-      "hash": "1d3409ff7365",
-      "title": "Festival de Avaré que revelou Lenine e Chico César homenageia Almir Sater e abre espaço para novos talentos: 'Muito honrado', diz cantor",
-      "summary": "Festival de Avaré que revelou Lenine e Chico César homenageia Almir Sater e abre espaço para novos talentos: 'Muito honrado', diz cantor",
-      "link": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/10/16/festival-de-avare-que-revelou-lenine-e-chico-cesar-homenageia-almir-sater-e-abre-espaco-para-novos-talentos-muito-honrado-diz-cantor.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792146316759
-    },
-    {
-      "hash": "3571a3c824ac",
-      "title": "Uruguay signs a US$5.7 billion data centre investment with Spain’s Solaria",
-      "summary": "Uruguay signs a US$5.7 billion data centre investment with Spain’s Solaria",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/16/uruguay-signs-a-us-5.7-billion-data-centre-investment-with-spain-s-solaria?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "ES",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792146311719
-    },
-    {
-      "hash": "7002c8ff5d38",
-      "title": "Inter-American Court hears case over the April 11, 2002 killings in Caracas",
-      "summary": "Inter-American Court hears case over the April 11, 2002 killings in Caracas",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/16/inter-american-court-hears-case-over-the-april-11-2002-killings-in-caracas?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146306674
-    },
-    {
-      "hash": "e0d37ce426ca",
-      "title": "The Falklands dispute threatens Argentina’s bid to join the trans-Pacific trade pact",
-      "summary": "The Falklands dispute threatens Argentina’s bid to join the trans-Pacific trade pact",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/16/the-falklands-dispute-threatens-argentina-s-bid-to-join-the-trans-pacific-trade-pact?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "AR",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792146301629
-    },
-    {
-      "hash": "481f33ce5e24",
-      "title": "The Arab Kingmaker in Israel’s Election Who Wants a Partnership With Jews",
-      "summary": "The Arab Kingmaker in Israel’s Election Who Wants a Partnership With Jews",
-      "link": "https://www.nytimes.com/2026/10/16/world/middleeast/israel-mansour-abbas.html",
-      "source": "NY Times",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792146296592
-    },
-    {
-      "hash": "fb84aa302aa8",
-      "title": "Still haven't filed your taxes? Here's what you need to know",
-      "summary": "Still haven't filed your taxes? Here's what you need to know",
-      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
-      "source": "CNN World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146291541
-    },
-    {
-      "hash": "94654941a6c4",
-      "title": "Markets digest bank earnings after recent turmoil",
-      "summary": "Markets digest bank earnings after recent turmoil",
-      "link": "https://www.cnn.com/business/live-news/stock-market-bank-earnings/index.html",
-      "source": "CNN World",
-      "countryCode": null,
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792146286010
-    },
-    {
-      "hash": "7a8421cc2178",
-      "title": "ICC serves Europe’s ‘colonialist interests’ – analyst (VIDEO)",
-      "summary": "ICC serves Europe’s ‘colonialist interests’ – analyst (VIDEO)",
-      "link": "<![CDATA[https://rt-english.com/news/647281-icc-europe-colonialist-interests/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146280969
-    },
-    {
-      "hash": "1102232628e1",
-      "title": "Deux ex-responsables nationaux de la CFE-CGC demandent l’exclusion du syndicat de policiers Alliance,  affilié à la confédération",
-      "summary": "Deux ex-responsables nationaux de la CFE-CGC demandent l’exclusion du syndicat de policiers Alliance,  affilié à la confédération",
-      "link": "https://www.lemonde.fr/politique/article/2026/10/16/deux-ex-responsables-nationaux-de-la-cfe-cgc-demandent-l-exclusion-du-syndicat-de-policiers-alliance_6795321_823448.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146275927
-    },
-    {
-      "hash": "0c09a5e95ec9",
-      "title": "Manifestation du 17 octobre : Laurent Nuñez prévoit 250 rassemblements et autorise l’usage des grenades assourdissantes",
-      "summary": "Manifestation du 17 octobre : Laurent Nuñez prévoit 250 rassemblements et autorise l’usage des grenades assourdissantes",
-      "link": "https://www.lemonde.fr/societe/article/2026/10/16/manifestation-du-17-octobre-laurent-nunez-prevoit-250-rassemblements-l-usage-des-grenades-assourdissantes-autorise_6795465_3224.html",
-      "source": "Le Monde",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146270886
-    },
-    {
-      "hash": "33210c10b58c",
-      "title": "EN DIRECT, guerre en Ukraine : « Starlink est vraiment indispensable pour Kiev » et l’UE reconnaît qu’elle « ne peut pas remplacer cette capacité à court terme »",
-      "summary": "EN DIRECT, guerre en Ukraine : « Starlink est vraiment indispensable pour Kiev » et l’UE reconnaît qu’elle « ne peut pas remplacer cette capacité à court terme »",
-      "link": "https://www.lemonde.fr/international/live/2026/10/16/en-direct-guerre-en-ukraine-donald-trump-critique-volodymyr-zelensky-apres-la-reprise-des-attaques-sur-les-raffineries-russes-il-n-est-pas-le-bon-type-pour-trouver-un-accord_6791198_3210.html",
-      "source": "Le Monde",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146265839
-    },
-    {
-      "hash": "938c99bc7633",
-      "title": "Latest news bulletin | October 16th, 2026 – Midday",
-      "summary": "Latest news bulletin | October 16th, 2026 – Midday",
-      "link": "https://www.euronews.com/video/2026/10/16/latest-news-bulletin-october-16th-2026-midday",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146260807
-    },
-    {
-      "hash": "fa217ad5a954",
-      "title": "Social media favourites, Pompeii's cats star in new photo book",
-      "summary": "Social media favourites, Pompeii's cats star in new photo book",
-      "link": "https://www.euronews.com/2026/10/16/social-media-favourites-pompeiis-cats-star-in-new-photo-book",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146255769
-    },
-    {
-      "hash": "9f6ba4f7740b",
-      "title": "Putin seizes five more European firms, continuing Russia's hostile asset crackdown",
-      "summary": "Putin seizes five more European firms, continuing Russia's hostile asset crackdown",
-      "link": "https://www.euronews.com/2026/10/16/putin-seizes-five-more-european-firms-continuing-russias-hostile-asset-crackdown",
-      "source": "Euronews English",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146250723
-    },
-    {
-      "hash": "9994cf705d55",
-      "title": "Clashes erupt at Argentine student protests against President Milei&apos;s austerity policies",
-      "summary": "Clashes erupt at Argentine student protests against President Milei&apos;s austerity policies",
-      "link": "https://www.dw.com/en/clashes-erupt-at-argentine-student-protests-against-president-milei-s-austerity-policies/a-79676861?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792146245689
-    },
-    {
-      "hash": "78aa8695721c",
-      "title": "US considers hitting Iran with 'Mother of All Bombs'",
-      "summary": "US considers hitting Iran with 'Mother of All Bombs'",
-      "link": "https://www.france24.com/en/video/20261016-us-considers-hitting-iran-with-mother-of-all-bombs",
-      "source": "France24 English",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792146240648
-    },
-    {
-      "hash": "85f8c35687b6",
-      "title": "Shooter kills teacher, three children at Oregon elementary school",
-      "summary": "Shooter kills teacher, three children at Oregon elementary school",
-      "link": "https://www.france24.com/en/video/20261016-shooter-kills-teacher-three-children-at-oregon-elementary-school",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146235602
-    },
-    {
-      "hash": "8795d6ff4111",
-      "title": "How books are being scanned and destroyed to train artificial intelligence",
-      "summary": "How books are being scanned and destroyed to train artificial intelligence",
-      "link": "https://www.france24.com/en/tv-shows/focus/20261016-how-books-are-being-scanned-and-destroyed-to-train-artificial-intelligence",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792146230554
-    },
-    {
-      "hash": "3b6a33cea456",
-      "title": "British man fined for causing death of his two-year-old son in Cyprus",
-      "summary": "British man fined for causing death of his two-year-old son in Cyprus",
-      "link": "https://news.sky.com/story/british-father-fined-for-causing-death-of-his-two-year-old-son-in-cyprus-13599857",
-      "source": "Sky News",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146225501
-    },
-    {
-      "hash": "5472d5d038b5",
-      "title": "«دورة ووهان»: أوستابنكو إلى نصف النهائي... وخروج سفيتولينا",
-      "summary": "«دورة ووهان»: أوستابنكو إلى نصف النهائي... وخروج سفيتولينا",
-      "link": "https://aawsat.com/node/5330231",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146220433
-    },
-    {
-      "hash": "d04af84c5eda",
-      "title": "ترمب: نجري محادثات مع روسيا والصين بشأن نزع السلاح النووي",
-      "summary": "ترمب: نجري محادثات مع روسيا والصين بشأن نزع السلاح النووي",
-      "link": "https://aawsat.com/node/5330232",
-      "source": "الشرق الأوسط",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792146215388
     }
   ]
 }
