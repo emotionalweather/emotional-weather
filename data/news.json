@@ -1,44 +1,90 @@
 {
-  "updated_at": "2026-10-17T21:30:49.761Z",
+  "updated_at": "2026-10-17T22:23:41.780Z",
   "total": 600,
-  "new_count": 34,
-  "ai_success": 0,
-  "ai_fallback": 34,
+  "new_count": 24,
+  "ai_success": 1,
+  "ai_fallback": 23,
   "global": {
     "score": 44,
     "totalArticles": 600,
     "categories": {
-      "politics": 447,
-      "war": 48,
-      "culture": 20,
-      "sports": 6,
+      "politics": 450,
       "disaster": 18,
-      "positive": 4,
+      "culture": 19,
+      "sports": 7,
+      "war": 48,
+      "positive": 3,
       "health": 27,
       "crisis": 22,
-      "economy": 8
+      "economy": 6
     }
   },
   "countries": {
-    "IL": {
-      "score": 10,
-      "articleCount": 22,
+    "CN": {
+      "score": 34,
+      "articleCount": 10,
       "categories": {
-        "war": 13,
         "politics": 8,
-        "health": 1
+        "war": 2
+      }
+    },
+    "BD": {
+      "score": 12,
+      "articleCount": 4,
+      "categories": {
+        "disaster": 3,
+        "politics": 1
+      }
+    },
+    "PT": {
+      "score": 36,
+      "articleCount": 2,
+      "categories": {
+        "politics": 1,
+        "crisis": 1
       }
     },
     "FR": {
       "score": 43,
-      "articleCount": 49,
+      "articleCount": 50,
       "categories": {
-        "politics": 36,
+        "politics": 38,
         "disaster": 4,
         "positive": 1,
         "crisis": 6,
-        "culture": 1,
-        "economy": 1
+        "culture": 1
+      }
+    },
+    "IT": {
+      "score": 65,
+      "articleCount": 3,
+      "categories": {
+        "sports": 1,
+        "politics": 2
+      }
+    },
+    "VN": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "SA": {
+      "score": 30,
+      "articleCount": 17,
+      "categories": {
+        "war": 3,
+        "politics": 14
+      }
+    },
+    "IL": {
+      "score": 9,
+      "articleCount": 21,
+      "categories": {
+        "war": 13,
+        "politics": 7,
+        "health": 1
       }
     },
     "IR": {
@@ -59,36 +105,27 @@
       }
     },
     "US": {
-      "score": 43,
-      "articleCount": 13,
+      "score": 42,
+      "articleCount": 12,
       "categories": {
         "politics": 10,
         "war": 1,
-        "crisis": 1,
-        "culture": 1
+        "crisis": 1
       }
     },
     "IN": {
       "score": 59,
-      "articleCount": 15,
+      "articleCount": 14,
       "categories": {
         "culture": 3,
-        "politics": 12
-      }
-    },
-    "SA": {
-      "score": 36,
-      "articleCount": 16,
-      "categories": {
-        "war": 2,
-        "politics": 14
+        "politics": 11
       }
     },
     "RU": {
       "score": 51,
-      "articleCount": 23,
+      "articleCount": 22,
       "categories": {
-        "politics": 20,
+        "politics": 19,
         "culture": 1,
         "economy": 1,
         "war": 1
@@ -127,11 +164,11 @@
       }
     },
     "UA": {
-      "score": 33,
-      "articleCount": 21,
+      "score": 32,
+      "articleCount": 19,
       "categories": {
         "war": 3,
-        "politics": 17,
+        "politics": 15,
         "crisis": 1
       }
     },
@@ -233,13 +270,6 @@
         "politics": 2
       }
     },
-    "IT": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
     "BR": {
       "score": 50,
       "articleCount": 2,
@@ -263,20 +293,12 @@
       }
     },
     "MX": {
-      "score": 21,
-      "articleCount": 5,
+      "score": 19,
+      "articleCount": 4,
       "categories": {
         "war": 1,
         "disaster": 1,
-        "politics": 3
-      }
-    },
-    "CN": {
-      "score": 31,
-      "articleCount": 9,
-      "categories": {
-        "politics": 7,
-        "war": 2
+        "politics": 2
       }
     },
     "SE": {
@@ -302,27 +324,12 @@
         "war": 1
       }
     },
-    "PT": {
-      "score": 20,
-      "articleCount": 1,
-      "categories": {
-        "crisis": 1
-      }
-    },
     "LB": {
       "score": 59,
       "articleCount": 3,
       "categories": {
         "politics": 2,
         "positive": 1
-      }
-    },
-    "BD": {
-      "score": 25,
-      "articleCount": 3,
-      "categories": {
-        "disaster": 2,
-        "politics": 1
       }
     },
     "CM": {
@@ -384,19 +391,18 @@
     },
     "MY": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     },
     "JP": {
-      "score": 32,
-      "articleCount": 4,
+      "score": 17,
+      "articleCount": 3,
       "categories": {
         "war": 1,
         "politics": 1,
-        "crisis": 1,
-        "positive": 1
+        "crisis": 1
       }
     },
     "HR": {
@@ -441,13 +447,6 @@
         "politics": 1
       }
     },
-    "VN": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "PK": {
       "score": 63,
       "articleCount": 1,
@@ -457,6 +456,318 @@
     }
   },
   "articles": [
+    {
+      "hash": "d54762a0aa53",
+      "title": "Prime Minister passed over easier election dates, advice reveals",
+      "summary": "Prime Minister passed over easier election dates, advice reveals",
+      "link": "https://www.rnz.co.nz/news/political/1974290/prime-minister-passed-over-easier-election-dates-advice-reveals",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792275820777
+    },
+    {
+      "hash": "80264a189a98",
+      "title": "AI helps to track lobsters when 'no two shells are the same'",
+      "summary": "AI helps to track lobsters when 'no two shells are the same'",
+      "link": "https://www.abc.net.au/news/2026-10-18/lobster-industry-ai-tools-helping-tracing-landline/107211678",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275786592
+    },
+    {
+      "hash": "27cb72bdae36",
+      "title": "How to deal with spring weeds before they take over your garden",
+      "summary": "How to deal with spring weeds before they take over your garden",
+      "link": "https://www.abc.net.au/news/2026-10-18/spring-peak-season-flowers-garden-weeds-how-control/107248924",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275757696
+    },
+    {
+      "hash": "cdc454678e96",
+      "title": "Basque migrants transformed town and left behind heritage handball court",
+      "summary": "Basque migrants transformed town and left behind heritage handball court",
+      "link": "https://www.abc.net.au/news/2026-10-18/trebonne-heritage-listed-basque-handball-court/107217934",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275731615
+    },
+    {
+      "hash": "359ad1ec3b8c",
+      "title": "While You Were Sleeping: 5 stories you might have missed, Oct 18, 2026",
+      "summary": "While You Were Sleeping: 5 stories you might have missed, Oct 18, 2026",
+      "link": "https://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-oct-18-2026",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275705022
+    },
+    {
+      "hash": "b7256c8ca86e",
+      "title": "'Saw my mother die before my own eyes': Eyewitness recalls Kolkata stampede horror",
+      "summary": "'Saw my mother die before my own eyes': Eyewitness recalls Kolkata stampede horror",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/kolkata/people-fainted-taken-on-bikes-rain-panic-and-crowd-surge-trigger-stampede-at-kolkata-puja-pandal/articleshow/135017309.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275674001
+    },
+    {
+      "hash": "094527dd52dd",
+      "title": "Beyond EVs and perception, how China is gaining ground in Central Asia",
+      "summary": "Beyond EVs and perception, how China is gaining ground in Central Asia",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3371232/beyond-evs-and-perception-how-china-gaining-ground-central-asia?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275650977
+    },
+    {
+      "hash": "3397c1289133",
+      "title": "Ten killed in fire at beach resort in Bangladesh",
+      "summary": "عشره قتلى في حريق بمنتجع شاطئي في بنغلاديش",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-sv-coxsbazaar-hotel-blaze-_-bd?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "BD",
+      "category": "disaster",
+      "sentiment": "very_negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792275624085
+    },
+    {
+      "hash": "d3e357526dee",
+      "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
+      "summary": "Cost of living protests hit Belgium, Italy, Portugal and France",
+      "link": "https://www.aljazeera.com/news/2026/10/17/cost-of-living-protests-hit-belgium-italy-portugal-and-france?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "PT",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275619316
+    },
+    {
+      "hash": "1f6e2bf99ee4",
+      "title": "Photos: No Kings rallies in US urge midterm voters to cast ballots early",
+      "summary": "Photos: No Kings rallies in US urge midterm voters to cast ballots early",
+      "link": "https://www.aljazeera.com/gallery/2026/10/17/photos-no-kings-rallies-in-us-urge-midterm-voters-to-cast-ballots-early?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275586433
+    },
+    {
+      "hash": "bf2e2b3444a2",
+      "title": "$7bn Deep Seaport: Ogun govt tackles PDP candidate over alleged ‘Broken Promise’ remark",
+      "summary": "$7bn Deep Seaport: Ogun govt tackles PDP candidate over alleged ‘Broken Promise’ remark",
+      "link": "https://www.premiumtimesng.com/promoted/917884-7bn-deep-seaport-ogun-govt-tackles-pdp-candidate-over-alleged-broken-promise-remark.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275561598
+    },
+    {
+      "hash": "9de024624048",
+      "title": "2027: Keke riders endorse Mbah, Tinubu, as governor extends tricycle operation time to 10pm",
+      "summary": "2027: Keke riders endorse Mbah, Tinubu, as governor extends tricycle operation time to 10pm",
+      "link": "https://www.premiumtimesng.com/promoted/917888-2027-keke-riders-endorse-mbah-tinubu-as-governor-extends-tricycle-operation-time-to-10pm.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275536470
+    },
+    {
+      "hash": "29088c2b73f6",
+      "title": "Em meio à crise de queimadas, governo federal autoriza repasse de R$ 14,3 milhões para ações no Amazonas",
+      "summary": "Em meio à crise de queimadas, governo federal autoriza repasse de R$ 14,3 milhões para ações no Amazonas",
+      "link": "https://g1.globo.com/am/amazonas/noticia/2026/10/17/em-meio-a-crise-de-queimadas-governo-federal-autoriza-repasse-de-r-143-milhoes-ao-amazonas.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275504278
+    },
+    {
+      "hash": "62e4fef636d3",
+      "title": "Duas crianças ficam feridas após motorista invadir a contramão em Boa Vista",
+      "summary": "Duas crianças ficam feridas após motorista invadir a contramão em Boa Vista",
+      "link": "https://g1.globo.com/rr/roraima/noticia/2026/10/17/duas-criancas-ficam-feridas-apos-motorista-invadir-a-contramao-em-boa-vista.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275479526
+    },
+    {
+      "hash": "ac976a0a39d1",
+      "title": "Caminhão carregado de madeira bate na lateral de ônibus ao descer serra, tomba e atinge carro no Paraná",
+      "summary": "Caminhão carregado de madeira bate na lateral de ônibus ao descer serra, tomba e atinge carro no Paraná",
+      "link": "https://g1.globo.com/pr/campos-gerais-sul/noticia/2026/10/17/caminhao-madeira-tomba-atinge-carro-parana.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275454346
+    },
+    {
+      "hash": "d7ab50cdbbd3",
+      "title": "The state of the State Department in the wake of the Kimberly Guilfoyle scandal",
+      "summary": "The state of the State Department in the wake of the Kimberly Guilfoyle scandal",
+      "link": "https://www.npr.org/2026/10/17/nx-s1-6001729/the-state-of-the-state-department-in-the-wake-of-the-kimberly-guilfoyle-scandal",
+      "source": "NPR World",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792275426962
+    },
+    {
+      "hash": "00ec5fd10592",
+      "title": "Student protests widen into greater social unrest in France",
+      "summary": "Student protests widen into greater social unrest in France",
+      "link": "https://www.npr.org/2026/10/17/nx-s1-6006735/student-protests-widen-into-greater-social-unrest-in-france",
+      "source": "NPR World",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275408389
+    },
+    {
+      "hash": "0689970cbd0b",
+      "title": "French city hall goes up in flames amid nationwide unrest (VIDEOS)",
+      "summary": "French city hall goes up in flames amid nationwide unrest (VIDEOS)",
+      "link": "<![CDATA[https://rt-english.com/news/647334-france-tear-gas-nationwide-protests/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275381717
+    },
+    {
+      "hash": "eb092d4130ec",
+      "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
+      "summary": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
+      "link": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275355538
+    },
+    {
+      "hash": "36c08a7a810f",
+      "title": "مدرب الدرعية: بعد ثلاثة أشهر اضطررت للحديث عن التحكيم!",
+      "summary": "مدرب الدرعية: بعد ثلاثة أشهر اضطررت للحديث عن التحكيم!",
+      "link": "https://aawsat.com/node/5330660",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275328500
+    },
+    {
+      "hash": "42881afd372a",
+      "title": "الزمالك يوقف مهاجمه ناصر منسي ويحيله للتحقيق",
+      "summary": "الزمالك يوقف مهاجمه ناصر منسي ويحيله للتحقيق",
+      "link": "https://aawsat.com/node/5330661",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275304139
+    },
+    {
+      "hash": "b68709b1117b",
+      "title": "الدوري الإيطالي: روما يهزم جنوه بثنائية",
+      "summary": "الدوري الإيطالي: روما يهزم جنوه بثنائية",
+      "link": "https://aawsat.com/node/5330662",
+      "source": "الشرق الأوسط",
+      "countryCode": "IT",
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792275276743
+    },
+    {
+      "hash": "fcc7d6b21a94",
+      "title": "أكبر مصنع للمجوهرات الفاخرة في العالم.. \"باندورا\" تسعى لزيادة إنتاجها وتقليل التلوث في فيتنام",
+      "summary": "أكبر مصنع للمجوهرات الفاخرة في العالم.. \"باندورا\" تسعى لزيادة إنتاجها وتقليل التلوث في فيتنام",
+      "link": "https://arabic.euronews.com/2026/10/18/pandora-opens-the-worlds-biggest-jewellery-factory-in-vietnam-but-is-success-guaranteed-in",
+      "source": "Euronews عربي",
+      "countryCode": "VN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792275251332
+    },
+    {
+      "hash": "13d9d339f2f0",
+      "title": "السيسي يمهد لتدخل عسكري لحماية السعودية  إعلان الرئيس المصري لم يتضمن أي تفاصيل بشأن طبيعة التحرك العسكري.",
+      "summary": "السيسي يمهد لتدخل عسكري لحماية السعودية  إعلان الرئيس المصري لم يتضمن أي تفاصيل بشأن طبيعة التحرك العسكري.",
+      "link": "https://alhurra.com/46997",
+      "source": "الحرة",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792275226587
+    },
     {
       "hash": "dae2ad8be0f1",
       "title": "Election 2026: ACT promises $400m boost to keep GPs in NZ, attract more from overseas",
@@ -7944,318 +8255,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792214440144
-    },
-    {
-      "hash": "23a66a398d47",
-      "title": "Firefighters battle out-of-control blaze at NSW feed mill",
-      "summary": "Firefighters battle out-of-control blaze at NSW feed mill",
-      "link": "https://www.abc.net.au/news/2026-10-17/fire-cardiff-feed-mill-near-newcastle/107279170",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1792214435005
-    },
-    {
-      "hash": "bb27d79940fe",
-      "title": "Magnitude-3.0 aftershock strikes near Leongatha, south-east of Melbourne",
-      "summary": "Magnitude-3.0 aftershock strikes near Leongatha, south-east of Melbourne",
-      "link": "https://www.abc.net.au/news/2026-10-17/gippsland-earthquake-mid-october-aftershock/107279324",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214429881
-    },
-    {
-      "hash": "6784f71451a9",
-      "title": "La Bola Negra star Milo Quifes has never acted before, but now he is all in",
-      "summary": "La Bola Negra star Milo Quifes has never acted before, but now he is all in",
-      "link": "https://www.abc.net.au/news/2026-10-17/la-bola-negra-film-actor-milo-quifes/107274814",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214424708
-    },
-    {
-      "hash": "92241b372f44",
-      "title": "Three sentenced to 158 years in Mexico for murder of Australian, US surfers",
-      "summary": "Three sentenced to 158 years in Mexico for murder of Australian, US surfers",
-      "link": "https://www.straitstimes.com/world/three-sentenced-to-158-years-in-mexico-for-murder-of-australian-us-surfers",
-      "source": "Straits Times",
-      "countryCode": "MX",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214419561
-    },
-    {
-      "hash": "edd049c9fd8c",
-      "title": "German minister seeks debt-brake exemption to sustain Ukraine aid",
-      "summary": "German minister seeks debt-brake exemption to sustain Ukraine aid",
-      "link": "https://www.straitstimes.com/world/europe/german-minister-seeks-debt-brake-exemption-to-sustain-ukraine-aid",
-      "source": "Straits Times",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792214414463
-    },
-    {
-      "hash": "4e6842608d14",
-      "title": "Students, trade unions and Yellow Vests set to protest across France",
-      "summary": "Students, trade unions and Yellow Vests set to protest across France",
-      "link": "https://www.straitstimes.com/world/europe/students-trade-unions-and-yellow-vests-set-to-protest-across-france",
-      "source": "Straits Times",
-      "countryCode": "FR",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792214409338
-    },
-    {
-      "hash": "ad172bad103f",
-      "title": "Encounter breaks out between security forces, terrorists in J&K’s Kupwara",
-      "summary": "Encounter breaks out between security forces, terrorists in J&K’s Kupwara",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/encounter-breaks-out-between-security-forces-terrorists-in-jks-kupwara/articleshow/135007460.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792214404118
-    },
-    {
-      "hash": "7392f41ce37b",
-      "title": "'Ready to connect India with high-speed internet': Starlink reacts to Reliance's message",
-      "summary": "'Ready to connect India with high-speed internet': Starlink reacts to Reliance's message",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/business/india-business/ready-to-connect-india-with-high-speed-internet-starlink-reacts-to-reliances-message/articleshow/135007217.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214399046
-    },
-    {
-      "hash": "50fac947496f",
-      "title": "Trump waives new Russia sanctions as Ukraine ties slump",
-      "summary": "Trump waives new Russia sanctions as Ukraine ties slump",
-      "link": "https://www.japantimes.co.jp/news/2026/10/17/world/politics/trump-waives-russia-sanctions/",
-      "source": "Japan Times",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214393958
-    },
-    {
-      "hash": "968de56ea578",
-      "title": "Ex-Malaysian minister Nik Nazmi admits lapse in judgment after ‘khalwat’ arrest",
-      "summary": "Ex-Malaysian minister Nik Nazmi admits lapse in judgment after ‘khalwat’ arrest",
-      "link": "https://www.scmp.com/news/asia/southeast-asia/article/3371234/ex-malaysian-minister-nik-nazmi-admits-lapse-judgment-after-khalwat-arrest?utm_source=rss_feed",
-      "source": "SCMP",
-      "countryCode": "MY",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792214388888
-    },
-    {
-      "hash": "a204043d9bad",
-      "title": "Asean’s Myanmar peace push needs Japan’s ‘silent diplomacy’",
-      "summary": "Asean’s Myanmar peace push needs Japan’s ‘silent diplomacy’",
-      "link": "https://www.scmp.com/week-asia/opinion/article/3371168/aseans-myanmar-peace-push-needs-japans-silent-diplomacy?utm_source=rss_feed",
-      "source": "SCMP",
-      "countryCode": "JP",
-      "category": "positive",
-      "sentiment": "positive",
-      "mood": "hope",
-      "impact": 75,
-      "timestamp": 1792214383821
-    },
-    {
-      "hash": "5afe3059602d",
-      "title": "Albania’s PM blames ‘foreign hands’ for protests",
-      "summary": "Albania’s PM blames ‘foreign hands’ for protests",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/17/albanias-pm-blames-foreign-hands-for-protests?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214378754
-    },
-    {
-      "hash": "174669c3d6e0",
-      "title": "Trump puts on hold new Russia sanctions he signed into law",
-      "summary": "Trump puts on hold new Russia sanctions he signed into law",
-      "link": "https://www.aljazeera.com/news/2026/10/17/trump-puts-on-hold-new-russia-sanctions-he-signed-into-law?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214373675
-    },
-    {
-      "hash": "5ad35dae25d8",
-      "title": "Mercado de panificação cresce no RJ, mas setor enfrenta dificuldade na busca por profissionais qualificados",
-      "summary": "Mercado de panificação cresce no RJ, mas setor enfrenta dificuldade na busca por profissionais qualificados",
-      "link": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/10/17/mercado-de-panificacao-cresce-no-rj-mas-setor-enfrenta-dificuldade-na-busca-por-profissionais-qualificados.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214368556
-    },
-    {
-      "hash": "c67e3300690b",
-      "title": "Vale do Paraíba tem previsão de temporais e queda nas temperaturas neste fim de semana; confira",
-      "summary": "Vale do Paraíba tem previsão de temporais e queda nas temperaturas neste fim de semana; confira",
-      "link": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/10/17/vale-do-paraiba-tem-previsao-de-temporais-e-queda-nas-temperaturas-neste-fim-de-semana-confira.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214363467
-    },
-    {
-      "hash": "de9bdee3b464",
-      "title": "Brasileiros no exterior se mobilizam para reverter abstenção no 2º turno",
-      "summary": "Brasileiros no exterior se mobilizam para reverter abstenção no 2º turno",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/17/brasileiros-no-exterior-se-mobilizam-para-reverter-abstencao-no-2o-turno.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214358400
-    },
-    {
-      "hash": "481f33ce5e24",
-      "title": "The Arab Kingmaker in Israel’s Election Who Wants a Partnership With Jews",
-      "summary": "The Arab Kingmaker in Israel’s Election Who Wants a Partnership With Jews",
-      "link": "https://www.nytimes.com/2026/10/16/world/middleeast/israel-mansour-abbas.html",
-      "source": "NY Times",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792214353316
-    },
-    {
-      "hash": "fb84aa302aa8",
-      "title": "Still haven't filed your taxes? Here's what you need to know",
-      "summary": "Still haven't filed your taxes? Here's what you need to know",
-      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
-      "source": "CNN World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214348231
-    },
-    {
-      "hash": "94654941a6c4",
-      "title": "Markets digest bank earnings after recent turmoil",
-      "summary": "Markets digest bank earnings after recent turmoil",
-      "link": "https://www.cnn.com/business/live-news/stock-market-bank-earnings/index.html",
-      "source": "CNN World",
-      "countryCode": null,
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792214343124
-    },
-    {
-      "hash": "c870d83fbc94",
-      "title": "Latest news bulletin | October 17th, 2026 – Morning",
-      "summary": "Latest news bulletin | October 17th, 2026 – Morning",
-      "link": "https://www.euronews.com/video/2026/10/17/latest-news-bulletin-october-17th-2026-morning",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214338020
-    },
-    {
-      "hash": "7e17d9c6acf2",
-      "title": "Europe’s sponge cities are turning rain from waste into a valuable resource",
-      "summary": "Europe’s sponge cities are turning rain from waste into a valuable resource",
-      "link": "https://www.euronews.com/2026/10/17/europes-sponge-cities-are-turning-rain-from-waste-into-a-valuable-resource",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214332132
-    },
-    {
-      "hash": "270506ac027a",
-      "title": "Smashing pumpkins: Annual squash festival draws thousands to Brussels castle",
-      "summary": "Smashing pumpkins: Annual squash festival draws thousands to Brussels castle",
-      "link": "https://www.euronews.com/2026/10/17/smashing-pumpkins-annual-squash-festival-draws-thousands-to-brussels-castle",
-      "source": "Euronews English",
-      "countryCode": "US",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792214327001
-    },
-    {
-      "hash": "97c587178724",
-      "title": "التكنولوجيا والإنسان: تعزيز للحريات أم زنزانة رقمية؟",
-      "summary": "التكنولوجيا والإنسان: تعزيز للحريات أم زنزانة رقمية؟",
-      "link": "https://aawsat.com/node/5330448",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792214321818
-    },
-    {
-      "hash": "7f2d25415243",
-      "title": "\"المدن الإسفنجية\" في أوروبا تحوّل مياه الأمطار من مشكلة إلى مورد طبيعي مهم",
-      "summary": "\"المدن الإسفنجية\" في أوروبا تحوّل مياه الأمطار من مشكلة إلى مورد طبيعي مهم",
-      "link": "https://arabic.euronews.com/2026/10/17/europes-sponge-cities-are-transforming-rain-from-waste-into-a-valuable-resource",
-      "source": "Euronews عربي",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792214316733
     }
   ]
 }
