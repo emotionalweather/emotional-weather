@@ -1,25 +1,95 @@
 {
-  "updated_at": "2026-10-18T00:28:49.679Z",
+  "updated_at": "2026-10-18T01:36:51.692Z",
   "total": 600,
-  "new_count": 27,
-  "ai_success": 2,
-  "ai_fallback": 25,
+  "new_count": 26,
+  "ai_success": 0,
+  "ai_fallback": 26,
   "global": {
     "score": 44,
     "totalArticles": 600,
     "categories": {
+      "politics": 445,
+      "culture": 18,
+      "economy": 6,
+      "war": 55,
+      "disaster": 18,
       "crisis": 20,
-      "politics": 446,
-      "health": 29,
-      "war": 53,
-      "culture": 20,
-      "economy": 5,
+      "health": 28,
       "sports": 8,
-      "disaster": 17,
       "positive": 2
     }
   },
   "countries": {
+    "NZ": {
+      "score": 44,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
+        "disaster": 1
+      }
+    },
+    "OM": {
+      "score": 42,
+      "articleCount": 6,
+      "categories": {
+        "politics": 5,
+        "disaster": 1
+      }
+    },
+    "RU": {
+      "score": 58,
+      "articleCount": 18,
+      "categories": {
+        "culture": 2,
+        "economy": 2,
+        "politics": 14
+      }
+    },
+    "CN": {
+      "score": 27,
+      "articleCount": 11,
+      "categories": {
+        "politics": 8,
+        "war": 3
+      }
+    },
+    "UA": {
+      "score": 36,
+      "articleCount": 17,
+      "categories": {
+        "politics": 14,
+        "war": 2,
+        "crisis": 1
+      }
+    },
+    "SA": {
+      "score": 24,
+      "articleCount": 22,
+      "categories": {
+        "war": 7,
+        "politics": 15
+      }
+    },
+    "IL": {
+      "score": 9,
+      "articleCount": 23,
+      "categories": {
+        "war": 15,
+        "politics": 7,
+        "health": 1
+      }
+    },
+    "FR": {
+      "score": 41,
+      "articleCount": 49,
+      "categories": {
+        "disaster": 5,
+        "politics": 36,
+        "crisis": 6,
+        "positive": 1,
+        "culture": 1
+      }
+    },
     "AU": {
       "score": 31,
       "articleCount": 4,
@@ -29,75 +99,21 @@
         "culture": 1
       }
     },
-    "CN": {
-      "score": 24,
-      "articleCount": 11,
-      "categories": {
-        "war": 3,
-        "politics": 8
-      }
-    },
-    "SA": {
-      "score": 25,
-      "articleCount": 20,
-      "categories": {
-        "war": 6,
-        "politics": 14
-      }
-    },
-    "IL": {
-      "score": 9,
-      "articleCount": 22,
-      "categories": {
-        "politics": 7,
-        "war": 14,
-        "health": 1
-      }
-    },
-    "RU": {
-      "score": 53,
-      "articleCount": 18,
-      "categories": {
-        "politics": 16,
-        "culture": 1,
-        "economy": 1
-      }
-    },
-    "UA": {
-      "score": 35,
-      "articleCount": 18,
-      "categories": {
-        "politics": 15,
-        "war": 2,
-        "crisis": 1
-      }
-    },
     "IN": {
       "score": 62,
-      "articleCount": 15,
+      "articleCount": 12,
       "categories": {
-        "culture": 4,
-        "politics": 11
+        "culture": 3,
+        "politics": 9
       }
     },
     "US": {
-      "score": 33,
-      "articleCount": 13,
+      "score": 32,
+      "articleCount": 12,
       "categories": {
         "war": 2,
-        "politics": 10,
+        "politics": 9,
         "crisis": 1
-      }
-    },
-    "FR": {
-      "score": 43,
-      "articleCount": 49,
-      "categories": {
-        "politics": 37,
-        "crisis": 6,
-        "disaster": 4,
-        "positive": 1,
-        "culture": 1
       }
     },
     "IR": {
@@ -110,18 +126,18 @@
       }
     },
     "JP": {
-      "score": 35,
-      "articleCount": 3,
+      "score": 33,
+      "articleCount": 2,
       "categories": {
-        "politics": 2,
+        "politics": 1,
         "war": 1
       }
     },
     "MA": {
       "score": 50,
-      "articleCount": 4,
+      "articleCount": 3,
       "categories": {
-        "politics": 4
+        "politics": 3
       }
     },
     "BD": {
@@ -155,14 +171,6 @@
         "politics": 1
       }
     },
-    "OM": {
-      "score": 39,
-      "articleCount": 5,
-      "categories": {
-        "politics": 4,
-        "disaster": 1
-      }
-    },
     "NG": {
       "score": 45,
       "articleCount": 10,
@@ -170,14 +178,6 @@
         "politics": 6,
         "economy": 2,
         "crisis": 2
-      }
-    },
-    "NZ": {
-      "score": 38,
-      "articleCount": 2,
-      "categories": {
-        "politics": 1,
-        "disaster": 1
       }
     },
     "CA": {
@@ -211,11 +211,10 @@
       }
     },
     "KR": {
-      "score": 29,
-      "articleCount": 2,
+      "score": 50,
+      "articleCount": 1,
       "categories": {
-        "politics": 1,
-        "war": 1
+        "politics": 1
       }
     },
     "PS": {
@@ -279,9 +278,9 @@
     },
     "BR": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     },
     "IQ": {
@@ -422,23 +421,347 @@
       "categories": {
         "politics": 1
       }
-    },
-    "NO": {
-      "score": 80,
-      "articleCount": 1,
-      "categories": {
-        "culture": 1
-      }
-    },
-    "YE": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "a0d05f50e824",
+      "title": "Election 2026: Greens launch 'grassroots' campaign, express concern govt changes will 'actively suppress voting'",
+      "summary": "Election 2026: Greens launch 'grassroots' campaign, express concern govt changes will 'actively suppress voting'",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/1975478/election-2026-greens-launch-grassroots-campaign-express-concern-govt-changes-will-actively-suppress-voting",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792287410689
+    },
+    {
+      "hash": "a06701a01a3a",
+      "title": "Live: New Zealand Kiwi Ferns v Fiji Bulikula - women's Rugby League World Cup",
+      "summary": "Live: New Zealand Kiwi Ferns v Fiji Bulikula - women's Rugby League World Cup",
+      "link": "https://www.rnz.co.nz/news/sport/1984715/live-new-zealand-kiwi-ferns-v-fiji-bulikula-women-s-rugby-league-world-cup",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287392535
+    },
+    {
+      "hash": "c2b8d90caf2c",
+      "title": "Woman arrested after spate of hit-run crashes across Adelaide",
+      "summary": "Woman arrested after spate of hit-run crashes across Adelaide",
+      "link": "https://www.abc.net.au/news/2026-10-18/dangerous-driving-police-assault/107280468",
+      "source": "ABC Australia",
+      "countryCode": "OM",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287380899
+    },
+    {
+      "hash": "f35bd97ce077",
+      "title": "'Nerves and shame' gone, the DMC Boys look to the global stage",
+      "summary": "'Nerves and shame' gone, the DMC Boys look to the global stage",
+      "link": "https://www.abc.net.au/news/2026-10-18/dmc-boys-dreaming-big-after-king-stingray-gig/107269146",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287366451
+    },
+    {
+      "hash": "1d4114916408",
+      "title": "Search for missing Murray River man after cries for help heard",
+      "summary": "Search for missing Murray River man after cries for help heard",
+      "link": "https://www.abc.net.au/news/2026-10-18/search-for-missing-man-near-tocumwal/107280424",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287353054
+    },
+    {
+      "hash": "633cf2185560",
+      "title": "Trump’s Russia sanctions waiver called mistake by Republican Party allies",
+      "summary": "Trump’s Russia sanctions waiver called mistake by Republican Party allies",
+      "link": "https://www.straitstimes.com/world/united-states/trumps-russia-sanctions-waiver-called-mistake-by-republican-party-allies",
+      "source": "Straits Times",
+      "countryCode": "RU",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792287335883
+    },
+    {
+      "hash": "4b6dc3ad5cb9",
+      "title": "Across the US, ‘No Kings’ events seek to boost early voting for midterms",
+      "summary": "Across the US, ‘No Kings’ events seek to boost early voting for midterms",
+      "link": "https://www.straitstimes.com/world/united-states/across-the-us-no-kings-events-seek-to-boost-early-voting-for-midterms",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287314836
+    },
+    {
+      "hash": "6e9eff5ae310",
+      "title": "Trump paused Russia sanctions to ‘analyse’ impact on global economy: Rubio",
+      "summary": "Trump paused Russia sanctions to ‘analyse’ impact on global economy: Rubio",
+      "link": "https://www.straitstimes.com/world/united-states/trump-paused-russia-sanctions-to-analyse-impact-on-global-economy-rubio",
+      "source": "Straits Times",
+      "countryCode": "RU",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1792287287573
+    },
+    {
+      "hash": "b2e2d9e7e714",
+      "title": "‘I found my wife lying still’: Husband’s heartbreaking account of Kolkata stampede",
+      "summary": "‘I found my wife lying still’: Husband’s heartbreaking account of Kolkata stampede",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/kolkata/i-found-my-wife-lying-still-none-came-to-help/articleshow/135019862.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792287262141
+    },
+    {
+      "hash": "371eab4cc747",
+      "title": "12 killed after speeding truck runs over devotees near temple in Gwalior",
+      "summary": "12 killed after speeding truck runs over devotees near temple in Gwalior",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/bhopal/at-least-10-killed-after-speeding-truck-runs-over-devotees-near-temple-in-gwalior/articleshow/135022376.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287232339
+    },
+    {
+      "hash": "4c9f8f11b43c",
+      "title": "Crowd, rain or misleading announcement: What led to Kolkata stampede tragedy?",
+      "summary": "Crowd, rain or misleading announcement: What led to Kolkata stampede tragedy?",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/crowd-rain-or-misleading-announcement-what-led-to-kolkata-stampede-tragedy/articleshow/135022578.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287205031
+    },
+    {
+      "hash": "2fc5205f81da",
+      "title": "Why is Hong Kong hosting the Apec Finance Ministers’ Meeting? There is another agenda",
+      "summary": "Why is Hong Kong hosting the Apec Finance Ministers’ Meeting? There is another agenda",
+      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3371251/why-hong-kong-hosting-apec-finance-ministers-meeting-there-another-agenda?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792287179151
+    },
+    {
+      "hash": "6b0a6d045d86",
+      "title": "How land power could help US forces counter China in the Indo-Pacific",
+      "summary": "How land power could help US forces counter China in the Indo-Pacific",
+      "link": "https://www.scmp.com/news/us/article/3371267/how-land-power-could-help-us-forces-counter-china-indo-pacific?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287151768
+    },
+    {
+      "hash": "d51fbb6ba97c",
+      "title": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+      "summary": "US-Russia deal, Trump-Zelensky clash could leave Ukraine out in the cold",
+      "link": "https://www.scmp.com/news/world/russia-central-asia/article/3371280/us-russia-deal-trump-zelensky-clash-could-leave-ukraine-out-cold?utm_source=rss_feed",
+      "source": "SCMP",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287124034
+    },
+    {
+      "hash": "776a7156ea99",
+      "title": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
+      "summary": "Iran war live: Israeli settlers attack EU diplomats; drones target Riyadh",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/10/18/iran-war-live-tankers-hit-in-hormuz-israeli-settlers-attack-eu-diplomats?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792287085689
+    },
+    {
+      "hash": "34b8e9ccd831",
+      "title": "Israeli settlers attack European diplomats in the occupied West Bank",
+      "summary": "Israeli settlers attack European diplomats in the occupied West Bank",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IL",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792287055830
+    },
+    {
+      "hash": "40a819447770",
+      "title": "Saudi-led forces try to break Houthi siege of Taiz with airstrikes",
+      "summary": "Saudi-led forces try to break Houthi siege of Taiz with airstrikes",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/18/saudi-led-forces-try-to-break-houthi-siege-of-taiz-with-airstrikes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792287028465
+    },
+    {
+      "hash": "64ed076bdcba",
+      "title": "Flávio Bolsonaro faz campanha em Vitória e Salvador; apoiadores realizam atos e carreatas em capitais brasileiras",
+      "summary": "Flávio Bolsonaro faz campanha em Vitória e Salvador; apoiadores realizam atos e carreatas em capitais brasileiras",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/17/flavio-bolsonaro-faz-campanha-em-vitoria-e-salvador-apoiadores-realizam-atos-e-carreatas-em-capitais-brasileiras.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286992887
+    },
+    {
+      "hash": "0496f23f01f9",
+      "title": "Apoiadores de Lula realizam atos em diversas cidades e capitais",
+      "summary": "Apoiadores de Lula realizam atos em diversas cidades e capitais",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/17/apoiadores-de-lula-foram-as-ruas-neste-sabado-em-cidades-e-capitais.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286966988
+    },
+    {
+      "hash": "cbd4b3b4463c",
+      "title": "Manaus está coberta pela fumaça de queimadas há 10 dias",
+      "summary": "Manaus está coberta pela fumaça de queimadas há 10 dias",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/17/manaus-esta-coberta-pela-fumaca-de-queimadas-ha-10-dias.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286939509
+    },
+    {
+      "hash": "0cc875469f60",
+      "title": "1 in 4 Ebola deaths are children in Democratic Republic of Congo's worst outbreak",
+      "summary": "1 in 4 Ebola deaths are children in Democratic Republic of Congo's worst outbreak",
+      "link": "https://www.cbc.ca/news/health/ebola-congo-children-deaths-9.7384641?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286915867
+    },
+    {
+      "hash": "b4495ad666ff",
+      "title": "Protesters clash with police in downtown Milan (VIDEOS)",
+      "summary": "Protesters clash with police in downtown Milan (VIDEOS)",
+      "link": "<![CDATA[https://rt-english.com/news/647343-protesters-clash-with-police-milan/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286887202
+    },
+    {
+      "hash": "b8a3661c420f",
+      "title": "&apos;No Kings&apos; rallies push early voting ahead of US midterm elections",
+      "summary": "&apos;No Kings&apos; rallies push early voting ahead of US midterm elections",
+      "link": "https://www.dw.com/en/no-kings-rallies-push-early-voting-ahead-of-us-midterm-elections/a-79690502?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792286861106
+    },
+    {
+      "hash": "fd1c39f6609c",
+      "title": "روبيو: أشعر بالانزعاج إزاء صور عنف المستوطنين بالضفة الغربية",
+      "summary": "روبيو: أشعر بالانزعاج إزاء صور عنف المستوطنين بالضفة الغربية",
+      "link": "https://www.skynewsarabia.com/middle-east/1898873-%D8%B1%D9%88%D8%A8%D9%8A%D9%88-%D8%A3%D8%B4%D8%B9%D8%B1-%D8%A8%D8%A7%D9%84%D8%A7%D9%86%D8%B2%D8%B9%D8%A7%D8%AC-%D8%B5%D9%88%D8%B1-%D8%B9%D9%86%D9%81-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792286834557
+    },
+    {
+      "hash": "0bec40e970d1",
+      "title": "مقتل شخصين إثر اقتحام مركبة ملعب كرة في ولاية أميركية",
+      "summary": "مقتل شخصين إثر اقتحام مركبة ملعب كرة في ولاية أميركية",
+      "link": "https://www.skynewsarabia.com/sport/1898875-%D9%85%D9%82%D8%AA%D9%84-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D8%A5%D8%AB%D8%B1-%D8%A7%D9%82%D8%AA%D8%AD%D8%A7%D9%85-%D9%85%D8%B1%D9%83%D8%A8%D8%A9-%D9%85%D9%84%D8%B9%D8%A8-%D9%83%D8%B1%D8%A9-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792286820550
+    },
+    {
+      "hash": "9cd1a25aeea1",
+      "title": "احتجاجات فرنسا: حريق يُدمر بلدية ليموج",
+      "summary": "احتجاجات فرنسا: حريق يُدمر بلدية ليموج",
+      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261017-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%AD%D8%B1%D9%8A%D9%82-%D9%8A%D9%8F%D8%AF%D9%85%D8%B1-%D8%A8%D9%84%D8%AF%D9%8A%D8%A9-%D9%84%D9%8A%D9%85%D9%88%D8%AC",
+      "source": "France24 عربي",
+      "countryCode": "FR",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792286795364
+    },
     {
       "hash": "b888d6cfd204",
       "title": "Doctor's callback from retirement reveals depth of health crisis: nurses union",
@@ -7900,344 +8223,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792222163312
-    },
-    {
-      "hash": "975032a784e2",
-      "title": "'Internet access is fundamental right': SC suggests ‘child mode’ for social media accounts",
-      "summary": "'Internet access is fundamental right': SC suggests ‘child mode’ for social media accounts",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/internet-access-is-fundamental-right-sc-suggests-child-mode-for-social-media-accounts/articleshow/135009573.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222158245
-    },
-    {
-      "hash": "d4e4e0440a81",
-      "title": "This Chinese export boom really has legs — and wings",
-      "summary": "This Chinese export boom really has legs — and wings",
-      "link": "https://www.japantimes.co.jp/business/2026/10/17/china-chicken-exports/",
-      "source": "Japan Times",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222153181
-    },
-    {
-      "hash": "8007930e493a",
-      "title": "IMF official welcomes Japan’s temporary tax cut plan",
-      "summary": "IMF official welcomes Japan’s temporary tax cut plan",
-      "link": "https://www.japantimes.co.jp/business/2026/10/17/economy/imf-official-japan-tax-cut-plan/",
-      "source": "Japan Times",
-      "countryCode": "JP",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222148105
-    },
-    {
-      "hash": "d63957647e63",
-      "title": "Abby Choi’s partner tells murder trial she hid ex-in-laws’ financial reliance on her",
-      "summary": "Abby Choi’s partner tells murder trial she hid ex-in-laws’ financial reliance on her",
-      "link": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3371242/abby-chois-partner-tells-murder-trial-she-hid-ex-laws-financial-reliance-her?utm_source=rss_feed",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792222143004
-    },
-    {
-      "hash": "9fee1264934e",
-      "title": "Security fears in Norway as Chinese smart cars record sensitive military data",
-      "summary": "Security fears in Norway as Chinese smart cars record sensitive military data",
-      "link": "https://www.scmp.com/news/world/europe/article/3371243/security-fears-norway-chinese-smart-cars-record-sensitive-military-data?utm_source=rss_feed",
-      "source": "SCMP",
-      "countryCode": "NO",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792222137939
-    },
-    {
-      "hash": "4db010ea9c3c",
-      "title": "Modi under pressure as India’s youth protests rise to highest level in a decade",
-      "summary": "Modi under pressure as India’s youth protests rise to highest level in a decade",
-      "link": "https://www.scmp.com/news/asia/south-asia/article/3371244/modi-under-pressure-indias-youth-protests-rise-highest-level-decade?utm_source=rss_feed",
-      "source": "SCMP",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222132878
-    },
-    {
-      "hash": "45b9e24ff38f",
-      "title": "AI fears are being weaponised",
-      "summary": "AI fears are being weaponised",
-      "link": "https://www.aljazeera.com/opinions/2026/10/17/ai-fears-are-being-weaponised?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222127807
-    },
-    {
-      "hash": "6f332312009b",
-      "title": "Ukraine and Europe have little choice but to work with Trump",
-      "summary": "Ukraine and Europe have little choice but to work with Trump",
-      "link": "https://www.aljazeera.com/opinions/2026/10/17/ukraine-and-europe-have-little-choice-but-to-work-with-trump?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222122744
-    },
-    {
-      "hash": "0c819a6b2b5a",
-      "title": "Can Yemen’s government forces sustain their offensive against the Houthis?",
-      "summary": "Can Yemen’s government forces sustain their offensive against the Houthis?",
-      "link": "https://www.aljazeera.com/news-analysis/2026/10/17/can-yemens-government-forces-sustain-their-offensive-against-the-houthis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "YE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792222117689
-    },
-    {
-      "hash": "5261cd40fbec",
-      "title": "FIFA U-17 WWC: Flamingos Coach Busari reveals plan for Poland opener",
-      "summary": "FIFA U-17 WWC: Flamingos Coach Busari reveals plan for Poland opener",
-      "link": "https://www.premiumtimesng.com/sports/football/917714-fifa-u-17-wwc-flamingos-coach-busari-reveals-plan-for-poland-opener.html",
-      "source": "Premium Times",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222112605
-    },
-    {
-      "hash": "6a00f52786c6",
-      "title": "Morocco's King Mohammed VI formally appoints first woman-led government",
-      "summary": "Morocco's King Mohammed VI formally appoints first woman-led government",
-      "link": "http://www.africanews.com/2026/10/17/moroccos-king-mohammed-vi-formally-appoints-first-woman-led-government/",
-      "source": "Africanews",
-      "countryCode": "MA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792222107545
-    },
-    {
-      "hash": "193bbb90a8fe",
-      "title": "VÍDEO: Homem tenta matar sobrinho de pastor por se sentir discriminado em igreja de MG",
-      "summary": "VÍDEO: Homem tenta matar sobrinho de pastor por se sentir discriminado em igreja de MG",
-      "link": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2026/10/17/video-homem-tenta-matar-sobrinho-de-pastor-por-se-sentir-discriminado-em-igreja-de-mg.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222102484
-    },
-    {
-      "hash": "c6a2d1b919d6",
-      "title": "'Beijo na Boca', trio elétrico na Itália e multidões: a história de Netinho na Banda Beijo",
-      "summary": "'Beijo na Boca', trio elétrico na Itália e multidões: a história de Netinho na Banda Beijo",
-      "link": "https://g1.globo.com/ba/bahia/noticia/2026/10/17/a-historia-de-netinho-na-banda-beijo.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222097421
-    },
-    {
-      "hash": "bf9d131e3ed2",
-      "title": "Festival 'Eu amo café' reúne 26 cafeterias de cinco cidades com combos de R$ 34,90; veja locais",
-      "summary": "Festival 'Eu amo café' reúne 26 cafeterias de cinco cidades com combos de R$ 34,90; veja locais",
-      "link": "https://g1.globo.com/pe/pernambuco/o-que-fazer-no-recife/noticia/2026/10/17/festival-eu-amo-cafe-reune-26-cafeterias-de-cinco-cidades-com-combos-de-r-3490-veja-locais.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792222092358
-    },
-    {
-      "hash": "010654716991",
-      "title": "Brent touches US$110 for the first time since May on Middle East tensions",
-      "summary": "Brent touches US$110 for the first time since May on Middle East tensions",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/17/brent-touches-us-110-for-the-first-time-since-may-on-middle-east-tensions?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222087290
-    },
-    {
-      "hash": "8dd8afdd1943",
-      "title": "Bolsonaro and Lula head into the final stretch of Brazil’s campaign in a statistical tie",
-      "summary": "Bolsonaro and Lula head into the final stretch of Brazil’s campaign in a statistical tie",
-      "link": "<![CDATA[https://en.mercopress.com/2026/10/17/bolsonaro-and-lula-head-into-the-final-stretch-of-brazil-s-campaign-in-a-statistical-tie?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222082230
-    },
-    {
-      "hash": "cf0db5394c13",
-      "title": "Sally Rooney&apos;s books will no longer be sold in U.K. after Palestinian Action support",
-      "summary": "Sally Rooney&apos;s books will no longer be sold in U.K. after Palestinian Action support",
-      "link": "https://www.npr.org/2026/10/16/nx-s1-6004838/sally-rooney-books-uk-palestinian-action-support",
-      "source": "NPR World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222077162
-    },
-    {
-      "hash": "3697e511d1c3",
-      "title": "A Wayward Shark Becomes a Celebrity in South Korea",
-      "summary": "A Wayward Shark Becomes a Celebrity in South Korea",
-      "link": "https://www.nytimes.com/2026/10/16/world/asia/south-korea-busan-shark.html",
-      "source": "NY Times",
-      "countryCode": "KR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792222072100
-    },
-    {
-      "hash": "8a2f43a1fa4b",
-      "title": "Uncertainty Over Pope’s Health Fuels Familiar Debate Over Vatican’s Candor",
-      "summary": "Uncertainty Over Pope’s Health Fuels Familiar Debate Over Vatican’s Candor",
-      "link": "https://www.nytimes.com/2026/10/17/world/europe/pope-leo-vatican-transparency-cancer.html",
-      "source": "NY Times",
-      "countryCode": null,
-      "category": "health",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 55,
-      "timestamp": 1792222067035
-    },
-    {
-      "hash": "66b5daab735e",
-      "title": "How Bally Bagayoko, a 53-Year-Old Mayor, Became the Face of France’s Youth Protests",
-      "summary": "How Bally Bagayoko, a 53-Year-Old Mayor, Became the Face of France’s Youth Protests",
-      "link": "https://www.nytimes.com/2026/10/17/france-protests-mayor-bally-bagayoko.html",
-      "source": "NY Times",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222061975
-    },
-    {
-      "hash": "8d65fbf7fa13",
-      "title": "Du gaz lacrymogène aux grenades en passant par les LBD : les armes de force intermédiaire, cet arsenal du maintien de l’ordre qui n’a cessé de s’enrichir et dont la pertinence fait débat",
-      "summary": "Du gaz lacrymogène aux grenades en passant par les LBD : les armes de force intermédiaire, cet arsenal du maintien de l’ordre qui n’a cessé de s’enrichir et dont la pertinence fait débat",
-      "link": "https://www.lemonde.fr/societe/article/2026/10/17/du-gaz-lacrymogene-aux-grenades-en-passant-par-les-lbd-les-armes-de-force-intermediaire-cet-arsenal-du-maintien-de-l-ordre-qui-n-a-cesse-de-s-enrichir-et-dont-la-pertinence-fait-debat_6796023_3224.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222056890
-    },
-    {
-      "hash": "336c82bf22ad",
-      "title": "Trump signs executive order waiving new Russia sanctions package",
-      "summary": "Trump signs executive order waiving new Russia sanctions package",
-      "link": "https://www.euronews.com/2026/10/17/trump-signs-executive-order-waiving-new-russia-sanctions-package",
-      "source": "Euronews English",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222051824
-    },
-    {
-      "hash": "b5cba84f0120",
-      "title": "No money for Ukraine and EU budget cuts: What could a Le Pen victory mean for the EU?",
-      "summary": "No money for Ukraine and EU budget cuts: What could a Le Pen victory mean for the EU?",
-      "link": "https://www.euronews.com/2026/10/17/no-money-for-ukraine-and-eu-budget-cuts-what-could-a-le-pen-victory-mean-for-the-eu",
-      "source": "Euronews English",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222046758
-    },
-    {
-      "hash": "95c19b56b15f",
-      "title": "India news: &apos;Cockroach&apos; party founder Abhijeet Dipke under preventive arrest",
-      "summary": "India news: &apos;Cockroach&apos; party founder Abhijeet Dipke under preventive arrest",
-      "link": "https://www.dw.com/en/india-news-cockroach-party-founder-abhijeet-dipke-under-preventive-arrest/live-79685143?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "IN",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792222041684
-    },
-    {
-      "hash": "ecef1769c33e",
-      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "summary": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "link": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222036620
-    },
-    {
-      "hash": "7cbf059d1868",
-      "title": "توقيف مؤسس «حركة الصراصير» في الهند",
-      "summary": "توقيف مؤسس «حركة الصراصير» في الهند",
-      "link": "https://aawsat.com/node/5330459",
-      "source": "الشرق الأوسط",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792222031552
     }
   ]
 }
