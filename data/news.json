@@ -1,50 +1,100 @@
 {
-  "updated_at": "2026-10-23T01:34:39.586Z",
+  "updated_at": "2026-10-23T02:22:56.146Z",
   "total": 600,
-  "new_count": 31,
+  "new_count": 22,
   "ai_success": 0,
-  "ai_fallback": 31,
+  "ai_fallback": 22,
   "global": {
-    "score": 45,
+    "score": 44,
     "totalArticles": 600,
     "categories": {
-      "politics": 449,
-      "economy": 11,
+      "politics": 451,
+      "war": 59,
+      "health": 21,
+      "economy": 10,
       "disaster": 18,
-      "war": 58,
       "crisis": 11,
-      "culture": 19,
-      "health": 20,
+      "culture": 17,
       "sports": 7,
-      "positive": 7
+      "positive": 6
     }
   },
   "countries": {
-    "JP": {
-      "score": 42,
-      "articleCount": 5,
+    "NZ": {
+      "score": 50,
+      "articleCount": 4,
       "categories": {
-        "politics": 3,
+        "politics": 4
+      }
+    },
+    "JP": {
+      "score": 38,
+      "articleCount": 7,
+      "categories": {
+        "politics": 4,
+        "health": 1,
         "crisis": 1,
         "culture": 1
       }
     },
-    "PE": {
-      "score": 56,
-      "articleCount": 4,
-      "categories": {
-        "politics": 3,
-        "positive": 1
-      }
-    },
     "CN": {
-      "score": 30,
-      "articleCount": 15,
+      "score": 32,
+      "articleCount": 16,
       "categories": {
-        "politics": 7,
+        "politics": 8,
         "disaster": 5,
         "positive": 1,
         "war": 2
+      }
+    },
+    "UA": {
+      "score": 28,
+      "articleCount": 22,
+      "categories": {
+        "war": 7,
+        "politics": 13,
+        "positive": 2
+      }
+    },
+    "KR": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
+      }
+    },
+    "AU": {
+      "score": 42,
+      "articleCount": 6,
+      "categories": {
+        "politics": 4,
+        "disaster": 2
+      }
+    },
+    "IR": {
+      "score": 28,
+      "articleCount": 18,
+      "categories": {
+        "politics": 10,
+        "war": 7,
+        "culture": 1
+      }
+    },
+    "SA": {
+      "score": 39,
+      "articleCount": 24,
+      "categories": {
+        "politics": 19,
+        "economy": 1,
+        "war": 3,
+        "crisis": 1
+      }
+    },
+    "PE": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
       }
     },
     "TN": {
@@ -64,22 +114,13 @@
     },
     "FR": {
       "score": 40,
-      "articleCount": 34,
+      "articleCount": 33,
       "categories": {
-        "politics": 21,
+        "politics": 20,
         "health": 7,
         "crisis": 3,
         "culture": 2,
         "disaster": 1
-      }
-    },
-    "IR": {
-      "score": 26,
-      "articleCount": 17,
-      "categories": {
-        "politics": 9,
-        "war": 7,
-        "culture": 1
       }
     },
     "MR": {
@@ -87,16 +128,6 @@
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "SA": {
-      "score": 36,
-      "articleCount": 24,
-      "categories": {
-        "economy": 1,
-        "politics": 18,
-        "war": 4,
-        "crisis": 1
       }
     },
     "PS": {
@@ -114,15 +145,6 @@
         "culture": 1
       }
     },
-    "UA": {
-      "score": 32,
-      "articleCount": 21,
-      "categories": {
-        "politics": 13,
-        "war": 6,
-        "positive": 2
-      }
-    },
     "SD": {
       "score": 8,
       "articleCount": 5,
@@ -130,14 +152,6 @@
         "health": 1,
         "war": 3,
         "crisis": 1
-      }
-    },
-    "AU": {
-      "score": 39,
-      "articleCount": 5,
-      "categories": {
-        "politics": 3,
-        "disaster": 2
       }
     },
     "BR": {
@@ -173,10 +187,10 @@
       }
     },
     "IL": {
-      "score": 23,
-      "articleCount": 14,
+      "score": 22,
+      "articleCount": 13,
       "categories": {
-        "politics": 8,
+        "politics": 7,
         "war": 6
       }
     },
@@ -187,13 +201,6 @@
         "politics": 3,
         "positive": 1,
         "war": 1
-      }
-    },
-    "NZ": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
       }
     },
     "IN": {
@@ -211,12 +218,11 @@
       }
     },
     "NG": {
-      "score": 45,
-      "articleCount": 12,
+      "score": 44,
+      "articleCount": 10,
       "categories": {
-        "politics": 9,
-        "health": 2,
-        "economy": 1
+        "politics": 8,
+        "health": 2
       }
     },
     "IT": {
@@ -236,12 +242,11 @@
       }
     },
     "YE": {
-      "score": 33,
-      "articleCount": 5,
+      "score": 40,
+      "articleCount": 4,
       "categories": {
         "politics": 3,
-        "crisis": 1,
-        "war": 1
+        "crisis": 1
       }
     },
     "LY": {
@@ -270,9 +275,9 @@
     },
     "RS": {
       "score": 50,
-      "articleCount": 4,
+      "articleCount": 3,
       "categories": {
-        "politics": 4
+        "politics": 3
       }
     },
     "AE": {
@@ -350,9 +355,9 @@
     },
     "AR": {
       "score": 50,
-      "articleCount": 4,
+      "articleCount": 3,
       "categories": {
-        "politics": 4
+        "politics": 3
       }
     },
     "QA": {
@@ -377,13 +382,6 @@
         "politics": 1
       }
     },
-    "KR": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
     "MA": {
       "score": 50,
       "articleCount": 1,
@@ -400,9 +398,9 @@
     },
     "BE": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     },
     "SO": {
@@ -411,16 +409,295 @@
       "categories": {
         "politics": 1
       }
-    },
-    "ES": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
     }
   },
   "articles": [
+    {
+      "hash": "cd6bcb65549a",
+      "title": "Traffic building north of Auckland as people head away for the long weekend",
+      "summary": "Traffic building north of Auckland as people head away for the long weekend",
+      "link": "https://www.rnz.co.nz/news/regions_auckland/2101514/traffic-building-north-of-auckland-as-people-head-away-for-the-long-weekend",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722175144
+    },
+    {
+      "hash": "34f2de119dd4",
+      "title": "Memorial service to be held for beloved K Rd pharmacist and community advocate Suresh Rama",
+      "summary": "Memorial service to be held for beloved K Rd pharmacist and community advocate Suresh Rama",
+      "link": "https://www.rnz.co.nz/news/community/2101590/memorial-service-to-be-held-for-beloved-k-rd-pharmacist-and-community-advocate-suresh-rama",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722168871
+    },
+    {
+      "hash": "8c709f89040e",
+      "title": "How to transform an underused balcony into a lush, functional living space",
+      "summary": "How to transform an underused balcony into a lush, functional living space",
+      "link": "https://www.abc.net.au/news/2026-10-23/transforming-underused-balcony-into-zones-for-living/107262594",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722165075
+    },
+    {
+      "hash": "e5bd008193b1",
+      "title": "Minister apologises for communication delay of alleged school knife attack",
+      "summary": "Minister apologises for communication delay of alleged school knife attack",
+      "link": "https://www.abc.net.au/news/2026-10-23/canberra-boy-in-court-for-alleged-knife-attack-on-peer/107300530",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792722159803
+    },
+    {
+      "hash": "1db71bbd6dc8",
+      "title": "New York City bans horse-drawn carriages",
+      "summary": "New York City bans horse-drawn carriages",
+      "link": "https://www.abc.net.au/news/2026-10-23/new-york-city-bans-horse-drawn-carriages/107300910",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722155146
+    },
+    {
+      "hash": "68d602106337",
+      "title": "Ex-University of Tokyo professor gets suspended sentence over bribes",
+      "summary": "Ex-University of Tokyo professor gets suspended sentence over bribes",
+      "link": "https://www.japantimes.co.jp/news/2026/10/23/japan/crime-legal/former-university-of-tokyo-professor-suspended-sentence/",
+      "source": "Japan Times",
+      "countryCode": "JP",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722150111
+    },
+    {
+      "hash": "897453070f84",
+      "title": "Education ministry to offer one-year teaching license course for working adults",
+      "summary": "Education ministry to offer one-year teaching license course for working adults",
+      "link": "https://www.japantimes.co.jp/news/2026/10/23/japan/teacher-licensing-working-adults/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722146446
+    },
+    {
+      "hash": "8253ca075862",
+      "title": "Japan eyes health checkup support for truant students",
+      "summary": "Japan eyes health checkup support for truant students",
+      "link": "https://www.japantimes.co.jp/news/2026/10/23/japan/truant-students-health-checkup-support/",
+      "source": "Japan Times",
+      "countryCode": "JP",
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792722142221
+    },
+    {
+      "hash": "c2304ee68829",
+      "title": "Rare Suu Kyi phone call to son signals shift in Myanmar junta strategy",
+      "summary": "Rare Suu Kyi phone call to son signals shift in Myanmar junta strategy",
+      "link": "https://www.scmp.com/news/asia/southeast-asia/article/3371841/rare-suu-kyi-phone-call-son-signals-shift-myanmar-junta-strategy",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722137846
+    },
+    {
+      "hash": "7ce3d720d64d",
+      "title": "Hong Kong elderly urged to stay indoors as air pollution spikes to serious levels",
+      "summary": "Hong Kong elderly urged to stay indoors as air pollution spikes to serious levels",
+      "link": "https://www.scmp.com/news/hong-kong/health-environment/article/3371819/hong-kong-elderly-urged-stay-indoors-air-pollution-spikes-serious-levels",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722133351
+    },
+    {
+      "hash": "493162874cf5",
+      "title": "China cancer patient who inspired hit film hopes to stop treatment after 35,000 pills over 2 decades",
+      "summary": "China cancer patient who inspired hit film hopes to stop treatment after 35,000 pills over 2 decades",
+      "link": "https://www.scmp.com/news/people-culture/china-personalities/article/3371839/china-cancer-patient-who-inspired-hit-film-hopes-stop-treatment-after-35000-pills-over-2-decades",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722127770
+    },
+    {
+      "hash": "dfaeb467ec30",
+      "title": "Trump says Musk restored Ukraine’s Starlink access amid Russia war",
+      "summary": "Trump says Musk restored Ukraine’s Starlink access amid Russia war",
+      "link": "https://www.aljazeera.com/news/2026/10/23/trump-says-musk-restored-ukraines-starlink-access-amid-russia-war?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792722117149
+    },
+    {
+      "hash": "7b2e475e2af1",
+      "title": "Will ICE agents play a role in the 2026 US midterm elections?",
+      "summary": "Will ICE agents play a role in the 2026 US midterm elections?",
+      "link": "https://www.aljazeera.com/news/2026/10/23/will-ice-agents-play-a-role-in-the-2026-us-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792722111565
+    },
+    {
+      "hash": "94bec17baa68",
+      "title": "Candidato ao governo do Acre, Alan Rick (Republicanos) é entrevistado na Rede Amazônica",
+      "summary": "Candidato ao governo do Acre, Alan Rick (Republicanos) é entrevistado na Rede Amazônica",
+      "link": "https://g1.globo.com/ac/acre/eleicoes/2026/ao-vivo/candidato-ao-governo-do-acre-alan-rick-republicanos-e-entrevistado-na-rede-amazonica.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722102904
+    },
+    {
+      "hash": "b2ae67b9ecf0",
+      "title": "ASSISTA: acompanhe o debate com Lorenzo Pazolini e Ricardo Ferraço para governo do ES na TV Gazeta",
+      "summary": "ASSISTA: acompanhe o debate com Lorenzo Pazolini e Ricardo Ferraço para governo do ES na TV Gazeta",
+      "link": "https://g1.globo.com/es/espirito-santo/eleicoes/2026/ao-vivo/debate-lorenzo-pazolini-ricardo-ferraco-governo-espirito-santo.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722098112
+    },
+    {
+      "hash": "c03a62331cd0",
+      "title": "Acompanhe o dia de votação e a apuração dos votos no 2º turno no Tocantins",
+      "summary": "Acompanhe o dia de votação e a apuração dos votos no 2º turno no Tocantins",
+      "link": "https://g1.globo.com/to/tocantins/eleicoes/2026/ao-vivo/cobertura-apuracao-votacao-2-turno-tocantins.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722094302
+    },
+    {
+      "hash": "63c82379aca4",
+      "title": "Airbnb scraps guest checkout chores such as cleaning",
+      "summary": "Airbnb scraps guest checkout chores such as cleaning",
+      "link": "https://www.dw.com/en/airbnb-scraps-guest-checkout-chores-such-as-cleaning/a-79738340?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722090707
+    },
+    {
+      "hash": "7c6353722aa7",
+      "title": "North Korea plans to resume propaganda broadcasts along border with South Korea",
+      "summary": "North Korea plans to resume propaganda broadcasts along border with South Korea",
+      "link": "https://news.sky.com/story/north-korea-plans-to-resume-propaganda-broadcasts-along-border-with-south-korea-13602125",
+      "source": "Sky News",
+      "countryCode": "KR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722086344
+    },
+    {
+      "hash": "c6d00b8cdd4d",
+      "title": "أستراليا تفرض عقوبات على كوريين شماليين لممارستهم «أنشطة إلكترونية إجرامية».",
+      "summary": "أستراليا تفرض عقوبات على كوريين شماليين لممارستهم «أنشطة إلكترونية إجرامية».",
+      "link": "https://aawsat.com/node/5332560",
+      "source": "الشرق الأوسط",
+      "countryCode": "AU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722081494
+    },
+    {
+      "hash": "9a3da6a15e64",
+      "title": "الحر يقتل 50 ألف شخص في أوروبا هذا الصيف",
+      "summary": "الحر يقتل 50 ألف شخص في أوروبا هذا الصيف",
+      "link": "https://www.skynewsarabia.com/world/1900049-%D8%A7%D9%84%D8%AD%D8%B1-%D9%8A%D9%82%D8%AA%D9%84-50-%D8%A3%D9%84%D9%81-%D8%B4%D8%AE%D8%B5-%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7-%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D8%B5%D9%8A%D9%81",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792722077927
+    },
+    {
+      "hash": "46931ebf3c37",
+      "title": "\"إنه نظام شرير حقا\".. ترامب يتهم إيران بتعمد رفع أسعار النفط قبيل الانتخابات",
+      "summary": "\"إنه نظام شرير حقا\".. ترامب يتهم إيران بتعمد رفع أسعار النفط قبيل الانتخابات",
+      "link": "https://www.dw.com/ar/إنه-نظام-شرير-حقا-ترامب-يتهم-إيران-بتعمد-رفع-أسعار-النفط-قبيل-الانتخابات/live-79728082?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792722072837
+    },
+    {
+      "hash": "ce8288557b57",
+      "title": "جماعة أنصار الله تقول إنها استهدفت وزارة الدفاع السعودية، والتحالف يعلن اعتراض مسيّرات وصواريخ باليستية",
+      "summary": "جماعة أنصار الله تقول إنها استهدفت وزارة الدفاع السعودية، والتحالف يعلن اعتراض مسيّرات وصواريخ باليستية",
+      "link": "https://www.bbc.com/arabic/articles/c9203p26rj8do?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792722068787
+    },
     {
       "hash": "68bcbd5fe6ee",
       "title": "EDS patients in limbo as Hamilton surgeon Chris Holdaway stops seeing patients",
@@ -7934,292 +8211,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792664728968
-    },
-    {
-      "hash": "a498dabf3636",
-      "title": "ثغرة في \"بي إتش بي\" تهدد 30 مليون موقع إلكتروني وتستدعي استنفاراً عالمياً، فما هي وكيف تؤثر علينا؟",
-      "summary": "ثغرة في \"بي إتش بي\" تهدد 30 مليون موقع إلكتروني وتستدعي استنفاراً عالمياً، فما هي وكيف تؤثر علينا؟",
-      "link": "https://www.bbc.com/arabic/articles/cm15jpx771lyo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792664726030
-    },
-    {
-      "hash": "aff0c0b8248e",
-      "title": "مقتل أربعة أشخاص وإصابة 18 في هجمات على مطار الدمام وحقل شيبة النفطي بالسعودية",
-      "summary": "مقتل أربعة أشخاص وإصابة 18 في هجمات على مطار الدمام وحقل شيبة النفطي بالسعودية",
-      "link": "https://www.bbc.com/arabic/articles/cr78p48yy7qeo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792664718832
-    },
-    {
-      "hash": "c958a9196d05",
-      "title": "Bill Clinton quotes Quran and condemns anti-Muslim rhetoric",
-      "summary": "Bill Clinton quotes Quran and condemns anti-Muslim rhetoric",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/bill-clinton-quotes-quran-and-condemns-anti-muslim-rhetoric?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661374693
-    },
-    {
-      "hash": "ec6aa71ed310",
-      "title": "Israeli elections: Is it just right wing versus right?",
-      "summary": "Israeli elections: Is it just right wing versus right?",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/22/israeli-elections-is-it-just-right-wing-versus-right?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792661370848
-    },
-    {
-      "hash": "ec17c523b4c5",
-      "title": "Fighting rages in Yemen’s Taiz as UN warns nearly 260,000 now displaced",
-      "summary": "Fighting rages in Yemen’s Taiz as UN warns nearly 260,000 now displaced",
-      "link": "https://www.aljazeera.com/news/2026/10/22/fighting-rages-in-yemens-taiz-as-un-warns-nearly-260000-now-displaced?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "YE",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792661367502
-    },
-    {
-      "hash": "5d9c80d70de5",
-      "title": "Hold hearing on Nigeria’s investment treaty risks now, Policy Alert tells National Assembly",
-      "summary": "Hold hearing on Nigeria’s investment treaty risks now, Policy Alert tells National Assembly",
-      "link": "https://www.premiumtimesng.com/news/top-news/919141-hold-hearing-on-nigerias-investment-treaty-risks-now-policy-alert-tells-national-assembly.html",
-      "source": "Premium Times",
-      "countryCode": "NG",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1792661363602
-    },
-    {
-      "hash": "3466dfafd733",
-      "title": "Ebola: How months of Ebola preparedness helped Nigeria confirm first case within 24 hours — Minister",
-      "summary": "Ebola: How months of Ebola preparedness helped Nigeria confirm first case within 24 hours — Minister",
-      "link": "https://www.premiumtimesng.com/health/health-news/919142-ebola-how-months-of-ebola-preparedness-helped-nigeria-confirm-first-case-within-24-hours-minister.html",
-      "source": "Premium Times",
-      "countryCode": "NG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792661359196
-    },
-    {
-      "hash": "195affefdfaa",
-      "title": "Abiodun salutes new Alaperu of Iperu-Remo, seeks peace, unity, dev’t",
-      "summary": "Abiodun salutes new Alaperu of Iperu-Remo, seeks peace, unity, dev’t",
-      "link": "https://www.premiumtimesng.com/promoted/919149-abiodun-salutes-new-alaperu-of-iperu-remo-seeks-peace-unity-devt.html",
-      "source": "Premium Times",
-      "countryCode": "PE",
-      "category": "positive",
-      "sentiment": "positive",
-      "mood": "hope",
-      "impact": 75,
-      "timestamp": 1792661354938
-    },
-    {
-      "hash": "47c263371bbc",
-      "title": "'Deplorable': Belgium condemns ex-DRC leader Kabila's launch of political-military group",
-      "summary": "'Deplorable': Belgium condemns ex-DRC leader Kabila's launch of political-military group",
-      "link": "http://www.africanews.com/2026/10/22/deplorable-belgium-condemns-ex-drc-leader-kabilas-launch-of-political-military-group/",
-      "source": "Africanews",
-      "countryCode": "BE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661347493
-    },
-    {
-      "hash": "8d0a66709855",
-      "title": "Eleições 2026: Grandes colégios eleitorais puxam participação e têm menor abstenção no 1º turno no Triângulo e Alto Paranaíba",
-      "summary": "Eleições 2026: Grandes colégios eleitorais puxam participação e têm menor abstenção no 1º turno no Triângulo e Alto Paranaíba",
-      "link": "https://g1.globo.com/mg/triangulo-mineiro/eleicoes/2026/noticia/2026/10/22/eleicoes-2026-grandes-colegios-eleitorais-puxam-participacao-e-tem-menor-abstencao-no-1o-turno-no-triangulo-e-alto-paranaiba.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792661342364
-    },
-    {
-      "hash": "6b31c86ddf06",
-      "title": "Eleições 2026: Grandes colégios eleitorais lideram participação e têm menor abstenção no 1º turno na Zona da Mata e Campo das Vertentes",
-      "summary": "Eleições 2026: Grandes colégios eleitorais lideram participação e têm menor abstenção no 1º turno na Zona da Mata e Campo das Vertentes",
-      "link": "https://g1.globo.com/mg/zona-da-mata/eleicoes/2026/noticia/2026/10/22/eleicoes-2026-grandes-colegios-eleitorais-lideram-participacao-e-tem-menor-abstencao-no-1o-turno-na-zona-da-mata-e-campo-das-vertentes.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792661338012
-    },
-    {
-      "hash": "799a074d5d6f",
-      "title": "Trump diz que CEO da Google rejeitou seu pedido para renomear Oceano Atlântico para 'Oceano das Américas'; VÍDEO",
-      "summary": "Trump diz que CEO da Google rejeitou seu pedido para renomear Oceano Atlântico para 'Oceano das Américas'; VÍDEO",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/22/trump-ligou-ceo-google-pediu-para-renomear-oceano-atlantico-oceano-das-americas-rejeitado-video.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661334328
-    },
-    {
-      "hash": "8d328dcc5ecf",
-      "title": "Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti",
-      "summary": "Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti",
-      "link": "https://www.npr.org/2026/10/22/nx-s1-6012029/bukele-military-operation-haiti",
-      "source": "NPR World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661330538
-    },
-    {
-      "hash": "3ccdbe13d976",
-      "title": "See how Big Tech is transforming Spain&apos;s landscape",
-      "summary": "See how Big Tech is transforming Spain&apos;s landscape",
-      "link": "https://www.npr.org/2026/10/22/nx-s1-5991641/ai-data-centers-spain-environmental-impact",
-      "source": "NPR World",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661326708
-    },
-    {
-      "hash": "827bdb9fc8dc",
-      "title": "Space Debris Found Twice Within Days Amid ‘Growing Casualty Risk’",
-      "summary": "Space Debris Found Twice Within Days Amid ‘Growing Casualty Risk’",
-      "link": "https://www.nytimes.com/2026/10/22/world/asia/space-debris-indonesia-minnesota.html",
-      "source": "NY Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661321583
-    },
-    {
-      "hash": "0db81a0b93e7",
-      "title": "Serbian Election Underscores the Region’s Long Political Limbo",
-      "summary": "Serbian Election Underscores the Region’s Long Political Limbo",
-      "link": "https://www.nytimes.com/2026/10/22/world/europe/serbia-elections-nationalist-politics.html",
-      "source": "NY Times",
-      "countryCode": "RS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792661315949
-    },
-    {
-      "hash": "c419aa593b11",
-      "title": "Meta to pay billions over ‘Cambridge Analytica’ privacy abuse",
-      "summary": "Meta to pay billions over ‘Cambridge Analytica’ privacy abuse",
-      "link": "<![CDATA[https://rt-english.com/news/647504-meta-billion-fine-cambridge-analytica/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661311263
-    },
-    {
-      "hash": "17860fdbc63f",
-      "title": "La oposición carga contra Ayuso por el abrazo a Milei y la presidenta defiende su gestión: “Argentina es el país que más crece”",
-      "summary": "La oposición carga contra Ayuso por el abrazo a Milei y la presidenta defiende su gestión: “Argentina es el país que más crece”",
-      "link": "https://elpais.com/espana/madrid/2026-10-22/psoe-y-mas-madrid-esperan-a-ayuso-en-la-asamblea-con-todo-el-arsenal-tras-su-efusivo-abrazo-con-milei.html",
-      "source": "El País",
-      "countryCode": "AR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792661305597
-    },
-    {
-      "hash": "a5092a7106f3",
-      "title": "Álvarez de Toledo y Sémper serán los números dos y tres de Feijóo en la lista por Madrid",
-      "summary": "Álvarez de Toledo y Sémper serán los números dos y tres de Feijóo en la lista por Madrid",
-      "link": "https://elpais.com/espana/2026-10-22/alvarez-de-toledo-y-semper-seran-los-numeros-dos-y-tres-de-feijoo-en-la-lista-por-madrid.html",
-      "source": "El País",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661301824
-    },
-    {
-      "hash": "6291a1c2b06a",
-      "title": "Emmanuel Macron défend sa tournée de trois jours dans le golfe Persique, en pleine tempête politique en France",
-      "summary": "Emmanuel Macron défend sa tournée de trois jours dans le golfe Persique, en pleine tempête politique en France",
-      "link": "https://www.lemonde.fr/international/article/2026/10/22/emmanuel-macron-defend-sa-tournee-de-trois-jours-dans-le-golfe-persique-en-pleine-tempete-politique-en-france_6798580_3210.html",
-      "source": "Le Monde",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661285320
-    },
-    {
-      "hash": "56fe12a10784",
-      "title": "Interpellés devant leurs lycées début octobre, des élèves racontent leur première garde à vue : « Comme si j’étais une criminelle »",
-      "summary": "Interpellés devant leurs lycées début octobre, des élèves racontent leur première garde à vue : « Comme si j’étais une criminelle »",
-      "link": "https://www.lemonde.fr/societe/article/2026/10/22/comme-si-j-etais-une-criminelle-interpelles-devant-leurs-lycees-des-eleves-racontent-leur-premiere-garde-a-vue_6798586_3224.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661279992
-    },
-    {
-      "hash": "e61f3f696a3b",
-      "title": "World’s largest wealth fund posts $30bn loss as rising rates hit bonds",
-      "summary": "World’s largest wealth fund posts $30bn loss as rising rates hit bonds",
-      "link": "https://www.euronews.com/2026/10/22/worlds-largest-wealth-fund-posts-30bn-loss-as-rising-rates-hit-bonds",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792661275479
     }
   ]
 }
