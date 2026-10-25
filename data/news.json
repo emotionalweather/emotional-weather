@@ -1,42 +1,69 @@
 {
-  "updated_at": "2026-10-25T17:21:20.317Z",
+  "updated_at": "2026-10-25T18:19:43.222Z",
   "total": 600,
-  "new_count": 39,
+  "new_count": 35,
   "ai_success": 0,
-  "ai_fallback": 39,
+  "ai_fallback": 35,
   "global": {
     "score": 45,
     "totalArticles": 600,
     "categories": {
-      "politics": 486,
-      "culture": 11,
+      "politics": 482,
+      "war": 60,
+      "health": 8,
+      "disaster": 8,
+      "culture": 12,
       "crisis": 10,
-      "war": 56,
       "economy": 11,
-      "health": 7,
       "sports": 6,
-      "positive": 3,
-      "disaster": 10
+      "positive": 3
     }
   },
   "countries": {
     "VE": {
       "score": 50,
-      "articleCount": 9,
+      "articleCount": 12,
       "categories": {
-        "politics": 9
+        "politics": 12
       }
     },
-    "ES": {
-      "score": 61,
-      "articleCount": 4,
+    "US": {
+      "score": 45,
+      "articleCount": 14,
       "categories": {
-        "politics": 3,
-        "culture": 1
+        "politics": 12,
+        "culture": 1,
+        "war": 1
+      }
+    },
+    "FR": {
+      "score": 40,
+      "articleCount": 32,
+      "categories": {
+        "politics": 24,
+        "crisis": 5,
+        "positive": 1,
+        "war": 2
+      }
+    },
+    "UA": {
+      "score": 43,
+      "articleCount": 8,
+      "categories": {
+        "politics": 7,
+        "war": 1
+      }
+    },
+    "IR": {
+      "score": 24,
+      "articleCount": 20,
+      "categories": {
+        "war": 7,
+        "politics": 13
       }
     },
     "IL": {
-      "score": 33,
+      "score": 34,
       "articleCount": 34,
       "categories": {
         "politics": 25,
@@ -45,48 +72,86 @@
         "economy": 1
       }
     },
-    "BR": {
-      "score": 50,
-      "articleCount": 25,
+    "JO": {
+      "score": 9,
+      "articleCount": 5,
       "categories": {
-        "politics": 25
+        "politics": 1,
+        "war": 4
+      }
+    },
+    "PS": {
+      "score": 14,
+      "articleCount": 6,
+      "categories": {
+        "politics": 2,
+        "war": 4
       }
     },
     "NG": {
-      "score": 46,
+      "score": 38,
+      "articleCount": 14,
+      "categories": {
+        "war": 1,
+        "politics": 12,
+        "health": 1
+      }
+    },
+    "CA": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "RS": {
+      "score": 36,
       "articleCount": 16,
       "categories": {
-        "politics": 14,
-        "health": 1,
+        "war": 2,
+        "politics": 13,
+        "culture": 1
+      }
+    },
+    "BR": {
+      "score": 50,
+      "articleCount": 26,
+      "categories": {
+        "politics": 26
+      }
+    },
+    "IQ": {
+      "score": 33,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
         "war": 1
       }
     },
-    "US": {
+    "EG": {
       "score": 44,
-      "articleCount": 13,
+      "articleCount": 6,
       "categories": {
-        "culture": 1,
-        "politics": 11,
+        "politics": 4,
+        "economy": 1,
         "war": 1
       }
     },
     "SA": {
-      "score": 34,
-      "articleCount": 23,
+      "score": 31,
+      "articleCount": 24,
       "categories": {
+        "war": 7,
         "politics": 16,
-        "sports": 1,
-        "war": 6
+        "sports": 1
       }
     },
-    "FR": {
-      "score": 39,
-      "articleCount": 30,
+    "ES": {
+      "score": 62,
+      "articleCount": 3,
       "categories": {
-        "politics": 22,
-        "crisis": 5,
-        "positive": 1,
-        "war": 2
+        "politics": 2,
+        "culture": 1
       }
     },
     "SE": {
@@ -105,14 +170,6 @@
         "politics": 2
       }
     },
-    "IR": {
-      "score": 33,
-      "articleCount": 18,
-      "categories": {
-        "politics": 13,
-        "war": 5
-      }
-    },
     "IT": {
       "score": 50,
       "articleCount": 2,
@@ -127,37 +184,11 @@
         "politics": 1
       }
     },
-    "PS": {
-      "score": 7,
-      "articleCount": 5,
-      "categories": {
-        "politics": 1,
-        "war": 4
-      }
-    },
     "PT": {
       "score": 50,
       "articleCount": 3,
       "categories": {
         "politics": 3
-      }
-    },
-    "RS": {
-      "score": 44,
-      "articleCount": 15,
-      "categories": {
-        "politics": 13,
-        "war": 1,
-        "culture": 1
-      }
-    },
-    "EG": {
-      "score": 42,
-      "articleCount": 5,
-      "categories": {
-        "politics": 3,
-        "economy": 1,
-        "war": 1
       }
     },
     "GB": {
@@ -169,11 +200,11 @@
       }
     },
     "IN": {
-      "score": 59,
-      "articleCount": 6,
+      "score": 60,
+      "articleCount": 5,
       "categories": {
         "culture": 1,
-        "politics": 5
+        "politics": 4
       }
     },
     "MY": {
@@ -183,27 +214,11 @@
         "politics": 1
       }
     },
-    "UA": {
-      "score": 40,
-      "articleCount": 9,
-      "categories": {
-        "politics": 7,
-        "war": 1,
-        "disaster": 1
-      }
-    },
     "SD": {
       "score": 0,
       "articleCount": 1,
       "categories": {
         "war": 1
-      }
-    },
-    "JO": {
-      "score": 0,
-      "articleCount": 4,
-      "categories": {
-        "war": 4
       }
     },
     "YE": {
@@ -253,14 +268,6 @@
         "politics": 5
       }
     },
-    "IQ": {
-      "score": 22,
-      "articleCount": 2,
-      "categories": {
-        "politics": 1,
-        "war": 1
-      }
-    },
     "NZ": {
       "score": 50,
       "articleCount": 6,
@@ -270,17 +277,17 @@
     },
     "JP": {
       "score": 44,
-      "articleCount": 7,
+      "articleCount": 6,
       "categories": {
-        "politics": 6,
+        "politics": 5,
         "disaster": 1
       }
     },
     "AU": {
       "score": 50,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 3
+        "politics": 2
       }
     },
     "UG": {
@@ -335,13 +342,6 @@
         "politics": 1
       }
     },
-    "CA": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
     "LB": {
       "score": 50,
       "articleCount": 1,
@@ -373,16 +373,16 @@
     },
     "OM": {
       "score": 50,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 3
+        "politics": 2
       }
     },
     "PK": {
       "score": 50,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 3
+        "politics": 2
       }
     },
     "KR": {
@@ -391,16 +391,464 @@
       "categories": {
         "politics": 1
       }
-    },
-    "SG": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "5aeda9dbb309",
+      "title": "Enrolments closed, advance voting begins for 2026 Election",
+      "summary": "Enrolments closed, advance voting begins for 2026 Election",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2159477/enrolments-closed-advance-voting-begins-for-2026-election",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952382219
+    },
+    {
+      "hash": "4419fed8dea4",
+      "title": "Educators weighing pluses and minuses of a 'digital detox' in school",
+      "summary": "Educators weighing pluses and minuses of a 'digital detox' in school",
+      "link": "https://www.abc.net.au/news/2026-10-26/digital-detox-for-schools-in-australia-and-overseas/107300926",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952378266
+    },
+    {
+      "hash": "5c3c77f5fd07",
+      "title": "The history quiz is back. Can you ace it, or will you be terminated?",
+      "summary": "The history quiz is back. Can you ace it, or will you be terminated?",
+      "link": "https://www.abc.net.au/news/2026-10-26/this-week-in-history-quiz-october-26/107298978",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952374865
+    },
+    {
+      "hash": "21281fdf30f6",
+      "title": "The economic outlook for 2027 is stark. Ordinary workers will wear the costs",
+      "summary": "The economic outlook for 2027 is stark. Ordinary workers will wear the costs",
+      "link": "https://www.abc.net.au/news/2026-10-26/economic-outlook-for-2027-feels-shaky/107299778",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952371491
+    },
+    {
+      "hash": "88bace7d5175",
+      "title": "Venezuela opposition leader Maria Corina Machado returns home after months in exile",
+      "summary": "Venezuela opposition leader Maria Corina Machado returns home after months in exile",
+      "link": "https://www.straitstimes.com/world/venezuela-opposition-leader-maria-corina-machado-returns-to-venezuela",
+      "source": "Straits Times",
+      "countryCode": "VE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952368246
+    },
+    {
+      "hash": "985b921566b4",
+      "title": "Thousands protest Czech government's public media overhaul after rushed vote",
+      "summary": "Thousands protest Czech government's public media overhaul after rushed vote",
+      "link": "https://www.straitstimes.com/world/europe/thousands-protest-czech-governments-public-media-overhaul-after-rushed-vote",
+      "source": "Straits Times",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952364734
+    },
+    {
+      "hash": "c59583a0fb5b",
+      "title": "France's Le Pen launches presidential bid as protests rattle the nation",
+      "summary": "France's Le Pen launches presidential bid as protests rattle the nation",
+      "link": "https://www.straitstimes.com/world/europe/frances-le-pen-launches-presidential-bid-as-protests-rattle-the-nation",
+      "source": "Straits Times",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952361019
+    },
+    {
+      "hash": "f539d9703c4a",
+      "title": "Shadab, Rauf pull off miracle with record 89-run stand for last wicket as PAK stun ENG",
+      "summary": "Shadab, Rauf pull off miracle with record 89-run stand for last wicket as PAK stun ENG",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/sports/cricket/news/shadab-khan-and-haris-rauf-pull-off-miracle-with-record-89-run-partnership-for-last-wicket-as-pakistan-stun-england-in-lahore/articleshow/135194965.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952357460
+    },
+    {
+      "hash": "f4aca97e41fd",
+      "title": "1,200km reach: How Russia’s new missile adds to Ukraine’s air defence woes",
+      "summary": "1,200km reach: How Russia’s new missile adds to Ukraine’s air defence woes",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/defence/international/1200km-reach-western-parts-how-russias-new-filin-missile-adds-to-ukraines-air-defence-woes/articleshow/135195999.cms]]>",
+      "source": "Times of India",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952354324
+    },
+    {
+      "hash": "f24751816645",
+      "title": "Netanyahu warns Iran may try to disrupt election, says ‘don’t test us’",
+      "summary": "Netanyahu warns Iran may try to disrupt election, says ‘don’t test us’",
+      "link": "https://www.scmp.com/news/world/middle-east/article/3372091/netanyahu-warns-iran-may-try-disrupt-election-says-dont-test-us",
+      "source": "SCMP",
+      "countryCode": "IR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792952350182
+    },
+    {
+      "hash": "b141415cedec",
+      "title": "France’s Le Pen vows to restore ‘rule of law’ at presidential campaign launch",
+      "summary": "France’s Le Pen vows to restore ‘rule of law’ at presidential campaign launch",
+      "link": "https://www.scmp.com/news/world/europe/article/3372092/frances-le-pen-vows-restore-rule-law-presidential-campaign-launch",
+      "source": "SCMP",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952342059
+    },
+    {
+      "hash": "09238b810332",
+      "title": "US and Israel elections: New leaders, same policies?",
+      "summary": "US and Israel elections: New leaders, same policies?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/us-and-israel-elections-new-leaders-same-policies?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952338779
+    },
+    {
+      "hash": "b3f7170ebee8",
+      "title": "Jordan FA chief says AFC Congress ‘pure politics’ at behest of Infantino",
+      "summary": "Jordan FA chief says AFC Congress ‘pure politics’ at behest of Infantino",
+      "link": "https://www.aljazeera.com/sports/2026/10/25/jordan-fa-chief-says-afc-congress-pure-politics-at-behest-of-infantino?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "JO",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952335040
+    },
+    {
+      "hash": "793513bad383",
+      "title": "Israeli air strike on Gaza City university kills three people",
+      "summary": "Israeli air strike on Gaza City university kills three people",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-air-strike-on-gaza-city-university-kills-three-people?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "PS",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952329983
+    },
+    {
+      "hash": "888f9b68f00a",
+      "title": "Ebola: NCDC warns misinformation could undermine Nigeria’s response",
+      "summary": "Ebola: NCDC warns misinformation could undermine Nigeria’s response",
+      "link": "https://www.premiumtimesng.com/health/health-news/920169-ebola-ncdc-warns-misinformation-could-undermine-nigerias-response.html",
+      "source": "Premium Times",
+      "countryCode": "NG",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792952323139
+    },
+    {
+      "hash": "e67f161cf626",
+      "title": "Ebola: NCDC urges hospitals to act before laboratory confirmation",
+      "summary": "Ebola: NCDC urges hospitals to act before laboratory confirmation",
+      "link": "https://www.premiumtimesng.com/news/920178-ebola-ncdc-urges-hospitals-to-act-before-laboratory-confirmation.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792952317562
+    },
+    {
+      "hash": "45b6a6f8d50e",
+      "title": "Uneven petrol prices, lingering hardship as Zaria residents question NNPC discount",
+      "summary": "Uneven petrol prices, lingering hardship as Zaria residents question NNPC discount",
+      "link": "https://www.premiumtimesng.com/regional/nwest/920175-uneven-petrol-prices-lingering-hardship-as-zaria-residents-question-nnpc-discount.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952312008
+    },
+    {
+      "hash": "a283eb903002",
+      "title": "Eleitores da PB denunciam falta de ônibus intermunicipais para votar no 2º turno das Eleições 2026",
+      "summary": "Eleitores da PB denunciam falta de ônibus intermunicipais para votar no 2º turno das Eleições 2026",
+      "link": "https://g1.globo.com/pb/paraiba/eleicoes/2026/noticia/2026/10/25/eleitores-da-pb-denunciam-falta-de-onibus-intermunicipais-para-votar-no-2o-turno-das-eleicoes-2026.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952307923
+    },
+    {
+      "hash": "0c6cc723f4b1",
+      "title": "EM TEMPO REAL: acompanhe o dia de votação e a apuração dos votos no 2º turno no Espírito Santo",
+      "summary": "EM TEMPO REAL: acompanhe o dia de votação e a apuração dos votos no 2º turno no Espírito Santo",
+      "link": "https://g1.globo.com/es/espirito-santo/eleicoes/2026/ao-vivo/cobertura-apuracao-votacao-2-turno-espirito-santo.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952303853
+    },
+    {
+      "hash": "c951ec41bc72",
+      "title": "María Corina Machado returns to Venezuela after ten months abroad and seven failed attempts",
+      "summary": "María Corina Machado returns to Venezuela after ten months abroad and seven failed attempts",
+      "link": "<![CDATA[https://en.mercopress.com/2026/10/25/maria-corina-machado-returns-to-venezuela-after-ten-months-abroad-and-seven-failed-attempts?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
+      "source": "MercoPress",
+      "countryCode": "VE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952296416
+    },
+    {
+      "hash": "d94ed4eb9a65",
+      "title": "Canada needs concrete results from EU summit this week, former envoy says",
+      "summary": "Canada needs concrete results from EU summit this week, former envoy says",
+      "link": "https://www.cbc.ca/news/politics/canada-eu-summit-concrete-results-9.7395409?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": "CA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952292725
+    },
+    {
+      "hash": "5c95cbb9e9d3",
+      "title": "Vucic’s mother attacked during Serbian election – SNS",
+      "summary": "Vucic’s mother attacked during Serbian election – SNS",
+      "link": "<![CDATA[https://rt-english.com/news/647640-vucic-mother-attacked-election-serbia/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "RS",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792952289359
+    },
+    {
+      "hash": "12bf397f1e69",
+      "title": "El regreso de María Corina Machado a Venezuela, en vivo | Marco Rubio: “Las condiciones que permiten el regreso de Machado son resultado de las conversaciones apoyadas por EE UU”",
+      "summary": "El regreso de María Corina Machado a Venezuela, en vivo | Marco Rubio: “Las condiciones que permiten el regreso de Machado son resultado de las conversaciones apoyadas por EE UU”",
+      "link": "https://elpais.com/america/2026-10-25/el-regreso-de-maria-corina-machado-a-venezuela-en-vivo.html",
+      "source": "El País",
+      "countryCode": "VE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952284756
+    },
+    {
+      "hash": "575a4aaffa48",
+      "title": "Congrès du RN : pour son premier discours de campagne, Marine Le Pen dit vouloir présider à la « renaissance » de la France",
+      "summary": "Congrès du RN : pour son premier discours de campagne, Marine Le Pen dit vouloir présider à la « renaissance » de la France",
+      "link": "https://www.lemonde.fr/politique/article/2026/10/25/congres-du-rn-pour-son-premier-discours-de-campagne-marine-le-pen-dit-vouloir-presider-a-la-renaissance-de-la-france_6800086_823449.html",
+      "source": "Le Monde",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952281026
+    },
+    {
+      "hash": "6fd03be543aa",
+      "title": "EN DIRECT, élection présidentielle au Brésil : Lula ou Flavio Bolsonaro, les Brésiliens appelés à choisir entre le sortant et le fils de l’ancien président",
+      "summary": "EN DIRECT, élection présidentielle au Brésil : Lula ou Flavio Bolsonaro, les Brésiliens appelés à choisir entre le sortant et le fils de l’ancien président",
+      "link": "https://www.lemonde.fr/international/live/2026/10/25/en-direct-election-presidentielle-au-bresil-les-bresiliens-appeles-a-choisir-entre-le-president-sortant-lula-et-le-candidat-d-extreme-droite-flavio-bolsonaro_6800074_3210.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952277406
+    },
+    {
+      "hash": "58e01abced8d",
+      "title": "Brazil: long queues and river journeys mark decisive presidential vote",
+      "summary": "Brazil: long queues and river journeys mark decisive presidential vote",
+      "link": "https://www.euronews.com/video/2026/10/25/brazil-long-queues-and-river-journeys-mark-decisive-presidential-vote",
+      "source": "Euronews English",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792952273306
+    },
+    {
+      "hash": "6e7453144d72",
+      "title": "«البريميرليغ»: نيوكاسل يعود للانتصارات... وهال يتعادل مع برينتفورد",
+      "summary": "«البريميرليغ»: نيوكاسل يعود للانتصارات... وهال يتعادل مع برينتفورد",
+      "link": "https://aawsat.com/node/5333552",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952269241
+    },
+    {
+      "hash": "ae2c5e0e58f4",
+      "title": "آلاف العراقيين يحيون الذكرى السابعة لـ«مظاهرات تشرين»",
+      "summary": "آلاف العراقيين يحيون الذكرى السابعة لـ«مظاهرات تشرين»",
+      "link": "https://aawsat.com/node/5333554",
+      "source": "الشرق الأوسط",
+      "countryCode": "IQ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952265873
+    },
+    {
+      "hash": "04cd6378b4c3",
+      "title": "«الكونفدرالية الأفريقية»: الشحات يقود الأهلي المصري لدور المجموعات",
+      "summary": "«الكونفدرالية الأفريقية»: الشحات يقود الأهلي المصري لدور المجموعات",
+      "link": "https://aawsat.com/node/5333556",
+      "source": "الشرق الأوسط",
+      "countryCode": "EG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952261163
+    },
+    {
+      "hash": "2a607bb621ce",
+      "title": "البرازيل: طوابير طويلة ورحلات نهرية ترسم ملامح التصويت الرئاسي الحاسم",
+      "summary": "البرازيل: طوابير طويلة ورحلات نهرية ترسم ملامح التصويت الرئاسي الحاسم",
+      "link": "https://arabic.euronews.com/video/2026/10/25/brazil-long-queues-and-river-journeys-mark-decisive-presidential-vote",
+      "source": "Euronews عربي",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952257335
+    },
+    {
+      "hash": "9e97f78ee96a",
+      "title": "قبيل الانتخابات.. نتنياهو ينشر صورة لانفجار نووي في تل أبيب ويثير غضب المعارضة",
+      "summary": "قبيل الانتخابات.. نتنياهو ينشر صورة لانفجار نووي في تل أبيب ويثير غضب المعارضة",
+      "link": "https://arabic.euronews.com/2026/10/25/netanyahu-israel-iran-nuclear-threat-tel-aviv-elections-ai",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792952253644
+    },
+    {
+      "hash": "9a01849fa897",
+      "title": "زعيمة المعارضة الفنزويلية تعود بعد نحو عام بالمنفى",
+      "summary": "زعيمة المعارضة الفنزويلية تعود بعد نحو عام بالمنفى",
+      "link": "https://www.skynewsarabia.com/world/1900525-%D8%B2%D8%B9%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%D8%A9-%D8%A7%D9%84%D9%81%D9%86%D8%B2%D9%88%D9%8A%D9%84%D9%8A%D8%A9-%D8%AA%D8%B9%D9%88%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%B9%D8%A7%D9%85-%D8%A8%D8%A7%D9%84%D9%85%D9%86%D9%81%D9%89",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792952249520
+    },
+    {
+      "hash": "ba558f0ea832",
+      "title": "إيران على وقع تهديدات الحرب.. قلق واستعداد للأسوأ",
+      "summary": "إيران على وقع تهديدات الحرب.. قلق واستعداد للأسوأ",
+      "link": "https://www.skynewsarabia.com/world/1900513-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D9%82%D8%B9-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D9%82%D9%84%D9%82-%D9%88%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF-%D9%84%D9%84%D8%A3%D8%B3%D9%88%D8%A3",
+      "source": "Sky News عربية",
+      "countryCode": "IR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792952245347
+    },
+    {
+      "hash": "46b5a6df87d1",
+      "title": "السعودية تتطلع إلى واشنطن للحصول على ميزة في مجال الذكاء الاصطناعي في ظل التصعيد مع الحوثيين",
+      "summary": "السعودية تتطلع إلى واشنطن للحصول على ميزة في مجال الذكاء الاصطناعي في ظل التصعيد مع الحوثيين",
+      "link": "https://www.dw.com/ar/السعودية-تتطلع-إلى-واشنطن-للحصول-على-ميزة-في-مجال-الذكاء-الاصطناعي-في-ظل-التصعيد-مع-الحوثيين/a-79746787?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792952241690
+    },
+    {
+      "hash": "57bb86fe255f",
+      "title": "السعودية تعلن اعتراض 10 صواريخ حوثية و\"أنصار الله\" تتهمها بشن 56 غارة على اليمن",
+      "summary": "السعودية تعلن اعتراض 10 صواريخ حوثية و\"أنصار الله\" تتهمها بشن 56 غارة على اليمن",
+      "link": "https://www.bbc.com/arabic/articles/crq8n4zx8l4zo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792952237944
+    },
     {
       "hash": "b72cca3f8649",
       "title": "Venezuela opposition leader Maria Corina Machado returns after months in exile",
@@ -7745,461 +8193,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792887443757
-    },
-    {
-      "hash": "0e3c1298cf0f",
-      "title": "‘Prioritise welfare over military directives’: India raps Pak on minority rights",
-      "summary": "‘Prioritise welfare over military directives’: India raps Pak on minority rights",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/prioritise-welfare-over-military-directives-india-raps-pak-on-minority-rights-at-un/articleshow/135180093.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887439244
-    },
-    {
-      "hash": "516265858bac",
-      "title": "Protests sweep France, Spain as masked mobs loot shops, clash with cops; 1,100 held",
-      "summary": "Protests sweep France, Spain as masked mobs loot shops, clash with cops; 1,100 held",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/europe/protests-sweep-france-spain-as-masked-mobs-loot-shops-clash-with-cops-1100-held/articleshow/135180010.cms]]>",
-      "source": "Times of India",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887435033
-    },
-    {
-      "hash": "b9491a084fc6",
-      "title": "Trump prepares for Iran escalation after U.S. and Israeli elections",
-      "summary": "Trump prepares for Iran escalation after U.S. and Israeli elections",
-      "link": "https://www.japantimes.co.jp/news/2026/10/25/world/politics/iran-us-midterm-elections-war/",
-      "source": "Japan Times",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792887430044
-    },
-    {
-      "hash": "13bc68214de4",
-      "title": "People-pleaser Kumaji is a true ‘bundle of joy’",
-      "summary": "People-pleaser Kumaji is a true ‘bundle of joy’",
-      "link": "https://www.japantimes.co.jp/community/2026/10/25/kumaji-lovable-fellow/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887425463
-    },
-    {
-      "hash": "d8793bc2fa43",
-      "title": "Singapore embraces AI for cyber defence, with one caveat: breach transparency",
-      "summary": "Singapore embraces AI for cyber defence, with one caveat: breach transparency",
-      "link": "https://www.scmp.com/week-asia/politics/article/3371950/singapore-embraces-ai-cyber-defence-one-caveat-breach-transparency",
-      "source": "SCMP",
-      "countryCode": "SG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887421145
-    },
-    {
-      "hash": "b6ea698a040f",
-      "title": "Trump lauds Melania over Russia-Ukraine localised ceasefire deal",
-      "summary": "Trump lauds Melania over Russia-Ukraine localised ceasefire deal",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/trump-lauds-melania-over-russia-ukraine-localised-ceasefire-deal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "UA",
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1792887416731
-    },
-    {
-      "hash": "f4c7cd0d1d7e",
-      "title": "Tempo real: cobertura do 2º turno das eleições 2026 no RN",
-      "summary": "Tempo real: cobertura do 2º turno das eleições 2026 no RN",
-      "link": "https://g1.globo.com/rn/rio-grande-do-norte/eleicoes/2026/ao-vivo/segundo-turno-das-eleicoes-2026-no-rio-grande-do-norte.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887412574
-    },
-    {
-      "hash": "643c96ef14a3",
-      "title": "VÍDEOS: Jornal do Acre 2ª edição deste sábado, 24 de outubro de 2026",
-      "summary": "VÍDEOS: Jornal do Acre 2ª edição deste sábado, 24 de outubro de 2026",
-      "link": "https://g1.globo.com/ac/acre/playlist/videos-jornal-do-acre-2-edicao-deste-sabado-24-de-outubro-de-2026.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887407476
-    },
-    {
-      "hash": "20ca27b5d7dc",
-      "title": "Lula, candidato à reeleição pelo PT, encerra campanha com atos no Rio de Janeiro e São Paulo",
-      "summary": "Lula, candidato à reeleição pelo PT, encerra campanha com atos no Rio de Janeiro e São Paulo",
-      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/24/lula-candidato-a-reeleicao-pelo-pt-encerra-campanha-com-atos-no-rio-de-janeiro-e-sao-paulo.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887403434
-    },
-    {
-      "hash": "b90c06cf08e9",
-      "title": "Mass protests grip Europe with tear gas, fireworks and water cannon (VIDEOS)",
-      "summary": "Mass protests grip Europe with tear gas, fireworks and water cannon (VIDEOS)",
-      "link": "<![CDATA[https://rt-english.com/news/647622-europe-mass-protests-videos/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1792887399069
-    },
-    {
-      "hash": "d9dd52fb51a3",
-      "title": "Nigeria: Tinubu launches reelection bid amid economic woes",
-      "summary": "Nigeria: Tinubu launches reelection bid amid economic woes",
-      "link": "https://www.dw.com/en/nigeria-tinubu-launches-reelection-bid-amid-economic-woes/a-79753063?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "NG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792887392844
-    },
-    {
-      "hash": "bb7465aee11b",
-      "title": "مسؤول يمني لـ&#8221;الحرة&#8221;: حصار تعز يهدد أكثر من 700 ألف شخص  مستشفيات تعز تواجه صعوبات بالغة في الحفاظ على الخدمات المنقذة للحياة.",
-      "summary": "مسؤول يمني لـ&#8221;الحرة&#8221;: حصار تعز يهدد أكثر من 700 ألف شخص  مستشفيات تعز تواجه صعوبات بالغة في الحفاظ على الخدمات المنقذة للحياة.",
-      "link": "https://alhurra.com/48602",
-      "source": "الحرة",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792887387973
-    },
-    {
-      "hash": "00547f41e232",
-      "title": "نيجيريا.. عشرات القتلى في هجوم مسلح شمال شرقي البلاد",
-      "summary": "نيجيريا.. عشرات القتلى في هجوم مسلح شمال شرقي البلاد",
-      "link": "https://www.skynewsarabia.com/world/1900429-%D9%86%D9%8A%D8%AC%D9%8A%D8%B1%D9%8A%D8%A7-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%AA%D9%84%D9%89-%D9%87%D8%AC%D9%88%D9%85-%D9%85%D8%B3%D9%84%D8%AD-%D8%B4%D9%85%D8%A7%D9%84-%D8%B4%D8%B1%D9%82%D9%8A-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%AF",
-      "source": "Sky News عربية",
-      "countryCode": "NG",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792887384012
-    },
-    {
-      "hash": "7667759f8207",
-      "title": "Woman whose cancer was almost missed wants breast density reporting in screening",
-      "summary": "Woman whose cancer was almost missed wants breast density reporting in screening",
-      "link": "https://www.rnz.co.nz/news/health/2143087/woman-whose-cancer-was-almost-missed-wants-breast-density-reporting-in-screening",
-      "source": "RNZ",
-      "countryCode": "OM",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883735730
-    },
-    {
-      "hash": "45f6eb1557a0",
-      "title": "Christchurch motorway off-ramp reopens after serious motorcycle crash",
-      "summary": "Christchurch motorway off-ramp reopens after serious motorcycle crash",
-      "link": "https://www.rnz.co.nz/news/emergencies_local/2141257/christchurch-motorway-off-ramp-reopens-after-serious-motorcycle-crash",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883732235
-    },
-    {
-      "hash": "ab9942db669b",
-      "title": "We both overpromised our physical attributes in an email. It led to love",
-      "summary": "We both overpromised our physical attributes in an email. It led to love",
-      "link": "https://www.abc.net.au/news/2026-10-25/love-story-it-started-with-a-blind-date/107285368",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883729045
-    },
-    {
-      "hash": "d94d4b0769db",
-      "title": "Qualified migrant women forced into 'survival jobs' are paying price",
-      "summary": "Qualified migrant women forced into 'survival jobs' are paying price",
-      "link": "https://www.abc.net.au/news/2026-10-25/more-migrant-women-in-australia-in-jobs-overqualified-for/107303740",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883726098
-    },
-    {
-      "hash": "4b2824679585",
-      "title": "Kids playing pool for Australia say there's not much time for homework",
-      "summary": "Kids playing pool for Australia say there's not much time for homework",
-      "link": "https://www.abc.net.au/news/2026-10-25/young-snooker-champion-angelo-tsakaris-8-ball-player-adam-grace/107291894",
-      "source": "ABC Australia",
-      "countryCode": "AU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883723127
-    },
-    {
-      "hash": "3ac82ca6b6b4",
-      "title": "Arrests in Barcelona after ‘anti-system’ rioters loot shops, set fires",
-      "summary": "Arrests in Barcelona after ‘anti-system’ rioters loot shops, set fires",
-      "link": "https://www.straitstimes.com/world/europe/arrests-in-barcelona-after-anti-system-rioters-loot-shops-set-fires",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1792883719722
-    },
-    {
-      "hash": "ef4bc6b7f9e5",
-      "title": "While You Were Sleeping: 5 stories you might have missed, Oct 25, 2026",
-      "summary": "While You Were Sleeping: 5 stories you might have missed, Oct 25, 2026",
-      "link": "https://www.straitstimes.com/world/while-you-were-sleeping-5-stories-you-might-have-missed-oct-25-2026",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883716857
-    },
-    {
-      "hash": "e4a2a0b53d68",
-      "title": "Bolsonaro, Lula about even in polls for Brazil runoff vote",
-      "summary": "Bolsonaro, Lula about even in polls for Brazil runoff vote",
-      "link": "https://www.straitstimes.com/world/bolsonaro-lula-about-even-in-polls-for-brazil-runoff-vote",
-      "source": "Straits Times",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883713524
-    },
-    {
-      "hash": "28d5f16289a7",
-      "title": "Farooq Abdullah's comments on Pakistan and Kashmir draw flak",
-      "summary": "Farooq Abdullah's comments on Pakistan and Kashmir draw flak",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/farooq-abdullahs-comments-on-pakistan-and-kashmir-draw-flak/articleshow/135176756.cms]]>",
-      "source": "Times of India",
-      "countryCode": "PK",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883710228
-    },
-    {
-      "hash": "b5df2847ba12",
-      "title": "‘No line he will not cross’: Obama slams Ramaswamy’s ‘cruel’ ad, hits out at Trump",
-      "summary": "‘No line he will not cross’: Obama slams Ramaswamy’s ‘cruel’ ad, hits out at Trump",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/no-line-he-will-not-cross-obama-slams-ramaswamys-cruel-ad-hits-out-at-trump/articleshow/135179870.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883706922
-    },
-    {
-      "hash": "91a9df301f8d",
-      "title": "Amid potato protests, Hokkaido has its best spud harvest in years",
-      "summary": "Amid potato protests, Hokkaido has its best spud harvest in years",
-      "link": "https://www.japantimes.co.jp/life/2026/10/25/food-drink/hokkaido-potato-harvest-quality-protests/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883703916
-    },
-    {
-      "hash": "e4857243ba2c",
-      "title": "James Suckling’s Great Wines World Tokyo marks its third edition",
-      "summary": "James Suckling’s Great Wines World Tokyo marks its third edition",
-      "link": "https://www.japantimes.co.jp/life/2026/10/25/food-drink/great-wines-world-tokyo-2026/",
-      "source": "Japan Times",
-      "countryCode": "JP",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883700469
-    },
-    {
-      "hash": "d031e5a5eb0a",
-      "title": "How have Democrats’ policies shifted since the last major US election?",
-      "summary": "How have Democrats’ policies shifted since the last major US election?",
-      "link": "https://www.aljazeera.com/economy/2026/10/24/how-have-democrats-policies-shifted-since-the-last-major-us-election?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792883695724
-    },
-    {
-      "hash": "d6bf40688eae",
-      "title": "Gunmen kill at least 10 people in eastern Nigeria, police say",
-      "summary": "Gunmen kill at least 10 people in eastern Nigeria, police say",
-      "link": "https://www.aljazeera.com/news/2026/10/24/gunmen-kill-at-least-10-people-in-eastern-nigeria-police-say?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "NG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883692869
-    },
-    {
-      "hash": "f6faec16575f",
-      "title": "APC Campaign Flag Off: Tinubu shuts down Kaduna",
-      "summary": "APC Campaign Flag Off: Tinubu shuts down Kaduna",
-      "link": "https://www.premiumtimesng.com/promoted/919978-apc-campaign-flag-off-tinubu-shuts-down-kaduna.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883689975
-    },
-    {
-      "hash": "0f3183c8266a",
-      "title": "VÍDEOS: JL2 de sábado, 24 de outubro de 2026",
-      "summary": "VÍDEOS: JL2 de sábado, 24 de outubro de 2026",
-      "link": "https://g1.globo.com/pa/para/playlist/videos-jl2-de-sabado-24-de-outubro-de-2026.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883686964
-    },
-    {
-      "hash": "f7cfb33cfeda",
-      "title": "Acompanhe a apuração do 2º turno das Eleições 2026 pelo Brasil",
-      "summary": "Acompanhe a apuração do 2º turno das Eleições 2026 pelo Brasil",
-      "link": "https://g1.globo.com/politica/eleicoes/2026/ao-vivo/apuracao-eleicoes-2026-resultados-segundo-turno.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883684003
-    },
-    {
-      "hash": "5dfe7eb508a2",
-      "title": "VÍDEO: voo de Porto Alegre para Salvador é cancelado e causa tumulto no aeroporto",
-      "summary": "VÍDEO: voo de Porto Alegre para Salvador é cancelado e causa tumulto no aeroporto",
-      "link": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/10/24/video-voo-porto-alegre-salvador-cancelado-tumulto-aeroporto.ghtml",
-      "source": "Globo",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883680798
-    },
-    {
-      "hash": "be630d1f7734",
-      "title": "'They’re the nicest people': Obama mocks Trump for hitting Canada with tariffs",
-      "summary": "'They’re the nicest people': Obama mocks Trump for hitting Canada with tariffs",
-      "link": "https://www.cbc.ca/news/world/obama-trump-canada-tariffs-9.7394871?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": "CA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883677744
-    },
-    {
-      "hash": "2c095bc3cbd1",
-      "title": "Unrest Erupts Again in France, but This Time, With Less Property Damage",
-      "summary": "Unrest Erupts Again in France, but This Time, With Less Property Damage",
-      "link": "https://www.nytimes.com/2026/10/24/world/europe/france-protests-unrest-clashes-police.html",
-      "source": "NY Times",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883674905
-    },
-    {
-      "hash": "669c604c5067",
-      "title": "Elon Musk Says Ukraine Violated Starlink’s Rules",
-      "summary": "Elon Musk Says Ukraine Violated Starlink’s Rules",
-      "link": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-starshield-drone-speed.html",
-      "source": "NY Times",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883671336
-    },
-    {
-      "hash": "1ad160404dd5",
-      "title": "Musk shuts Starlink ‘loophole’ that let Kiev ‘kill people’",
-      "summary": "Musk shuts Starlink ‘loophole’ that let Kiev ‘kill people’",
-      "link": "<![CDATA[https://rt-english.com/news/647624-musk-closes-starlink-loophole/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792883668513
     }
   ]
 }
