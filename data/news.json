@@ -1,25 +1,91 @@
 {
-  "updated_at": "2026-10-25T07:32:17.385Z",
+  "updated_at": "2026-10-25T08:19:25.611Z",
   "total": 600,
-  "new_count": 40,
+  "new_count": 25,
   "ai_success": 0,
-  "ai_fallback": 40,
+  "ai_fallback": 25,
   "global": {
     "score": 44,
     "totalArticles": 600,
     "categories": {
-      "politics": 479,
-      "war": 67,
-      "sports": 5,
       "disaster": 18,
+      "politics": 481,
+      "culture": 9,
+      "war": 65,
+      "health": 7,
+      "sports": 4,
       "economy": 5,
-      "health": 6,
       "positive": 3,
-      "crisis": 9,
-      "culture": 8
+      "crisis": 8
     }
   },
   "countries": {
+    "IR": {
+      "score": 22,
+      "articleCount": 17,
+      "categories": {
+        "politics": 9,
+        "war": 8
+      }
+    },
+    "PT": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
+      }
+    },
+    "IN": {
+      "score": 50,
+      "articleCount": 5,
+      "categories": {
+        "politics": 5
+      }
+    },
+    "CN": {
+      "score": 48,
+      "articleCount": 14,
+      "categories": {
+        "politics": 12,
+        "positive": 1,
+        "war": 1
+      }
+    },
+    "FR": {
+      "score": 43,
+      "articleCount": 41,
+      "categories": {
+        "politics": 29,
+        "sports": 2,
+        "crisis": 4,
+        "war": 3,
+        "positive": 1,
+        "disaster": 1,
+        "culture": 1
+      }
+    },
+    "EG": {
+      "score": 13,
+      "articleCount": 6,
+      "categories": {
+        "war": 2,
+        "politics": 4
+      }
+    },
+    "RS": {
+      "score": 50,
+      "articleCount": 8,
+      "categories": {
+        "politics": 8
+      }
+    },
+    "IQ": {
+      "score": 0,
+      "articleCount": 1,
+      "categories": {
+        "war": 1
+      }
+    },
     "NZ": {
       "score": 50,
       "articleCount": 5,
@@ -29,10 +95,10 @@
     },
     "IL": {
       "score": 29,
-      "articleCount": 32,
+      "articleCount": 30,
       "categories": {
-        "politics": 22,
-        "war": 9,
+        "politics": 21,
+        "war": 8,
         "economy": 1
       }
     },
@@ -61,9 +127,9 @@
     },
     "US": {
       "score": 48,
-      "articleCount": 26,
+      "articleCount": 25,
       "categories": {
-        "politics": 24,
+        "politics": 23,
         "economy": 1,
         "war": 1
       }
@@ -73,13 +139,6 @@
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "RS": {
-      "score": 50,
-      "articleCount": 8,
-      "categories": {
-        "politics": 8
       }
     },
     "BG": {
@@ -108,12 +167,11 @@
     },
     "JO": {
       "score": 13,
-      "articleCount": 13,
+      "articleCount": 11,
       "categories": {
-        "war": 7,
+        "war": 6,
         "culture": 2,
-        "politics": 3,
-        "disaster": 1
+        "politics": 3
       }
     },
     "GB": {
@@ -132,35 +190,11 @@
         "war": 7
       }
     },
-    "CN": {
-      "score": 47,
-      "articleCount": 12,
-      "categories": {
-        "politics": 10,
-        "positive": 1,
-        "war": 1
-      }
-    },
     "ID": {
       "score": 50,
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "IR": {
-      "score": 20,
-      "articleCount": 17,
-      "categories": {
-        "politics": 9,
-        "war": 8
-      }
-    },
-    "IN": {
-      "score": 50,
-      "articleCount": 4,
-      "categories": {
-        "politics": 4
       }
     },
     "JP": {
@@ -176,26 +210,6 @@
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "PT": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
-    "FR": {
-      "score": 42,
-      "articleCount": 43,
-      "categories": {
-        "politics": 30,
-        "sports": 2,
-        "crisis": 4,
-        "war": 4,
-        "positive": 1,
-        "disaster": 1,
-        "culture": 1
       }
     },
     "PK": {
@@ -228,11 +242,10 @@
       }
     },
     "ES": {
-      "score": 54,
-      "articleCount": 6,
+      "score": 50,
+      "articleCount": 5,
       "categories": {
-        "politics": 5,
-        "sports": 1
+        "politics": 5
       }
     },
     "SG": {
@@ -287,14 +300,6 @@
         "war": 1
       }
     },
-    "EG": {
-      "score": 28,
-      "articleCount": 5,
-      "categories": {
-        "war": 1,
-        "politics": 4
-      }
-    },
     "BE": {
       "score": 23,
       "articleCount": 3,
@@ -319,11 +324,10 @@
       }
     },
     "KE": {
-      "score": 41,
-      "articleCount": 4,
+      "score": 50,
+      "articleCount": 3,
       "categories": {
-        "politics": 3,
-        "crisis": 1
+        "politics": 3
       }
     },
     "SD": {
@@ -376,16 +380,334 @@
       "categories": {
         "politics": 1
       }
-    },
-    "CZ": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "55250f5414c0",
+      "title": "Large scrub fire threatens telecommunications towers in Southland",
+      "summary": "Large scrub fire threatens telecommunications towers in Southland",
+      "link": "https://www.rnz.co.nz/news/emergencies_local/2156197/large-scrub-fire-threatens-telecommunications-towers-in-southland",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792916364609
+    },
+    {
+      "hash": "5c6797ac8761",
+      "title": "Kiwis crush Aitu to cap dominant day for NZ at Rugby League World Cup",
+      "summary": "Kiwis crush Aitu to cap dominant day for NZ at Rugby League World Cup",
+      "link": "https://www.rnz.co.nz/news/sport/2153016/kiwis-crush-aitu-to-cap-dominant-day-for-nz-at-rugby-league-world-cup",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916360575
+    },
+    {
+      "hash": "4a6e7fc27d5f",
+      "title": "Live: Kangaroos wrap up World Cup weekend against Fiji after Kiwis survive scare",
+      "summary": "Live: Kangaroos wrap up World Cup weekend against Fiji after Kiwis survive scare",
+      "link": "https://www.abc.net.au/news/2026-10-25/kangaroos-vs-fiji-rugby-league-world-cup-live/107306806",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916352474
+    },
+    {
+      "hash": "2f68dd4dc8a2",
+      "title": "Stranded Iranian sailors seek medical treatment in Sri Lanka",
+      "summary": "Stranded Iranian sailors seek medical treatment in Sri Lanka",
+      "link": "https://www.straitstimes.com/world/middle-east/stranded-iranian-sailors-seek-medical-treatment-in-sri-lanka",
+      "source": "Straits Times",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916349247
+    },
+    {
+      "hash": "c54c98ed2946",
+      "title": "11 people shot at homecoming party near Florida university campus",
+      "summary": "11 people shot at homecoming party near Florida university campus",
+      "link": "https://www.straitstimes.com/world/united-states/11-people-shot-at-homecoming-party-near-florida-university-campus",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792916345721
+    },
+    {
+      "hash": "01118773c4e8",
+      "title": "Protests engulf Europe: People take to streets in France, Albania, Italy, Spain, Portugal",
+      "summary": "Protests engulf Europe: People take to streets in France, Albania, Italy, Spain, Portugal",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/europe/europe-spring-protests-engulf-continent-as-people-take-to-streets-in-france-albania-italy-spain-portugal/articleshow/135185017.cms]]>",
+      "source": "Times of India",
+      "countryCode": "PT",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916342559
+    },
+    {
+      "hash": "16e88efaeae5",
+      "title": "Quiet quitting comes to India. AI will make it worse.",
+      "summary": "Quiet quitting comes to India. AI will make it worse.",
+      "link": "https://www.japantimes.co.jp/commentary/2026/10/25/world/india-ai-quiet-quitting/",
+      "source": "Japan Times",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916339155
+    },
+    {
+      "hash": "96d791ed8ba2",
+      "title": "Veteran Hong Kong stock commentator Louie Shum dies aged 66",
+      "summary": "Veteran Hong Kong stock commentator Louie Shum dies aged 66",
+      "link": "https://www.scmp.com/news/hong-kong/society/article/3372063/veteran-hong-kong-stock-commentator-louie-shum-dies-aged-66",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916334820
+    },
+    {
+      "hash": "d4e1575f3407",
+      "title": "Filipinos split on Marcos’ South China Sea handling amid row over Jing Quan’s remarks",
+      "summary": "Filipinos split on Marcos’ South China Sea handling amid row over Jing Quan’s remarks",
+      "link": "https://www.scmp.com/week-asia/politics/article/3371980/filipinos-split-marcos-south-china-sea-handling-amid-row-over-jing-quans-remarks",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916313648
+    },
+    {
+      "hash": "f5f42bdbab12",
+      "title": "Beijing commemorates end of Japanese rule over Taiwan with call for reunification",
+      "summary": "Beijing commemorates end of Japanese rule over Taiwan with call for reunification",
+      "link": "https://www.scmp.com/news/china/politics/article/3372065/beijing-commemorates-end-japanese-rule-over-taiwan-call-reunification",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916307738
+    },
+    {
+      "hash": "fe833170f740",
+      "title": "Photos: Clashes erupt in France during protests over rising living costs",
+      "summary": "Photos: Clashes erupt in France during protests over rising living costs",
+      "link": "https://www.aljazeera.com/gallery/2026/10/25/photos-clashes-erupt-in-france-amid-protests-over-rising-living-costs?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916304212
+    },
+    {
+      "hash": "f49e66849c8d",
+      "title": "El Clasico awaits a Yamal vs Mbappe showdown on Mourinho’s return to La Liga",
+      "summary": "El Clasico awaits a Yamal vs Mbappe showdown on Mourinho’s return to La Liga",
+      "link": "https://www.aljazeera.com/sports/2026/10/25/el-clasico-awaits-a-yamal-vs-mbappe-showdown-on-mourinhos-return-to-la-liga?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916300933
+    },
+    {
+      "hash": "8fa40d0d10d7",
+      "title": "Why is Egypt so wary of getting involved in Yemen’s conflict?",
+      "summary": "Why is Egypt so wary of getting involved in Yemen’s conflict?",
+      "link": "https://www.aljazeera.com/news-analysis/2026/10/25/why-is-egypt-so-wary-of-getting-involved-in-yemens-conflict?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "EG",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792916297720
+    },
+    {
+      "hash": "d8d33b701918",
+      "title": "Eleições 2026: veja como consultar filas antes de sair para votar no PI",
+      "summary": "Eleições 2026: veja como consultar filas antes de sair para votar no PI",
+      "link": "https://g1.globo.com/pi/piaui/eleicoes/2026/noticia/2026/10/25/eleicoes-2026-filas-segundo-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916294233
+    },
+    {
+      "hash": "0c1144b675f0",
+      "title": "Quase 7 milhões de eleitores estão aptos a votar no 2º turno da eleição para presidente no Ceará",
+      "summary": "Quase 7 milhões de eleitores estão aptos a votar no 2º turno da eleição para presidente no Ceará",
+      "link": "https://g1.globo.com/ce/ceara/eleicoes/2026/noticia/2026/10/25/quase-7-milhoes-de-eleitores-estao-aptos-a-votar-no-2o-turno-da-eleicao-para-presidente-no-ceara.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792916291047
+    },
+    {
+      "hash": "ade9471433cd",
+      "title": "Eleições 2026: Acreanos vão escolher governador e presidente neste domingo (25)",
+      "summary": "Eleições 2026: Acreanos vão escolher governador e presidente neste domingo (25)",
+      "link": "https://g1.globo.com/ac/acre/eleicoes/2026/noticia/2026/10/25/eleicoes-2026-acreanos-vao-escolher-governador-e-presidente-neste-domingo-25.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792916287925
+    },
+    {
+      "hash": "5f2720522ccd",
+      "title": "What to Know as Serbia Votes for a New Parliament",
+      "summary": "What to Know as Serbia Votes for a New Parliament",
+      "link": "https://www.nytimes.com/2026/10/25/world/europe/serbia-election.html",
+      "source": "NY Times",
+      "countryCode": "RS",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792916284345
+    },
+    {
+      "hash": "f532041bd7d9",
+      "title": "Far, Far Away",
+      "summary": "Far, Far Away",
+      "link": "https://www.nytimes.com/2026/10/25/world/africa/tristan-da-cunha-island.html",
+      "source": "NY Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916280304
+    },
+    {
+      "hash": "38ec250dbc24",
+      "title": "Attentat raciste de Trappes : le tireur présumé a dit avoir voulu venger les commerçants pillés le 17 octobre et avoir ciblé des personnes selon leur couleur de peau",
+      "summary": "Attentat raciste de Trappes : le tireur présumé a dit avoir voulu venger les commerçants pillés le 17 octobre et avoir ciblé des personnes selon leur couleur de peau",
+      "link": "https://www.lemonde.fr/societe/article/2026/10/24/attentat-raciste-de-trappes-le-tireur-presume-a-dit-avoir-voulu-venger-les-commercants-pilles-le-17-octobre-et-avoir-cible-des-personnes-de-couleur_6799689_3224.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916277077
+    },
+    {
+      "hash": "651a2efe1fd1",
+      "title": "Une journée de forte mobilisation sans incidents majeurs : « Le droit de manifester est aussi important que le droit de vote »",
+      "summary": "Une journée de forte mobilisation sans incidents majeurs : « Le droit de manifester est aussi important que le droit de vote »",
+      "link": "https://www.lemonde.fr/politique/article/2026/10/25/une-journee-de-forte-mobilisation-sans-incidents-majeurs-le-droit-de-manifester-est-aussi-important-que-le-droit-de-vote_6799929_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916273795
+    },
+    {
+      "hash": "f3590cd28092",
+      "title": "French government says new protests 'went well', a week after looting and violence",
+      "summary": "French government says new protests 'went well', a week after looting and violence",
+      "link": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792916270324
+    },
+    {
+      "hash": "08945dd96c84",
+      "title": "تراجع بورصات الخليج مع تصاعد المواجهات في المنطقة",
+      "summary": "تراجع بورصات الخليج مع تصاعد المواجهات في المنطقة",
+      "link": "https://aawsat.com/node/5333336",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916266964
+    },
+    {
+      "hash": "911466648a3b",
+      "title": "«التعاون الخليجي»: استهداف مكة المكرمة تجاوز بالغ الخطورة... ويهدد استقرار المنطقة",
+      "summary": "«التعاون الخليجي»: استهداف مكة المكرمة تجاوز بالغ الخطورة... ويهدد استقرار المنطقة",
+      "link": "https://aawsat.com/node/5333338",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792916263549
+    },
+    {
+      "hash": "b36eb003ca9e",
+      "title": "هجوم إيراني على مقر لحزب «كومله» الانفصالي في كردستان العراق",
+      "summary": "هجوم إيراني على مقر لحزب «كومله» الانفصالي في كردستان العراق",
+      "link": "https://aawsat.com/node/5333343",
+      "source": "الشرق الأوسط",
+      "countryCode": "IQ",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792916259596
+    },
+    {
+      "hash": "5d18bbfee9c5",
+      "title": "لقاح واعد ضد السرطان",
+      "summary": "لقاح واعد ضد السرطان",
+      "link": "https://www.dw.com/ar/لقاح-واعد-ضد-السرطان/a-79749014?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792916255864
+    },
     {
       "hash": "ab14ea33fef1",
       "title": "Child critically injured in assault at central Auckland park",
@@ -7860,331 +8182,6 @@
       "mood": "angry",
       "impact": 90,
       "timestamp": 1792848302855
-    },
-    {
-      "hash": "1dfeeb446bc7",
-      "title": "الأردن.. توجيهات ملكية بالحزم وملاحقة منفذي هجوم الكنيسة",
-      "summary": "الأردن.. توجيهات ملكية بالحزم وملاحقة منفذي هجوم الكنيسة",
-      "link": "https://www.skynewsarabia.com/middle-east/1900368-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86-%D8%AA%D9%88%D8%AC%D9%8A%D9%87%D8%A7%D8%AA-%D9%85%D9%84%D9%83%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%AD%D8%B2%D9%85-%D9%88%D9%85%D9%84%D8%A7%D8%AD%D9%82%D8%A9-%D9%85%D9%86%D9%81%D8%B0%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D8%A7%D9%84%D9%83%D9%86%D9%8A%D8%B3%D8%A9",
-      "source": "Sky News عربية",
-      "countryCode": "JO",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792848299411
-    },
-    {
-      "hash": "6d0ccf115c78",
-      "title": "فرنسا.. 135 موقوفاً بالتظاهرات واعتقالات جديدة في هجوم باريس",
-      "summary": "فرنسا.. 135 موقوفاً بالتظاهرات واعتقالات جديدة في هجوم باريس",
-      "link": "https://www.skynewsarabia.com/world/1900370-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-135-%D9%85%D9%88%D9%82%D9%88%D9%81%D8%A7-%D8%A8%D8%A7%D9%84%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%87%D8%AC%D9%88%D9%85-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3",
-      "source": "Sky News عربية",
-      "countryCode": "FR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792848295491
-    },
-    {
-      "hash": "32652f09bc14",
-      "title": "لا منافس حتى الآن.. هل اقترب إنفانتينو من ولاية رابعة؟",
-      "summary": "لا منافس حتى الآن.. هل اقترب إنفانتينو من ولاية رابعة؟",
-      "link": "https://www.skynewsarabia.com/sport/1900373-%D9%85%D9%86%D8%A7%D9%81%D8%B3-%D8%AD%D8%AA%D9%89-%D8%A7%D9%84%D8%A2%D9%86-%D8%A7%D9%82%D8%AA%D8%B1%D8%A8-%D8%A5%D9%86%D9%81%D8%A7%D9%86%D8%AA%D9%8A%D9%86%D9%88-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792848291716
-    },
-    {
-      "hash": "65a9f744082b",
-      "title": "الانتخابات الإسرائيلية: من هو يوآف سيغالوفيتش...أول يهودي يترشح على قائمة حزب عربي ذي مرجعية إسلامية؟",
-      "summary": "الانتخابات الإسرائيلية: من هو يوآف سيغالوفيتش...أول يهودي يترشح على قائمة حزب عربي ذي مرجعية إسلامية؟",
-      "link": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261024-ne-pas-publier-svp%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%86%D8%AA%D8%A7%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D8%A7%D9%84%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9%D9%8A%D8%A9-%D9%8A%D9%88%D8%A2%D9%81-%D8%B3%D9%8A%D8%BA%D8%A7%D9%84%D9%88%D9%81%D9%8A%D8%AA%D8%B4-%D9%8A%D9%87%D9%88%D8%AF%D9%8A-%D8%B5%D9%87%D9%8A%D9%88%D9%86%D9%8A-%D8%AA%D8%B1%D8%B4%D8%AD-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%AD%D8%B2%D8%A8-%D8%B9%D8%B1%D8%A8%D9%8A-%D8%B0%D9%8A-%D9%85%D8%B1%D8%AC%D8%B9%D9%8A%D8%A9-%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792848287661
-    },
-    {
-      "hash": "b3304196da1f",
-      "title": "فرنسا: انطلاق المظاهرة في باريس وأغلب الحاضرين من الشباب",
-      "summary": "فرنسا: انطلاق المظاهرة في باريس وأغلب الحاضرين من الشباب",
-      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261024-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%B8%D8%A7%D9%87%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D9%88%D8%A3%D8%BA%D9%84%D8%A8-%D8%A7%D9%84%D8%AD%D8%A7%D8%B6%D8%B1%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D8%A8",
-      "source": "France24 عربي",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792848284395
-    },
-    {
-      "hash": "26010003d622",
-      "title": "على أوكرانيا البحث عن بديل لدعم واشنطن بعد الجدل حول \"ستارلينك\" - الإندبندنت",
-      "summary": "على أوكرانيا البحث عن بديل لدعم واشنطن بعد الجدل حول \"ستارلينك\" - الإندبندنت",
-      "link": "https://www.bbc.com/arabic/articles/ck62ylm1v36do?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792848280085
-    },
-    {
-      "hash": "a6d97c9c97f2",
-      "title": "Czech Republic advances media funding overhaul despite criticism",
-      "summary": "Czech Republic advances media funding overhaul despite criticism",
-      "link": "https://www.aljazeera.com/news/2026/10/24/czech-republic-advances-media-funding-overhaul-despite-criticism?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "CZ",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844542550
-    },
-    {
-      "hash": "8cd4b0242e52",
-      "title": "Barcelona vs Real Madrid: Top 5 El Clasico matches between La Liga giants",
-      "summary": "Barcelona vs Real Madrid: Top 5 El Clasico matches between La Liga giants",
-      "link": "https://www.aljazeera.com/sports/2026/10/24/barcelona-vs-real-madrid-top-5-el-clasico-matches-between-la-liga-giants?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "ES",
-      "category": "sports",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792844538993
-    },
-    {
-      "hash": "ba777180c7de",
-      "title": "Barcelona housing activists evicted by police from residential building",
-      "summary": "Barcelona housing activists evicted by police from residential building",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/24/barcelona-housing-activists-evicted-by-police-from-residential-building?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844533490
-    },
-    {
-      "hash": "44710ea46f73",
-      "title": "Rwanda: Kagame Defends Strict Dress Codes Amid Rwanda's Dressing Controversy",
-      "summary": "Rwanda: Kagame Defends Strict Dress Codes Amid Rwanda's Dressing Controversy",
-      "link": "https://allafrica.com/stories/202610230509.html",
-      "source": "AllAfrica",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844528459
-    },
-    {
-      "hash": "58b39ae98f4f",
-      "title": "Kenya: Calls for Penalties Follow 12-Story Building Collapse",
-      "summary": "Kenya: Calls for Penalties Follow 12-Story Building Collapse",
-      "link": "https://allafrica.com/stories/202610230513.html",
-      "source": "AllAfrica",
-      "countryCode": "KE",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1792844525033
-    },
-    {
-      "hash": "e4e7a0ed70c5",
-      "title": "Eleições 2026: veja empresas que podem oferecer transporte intermunicipal gratuito no Pará",
-      "summary": "Eleições 2026: veja empresas que podem oferecer transporte intermunicipal gratuito no Pará",
-      "link": "https://g1.globo.com/pa/para/eleicoes/2026/noticia/2026/10/24/eleicoes-2026-veja-empresas-que-podem-oferecer-transporte-intermunicipal-gratuito-no-para.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844520556
-    },
-    {
-      "hash": "0258cf478a97",
-      "title": "Menino de 7 anos morre atropelado por moto na GO-108",
-      "summary": "Menino de 7 anos morre atropelado por moto na GO-108",
-      "link": "https://g1.globo.com/go/goias/transito/noticia/2026/10/24/menino-de-7-anos-morre-atropelado-por-moto-na-go-108.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844517126
-    },
-    {
-      "hash": "ccb184c35179",
-      "title": "Eleições 2026: São José dos Campos e Taubaté somam 294 denúncias de propaganda eleitoral",
-      "summary": "Eleições 2026: São José dos Campos e Taubaté somam 294 denúncias de propaganda eleitoral",
-      "link": "https://g1.globo.com/sp/vale-do-paraiba-regiao/eleicoes/2026/noticia/2026/10/24/eleicoes-2026-sao-jose-dos-campos-e-taubate-somam-294-denuncias-de-propaganda-eleitoral.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844512487
-    },
-    {
-      "hash": "c8a749979fc4",
-      "title": "Can millions of people live on the moon? These scientists say yes — but not for very long",
-      "summary": "Can millions of people live on the moon? These scientists say yes — but not for very long",
-      "link": "https://www.cbc.ca/news/science/moon-civilization-water-9.7393267?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844508050
-    },
-    {
-      "hash": "bd4ebe24a037",
-      "title": "Black Sea sailors thought a rescue boat was racing toward them. Instead, it was a drone that sank their ship",
-      "summary": "Black Sea sailors thought a rescue boat was racing toward them. Instead, it was a drone that sank their ship",
-      "link": "https://www.cbc.ca/news/world/black-sea-attacks-deadly-9.7393312?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792844502071
-    },
-    {
-      "hash": "e54e6050be97",
-      "title": "Why a new round in the U.S.-Iran conflict could be the most devastating yet",
-      "summary": "Why a new round in the U.S.-Iran conflict could be the most devastating yet",
-      "link": "https://www.cbc.ca/news/world/united-states-iran-conflict-next-round-9.7392215?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844498534
-    },
-    {
-      "hash": "ddf240d3966a",
-      "title": "European student protests take aim at Serbia&apos;s elections",
-      "summary": "European student protests take aim at Serbia&apos;s elections",
-      "link": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
-      "source": "NPR World",
-      "countryCode": "RS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792844495176
-    },
-    {
-      "hash": "b91074c198c9",
-      "title": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
-      "summary": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
-      "link": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan",
-      "source": "NPR World",
-      "countryCode": "JO",
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1792844491252
-    },
-    {
-      "hash": "a6357a959290",
-      "title": "Israel Launches Crackdown in West Bank City After Deadly Attack",
-      "summary": "Israel Launches Crackdown in West Bank City After Deadly Attack",
-      "link": "https://www.nytimes.com/2026/10/24/world/middleeast/israel-military-hebron-west-bank.html",
-      "source": "NY Times",
-      "countryCode": "IL",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792844487698
-    },
-    {
-      "hash": "c12e2108ae02",
-      "title": "¿Cómo no entender a Felipe González?",
-      "summary": "¿Cómo no entender a Felipe González?",
-      "link": "https://elpais.com/opinion/2026-10-24/como-no-entender-a-felipe-gonzalez.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844483625
-    },
-    {
-      "hash": "182b7389aa35",
-      "title": "Montero y Rufián: “Una izquierda que se presenta en la misma papeleta con el PSOE no va a arreglar los problemas”",
-      "summary": "Montero y Rufián: “Una izquierda que se presenta en la misma papeleta con el PSOE no va a arreglar los problemas”",
-      "link": "https://elpais.com/espana/elecciones-generales/2026-10-24/montero-y-rufian-una-izquierda-que-se-presenta-en-la-misma-papeleta-con-el-psoe-no-va-a-arreglar-los-problemas.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844480223
-    },
-    {
-      "hash": "7c78d7cc1a9b",
-      "title": "Sánchez reivindica “la España de Lorca” frente a la “involución” del PP y Vox",
-      "summary": "Sánchez reivindica “la España de Lorca” frente a la “involución” del PP y Vox",
-      "link": "https://elpais.com/espana/2026-10-24/sanchez-reivindica-la-espana-de-lorca-frente-a-la-involucion-del-pp-y-vox.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844475274
-    },
-    {
-      "hash": "0ca4cb03b650",
-      "title": "A Calais, dix ans après le démantèlement de la « grande jungle », d’autres l’ont remplacée : « Franchement, la situation aujourd’hui est pire »",
-      "summary": "A Calais, dix ans après le démantèlement de la « grande jungle », d’autres l’ont remplacée : « Franchement, la situation aujourd’hui est pire »",
-      "link": "https://www.lemonde.fr/societe/article/2026/10/23/a-calais-dix-ans-apres-le-demantelement-de-la-grande-jungle-d-autres-l-ont-remplacee-franchement-la-situation-aujourd-hui-est-pire_6799137_3224.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844471584
-    },
-    {
-      "hash": "f53925581a5f",
-      "title": "EN DIRECT, manifestations du 24 octobre : à Paris, les manifestants se rassemblent porte d’Italie pour suivre le parcours imposé par la Préfecture de police",
-      "summary": "EN DIRECT, manifestations du 24 octobre : à Paris, les manifestants se rassemblent porte d’Italie pour suivre le parcours imposé par la Préfecture de police",
-      "link": "https://www.lemonde.fr/societe/live/2026/10/24/en-direct-manifestations-du-24-octobre-a-paris-le-parcours-entre-la-porte-d-italie-et-la-porte-de-vincennes-reste-le-seul-autorise-apres-le-rejet-d-un-recours-par-le-tribunal-administratif_6799445_3224.html",
-      "source": "Le Monde",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792844466427
     }
   ]
 }
