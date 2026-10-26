@@ -1,37 +1,102 @@
 {
-  "updated_at": "2026-10-26T01:38:37.515Z",
+  "updated_at": "2026-10-26T02:28:00.428Z",
   "total": 600,
-  "new_count": 40,
+  "new_count": 29,
   "ai_success": 0,
-  "ai_fallback": 40,
+  "ai_fallback": 29,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
-      "economy": 11,
-      "politics": 495,
-      "war": 44,
+      "politics": 492,
+      "disaster": 13,
+      "health": 7,
       "culture": 14,
       "crisis": 9,
-      "disaster": 11,
+      "war": 44,
+      "economy": 11,
       "sports": 8,
-      "health": 6,
       "positive": 2
     }
   },
   "countries": {
+    "OM": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "IT": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
     "BR": {
       "score": 50,
-      "articleCount": 45,
+      "articleCount": 46,
       "categories": {
-        "politics": 45
+        "politics": 46
+      }
+    },
+    "NO": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "IR": {
+      "score": 36,
+      "articleCount": 15,
+      "categories": {
+        "politics": 12,
+        "war": 3
+      }
+    },
+    "CN": {
+      "score": 35,
+      "articleCount": 10,
+      "categories": {
+        "politics": 7,
+        "war": 2,
+        "culture": 1
+      }
+    },
+    "KE": {
+      "score": 31,
+      "articleCount": 3,
+      "categories": {
+        "crisis": 1,
+        "politics": 2
+      }
+    },
+    "FR": {
+      "score": 42,
+      "articleCount": 28,
+      "categories": {
+        "politics": 21,
+        "crisis": 4,
+        "positive": 1,
+        "war": 2
+      }
+    },
+    "SA": {
+      "score": 29,
+      "articleCount": 23,
+      "categories": {
+        "war": 6,
+        "politics": 16,
+        "sports": 1
       }
     },
     "CA": {
       "score": 50,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 3
+        "politics": 2
       }
     },
     "VE": {
@@ -41,33 +106,14 @@
         "politics": 20
       }
     },
-    "SA": {
-      "score": 33,
-      "articleCount": 23,
-      "categories": {
-        "war": 5,
-        "politics": 17,
-        "sports": 1
-      }
-    },
-    "CN": {
-      "score": 29,
-      "articleCount": 8,
-      "categories": {
-        "politics": 5,
-        "war": 2,
-        "culture": 1
-      }
-    },
     "RS": {
-      "score": 45,
-      "articleCount": 40,
+      "score": 44,
+      "articleCount": 38,
       "categories": {
-        "politics": 35,
+        "politics": 34,
         "crisis": 1,
         "disaster": 1,
-        "war": 2,
-        "culture": 1
+        "war": 2
       }
     },
     "IL": {
@@ -117,14 +163,6 @@
         "culture": 1
       }
     },
-    "IR": {
-      "score": 34,
-      "articleCount": 17,
-      "categories": {
-        "politics": 13,
-        "war": 4
-      }
-    },
     "NZ": {
       "score": 50,
       "articleCount": 2,
@@ -156,10 +194,10 @@
     },
     "US": {
       "score": 48,
-      "articleCount": 12,
+      "articleCount": 11,
       "categories": {
         "economy": 1,
-        "politics": 9,
+        "politics": 8,
         "culture": 1,
         "war": 1
       }
@@ -181,35 +219,18 @@
       }
     },
     "DE": {
-      "score": 40,
-      "articleCount": 3,
-      "categories": {
-        "politics": 2,
-        "disaster": 1
-      }
-    },
-    "KE": {
-      "score": 50,
+      "score": 38,
       "articleCount": 2,
       "categories": {
-        "politics": 2
+        "politics": 1,
+        "disaster": 1
       }
     },
     "RU": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
-      }
-    },
-    "FR": {
-      "score": 42,
-      "articleCount": 30,
-      "categories": {
-        "politics": 23,
-        "crisis": 4,
-        "positive": 1,
-        "war": 2
+        "politics": 1
       }
     },
     "DZ": {
@@ -257,13 +278,6 @@
       "categories": {
         "politics": 1,
         "war": 1
-      }
-    },
-    "IT": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
       }
     },
     "PH": {
@@ -340,9 +354,9 @@
     },
     "JP": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     },
     "QA": {
@@ -365,24 +379,386 @@
       "categories": {
         "politics": 1
       }
-    },
-    "LB": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "PE": {
-      "score": 31,
-      "articleCount": 2,
-      "categories": {
-        "crisis": 1,
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "6173e3339c3a",
+      "title": "Luxon responds to claims La'auli snubbed him, says Samoa treaty 'not priority for us at this time'",
+      "summary": "Luxon responds to claims La'auli snubbed him, says Samoa treaty 'not priority for us at this time'",
+      "link": "https://www.rnz.co.nz/news/pacific/2168392/luxon-responds-to-claims-la-auli-snubbed-him-says-samoa-treaty-not-priority-for-us-at-this-time",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981679425
+    },
+    {
+      "hash": "44da50a03192",
+      "title": "'Everything's pretty charred' - police seek cause of fire that gutted Napier church",
+      "summary": "'Everything's pretty charred' - police seek cause of fire that gutted Napier church",
+      "link": "https://www.rnz.co.nz/news/crime-and-justice/2168504/everything-s-pretty-charred-police-seek-cause-of-fire-that-gutted-napier-church",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792981676142
+    },
+    {
+      "hash": "711b35d633c2",
+      "title": "PNG communities stuggle with El Niño drought",
+      "summary": "PNG communities stuggle with El Niño drought",
+      "link": "https://www.rnz.co.nz/news/pacific/2168659/png-communities-stuggle-with-el-nino-drought",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981672884
+    },
+    {
+      "hash": "6dee09945510",
+      "title": "Worker dies in hospital after being dragged under ute at service station",
+      "summary": "Worker dies in hospital after being dragged under ute at service station",
+      "link": "https://www.abc.net.au/news/2026-10-26/service-station-worker-dies-in-hospital-after-dragged-by-ute/107308122",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1792981669286
+    },
+    {
+      "hash": "de0beaa1d6e0",
+      "title": "Woman granted bail after allegedly trying to snatch teen's hijab",
+      "summary": "Woman granted bail after allegedly trying to snatch teen's hijab",
+      "link": "https://www.abc.net.au/news/2026-10-26/qld-woman-granted-bail-after-alleged-hijab-snatch-attempt/107308350",
+      "source": "ABC Australia",
+      "countryCode": "OM",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981665052
+    },
+    {
+      "hash": "45e4b8e510ff",
+      "title": "Rome demonstrators storm Colosseum as Europe's youth protests spread",
+      "summary": "Rome demonstrators storm Colosseum as Europe's youth protests spread",
+      "link": "https://www.abc.net.au/news/2026-10-26/italy-protests-colosseum-cost-of-living/107308262",
+      "source": "ABC Australia",
+      "countryCode": "IT",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981660783
+    },
+    {
+      "hash": "de65577c0cd0",
+      "title": "Brazil election: Lula, Brazil’s political titan, defies the passage of time",
+      "summary": "Brazil election: Lula, Brazil’s political titan, defies the passage of time",
+      "link": "https://www.straitstimes.com/world/lula-brazils-political-titan-defies-the-passage-of-time",
+      "source": "Straits Times",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981657461
+    },
+    {
+      "hash": "0c02bb19acea",
+      "title": "Trump adds Norway to vulgar list of countries, citing Nobel snub",
+      "summary": "Trump adds Norway to vulgar list of countries, citing Nobel snub",
+      "link": "https://www.straitstimes.com/world/united-states/trump-adds-norway-to-vulgar-list-of-countries-citing-nobel-snub",
+      "source": "Straits Times",
+      "countryCode": "NO",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981653980
+    },
+    {
+      "hash": "d54947ab8cb5",
+      "title": "Trump says decision nearing on Iran: Deal or ‘finish it off’",
+      "summary": "Trump says decision nearing on Iran: Deal or ‘finish it off’",
+      "link": "https://www.straitstimes.com/world/united-states/trump-says-decision-nearing-on-iran-deal-or-finish-it-off",
+      "source": "Straits Times",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981650620
+    },
+    {
+      "hash": "80225cf4550c",
+      "title": "‘Brazil is no one’s backyard’: Lula’s swipe at US after Bolsonaro’s defeat",
+      "summary": "‘Brazil is no one’s backyard’: Lula’s swipe at US after Bolsonaro’s defeat",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/rest-of-world/brazil-is-no-ones-backyard-lulas-jibe-at-us-after-winning-fourth-presidential-term/articleshow/135200567.cms]]>",
+      "source": "Times of India",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981647361
+    },
+    {
+      "hash": "082ba6cecd3d",
+      "title": "Minors detained over ‘Shorinji racing’ pranks in Osaka and Hyogo",
+      "summary": "Minors detained over ‘Shorinji racing’ pranks in Osaka and Hyogo",
+      "link": "https://www.japantimes.co.jp/news/2026/10/26/japan/crime-legal/children-arrested-shorinji-racing/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981643695
+    },
+    {
+      "hash": "bdcdbc5516c0",
+      "title": "New farm minister inspects typhoon damage in Chiba",
+      "summary": "New farm minister inspects typhoon damage in Chiba",
+      "link": "https://www.japantimes.co.jp/news/2026/10/26/japan/takebe-chiba-typhoon/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981640080
+    },
+    {
+      "hash": "8fcf6805dea3",
+      "title": "Senior U.S. Democrat says midterm win would give party stronger voice in shaping Asia policy",
+      "summary": "Senior U.S. Democrat says midterm win would give party stronger voice in shaping Asia policy",
+      "link": "https://www.japantimes.co.jp/news/2026/10/26/asia-pacific/us-ami-bera-japan-asia-taiwan/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1792981636771
+    },
+    {
+      "hash": "1579af7a6880",
+      "title": "Tibetan river hosting world’s biggest dam is facing increasing flood risk: study",
+      "summary": "Tibetan river hosting world’s biggest dam is facing increasing flood risk: study",
+      "link": "https://www.scmp.com/news/china/science/article/3371763/tibetan-river-hosting-worlds-biggest-dam-facing-increasing-flood-risk-study",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1792981633052
+    },
+    {
+      "hash": "6c7eb3747602",
+      "title": "Weapon or armour? The contentious debate over China’s open-weight AI",
+      "summary": "Weapon or armour? The contentious debate over China’s open-weight AI",
+      "link": "https://www.scmp.com/tech/tech-trends/article/3371961/weapon-or-armour-contentious-debate-over-chinas-open-weight-ai",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981628785
+    },
+    {
+      "hash": "1d8245b432af",
+      "title": "Chinese neighbours go viral over 200-year land dispute dating back to Qianlong era",
+      "summary": "Chinese neighbours go viral over 200-year land dispute dating back to Qianlong era",
+      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3372098/chinese-neighbours-go-viral-over-200-year-land-dispute-dating-back-qianlong-era",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981622216
+    },
+    {
+      "hash": "44710ea46f73",
+      "title": "Rwanda: Kagame Defends Strict Dress Codes Amid Rwanda's Dressing Controversy",
+      "summary": "Rwanda: Kagame Defends Strict Dress Codes Amid Rwanda's Dressing Controversy",
+      "link": "https://allafrica.com/stories/202610230509.html",
+      "source": "AllAfrica",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981618597
+    },
+    {
+      "hash": "58b39ae98f4f",
+      "title": "Kenya: Calls for Penalties Follow 12-Story Building Collapse",
+      "summary": "Kenya: Calls for Penalties Follow 12-Story Building Collapse",
+      "link": "https://allafrica.com/stories/202610230513.html",
+      "source": "AllAfrica",
+      "countryCode": "KE",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1792981613595
+    },
+    {
+      "hash": "7fe07dec1e0a",
+      "title": "UNID Int Gov Matos Carvalho, 2ª zona eleitoral: resultado da votação em São Luís (MA) no 2º turno",
+      "summary": "UNID Int Gov Matos Carvalho, 2ª zona eleitoral: resultado da votação em São Luís (MA) no 2º turno",
+      "link": "https://g1.globo.com/ma/maranhao/eleicoes/2026/noticia/2026/10/25/unid-int-gov-matos-carvalho-2a-zona-eleitoral-resultado-da-votacao-em-sao-luis-ma-no-2o-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981609967
+    },
+    {
+      "hash": "d35d2c190cee",
+      "title": "CADEIA Pública de Porto Alegre, 159ª zona eleitoral: resultado da votação em Porto Alegre (RS) no 2º turno",
+      "summary": "CADEIA Pública de Porto Alegre, 159ª zona eleitoral: resultado da votação em Porto Alegre (RS) no 2º turno",
+      "link": "https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2026/noticia/2026/10/25/cadeia-publica-de-porto-alegre-159a-zona-eleitoral-resultado-da-votacao-em-porto-alegre-rs-no-2o-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981605231
+    },
+    {
+      "hash": "2ce02b5810dd",
+      "title": "Colegio Portinari, 66ª zona eleitoral: resultado da votação em Limeira (SP) no 2º turno",
+      "summary": "Colegio Portinari, 66ª zona eleitoral: resultado da votação em Limeira (SP) no 2º turno",
+      "link": "https://g1.globo.com/sp/sao-paulo/eleicoes/2026/noticia/2026/10/25/colegio-portinari-66a-zona-eleitoral-resultado-da-votacao-em-limeira-sp-no-2o-turno.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981601466
+    },
+    {
+      "hash": "6353c6fc2b1c",
+      "title": "Brazil Live Updates: Lula Wins Re-Election as Bolsonaro Rejects Result",
+      "summary": "Brazil Live Updates: Lula Wins Re-Election as Bolsonaro Rejects Result",
+      "link": "https://www.nytimes.com/live/2026/10/25/world/brazil-election",
+      "source": "NY Times",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981597431
+    },
+    {
+      "hash": "170a16e5df41",
+      "title": "Resultados de las elecciones en Brasil, en vivo | Bolsonaro pide la anulación de las elecciones: “Es imposible reconocer el resultado”",
+      "summary": "Resultados de las elecciones en Brasil, en vivo | Bolsonaro pide la anulación de las elecciones: “Es imposible reconocer el resultado”",
+      "link": "https://elpais.com/america/2026-10-25/resultados-de-las-elecciones-en-brasil-en-vivo.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981590710
+    },
+    {
+      "hash": "0601ec150139",
+      "title": "EN DIRECT, présidentielle au Brésil : Lula remporte l’élection avec 51,79 % des voix, Flavio Bolsonaro va « demander l’annulation » du scrutin",
+      "summary": "EN DIRECT, présidentielle au Brésil : Lula remporte l’élection avec 51,79 % des voix, Flavio Bolsonaro va « demander l’annulation » du scrutin",
+      "link": "https://www.lemonde.fr/international/live/2026/10/25/en-direct-election-presidentielle-au-bresil-lula-accuse-des-maires-d-empecher-des-electeurs-d-aller-voter-apres-des-penuries-de-bus-dans-plusieurs-villes_6800074_3210.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981586735
+    },
+    {
+      "hash": "b64eb11c59e3",
+      "title": "🔴 Live: Bolsonaro refuses to recognise Brazil election results",
+      "summary": "🔴 Live: Bolsonaro refuses to recognise Brazil election results",
+      "link": "https://www.france24.com/en/americas/20261025-live-voting-under-way-across-brazil-in-tight-presidential-run-off-between-lula-and-bolsonaro",
+      "source": "France24 English",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981582968
+    },
+    {
+      "hash": "a4f851352cd3",
+      "title": "Lula re-elected president in Brazil but his opponent refuses to accept result",
+      "summary": "Lula re-elected president in Brazil but his opponent refuses to accept result",
+      "link": "https://news.sky.com/story/lula-re-elected-president-in-brazil-electoral-authority-says-13603818",
+      "source": "Sky News",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981578735
+    },
+    {
+      "hash": "4f3cb093ac77",
+      "title": "فرنسا.. رئيس الوزراء يلتقي ممثلي الطلاب لبحث مطالبهم",
+      "summary": "فرنسا.. رئيس الوزراء يلتقي ممثلي الطلاب لبحث مطالبهم",
+      "link": "https://www.skynewsarabia.com/world/1900566-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D9%84%D8%AA%D9%82%D9%8A-%D9%85%D9%85%D8%AB%D9%84%D9%8A-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D9%84%D8%A8%D8%AD%D8%AB-%D9%85%D8%B7%D8%A7%D9%84%D8%A8%D9%87%D9%85",
+      "source": "Sky News عربية",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1792981575057
+    },
+    {
+      "hash": "dc31ca31b251",
+      "title": "ميلان يستعيد توازنه بثنائية نظيفة أمام أودينيزي",
+      "summary": "ميلان يستعيد توازنه بثنائية نظيفة أمام أودينيزي",
+      "link": "https://www.skynewsarabia.com/sport/1900568-%D9%85%D9%8A%D9%84%D8%A7%D9%86-%D9%8A%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D8%AA%D9%88%D8%A7%D8%B2%D9%86%D9%87-%D8%A8%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D9%86%D8%B8%D9%8A%D9%81%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A3%D9%88%D8%AF%D9%8A%D9%86%D9%8A%D8%B2%D9%8A",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1792981570871
+    },
+    {
+      "hash": "47b3a8af6f69",
+      "title": "التحالف يعلن اعتراض صاروخ باتجاه الرياض وتدمير منصتين للصواريخ في صنعاء",
+      "summary": "التحالف يعلن اعتراض صاروخ باتجاه الرياض وتدمير منصتين للصواريخ في صنعاء",
+      "link": "https://www.bbc.com/arabic/articles/crq8n4zx8l4zo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1792981567296
+    },
     {
       "hash": "943c640bde06",
       "title": "Melbourne Market board quits over appointment of former Demons chief Paul Guerra",
@@ -7805,383 +8181,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1792923563662
-    },
-    {
-      "hash": "79e658ce3cbd",
-      "title": "Audi heads to US: Trump hopes carmaker boosts election bid",
-      "summary": "Audi heads to US: Trump hopes carmaker boosts election bid",
-      "link": "https://www.euronews.com/2026/10/25/audi-heads-to-us-trump-hopes-carmaker-boosts-election-bid",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792923560411
-    },
-    {
-      "hash": "dc294462d92a",
-      "title": "Thousands march across Italy as protests bring isolated clashes with police",
-      "summary": "Thousands march across Italy as protests bring isolated clashes with police",
-      "link": "https://www.euronews.com/2026/10/25/thousands-march-across-italy-as-protests-bring-isolated-clashes-with-police",
-      "source": "Euronews English",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923556915
-    },
-    {
-      "hash": "357ba57c4806",
-      "title": "Gadi Eisenkot campaigns on Moroccan roots in challenge to Netanyahu",
-      "summary": "Gadi Eisenkot campaigns on Moroccan roots in challenge to Netanyahu",
-      "link": "https://www.dw.com/en/gadi-eisenkot-campaigns-on-moroccan-roots-in-challenge-to-netanyahu/a-79747193?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923553351
-    },
-    {
-      "hash": "da88e545a39f",
-      "title": "Brazil votes in tight runoff between leftist Lula and right-wing Flavio Bolsonaro",
-      "summary": "Brazil votes in tight runoff between leftist Lula and right-wing Flavio Bolsonaro",
-      "link": "https://www.dw.com/en/brazil-votes-in-tight-runoff-between-leftist-lula-and-right-wing-flavio-bolsonaro/a-79753924?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923549335
-    },
-    {
-      "hash": "5ce65a7497d3",
-      "title": "France’s far right gathers as Le Pen prepares her presidential campaign",
-      "summary": "France’s far right gathers as Le Pen prepares her presidential campaign",
-      "link": "https://www.france24.com/en/france-s-far-right-gathers-as-le-pen-prepares-her-presidential-campaign",
-      "source": "France24 English",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792923544532
-    },
-    {
-      "hash": "17f2ba37a6d9",
-      "title": "More than 400.000 protest across France",
-      "summary": "More than 400.000 protest across France",
-      "link": "https://www.france24.com/en/more-than-400-000-protest-across-france",
-      "source": "France24 English",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923541176
-    },
-    {
-      "hash": "0487ce3f2074",
-      "title": "France: Some clashes erupted at end of protests",
-      "summary": "France: Some clashes erupted at end of protests",
-      "link": "https://www.france24.com/en/france-some-clashes-erupted-at-end-of-protests",
-      "source": "France24 English",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923537685
-    },
-    {
-      "hash": "46bb1e96aba6",
-      "title": "مارتينيز مونويرا يقود الكلاسيكو الإسباني الخامس في مسيرته... والجدل يلاحقه من برشلونة والريال",
-      "summary": "مارتينيز مونويرا يقود الكلاسيكو الإسباني الخامس في مسيرته... والجدل يلاحقه من برشلونة والريال",
-      "link": "https://aawsat.com/node/5333374",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923533929
-    },
-    {
-      "hash": "579bc23f8610",
-      "title": "كندا: شركة تأجير سيارات تتهم رجلاً بقطع مسافة 30 ألف كيلومتر خلال أسبوع!",
-      "summary": "كندا: شركة تأجير سيارات تتهم رجلاً بقطع مسافة 30 ألف كيلومتر خلال أسبوع!",
-      "link": "https://aawsat.com/node/5333375",
-      "source": "الشرق الأوسط",
-      "countryCode": "CA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923513139
-    },
-    {
-      "hash": "c72570d14aa7",
-      "title": "نتنياهو: إيران تجدد برنامجها النووي وتريد تدميرنا خلال فترة زمنية قصيرة",
-      "summary": "نتنياهو: إيران تجدد برنامجها النووي وتريد تدميرنا خلال فترة زمنية قصيرة",
-      "link": "https://aawsat.com/node/5333378",
-      "source": "الشرق الأوسط",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923509587
-    },
-    {
-      "hash": "32a414e57bd4",
-      "title": "انتخابات برلمانية مبكرة في صربيا: خيار الصناديق بين فوتشيتش الشعبوي وحركة الطلاب",
-      "summary": "انتخابات برلمانية مبكرة في صربيا: خيار الصناديق بين فوتشيتش الشعبوي وحركة الطلاب",
-      "link": "https://arabic.euronews.com/2026/10/25/serbia-snap-parliament-election-voters-vucic-students-eu-russia-novi-sad-train-disaster",
-      "source": "Euronews عربي",
-      "countryCode": "RS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792923505541
-    },
-    {
-      "hash": "46b63fdfb03b",
-      "title": "من اختراق إيران إلى \"البيجر\" في لبنان.. رئيس الموساد السابق يكشف كواليس العمليات السرية",
-      "summary": "من اختراق إيران إلى \"البيجر\" في لبنان.. رئيس الموساد السابق يكشف كواليس العمليات السرية",
-      "link": "https://arabic.euronews.com/2026/10/25/barnea-mossad-iran-agents-pager-operation",
-      "source": "Euronews عربي",
-      "countryCode": "LB",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792923502254
-    },
-    {
-      "hash": "1a833097f9be",
-      "title": "بسبب تغير المناخ.. هل تصبح البطاطا في ألمانيا أغلى من الكافيار؟",
-      "summary": "بسبب تغير المناخ.. هل تصبح البطاطا في ألمانيا أغلى من الكافيار؟",
-      "link": "https://arabic.euronews.com/2026/10/25/due-to-climate-change-could-potatoes-in-germany-become-more-expensive-than-caviar",
-      "source": "Euronews عربي",
-      "countryCode": "DE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923498109
-    },
-    {
-      "hash": "fde453bdc628",
-      "title": "بوتين:اتهام روسيا بالتحريض على الاضطرابات بأوروبا تجاوز واضح",
-      "summary": "بوتين:اتهام روسيا بالتحريض على الاضطرابات بأوروبا تجاوز واضح",
-      "link": "https://www.skynewsarabia.com/world/1900483-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D8%A7%D8%AA%D9%87%D8%A7%D9%85-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D8%A8%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B6-%D8%A7%D9%84%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7-%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-%D9%88%D8%A7%D8%B6%D8%AD",
-      "source": "Sky News عربية",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923494592
-    },
-    {
-      "hash": "07b6f9c2462d",
-      "title": "إيران تخشى برد الشتاء.. لماذا تعجز ثروة الغاز عن حمايتها؟",
-      "summary": "إيران تخشى برد الشتاء.. لماذا تعجز ثروة الغاز عن حمايتها؟",
-      "link": "https://www.skynewsarabia.com/world/1900482-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D8%AE%D8%B4%D9%89-%D8%A8%D8%B1%D8%AF-%D8%A7%D9%84%D8%B4%D8%AA%D8%A7%D8%A1-%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B9%D8%AC%D8%B2-%D8%AB%D8%B1%D9%88%D8%A9-%D8%A7%D9%84%D8%BA%D8%A7%D8%B2-%D8%AD%D9%85%D8%A7%D9%8A%D8%AA%D9%87%D8%A7",
-      "source": "Sky News عربية",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923490861
-    },
-    {
-      "hash": "fc020ff14d5f",
-      "title": "السيسي يرفض \"التحكم المنفرد\" في مياه النيل",
-      "summary": "السيسي يرفض \"التحكم المنفرد\" في مياه النيل",
-      "link": "https://www.skynewsarabia.com/middle-east/1900485-%D8%A7%D9%84%D8%B3%D9%8A%D8%B3%D9%8A-%D9%8A%D8%B1%D9%81%D8%B6-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D9%85%D9%86%D9%81%D8%B1%D8%AF-%D9%85%D9%8A%D8%A7%D9%87-%D8%A7%D9%84%D9%86%D9%8A%D9%84",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923487070
-    },
-    {
-      "hash": "375e8e062ddb",
-      "title": "بين لولا وبولسونارو... البرازيليون يتوجهون إلى صناديق الاقتراع لاختيار رئيسهم",
-      "summary": "بين لولا وبولسونارو... البرازيليون يتوجهون إلى صناديق الاقتراع لاختيار رئيسهم",
-      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261025-%D8%A8%D9%8A%D9%86-%D9%84%D9%88%D9%84%D8%A7-%D9%88%D8%A8%D9%88%D9%84%D8%B3%D9%88%D9%86%D8%A7%D8%B1%D9%88-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84%D9%8A%D9%88%D9%86-%D9%8A%D8%AA%D9%88%D8%AC%D9%87%D9%88%D9%86-%D8%A5%D9%84%D9%89-%D8%B5%D9%86%D8%A7%D8%AF%D9%8A%D9%82-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%B9-%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%B1%D8%A6%D9%8A%D8%B3%D9%87%D9%85",
-      "source": "France24 عربي",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792923483443
-    },
-    {
-      "hash": "9c4a9630f51f",
-      "title": "السعودية تعلن اعتراض وتدمير 10 صواريخ من جماعة أنصار الله، بالتزامن مع استئناف الرحلات بمطار الرياض",
-      "summary": "السعودية تعلن اعتراض وتدمير 10 صواريخ من جماعة أنصار الله، بالتزامن مع استئناف الرحلات بمطار الرياض",
-      "link": "https://www.bbc.com/arabic/articles/crq8n4zx8l4zo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "SA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792923479992
-    },
-    {
-      "hash": "2cad21e7468b",
-      "title": "Borr Drilling rig sinks off Gabon, five personnel missing",
-      "summary": "Borr Drilling rig sinks off Gabon, five personnel missing",
-      "link": "https://www.straitstimes.com/world/europe/borr-drilling-rig-sinks-off-gabon-five-personnel-missing",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920115558
-    },
-    {
-      "hash": "f664c281fdc3",
-      "title": "‘200 seats haq hai hamara’: Congress puts its UP poll ambitions on Lucknow walls",
-      "summary": "‘200 seats haq hai hamara’: Congress puts its UP poll ambitions on Lucknow walls",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/lucknow/200-seats-haq-hai-hamara-congress-puts-its-up-poll-ambitions-on-lucknow-walls/articleshow/135185201.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920111738
-    },
-    {
-      "hash": "ba17680696ab",
-      "title": "In first-ever climate crisis amends, Nepal to get $21.6 million",
-      "summary": "In first-ever climate crisis amends, Nepal to get $21.6 million",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/south-asia/in-first-ever-climate-crisis-amends-nepal-to-get-21-6-million/articleshow/135181330.cms]]>",
-      "source": "Times of India",
-      "countryCode": "PE",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1792920108536
-    },
-    {
-      "hash": "9c951d9704e2",
-      "title": "How this long-term resident avoids the annoying tourist label in Japan",
-      "summary": "How this long-term resident avoids the annoying tourist label in Japan",
-      "link": "https://www.japantimes.co.jp/community/2026/10/25/voices/overtourism-issue-foreign-residents/",
-      "source": "Japan Times",
-      "countryCode": "JP",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920104981
-    },
-    {
-      "hash": "8c0d41e8bc76",
-      "title": "What can Asia do to avoid crossing crucial climate tipping points?",
-      "summary": "What can Asia do to avoid crossing crucial climate tipping points?",
-      "link": "https://www.japantimes.co.jp/environment/2026/10/25/climate-change/climate-tipping-points-asia/",
-      "source": "Japan Times",
-      "countryCode": "PE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920094612
-    },
-    {
-      "hash": "28c339237a07",
-      "title": "East Asia’s cultural economies are bridging politics-driven divides",
-      "summary": "East Asia’s cultural economies are bridging politics-driven divides",
-      "link": "https://www.scmp.com/opinion/asia-opinion/article/3371868/east-asias-cultural-economies-are-bridging-politics-driven-divides",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920090705
-    },
-    {
-      "hash": "cd549e3bab7c",
-      "title": "Serbia votes as ruling party faces student-led anti-corruption list",
-      "summary": "Serbia votes as ruling party faces student-led anti-corruption list",
-      "link": "https://www.scmp.com/news/world/europe/article/3372068/serbia-votes-ruling-party-faces-student-led-anti-corruption-list",
-      "source": "SCMP",
-      "countryCode": "RS",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1792920087284
-    },
-    {
-      "hash": "2ea1d06a2157",
-      "title": "Upgrade or eyesore? Why Hong Kong’s Peak light display has hit a snag",
-      "summary": "Upgrade or eyesore? Why Hong Kong’s Peak light display has hit a snag",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372069/upgrade-or-eyesore-why-hong-kongs-peak-light-display-has-hit-snag",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1792920083689
-    },
-    {
-      "hash": "7278ace2c486",
-      "title": "Obama’s Ohio, Michigan speeches: Key takeaways on Trump, Iran war, midterms",
-      "summary": "Obama’s Ohio, Michigan speeches: Key takeaways on Trump, Iran war, midterms",
-      "link": "https://www.aljazeera.com/news/2026/10/25/obamas-ohio-michigan-speeches-key-takeaways-on-trump-iran-war-midterms?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1792920079328
-    },
-    {
-      "hash": "43c8e0427f60",
-      "title": "Indigenous communities worry Brazil’s election could hurt environment",
-      "summary": "Indigenous communities worry Brazil’s election could hurt environment",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/indigenous-communities-worry-brazils-election-could-hurt-environment?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792920075823
-    },
-    {
-      "hash": "6ff80e02d61e",
-      "title": "Brazil 2026 election live: Lula and Bolsonaro in tight race",
-      "summary": "Brazil 2026 election live: Lula and Bolsonaro in tight race",
-      "link": "https://www.aljazeera.com/news/liveblog/2026/10/25/brazil-election-2026-live-lula-and-bolsonaro-in-tight-race?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1792920069859
     }
   ]
 }
