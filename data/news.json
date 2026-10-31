@@ -1,32 +1,90 @@
 {
-  "updated_at": "2026-10-31T01:48:44.531Z",
+  "updated_at": "2026-10-31T02:39:26.754Z",
   "total": 600,
-  "new_count": 32,
+  "new_count": 21,
   "ai_success": 0,
-  "ai_fallback": 32,
+  "ai_fallback": 21,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
-      "politics": 465,
+      "politics": 468,
+      "disaster": 16,
       "culture": 16,
-      "health": 10,
-      "war": 47,
-      "sports": 12,
-      "disaster": 15,
-      "crisis": 14,
+      "crisis": 15,
+      "health": 11,
+      "war": 43,
+      "sports": 10,
       "economy": 12,
       "positive": 9
     }
   },
   "countries": {
-    "IN": {
-      "score": 34,
-      "articleCount": 8,
+    "IL": {
+      "score": 40,
+      "articleCount": 30,
       "categories": {
-        "politics": 5,
+        "politics": 23,
+        "culture": 2,
+        "war": 5
+      }
+    },
+    "BR": {
+      "score": 50,
+      "articleCount": 5,
+      "categories": {
+        "politics": 5
+      }
+    },
+    "IN": {
+      "score": 37,
+      "articleCount": 9,
+      "categories": {
+        "politics": 6,
         "war": 2,
         "culture": 1
+      }
+    },
+    "JP": {
+      "score": 50,
+      "articleCount": 4,
+      "categories": {
+        "politics": 4
+      }
+    },
+    "CN": {
+      "score": 45,
+      "articleCount": 8,
+      "categories": {
+        "politics": 7,
+        "war": 1
+      }
+    },
+    "US": {
+      "score": 43,
+      "articleCount": 21,
+      "categories": {
+        "culture": 1,
+        "war": 2,
+        "politics": 16,
+        "crisis": 1,
+        "positive": 1
+      }
+    },
+    "RU": {
+      "score": 49,
+      "articleCount": 25,
+      "categories": {
+        "politics": 22,
+        "positive": 1,
+        "disaster": 2
+      }
+    },
+    "TR": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
       }
     },
     "AF": {
@@ -41,22 +99,6 @@
       "articleCount": 5,
       "categories": {
         "politics": 5
-      }
-    },
-    "JP": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
-    "RU": {
-      "score": 49,
-      "articleCount": 25,
-      "categories": {
-        "politics": 22,
-        "positive": 1,
-        "disaster": 2
       }
     },
     "NG": {
@@ -94,11 +136,11 @@
       }
     },
     "IR": {
-      "score": 26,
-      "articleCount": 15,
+      "score": 27,
+      "articleCount": 14,
       "categories": {
         "politics": 6,
-        "war": 7,
+        "war": 6,
         "economy": 1,
         "disaster": 1
       }
@@ -112,16 +154,6 @@
         "sports": 1
       }
     },
-    "US": {
-      "score": 39,
-      "articleCount": 20,
-      "categories": {
-        "war": 2,
-        "politics": 16,
-        "crisis": 1,
-        "positive": 1
-      }
-    },
     "OM": {
       "score": 50,
       "articleCount": 5,
@@ -130,28 +162,13 @@
       }
     },
     "UA": {
-      "score": 21,
-      "articleCount": 21,
+      "score": 22,
+      "articleCount": 18,
       "categories": {
-        "war": 8,
-        "politics": 10,
+        "war": 6,
+        "politics": 9,
         "disaster": 2,
         "culture": 1
-      }
-    },
-    "CN": {
-      "score": 44,
-      "articleCount": 7,
-      "categories": {
-        "politics": 6,
-        "war": 1
-      }
-    },
-    "BR": {
-      "score": 50,
-      "articleCount": 4,
-      "categories": {
-        "politics": 4
       }
     },
     "DE": {
@@ -198,15 +215,6 @@
         "politics": 3,
         "sports": 1,
         "war": 1
-      }
-    },
-    "IL": {
-      "score": 39,
-      "articleCount": 30,
-      "categories": {
-        "politics": 23,
-        "culture": 2,
-        "war": 5
       }
     },
     "CA": {
@@ -260,11 +268,10 @@
       }
     },
     "ZA": {
-      "score": 60,
-      "articleCount": 4,
+      "score": 50,
+      "articleCount": 2,
       "categories": {
-        "politics": 2,
-        "sports": 2
+        "politics": 2
       }
     },
     "MX": {
@@ -272,13 +279,6 @@
       "articleCount": 1,
       "categories": {
         "positive": 1
-      }
-    },
-    "TR": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
       }
     },
     "KW": {
@@ -454,13 +454,286 @@
     },
     "PT": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     }
   },
   "articles": [
+    {
+      "hash": "4191d66dd391",
+      "title": "Inside fraternities and why they are so important to US colleges",
+      "summary": "Inside fraternities and why they are so important to US colleges",
+      "link": "https://www.abc.net.au/news/2026-10-31/us-college-fraternities-sororities-and-rape-allegations/107280942",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414365751
+    },
+    {
+      "hash": "771d07092a13",
+      "title": "The Republican senator campaigning on her clashes with Trump",
+      "summary": "The Republican senator campaigning on her clashes with Trump",
+      "link": "https://www.abc.net.au/news/2026-10-31/susan-collins-distances-from-donald-trump-midterm-elections/107331256",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414355937
+    },
+    {
+      "hash": "7484918ebd7c",
+      "title": "Israel's Arab parties emerge from deadlocked election as kingmakers",
+      "summary": "Israel's Arab parties emerge from deadlocked election as kingmakers",
+      "link": "https://www.abc.net.au/news/2026-10-31/israel-election-leaves-anti-netanyahu-arab-parties-kingmakers/107326622",
+      "source": "ABC Australia",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793414351487
+    },
+    {
+      "hash": "516fa3b6403a",
+      "title": "Is it legal to recruit spoiler candidates in US elections?",
+      "summary": "Is it legal to recruit spoiler candidates in US elections?",
+      "link": "https://www.straitstimes.com/world/united-states/is-it-legal-to-recruit-spoiler-candidates-in-us-elections",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793414347535
+    },
+    {
+      "hash": "ecca38aed2d2",
+      "title": "Air Force One flyover for White House Halloween event causes flight delays",
+      "summary": "Air Force One flyover for White House Halloween event causes flight delays",
+      "link": "https://www.straitstimes.com/world/united-states/air-force-one-flyover-for-white-house-halloween-event-causes-flight-delays",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414343595
+    },
+    {
+      "hash": "23964d5204e1",
+      "title": "Trump, Milei under pressure to explain Bolsonaro flight from Brazil",
+      "summary": "Trump, Milei under pressure to explain Bolsonaro flight from Brazil",
+      "link": "https://www.straitstimes.com/world/trump-milei-under-pressure-to-explain-bolsonaro-flight-from-brazil",
+      "source": "Straits Times",
+      "countryCode": "BR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414339747
+    },
+    {
+      "hash": "ef3b3217cd5f",
+      "title": "India's poverty will be down from 14.2% to 12.1% in 2 years: World Bank",
+      "summary": "India's poverty will be down from 14.2% to 12.1% in 2 years: World Bank",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/indias-poverty-will-be-down-from-14-2-to-12-1-in-2-years-world-bank/articleshow/135377216.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414336012
+    },
+    {
+      "hash": "5de29d018308",
+      "title": "Republicans are about to find out if their gerrymanders backfired",
+      "summary": "Republicans are about to find out if their gerrymanders backfired",
+      "link": "https://www.japantimes.co.jp/news/2026/10/31/world/politics/gerrymander-republicans/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1793414328677
+    },
+    {
+      "hash": "e49210d97ad2",
+      "title": "Hegseth faces bipartisan push for his ouster after midterms",
+      "summary": "Hegseth faces bipartisan push for his ouster after midterms",
+      "link": "https://www.japantimes.co.jp/news/2026/10/31/world/politics/hegseth-bipartisan-ouster-midterms/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793414325235
+    },
+    {
+      "hash": "a384a9464208",
+      "title": "Japan pushes to remove Myanmar from global financial watchdog’s blacklist",
+      "summary": "Japan pushes to remove Myanmar from global financial watchdog’s blacklist",
+      "link": "https://www.japantimes.co.jp/news/2026/10/31/japan/politics/japan-myanmar-blacklist-removal-push/",
+      "source": "Japan Times",
+      "countryCode": "JP",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414320376
+    },
+    {
+      "hash": "3cd6afca1b3b",
+      "title": "‘Zero-cost’ lifestyle: China cash-strapped youth embrace thrifty living for mental relief",
+      "summary": "‘Zero-cost’ lifestyle: China cash-strapped youth embrace thrifty living for mental relief",
+      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3372804/zero-cost-lifestyle-china-cash-strapped-youth-embrace-thrifty-living-mental-relief",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414317105
+    },
+    {
+      "hash": "aecc2c24832a",
+      "title": "Trump and Milei under pressure to explain role in Flavio Bolsonaro’s dramatic escape to US",
+      "summary": "Trump and Milei under pressure to explain role in Flavio Bolsonaro’s dramatic escape to US",
+      "link": "https://www.scmp.com/news/world/americas/article/3372806/trump-and-milei-under-pressure-explain-role-flavio-bolsonaros-dramatic-escape-us",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414312601
+    },
+    {
+      "hash": "473c3a7fe2a3",
+      "title": "Pope Leo becomes first pontiff to vote in US general election",
+      "summary": "Pope Leo becomes first pontiff to vote in US general election",
+      "link": "https://www.aljazeera.com/news/2026/10/31/pope-leo-becomes-first-pontiff-to-vote-in-us-general-election?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793414309426
+    },
+    {
+      "hash": "b5274ba021fe",
+      "title": "Cachorro fica ilhado após aumento do volume de água na Cachoeira de Cambuci; animal passa bem",
+      "summary": "Cachorro fica ilhado após aumento do volume de água na Cachoeira de Cambuci; animal passa bem",
+      "link": "https://g1.globo.com/rj/norte-fluminense/noticia/2026/10/30/cachorro-fica-ilhado-apos-aumento-do-volume-de-agua-na-cachoeira-de-cambuci-animal-passa-bem.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414301075
+    },
+    {
+      "hash": "82e3e7b4e45e",
+      "title": "‘Poder à Prova’: JN vai ao Texas para mostrar como a imigração e a inteligência artificial têm mobilizado o eleitor americano",
+      "summary": "‘Poder à Prova’: JN vai ao Texas para mostrar como a imigração e a inteligência artificial têm mobilizado o eleitor americano",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/30/poder-a-prova-jn-vai-ao-texas-para-mostrar-como-a-imigracao-e-a-inteligencia-artificial-tem-mobilizado-o-eleitor-americano.ghtml",
+      "source": "Globo",
+      "countryCode": "US",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793414297695
+    },
+    {
+      "hash": "72bc014f246f",
+      "title": "Polish president storms into besieged court amid constitutional crisis (VIDEOS): Live updates",
+      "summary": "Polish president storms into besieged court amid constitutional crisis (VIDEOS): Live updates",
+      "link": "<![CDATA[https://rt-english.com/news/648157-coup-poland-court/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1793414294211
+    },
+    {
+      "hash": "a886904fadf9",
+      "title": "European diplomats shun Russia at G20 gathering in the US",
+      "summary": "European diplomats shun Russia at G20 gathering in the US",
+      "link": "https://www.dw.com/en/european-diplomats-shun-russia-at-g20-gathering-in-the-us/a-79813925?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414290784
+    },
+    {
+      "hash": "5fccfdaf4da3",
+      "title": "Crypto industry suffers 'largest bank heist in human history'",
+      "summary": "Crypto industry suffers 'largest bank heist in human history'",
+      "link": "https://news.sky.com/story/crypto-worth-billions-frozen-over-potential-security-issue-13605627",
+      "source": "Sky News",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414278996
+    },
+    {
+      "hash": "6226fac37316",
+      "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+      "summary": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+      "link": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414275098
+    },
+    {
+      "hash": "e4664ae2594b",
+      "title": "تركيا ترشح فريدون سينيرلي أوغلو لمنصب الأمين العام للأمم المتحدة",
+      "summary": "تركيا ترشح فريدون سينيرلي أوغلو لمنصب الأمين العام للأمم المتحدة",
+      "link": "https://aawsat.com/node/5335796",
+      "source": "الشرق الأوسط",
+      "countryCode": "TR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793414267635
+    },
+    {
+      "hash": "8618fe79cb92",
+      "title": "دراسة: الجمع بين عقارين يضاعف فرص الحياة لمرضى سرطان الكلى",
+      "summary": "دراسة: الجمع بين عقارين يضاعف فرص الحياة لمرضى سرطان الكلى",
+      "link": "https://www.skynewsarabia.com/technology/1901696-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%AC%D9%85%D8%B9-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D9%86-%D9%8A%D8%B6%D8%A7%D8%B9%D9%81-%D9%81%D8%B1%D8%B5-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D9%84%D9%85%D8%B1%D8%B6%D9%89-%D8%B3%D8%B1%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D9%83%D9%84%D9%89",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1793414263745
+    },
     {
       "hash": "26e3c6e23880",
       "title": "More regulation needed for solar panel industry, expert says",
@@ -7987,279 +8260,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1793353498224
-    },
-    {
-      "hash": "8cc85c115715",
-      "title": "NBA: Cameron Boozer tallies first triple-double, Grizzlies remain unbeaten",
-      "summary": "NBA: Cameron Boozer tallies first triple-double, Grizzlies remain unbeaten",
-      "link": "https://www.aljazeera.com/sports/2026/10/30/nba-cameron-boozer-tallies-first-triple-double-grizzlies-remain-unbeaten?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353492188
-    },
-    {
-      "hash": "600b0c889209",
-      "title": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
-      "summary": "Oil flows are up as Iran war turmoil eases. Why do prices keep rising?",
-      "link": "https://www.aljazeera.com/economy/2026/10/30/oil-flows-are-up-as-iran-war-turmoil-eases-why-do-prices-keep-rising?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793353471563
-    },
-    {
-      "hash": "78bc817650ce",
-      "title": "Russian oil refinery struck as Ukraine renews drone attacks",
-      "summary": "Russian oil refinery struck as Ukraine renews drone attacks",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/10/30/russian-oil-refinery-struck-as-ukraine-renews-drone-attacks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "UA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793353464353
-    },
-    {
-      "hash": "7799355ec93d",
-      "title": "Police arrest 14 over attack on APC supporters travelling to rally",
-      "summary": "Police arrest 14 over attack on APC supporters travelling to rally",
-      "link": "https://www.premiumtimesng.com/news/top-news/921504-police-arrest-14-over-attack-on-apc-supporters-travelling-to-rally.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793353457143
-    },
-    {
-      "hash": "ff4450084ee2",
-      "title": "2027Alternativa Film Festival: Organisers call for submissions",
-      "summary": "2027Alternativa Film Festival: Organisers call for submissions",
-      "link": "https://www.premiumtimesng.com/entertainment/movies/921506-2027alternativa-film-festival-organisers-call-for-submissions.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793353450034
-    },
-    {
-      "hash": "799cf1cc20de",
-      "title": "Senatorial Race: Why Uzodimma ought to have resigned as governor &#8211; Okorocha",
-      "summary": "Senatorial Race: Why Uzodimma ought to have resigned as governor &#8211; Okorocha",
-      "link": "https://www.premiumtimesng.com/news/top-news/921510-senatorial-race-why-uzodimma-ought-to-have-resigned-as-governor-okorocha.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353443975
-    },
-    {
-      "hash": "25e89433e9b2",
-      "title": "Durban to lead South Africa’s bid to bring Olympics to Africa",
-      "summary": "Durban to lead South Africa’s bid to bring Olympics to Africa",
-      "link": "http://www.africanews.com/2026/10/30/durban-to-lead-south-africas-bid-to-bring-olympics-to-africa/",
-      "source": "Africanews",
-      "countryCode": "ZA",
-      "category": "sports",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793353437484
-    },
-    {
-      "hash": "652128dd69bc",
-      "title": "Haiti announces new election dates as El Salvador sends troops to rescue missing soldiers",
-      "summary": "Haiti announces new election dates as El Salvador sends troops to rescue missing soldiers",
-      "link": "http://www.africanews.com/2026/10/30/haiti-announces-new-election-dates-as-el-salvador-sends-troops-to-rescue-missing-soldiers/",
-      "source": "Africanews",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793353420871
-    },
-    {
-      "hash": "069b76c30d77",
-      "title": "South Africa selects Durban as preferred candidate for Olympic bid",
-      "summary": "South Africa selects Durban as preferred candidate for Olympic bid",
-      "link": "http://www.africanews.com/2026/10/30/south-africas-selects-durban-as-preferred-candidate-for-olympic-bid/",
-      "source": "Africanews",
-      "countryCode": "ZA",
-      "category": "sports",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793353399768
-    },
-    {
-      "hash": "92f711caaa32",
-      "title": "Santarém prorroga inscrições para edital de fomento à cultura da Lei Aldir Blanc; veja novo prazo",
-      "summary": "Santarém prorroga inscrições para edital de fomento à cultura da Lei Aldir Blanc; veja novo prazo",
-      "link": "https://g1.globo.com/pa/santarem-regiao/noticia/2026/10/30/santarem-prorroga-inscricoes-para-edital-de-fomento-a-cultura-da-lei-aldir-blanc-veja-novo-prazo.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353378669
-    },
-    {
-      "hash": "4e883a6b3572",
-      "title": "Homem é morto a tiros após ter casa invadida por suspeito que se apresentou como policial, na Grande João Pessoa",
-      "summary": "Homem é morto a tiros após ter casa invadida por suspeito que se apresentou como policial, na Grande João Pessoa",
-      "link": "https://g1.globo.com/pb/paraiba/noticia/2026/10/30/homem-e-morto-a-tiros-apos-ter-casa-invadida-por-suspeito-que-se-apresentou-como-policial-na-grande-joao-pessoa.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353357560
-    },
-    {
-      "hash": "5a43462c20ae",
-      "title": "Resultado Mega-Sena 3078: 22 apostas do PI acertam a quadra; veja cidades",
-      "summary": "Resultado Mega-Sena 3078: 22 apostas do PI acertam a quadra; veja cidades",
-      "link": "https://g1.globo.com/pi/piaui/noticia/2026/10/30/resultado-mega-sena-3078.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353336464
-    },
-    {
-      "hash": "127480d9b67e",
-      "title": "Israel is in a political deadlock. What comes next?",
-      "summary": "Israel is in a political deadlock. What comes next?",
-      "link": "https://www.npr.org/2026/10/30/g-s1-150761/israel-election-politics-deadlock-arabs",
-      "source": "NPR World",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353332190
-    },
-    {
-      "hash": "90a5c2a8740d",
-      "title": "Ex-Pentagon strategist accused of Iran and Ukraine leaks – Axios",
-      "summary": "Ex-Pentagon strategist accused of Iran and Ukraine leaks – Axios",
-      "link": "<![CDATA[https://rt-english.com/news/648104-pentagon-general-accused-leaking/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353328223
-    },
-    {
-      "hash": "f2d76607cdc6",
-      "title": "Última hora y reacciones tras el accidente de trenes de Urda, en directo | Sánchez comparece tras participar en la reunión del Cecopi",
-      "summary": "Última hora y reacciones tras el accidente de trenes de Urda, en directo | Sánchez comparece tras participar en la reunión del Cecopi",
-      "link": "https://elpais.com/espana/2026-10-30/ultima-hora-y-reacciones-tras-el-accidente-de-trenes-de-urda-toledo-en-directo.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793353322720
-    },
-    {
-      "hash": "6935eb8191fd",
-      "title": "Avec un recul surprise du PIB au troisième trimestre, l’économie française flirte avec la récession",
-      "summary": "Avec un recul surprise du PIB au troisième trimestre, l’économie française flirte avec la récession",
-      "link": "https://www.lemonde.fr/economie/article/2026/10/30/recul-surprise-du-pib-au-troisieme-trimestre-l-economie-francaise-flirte-avec-la-recession_6802918_3234.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353318684
-    },
-    {
-      "hash": "6c1e29bfebd0",
-      "title": "2026 science Nobel Prizes: Who are the winners, and is there a gender gap problem? | Password",
-      "summary": "2026 science Nobel Prizes: Who are the winners, and is there a gender gap problem? | Password",
-      "link": "https://www.euronews.com/2026/10/30/2026-science-nobel-prizes-who-are-the-winners-and-is-there-a-gender-gap-problem-password",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353314732
-    },
-    {
-      "hash": "29140e68e30a",
-      "title": "Halloween in Portugal: from Pão por Deus to Goat and Canhoto, how Portugal celebrates Witches' Day",
-      "summary": "Halloween in Portugal: from Pão por Deus to Goat and Canhoto, how Portugal celebrates Witches' Day",
-      "link": "https://www.euronews.com/2026/10/30/halloween-in-portugal-from-pao-por-deus-to-goat-and-canhoto-how-portugal-celebrates-witche",
-      "source": "Euronews English",
-      "countryCode": "PT",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353310035
-    },
-    {
-      "hash": "dbc3b8e0d8ee",
-      "title": "Tech firms take fresh hit as disappointing earnings fan AI fears",
-      "summary": "Tech firms take fresh hit as disappointing earnings fan AI fears",
-      "link": "https://www.euronews.com/2026/10/30/tech-firms-take-fresh-hit-as-disappointing-earnings-fan-ai-fears",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353306069
-    },
-    {
-      "hash": "459f3e476c40",
-      "title": "Ukraine war live: Russia strikes Kyiv as aid convoy heads for stricken town of Oleshky",
-      "summary": "Ukraine war live: Russia strikes Kyiv as aid convoy heads for stricken town of Oleshky",
-      "link": "https://www.france24.com/en/europe/20261030-live-russia-strikes-energy-facilities-kyiv-aid-convoy-heads-besieged-town-oleshky-ukraine",
-      "source": "France24 English",
-      "countryCode": "UA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793353301506
-    },
-    {
-      "hash": "6ae9e8b242f3",
-      "title": "Russia's bastion of free press Novaya Gazeta shuts down under Kremlin pressure",
-      "summary": "Russia's bastion of free press Novaya Gazeta shuts down under Kremlin pressure",
-      "link": "https://www.france24.com/en/europe/20261030-russia-s-bastion-of-free-press-novaya-gazeta-shuts-down-after-years-of-kremlin-pressure",
-      "source": "France24 English",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793353297509
     }
   ]
 }
