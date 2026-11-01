@@ -1,31 +1,64 @@
 {
-  "updated_at": "2026-11-01T19:31:48.965Z",
+  "updated_at": "2026-11-01T20:24:28.320Z",
   "total": 600,
-  "new_count": 29,
+  "new_count": 26,
   "ai_success": 0,
-  "ai_fallback": 29,
+  "ai_fallback": 26,
   "global": {
     "score": 45,
     "totalArticles": 600,
     "categories": {
-      "culture": 23,
-      "politics": 453,
-      "disaster": 9,
+      "politics": 452,
       "war": 65,
+      "economy": 10,
+      "disaster": 11,
+      "culture": 22,
       "sports": 14,
-      "economy": 9,
       "positive": 4,
-      "crisis": 19,
+      "crisis": 18,
       "health": 4
     }
   },
   "countries": {
-    "NZ": {
-      "score": 48,
+    "IL": {
+      "score": 41,
+      "articleCount": 11,
+      "categories": {
+        "politics": 8,
+        "war": 2,
+        "culture": 1
+      }
+    },
+    "US": {
+      "score": 36,
+      "articleCount": 22,
+      "categories": {
+        "disaster": 1,
+        "politics": 18,
+        "war": 3
+      }
+    },
+    "SD": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "ES": {
+      "score": 60,
       "articleCount": 8,
       "categories": {
+        "politics": 6,
+        "sports": 2
+      }
+    },
+    "NZ": {
+      "score": 48,
+      "articleCount": 7,
+      "categories": {
         "culture": 1,
-        "politics": 4,
+        "politics": 3,
         "disaster": 3
       }
     },
@@ -34,15 +67,6 @@
       "articleCount": 2,
       "categories": {
         "politics": 2
-      }
-    },
-    "IL": {
-      "score": 40,
-      "articleCount": 10,
-      "categories": {
-        "politics": 7,
-        "war": 2,
-        "culture": 1
       }
     },
     "UA": {
@@ -75,11 +99,11 @@
       }
     },
     "IR": {
-      "score": 19,
-      "articleCount": 21,
+      "score": 18,
+      "articleCount": 20,
       "categories": {
         "war": 9,
-        "politics": 12
+        "politics": 11
       }
     },
     "SA": {
@@ -149,18 +173,10 @@
     },
     "CN": {
       "score": 56,
-      "articleCount": 17,
+      "articleCount": 15,
       "categories": {
-        "politics": 15,
+        "politics": 13,
         "culture": 2
-      }
-    },
-    "US": {
-      "score": 36,
-      "articleCount": 20,
-      "categories": {
-        "politics": 17,
-        "war": 3
       }
     },
     "AU": {
@@ -194,28 +210,20 @@
         "politics": 2
       }
     },
-    "ES": {
-      "score": 61,
-      "articleCount": 8,
-      "categories": {
-        "politics": 6,
-        "sports": 2
-      }
-    },
     "DE": {
       "score": 37,
-      "articleCount": 13,
+      "articleCount": 12,
       "categories": {
         "crisis": 2,
-        "politics": 10,
+        "politics": 9,
         "war": 1
       }
     },
     "OM": {
       "score": 50,
-      "articleCount": 5,
+      "articleCount": 4,
       "categories": {
-        "politics": 5
+        "politics": 4
       }
     },
     "PE": {
@@ -354,12 +362,11 @@
       }
     },
     "VE": {
-      "score": 46,
-      "articleCount": 3,
+      "score": 68,
+      "articleCount": 2,
       "categories": {
         "culture": 1,
-        "politics": 1,
-        "war": 1
+        "politics": 1
       }
     },
     "DZ": {
@@ -370,12 +377,11 @@
       }
     },
     "KR": {
-      "score": 32,
-      "articleCount": 4,
+      "score": 23,
+      "articleCount": 3,
       "categories": {
         "war": 1,
-        "politics": 2,
-        "culture": 1
+        "politics": 2
       }
     },
     "MY": {
@@ -426,16 +432,347 @@
       "categories": {
         "politics": 1
       }
-    },
-    "SD": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "a55abd94b8ac",
+      "title": "Fuel rises become top-three concern, as Labour extends lead - IPSOS poll",
+      "summary": "Fuel rises become top-three concern, as Labour extends lead - IPSOS poll",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2291895/fuel-rises-become-top-three-concern-as-labour-extends-lead-ipsos-poll",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564667316
+    },
+    {
+      "hash": "5a27754bfbee",
+      "title": "'Effectively being cyber-bullied': Chlöe Swarbrick hits back against attacks",
+      "summary": "'Effectively being cyber-bullied': Chlöe Swarbrick hits back against attacks",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2295605/effectively-being-cyber-bullied-chloe-swarbrick-hits-back-against-attacks",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793564664294
+    },
+    {
+      "hash": "609a215387df",
+      "title": "Fijian PM Rabuka under pressure ahead of crucial vote on constitutional reform",
+      "summary": "Fijian PM Rabuka under pressure ahead of crucial vote on constitutional reform",
+      "link": "https://www.rnz.co.nz/news/pacific/2294182/fijian-pm-rabuka-under-pressure-ahead-of-crucial-vote-on-constitutional-reform",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564661064
+    },
+    {
+      "hash": "3f2534fd1c06",
+      "title": "Live: Wall Street sinks on AI fears, ASX on edge ahead of RBA meeting",
+      "summary": "Live: Wall Street sinks on AI fears, ASX on edge ahead of RBA meeting",
+      "link": "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564658156
+    },
+    {
+      "hash": "477c6bb1eba6",
+      "title": "Live: Albanese to seek tighter rules for British backpackers in meeting with UK PM",
+      "summary": "Live: Albanese to seek tighter rules for British backpackers in meeting with UK PM",
+      "link": "https://www.abc.net.au/news/2026-11-02/federal-politics-live-blog-albanese-chogm-nov-2/107334912",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564655415
+    },
+    {
+      "hash": "a1093968de24",
+      "title": "More storms looming for SEQ as 'extreme' heatwave hits Gulf country",
+      "summary": "More storms looming for SEQ as 'extreme' heatwave hits Gulf country",
+      "link": "https://www.abc.net.au/news/2026-11-02/queensland-weather-storms-heatwave/107333928",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564652467
+    },
+    {
+      "hash": "dc43c9474751",
+      "title": "Golden Triangle's North East drug trade thrives on barter",
+      "summary": "Golden Triangle's North East drug trade thrives on barter",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/golden-triangles-north-east-drug-trade-thrives-on-barter/articleshow/135437232.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1793564648860
+    },
+    {
+      "hash": "f12ef35338c7",
+      "title": "New airfare rules from next yr: No govt intervention except in ‘extraordinary situations’",
+      "summary": "New airfare rules from next yr: No govt intervention except in ‘extraordinary situations’",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/new-airfare-rules-from-next-year-no-govt-intervention-except-in-extraordinary-situations-to-prevent-spikes/articleshow/135430750.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564647621
+    },
+    {
+      "hash": "233d90523a69",
+      "title": "Another 'exploding pager' plot? Israel eyes strike on Tehran’s top military bosses",
+      "summary": "Another 'exploding pager' plot? Israel eyes strike on Tehran’s top military bosses",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/middle-east/another-exploding-pager-plot-israel-eyes-strike-on-tehrans-top-military-bosses/articleshow/135426126.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564644361
+    },
+    {
+      "hash": "de205f2b4dc5",
+      "title": "Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack",
+      "summary": "Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack",
+      "link": "https://www.scmp.com/business/cryptocurrency/article/3372910/binance-sees-spike-withdrawals-exchange-returns-online-after-us63-billion-hack",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564641178
+    },
+    {
+      "hash": "c938e6cab4ab",
+      "title": "Arsenal go top after narrow win at Liverpool",
+      "summary": "Arsenal go top after narrow win at Liverpool",
+      "link": "https://www.aljazeera.com/sports/2026/11/1/arsenal-go-top-after-narrow-win-at-liverpool?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564638324
+    },
+    {
+      "hash": "800d11949f1b",
+      "title": "Video captures house collapsing due to Ecuador floods",
+      "summary": "Video captures house collapsing due to Ecuador floods",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/1/video-captures-house-collapsing-due-to-ecuador-floods?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1793564634903
+    },
+    {
+      "hash": "e82680d1c05e",
+      "title": "Okorocha chasing shadows, Uzodimma says, vows to appeal court judgement",
+      "summary": "Okorocha chasing shadows, Uzodimma says, vows to appeal court judgement",
+      "link": "https://www.premiumtimesng.com/news/more-news/921966-okorocha-chasing-shadows-uzodimma-says-vows-to-appeal-court-judgement.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564631850
+    },
+    {
+      "hash": "f15e03d6198a",
+      "title": "Motorista se emociona ao ver rio ganhar volume em meio à crise hídrica no interior do TO",
+      "summary": "Motorista se emociona ao ver rio ganhar volume em meio à crise hídrica no interior do TO",
+      "link": "https://g1.globo.com/to/tocantins/noticia/2026/11/01/motorista-se-emociona-ao-ver-rio-ganhar-volume-em-meio-a-crise-hidrica-no-interior-do-to.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564629040
+    },
+    {
+      "hash": "ef78d2256b3b",
+      "title": "Corpo de homem arrastado pela correnteza ao desentupir manilha é encontrado após buscas em MG",
+      "summary": "Corpo de homem arrastado pela correnteza ao desentupir manilha é encontrado após buscas em MG",
+      "link": "https://g1.globo.com/mg/zona-da-mata/noticia/2026/11/01/corpo-de-homem-arrastado-pela-correnteza-ao-desentupir-manilha-e-encontrado-apos-buscas-em-mg.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564626108
+    },
+    {
+      "hash": "742b50dc4f47",
+      "title": "Caminhoneiro abandona carga na pista e foge a pé após acidente com carro que deixou 5 feridos em Bauru",
+      "summary": "Caminhoneiro abandona carga na pista e foge a pé após acidente com carro que deixou 5 feridos em Bauru",
+      "link": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/01/caminhoneiro-abandona-carga-na-pista-e-foge-a-pe-apos-acidente-com-carro-que-deixou-5-feridos-em-bauru.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564623077
+    },
+    {
+      "hash": "d2dd17057d4b",
+      "title": "Democrat Abdul El-Sayed's party primary challenger endorses his Republican rival",
+      "summary": "Democrat Abdul El-Sayed's party primary challenger endorses his Republican rival",
+      "link": "https://www.cbc.ca/news/world/abdul-el-sayed-haley-stevens-9.7404925?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793564619363
+    },
+    {
+      "hash": "88a26d90438e",
+      "title": "Judge orders Trump administration to stop threatening election officials",
+      "summary": "Judge orders Trump administration to stop threatening election officials",
+      "link": "<![CDATA[https://rt-english.com/news/648203-trump-midterms-intimidation-noncitizens/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793564616212
+    },
+    {
+      "hash": "e718f01258f8",
+      "title": "Michigan ‘Betrayal’ & Mid Term Manouvres",
+      "summary": "Michigan ‘Betrayal’ & Mid Term Manouvres",
+      "link": "https://www.france24.com/en/tv-shows/spotlight/20261101-michigan-betrayal-mid-term-manouvres",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564613084
+    },
+    {
+      "hash": "14eccb95e9f2",
+      "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end",
+      "summary": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire to end",
+      "link": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": "US",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1793564610393
+    },
+    {
+      "hash": "6c9e1f32c45d",
+      "title": "الكينية تشيبكيروي تستعيد لقب ماراثون نيويورك",
+      "summary": "الكينية تشيبكيروي تستعيد لقب ماراثون نيويورك",
+      "link": "https://aawsat.com/node/5336409",
+      "source": "الشرق الأوسط",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564607475
+    },
+    {
+      "hash": "6aa4d7b4c1c6",
+      "title": "5 تحديات تضع خبرات «البلوي» على المحك في نادي التعاون",
+      "summary": "5 تحديات تضع خبرات «البلوي» على المحك في نادي التعاون",
+      "link": "https://aawsat.com/node/5336410",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564604867
+    },
+    {
+      "hash": "2caa3685470b",
+      "title": "السويدي ألمغرين يفوز بسباق الرجال في ماراثون نيويورك",
+      "summary": "السويدي ألمغرين يفوز بسباق الرجال في ماراثون نيويورك",
+      "link": "https://aawsat.com/node/5336411",
+      "source": "الشرق الأوسط",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564601461
+    },
+    {
+      "hash": "57106dc8679c",
+      "title": "مجلس السيادة السوداني: عشرات المسيّرات هاجمت السودان انطلاقًا من الأراضي الإثيوبية خلال العام الجاري",
+      "summary": "مجلس السيادة السوداني: عشرات المسيّرات هاجمت السودان انطلاقًا من الأراضي الإثيوبية خلال العام الجاري",
+      "link": "https://arabic.euronews.com/2026/11/01/sudans-sovereignty-council-dozens-of-drones-attacked-sudan-from-ethiopian-territory-this",
+      "source": "Euronews عربي",
+      "countryCode": "SD",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564598566
+    },
+    {
+      "hash": "cd7a741d0b40",
+      "title": "قمر أميركي يصور طائرة فضائية صينية فائقة السرية",
+      "summary": "قمر أميركي يصور طائرة فضائية صينية فائقة السرية",
+      "link": "https://www.skynewsarabia.com/world/1901998-%D9%82%D9%85%D8%B1-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D9%8A%D8%B5%D9%88%D8%B1-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A9-%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D9%81%D8%A7%D8%A6%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564595198
+    },
+    {
+      "hash": "a919bbf3701e",
+      "title": "بسبب تصريحات مبابي.. التلفزيون الرسمي الصيني يتجاهل ريال مدريد",
+      "summary": "بسبب تصريحات مبابي.. التلفزيون الرسمي الصيني يتجاهل ريال مدريد",
+      "link": "https://www.dw.com/ar/بسبب-تصريحات-مبابي-التلفزيون-الرسمي-الصيني-يتجاهل-ريال-مدريد/a-79824064?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793564592308
+    },
     {
       "hash": "3937b3bbc964",
       "title": "In pictures: Auckland's dazzling Diwali Festival 2026",
@@ -7897,344 +8234,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1793500759142
-    },
-    {
-      "hash": "ee9a0b34e414",
-      "title": "South Korea’s latest chart sensation has a secret: the singer isn’t human",
-      "summary": "South Korea’s latest chart sensation has a secret: the singer isn’t human",
-      "link": "https://www.scmp.com/week-asia/lifestyle-culture/article/3372767/south-koreas-latest-chart-sensation-has-secret-singer-isnt-human",
-      "source": "SCMP",
-      "countryCode": "KR",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793500755651
-    },
-    {
-      "hash": "640dccda7f4a",
-      "title": "Russia surpasses France in African youth appeal, still trails China: survey",
-      "summary": "Russia surpasses France in African youth appeal, still trails China: survey",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3372843/russia-surpasses-france-african-youth-appeal-still-trails-china-survey",
-      "source": "SCMP",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500751772
-    },
-    {
-      "hash": "d5b1503d82bd",
-      "title": "‘Flirtatious’ US$2,500 photo shoots for ‘lonely’ middle-aged women spark backlash in China",
-      "summary": "‘Flirtatious’ US$2,500 photo shoots for ‘lonely’ middle-aged women spark backlash in China",
-      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3372860/flirtatious-us2500-photo-shoots-lonely-middle-aged-women-spark-backlash-china",
-      "source": "SCMP",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500746722
-    },
-    {
-      "hash": "159e9c6e58b3",
-      "title": "Thousands rally in Israel urging Eisenkot-Arab deal to remove Netanyahu",
-      "summary": "Thousands rally in Israel urging Eisenkot-Arab deal to remove Netanyahu",
-      "link": "https://www.aljazeera.com/news/2026/11/1/thousands-rally-in-israel-urging-eisenkot-arab-deal-to-remove-netanyahu?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500743244
-    },
-    {
-      "hash": "01fb5a640377",
-      "title": "FBI blames North Korea for record $6.3bn crypto heist",
-      "summary": "FBI blames North Korea for record $6.3bn crypto heist",
-      "link": "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500738802
-    },
-    {
-      "hash": "9944f8b4e173",
-      "title": "FBI says North Korea behind $6 billion Binance crypto theft",
-      "summary": "FBI says North Korea behind $6 billion Binance crypto theft",
-      "link": "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500735162
-    },
-    {
-      "hash": "6401c193a6d8",
-      "title": "Shops looted as German cost of living protests turn violent",
-      "summary": "Shops looted as German cost of living protests turn violent",
-      "link": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500728945
-    },
-    {
-      "hash": "fd6ac6918d79",
-      "title": "غوتيريش يدين تصاعد هجمات المسيرات في السودان",
-      "summary": "غوتيريش يدين تصاعد هجمات المسيرات في السودان",
-      "link": "https://aawsat.com/node/5336144",
-      "source": "الشرق الأوسط",
-      "countryCode": "SD",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500725744
-    },
-    {
-      "hash": "7301d3881ace",
-      "title": "تصعيد قضائي حاد في انتخابات التجديد النصفي بأميركا",
-      "summary": "تصعيد قضائي حاد في انتخابات التجديد النصفي بأميركا",
-      "link": "https://www.skynewsarabia.com/world/1901851-%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%82%D8%B6%D8%A7%D8%A6%D9%8A-%D8%AD%D8%A7%D8%AF-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D9%86%D8%B5%D9%81%D9%8A-%D8%A8%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793500722323
-    },
-    {
-      "hash": "7ab9e46a3908",
-      "title": "ترامب يلوّح باستهداف مواقع جديدة في إيران، وخامنئي يوجه بالرد \"دون قيود جغرافية\"",
-      "summary": "ترامب يلوّح باستهداف مواقع جديدة في إيران، وخامنئي يوجه بالرد \"دون قيود جغرافية\"",
-      "link": "https://www.bbc.com/arabic/articles/c6j9kg2k9r42o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793500718976
-    },
-    {
-      "hash": "e21dd36241aa",
-      "title": "National leader Christopher Luxon adamant right-leaning voters should not split vote",
-      "summary": "National leader Christopher Luxon adamant right-leaning voters should not split vote",
-      "link": "https://www.rnz.co.nz/news/politics_election-2026/2284394/national-leader-christopher-luxon-adamant-right-leaning-voters-should-not-split-vote",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793498002256
-    },
-    {
-      "hash": "ff97b15980bd",
-      "title": "Plane crashes into building at Auckland flying school",
-      "summary": "Plane crashes into building at Auckland flying school",
-      "link": "https://www.rnz.co.nz/news/emergencies_local/2284480/plane-crashes-into-building-at-auckland-flying-school",
-      "source": "RNZ",
-      "countryCode": "NZ",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497998827
-    },
-    {
-      "hash": "4888f14da5ca",
-      "title": "Fifty years on, Julius Dam continues to sustain outback communities",
-      "summary": "Fifty years on, Julius Dam continues to sustain outback communities",
-      "link": "https://www.abc.net.au/news/2026-11-01/julius-dam-50-years-water-outback-communities/107318856",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497995579
-    },
-    {
-      "hash": "40e396912425",
-      "title": "Canelo Alvarez reaffirms love for boxing after reclaiming super-middleweight title",
-      "summary": "Canelo Alvarez reaffirms love for boxing after reclaiming super-middleweight title",
-      "link": "https://www.japantimes.co.jp/sports/2026/11/01/more-sports/canelo-alvarez-regains-title/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497992132
-    },
-    {
-      "hash": "5fe4e5639a4b",
-      "title": "Jose Mourinho says Real Madrid and Kylian Mbappe have moved on from China controversy",
-      "summary": "Jose Mourinho says Real Madrid and Kylian Mbappe have moved on from China controversy",
-      "link": "https://www.japantimes.co.jp/sports/2026/11/01/soccer/mourinho-mbappe-china-controversy/",
-      "source": "Japan Times",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497988022
-    },
-    {
-      "hash": "8f92795c5e12",
-      "title": "Woman arrested for threatening to shoot Trump at Florida rally",
-      "summary": "Woman arrested for threatening to shoot Trump at Florida rally",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3372859/woman-arrested-threatening-shoot-trump-florida-rally",
-      "source": "SCMP",
-      "countryCode": "OM",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497983036
-    },
-    {
-      "hash": "617300469053",
-      "title": "Pump pressure: how rising fuel costs leave Hong Kong drivers running on fumes",
-      "summary": "Pump pressure: how rising fuel costs leave Hong Kong drivers running on fumes",
-      "link": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3372851/pump-pressure-how-rising-fuel-costs-leave-hong-kong-drivers-running-fumes",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497978600
-    },
-    {
-      "hash": "208bc61d1d77",
-      "title": "Hong Kong’s art trading hub ambitions rest on more than headline sales",
-      "summary": "Hong Kong’s art trading hub ambitions rest on more than headline sales",
-      "link": "https://www.scmp.com/opinion/hong-kong-opinion/article/3372464/hong-kongs-art-trading-hub-ambitions-rest-more-headline-sales",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793497975036
-    },
-    {
-      "hash": "f0b7e04de752",
-      "title": "Gen Z-led protests in Germany turn violent",
-      "summary": "Gen Z-led protests in Germany turn violent",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/1/germany-gen-z-protests-education-military-service?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "DE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497971680
-    },
-    {
-      "hash": "944aee671aec",
-      "title": "Polish president holds crisis talks in court standoff",
-      "summary": "Polish president holds crisis talks in court standoff",
-      "link": "https://www.aljazeera.com/news/2026/11/1/polish-president-holds-crisis-talks-in-court-standoff?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793497967483
-    },
-    {
-      "hash": "e2923538e853",
-      "title": "Talarico draws a packed campus rally, but can he win over young voters?",
-      "summary": "Talarico draws a packed campus rally, but can he win over young voters?",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/1/talarico-draws-a-packed-campus-rally-but-can-he-win-over-young-voters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497963847
-    },
-    {
-      "hash": "ee1e4f2984a8",
-      "title": "Acidente entre ônibus e carro deixa um morto e um ferido na BR-101, em Campos",
-      "summary": "Acidente entre ônibus e carro deixa um morto e um ferido na BR-101, em Campos",
-      "link": "https://g1.globo.com/rj/norte-fluminense/noticia/2026/10/31/acidente-entre-onibus-e-carro-deixa-um-morto-e-um-ferido-na-br-101-em-campos.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497958255
-    },
-    {
-      "hash": "c2362727475f",
-      "title": "Bombardeio militar contra guerrilha ELN deixa mortos na Venezuela, diz ONG",
-      "summary": "Bombardeio militar contra guerrilha ELN deixa mortos na Venezuela, diz ONG",
-      "link": "https://g1.globo.com/mundo/noticia/2026/10/31/bombardeio-militar-contra-guerrilha-eln-deixa-mortos-na-venezuela-diz-ong.ghtml",
-      "source": "Globo",
-      "countryCode": "VE",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793497955096
-    },
-    {
-      "hash": "ceff068ca0f2",
-      "title": "Seis homens são presos após invasão de residência; armas e drogas são apreendidas em Iguaba Grande",
-      "summary": "Seis homens são presos após invasão de residência; armas e drogas são apreendidas em Iguaba Grande",
-      "link": "https://g1.globo.com/rj/regiao-dos-lagos/noticia/2026/10/31/seis-homens-sao-presos-apos-invasao-de-residencia-armas-e-drogas-sao-apreendidas-em-iguaba-grande.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497951285
-    },
-    {
-      "hash": "2d06c8d4d975",
-      "title": "US midterm early voting shatters record",
-      "summary": "US midterm early voting shatters record",
-      "link": "<![CDATA[https://rt-english.com/news/648189-us-early-voting-breaks-midterm/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497947461
-    },
-    {
-      "hash": "823778e2dbef",
-      "title": "EN DIRECT, midterms 2026 : plus de 52 millions d’Américains ont déjà voté par anticipation",
-      "summary": "EN DIRECT, midterms 2026 : plus de 52 millions d’Américains ont déjà voté par anticipation",
-      "link": "https://www.lemonde.fr/international/live/2026/11/01/en-direct-midterms-2026-plus-de-52-millions-d-americains-ont-deja-vote-par-anticipation_6801590_3210.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793497944202
     }
   ]
 }
