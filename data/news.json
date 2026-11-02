@@ -1,32 +1,99 @@
 {
-  "updated_at": "2026-11-02T01:58:00.410Z",
+  "updated_at": "2026-11-02T02:44:47.872Z",
   "total": 600,
-  "new_count": 35,
+  "new_count": 21,
   "ai_success": 0,
-  "ai_fallback": 35,
+  "ai_fallback": 21,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
       "politics": 446,
-      "culture": 27,
-      "disaster": 10,
       "war": 68,
-      "positive": 7,
+      "culture": 29,
       "economy": 7,
+      "crisis": 11,
+      "disaster": 10,
+      "positive": 7,
       "sports": 17,
-      "health": 5,
-      "crisis": 13
+      "health": 5
     }
   },
   "countries": {
-    "IN": {
-      "score": 48,
+    "IR": {
+      "score": 18,
+      "articleCount": 22,
+      "categories": {
+        "politics": 11,
+        "war": 11
+      }
+    },
+    "EG": {
+      "score": 53,
+      "articleCount": 9,
+      "categories": {
+        "culture": 1,
+        "politics": 7,
+        "war": 1
+      }
+    },
+    "PL": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "UA": {
+      "score": 16,
       "articleCount": 15,
       "categories": {
-        "politics": 13,
-        "culture": 1,
-        "war": 1
+        "war": 7,
+        "crisis": 1,
+        "politics": 5,
+        "disaster": 1,
+        "positive": 1
+      }
+    },
+    "KR": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "CN": {
+      "score": 54,
+      "articleCount": 13,
+      "categories": {
+        "politics": 11,
+        "culture": 2
+      }
+    },
+    "ES": {
+      "score": 40,
+      "articleCount": 9,
+      "categories": {
+        "politics": 6,
+        "war": 1,
+        "sports": 2
+      }
+    },
+    "SA": {
+      "score": 36,
+      "articleCount": 11,
+      "categories": {
+        "politics": 8,
+        "war": 2,
+        "economy": 1
+      }
+    },
+    "IN": {
+      "score": 51,
+      "articleCount": 13,
+      "categories": {
+        "politics": 12,
+        "culture": 1
       }
     },
     "US": {
@@ -36,16 +103,6 @@
         "politics": 17,
         "disaster": 2,
         "war": 3
-      }
-    },
-    "UA": {
-      "score": 18,
-      "articleCount": 13,
-      "categories": {
-        "war": 6,
-        "politics": 5,
-        "disaster": 1,
-        "positive": 1
       }
     },
     "AR": {
@@ -64,29 +121,12 @@
         "economy": 2
       }
     },
-    "ES": {
-      "score": 38,
-      "articleCount": 8,
-      "categories": {
-        "war": 1,
-        "politics": 5,
-        "sports": 2
-      }
-    },
     "RU": {
       "score": 10,
       "articleCount": 8,
       "categories": {
         "war": 5,
         "politics": 3
-      }
-    },
-    "IR": {
-      "score": 15,
-      "articleCount": 21,
-      "categories": {
-        "war": 11,
-        "politics": 10
       }
     },
     "NZ": {
@@ -99,17 +139,9 @@
     },
     "OM": {
       "score": 50,
-      "articleCount": 7,
+      "articleCount": 6,
       "categories": {
-        "politics": 7
-      }
-    },
-    "CN": {
-      "score": 55,
-      "articleCount": 12,
-      "categories": {
-        "politics": 10,
-        "culture": 2
+        "politics": 6
       }
     },
     "JP": {
@@ -118,15 +150,6 @@
       "categories": {
         "culture": 1,
         "politics": 2
-      }
-    },
-    "SA": {
-      "score": 33,
-      "articleCount": 10,
-      "categories": {
-        "politics": 7,
-        "war": 2,
-        "economy": 1
       }
     },
     "LY": {
@@ -172,9 +195,9 @@
     },
     "BG": {
       "score": 50,
-      "articleCount": 7,
+      "articleCount": 6,
       "categories": {
-        "politics": 7
+        "politics": 6
       }
     },
     "PS": {
@@ -196,14 +219,6 @@
         "sports": 1
       }
     },
-    "EG": {
-      "score": 44,
-      "articleCount": 8,
-      "categories": {
-        "politics": 7,
-        "war": 1
-      }
-    },
     "AE": {
       "score": 50,
       "articleCount": 2,
@@ -220,12 +235,12 @@
     },
     "FR": {
       "score": 16,
-      "articleCount": 20,
+      "articleCount": 18,
       "categories": {
         "war": 8,
         "politics": 7,
         "culture": 1,
-        "crisis": 4
+        "crisis": 2
       }
     },
     "TR": {
@@ -274,12 +289,11 @@
       }
     },
     "DE": {
-      "score": 36,
-      "articleCount": 11,
+      "score": 40,
+      "articleCount": 9,
       "categories": {
         "crisis": 2,
-        "politics": 8,
-        "war": 1
+        "politics": 7
       }
     },
     "PE": {
@@ -328,9 +342,9 @@
     },
     "BR": {
       "score": 50,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 3
+        "politics": 2
       }
     },
     "IE": {
@@ -338,13 +352,6 @@
       "articleCount": 3,
       "categories": {
         "politics": 3
-      }
-    },
-    "PL": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
       }
     },
     "KZ": {
@@ -396,17 +403,282 @@
       "categories": {
         "war": 1
       }
-    },
-    "KR": {
-      "score": 17,
-      "articleCount": 2,
-      "categories": {
-        "war": 1,
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "f51491be252d",
+      "title": "Nine arrested during 'unacceptable' Rugby League World Cup celebrations",
+      "summary": "Nine arrested during 'unacceptable' Rugby League World Cup celebrations",
+      "link": "https://www.rnz.co.nz/news/sport/2302093/nine-arrested-during-unacceptable-rugby-league-world-cup-celebrations",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587486871
+    },
+    {
+      "hash": "1d8025d88bc6",
+      "title": "Ukrainian air raid alert app sends false warnings after being hacked",
+      "summary": "Ukrainian air raid alert app sends false warnings after being hacked",
+      "link": "https://www.abc.net.au/news/2026-11-02/ukraine-air-force-pubic-air-raid-alert-app-hacked-false-warnings/107336062",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793587479901
+    },
+    {
+      "hash": "030672704b87",
+      "title": "Eight arrested over alleged assault of off-duty police officer",
+      "summary": "Eight arrested over alleged assault of off-duty police officer",
+      "link": "https://www.abc.net.au/news/2026-11-02/off-duty-officer-allegedly-assaulted-victoria-shepparton/107336606",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587472129
+    },
+    {
+      "hash": "10660c82d4ff",
+      "title": "Melbourne club dismayed by suspected e-bike vandalism of cricket pitch",
+      "summary": "Melbourne club dismayed by suspected e-bike vandalism of cricket pitch",
+      "link": "https://www.abc.net.au/news/2026-11-02/williamstown-cricket-pitch-destroyed-by-e-bikes/107335974",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587466657
+    },
+    {
+      "hash": "fbe5d0325814",
+      "title": "Fresh Iran strikes after US midterms? Inside Trump-Netanyahu's 'tough' call",
+      "summary": "Fresh Iran strikes after US midterms? Inside Trump-Netanyahu's 'tough' call",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/netanyahu-pushes-donald-trump-for-fresh-iran-strikes-after-us-midterms-report/articleshow/135441723.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587461771
+    },
+    {
+      "hash": "324a9dffece7",
+      "title": "Andhra chainsaw-wielding ‘stalker’ shot at by cops near forest",
+      "summary": "Andhra chainsaw-wielding ‘stalker’ shot at by cops near forest",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/vijayawada/anantapur-chainsaw-wielding-stalker-critically-injured-in-police-encounter-near-atmakur-forest-in-andhra-pradesh/articleshow/135436655.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587445960
+    },
+    {
+      "hash": "8fee1f0e0a83",
+      "title": "Japan-supported Grand Egyptian Museum marks first year of operations",
+      "summary": "Japan-supported Grand Egyptian Museum marks first year of operations",
+      "link": "https://www.japantimes.co.jp/news/2026/11/02/japan/society/grand-egyptian-museum-anniversary/",
+      "source": "Japan Times",
+      "countryCode": "EG",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793587426978
+    },
+    {
+      "hash": "0b941630c3f1",
+      "title": "Poland’s Tusk says he won’t back down in top court standoff",
+      "summary": "Poland’s Tusk says he won’t back down in top court standoff",
+      "link": "https://www.japantimes.co.jp/news/2026/11/02/world/politics/poland-tusk-court-standoff/",
+      "source": "Japan Times",
+      "countryCode": "PL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587419837
+    },
+    {
+      "hash": "70a751031c06",
+      "title": "Cyber attacks hit Russia, Ukraine after truce ends",
+      "summary": "Cyber attacks hit Russia, Ukraine after truce ends",
+      "link": "https://www.japantimes.co.jp/news/2026/11/02/world/politics/cyber-attacks-russia-ukraine-truce/",
+      "source": "Japan Times",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793587411490
+    },
+    {
+      "hash": "7d035915efbe",
+      "title": "What can Cambridge teach Hong Kong about building university towns?",
+      "summary": "What can Cambridge teach Hong Kong about building university towns?",
+      "link": "https://www.scmp.com/news/hong-kong/education/article/3372890/what-can-cambridge-teach-hong-kong-about-building-university-towns",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587393539
+    },
+    {
+      "hash": "fccdd371f9f6",
+      "title": "In South Korea, Lee’s overseas trips fuel familiar battle over presidential perks",
+      "summary": "In South Korea, Lee’s overseas trips fuel familiar battle over presidential perks",
+      "link": "https://www.scmp.com/news/asia/east-asia/article/3372915/south-korea-lees-overseas-trips-fuel-familiar-battle-over-presidential-perks",
+      "source": "SCMP",
+      "countryCode": "KR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793587387703
+    },
+    {
+      "hash": "1ae3c8b246fe",
+      "title": "Exhausted Chinese working mums book solo hotel stays to escape childcare and sleep",
+      "summary": "Exhausted Chinese working mums book solo hotel stays to escape childcare and sleep",
+      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3372918/exhausted-chinese-working-mums-book-solo-hotel-stays-escape-childcare-and-sleep",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587382230
+    },
+    {
+      "hash": "4d695dccc486",
+      "title": "Pitty no palco do Fantástico: veja a entrevista e as músicas",
+      "summary": "Pitty no palco do Fantástico: veja a entrevista e as músicas",
+      "link": "https://g1.globo.com/fantastico/playlist/pitty-no-palco-do-fantastico-veja-a-entrevista-e-as-musicas.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587361132
+    },
+    {
+      "hash": "fb84aa302aa8",
+      "title": "Still haven't filed your taxes? Here's what you need to know",
+      "summary": "Still haven't filed your taxes? Here's what you need to know",
+      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587353511
+    },
+    {
+      "hash": "94654941a6c4",
+      "title": "Markets digest bank earnings after recent turmoil",
+      "summary": "Markets digest bank earnings after recent turmoil",
+      "link": "https://www.cnn.com/business/live-news/stock-market-bank-earnings/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1793587332416
+    },
+    {
+      "hash": "332eb99c9ecd",
+      "title": "Russia and Ukraine accuse each other of hacking emergency alert apps",
+      "summary": "Russia and Ukraine accuse each other of hacking emergency alert apps",
+      "link": "https://www.france24.com/en/europe/20261102-ukraine-suspects-nationwide-air-raid-alert-app-has-been-hacked",
+      "source": "France24 English",
+      "countryCode": "UA",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1793587326904
+    },
+    {
+      "hash": "0712c693556d",
+      "title": "فيديو.. نجما ريال مدريد يصالحان طفلا بعد \"التصويبة الطائشة\"",
+      "summary": "فيديو.. نجما ريال مدريد يصالحان طفلا بعد \"التصويبة الطائشة\"",
+      "link": "https://www.skynewsarabia.com/sport/1902021-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%86%D8%AC%D9%85%D8%A7-%D8%B1%D9%8A%D8%A7%D9%84-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-%D9%8A%D8%B5%D8%A7%D9%84%D8%AD%D8%A7%D9%86-%D8%B7%D9%81%D9%84%D8%A7-%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D8%A6%D8%B4%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587305804
+    },
+    {
+      "hash": "2ceed768a01b",
+      "title": "ناقلة تتعرض لضربة بمقذوفين قبالة السعودية",
+      "summary": "ناقلة تتعرض لضربة بمقذوفين قبالة السعودية",
+      "link": "https://www.skynewsarabia.com/middle-east/1902023-%D9%86%D8%A7%D9%82%D9%84%D8%A9-%D8%AA%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D8%B6%D8%B1%D8%A8%D8%A9-%D8%A8%D9%85%D9%82%D8%B0%D9%88%D9%81%D9%8A%D9%86-%D9%82%D8%A8%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587301495
+    },
+    {
+      "hash": "43318001e9e4",
+      "title": "أحدث تهديد من ترامب: \"ضربة ساحقة\" لإيران",
+      "summary": "أحدث تهديد من ترامب: \"ضربة ساحقة\" لإيران",
+      "link": "https://www.skynewsarabia.com/middle-east/1902026-%D8%A3%D8%AD%D8%AF%D8%AB-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%B6%D8%B1%D8%A8%D8%A9-%D8%B3%D8%A7%D8%AD%D9%82%D8%A9-%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86",
+      "source": "Sky News عربية",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793587297966
+    },
+    {
+      "hash": "a35f6a8ba5b6",
+      "title": "مقتل تسعة أشخاص بتحطم طائرة في منطقة سكنية بولاية فلوريدا الأمريكية",
+      "summary": "مقتل تسعة أشخاص بتحطم طائرة في منطقة سكنية بولاية فلوريدا الأمريكية",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261102-%D9%85%D9%82%D8%AA%D9%84-%D8%AA%D8%B3%D8%B9%D8%A9-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%A8%D8%AA%D8%AD%D8%B7%D9%85-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D9%81%D9%84%D9%88%D8%B1%D9%8A%D8%AF%D8%A7-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793587293894
+    },
+    {
+      "hash": "cb613dfa43a3",
+      "title": "ميشيغان: انقسام بين الديمقراطيين بعد دعم هالي ستيفنز للجمهوري مايك روجرز في مواجهة عبدول السيد",
+      "summary": "ميشيغان: انقسام بين الديمقراطيين بعد دعم هالي ستيفنز للجمهوري مايك روجرز في مواجهة عبدول السيد",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261102-%D9%85%D9%8A%D8%B4%D9%8A%D8%BA%D8%A7%D9%86-%D8%A7%D9%86%D9%82%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%8A%D9%86-%D9%87%D8%A7%D9%84%D9%8A-%D8%B3%D8%AA%D9%8A%D9%81%D9%86%D8%B2-%D9%85%D8%A7%D9%8A%D9%83-%D8%B1%D9%88%D8%AC%D8%B1%D8%B2-%D8%B9%D8%A8%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%AF",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793587290023
+    },
     {
       "hash": "a60d56bff94d",
       "title": "Youth moving overseas will cost NZ $76b in GDP, say Greens",
@@ -7933,279 +8205,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1793522354848
-    },
-    {
-      "hash": "40af43febf69",
-      "title": "Judge rules on Trump’s defamation lawsuit against WSJ over Epstein letter",
-      "summary": "Judge rules on Trump’s defamation lawsuit against WSJ over Epstein letter",
-      "link": "<![CDATA[https://rt-english.com/news/648200-trump-epstein-wsj-epstein/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522351047
-    },
-    {
-      "hash": "2905cd1004f8",
-      "title": "FBI blames North Korea for $6.3 billion Binance crypto hack",
-      "summary": "FBI blames North Korea for $6.3 billion Binance crypto hack",
-      "link": "https://www.euronews.com/2026/11/01/fbi-blames-north-korea-for-63-billion-binance-crypto-hack",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522346988
-    },
-    {
-      "hash": "f22747224839",
-      "title": "Germany&apos;s search for a nuclear waste site",
-      "summary": "Germany&apos;s search for a nuclear waste site",
-      "link": "https://www.dw.com/en/germany-s-search-for-a-nuclear-waste-site/a-79820678?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "DE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522343649
-    },
-    {
-      "hash": "c3a672baadb5",
-      "title": "Donald Trump loses allies after elections in Serbia and Brazil",
-      "summary": "Donald Trump loses allies after elections in Serbia and Brazil",
-      "link": "https://www.dw.com/en/donald-trump-loses-allies-after-elections-in-serbia-and-brazil/a-79812075?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "BR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793522340109
-    },
-    {
-      "hash": "c2fbb4a5b5ad",
-      "title": "Indian opposition stage mega rally seeking election chief’s resignation",
-      "summary": "Indian opposition stage mega rally seeking election chief’s resignation",
-      "link": "https://www.france24.com/en/asia-pacific/20261101-india-tightens-security-as-opposition-holds-mega-rally-demanding-election-chief-s-resignation",
-      "source": "France24 English",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793522336203
-    },
-    {
-      "hash": "0d1562d26681",
-      "title": "«إف بي آي» يتّهم كوريا الشمالية بالوقوف وراء الهجوم الإلكتروني على «بينانس»",
-      "summary": "«إف بي آي» يتّهم كوريا الشمالية بالوقوف وراء الهجوم الإلكتروني على «بينانس»",
-      "link": "https://aawsat.com/node/5336191",
-      "source": "الشرق الأوسط",
-      "countryCode": "KR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793522332571
-    },
-    {
-      "hash": "133eb01bf8c1",
-      "title": "المنتدى الاقتصادي العالمي يرصد 5 تحديات للعام المقبل",
-      "summary": "المنتدى الاقتصادي العالمي يرصد 5 تحديات للعام المقبل",
-      "link": "https://aawsat.com/node/5336192",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1793522327263
-    },
-    {
-      "hash": "a76e14aa2d30",
-      "title": "ثالث موجة من احتجاجات الشارع في فرنسا: تراجعٌ في نسبة المشاركة وتوترات في باريس وليون",
-      "summary": "ثالث موجة من احتجاجات الشارع في فرنسا: تراجعٌ في نسبة المشاركة وتوترات في باريس وليون",
-      "link": "https://arabic.euronews.com/2026/11/01/3rd-wave-protests-in-france-decline-in-turnout-and-tension-paris-and-lyon",
-      "source": "Euronews عربي",
-      "countryCode": "FR",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793522323781
-    },
-    {
-      "hash": "9a4700c89058",
-      "title": "مكتب التحقيقات الفيدرالي يتهم كوريا الشمالية بسرقة 6.3 مليار دولار من بينانس",
-      "summary": "مكتب التحقيقات الفيدرالي يتهم كوريا الشمالية بسرقة 6.3 مليار دولار من بينانس",
-      "link": "https://arabic.euronews.com/2026/11/01/fbi-blames-north-korea-for-63-billion-binance-crypto-hack",
-      "source": "Euronews عربي",
-      "countryCode": "KR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522320669
-    },
-    {
-      "hash": "ba4039a7bcab",
-      "title": "إنجاز علمي.. كشف آلية عمل بكتيريا تسبب سرطان القولون",
-      "summary": "إنجاز علمي.. كشف آلية عمل بكتيريا تسبب سرطان القولون",
-      "link": "https://www.skynewsarabia.com/technology/1901875-%D8%A5%D9%86%D8%AC%D8%A7%D8%B2-%D8%B9%D9%84%D9%85%D9%8A-%D9%83%D8%B4%D9%81-%D8%A2%D9%84%D9%8A%D8%A9-%D8%B9%D9%85%D9%84-%D8%A8%D9%83%D8%AA%D9%8A%D8%B1%D9%8A%D8%A7-%D8%AA%D8%B3%D8%A8%D8%A8-%D8%B3%D8%B1%D8%B7%D8%A7%D9%86-%D8%A7%D9%84%D9%82%D9%88%D9%84%D9%88%D9%86",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522314342
-    },
-    {
-      "hash": "d4fd0ce42c49",
-      "title": "ماذا سيحدث إذا استعاد الديمقراطيون السيطرة على الكونغرس؟",
-      "summary": "ماذا سيحدث إذا استعاد الديمقراطيون السيطرة على الكونغرس؟",
-      "link": "https://www.skynewsarabia.com/world/1901873-%D8%B3%D9%8A%D8%AD%D8%AF%D8%AB-%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%A7%D9%84%D9%83%D9%88%D9%86%D8%BA%D8%B1%D8%B3",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522311038
-    },
-    {
-      "hash": "e2991f416f95",
-      "title": "قبل انتخابات الكونغرس.. كاليفورنيا تحذر من سيناريو خطير",
-      "summary": "قبل انتخابات الكونغرس.. كاليفورنيا تحذر من سيناريو خطير",
-      "link": "https://www.skynewsarabia.com/world/1901876-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%88%D9%86%D8%BA%D8%B1%D8%B3-%D9%83%D8%A7%D9%84%D9%8A%D9%81%D9%88%D8%B1%D9%86%D9%8A%D8%A7-%D8%AA%D8%AD%D8%B0%D8%B1-%D8%B3%D9%8A%D9%86%D8%A7%D8%B1%D9%8A%D9%88-%D8%AE%D8%B7%D9%8A%D8%B1",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793522307579
-    },
-    {
-      "hash": "7f2151b2f26e",
-      "title": "فرنسا: احتجاجات جديدة بمشاركة 320 ألف شخص تتخللها مواجهات بين الشرطة ومتظاهرين",
-      "summary": "فرنسا: احتجاجات جديدة بمشاركة 320 ألف شخص تتخللها مواجهات بين الشرطة ومتظاهرين",
-      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261031-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D9%85%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D8%B7%D9%84%D8%A7%D8%A8-%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9-%D9%85%D8%B9%D9%8A%D8%B4%D8%A9-%D8%BA%D9%84%D8%A7%D8%A1-%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": "FR",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793522303173
-    },
-    {
-      "hash": "76eabb275c82",
-      "title": "الانتخابات الرئاسية في بلغاريا: التقارب مع روسيا أم التمسك بروابط الانتماء إلى الغرب؟",
-      "summary": "الانتخابات الرئاسية في بلغاريا: التقارب مع روسيا أم التمسك بروابط الانتماء إلى الغرب؟",
-      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261101-%D8%A7%D9%84%D8%AA%D8%B5%D9%88%D9%8A%D8%AA-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9-%D8%A8%D9%84%D8%BA%D8%A7%D8%B1%D9%8A%D8%A7-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%AF",
-      "source": "France24 عربي",
-      "countryCode": "BG",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793522299346
-    },
-    {
-      "hash": "44281f7f718d",
-      "title": "مباشر: ترامب يهدد إيران بضربات جديدة تستهدف \"موقعا أو موقعين\" وطهران تتوعد الرد",
-      "summary": "مباشر: ترامب يهدد إيران بضربات جديدة تستهدف \"موقعا أو موقعين\" وطهران تتوعد الرد",
-      "link": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261101-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D8%AD%D8%B1%D8%A8-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2",
-      "source": "France24 عربي",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793522292460
-    },
-    {
-      "hash": "bc9ad2d86839",
-      "title": "مظاهرات ضد الغلاء وأزمة السكن في أوروبا، واشتباكات في فرنسا وألمانيا",
-      "summary": "مظاهرات ضد الغلاء وأزمة السكن في أوروبا، واشتباكات في فرنسا وألمانيا",
-      "link": "https://www.bbc.com/arabic/articles/cmpdg3xz7n3eo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "DE",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793522289293
-    },
-    {
-      "hash": "c5f8c1a1e8c3",
-      "title": "استعداد أم خوف مفرط؟ قصص أشخاص حول العالم يستعدون لمواجهة أي أزمة محتملة",
-      "summary": "استعداد أم خوف مفرط؟ قصص أشخاص حول العالم يستعدون لمواجهة أي أزمة محتملة",
-      "link": "https://www.bbc.com/arabic/articles/cmde8p010x3yo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793522283550
-    },
-    {
-      "hash": "3a66e69c4326",
-      "title": "St John moves Levin paramedics to Palmerston North",
-      "summary": "St John moves Levin paramedics to Palmerston North",
-      "link": "https://www.rnz.co.nz/news/health/2289530/st-john-moves-levin-paramedics-to-palmerston-north",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793519358663
-    },
-    {
-      "hash": "f09c4bff0485",
-      "title": "3 Kukis killed in Naga gunfight; Imphal rally seeks NRC, dy CM's removal",
-      "summary": "3 Kukis killed in Naga gunfight; Imphal rally seeks NRC, dy CM's removal",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/guwahati/3-kuki-zos-killed-in-manipur-gunfight-with-nagas-mass-rally-halts-imphal/articleshow/135408794.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793519355882
-    },
-    {
-      "hash": "82d5a580552c",
-      "title": "Pune woman secretly returned from UK; what she told domestic help before her death",
-      "summary": "Pune woman secretly returned from UK; what she told domestic help before her death",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/pune/leaving-flat-stop-coming-for-work-pune-woman-who-secretly-returned-from-uk-told-domestic-help-before-being-found-dead/articleshow/135415824.cms]]>",
-      "source": "Times of India",
-      "countryCode": "OM",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793519353027
-    },
-    {
-      "hash": "eb3d5eb0e94b",
-      "title": "'India not a banana republic': BJP attacks Rahul Gandhi ahead of INDIA bloc rally",
-      "summary": "'India not a banana republic': BJP attacks Rahul Gandhi ahead of INDIA bloc rally",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/india-not-a-banana-republic-bjp-attacks-rahul-gandhi-ahead-of-india-bloc-rally/articleshow/135419924.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793519350481
     }
   ]
 }
