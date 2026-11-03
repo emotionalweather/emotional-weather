@@ -1,25 +1,98 @@
 {
-  "updated_at": "2026-11-03T04:45:35.800Z",
+  "updated_at": "2026-11-03T05:47:23.316Z",
   "total": 600,
-  "new_count": 32,
+  "new_count": 37,
   "ai_success": 0,
-  "ai_fallback": 32,
+  "ai_fallback": 37,
   "global": {
     "score": 44,
     "totalArticles": 600,
     "categories": {
-      "politics": 439,
+      "politics": 444,
+      "culture": 18,
+      "economy": 12,
+      "war": 80,
       "sports": 9,
-      "culture": 16,
-      "economy": 11,
-      "disaster": 8,
-      "positive": 13,
-      "war": 85,
-      "crisis": 12,
+      "disaster": 7,
+      "positive": 12,
+      "crisis": 11,
       "health": 7
     }
   },
   "countries": {
+    "IL": {
+      "score": 42,
+      "articleCount": 20,
+      "categories": {
+        "politics": 17,
+        "war": 3
+      }
+    },
+    "IN": {
+      "score": 50,
+      "articleCount": 5,
+      "categories": {
+        "politics": 5
+      }
+    },
+    "PS": {
+      "score": 34,
+      "articleCount": 5,
+      "categories": {
+        "politics": 4,
+        "war": 1
+      }
+    },
+    "ZA": {
+      "score": 57,
+      "articleCount": 6,
+      "categories": {
+        "politics": 2,
+        "economy": 4
+      }
+    },
+    "PE": {
+      "score": 43,
+      "articleCount": 3,
+      "categories": {
+        "economy": 1,
+        "politics": 1,
+        "war": 1
+      }
+    },
+    "ES": {
+      "score": 55,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
+        "sports": 1
+      }
+    },
+    "US": {
+      "score": 44,
+      "articleCount": 25,
+      "categories": {
+        "politics": 22,
+        "war": 2,
+        "positive": 1
+      }
+    },
+    "RU": {
+      "score": 24,
+      "articleCount": 6,
+      "categories": {
+        "politics": 4,
+        "war": 2
+      }
+    },
+    "KR": {
+      "score": 31,
+      "articleCount": 6,
+      "categories": {
+        "war": 1,
+        "politics": 5
+      }
+    },
     "AU": {
       "score": 60,
       "articleCount": 4,
@@ -29,21 +102,6 @@
       }
     },
     "OM": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
-    "IL": {
-      "score": 39,
-      "articleCount": 20,
-      "categories": {
-        "politics": 16,
-        "war": 4
-      }
-    },
-    "IN": {
       "score": 50,
       "articleCount": 3,
       "categories": {
@@ -60,23 +118,22 @@
       }
     },
     "CN": {
-      "score": 29,
-      "articleCount": 10,
+      "score": 25,
+      "articleCount": 7,
       "categories": {
         "disaster": 1,
         "culture": 1,
         "war": 2,
-        "politics": 5,
-        "economy": 1
+        "politics": 3
       }
     },
     "IR": {
-      "score": 30,
-      "articleCount": 43,
+      "score": 31,
+      "articleCount": 42,
       "categories": {
         "politics": 20,
         "positive": 4,
-        "war": 17,
+        "war": 16,
         "disaster": 1,
         "culture": 1
       }
@@ -93,30 +150,6 @@
       "articleCount": 2,
       "categories": {
         "politics": 2
-      }
-    },
-    "ES": {
-      "score": 59,
-      "articleCount": 2,
-      "categories": {
-        "politics": 1,
-        "sports": 1
-      }
-    },
-    "US": {
-      "score": 44,
-      "articleCount": 25,
-      "categories": {
-        "war": 2,
-        "politics": 22,
-        "positive": 1
-      }
-    },
-    "KR": {
-      "score": 50,
-      "articleCount": 6,
-      "categories": {
-        "politics": 6
       }
     },
     "VE": {
@@ -141,38 +174,22 @@
         "politics": 1
       }
     },
-    "ZA": {
-      "score": 59,
-      "articleCount": 5,
-      "categories": {
-        "politics": 1,
-        "economy": 4
-      }
-    },
     "UA": {
-      "score": 26,
-      "articleCount": 26,
+      "score": 25,
+      "articleCount": 25,
       "categories": {
-        "politics": 13,
+        "politics": 12,
         "disaster": 2,
         "war": 10,
         "positive": 1
       }
     },
-    "RU": {
-      "score": 14,
+    "GB": {
+      "score": 15,
       "articleCount": 6,
       "categories": {
         "war": 3,
         "politics": 3
-      }
-    },
-    "GB": {
-      "score": 17,
-      "articleCount": 7,
-      "categories": {
-        "war": 3,
-        "politics": 4
       }
     },
     "SG": {
@@ -301,14 +318,6 @@
         "politics": 1
       }
     },
-    "PS": {
-      "score": 19,
-      "articleCount": 5,
-      "categories": {
-        "war": 2,
-        "politics": 3
-      }
-    },
     "MX": {
       "score": 50,
       "articleCount": 1,
@@ -321,13 +330,6 @@
       "articleCount": 3,
       "categories": {
         "politics": 3
-      }
-    },
-    "PE": {
-      "score": 0,
-      "articleCount": 1,
-      "categories": {
-        "war": 1
       }
     },
     "NO": {
@@ -406,30 +408,490 @@
       "categories": {
         "politics": 1
       }
-    },
-    "IQ": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "BD": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "PT": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "f5e15eef6921",
+      "title": "Rogue sheep rescued in Hawke's Bay and given life-saving haircuts",
+      "summary": "Rogue sheep rescued in Hawke's Bay and given life-saving haircuts",
+      "link": "https://www.rnz.co.nz/news/country/2318815/rogue-sheep-rescued-in-hawke-s-bay-and-given-life-saving-haircuts",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684842314
+    },
+    {
+      "hash": "2f7c3e18e3e6",
+      "title": "NZ family will 'forever have a Kai-shaped hole in our hearts' after 11-year-old's body found",
+      "summary": "NZ family will 'forever have a Kai-shaped hole in our hearts' after 11-year-old's body found",
+      "link": "https://www.rnz.co.nz/news/crime-and-justice/2318778/nz-family-will-forever-have-a-kai-shaped-hole-in-our-hearts-after-11-year-old-s-body-found",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793684838980
+    },
+    {
+      "hash": "1a7690b7c3ed",
+      "title": "SA government backflips on locust management approach despite past concerns",
+      "summary": "SA government backflips on locust management approach despite past concerns",
+      "link": "https://www.abc.net.au/news/2026-11-03/aerial-locust-spraying-mallee-backflip/107335362",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793684835491
+    },
+    {
+      "hash": "b4006b19ddb9",
+      "title": "'He was surrounded by love': One year of voluntary assisted dying in the ACT",
+      "summary": "'He was surrounded by love': One year of voluntary assisted dying in the ACT",
+      "link": "https://www.abc.net.au/news/2026-11-03/one-year-since-voluntary-assisted-dying-came-into-effect-in-act/107341570",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684831503
+    },
+    {
+      "hash": "6949585d7dfb",
+      "title": "Despair turns to hope for single mum on house hunting mission",
+      "summary": "Despair turns to hope for single mum on house hunting mission",
+      "link": "https://www.abc.net.au/news/2026-11-03/perth-property-price-slump-provides-glimmer-of-hope/107336590",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684828125
+    },
+    {
+      "hash": "8e5d43c99b8d",
+      "title": "Top Arab Israeli leader says opposition must join to oust Netanyahu",
+      "summary": "Top Arab Israeli leader says opposition must join to oust Netanyahu",
+      "link": "https://www.straitstimes.com/world/middle-east/top-arab-israeli-leader-says-opposition-must-join-to-oust-netanyahu",
+      "source": "Straits Times",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684824786
+    },
+    {
+      "hash": "3a5fbfc19f18",
+      "title": "US midterms: In Michigan, pocketbook pain collides with smears in a bitter battle for the Senate",
+      "summary": "US midterms: In Michigan, pocketbook pain collides with smears in a bitter battle for the Senate",
+      "link": "https://www.straitstimes.com/world/united-states/in-michigan-pocketbook-pain-collides-with-smears-in-a-bitter-battle-for-the-senate",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684820588
+    },
+    {
+      "hash": "5d77c2cb75a4",
+      "title": "10 minutes to tragedy: What Florida Learjet co-pilot texted boyfriend before crash",
+      "summary": "10 minutes to tragedy: What Florida Learjet co-pilot texted boyfriend before crash",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/ive-got-turbulence-ive-got-ice-learjet-co-pilot-texted-boyfriend-10-minutes-before-fatal-florida-crash/articleshow/135481788.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684816491
+    },
+    {
+      "hash": "246345f89b56",
+      "title": "One killed after unidentified aerial object strikes Indian vessel near Oman",
+      "summary": "One killed after unidentified aerial object strikes Indian vessel near Oman",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/1-killed-13-rescued-after-unidentified-aerial-object-strikes-indian-vessel-near-oman/articleshow/135483233.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684812902
+    },
+    {
+      "hash": "9fc46fafd382",
+      "title": "Indian national killed as helicopters collide near Mount Everest; video captures crash",
+      "summary": "Indian national killed as helicopters collide near Mount Everest; video captures crash",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/south-asia/one-killed-two-injured-as-helicopters-collide-near-mount-everest-in-nepal/articleshow/135481608.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684807217
+    },
+    {
+      "hash": "9b7a04be1f18",
+      "title": "ICC president urges U.N. members to defend court against U.S. sanctions",
+      "summary": "ICC president urges U.N. members to defend court against U.S. sanctions",
+      "link": "https://www.japantimes.co.jp/news/2026/11/03/japan/icc-president-speech/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793684803097
+    },
+    {
+      "hash": "f3b1373ab7b2",
+      "title": "Swift and Simmons star as Bears maul Seahawks",
+      "summary": "Swift and Simmons star as Bears maul Seahawks",
+      "link": "https://www.japantimes.co.jp/sports/2026/11/03/more-sports/seahawks-bears-swift-simmons/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684799112
+    },
+    {
+      "hash": "897a088d9310",
+      "title": "UK to double wait for permanent residency, with exemptions for care workers",
+      "summary": "UK to double wait for permanent residency, with exemptions for care workers",
+      "link": "https://www.aljazeera.com/news/2026/11/3/uk-to-double-wait-for-permanent-residency-with-exemptions-for-care-workers?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684795093
+    },
+    {
+      "hash": "5cdc264268c7",
+      "title": "What time do polls open and close in the US midterm elections 2026?",
+      "summary": "What time do polls open and close in the US midterm elections 2026?",
+      "link": "https://www.aljazeera.com/news/2026/11/3/what-time-do-polls-open-and-close-in-the-us-midterm-elections-2026?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793684791646
+    },
+    {
+      "hash": "04eb14aed34e",
+      "title": "Israeli forces kill four in Gaza as fifth Palestinian dies of wounds",
+      "summary": "Israeli forces kill four in Gaza as fifth Palestinian dies of wounds",
+      "link": "https://www.aljazeera.com/news/2026/11/3/israeli-forces-kill-four-in-gaza-as-fifth-palestinian-dies-of-wounds?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "PS",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684787915
+    },
+    {
+      "hash": "4f375c664104",
+      "title": "Mali: Still No Accountability Six Months After Abduction of Pro-Democracy Politician Mountaga Tall and His Son",
+      "summary": "Mali: Still No Accountability Six Months After Abduction of Pro-Democracy Politician Mountaga Tall and His Son",
+      "link": "https://allafrica.com/stories/202611030071.html",
+      "source": "AllAfrica",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684780395
+    },
+    {
+      "hash": "89dcff774ef4",
+      "title": "South Africa: What Now? - Experts Weigh in After Trump Boots South Africa From AGOA",
+      "summary": "South Africa: What Now? - Experts Weigh in After Trump Boots South Africa From AGOA",
+      "link": "https://allafrica.com/stories/202611030072.html",
+      "source": "AllAfrica",
+      "countryCode": "ZA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684773728
+    },
+    {
+      "hash": "5571fad2913c",
+      "title": "Malawi: 'You're Not Okay Upstairs!' Chilima Crash Inquiry Erupts As Witness and MPs Trade Insults",
+      "summary": "Malawi: 'You're Not Okay Upstairs!' Chilima Crash Inquiry Erupts As Witness and MPs Trade Insults",
+      "link": "https://allafrica.com/stories/202611030078.html",
+      "source": "AllAfrica",
+      "countryCode": "PE",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1793684769744
+    },
+    {
+      "hash": "8c1e15c88b86",
+      "title": "Janones diz que evitou viajar de avião durante campanha de Lula para não ficar sem internet",
+      "summary": "Janones diz que evitou viajar de avião durante campanha de Lula para não ficar sem internet",
+      "link": "https://g1.globo.com/fantastico/noticia/2026/11/03/janones-diz-que-evitou-viajar-de-aviao-durante-campanha-de-lula-para-nao-ficar-sem-internet.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684766530
+    },
+    {
+      "hash": "0f443b15ff9c",
+      "title": "MP recorre para aumentar pena de dono do Porsche para 27 anos de prisão por matar motorista de app",
+      "summary": "MP recorre para aumentar pena de dono do Porsche para 27 anos de prisão por matar motorista de app",
+      "link": "https://g1.globo.com/sp/sao-paulo/noticia/2026/11/03/mp-recorre-para-aumentar-pena-de-dono-do-porsche-para-27-anos-de-prisao-por-matar-motorista-de-app.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684761528
+    },
+    {
+      "hash": "183b90cc91cc",
+      "title": "Funk do 'petista disfarçado', hit da direita no Brasil, tem base popularizada na União Soviética; conheça história",
+      "summary": "Funk do 'petista disfarçado', hit da direita no Brasil, tem base popularizada na União Soviética; conheça história",
+      "link": "https://g1.globo.com/pop-arte/musica/noticia/2026/11/03/funk-do-petista-disfarcado-hit-da-direita-no-brasil-tem-base-popularizada-na-uniao-sovietica-conheca-historia.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684757696
+    },
+    {
+      "hash": "9a1ffe2a6dc3",
+      "title": "Seguridad ferroviaria: cuando el error humano es un síntoma del sistema",
+      "summary": "Seguridad ferroviaria: cuando el error humano es un síntoma del sistema",
+      "link": "https://elpais.com/espana/2026-11-03/seguridad-ferroviaria-cuando-el-error-humano-es-un-sintoma-del-sistema.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684753872
+    },
+    {
+      "hash": "ddc17e8af0aa",
+      "title": "Las centrales sindicales del ferrocarril se plantean una fuerte movilización para acelerar refuerzos en la seguridad",
+      "summary": "Las centrales sindicales del ferrocarril se plantean una fuerte movilización para acelerar refuerzos en la seguridad",
+      "link": "https://elpais.com/espana/2026-11-03/las-centrales-sindicales-del-ferrocarril-se-plantean-una-fuerte-movilizacion-para-acelerar-refuerzos-en-la-seguridad.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684747924
+    },
+    {
+      "hash": "8fbbee0d5280",
+      "title": "Puente se enfrenta a su comparecencia clave con un plan de medidas para reforzar la seguridad de los trenes",
+      "summary": "Puente se enfrenta a su comparecencia clave con un plan de medidas para reforzar la seguridad de los trenes",
+      "link": "https://elpais.com/espana/2026-11-03/puente-se-enfrenta-a-su-comparecencia-clave-con-un-plan-de-medidas-para-reforzar-la-seguridad-de-los-trenes.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684740703
+    },
+    {
+      "hash": "5341cf72f737",
+      "title": "Spain introduces paid menopause sick leave from December 2026",
+      "summary": "Spain introduces paid menopause sick leave from December 2026",
+      "link": "https://www.euronews.com/2026/11/03/spain-introduces-paid-menopause-sick-leave-from-december-2026",
+      "source": "Euronews English",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684734996
+    },
+    {
+      "hash": "53f1f4e59592",
+      "title": "Study suggests human-driven climate change may have halted onset of a new ice age",
+      "summary": "Study suggests human-driven climate change may have halted onset of a new ice age",
+      "link": "https://www.euronews.com/2026/11/03/study-suggests-human-driven-climate-change-may-have-halted-onset-of-a-new-ice-age",
+      "source": "Euronews English",
+      "countryCode": "PE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684731036
+    },
+    {
+      "hash": "8325f8014750",
+      "title": "North Korea denies role in record Binance hack, calls US charge &apos;provocation&apos;",
+      "summary": "North Korea denies role in record Binance hack, calls US charge &apos;provocation&apos;",
+      "link": "https://www.dw.com/en/north-korea-denies-role-in-record-binance-hack-calls-us-charge-provocation/a-79835321?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684725447
+    },
+    {
+      "hash": "1d9452df25ab",
+      "title": "CPJ: 'Attacks on journalists almost always precede attacks on other rights to broader population'",
+      "summary": "CPJ: 'Attacks on journalists almost always precede attacks on other rights to broader population'",
+      "link": "https://www.france24.com/en/video/20261103-cpj-attacks-on-journalists-almost-always-precede-attacks-on-other-rights-to-broader-population",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793684719658
+    },
+    {
+      "hash": "acc1b604dab6",
+      "title": "«أرامكو» ترفع توزيعات أرباح الربع الثالث 3.5 % إلى 21.89 مليار دولار",
+      "summary": "«أرامكو» ترفع توزيعات أرباح الربع الثالث 3.5 % إلى 21.89 مليار دولار",
+      "link": "https://aawsat.com/node/5336906",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684708350
+    },
+    {
+      "hash": "bdd9c5c76041",
+      "title": "الدولار يتماسك وسط توترات الشرق الأوسط ومخاطر الانتخابات الأميركية",
+      "summary": "الدولار يتماسك وسط توترات الشرق الأوسط ومخاطر الانتخابات الأميركية",
+      "link": "https://aawsat.com/node/5336908",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793684687196
+    },
+    {
+      "hash": "d98dc2d83e2a",
+      "title": "القطاع غير النفطي السعودي ينمو للشهر السابع رغم ضغوط التكاليف",
+      "summary": "القطاع غير النفطي السعودي ينمو للشهر السابع رغم ضغوط التكاليف",
+      "link": "https://aawsat.com/node/5336910",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1793684681326
+    },
+    {
+      "hash": "fa4c40e66e8b",
+      "title": "الفخامة أبعد من خمس نجوم.. 10 علامات تميّز الإقامة في أرقى الفنادق",
+      "summary": "الفخامة أبعد من خمس نجوم.. 10 علامات تميّز الإقامة في أرقى الفنادق",
+      "link": "https://arabic.euronews.com/2026/11/03/beyond-five-stars-10-signs-youre-staying-in-an-ultra-luxury-hotel-from-house-cars-to-turnd",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793684674858
+    },
+    {
+      "hash": "327bf0c0be2b",
+      "title": "التغير المناخي.. دراسة ترجّح أنه يوقف بداية العصر الجليدي المقبل",
+      "summary": "التغير المناخي.. دراسة ترجّح أنه يوقف بداية العصر الجليدي المقبل",
+      "link": "https://arabic.euronews.com/2026/11/03/study-has-climate-change-prevented-a-new-ice-age",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684653759
+    },
+    {
+      "hash": "75eac6383ba8",
+      "title": "انتخابات التجديد النصفي.. يوم الحسم في معركة الكونغرس  نتائج الاقتراع ترسم ملامح التوازنات السياسية في واشنطن، وتحدد مساحة المناورة المتاحة أمام ترامب في النصف الثاني من ولايته",
+      "summary": "انتخابات التجديد النصفي.. يوم الحسم في معركة الكونغرس  نتائج الاقتراع ترسم ملامح التوازنات السياسية في واشنطن، وتحدد مساحة المناورة المتاحة أمام ترامب في النصف الثاني من ولايته",
+      "link": "https://alhurra.com/51188",
+      "source": "الحرة",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793684646151
+    },
+    {
+      "hash": "7772f9bfae18",
+      "title": "روسيا.. اعتراض 493 مسيرة أوكرانية كانت متجهة نحو موسكو",
+      "summary": "روسيا.. اعتراض 493 مسيرة أوكرانية كانت متجهة نحو موسكو",
+      "link": "https://www.skynewsarabia.com/world/1902271-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-493-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D9%83%D8%A7%D9%86%D8%AA-%D9%85%D8%AA%D8%AC%D9%87%D8%A9-%D9%85%D9%88%D8%B3%D9%83%D9%88",
+      "source": "Sky News عربية",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684639765
+    },
+    {
+      "hash": "d8bedce11cb0",
+      "title": "ذوبان الجليد.. تقرير يحذر من أضرار تستمر قرونا",
+      "summary": "ذوبان الجليد.. تقرير يحذر من أضرار تستمر قرونا",
+      "link": "https://www.skynewsarabia.com/technology/1902258-%D8%B0%D9%88%D8%A8%D8%A7%D9%86-%D8%A7%D9%84%D8%AC%D9%84%D9%8A%D8%AF-%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%8A%D8%AD%D8%B0%D8%B1-%D8%A3%D8%B6%D8%B1%D8%A7%D8%B1-%D8%AA%D8%B3%D8%AA%D9%85%D8%B1-%D9%82%D8%B1%D9%88%D9%86%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793684618644
+    },
+    {
+      "hash": "099d5f36bb4b",
+      "title": "وكالة: كوريا الشمالية اختبرت صاروخ كروز استراتيجيا",
+      "summary": "وكالة: كوريا الشمالية اختبرت صاروخ كروز استراتيجيا",
+      "link": "https://www.skynewsarabia.com/world/1902275-%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D8%AE%D8%AA%D8%A8%D8%B1%D8%AA-%D8%B5%D8%A7%D8%B1%D9%88%D8%AE-%D9%83%D8%B1%D9%88%D8%B2-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": "KR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793684597518
+    },
     {
       "hash": "006b594309ca",
       "title": "Reserve Bank of Australia raises its cash rate to 4.85 percent",
@@ -7748,487 +8210,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1793628087282
-    },
-    {
-      "hash": "713540eab84f",
-      "title": "Europe sees disasters coming.  Can it act in time?",
-      "summary": "Europe sees disasters coming.  Can it act in time?",
-      "link": "https://www.euronews.com/2026/11/02/europe-sees-disasters-coming-can-it-act-in-time",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628082512
-    },
-    {
-      "hash": "3c1f2151e8ec",
-      "title": "German Chancellor Merz wishes Koreans unity, but does Seoul really want it?",
-      "summary": "German Chancellor Merz wishes Koreans unity, but does Seoul really want it?",
-      "link": "https://www.dw.com/en/german-chancellor-merz-wishes-koreans-unity-but-does-seoul-really-want-it/a-79830111?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "KR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628077159
-    },
-    {
-      "hash": "62fc455dde74",
-      "title": "US midterm elections: North Carolina farmers hit hard by inflation",
-      "summary": "US midterm elections: North Carolina farmers hit hard by inflation",
-      "link": "https://www.france24.com/en/tv-shows/focus/20261102-us-midterm-elections-north-carolina-farmers-hit-hard-by-inflation",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793628073300
-    },
-    {
-      "hash": "e5284fb60ce0",
-      "title": "Italian journalists under police protection as threats rise across the country",
-      "summary": "Italian journalists under police protection as threats rise across the country",
-      "link": "https://www.france24.com/en/video/20261102-italian-journalists-under-police-protection-as-threats-rise-across-the-country",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628068483
-    },
-    {
-      "hash": "c9ec3ee07e11",
-      "title": "Fresh wave of fridge cyberattacks hits European supermarkets",
-      "summary": "Fresh wave of fridge cyberattacks hits European supermarkets",
-      "link": "https://www.france24.com/en/europe/20261102-fresh-wave-of-fridge-cyberattacks-hits-european-supermarkets",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793628063269
-    },
-    {
-      "hash": "76b4c6d166f8",
-      "title": "Fake nuclear warnings issued after Ukrainian and Russian air alert apps hacked",
-      "summary": "Fake nuclear warnings issued after Ukrainian and Russian air alert apps hacked",
-      "link": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": "RU",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793628058815
-    },
-    {
-      "hash": "742cd2161680",
-      "title": "Shop freezers in six European countries hit by suspected cyber-attack",
-      "summary": "Shop freezers in six European countries hit by suspected cyber-attack",
-      "link": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793628055130
-    },
-    {
-      "hash": "4f1adda9b946",
-      "title": "القراصنة يعبثون بدرجات حرارة مجمّدات المتاجر... موجة هجمات تمتد عبر أوروبا",
-      "summary": "القراصنة يعبثون بدرجات حرارة مجمّدات المتاجر... موجة هجمات تمتد عبر أوروبا",
-      "link": "https://aawsat.com/node/5336681",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628050976
-    },
-    {
-      "hash": "fde247e6a7af",
-      "title": "أوليسيه يشارك في تمارين «بايرن» عشية لقاء «أتلتيكو»",
-      "summary": "أوليسيه يشارك في تمارين «بايرن» عشية لقاء «أتلتيكو»",
-      "link": "https://aawsat.com/node/5336682",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628045661
-    },
-    {
-      "hash": "ffaad0b2c063",
-      "title": "دراسة: سرعة مشيك قد تحمل مؤشراً على طول عمرك",
-      "summary": "دراسة: سرعة مشيك قد تحمل مؤشراً على طول عمرك",
-      "link": "https://aawsat.com/node/5336683",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628038433
-    },
-    {
-      "hash": "1640f2bd5271",
-      "title": "آبل تعلن نتائجها في أول اختبار للرئيس التنفيذي الجديد.. آيفون القابل للطي والذكاء الاصطناعي تحت المجهر",
-      "summary": "آبل تعلن نتائجها في أول اختبار للرئيس التنفيذي الجديد.. آيفون القابل للطي والذكاء الاصطناعي تحت المجهر",
-      "link": "https://arabic.euronews.com/2026/11/02/apples-new-ceo-faces-earnings-test-as-rising-chip-costs-cloud-outlook",
-      "source": "Euronews عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793628034876
-    },
-    {
-      "hash": "98e6b38e6a1b",
-      "title": "الصين تختبر روبوتات بشرية ورباعية في تحدي تسلق جبل تاي",
-      "summary": "الصين تختبر روبوتات بشرية ورباعية في تحدي تسلق جبل تاي",
-      "link": "https://arabic.euronews.com/video/2026/11/02/humanoid-robots-climb-chinas-mount-tai-in-an-unusual-challenge",
-      "source": "Euronews عربي",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628029068
-    },
-    {
-      "hash": "37bec10f4169",
-      "title": "اكتشاف دلائل لحياة يومية قبل 4 آلاف عام في بغداد.. خبز وبيرة في تل محمد",
-      "summary": "اكتشاف دلائل لحياة يومية قبل 4 آلاف عام في بغداد.. خبز وبيرة في تل محمد",
-      "link": "https://arabic.euronews.com/2026/11/02/what-did-people-eat-and-drink-4000-years-ago-new-discoveries-shed-light-on-life-in-mesopot",
-      "source": "Euronews عربي",
-      "countryCode": "IQ",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628022923
-    },
-    {
-      "hash": "060d6c76c553",
-      "title": "ماسك في مرمى الديمقراطيين.. وترامب يتعهد بحمايته",
-      "summary": "ماسك في مرمى الديمقراطيين.. وترامب يتعهد بحمايته",
-      "link": "https://www.skynewsarabia.com/world/1902171-%D9%85%D8%A7%D8%B3%D9%83-%D9%85%D8%B1%D9%85%D9%89-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%8A%D9%86-%D9%88%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%AA%D8%B9%D9%87%D8%AF-%D8%A8%D8%AD%D9%85%D8%A7%D9%8A%D8%AA%D9%87",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628017830
-    },
-    {
-      "hash": "87da5c732bba",
-      "title": "غزة: القصف الإسرائيلي يواصل حصد المزيد من الأرواح وآلاف النازحين يواجهون برد الشتاء",
-      "summary": "غزة: القصف الإسرائيلي يواصل حصد المزيد من الأرواح وآلاف النازحين يواجهون برد الشتاء",
-      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261102-%D8%BA%D8%B2%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%8A%D9%88%D8%A7%D8%B5%D9%84-%D8%AD%D8%B5%D8%AF-%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D9%88%D8%A7%D8%AD-%D9%88%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%8A%D9%86-%D9%8A%D9%88%D8%A7%D8%AC%D9%87%D9%88%D9%86-%D8%A8%D8%B1%D8%AF-%D8%A7%D9%84%D8%B4%D8%AA%D8%A7%D8%A1",
-      "source": "France24 عربي",
-      "countryCode": "PS",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793628013334
-    },
-    {
-      "hash": "8097d49fc33a",
-      "title": "الاستخبارات الأمريكية نشرت أول صورة واضحة لها: ما هي طائرة الصين الفضائية التي تقلق الأمريكيين؟",
-      "summary": "الاستخبارات الأمريكية نشرت أول صورة واضحة لها: ما هي طائرة الصين الفضائية التي تقلق الأمريكيين؟",
-      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D8%AA%D9%83%D9%86%D9%88/20261102-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%86%D8%B4%D8%B1%D8%AA-%D8%A3%D9%88%D9%84-%D8%B5%D9%88%D8%B1%D8%A9-%D9%88%D8%A7%D8%B6%D8%AD%D8%A9-%D9%84%D9%87%D8%A7-%D9%85%D8%A7-%D9%87%D9%8A-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D9%8A%D9%86-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%82%D9%84%D9%82-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D9%8A%D9%86",
-      "source": "France24 عربي",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793628008597
-    },
-    {
-      "hash": "1ac2e15b212f",
-      "title": "الانتخابات النصفية الأمريكية: الكثير من سكان مونرو مستمرون في دعم الجمهوريين رغم الصعوبات المعيشية",
-      "summary": "الانتخابات النصفية الأمريكية: الكثير من سكان مونرو مستمرون في دعم الجمهوريين رغم الصعوبات المعيشية",
-      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261102-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D8%B5%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D8%A7%D9%84%D9%83%D8%AB%D9%8A%D8%B1-%D9%85%D9%86-%D8%B3%D9%83%D8%A7%D9%86-%D9%85%D9%88%D9%86%D8%B1%D9%88-%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D9%88%D9%86-%D9%81%D9%8A-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D9%8A%D9%86-%D8%B1%D8%BA%D9%85-%D8%A7%D9%84%D8%B5%D8%B9%D9%88%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D8%B4%D9%8A%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793628004277
-    },
-    {
-      "hash": "a583b111b739",
-      "title": "الجيش الإسرائيلي ينهي عمليته العسكرية في الخليل، والعائلات النازحة تبدأ العودة إلى منازلها",
-      "summary": "الجيش الإسرائيلي ينهي عمليته العسكرية في الخليل، والعائلات النازحة تبدأ العودة إلى منازلها",
-      "link": "https://www.bbc.com/arabic/articles/cv1j31r229zxo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "IL",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793627999946
-    },
-    {
-      "hash": "8a4cda455b20",
-      "title": "Oman and China sign deals to boost trade and investment",
-      "summary": "Oman and China sign deals to boost trade and investment",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/2/oman-and-china-sign-deals-to-boost-trade-and-investment?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "CN",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1793623862722
-    },
-    {
-      "hash": "8a9f90cf1835",
-      "title": "University cancels final-year students’ exam over ‘wild jubilation’",
-      "summary": "University cancels final-year students’ exam over ‘wild jubilation’",
-      "link": "https://www.premiumtimesng.com/regional/south-south-regional/922098-university-cancels-final-year-students-exam-over-wild-jubilation.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623858463
-    },
-    {
-      "hash": "fcec74c902f6",
-      "title": "ANALYSIS: Congolese refugees caught between war and closing doors",
-      "summary": "ANALYSIS: Congolese refugees caught between war and closing doors",
-      "link": "https://www.premiumtimesng.com/news/headlines/922102-analysis-congolese-refugees-caught-between-war-and-closing-doors.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793623845807
-    },
-    {
-      "hash": "588edf83dce7",
-      "title": "Two South-east states developing integrated ranches to curb herder-farmer clashes",
-      "summary": "Two South-east states developing integrated ranches to curb herder-farmer clashes",
-      "link": "https://www.premiumtimesng.com/regional/ssouth-east/922106-two-south-east-states-developing-integrated-ranches-to-curb-herder-farmer-clashes.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623842614
-    },
-    {
-      "hash": "8f625f705a2f",
-      "title": "UN peacekeeping mission in Western Sahara ends after 35 years",
-      "summary": "UN peacekeeping mission in Western Sahara ends after 35 years",
-      "link": "http://www.africanews.com/2026/11/02/un-peacekeeping-mission-in-western-sahara-ends-after-35-years/",
-      "source": "Africanews",
-      "countryCode": null,
-      "category": "positive",
-      "sentiment": "positive",
-      "mood": "hope",
-      "impact": 75,
-      "timestamp": 1793623839051
-    },
-    {
-      "hash": "7e6360f83e30",
-      "title": "Ebola fatality rate in DR Congo tops 50% as death toll reaches 5,372",
-      "summary": "Ebola fatality rate in DR Congo tops 50% as death toll reaches 5,372",
-      "link": "http://www.africanews.com/2026/11/02/ebola-fatality-rate-in-dr-congo-tops-50-as-death-toll-reaches-5372/",
-      "source": "Africanews",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623835462
-    },
-    {
-      "hash": "ff579f07f98e",
-      "title": "Porte ilegal de arma: casal é preso com revólver de numeração raspada e munições em Santarém",
-      "summary": "Porte ilegal de arma: casal é preso com revólver de numeração raspada e munições em Santarém",
-      "link": "https://g1.globo.com/pa/santarem-regiao/noticia/2026/11/02/porte-ilegal-de-arma-casal-e-preso-com-revolver-de-numeracao-raspada-e-municoes-em-santarem.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623831484
-    },
-    {
-      "hash": "c6772425edaf",
-      "title": "Eleições nos EUA: pesquisas indicam vantagem dos democratas, mas estão corretas?",
-      "summary": "Eleições nos EUA: pesquisas indicam vantagem dos democratas, mas estão corretas?",
-      "link": "https://g1.globo.com/mundo/noticia/2026/11/02/eleicoes-nos-eua-pesquisas-indicam-vantagem-dos-democratas-mas-estao-corretas.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623827908
-    },
-    {
-      "hash": "8217b10cfb46",
-      "title": "Enem 2026: g1 transmite plantão tira-dúvidas com professores nesta quinta-feira",
-      "summary": "Enem 2026: g1 transmite plantão tira-dúvidas com professores nesta quinta-feira",
-      "link": "https://g1.globo.com/sp/campinas-regiao/educacao/ao-vivo/enem-2026-g1-tira-duvidas.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623824109
-    },
-    {
-      "hash": "9980bb7b3a9e",
-      "title": "Argentine intellectuals reject the Falklands “national cause” amid escalating tensions with London",
-      "summary": "Argentine intellectuals reject the Falklands “national cause” amid escalating tensions with London",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/01/argentine-intellectuals-reject-the-falklands-national-cause-amid-escalating-tensions-with-london?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "GB",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623819923
-    },
-    {
-      "hash": "96824622ef42",
-      "title": "Canadian among the dead in Spanish high-speed rail crash",
-      "summary": "Canadian among the dead in Spanish high-speed rail crash",
-      "link": "https://www.cbc.ca/news/world/spain-officials-train-crash-nationalities-9.7405281?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623815972
-    },
-    {
-      "hash": "871fbbb6944e",
-      "title": "5 reasons why Democrats might not take control of Congress in U.S. midterms",
-      "summary": "5 reasons why Democrats might not take control of Congress in U.S. midterms",
-      "link": "https://www.cbc.ca/news/world/us-midterm-elections-democrats-republicans-trump-9.7403495?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623811479
-    },
-    {
-      "hash": "adbb4a8e0d80",
-      "title": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
-      "summary": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
-      "link": "https://www.npr.org/2026/11/02/g-s1-151215/up-first-newsletter-michigan-senate-iran-war-supreme-court-colorado-catholic-church",
-      "source": "NPR World",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793623803916
-    },
-    {
-      "hash": "082ad7975d9e",
-      "title": "Trick or treat takes sinister turn for German kids",
-      "summary": "Trick or treat takes sinister turn for German kids",
-      "link": "<![CDATA[https://rt-english.com/news/648229-germany-halloween-candy-needles-magnets/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623799515
-    },
-    {
-      "hash": "2ea32f2da448",
-      "title": "Violent demonstrations disrupt Bangladesh’s flagship export industry (VIDEO)",
-      "summary": "Violent demonstrations disrupt Bangladesh’s flagship export industry (VIDEO)",
-      "link": "<![CDATA[https://rt-english.com/news/648233-bangladesh-garment-industry-protest/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": "BD",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623782740
-    },
-    {
-      "hash": "ed5c2c4d8b01",
-      "title": "Última hora del accidente de trenes de Urda, Toledo, en directo | Feijóo acusa a Sánchez de “reducir todo el sistema ferroviario a un solo trabajador” y le pide que comparezca",
-      "summary": "Última hora del accidente de trenes de Urda, Toledo, en directo | Feijóo acusa a Sánchez de “reducir todo el sistema ferroviario a un solo trabajador” y le pide que comparezca",
-      "link": "https://elpais.com/espana/2026-11-02/ultima-hora-y-reacciones-tras-el-accidente-de-trenes-de-urda-toledo-en-directo.html",
-      "source": "El País",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623777989
-    },
-    {
-      "hash": "456457f98fdb",
-      "title": "Schools closed and roads flooded as new wave of severe weather hits Greek islands",
-      "summary": "Schools closed and roads flooded as new wave of severe weather hits Greek islands",
-      "link": "https://www.euronews.com/2026/11/02/schools-closed-and-roads-flooded-as-new-wave-of-severe-weather-hits-greek-islands",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1793623773564
-    },
-    {
-      "hash": "564b76281948",
-      "title": "Portugal house prices hit new record as October sees 7.5% annual rise",
-      "summary": "Portugal house prices hit new record as October sees 7.5% annual rise",
-      "link": "https://www.euronews.com/2026/11/02/portugal-house-prices-hit-new-record-as-october-sees-75-annual-rise",
-      "source": "Euronews English",
-      "countryCode": "PT",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623770033
-    },
-    {
-      "hash": "eeeab5592954",
-      "title": "Ukraine needs help this winter, says UN goodwill ambassador and actor Nikolaj Coster-Waldau",
-      "summary": "Ukraine needs help this winter, says UN goodwill ambassador and actor Nikolaj Coster-Waldau",
-      "link": "https://www.euronews.com/video/2026/11/02/ukraine-needs-help-this-winter-says-un-goodwill-ambassador-and-actor-nikolaj-coster-waldau",
-      "source": "Euronews English",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793623766223
     }
   ]
 }
