@@ -1,48 +1,78 @@
 {
-  "updated_at": "2026-11-04T00:37:47.453Z",
+  "updated_at": "2026-11-04T01:52:42.709Z",
   "total": 600,
-  "new_count": 38,
+  "new_count": 36,
   "ai_success": 0,
-  "ai_fallback": 38,
+  "ai_fallback": 36,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
-      "politics": 476,
-      "war": 53,
+      "war": 54,
+      "politics": 475,
+      "culture": 14,
       "economy": 11,
       "disaster": 8,
-      "culture": 12,
-      "crisis": 14,
+      "crisis": 13,
       "positive": 13,
-      "sports": 9,
+      "sports": 8,
       "health": 4
     }
   },
   "countries": {
-    "ES": {
-      "score": 41,
-      "articleCount": 14,
+    "NZ": {
+      "score": 36,
+      "articleCount": 3,
       "categories": {
-        "politics": 12,
-        "disaster": 2
+        "politics": 2,
+        "disaster": 1
+      }
+    },
+    "IN": {
+      "score": 50,
+      "articleCount": 4,
+      "categories": {
+        "politics": 4
+      }
+    },
+    "JP": {
+      "score": 60,
+      "articleCount": 5,
+      "categories": {
+        "culture": 1,
+        "politics": 4
+      }
+    },
+    "US": {
+      "score": 50,
+      "articleCount": 19,
+      "categories": {
+        "politics": 19
       }
     },
     "IL": {
       "score": 39,
       "articleCount": 19,
       "categories": {
-        "economy": 1,
         "politics": 14,
+        "economy": 1,
         "war": 3,
         "sports": 1
       }
     },
-    "US": {
+    "KR": {
       "score": 50,
-      "articleCount": 18,
+      "articleCount": 3,
       "categories": {
-        "politics": 18
+        "politics": 3
+      }
+    },
+    "ES": {
+      "score": 41,
+      "articleCount": 13,
+      "categories": {
+        "politics": 11,
+        "disaster": 2
       }
     },
     "ID": {
@@ -54,17 +84,17 @@
     },
     "CN": {
       "score": 50,
-      "articleCount": 10,
+      "articleCount": 9,
       "categories": {
-        "politics": 10
+        "politics": 9
       }
     },
     "IR": {
       "score": 25,
-      "articleCount": 22,
+      "articleCount": 18,
       "categories": {
-        "war": 7,
-        "politics": 15
+        "war": 6,
+        "politics": 12
       }
     },
     "ZA": {
@@ -82,42 +112,20 @@
         "war": 1
       }
     },
-    "KR": {
-      "score": 50,
-      "articleCount": 3,
-      "categories": {
-        "politics": 3
-      }
-    },
     "SA": {
       "score": 35,
-      "articleCount": 8,
+      "articleCount": 7,
       "categories": {
-        "politics": 4,
+        "politics": 3,
         "war": 2,
         "economy": 1,
         "sports": 1
-      }
-    },
-    "JP": {
-      "score": 50,
-      "articleCount": 5,
-      "categories": {
-        "politics": 5
       }
     },
     "NO": {
       "score": 50,
       "articleCount": 1,
       "categories": {
-        "politics": 1
-      }
-    },
-    "NZ": {
-      "score": 29,
-      "articleCount": 2,
-      "categories": {
-        "disaster": 1,
         "politics": 1
       }
     },
@@ -215,13 +223,6 @@
       "categories": {
         "war": 1,
         "politics": 1
-      }
-    },
-    "IN": {
-      "score": 50,
-      "articleCount": 4,
-      "categories": {
-        "politics": 4
       }
     },
     "YE": {
@@ -404,30 +405,477 @@
       "categories": {
         "politics": 1
       }
-    },
-    "RS": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "GR": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "MY": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "93daeb1ce8fe",
+      "title": "'Absolutely disgusting': Condemnation for NZ First candidate Michael Laws' sexist attack",
+      "summary": "'Absolutely disgusting': Condemnation for NZ First candidate Michael Laws' sexist attack",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2332807/absolutely-disgusting-condemnation-for-nz-first-candidate-michael-laws-sexist-attack",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793757161705
+    },
+    {
+      "hash": "d0501c5d4079",
+      "title": "Digger driver found dead after incident in Auckland",
+      "summary": "Digger driver found dead after incident in Auckland",
+      "link": "https://www.rnz.co.nz/news/emergencies_local/2332375/digger-driver-found-dead-after-incident-in-auckland",
+      "source": "RNZ",
+      "countryCode": "NZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757158104
+    },
+    {
+      "hash": "f1ca533d406d",
+      "title": "All-Oceania semifinals at the 2026 Rugby League World Cup",
+      "summary": "All-Oceania semifinals at the 2026 Rugby League World Cup",
+      "link": "https://www.rnz.co.nz/news/pacific/2335369/all-oceania-semifinals-at-the-2026-rugby-league-world-cup",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757154812
+    },
+    {
+      "hash": "b003003ae10c",
+      "title": "Alice Springs beams with pride after local Ethan Brown's win at Melbourne Cup",
+      "summary": "Alice Springs beams with pride after local Ethan Brown's win at Melbourne Cup",
+      "link": "https://www.abc.net.au/news/2026-11-04/alice-springs-pride-at-jockey-ethan-brown-melbourne-cup-win/107343362",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757151131
+    },
+    {
+      "hash": "600413734a15",
+      "title": "Five arrested in probe of over $235m rorted from federal agencies including NDIA",
+      "summary": "Five arrested in probe of over $235m rorted from federal agencies including NDIA",
+      "link": "https://www.abc.net.au/news/2026-11-04/federal-police-five-charged-ndis-welfare-fraud/107344388",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757146385
+    },
+    {
+      "hash": "97acb3bab29d",
+      "title": "Breaking: Trucks engulfed in flames after crash on WA highway",
+      "summary": "Breaking: Trucks engulfed in flames after crash on WA highway",
+      "link": "https://www.abc.net.au/news/2026-11-04/truck-crash-emergency-on-great-eastern-highway-in-meckering/107344998",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757141173
+    },
+    {
+      "hash": "d6045597cf7f",
+      "title": "US moves to drop smuggling charges against Harvard scientist",
+      "summary": "US moves to drop smuggling charges against Harvard scientist",
+      "link": "https://www.straitstimes.com/world/europe/us-moves-to-drop-smuggling-charges-against-harvard-scientist",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757136895
+    },
+    {
+      "hash": "9cf725e1a46d",
+      "title": "Chris Pappas holds New Hampshire US Senate seat for Democrats",
+      "summary": "Chris Pappas holds New Hampshire US Senate seat for Democrats",
+      "link": "https://www.straitstimes.com/world/chris-pappas-holds-new-hampshire-us-senate-seat-for-democrats",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757129191
+    },
+    {
+      "hash": "9920d4326021",
+      "title": "US midterms: Trump rages at Fox as US midterms voting wraps",
+      "summary": "US midterms: Trump rages at Fox as US midterms voting wraps",
+      "link": "https://www.straitstimes.com/world/united-states/us-midterms-trump-rages-at-fox-as-us-midterms-voting-wraps",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757125836
+    },
+    {
+      "hash": "1c2ebd5fe771",
+      "title": "Republicans nervous as US midterms results trickle in: Key races and faces to watch",
+      "summary": "Republicans nervous as US midterms results trickle in: Key races and faces to watch",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/republicans-feeling-blue-as-us-midterms-get-under-way-key-races-indian-americans-in-fray-states-to-watch/articleshow/135491521.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757122267
+    },
+    {
+      "hash": "7cb302f336ec",
+      "title": "Indian-origin Suhas Subramanyam wins re-election to US House from Virginia",
+      "summary": "Indian-origin Suhas Subramanyam wins re-election to US House from Virginia",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/us-midterms-indian-origin-suhas-subramanyam-wins-re-election-to-us-house-from-virginia/articleshow/135517577.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757117384
+    },
+    {
+      "hash": "ff3aaa2d89c9",
+      "title": "Art Week Tokyo’s Atsuko Ninagawa wants to connect the city’s scattered art scene",
+      "summary": "Art Week Tokyo’s Atsuko Ninagawa wants to connect the city’s scattered art scene",
+      "link": "https://www.japantimes.co.jp/culture/2026/11/04/art/art-week-tokyo-atsuko-ninagawa/",
+      "source": "Japan Times",
+      "countryCode": "JP",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793757112896
+    },
+    {
+      "hash": "59256c650dbe",
+      "title": "Bomb threats on flights, cruise ship cause disruption in Europe; no devices found",
+      "summary": "Bomb threats on flights, cruise ship cause disruption in Europe; no devices found",
+      "link": "https://www.japantimes.co.jp/news/2026/11/04/world/crime-legal/bomb-threats-flights-cruise-europe/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793757109712
+    },
+    {
+      "hash": "330bfb4276ae",
+      "title": "Disaster management minister visits areas in Kumamoto affected by July quake",
+      "summary": "Disaster management minister visits areas in Kumamoto affected by July quake",
+      "link": "https://www.japantimes.co.jp/news/2026/11/04/japan/disaster-minister-kumamoto-visit/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757105420
+    },
+    {
+      "hash": "00a22f8a682a",
+      "title": "Baidu’s new AI simulator gives robotaxis a crash course in rare road hazards",
+      "summary": "Baidu’s new AI simulator gives robotaxis a crash course in rare road hazards",
+      "link": "https://www.scmp.com/tech/big-tech/article/3373173/baidus-new-ai-simulator-gives-robotaxis-crash-course-rare-road-hazards",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757101857
+    },
+    {
+      "hash": "2b997921f24c",
+      "title": "Will US midterm results lead to disruption in Washington’s ties with China?",
+      "summary": "Will US midterm results lead to disruption in Washington’s ties with China?",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3373194/will-us-midterm-results-lead-disruption-washingtons-ties-china",
+      "source": "SCMP",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757097235
+    },
+    {
+      "hash": "f0f5c7932305",
+      "title": "Democrat Jon Ossoff wins Georgia US Senate race",
+      "summary": "Democrat Jon Ossoff wins Georgia US Senate race",
+      "link": "https://www.aljazeera.com/news/2026/11/4/democrat-jon-ossoff-wins-georgia-us-senate-race?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757085118
+    },
+    {
+      "hash": "7f9005d1ea33",
+      "title": "UN elects five judges to International Court of Justice amid record cases",
+      "summary": "UN elects five judges to International Court of Justice amid record cases",
+      "link": "https://www.aljazeera.com/news/2026/11/4/un-elects-five-judges-to-international-court-of-justice-amid-record-cases?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757081197
+    },
+    {
+      "hash": "adecd14bf0e2",
+      "title": "Scepticism as Trump says he’s ending Israel’s $3.8 bn military aid deal",
+      "summary": "Scepticism as Trump says he’s ending Israel’s $3.8 bn military aid deal",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/4/scepticism-as-trump-says-hes-ending-israels-3-8-bn-military-aid-deal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757077960
+    },
+    {
+      "hash": "7e152342ae96",
+      "title": "Eleições nos EUA: democrata vence disputa para o Senado pela Carolina do Norte",
+      "summary": "Eleições nos EUA: democrata vence disputa para o Senado pela Carolina do Norte",
+      "link": "https://g1.globo.com/mundo/noticia/2026/11/03/eleicoes-nos-eua-democrata-vence-disputa-para-o-senado-pela-carolina-do-norte.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757073646
+    },
+    {
+      "hash": "34b073b9bebe",
+      "title": "Justiça de São Paulo proíbe Meta de usar conteúdo jornalístico sem autorização",
+      "summary": "Justiça de São Paulo proíbe Meta de usar conteúdo jornalístico sem autorização",
+      "link": "https://g1.globo.com/jornal-nacional/noticia/2026/11/03/justica-de-sao-paulo-proibe-meta-de-usar-conteudo-jornalistico-sem-autorizacao.ghtml",
+      "source": "Globo",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757068882
+    },
+    {
+      "hash": "1ad0caa8e78f",
+      "title": "Candidata republicana vence disputa acirrada para o Senado na Flórida",
+      "summary": "Candidata republicana vence disputa acirrada para o Senado na Flórida",
+      "link": "https://g1.globo.com/mundo/noticia/2026/11/03/candidata-republicana-vence-disputa-acirrada-para-o-senado-na-florida.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757065189
+    },
+    {
+      "hash": "b6922464e9fe",
+      "title": "U.S. midterms: Strong start for Democrats with results now rolling in",
+      "summary": "U.S. midterms: Strong start for Democrats with results now rolling in",
+      "link": "https://www.cbc.ca/news/world/livestory/us-midterm-election-results-live-updates-2026-9.7403367?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793757061016
+    },
+    {
+      "hash": "0537f671d27e",
+      "title": "Las ‘midterms’ 2026, en vivo | Los demócratas logran tres escaños clave en el Senado; los republicanos mantienen Florida",
+      "summary": "Las ‘midterms’ 2026, en vivo | Los demócratas logran tres escaños clave en el Senado; los republicanos mantienen Florida",
+      "link": "https://elpais.com/us/2026-11-03/las-midterms-2026-en-vivo.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757057403
+    },
+    {
+      "hash": "cbdbd297a3bd",
+      "title": "First results in as polls begin to close in key US midterm elections",
+      "summary": "First results in as polls begin to close in key US midterm elections",
+      "link": "https://www.euronews.com/2026/11/04/live-updates-on-the-2026-midterm-elections-in-the-us",
+      "source": "Euronews English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757053890
+    },
+    {
+      "hash": "6707a938e0fb",
+      "title": "US midterm election results: How Americans voted and what the data tells us",
+      "summary": "US midterm election results: How Americans voted and what the data tells us",
+      "link": "https://www.dw.com/en/us-midterm-election-results-how-americans-voted-and-what-the-data-tells-us/a-79841886?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757049864
+    },
+    {
+      "hash": "8e5b1ca4c120",
+      "title": "US democracy, Trump fatigue, cost of living are top issues with voters, AP survey finds",
+      "summary": "US democracy, Trump fatigue, cost of living are top issues with voters, AP survey finds",
+      "link": "https://www.france24.com/en/americas/20261103-trump-fatigue-cost-of-living-and-corruption-are-top-issues-with-us-voters-ap-survey-finds",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757045170
+    },
+    {
+      "hash": "9c0975d2e23e",
+      "title": "🔴 Midterms live: Democrat Roy Cooper flips first Senate seat, follow the results",
+      "summary": "🔴 Midterms live: Democrat Roy Cooper flips first Senate seat, follow the results",
+      "link": "https://www.france24.com/en/americas/20261103-live-americans-head-to-the-polls-to-vote-in-us-midterm-elections",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757040770
+    },
+    {
+      "hash": "6a1116bcac36",
+      "title": "أميركا: اتهام رجل بإرسال «مسحوق مجهول» لمسؤولين قبل الانتخابات",
+      "summary": "أميركا: اتهام رجل بإرسال «مسحوق مجهول» لمسؤولين قبل الانتخابات",
+      "link": "https://aawsat.com/node/5337331",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757035395
+    },
+    {
+      "hash": "c208dc0b08a7",
+      "title": "كوريا الشمالية تطلق مقذوفاً في اتجاه بحر اليابان",
+      "summary": "كوريا الشمالية تطلق مقذوفاً في اتجاه بحر اليابان",
+      "link": "https://aawsat.com/node/5337332",
+      "source": "الشرق الأوسط",
+      "countryCode": "KR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757032389
+    },
+    {
+      "hash": "aa9576c6149e",
+      "title": "\"الفيتو لا يكفي\".. خبير يكشف موقف ترامب إذا فاز الديمقراطيون",
+      "summary": "\"الفيتو لا يكفي\".. خبير يكشف موقف ترامب إذا فاز الديمقراطيون",
+      "link": "https://www.skynewsarabia.com/world/1902342-%D8%A7%D9%84%D9%81%D9%8A%D8%AA%D9%88-%D9%8A%D9%83%D9%81%D9%8A-%D8%AE%D8%A8%D9%8A%D8%B1-%D9%8A%D9%83%D8%B4%D9%81-%D9%85%D9%88%D9%82%D9%81-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%81%D8%A7%D8%B2-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%88%D9%86",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757027782
+    },
+    {
+      "hash": "b75789c8e7e3",
+      "title": "من 4 ساعات إلى 9.. العلم يحل \"لغز النوم\" لدى البشر",
+      "summary": "من 4 ساعات إلى 9.. العلم يحل \"لغز النوم\" لدى البشر",
+      "link": "https://www.skynewsarabia.com/technology/1902412-4-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA-9-%D8%A7%D9%84%D8%B9%D9%84%D9%85-%D9%8A%D8%AD%D9%84-%D9%84%D8%BA%D8%B2-%D8%A7%D9%84%D9%86%D9%88%D9%85-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757022854
+    },
+    {
+      "hash": "f2b3a3059534",
+      "title": "مباشر: تابعوا تغطية خاصة على فرانس24 حول الانتخابات النصفية الأمريكية",
+      "summary": "مباشر: تابعوا تغطية خاصة على فرانس24 حول الانتخابات النصفية الأمريكية",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261103-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D9%88%D9%86-%D9%8A%D8%B5%D9%88%D8%AA%D9%88%D9%86-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%A7%D8%B3%D9%85%D8%A9-%D9%85%D9%84%D8%A7%D9%85%D8%AD-%D8%B9%D9%87%D8%AF-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%88%D9%86",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757019375
+    },
+    {
+      "hash": "9478247368a8",
+      "title": "إنذارات كاذبة بوجود قنابل على متن نحو عشر طائرات في أوروبا تستنفر السلطات وتربك حركة المطارات",
+      "summary": "إنذارات كاذبة بوجود قنابل على متن نحو عشر طائرات في أوروبا تستنفر السلطات وتربك حركة المطارات",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261104-%D8%A5%D9%86%D8%B0%D8%A7%D8%B1%D8%A7%D8%AA-%D9%82%D9%86%D8%A7%D8%A8%D9%84-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A7%D8%AA-%D9%85%D8%B7%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7-%D8%A7%D8%B3%D8%AA%D9%86%D9%81%D8%A7%D8%B1-%D8%A3%D9%85%D9%86%D9%8A",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757014645
+    },
+    {
+      "hash": "29afa41be168",
+      "title": "🔴الديمقراطيون ينتزعون مقعد كارولاينا الشمالية في مجلس الشيوخ من الجمهوريين",
+      "summary": "🔴الديمقراطيون ينتزعون مقعد كارولاينا الشمالية في مجلس الشيوخ من الجمهوريين",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7/20261103-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D9%88%D9%86-%D9%8A%D8%B5%D9%88%D8%AA%D9%88%D9%86-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%A7%D8%B3%D9%85%D8%A9-%D9%85%D9%84%D8%A7%D9%85%D8%AD-%D8%B9%D9%87%D8%AF-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%A7%D9%84%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%88%D9%86",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793757011139
+    },
+    {
+      "hash": "c654e2fd594b",
+      "title": "توقعات بفوز الديمقراطي جون أوسوف بمقعده في مجلس الشيوخ عن ولاية جورجيا المتأرجحة، في أول نتيجة رئيسية ضمن انتخابات التجديد النصفي",
+      "summary": "توقعات بفوز الديمقراطي جون أوسوف بمقعده في مجلس الشيوخ عن ولاية جورجيا المتأرجحة، في أول نتيجة رئيسية ضمن انتخابات التجديد النصفي",
+      "link": "https://www.bbc.co.uk/arabic/live/cqwyrmd2z8jjt?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793757006638
+    },
     {
       "hash": "d3446a832fbc",
       "title": "TAIC yet to decide on investigating fatal plane crash near Nelson",
@@ -7759,474 +8207,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1793699370060
-    },
-    {
-      "hash": "6bb3e3ed801a",
-      "title": "Israeli opposition unites behind Eisenkot as Netanyahu says voters chose him for PM",
-      "summary": "Israeli opposition unites behind Eisenkot as Netanyahu says voters chose him for PM",
-      "link": "https://www.france24.com/en/middle-east/20261103-israeli-opposition-unites-behind-eisenkot-netanyahu-voters-chose-him-pm",
-      "source": "France24 English",
-      "countryCode": "IL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699366196
-    },
-    {
-      "hash": "e88b398d0feb",
-      "title": "US strikes Iranian island ahead of midterm elections",
-      "summary": "US strikes Iranian island ahead of midterm elections",
-      "link": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699362609
-    },
-    {
-      "hash": "4e61925707bd",
-      "title": "ديوكوفيتش يأمل في «بداية جديدة» لصربيا بعد فوز الحركة الطلابية بالانتخابات",
-      "summary": "ديوكوفيتش يأمل في «بداية جديدة» لصربيا بعد فوز الحركة الطلابية بالانتخابات",
-      "link": "https://aawsat.com/node/5336991",
-      "source": "الشرق الأوسط",
-      "countryCode": "RS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699358693
-    },
-    {
-      "hash": "ff15052dde09",
-      "title": "وفاة مهاجم تينيريفي خيسوس دي ميغل متأثراً بإصابة تعرّض لها إثر اصطدام خلال مباراة",
-      "summary": "وفاة مهاجم تينيريفي خيسوس دي ميغل متأثراً بإصابة تعرّض لها إثر اصطدام خلال مباراة",
-      "link": "https://aawsat.com/node/5336993",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "sports",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793699354722
-    },
-    {
-      "hash": "10a533c4d199",
-      "title": "ارتفاع لافت في مشاركة الناخبين اللاتينيين بتكساس",
-      "summary": "ارتفاع لافت في مشاركة الناخبين اللاتينيين بتكساس",
-      "link": "https://aawsat.com/node/5336994",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699351066
-    },
-    {
-      "hash": "2c8073b4e8f9",
-      "title": "نيويورك تسجل أول وفاة مرتبطة بالحصبة لطفل منذ أكثر من 30 عامًا",
-      "summary": "نيويورك تسجل أول وفاة مرتبطة بالحصبة لطفل منذ أكثر من 30 عامًا",
-      "link": "https://arabic.euronews.com/2026/11/03/child-dies-in-new-yorks-first-measles-linked-death-in-over-30-years",
-      "source": "Euronews عربي",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699347104
-    },
-    {
-      "hash": "24a9464c7cc5",
-      "title": "فيفيين جولي تسقط قانونياً اسم والدها براد بيت من لقبها العائلي",
-      "summary": "فيفيين جولي تسقط قانونياً اسم والدها براد بيت من لقبها العائلي",
-      "link": "https://arabic.euronews.com/2026/11/03/vivienne-jolie-legally-drops-her-estranged-dad-brad-pitts-name",
-      "source": "Euronews عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699343066
-    },
-    {
-      "hash": "8d34c3465e17",
-      "title": "أمطار غزيرة تحوّل شوارع إحدى الجزر اليونانية إلى أنهار جارفة",
-      "summary": "أمطار غزيرة تحوّل شوارع إحدى الجزر اليونانية إلى أنهار جارفة",
-      "link": "https://arabic.euronews.com/video/2026/11/03/rhodes-floods-cars-swept-away-after-heavy-rain-in-greece",
-      "source": "Euronews عربي",
-      "countryCode": "GR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699335484
-    },
-    {
-      "hash": "304264a10780",
-      "title": "التضخم التركي يسجل ارتفاعا طفيفا في أكتوبر",
-      "summary": "التضخم التركي يسجل ارتفاعا طفيفا في أكتوبر",
-      "link": "https://www.skynewsarabia.com/business/1902373-%D8%A7%D9%84%D8%AA%D8%B6%D8%AE%D9%85-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A-%D9%8A%D8%B3%D8%AC%D9%84-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7-%D8%B7%D9%81%D9%8A%D9%81%D8%A7-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1793699331124
-    },
-    {
-      "hash": "4c73fdc45008",
-      "title": "السعودية.. اعتراض وتدمير مسيّرة بمنطقة مكة",
-      "summary": "السعودية.. اعتراض وتدمير مسيّرة بمنطقة مكة",
-      "link": "https://www.skynewsarabia.com/middle-east/1902375-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%88%D8%AA%D8%AF%D9%85%D9%8A%D8%B1-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%85%D9%83%D8%A9",
-      "source": "Sky News عربية",
-      "countryCode": "SA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699325032
-    },
-    {
-      "hash": "f36871cb915e",
-      "title": "كيف تعيد انتخابات التجديد النصفي تشكيل اقتصاد أميركا؟",
-      "summary": "كيف تعيد انتخابات التجديد النصفي تشكيل اقتصاد أميركا؟",
-      "link": "https://www.skynewsarabia.com/business/1902320-%D8%AA%D8%B9%D9%8A%D8%AF-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D9%86%D8%B5%D9%81%D9%8A-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699319021
-    },
-    {
-      "hash": "d640160df4b4",
-      "title": "يوم الحسم في أمريكا.. طلاب تكساس في قلب المعركة الانتخابية",
-      "summary": "يوم الحسم في أمريكا.. طلاب تكساس في قلب المعركة الانتخابية",
-      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261103-%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AD%D8%B3%D9%85-%D9%81%D9%8A-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%B7%D9%84%D8%A7%D8%A8-%D8%AA%D9%83%D8%B3%D8%A7%D8%B3-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793699314742
-    },
-    {
-      "hash": "36488511565e",
-      "title": "الانتخابات النصفية الأمريكية 2026: الاقتصاد وكلفة المعيشة وتمويل الحملات في قلب المعركة الانتخابية",
-      "summary": "الانتخابات النصفية الأمريكية 2026: الاقتصاد وكلفة المعيشة وتمويل الحملات في قلب المعركة الانتخابية",
-      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D9%8A%D9%88%D9%85/20261103-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D8%B5%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-2026-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D9%88%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D8%B4%D8%A9-%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D9%8A%D8%A9",
-      "source": "France24 عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699309922
-    },
-    {
-      "hash": "8860443471f4",
-      "title": "انتخابات التجديد النصفي: الديمقراطيون يسعون لتقليص نفوذ ترامب",
-      "summary": "انتخابات التجديد النصفي: الديمقراطيون يسعون لتقليص نفوذ ترامب",
-      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261103-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D9%86%D8%B5%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%8A%D9%85%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D9%88%D9%86-%D9%8A%D8%B3%D8%B9%D9%88%D9%86-%D9%84%D8%AA%D9%82%D9%84%D9%8A%D8%B5-%D9%86%D9%81%D9%88%D8%B0-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8",
-      "source": "France24 عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699302852
-    },
-    {
-      "hash": "d46e5f59bfc2",
-      "title": "سيناريوهات المرحلة الأخيرة من ولاية ترامب بعد انتخابات التجديد النصفية",
-      "summary": "سيناريوهات المرحلة الأخيرة من ولاية ترامب بعد انتخابات التجديد النصفية",
-      "link": "https://www.dw.com/ar/سيناريوهات-المرحلة-الأخيرة-من-ولاية-ترامب-بعد-انتخابات-التجديد-النصفية/a-79835645?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699295168
-    },
-    {
-      "hash": "6dc094b64f97",
-      "title": "\"استفتاء\" على ترامب ... كل ما تحتاج معرفته عن انتخابات التجديد النصفي",
-      "summary": "\"استفتاء\" على ترامب ... كل ما تحتاج معرفته عن انتخابات التجديد النصفي",
-      "link": "https://www.dw.com/ar/استفتاء-على-ترامب-كل-ما-تحتاج-معرفته-عن-انتخابات-التجديد-النصفي/a-79709814?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699290606
-    },
-    {
-      "hash": "74e004525c05",
-      "title": "الأمريكيون يتوجهون إلى صناديق الاقتراع في انتخابات التجديد النصفي",
-      "summary": "الأمريكيون يتوجهون إلى صناديق الاقتراع في انتخابات التجديد النصفي",
-      "link": "https://www.bbc.com/arabic/articles/c6pwg9zq19qro?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793699269654
-    },
-    {
-      "hash": "2f8c807fd50d",
-      "title": "وساطات \"مكوكية\" لتجنب جولة حرب جديدة في المنطقة، وإيران تقول إن \"إصبعها على الزناد\"",
-      "summary": "وساطات \"مكوكية\" لتجنب جولة حرب جديدة في المنطقة، وإيران تقول إن \"إصبعها على الزناد\"",
-      "link": "https://www.bbc.com/arabic/articles/cqjdm4jdnnm3o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793699263895
-    },
-    {
-      "hash": "cb3efa5d6665",
-      "title": "Iran-US deal still out of reach despite heightened diplomatic efforts",
-      "summary": "Iran-US deal still out of reach despite heightened diplomatic efforts",
-      "link": "https://www.straitstimes.com/world/middle-east/irans-foreign-minister-says-talks-with-saudi-arabia-are-ongoing-yemen-fighting-intensifies",
-      "source": "Straits Times",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693151583
-    },
-    {
-      "hash": "de8b93b0a168",
-      "title": "Police dismantle protest camp in Madrid: authorities, activists",
-      "summary": "Police dismantle protest camp in Madrid: authorities, activists",
-      "link": "https://www.straitstimes.com/world/europe/police-dismantle-protest-camp-in-madrid-authorities-activists",
-      "source": "Straits Times",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693148261
-    },
-    {
-      "hash": "95ecdc110efb",
-      "title": "Can Trump defy history? The big battles shaping US midterms",
-      "summary": "Can Trump defy history? The big battles shaping US midterms",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/can-trump-defy-history-the-big-battles-shaping-us-midterms/articleshow/135481378.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693137415
-    },
-    {
-      "hash": "1432e21f4e35",
-      "title": "India's 1st bullet train: 280 kmph speed, 557 passengers, 8 coaches; top 20 features",
-      "summary": "India's 1st bullet train: 280 kmph speed, 557 passengers, 8 coaches; top 20 features",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/business/india-business/20-features-of-indias-indigenous-bullet-train-revealed-280-kmph-test-speed-249-kmph-operational-speed-557-passengers-8-coaches-wi-fi-infotainment-for-mumbai-ahmedabad-high-speed-corridor/articleshow/135451578.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693133058
-    },
-    {
-      "hash": "c8d32afd52c4",
-      "title": "Dia Mirza Diwali appeal row: Deeply pained, says HC; asks BMC to re-upload video",
-      "summary": "Dia Mirza Diwali appeal row: Deeply pained, says HC; asks BMC to re-upload video",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/mumbai/unfortunate-bombay-hc-pulls-up-bmc-over-removal-of-dia-mirzas-eco-friendly-diwali-video-seeks-restoration/articleshow/135486372.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693129391
-    },
-    {
-      "hash": "06fd7fab8b78",
-      "title": "Japan, South Korea agree to cooperate over remains from undersea mine",
-      "summary": "Japan, South Korea agree to cooperate over remains from undersea mine",
-      "link": "https://www.japantimes.co.jp/news/2026/11/03/japan/japan-south-korea-coal-mine-remains/",
-      "source": "Japan Times",
-      "countryCode": "KR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693125330
-    },
-    {
-      "hash": "5123551c253f",
-      "title": "Japan and Vietnam consider new pact to prevent crimes",
-      "summary": "Japan and Vietnam consider new pact to prevent crimes",
-      "link": "https://www.japantimes.co.jp/news/2026/11/03/japan/japan-vietnam-new-pact-crimes/",
-      "source": "Japan Times",
-      "countryCode": "JP",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693121666
-    },
-    {
-      "hash": "cd528ea3b4c4",
-      "title": "Vice-Premier He Lifeng vows support for Hong Kong as international financial centre",
-      "summary": "Vice-Premier He Lifeng vows support for Hong Kong as international financial centre",
-      "link": "https://www.scmp.com/business/article/3373105/vice-premier-he-lifeng-vows-support-hong-kong-international-financial-centre",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693117580
-    },
-    {
-      "hash": "0c0005939e31",
-      "title": "Chinese drug iza-bren doubles lung cancer survival window in phase 3 trial",
-      "summary": "Chinese drug iza-bren doubles lung cancer survival window in phase 3 trial",
-      "link": "https://www.scmp.com/news/china/science/article/3373061/chinese-drug-iza-bren-doubles-lung-cancer-survival-window-phase-3-trial",
-      "source": "SCMP",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693112763
-    },
-    {
-      "hash": "6101c2ecbe08",
-      "title": "Melaka election tests Malaysia’s fragile unity government as partners clash",
-      "summary": "Melaka election tests Malaysia’s fragile unity government as partners clash",
-      "link": "https://www.scmp.com/week-asia/politics/article/3373103/melaka-election-tests-malaysias-fragile-unity-government-partners-clash",
-      "source": "SCMP",
-      "countryCode": "MY",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793693108705
-    },
-    {
-      "hash": "40c50acf3021",
-      "title": "One dead after two helicopters collide near Mount Everest in Nepal",
-      "summary": "One dead after two helicopters collide near Mount Everest in Nepal",
-      "link": "https://www.aljazeera.com/news/2026/11/3/one-dead-after-two-helicopters-collide-near-mount-everest-in-nepal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693105103
-    },
-    {
-      "hash": "f3e6f97b5681",
-      "title": "A response to Andy Burnham: We need an apology and reparations",
-      "summary": "A response to Andy Burnham: We need an apology and reparations",
-      "link": "https://www.aljazeera.com/opinions/2026/11/3/a-response-to-andy-burnham-we-need-an-apology-and-reparations?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693100714
-    },
-    {
-      "hash": "e2e6e16b0bfc",
-      "title": "When will we know the US midterm election results?",
-      "summary": "When will we know the US midterm election results?",
-      "link": "https://www.aljazeera.com/news/2026/11/3/when-will-we-know-the-us-midterm-election-results?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793693095860
-    },
-    {
-      "hash": "cbb55c4d5b6a",
-      "title": "Troops arrest suspected kidnapper while collecting N200,000 ransom in Nasarawa",
-      "summary": "Troops arrest suspected kidnapper while collecting N200,000 ransom in Nasarawa",
-      "link": "https://www.premiumtimesng.com/regional/north-central/922294-troops-arrest-suspected-kidnapper-while-collecting-n200000-ransom-in-nasarawa.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693091214
-    },
-    {
-      "hash": "384a83b1ebe3",
-      "title": "Bandits abduct 14 Islamic school pupils, teacher in Niger, police confirm",
-      "summary": "Bandits abduct 14 Islamic school pupils, teacher in Niger, police confirm",
-      "link": "https://www.premiumtimesng.com/regional/north-central/922299-bandits-abduct-14-islamic-school-pupils-teacher-in-niger-police-confirm.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693083996
-    },
-    {
-      "hash": "c6dfa949661b",
-      "title": "Army destroys kidnappers’ hideout, recovers ammunition in Kogi",
-      "summary": "Army destroys kidnappers’ hideout, recovers ammunition in Kogi",
-      "link": "https://www.premiumtimesng.com/news/922301-army-destroys-kidnappers-hideout-recovers-ammunition-in-kogi.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693077592
-    },
-    {
-      "hash": "acceb6bfb89e",
-      "title": "US strikes Iran's Qeshm island on eve of midterm elections",
-      "summary": "US strikes Iran's Qeshm island on eve of midterm elections",
-      "link": "http://www.africanews.com/2026/11/03/us-strikes-irans-qeshm-island-on-eve-of-midterm-elections/",
-      "source": "Africanews",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793693073730
-    },
-    {
-      "hash": "29b627104979",
-      "title": "'Ozemburger' e 'Monjalada': lanchonete de Porto Alegre cria xis menor para usuários de canetas emagrecedoras",
-      "summary": "'Ozemburger' e 'Monjalada': lanchonete de Porto Alegre cria xis menor para usuários de canetas emagrecedoras",
-      "link": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/11/03/lanchonete-porto-alegre-xis-usuarios-canetas-emagrecedoras.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793693070131
     }
   ]
 }
