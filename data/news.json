@@ -1,25 +1,78 @@
 {
-  "updated_at": "2026-11-06T18:43:38.339Z",
+  "updated_at": "2026-11-06T19:45:26.848Z",
   "total": 600,
-  "new_count": 39,
+  "new_count": 35,
   "ai_success": 0,
-  "ai_fallback": 39,
+  "ai_fallback": 35,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
-      "politics": 457,
+      "politics": 458,
+      "disaster": 6,
+      "culture": 22,
+      "war": 51,
       "crisis": 17,
       "economy": 18,
-      "war": 52,
       "sports": 8,
       "positive": 7,
-      "culture": 20,
-      "health": 13,
-      "disaster": 8
+      "health": 13
     }
   },
   "countries": {
+    "US": {
+      "score": 56,
+      "articleCount": 35,
+      "categories": {
+        "politics": 27,
+        "positive": 3,
+        "culture": 4,
+        "health": 1
+      }
+    },
+    "IL": {
+      "score": 46,
+      "articleCount": 17,
+      "categories": {
+        "politics": 14,
+        "war": 1,
+        "culture": 2
+      }
+    },
+    "NG": {
+      "score": 52,
+      "articleCount": 6,
+      "categories": {
+        "politics": 5,
+        "economy": 1
+      }
+    },
+    "UA": {
+      "score": 49,
+      "articleCount": 14,
+      "categories": {
+        "politics": 10,
+        "economy": 2,
+        "war": 1,
+        "positive": 1
+      }
+    },
+    "OM": {
+      "score": 75,
+      "articleCount": 2,
+      "categories": {
+        "culture": 1,
+        "politics": 1
+      }
+    },
+    "KE": {
+      "score": 47,
+      "articleCount": 13,
+      "categories": {
+        "politics": 12,
+        "health": 1
+      }
+    },
     "AU": {
       "score": 50,
       "articleCount": 4,
@@ -36,13 +89,12 @@
       }
     },
     "CN": {
-      "score": 46,
-      "articleCount": 20,
+      "score": 45,
+      "articleCount": 19,
       "categories": {
         "economy": 1,
         "politics": 16,
-        "war": 2,
-        "culture": 1
+        "war": 2
       }
     },
     "YE": {
@@ -51,25 +103,6 @@
       "categories": {
         "economy": 1,
         "politics": 1
-      }
-    },
-    "IL": {
-      "score": 46,
-      "articleCount": 16,
-      "categories": {
-        "politics": 13,
-        "war": 1,
-        "culture": 2
-      }
-    },
-    "UA": {
-      "score": 48,
-      "articleCount": 12,
-      "categories": {
-        "politics": 8,
-        "economy": 2,
-        "war": 1,
-        "positive": 1
       }
     },
     "BD": {
@@ -95,17 +128,17 @@
     },
     "RU": {
       "score": 50,
-      "articleCount": 7,
+      "articleCount": 6,
       "categories": {
-        "politics": 7
+        "politics": 6
       }
     },
     "IR": {
-      "score": 5,
-      "articleCount": 10,
+      "score": 4,
+      "articleCount": 8,
       "categories": {
-        "war": 7,
-        "politics": 3
+        "war": 6,
+        "politics": 2
       }
     },
     "LB": {
@@ -115,32 +148,14 @@
         "politics": 2
       }
     },
-    "US": {
-      "score": 57,
-      "articleCount": 33,
-      "categories": {
-        "positive": 3,
-        "politics": 25,
-        "culture": 4,
-        "health": 1
-      }
-    },
     "PS": {
-      "score": 21,
-      "articleCount": 6,
+      "score": 20,
+      "articleCount": 5,
       "categories": {
         "war": 1,
         "health": 2,
-        "politics": 2,
+        "politics": 1,
         "culture": 1
-      }
-    },
-    "KE": {
-      "score": 47,
-      "articleCount": 12,
-      "categories": {
-        "politics": 11,
-        "health": 1
       }
     },
     "DE": {
@@ -188,12 +203,11 @@
       }
     },
     "BH": {
-      "score": 43,
-      "articleCount": 3,
+      "score": 42,
+      "articleCount": 2,
       "categories": {
         "positive": 1,
-        "war": 1,
-        "politics": 1
+        "war": 1
       }
     },
     "EG": {
@@ -286,14 +300,6 @@
         "politics": 1
       }
     },
-    "NG": {
-      "score": 53,
-      "articleCount": 5,
-      "categories": {
-        "politics": 4,
-        "economy": 1
-      }
-    },
     "TZ": {
       "score": 50,
       "articleCount": 4,
@@ -316,11 +322,10 @@
       }
     },
     "KR": {
-      "score": 73,
-      "articleCount": 2,
+      "score": 80,
+      "articleCount": 1,
       "categories": {
-        "culture": 1,
-        "politics": 1
+        "culture": 1
       }
     },
     "CA": {
@@ -339,12 +344,11 @@
       }
     },
     "IN": {
-      "score": 35,
-      "articleCount": 6,
+      "score": 38,
+      "articleCount": 5,
       "categories": {
         "crisis": 1,
-        "politics": 4,
-        "disaster": 1
+        "politics": 4
       }
     },
     "SY": {
@@ -410,12 +414,11 @@
       }
     },
     "NZ": {
-      "score": 23,
-      "articleCount": 5,
+      "score": 34,
+      "articleCount": 3,
       "categories": {
-        "disaster": 2,
-        "politics": 2,
-        "war": 1
+        "disaster": 1,
+        "politics": 2
       }
     },
     "ET": {
@@ -431,30 +434,464 @@
       "categories": {
         "politics": 1
       }
-    },
-    "OM": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "PE": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "AR": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "6c5642d94fe3",
+      "title": "The stand-off that sank Netball NZ’s privatisation deal with Anna Mowbray and Ali Williams",
+      "summary": "The stand-off that sank Netball NZ’s privatisation deal with Anna Mowbray and Ali Williams",
+      "link": "https://www.rnz.co.nz/news/sport/2391897/the-stand-off-that-sank-netball-nz-s-privatisation-deal-with-anna-mowbray-and-ali-williams",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994325846
+    },
+    {
+      "hash": "c3226627de5b",
+      "title": "One dead, four injured in Wellington crash",
+      "summary": "One dead, four injured in Wellington crash",
+      "link": "https://www.rnz.co.nz/news/emergencies_local/2393195/one-dead-four-injured-in-wellington-crash",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994321567
+    },
+    {
+      "hash": "96d7db59c3bb",
+      "title": "Country Life: Calves, callouts and 75 years of country vetting",
+      "summary": "Country Life: Calves, callouts and 75 years of country vetting",
+      "link": "https://www.rnz.co.nz/news/country/2393365/country-life-calves-callouts-and-75-years-of-country-vetting",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994317017
+    },
+    {
+      "hash": "41f7d2428953",
+      "title": "Convicted rapist Brand facing at least four more investigations",
+      "summary": "Convicted rapist Brand facing at least four more investigations",
+      "link": "https://www.abc.net.au/news/2026-11-07/russell-brand-faces-more-investigations/107358280",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994312350
+    },
+    {
+      "hash": "ae828feebbbe",
+      "title": "Breaking: Trump to replace chief of staff with hardline deputy Stephen Miller",
+      "summary": "Breaking: Trump to replace chief of staff with hardline deputy Stephen Miller",
+      "link": "https://www.abc.net.au/news/2026-11-07/donald-trump-cos-susie-wiles-to-be-replaced-by-stephen-miller/107358840",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994308672
+    },
+    {
+      "hash": "545052157996",
+      "title": "Endangered crayfish return home months after Victorian bushfires",
+      "summary": "Endangered crayfish return home months after Victorian bushfires",
+      "link": "https://www.abc.net.au/news/2026-11-07/crayfish-rescued-from-bushfires-victoria/107349640",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1793994304343
+    },
+    {
+      "hash": "10b007e9f62c",
+      "title": "Trump promotes Stephen Miller to chief of staff role, replacing Susie Wiles",
+      "summary": "Trump promotes Stephen Miller to chief of staff role, replacing Susie Wiles",
+      "link": "https://www.straitstimes.com/world/trump-promotes-stephen-miller-to-chief-of-staff-role-replacing-susie-wiles",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994300986
+    },
+    {
+      "hash": "100f2a973e91",
+      "title": "Russell Brand’s lawyer in row over post-verdict outburst",
+      "summary": "Russell Brand’s lawyer in row over post-verdict outburst",
+      "link": "https://www.straitstimes.com/world/europe/russell-brands-lawyer-in-row-over-post-verdict-outburst",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994297122
+    },
+    {
+      "hash": "fb9d1e5d3981",
+      "title": "Pope Leo voted in US midterms because 'I'm proud to be an American'",
+      "summary": "Pope Leo voted in US midterms because 'I'm proud to be an American'",
+      "link": "https://www.straitstimes.com/world/europe/pope-leo-voted-in-us-midterms-because-im-proud-to-be-an-american",
+      "source": "Straits Times",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994293199
+    },
+    {
+      "hash": "a0c2af1553a0",
+      "title": "Trump names Stephen Miller chief of staff after US midterm losses, replaces Susie Wiles",
+      "summary": "Trump names Stephen Miller chief of staff after US midterm losses, replaces Susie Wiles",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/trump-appoints-stephen-trump-appoints-stephen-miller-as-chief-of-staff-after-gops-midterm-defeat-replaces-susie-wilesmiller-as-chief-of-staff-after-gops-midterm-defeat-sacks-susie-wiles/articleshow/135619116.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994289367
+    },
+    {
+      "hash": "d779d6431201",
+      "title": "Trump names Stephen Miller chief of staff, replacing Susie Wiles after midterm losses",
+      "summary": "Trump names Stephen Miller chief of staff, replacing Susie Wiles after midterm losses",
+      "link": "https://www.scmp.com/news/us/politics/article/3373617/trump-names-stephen-miller-chief-staff-replacing-susie-wiles-after-midterm-losses",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994285783
+    },
+    {
+      "hash": "b1a5b02174ef",
+      "title": "Trump says making adviser Stephen Miller White House chief of staff",
+      "summary": "Trump says making adviser Stephen Miller White House chief of staff",
+      "link": "https://www.aljazeera.com/news/2026/11/6/trump-says-making-adviser-stephen-miller-white-house-chief-of-staff?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994281736
+    },
+    {
+      "hash": "d9ea1c705736",
+      "title": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
+      "summary": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
+      "link": "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994278241
+    },
+    {
+      "hash": "0c7ce398f458",
+      "title": "Could Trump’s veto stop the Democratic majority?",
+      "summary": "Could Trump’s veto stop the Democratic majority?",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/6/us-congress-flipped-061126?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994274085
+    },
+    {
+      "hash": "8a8faaa5cdf6",
+      "title": "Fani-Kayode rejects senior counsel of Nigeria title",
+      "summary": "Fani-Kayode rejects senior counsel of Nigeria title",
+      "link": "https://www.premiumtimesng.com/news/more-news/923279-fani-kayode-rejects-senior-counsel-of-nigeria-title.html",
+      "source": "Premium Times",
+      "countryCode": "NG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994269522
+    },
+    {
+      "hash": "14350f682c5a",
+      "title": "WATCH: Shettima, Oshiomhole dance to ‘Buga’ at Tinubu rally (VIDEO)",
+      "summary": "WATCH: Shettima, Oshiomhole dance to ‘Buga’ at Tinubu rally (VIDEO)",
+      "link": "https://www.premiumtimesng.com/entertainment/naija-fashion/923274-watch-shettima-oshiomhole-dance-to-buga-at-tinubu-rally-video.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994266063
+    },
+    {
+      "hash": "27a68c7ece37",
+      "title": "10 key things to know about Justice Lifu&#8217;s judgment affecting ADC, Atiku, By Abdulrahman Abdulaziz",
+      "summary": "10 key things to know about Justice Lifu&#8217;s judgment affecting ADC, Atiku, By Abdulrahman Abdulaziz",
+      "link": "https://www.premiumtimesng.com/promoted/923281-10-key-things-to-know-about-justice-lifus-judgment-affecting-adc-atiku-by-abdulrahman-abdulaziz.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994260335
+    },
+    {
+      "hash": "7ae1ac9b74d4",
+      "title": "'Cadeira Vazia': projeto promove reflexão sobre violência contra a mulher, em Santarém",
+      "summary": "'Cadeira Vazia': projeto promove reflexão sobre violência contra a mulher, em Santarém",
+      "link": "https://g1.globo.com/pa/santarem-regiao/noticia/2026/11/06/cadeira-vazia-projeto-promove-reflexao-sobre-violencia-contra-a-mulher-em-santarem.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994255050
+    },
+    {
+      "hash": "d531f40eb1e3",
+      "title": "IBGE oferece mais de 500 vagas em Rondônia com salários de até R$ 4,3 mil; veja como participar",
+      "summary": "IBGE oferece mais de 500 vagas em Rondônia com salários de até R$ 4,3 mil; veja como participar",
+      "link": "https://g1.globo.com/ro/rondonia/noticia/2026/11/06/processo-seletivo-ibge-rondonia.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793994251703
+    },
+    {
+      "hash": "cccad47dc9ab",
+      "title": "Corridas de rua alteram trânsito neste fim de semana em Aracaju",
+      "summary": "Corridas de rua alteram trânsito neste fim de semana em Aracaju",
+      "link": "https://g1.globo.com/se/sergipe/noticia/2026/11/06/corridas-de-rua-alteram-transito-neste-fim-de-semana-em-aracaju.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994248245
+    },
+    {
+      "hash": "0fdc665fc9f9",
+      "title": "Health intel-sharing group warns industry in wake of cyberattack on French blood bank",
+      "summary": "Health intel-sharing group warns industry in wake of cyberattack on French blood bank",
+      "link": "https://www.npr.org/2026/11/06/nx-s1-6032602/cyberattack-blood-bank-healthcare",
+      "source": "NPR World",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1793994244231
+    },
+    {
+      "hash": "fca92b9bc08b",
+      "title": "Pope Leo begins a 12-day, 3-country South America tour after his cancer surgery",
+      "summary": "Pope Leo begins a 12-day, 3-country South America tour after his cancer surgery",
+      "link": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
+      "source": "NPR World",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994240739
+    },
+    {
+      "hash": "561e2710083d",
+      "title": "Retail spending fell in March as consumers pull back",
+      "summary": "Retail spending fell in March as consumers pull back",
+      "link": "https://www.cnn.com/2023/04/14/economy/march-retail-sales/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994236215
+    },
+    {
+      "hash": "95ecb09c6f84",
+      "title": "Las ‘midterms’ 2026, en vivo | Stephen Miller, nuevo jefe de gabinete de Trump",
+      "summary": "Las ‘midterms’ 2026, en vivo | Stephen Miller, nuevo jefe de gabinete de Trump",
+      "link": "https://elpais.com/us/2026-11-06/las-midterms-2026-en-vivo.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994232170
+    },
+    {
+      "hash": "9fa18d007a23",
+      "title": "Última hora de la actualidad política, en directo | Sánchez: “España se gobierna desde España, no desde Washington o Buenos Aires”",
+      "summary": "Última hora de la actualidad política, en directo | Sánchez: “España se gobierna desde España, no desde Washington o Buenos Aires”",
+      "link": "https://elpais.com/espana/2026-11-06/ultima-hora-de-la-actualidad-politica-en-directo.html",
+      "source": "El País",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994228675
+    },
+    {
+      "hash": "2daf8100898a",
+      "title": "Manifestations du 7 novembre : un quatrième samedi de mobilisation ; 70 000 policiers et gendarmes mobilisés",
+      "summary": "Manifestations du 7 novembre : un quatrième samedi de mobilisation ; 70 000 policiers et gendarmes mobilisés",
+      "link": "https://www.lemonde.fr/politique/article/2026/11/06/manifestations-du-7-novembre-le-dispositif-de-securite-est-reconduit-avec-70-000-policiers-et-gendarmes-mobilises_6807790_823449.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994225035
+    },
+    {
+      "hash": "9914be452f3c",
+      "title": "Ilse Aigner tipped by party allies as next German president",
+      "summary": "Ilse Aigner tipped by party allies as next German president",
+      "link": "https://www.dw.com/en/ilse-aigner-tipped-by-party-allies-as-next-german-president/a-79880594?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1793994220118
+    },
+    {
+      "hash": "db38a1a6bcb4",
+      "title": "Stephen Miller named by Trump as White House chief of staff",
+      "summary": "Stephen Miller named by Trump as White House chief of staff",
+      "link": "https://www.dw.com/en/stephen-miller-named-by-trump-as-white-house-chief-of-staff/a-79881571?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994216736
+    },
+    {
+      "hash": "953b7f3af3fa",
+      "title": "Middle East could have big role in Democrats&apos; Trump corruption inquiry",
+      "summary": "Middle East could have big role in Democrats&apos; Trump corruption inquiry",
+      "link": "https://www.dw.com/en/middle-east-could-have-big-role-in-democrats-trump-corruption-inquiry/a-79877104?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994213237
+    },
+    {
+      "hash": "ad0e1eb50dde",
+      "title": "What Trump’s midterms debacle could mean for US support for Ukraine",
+      "summary": "What Trump’s midterms debacle could mean for US support for Ukraine",
+      "link": "https://www.france24.com/en/europe/20261106-what-trump-s-midterms-debacle-could-mean-for-us-support-for-ukraine",
+      "source": "France24 English",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994209190
+    },
+    {
+      "hash": "79c7ffcaab6b",
+      "title": "ترمب يعيّن مستشاره المقرب ستيفن ميلر في منصب كبير موظفي البيت الأبيض",
+      "summary": "ترمب يعيّن مستشاره المقرب ستيفن ميلر في منصب كبير موظفي البيت الأبيض",
+      "link": "https://aawsat.com/node/5338404",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793994205783
+    },
+    {
+      "hash": "6e826a2f76cf",
+      "title": "سفن مرتبطة بإيران تحوم فوق كابلات الإنترنت في بحر عُمان",
+      "summary": "سفن مرتبطة بإيران تحوم فوق كابلات الإنترنت في بحر عُمان",
+      "link": "https://aawsat.com/node/5338405",
+      "source": "الشرق الأوسط",
+      "countryCode": "OM",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1793994202286
+    },
+    {
+      "hash": "eb410a4ea266",
+      "title": "مانشستر يونايتد يصطدم بأستون فيلا وسط مخاوف على منصب كاريك",
+      "summary": "مانشستر يونايتد يصطدم بأستون فيلا وسط مخاوف على منصب كاريك",
+      "link": "https://aawsat.com/node/5338406",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994198395
+    },
+    {
+      "hash": "b945140c94cd",
+      "title": "زيلينسكي: أوكرانيا تواصل استهداف قطاع تكرير النفط الروسي",
+      "summary": "زيلينسكي: أوكرانيا تواصل استهداف قطاع تكرير النفط الروسي",
+      "link": "https://www.skynewsarabia.com/world/1903191-%D8%B2%D9%8A%D9%84%D9%8A%D9%86%D8%B3%D9%83%D9%8A-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%82%D8%B7%D8%A7%D8%B9-%D8%AA%D9%83%D8%B1%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B1%D9%88%D8%B3%D9%8A",
+      "source": "Sky News عربية",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994193761
+    },
+    {
+      "hash": "81538c29a000",
+      "title": "كينيا.. السجن 200 عام لزعيم طائفة جوع 191 شخصا حتى الموت",
+      "summary": "كينيا.. السجن 200 عام لزعيم طائفة جوع 191 شخصا حتى الموت",
+      "link": "https://www.skynewsarabia.com/varieties/1903151-%D9%83%D9%8A%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%B3%D8%AC%D9%86-200-%D8%B9%D8%A7%D9%85-%D9%84%D8%B2%D8%B9%D9%8A%D9%85-%D8%B7%D8%A7%D8%A6%D9%81%D8%A9-%D8%AC%D9%88%D8%B9-191-%D8%B4%D8%AE%D8%B5%D8%A7-%D8%AD%D8%AA%D9%89-%D8%A7%D9%84%D9%85%D9%88%D8%AA",
+      "source": "Sky News عربية",
+      "countryCode": "KE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1793994189417
+    },
     {
       "hash": "734e48a39988",
       "title": "Does going on strike really work?",
@@ -7799,461 +8236,6 @@
       "mood": "anxious",
       "impact": 70,
       "timestamp": 1793936596502
-    },
-    {
-      "hash": "23f8c03e7ec9",
-      "title": "البحرين تمنح يسرا جائزة \"الإنجاز مدى الحياة\"",
-      "summary": "البحرين تمنح يسرا جائزة \"الإنجاز مدى الحياة\"",
-      "link": "https://www.skynewsarabia.com/varieties/1902975-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A%D9%86-%D8%AA%D9%85%D9%86%D8%AD-%D9%8A%D8%B3%D8%B1%D8%A7-%D8%AC%D8%A7%D8%A6%D8%B2%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D8%A7%D8%B2-%D9%85%D8%AF%D9%89-%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9",
-      "source": "Sky News عربية",
-      "countryCode": "BH",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793936592844
-    },
-    {
-      "hash": "1b99129d7c43",
-      "title": "الأمم المتحدة: ثلاثة أرباع النازحين في العالم يواجهون مخاطر مناخية شديدة",
-      "summary": "الأمم المتحدة: ثلاثة أرباع النازحين في العالم يواجهون مخاطر مناخية شديدة",
-      "link": "https://www.france24.com/ar/%D9%85%D8%AC%D8%AA%D9%85%D8%B9/20261106-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%AA%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%AE%D9%8A-%D8%A7%D9%84%D9%84%D8%A7%D8%AC%D8%A6%D9%88%D9%86-%D8%A7%D9%84%D9%86%D8%A7%D8%B2%D8%AD%D9%88%D9%86-%D9%83%D9%88%D8%A831",
-      "source": "France24 عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793936589165
-    },
-    {
-      "hash": "b7d2cf27e498",
-      "title": "الحرس الثوري الإيراني يعلن اندلاع حرائق في خمس ناقلات نفط بمضيق هرمز وتحركات دولية لتأمين الملاحة",
-      "summary": "الحرس الثوري الإيراني يعلن اندلاع حرائق في خمس ناقلات نفط بمضيق هرمز وتحركات دولية لتأمين الملاحة",
-      "link": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261106-%D8%AD%D8%B1%D8%A7%D8%A6%D9%82-%D9%86%D8%A7%D9%82%D9%84%D8%A7%D8%AA-%D9%87%D8%B1%D9%85%D8%B2-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D9%86%D9%81%D8%B7",
-      "source": "France24 عربي",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793936584637
-    },
-    {
-      "hash": "d6380f439cb2",
-      "title": "أسهم شركات التكنولوجيا الكبرى تهوي وسط مخاوف من تباطؤ الذكاء الاصطناعي بعد انتخابات التجديد النصفي",
-      "summary": "أسهم شركات التكنولوجيا الكبرى تهوي وسط مخاوف من تباطؤ الذكاء الاصطناعي بعد انتخابات التجديد النصفي",
-      "link": "https://www.bbc.com/arabic/articles/cqx288n8vkg1o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793936580047
-    },
-    {
-      "hash": "91b7c73e23f6",
-      "title": "Labour's Chris Hipkins is quietly confident ahead of election day",
-      "summary": "Labour's Chris Hipkins is quietly confident ahead of election day",
-      "link": "https://www.rnz.co.nz/news/politics_election-2026/2385099/labour-s-chris-hipkins-is-quietly-confident-ahead-of-election-day",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793933383480
-    },
-    {
-      "hash": "02f6bac367be",
-      "title": "Severe thunderstorm warning for Kaipara, Auckland after rain passes over Far North",
-      "summary": "Severe thunderstorm warning for Kaipara, Auckland after rain passes over Far North",
-      "link": "https://www.rnz.co.nz/news/weather/2384152/severe-thunderstorm-warning-for-kaipara-auckland-after-rain-passes-over-far-north",
-      "source": "RNZ",
-      "countryCode": "NZ",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793933380062
-    },
-    {
-      "hash": "26a51bc928a7",
-      "title": "'Much more for us to play for': National pushes 'finish the job' rhetoric in final days of campaign",
-      "summary": "'Much more for us to play for': National pushes 'finish the job' rhetoric in final days of campaign",
-      "link": "https://www.rnz.co.nz/news/politics_election-2026/2385135/much-more-for-us-to-play-for-national-pushes-finish-the-job-rhetoric-in-final-days-of-campaign",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933375406
-    },
-    {
-      "hash": "50850fec24fc",
-      "title": "Aussie Calleja ready for winner-takes-all world championship weekend",
-      "summary": "Aussie Calleja ready for winner-takes-all world championship weekend",
-      "link": "https://www.abc.net.au/news/2026-11-06/william-calleja-fia-world-karting-championship/107345310",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933370928
-    },
-    {
-      "hash": "41276105f5db",
-      "title": "With Perth's property prices falling, job loss is the real risk",
-      "summary": "With Perth's property prices falling, job loss is the real risk",
-      "link": "https://www.abc.net.au/news/2026-11-06/perth-money-forum-panel-warns-on-job-losses-amid-mortgage-woes/107355638",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933367184
-    },
-    {
-      "hash": "28b7f77b5a19",
-      "title": "Injured MP Helen Haines's condition improved to 'stable'",
-      "summary": "Injured MP Helen Haines's condition improved to 'stable'",
-      "link": "https://www.abc.net.au/news/2026-11-06/helen-haines-in-stable-condition-hospital-alfred/107355980",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933361184
-    },
-    {
-      "hash": "0abddde7d9d5",
-      "title": "US pro-Trump election deniers crash against ‘blue tsunami’",
-      "summary": "US pro-Trump election deniers crash against ‘blue tsunami’",
-      "link": "https://www.straitstimes.com/world/united-states/us-pro-trump-election-deniers-crash-against-blue-tsunami",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793933356732
-    },
-    {
-      "hash": "eb111a7b4974",
-      "title": "Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders deployed",
-      "summary": "Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders deployed",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/delhi/massive-fire-breaks-out-at-shop-in-delhis-karol-bagh-22-fire-tenders-at-scene/articleshow/135590147.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1793933353005
-    },
-    {
-      "hash": "8c9082fe170e",
-      "title": "'You'll know soon enough': Trump's warning on 'destroying' rest of Iran",
-      "summary": "'You'll know soon enough': Trump's warning on 'destroying' rest of Iran",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/youll-know-soon-enough-trumps-warning-on-destroying-rest-of-iran/articleshow/135590265.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1793933349331
-    },
-    {
-      "hash": "f737a7409d69",
-      "title": "Lewis Hamilton will not apologize for remarks after clash with teammate Charles Leclerc",
-      "summary": "Lewis Hamilton will not apologize for remarks after clash with teammate Charles Leclerc",
-      "link": "https://www.japantimes.co.jp/sports/2026/11/06/more-sports/lewis-hamilton-voices-opinion/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933345256
-    },
-    {
-      "hash": "11aacd0d0047",
-      "title": "French protests draw 575,000 amid parliament budget impasse",
-      "summary": "French protests draw 575,000 amid parliament budget impasse",
-      "link": "https://www.japantimes.co.jp/news/2026/11/06/world/politics/france-protest-budget-impasse/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793933341199
-    },
-    {
-      "hash": "f45604d56dc5",
-      "title": "Vladimir Putin calls out nations opposing Russia’s return to international sports",
-      "summary": "Vladimir Putin calls out nations opposing Russia’s return to international sports",
-      "link": "https://www.japantimes.co.jp/sports/2026/11/06/more-sports/putin-russia-world-sports/",
-      "source": "Japan Times",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933337489
-    },
-    {
-      "hash": "7277ecedb043",
-      "title": "Philippines’ project budget allocations spur accusations of pork barrel politics",
-      "summary": "Philippines’ project budget allocations spur accusations of pork barrel politics",
-      "link": "https://www.scmp.com/week-asia/politics/article/3373450/philippines-project-budget-allocations-spur-accusations-pork-barrel-politics",
-      "source": "SCMP",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933332973
-    },
-    {
-      "hash": "098f1e648a90",
-      "title": "Post-US midterms AI worries pummel shares in Japan, South Korea",
-      "summary": "Post-US midterms AI worries pummel shares in Japan, South Korea",
-      "link": "https://www.scmp.com/news/asia/east-asia/article/3373478/post-us-midterms-ai-worries-pummel-shares-japan-south-korea",
-      "source": "SCMP",
-      "countryCode": "KR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933325935
-    },
-    {
-      "hash": "c522adc4d7ed",
-      "title": "China MMA champion Zhang Weili faces family pressure to find a partner, go on blind dates",
-      "summary": "China MMA champion Zhang Weili faces family pressure to find a partner, go on blind dates",
-      "link": "https://www.scmp.com/news/people-culture/china-personalities/article/3373480/china-mma-champion-zhang-weili-faces-family-pressure-find-partner-go-blind-dates",
-      "source": "SCMP",
-      "countryCode": "CN",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1793933322287
-    },
-    {
-      "hash": "7cb77f406eb8",
-      "title": "California governor commutes sentences of more than 500 people on death row",
-      "summary": "California governor commutes sentences of more than 500 people on death row",
-      "link": "https://www.aljazeera.com/news/2026/11/6/california-governor-commutes-sentences-of-more-than-500-people-on-death-row?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933318128
-    },
-    {
-      "hash": "a08ed6e0b5d3",
-      "title": "Gaza turns discarded cooking pots into seawalls",
-      "summary": "Gaza turns discarded cooking pots into seawalls",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/6/gaza-turns-discarded-cooking-pots-into-seawalls?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "PS",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933308685
-    },
-    {
-      "hash": "50db442875ef",
-      "title": "Incêndios atingem zona rural de Anajás, no Marajó, e famílias pedem ajuda às autoridades",
-      "summary": "Incêndios atingem zona rural de Anajás, no Marajó, e famílias pedem ajuda às autoridades",
-      "link": "https://g1.globo.com/pa/para/noticia/2026/11/05/incendios-atingem-zona-rural-de-anajas-no-marajo-e-familias-pedem-ajuda.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933304696
-    },
-    {
-      "hash": "226323a23a91",
-      "title": "Aposta no RS acerta os 15 números da Lotofácil e fatura mais de R$ 1,4 milhão",
-      "summary": "Aposta no RS acerta os 15 números da Lotofácil e fatura mais de R$ 1,4 milhão",
-      "link": "https://g1.globo.com/rs/rio-grande-do-sul/noticia/2026/11/05/aposta-rs-acerta-15-numeros-lotofacil-fatura-14-milhao.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933300508
-    },
-    {
-      "hash": "e0b0afcd8670",
-      "title": "Fã de Roberto Carlos percorre quase 200 km para assistir show no Acre: 'Sonho que estava longe'",
-      "summary": "Fã de Roberto Carlos percorre quase 200 km para assistir show no Acre: 'Sonho que estava longe'",
-      "link": "https://g1.globo.com/ac/acre/noticia/2026/11/05/fa-de-roberto-carlos-percorre-quase-200-km-para-assistir-show-no-acre-sonho-que-estava-longe.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933296652
-    },
-    {
-      "hash": "c6a7f3578f19",
-      "title": "Watchdog publishes a list of 77 clergy accused of abuse in Peru ahead of the Pope’s visit",
-      "summary": "Watchdog publishes a list of 77 clergy accused of abuse in Peru ahead of the Pope’s visit",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/06/watchdog-publishes-a-list-of-77-clergy-accused-of-abuse-in-peru-ahead-of-the-pope-s-visit?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "PE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933290544
-    },
-    {
-      "hash": "3f2cad12c485",
-      "title": "Lula sees his win as “a lesson for the world” after setbacks for Netanyahu and Trump",
-      "summary": "Lula sees his win as “a lesson for the world” after setbacks for Netanyahu and Trump",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/06/lula-sees-his-win-as-a-lesson-for-the-world-after-setbacks-for-netanyahu-and-trump?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933287083
-    },
-    {
-      "hash": "56d69d0d290a",
-      "title": "Peña says he will face his impeachment trial as Argentina denies he has entered the country",
-      "summary": "Peña says he will face his impeachment trial as Argentina denies he has entered the country",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/06/pena-says-he-will-face-his-impeachment-trial-as-argentina-denies-he-has-entered-the-country?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "AR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933283152
-    },
-    {
-      "hash": "85a7be298f98",
-      "title": "Asian stocks slump after US tech rout amid AI jitters",
-      "summary": "Asian stocks slump after US tech rout amid AI jitters",
-      "link": "https://www.dw.com/en/asian-stocks-slump-after-us-tech-rout-amid-ai-jitters/a-79871504?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793933277549
-    },
-    {
-      "hash": "c23ad23c4473",
-      "title": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
-      "summary": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
-      "link": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793933271989
-    },
-    {
-      "hash": "70b1857f2274",
-      "title": "Trump signs order preventing future presidents from changing Oval Office",
-      "summary": "Trump signs order preventing future presidents from changing Oval Office",
-      "link": "https://www.bbc.co.uk/news/articles/cmy0eeg101djo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1793933266988
-    },
-    {
-      "hash": "75cbdd1792bc",
-      "title": "'Be proud of what you're bringing': Council supplier network opens doors for Pasifika businesses",
-      "summary": "'Be proud of what you're bringing': Council supplier network opens doors for Pasifika businesses",
-      "link": "https://www.rnz.co.nz/news/pacific/2381335/be-proud-of-what-you-re-bringing-council-supplier-network-opens-doors-for-pasifika-businesses",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793930422698
-    },
-    {
-      "hash": "54257fe9e1cb",
-      "title": "Auckland Harbourmaster inspecting Manukau Harbour for oil spill after massive fire",
-      "summary": "Auckland Harbourmaster inspecting Manukau Harbour for oil spill after massive fire",
-      "link": "https://www.rnz.co.nz/news/emergencies_local/2378581/auckland-harbourmaster-inspecting-manukau-harbour-for-oil-spill-after-massive-fire",
-      "source": "RNZ",
-      "countryCode": "NZ",
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1793930418320
-    },
-    {
-      "hash": "ffd0b008ba20",
-      "title": "Working at David Jones was 'heaven on a stick' in its heyday",
-      "summary": "Working at David Jones was 'heaven on a stick' in its heyday",
-      "link": "https://www.abc.net.au/news/2026-11-06/former-david-jones-staff-recall-luxurious-heyday-of-store/107354304",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793930414358
-    },
-    {
-      "hash": "2d0a746343c2",
-      "title": "How a toy giraffe helped the AFLW Bulldogs rise back into finals",
-      "summary": "How a toy giraffe helped the AFLW Bulldogs rise back into finals",
-      "link": "https://www.abc.net.au/news/2026-11-06/toy-giraffe-helped-western-bulldogs-back-into-finals/107353814",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1793930409321
-    },
-    {
-      "hash": "6cc2fa20591d",
-      "title": "Musk donated millions to pro-data centre midterm candidates – and it backfired",
-      "summary": "Musk donated millions to pro-data centre midterm candidates – and it backfired",
-      "link": "https://www.abc.net.au/news/2026-11-06/elon-musk-donated-millions-failed-republican-midterm-campaigns/107354322",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1793930403874
     }
   ]
 }
