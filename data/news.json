@@ -1,30 +1,76 @@
 {
-  "updated_at": "2026-11-07T18:30:51.625Z",
+  "updated_at": "2026-11-07T19:34:23.142Z",
   "total": 600,
-  "new_count": 35,
+  "new_count": 36,
   "ai_success": 0,
-  "ai_fallback": 35,
+  "ai_fallback": 36,
   "global": {
     "score": 45,
     "totalArticles": 600,
     "categories": {
-      "politics": 438,
-      "war": 63,
+      "politics": 440,
+      "health": 7,
+      "economy": 17,
       "culture": 24,
-      "positive": 8,
-      "crisis": 21,
-      "disaster": 14,
-      "sports": 7,
-      "economy": 18,
-      "health": 7
+      "disaster": 17,
+      "sports": 8,
+      "war": 60,
+      "positive": 7,
+      "crisis": 20
     }
   },
   "countries": {
+    "SA": {
+      "score": 26,
+      "articleCount": 4,
+      "categories": {
+        "health": 1,
+        "politics": 2,
+        "war": 1
+      }
+    },
+    "ES": {
+      "score": 50,
+      "articleCount": 5,
+      "categories": {
+        "politics": 5
+      }
+    },
+    "IL": {
+      "score": 49,
+      "articleCount": 11,
+      "categories": {
+        "politics": 9,
+        "sports": 1,
+        "war": 1
+      }
+    },
+    "YE": {
+      "score": 26,
+      "articleCount": 7,
+      "categories": {
+        "politics": 3,
+        "war": 2,
+        "health": 1,
+        "economy": 1
+      }
+    },
+    "RU": {
+      "score": 38,
+      "articleCount": 5,
+      "categories": {
+        "economy": 1,
+        "politics": 2,
+        "disaster": 1,
+        "war": 1
+      }
+    },
     "US": {
-      "score": 44,
+      "score": 46,
       "articleCount": 28,
       "categories": {
-        "politics": 20,
+        "culture": 1,
+        "politics": 19,
         "disaster": 2,
         "positive": 2,
         "war": 2,
@@ -32,44 +78,52 @@
         "economy": 1
       }
     },
-    "FR": {
-      "score": 39,
-      "articleCount": 29,
-      "categories": {
-        "war": 2,
-        "politics": 20,
-        "culture": 1,
-        "crisis": 4,
-        "sports": 2
-      }
-    },
     "PL": {
-      "score": 55,
-      "articleCount": 8,
+      "score": 43,
+      "articleCount": 10,
       "categories": {
+        "disaster": 2,
         "culture": 2,
         "politics": 4,
         "economy": 1,
         "war": 1
       }
     },
-    "YE": {
-      "score": 22,
-      "articleCount": 6,
+    "FR": {
+      "score": 40,
+      "articleCount": 29,
       "categories": {
-        "politics": 2,
+        "politics": 20,
         "war": 2,
-        "health": 1,
-        "economy": 1
+        "culture": 1,
+        "crisis": 4,
+        "sports": 2
       }
     },
-    "RU": {
-      "score": 30,
-      "articleCount": 4,
+    "EG": {
+      "score": 42,
+      "articleCount": 14,
       "categories": {
-        "politics": 2,
-        "disaster": 1,
-        "war": 1
+        "sports": 2,
+        "politics": 8,
+        "war": 1,
+        "health": 1,
+        "crisis": 2
+      }
+    },
+    "IR": {
+      "score": 21,
+      "articleCount": 31,
+      "categories": {
+        "politics": 16,
+        "war": 15
+      }
+    },
+    "AE": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
       }
     },
     "ZA": {
@@ -78,14 +132,6 @@
       "categories": {
         "politics": 4,
         "war": 1
-      }
-    },
-    "IR": {
-      "score": 19,
-      "articleCount": 33,
-      "categories": {
-        "war": 17,
-        "politics": 16
       }
     },
     "QA": {
@@ -104,46 +150,11 @@
         "culture": 1
       }
     },
-    "SA": {
-      "score": 28,
-      "articleCount": 3,
-      "categories": {
-        "politics": 2,
-        "war": 1
-      }
-    },
-    "EG": {
-      "score": 34,
-      "articleCount": 10,
-      "categories": {
-        "politics": 5,
-        "war": 1,
-        "health": 1,
-        "sports": 1,
-        "crisis": 2
-      }
-    },
     "IN": {
       "score": 50,
       "articleCount": 6,
       "categories": {
         "politics": 6
-      }
-    },
-    "ES": {
-      "score": 50,
-      "articleCount": 5,
-      "categories": {
-        "politics": 5
-      }
-    },
-    "IL": {
-      "score": 49,
-      "articleCount": 9,
-      "categories": {
-        "sports": 1,
-        "politics": 7,
-        "war": 1
       }
     },
     "JP": {
@@ -186,12 +197,11 @@
       }
     },
     "OM": {
-      "score": 44,
-      "articleCount": 3,
+      "score": 43,
+      "articleCount": 2,
       "categories": {
         "disaster": 1,
-        "culture": 1,
-        "politics": 1
+        "culture": 1
       }
     },
     "IQ": {
@@ -219,14 +229,13 @@
       }
     },
     "CN": {
-      "score": 42,
-      "articleCount": 22,
+      "score": 43,
+      "articleCount": 17,
       "categories": {
-        "politics": 17,
-        "war": 2,
+        "politics": 14,
+        "war": 1,
         "crisis": 1,
-        "culture": 1,
-        "economy": 1
+        "culture": 1
       }
     },
     "NG": {
@@ -317,11 +326,10 @@
       }
     },
     "CL": {
-      "score": 40,
-      "articleCount": 3,
+      "score": 50,
+      "articleCount": 1,
       "categories": {
-        "politics": 2,
-        "crisis": 1
+        "politics": 1
       }
     },
     "KE": {
@@ -352,13 +360,6 @@
         "politics": 2
       }
     },
-    "AE": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "MX": {
       "score": 80,
       "articleCount": 1,
@@ -375,9 +376,9 @@
     },
     "AU": {
       "score": 50,
-      "articleCount": 2,
+      "articleCount": 1,
       "categories": {
-        "politics": 2
+        "politics": 1
       }
     },
     "VE": {
@@ -388,11 +389,10 @@
       }
     },
     "GB": {
-      "score": 14,
-      "articleCount": 2,
+      "score": 0,
+      "articleCount": 1,
       "categories": {
-        "war": 1,
-        "politics": 1
+        "war": 1
       }
     },
     "NL": {
@@ -401,16 +401,477 @@
       "categories": {
         "politics": 1
       }
-    },
-    "PK": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "e21dbc6eb8dd",
+      "title": "Live: What comes next after cliffhanger election night?",
+      "summary": "Live: What comes next after cliffhanger election night?",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2423951/live-what-comes-next-after-cliffhanger-election-night",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794080062139
+    },
+    {
+      "hash": "7aa69671f6db",
+      "title": "Analysis: Election night comes with a devastating cost for National",
+      "summary": "Analysis: Election night comes with a devastating cost for National",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2423118/analysis-election-night-comes-with-a-devastating-cost-for-national",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794080059331
+    },
+    {
+      "hash": "43aec42f3a22",
+      "title": "大选夜结果胜负难分，下届政府走向将取决于特殊选票",
+      "summary": "大选夜结果胜负难分，下届政府走向将取决于特殊选票",
+      "link": "https://www.rnz.co.nz/news/chinese/2427365/",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080056365
+    },
+    {
+      "hash": "8e17ff0d47d9",
+      "title": "Prisons psychiatrist says NSW Corrections failing mentally ill inmates",
+      "summary": "Prisons psychiatrist says NSW Corrections failing mentally ill inmates",
+      "link": "https://www.abc.net.au/news/2026-11-08/nsw-prisons-failing-inmates-on-mental-health-says-psychiatrist/107302582",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080053596
+    },
+    {
+      "hash": "2e7804222e98",
+      "title": "For queer people, community sport can be life-saving",
+      "summary": "For queer people, community sport can be life-saving",
+      "link": "https://www.abc.net.au/news/2026-11-08/melbourne-rovers-stuart-bonner-life-saving-football/107260068",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080050607
+    },
+    {
+      "hash": "5e041a2b36a0",
+      "title": "Breaking: Trump offers press secretary role to UFC chief Dana White",
+      "summary": "Breaking: Trump offers press secretary role to UFC chief Dana White",
+      "link": "https://www.abc.net.au/news/2026-11-08/dana-white-press-secretary-trump-announcement/107360444",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080047592
+    },
+    {
+      "hash": "59661dbd0286",
+      "title": "Human bodies found on ship struck by a drone in Black Sea",
+      "summary": "Human bodies found on ship struck by a drone in Black Sea",
+      "link": "https://www.straitstimes.com/world/europe/human-bodies-found-on-ship-struck-by-a-drone-in-black-sea",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080044226
+    },
+    {
+      "hash": "0b5544a563f9",
+      "title": "Houthi-run health ministry says airstrikes it blames on Saudi Arabia kill 27 near Yemen capital",
+      "summary": "Houthi-run health ministry says airstrikes it blames on Saudi Arabia kill 27 near Yemen capital",
+      "link": "https://www.straitstimes.com/world/middle-east/houthi-run-health-ministry-says-airstrikes-it-blames-on-saudi-arabia-kill-27-near-yemen-capital",
+      "source": "Straits Times",
+      "countryCode": "SA",
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1794080040992
+    },
+    {
+      "hash": "0fcafccb4a37",
+      "title": "El Hierro in Spain’s Canary Islands pleads for help with migrant influx",
+      "summary": "El Hierro in Spain’s Canary Islands pleads for help with migrant influx",
+      "link": "https://www.straitstimes.com/world/europe/el-hierro-in-spains-canary-islands-pleads-for-help-with-migrant-influx",
+      "source": "Straits Times",
+      "countryCode": "ES",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080038283
+    },
+    {
+      "hash": "d02ca289f1ae",
+      "title": "Demonstration in Berlin calls for an end to arming Israel",
+      "summary": "Demonstration in Berlin calls for an end to arming Israel",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/demonstration-in-berlin-calls-for-an-end-to-arming-israel?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080035055
+    },
+    {
+      "hash": "59585c69e4bf",
+      "title": "Yemeni gov’t forces report advances as Houthis say deadly strikes hit Sanaa",
+      "summary": "Yemeni gov’t forces report advances as Houthis say deadly strikes hit Sanaa",
+      "link": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "YE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080031806
+    },
+    {
+      "hash": "4328e5340c98",
+      "title": "Latvian farmers protest over ‘blood grain’ trade with Russia",
+      "summary": "Latvian farmers protest over ‘blood grain’ trade with Russia",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-latvia-farmers-protest-russian-grain-transit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "RU",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1794080028516
+    },
+    {
+      "hash": "b86b2ae4645f",
+      "title": "Let Trump&#8217;s Republican Party defeat be a lesson to any arrogant politician!, By Murtadha Gusau",
+      "summary": "Let Trump&#8217;s Republican Party defeat be a lesson to any arrogant politician!, By Murtadha Gusau",
+      "link": "https://www.premiumtimesng.com/opinion/923264-let-trumps-republican-party-defeat-be-a-lesson-to-any-arrogant-politician-by-murtadha-gusau.html",
+      "source": "Premium Times",
+      "countryCode": "US",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1794080025477
+    },
+    {
+      "hash": "d5025eda4e1f",
+      "title": "PDP faction may contest Court of Appeal judgement recognising Wike-backed leadership",
+      "summary": "PDP faction may contest Court of Appeal judgement recognising Wike-backed leadership",
+      "link": "https://www.premiumtimesng.com/news/top-news/923543-pdp-faction-may-contest-court-of-appeal-judgement-recognising-wike-backed-leadership.html",
+      "source": "Premium Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080022181
+    },
+    {
+      "hash": "a5a94d56a897",
+      "title": "Helicóptero que caiu em Passos saiu do Aeroporto da Pampulha, em Belo Horizonte",
+      "summary": "Helicóptero que caiu em Passos saiu do Aeroporto da Pampulha, em Belo Horizonte",
+      "link": "https://g1.globo.com/mg/minas-gerais/noticia/2026/11/07/helicoptero-que-caiu-em-passos-saiu-de-belo-horizonte.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080019024
+    },
+    {
+      "hash": "eea10b9440a1",
+      "title": "'Toque de recolher às 17h': medo de onças faz moradora abandonar sítio em Corumbá após nova 'visita' de felino; VÍDEO",
+      "summary": "'Toque de recolher às 17h': medo de onças faz moradora abandonar sítio em Corumbá após nova 'visita' de felino; VÍDEO",
+      "link": "https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2026/11/07/toque-de-recolher-as-17h-medo-de-oncas-faz-moradora-abandonar-sitio-em-corumba-apos-nova-visita-de-felino-video.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080015755
+    },
+    {
+      "hash": "b820124f94fb",
+      "title": "Homem de 23 anos é encontrado morto com tiro na cabeça em Araruama",
+      "summary": "Homem de 23 anos é encontrado morto com tiro na cabeça em Araruama",
+      "link": "https://g1.globo.com/rj/regiao-dos-lagos/noticia/2026/11/07/homem-de-23-anos-e-encontrado-morto-com-tiro-na-cabeca-em-araruama.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080012782
+    },
+    {
+      "hash": "a454e9346b93",
+      "title": "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15",
+      "summary": "Gunman opens fire in Polish city of Krakow, killing 6 people and injuring 15",
+      "link": "https://www.cbc.ca/news/world/krakow-poland-shooting-9.7413582?cmp=rss",
+      "source": "CBC Canada",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1794080009273
+    },
+    {
+      "hash": "8b0650cab1e1",
+      "title": "At Least 6 Dead in Poland After Gunman Opens Fire in Krakow, Police Say",
+      "summary": "At Least 6 Dead in Poland After Gunman Opens Fire in Krakow, Police Say",
+      "link": "https://www.nytimes.com/2026/11/07/world/europe/krakow-poland-shooting.html",
+      "source": "NY Times",
+      "countryCode": "PL",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1794080006013
+    },
+    {
+      "hash": "c544b72fabed",
+      "title": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia, en Polonia",
+      "summary": "Al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia, en Polonia",
+      "link": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794080002713
+    },
+    {
+      "hash": "cdb324e22613",
+      "title": "Revivez les manifestations du 7 novembre : 146 000 personnes ont défilé dans le calme en France, selon le ministère de l’intérieur, 250 000, selon l’intersyndicale de la jeunesse",
+      "summary": "Revivez les manifestations du 7 novembre : 146 000 personnes ont défilé dans le calme en France, selon le ministère de l’intérieur, 250 000, selon l’intersyndicale de la jeunesse",
+      "link": "https://www.lemonde.fr/societe/live/2026/11/07/en-direct-manifestations-du-7-novembre-146-000-personnes-ont-defile-en-france-samedi-selon-le-ministere-de-l-interieur-250-000-selon-l-intersyndicale-de-la-jeunesse_6808254_3224.html",
+      "source": "Le Monde",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079998805
+    },
+    {
+      "hash": "6aa77c3835c9",
+      "title": "Video shows people fleeing as gunman opens fire in Kraków, Poland",
+      "summary": "Video shows people fleeing as gunman opens fire in Kraków, Poland",
+      "link": "https://www.euronews.com/video/2026/11/07/video-shows-people-fleeing-as-gunman-opens-fire-in-krakow-poland",
+      "source": "Euronews English",
+      "countryCode": "PL",
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1794079995463
+    },
+    {
+      "hash": "d881a1943ad3",
+      "title": "Armenia&apos;s selective prosecution: A threat to EU relations?",
+      "summary": "Armenia&apos;s selective prosecution: A threat to EU relations?",
+      "link": "https://www.dw.com/en/armenia-s-selective-prosecution-a-threat-to-eu-relations/a-79878159?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079992397
+    },
+    {
+      "hash": "b3ceb3cc3733",
+      "title": "تغريم كبير موظفي مكتب زيلينسكي لتحدثه باللغة الروسية خلال مهام رسمية",
+      "summary": "تغريم كبير موظفي مكتب زيلينسكي لتحدثه باللغة الروسية خلال مهام رسمية",
+      "link": "https://aawsat.com/node/5338722",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079989537
+    },
+    {
+      "hash": "4d463b400515",
+      "title": "اتحاد الكرة المصري يقيل حسام حسن... ويؤكد: استقرار المنتخب أولوية لا تقبل التهاون",
+      "summary": "اتحاد الكرة المصري يقيل حسام حسن... ويؤكد: استقرار المنتخب أولوية لا تقبل التهاون",
+      "link": "https://aawsat.com/node/5338724",
+      "source": "الشرق الأوسط",
+      "countryCode": "EG",
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1794079986069
+    },
+    {
+      "hash": "361ba8875f1f",
+      "title": "حاكم فلوريدا يخطط لخوض سباق البيت الأبيض مجدداً",
+      "summary": "حاكم فلوريدا يخطط لخوض سباق البيت الأبيض مجدداً",
+      "link": "https://aawsat.com/node/5338725",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079982906
+    },
+    {
+      "hash": "d2e49b8ce072",
+      "title": "الشرطة الإسرائيلية تقيّد تعاونها مع \"الشاباك\" في تحقيق التدخل الأجنبي بانتخابات الكنيست",
+      "summary": "الشرطة الإسرائيلية تقيّد تعاونها مع \"الشاباك\" في تحقيق التدخل الأجنبي بانتخابات الكنيست",
+      "link": "https://arabic.euronews.com/2026/11/07/police-limit-shin-bet-cooperation-election-probe",
+      "source": "Euronews عربي",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794079979924
+    },
+    {
+      "hash": "81240706a0b8",
+      "title": "بتقديرات أولية تبلغ 200 مليار قدم مكعب.. مصر تعلن اكتشافًا جديدًا للغاز في المتوسط",
+      "summary": "بتقديرات أولية تبلغ 200 مليار قدم مكعب.. مصر تعلن اكتشافًا جديدًا للغاز في المتوسط",
+      "link": "https://arabic.euronews.com/2026/11/07/egypt-announces-new-mediterranean-gas-discovery-initially-estimated-at-200-billion-cubic-f",
+      "source": "Euronews عربي",
+      "countryCode": "EG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079977269
+    },
+    {
+      "hash": "2b76eb515756",
+      "title": "هجوم مسلح في كراكوف البولندية يوقع على الأقل 6 قتلى ونحو 12 جريحاً",
+      "summary": "هجوم مسلح في كراكوف البولندية يوقع على الأقل 6 قتلى ونحو 12 جريحاً",
+      "link": "https://arabic.euronews.com/video/2026/11/07/video-shows-people-fleeing-as-a-gunman-opens-fire-in-krakow-poland",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794079973635
+    },
+    {
+      "hash": "043e8cf5fd90",
+      "title": "الكونغرس والشرق الأوسط.. كيف تؤثر الميزانيات والشروط؟  بعد انتخابات التجديد النصفي، يملك الديمقراطيون أدوات التمويل والرقابة والمراجعة أما القرار اليومي في السياسة الخارجية فيبقى في البيت الأبيض.",
+      "summary": "الكونغرس والشرق الأوسط.. كيف تؤثر الميزانيات والشروط؟  بعد انتخابات التجديد النصفي، يملك الديمقراطيون أدوات التمويل والرقابة والمراجعة أما القرار اليومي في السياسة الخارجية فيبقى في البيت الأبيض.",
+      "link": "https://alhurra.com/52675",
+      "source": "الحرة",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794079970545
+    },
+    {
+      "hash": "ef1703cc58b5",
+      "title": "منتخب مصر يستغني عن حسام حسن ويعين علي ماهر خلفا له",
+      "summary": "منتخب مصر يستغني عن حسام حسن ويعين علي ماهر خلفا له",
+      "link": "https://www.skynewsarabia.com/sport/1903297-%D9%85%D9%88%D9%82%D8%B9%D8%A9-%D9%85%D8%A7%D9%84%D8%A7%D9%88%D9%8A-%D8%B9%D9%84%D9%8A-%D9%85%D8%A7%D9%87%D8%B1-%D9%8A%D8%AE%D9%84%D9%81-%D8%AD%D8%B3%D8%A7%D9%85-%D8%AD%D8%B3%D9%86-%D9%82%D9%8A%D8%A7%D8%AF%D8%A9-%D9%85%D8%B5%D8%B1",
+      "source": "Sky News عربية",
+      "countryCode": "EG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079965138
+    },
+    {
+      "hash": "bef832f9b3b9",
+      "title": "أردوغان يدعو ترامب إلى حل الخلاف مع إيران دبلوماسيا",
+      "summary": "أردوغان يدعو ترامب إلى حل الخلاف مع إيران دبلوماسيا",
+      "link": "https://www.skynewsarabia.com/world/1903296-%D8%A3%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D8%AF%D8%B9%D9%88-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%AD%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AF%D8%A8%D9%84%D9%88%D9%85%D8%A7%D8%B3%D9%8A%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079959125
+    },
+    {
+      "hash": "86fc729d31a3",
+      "title": "الإمارات تدين حادثة إطلاق النار في مدينة كراكوف البولندية",
+      "summary": "الإمارات تدين حادثة إطلاق النار في مدينة كراكوف البولندية",
+      "link": "https://www.skynewsarabia.com/world/1903298-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AA%D8%AF%D9%8A%D9%86-%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D9%83%D8%B1%D8%A7%D9%83%D9%88%D9%81-%D8%A7%D9%84%D8%A8%D9%88%D9%84%D9%86%D8%AF%D9%8A%D8%A9",
+      "source": "Sky News عربية",
+      "countryCode": "AE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079955960
+    },
+    {
+      "hash": "7664f95f815d",
+      "title": "رغم التجديد حتى 2030 .. رحيل حسام حسن وتكليف علي ماهر بقيادة الفراعنة",
+      "summary": "رغم التجديد حتى 2030 .. رحيل حسام حسن وتكليف علي ماهر بقيادة الفراعنة",
+      "link": "https://www.dw.com/ar/رغم-التجديد-حتى-2030-رحيل-حسام-حسن-وتكليف-علي-ماهر-بقيادة-الفراعنة/a-79888111?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079951429
+    },
+    {
+      "hash": "d67825c18c7e",
+      "title": "الاتحاد المصري يعلن الانفصال عن المدرب حسام حسن ويعين علي ماهر مدرباً لـ\"الفراعنة\"",
+      "summary": "الاتحاد المصري يعلن الانفصال عن المدرب حسام حسن ويعين علي ماهر مدرباً لـ\"الفراعنة\"",
+      "link": "https://www.bbc.com/arabic/articles/c6y8l0yvykygo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "EG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794079947988
+    },
+    {
+      "hash": "45996af14f34",
+      "title": "فرنسا: تظاهرات للأسبوع الرابع ضد غلاء المعيشة قبيل محادثات مع الحكومة",
+      "summary": "فرنسا: تظاهرات للأسبوع الرابع ضد غلاء المعيشة قبيل محادثات مع الحكومة",
+      "link": "https://www.bbc.com/arabic/articles/cmn5v07w6gq1o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794079944999
+    },
     {
       "hash": "995e5cbe1993",
       "title": "'Fantasy' to expect US to go back to playing by the rules - expert",
@@ -7742,474 +8203,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1794022764251
-    },
-    {
-      "hash": "3521105a4608",
-      "title": "“They all must go”: Peña’s removal fails to calm anger on Paraguay’s streets",
-      "summary": "“They all must go”: Peña’s removal fails to calm anger on Paraguay’s streets",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/07/they-all-must-go-pena-s-removal-fails-to-calm-anger-on-paraguay-s-streets?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022760661
-    },
-    {
-      "hash": "fcacdf1ade22",
-      "title": "US measles death toll rises to eight",
-      "summary": "US measles death toll rises to eight",
-      "link": "<![CDATA[https://rt-english.com/news/648528-us-measles-death-toll-rises-to-eight/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
-      "source": "RT",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022757022
-    },
-    {
-      "hash": "d63e37ec4b7a",
-      "title": "Cornell faculty declares &apos;no confidence&apos; in university leadership",
-      "summary": "Cornell faculty declares &apos;no confidence&apos; in university leadership",
-      "link": "https://www.dw.com/en/cornell-faculty-declares-no-confidence-in-university-leadership/a-79882895?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022753183
-    },
-    {
-      "hash": "5c7933bd9a3b",
-      "title": "Two dead after bus crashes in France, officials say",
-      "summary": "Two dead after bus crashes in France, officials say",
-      "link": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022749826
-    },
-    {
-      "hash": "32f477f03013",
-      "title": "الجيش الإيراني يؤكد أن قواته «أقوى» مما كانت عليه في بداية الحرب",
-      "summary": "الجيش الإيراني يؤكد أن قواته «أقوى» مما كانت عليه في بداية الحرب",
-      "link": "https://aawsat.com/node/5338471",
-      "source": "الشرق الأوسط",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794022746217
-    },
-    {
-      "hash": "cebe54c39443",
-      "title": "106 مليارات يورو ووعود مثيرة للجدل.. ميلانشون يكشف خطته لانتزاع الرئاسة في فرنسا",
-      "summary": "106 مليارات يورو ووعود مثيرة للجدل.. ميلانشون يكشف خطته لانتزاع الرئاسة في فرنسا",
-      "link": "https://arabic.euronews.com/2026/11/07/melenchon-reveals-his-plan-to-seize-the-presidency-in-france",
-      "source": "Euronews عربي",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022742584
-    },
-    {
-      "hash": "d062bb0bc82f",
-      "title": "ترامب يكشف تفاصيل \"ضربة الجمعة\" على إيران",
-      "summary": "ترامب يكشف تفاصيل \"ضربة الجمعة\" على إيران",
-      "link": "https://www.skynewsarabia.com/middle-east/1903223-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D9%83%D8%B4%D9%81-%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%B6%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86",
-      "source": "Sky News عربية",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022739303
-    },
-    {
-      "hash": "12dd26a8bca6",
-      "title": "التصريف اللمفاوي: وظيفة بيولوجية تحولت إلى ترند",
-      "summary": "التصريف اللمفاوي: وظيفة بيولوجية تحولت إلى ترند",
-      "link": "https://www.bbc.com/arabic/articles/cvgjp46lk1do?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794022735979
-    },
-    {
-      "hash": "81912532a31a",
-      "title": "MetService updates thunderstorm warning for Waikato, Waitakere, Franklin and Rodney",
-      "summary": "MetService updates thunderstorm warning for Waikato, Waitakere, Franklin and Rodney",
-      "link": "https://www.rnz.co.nz/news/weather/2397042/metservice-updates-thunderstorm-warning-for-waikato-waitakere-franklin-and-rodney",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794019260196
-    },
-    {
-      "hash": "45d6c96b00c9",
-      "title": "Risky behaviour puts rugby league fans in police spotlight",
-      "summary": "Risky behaviour puts rugby league fans in police spotlight",
-      "link": "https://www.rnz.co.nz/news/crime-and-justice/2401812/risky-behaviour-puts-rugby-league-fans-in-police-spotlight",
-      "source": "RNZ",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019256506
-    },
-    {
-      "hash": "77d6884f78ce",
-      "title": "From TikTok to underground labs, inside the deadly $4 billion peptides black market",
-      "summary": "From TikTok to underground labs, inside the deadly $4 billion peptides black market",
-      "link": "https://www.abc.net.au/news/2026-11-07/peptide-black-market-led-by-social-media-influencers/107217418",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1794019251981
-    },
-    {
-      "hash": "f27d23e92e90",
-      "title": "Just 8 per cent of licensed pilots in Australia are women",
-      "summary": "Just 8 per cent of licensed pilots in Australia are women",
-      "link": "https://www.abc.net.au/news/2026-11-07/just-8-per-cent-of-licensed-pilots-in-australia-are-women/107336508",
-      "source": "ABC Australia",
-      "countryCode": "AU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019248077
-    },
-    {
-      "hash": "3bd0772d5b4b",
-      "title": "America's female 'lifers' share their stories from behind prison bars",
-      "summary": "America's female 'lifers' share their stories from behind prison bars",
-      "link": "https://www.abc.net.au/news/2026-11-07/kathryn-whitely-female-inmates/107310278",
-      "source": "ABC Australia",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019244644
-    },
-    {
-      "hash": "4eb4180bd454",
-      "title": "China’s top spy agency recruited woman who targeted Nvidia’s Jensen Huang",
-      "summary": "China’s top spy agency recruited woman who targeted Nvidia’s Jensen Huang",
-      "link": "https://www.straitstimes.com/world/united-states/chinas-top-spy-agency-recruited-woman-who-targeted-nvidias-jensen-huang",
-      "source": "Straits Times",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019240923
-    },
-    {
-      "hash": "abc90e99ac75",
-      "title": "Britain’s Prince Harry seeks to appeal Daily Mail lawsuit, lawyer says",
-      "summary": "Britain’s Prince Harry seeks to appeal Daily Mail lawsuit, lawyer says",
-      "link": "https://www.straitstimes.com/world/europe/britains-prince-harry-seeks-to-appeal-daily-mail-lawsuit-lawyer-says",
-      "source": "Straits Times",
-      "countryCode": "GB",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019237652
-    },
-    {
-      "hash": "427aeda1f911",
-      "title": "US raises concerns on China trade deal compliance",
-      "summary": "US raises concerns on China trade deal compliance",
-      "link": "https://www.straitstimes.com/world/united-states/us-raises-concerns-on-china-trade-deal-compliance",
-      "source": "Straits Times",
-      "countryCode": "CN",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1794019232355
-    },
-    {
-      "hash": "c49a19f6766b",
-      "title": "ED tracking $1m transfer to 'meddle in domestic affairs'",
-      "summary": "ED tracking $1m transfer to 'meddle in domestic affairs'",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/ed-tracking-1m-transfer-to-meddle-in-domestic-affairs/articleshow/135623987.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019228342
-    },
-    {
-      "hash": "653a7e7983a6",
-      "title": "Diwali bonanza for D-street: Sensex logs best pre-festival rally in 35 yrs",
-      "summary": "Diwali bonanza for D-street: Sensex logs best pre-festival rally in 35 yrs",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/business/india-business/sensex-up-10-6-in-7-session-pre-diwali-rally-best-in-35-yrs/articleshow/135620246.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1794019223983
-    },
-    {
-      "hash": "947059d3a8ff",
-      "title": "Trump's corporate allies, Pakistan links in focus as Democrats prepare probe blitz",
-      "summary": "Trump's corporate allies, Pakistan links in focus as Democrats prepare probe blitz",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/trumps-fawning-tech-bros-under-scrutiny-after-midterm-rout-for-president/articleshow/135613502.cms]]>",
-      "source": "Times of India",
-      "countryCode": "PK",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019219724
-    },
-    {
-      "hash": "e3184bc3f837",
-      "title": "Trump and U.S. Congress set to clash over economic costs of tariffs",
-      "summary": "Trump and U.S. Congress set to clash over economic costs of tariffs",
-      "link": "https://www.japantimes.co.jp/business/2026/11/07/economy/trump-congress-tariffs-clash/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019215606
-    },
-    {
-      "hash": "44d9253d4539",
-      "title": "Japan business community working to ease tensions between Tokyo and Beijing",
-      "summary": "Japan business community working to ease tensions between Tokyo and Beijing",
-      "link": "https://www.japantimes.co.jp/business/2026/11/07/economy/japan-biz-community-china-tensions/",
-      "source": "Japan Times",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019211888
-    },
-    {
-      "hash": "fd670b95b2de",
-      "title": "Japan and China shifting toward selective economic dependence",
-      "summary": "Japan and China shifting toward selective economic dependence",
-      "link": "https://www.japantimes.co.jp/business/2026/11/07/economy/china-japan-selective-economic-dependence/",
-      "source": "Japan Times",
-      "countryCode": "CN",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794019207585
-    },
-    {
-      "hash": "546f3bb3f0b8",
-      "title": "Myanmar’s will to fight money laundering questioned as tougher curbs loom",
-      "summary": "Myanmar’s will to fight money laundering questioned as tougher curbs loom",
-      "link": "https://www.scmp.com/week-asia/politics/article/3373586/myanmars-will-fight-money-laundering-questioned-tougher-curbs-loom",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019202930
-    },
-    {
-      "hash": "4e948c5e2515",
-      "title": "AI-generated cats showcasing rural life, Chinese cuisine land major brand sponsorships",
-      "summary": "AI-generated cats showcasing rural life, Chinese cuisine land major brand sponsorships",
-      "link": "https://www.scmp.com/news/people-culture/china-personalities/article/3373622/ai-generated-cats-showcasing-rural-life-chinese-cuisine-land-major-brand-sponsorships",
-      "source": "SCMP",
-      "countryCode": "CN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019199202
-    },
-    {
-      "hash": "332894364e1e",
-      "title": "Iran’s nuclear programme: US offers US$20 million reward for information",
-      "summary": "Iran’s nuclear programme: US offers US$20 million reward for information",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3373625/irans-nuclear-programme-us-offers-us20-million-reward-information",
-      "source": "SCMP",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794019195421
-    },
-    {
-      "hash": "af56600ae05f",
-      "title": "EU prosecutor office investigates fatal train crash in Spain",
-      "summary": "EU prosecutor office investigates fatal train crash in Spain",
-      "link": "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019191496
-    },
-    {
-      "hash": "df0567a9ca26",
-      "title": "CDC reports more than 5,000 measles cases, highest number in 35 years",
-      "summary": "CDC reports more than 5,000 measles cases, highest number in 35 years",
-      "link": "https://www.aljazeera.com/news/2026/11/7/cdc-reports-more-than-5000-measles-cases-highest-number-in-35-years?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019187988
-    },
-    {
-      "hash": "2f623105dc3a",
-      "title": "VÍDEOS: NE2 de sexta-feira, 6 de novembro de 2026",
-      "summary": "VÍDEOS: NE2 de sexta-feira, 6 de novembro de 2026",
-      "link": "https://g1.globo.com/pe/pernambuco/videos-ne2/playlist/videos-ne2-de-sexta-feira-6-de-novembro-de-2026.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019183415
-    },
-    {
-      "hash": "fd7fe1f1f18d",
-      "title": "Lotomania hoje: resultado do concurso 2996 e números sorteados",
-      "summary": "Lotomania hoje: resultado do concurso 2996 e números sorteados",
-      "link": "https://g1.globo.com/loterias/lotomania/noticia/2026/11/06/lotomania-hoje-resultado-do-concurso-2996-e-numeros-sorteados.ghtml",
-      "source": "Globo",
-      "countryCode": "OM",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019179498
-    },
-    {
-      "hash": "2c705678b5db",
-      "title": "Dupla armada invade barbearia e rende clientes em Belém",
-      "summary": "Dupla armada invade barbearia e rende clientes em Belém",
-      "link": "https://g1.globo.com/pa/para/noticia/2026/11/06/dupla-armada-invade-barbearia-e-rende-clientes-em-belem.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019175233
-    },
-    {
-      "hash": "93468d09c77c",
-      "title": "Paraguay’s Senate removes Santiago Peña, who is placed under arrest, and Pedro Alliana takes office",
-      "summary": "Paraguay’s Senate removes Santiago Peña, who is placed under arrest, and Pedro Alliana takes office",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/07/paraguay-s-senate-removes-santiago-pena-who-is-placed-under-arrest-and-pedro-alliana-takes-office?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": "CL",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019170949
-    },
-    {
-      "hash": "dd89992a7973",
-      "title": "Leo XIV begins his tour in Uruguay, praising Mercosur and peace and questioning abortion and euthanasia",
-      "summary": "Leo XIV begins his tour in Uruguay, praising Mercosur and peace and questioning abortion and euthanasia",
-      "link": "<![CDATA[https://en.mercopress.com/2026/11/07/leo-xiv-begins-his-tour-in-uruguay-praising-mercosur-and-peace-and-questioning-abortion-and-euthanasia?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
-      "source": "MercoPress",
-      "countryCode": null,
-      "category": "positive",
-      "sentiment": "positive",
-      "mood": "hope",
-      "impact": 75,
-      "timestamp": 1794019167560
-    },
-    {
-      "hash": "206b5851046c",
-      "title": "Cornell faculty vote no confidence in university's leadership",
-      "summary": "Cornell faculty vote no confidence in university's leadership",
-      "link": "https://www.cbc.ca/news/world/cornell-university-leadership-no-confience-9.7413319?cmp=rss",
-      "source": "CBC Canada",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019163934
-    },
-    {
-      "hash": "f70e57a6d0bf",
-      "title": "La Fiscalía Europea investiga un presunto fraude en las obras de la alta velocidad tras el accidente de Urda",
-      "summary": "La Fiscalía Europea investiga un presunto fraude en las obras de la alta velocidad tras el accidente de Urda",
-      "link": "https://elpais.com/espana/2026-11-06/la-fiscalia-europea-investiga-un-presunto-fraude-en-las-obras-de-la-alta-velocidad-tras-el-accidente-de-urda.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794019160266
-    },
-    {
-      "hash": "f732a927787c",
-      "title": "Paraguay: President Santiago Pena under house arrest over bank crisis",
-      "summary": "Paraguay: President Santiago Pena under house arrest over bank crisis",
-      "link": "https://www.dw.com/en/paraguay-president-santiago-pena-under-house-arrest-over-bank-crisis/a-79868484?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "CL",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794019156687
-    },
-    {
-      "hash": "0ddfced1f1ae",
-      "title": "British healthcare worker with Ebola evacuated from DR Congo to UK",
-      "summary": "British healthcare worker with Ebola evacuated from DR Congo to UK",
-      "link": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
-      "source": "The Guardian",
-      "countryCode": null,
-      "category": "health",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 55,
-      "timestamp": 1794019150904
     }
   ]
 }
