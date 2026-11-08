@@ -1,31 +1,86 @@
 {
-  "updated_at": "2026-11-08T01:55:43.885Z",
+  "updated_at": "2026-11-08T02:43:08.387Z",
   "total": 600,
-  "new_count": 35,
+  "new_count": 19,
   "ai_success": 0,
-  "ai_fallback": 35,
+  "ai_fallback": 19,
   "global": {
     "score": 45,
     "totalArticles": 600,
     "categories": {
+      "health": 9,
+      "politics": 438,
+      "war": 55,
+      "crisis": 13,
+      "disaster": 27,
       "culture": 22,
-      "politics": 439,
       "economy": 17,
-      "crisis": 12,
-      "war": 57,
-      "disaster": 26,
       "sports": 11,
-      "health": 8,
       "positive": 8
     }
   },
   "countries": {
+    "US": {
+      "score": 48,
+      "articleCount": 26,
+      "categories": {
+        "politics": 19,
+        "culture": 1,
+        "disaster": 2,
+        "positive": 2,
+        "war": 1,
+        "health": 1
+      }
+    },
+    "IL": {
+      "score": 52,
+      "articleCount": 39,
+      "categories": {
+        "politics": 37,
+        "culture": 1,
+        "sports": 1
+      }
+    },
+    "CN": {
+      "score": 40,
+      "articleCount": 11,
+      "categories": {
+        "politics": 9,
+        "health": 1,
+        "war": 1
+      }
+    },
+    "AE": {
+      "score": 11,
+      "articleCount": 2,
+      "categories": {
+        "war": 1,
+        "politics": 1
+      }
+    },
+    "CL": {
+      "score": 24,
+      "articleCount": 2,
+      "categories": {
+        "crisis": 1,
+        "politics": 1
+      }
+    },
+    "SA": {
+      "score": 40,
+      "articleCount": 8,
+      "categories": {
+        "politics": 6,
+        "health": 1,
+        "war": 1
+      }
+    },
     "IR": {
-      "score": 26,
-      "articleCount": 25,
+      "score": 27,
+      "articleCount": 23,
       "categories": {
         "politics": 15,
-        "war": 9,
+        "war": 7,
         "disaster": 1
       }
     },
@@ -62,18 +117,6 @@
         "economy": 1
       }
     },
-    "US": {
-      "score": 48,
-      "articleCount": 24,
-      "categories": {
-        "politics": 17,
-        "culture": 1,
-        "disaster": 2,
-        "positive": 2,
-        "war": 1,
-        "health": 1
-      }
-    },
     "ZA": {
       "score": 39,
       "articleCount": 5,
@@ -82,37 +125,19 @@
         "war": 1
       }
     },
-    "SA": {
-      "score": 38,
-      "articleCount": 7,
-      "categories": {
-        "politics": 5,
-        "health": 1,
-        "war": 1
-      }
-    },
     "UA": {
       "score": 45,
-      "articleCount": 11,
+      "articleCount": 10,
       "categories": {
-        "politics": 10,
+        "politics": 9,
         "war": 1
       }
     },
     "DE": {
       "score": 50,
-      "articleCount": 6,
+      "articleCount": 5,
       "categories": {
-        "politics": 6
-      }
-    },
-    "IL": {
-      "score": 52,
-      "articleCount": 38,
-      "categories": {
-        "politics": 36,
-        "culture": 1,
-        "sports": 1
+        "politics": 5
       }
     },
     "MY": {
@@ -152,15 +177,6 @@
       "categories": {
         "war": 1,
         "positive": 1
-      }
-    },
-    "CN": {
-      "score": 37,
-      "articleCount": 10,
-      "categories": {
-        "politics": 8,
-        "health": 1,
-        "war": 1
       }
     },
     "ES": {
@@ -212,10 +228,10 @@
       }
     },
     "MA": {
-      "score": 61,
-      "articleCount": 3,
+      "score": 63,
+      "articleCount": 2,
       "categories": {
-        "politics": 2,
+        "politics": 1,
         "sports": 1
       }
     },
@@ -249,13 +265,6 @@
         "disaster": 1
       }
     },
-    "AE": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "QA": {
       "score": 50,
       "articleCount": 1,
@@ -265,9 +274,9 @@
     },
     "IN": {
       "score": 50,
-      "articleCount": 4,
+      "articleCount": 3,
       "categories": {
-        "politics": 4
+        "politics": 3
       }
     },
     "TR": {
@@ -354,13 +363,6 @@
         "war": 1
       }
     },
-    "CL": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
     "KE": {
       "score": 50,
       "articleCount": 1,
@@ -384,6 +386,253 @@
     }
   },
   "articles": [
+    {
+      "hash": "3d1794806b9e",
+      "title": "Women facing significant inequalities in diagnosis, treatment of heart disease in NZ",
+      "summary": "Women facing significant inequalities in diagnosis, treatment of heart disease in NZ",
+      "link": "https://www.rnz.co.nz/news/health/2438004/women-facing-significant-inequalities-in-diagnosis-treatment-of-heart-disease-in-nz",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1794105787385
+    },
+    {
+      "hash": "064be24230b3",
+      "title": "The future of the Māori seats includes the Greens",
+      "summary": "The future of the Māori seats includes the Greens",
+      "link": "https://www.rnz.co.nz/news/politics_election-2026/2438787/the-future-of-the-maori-seats-includes-the-greens",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105783762
+    },
+    {
+      "hash": "fb82a9793c50",
+      "title": "Ukrainians 'suffered forced starvation' in Oleshky before escape",
+      "summary": "Ukrainians 'suffered forced starvation' in Oleshky before escape",
+      "link": "https://www.abc.net.au/news/2026-11-08/life-inside-ukraines-oleshky-before-evacuation/107348714",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105781163
+    },
+    {
+      "hash": "592709d2a975",
+      "title": "From deep in Trump country, farmers sent a message to Washington",
+      "summary": "From deep in Trump country, farmers sent a message to Washington",
+      "link": "https://www.abc.net.au/news/2026-11-08/us-midterms-the-kansas-farmers-who-turned-on-trump/107358824",
+      "source": "ABC Australia",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105778174
+    },
+    {
+      "hash": "fc75562d6d68",
+      "title": "Chronic pain affects one in two women in midlife, report finds",
+      "summary": "Chronic pain affects one in two women in midlife, report finds",
+      "link": "https://www.abc.net.au/news/health/2026-11-08/half-of-middle-aged-women-live-with-chronic-pain/107341306",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105775145
+    },
+    {
+      "hash": "9659d4424c12",
+      "title": "For Zoomers, blue wave in US election evokes ‘millennial optimism’",
+      "summary": "For Zoomers, blue wave in US election evokes ‘millennial optimism’",
+      "link": "https://www.straitstimes.com/world/united-states/for-zoomers-blue-wave-in-us-election-evokes-millennial-optimism",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794105771963
+    },
+    {
+      "hash": "f7e6b5088348",
+      "title": "Wife stabs ex-Army man to death: How a 'cooked veggie' for dinner led to murder",
+      "summary": "Wife stabs ex-Army man to death: How a 'cooked veggie' for dinner led to murder",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/ahmedabad/wife-stabs-ex-army-man-to-death-how-a-question-about-vegetable-cooked-for-dinner-escalated-into-murder-in-ahmedabad/articleshow/135649521.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105769108
+    },
+    {
+      "hash": "27cb4f5348f8",
+      "title": "Double entries, duplicate IDs: Karnataka CEO admits SIR lapses",
+      "summary": "Double entries, duplicate IDs: Karnataka CEO admits SIR lapses",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/bengaluru/duplicate-ids-found-karnataka-ceo-admits-lapses-in-sir/articleshow/135649456.cms]]>",
+      "source": "Times of India",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105766134
+    },
+    {
+      "hash": "54a59282e7dd",
+      "title": "Netanyahu's comeback bid: What happens if Eisenkot fails to form govt in Israel",
+      "summary": "Netanyahu's comeback bid: What happens if Eisenkot fails to form govt in Israel",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/middle-east/can-netanyahu-stage-a-comeback-in-israel-what-if-eisenkot-fails-to-form-govt/articleshow/135649553.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105756784
+    },
+    {
+      "hash": "98c056e4d99b",
+      "title": "Rubio warns top staff against conflicts of interest as U.S. Republicans look to 2028",
+      "summary": "Rubio warns top staff against conflicts of interest as U.S. Republicans look to 2028",
+      "link": "https://www.japantimes.co.jp/news/2026/11/08/world/politics/rubio-conflicts-of-interest-2028/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794105753892
+    },
+    {
+      "hash": "9eafc847f39c",
+      "title": "Heavy rain leave tens of thousands without shelter in Gaza: local authorities",
+      "summary": "Heavy rain leave tens of thousands without shelter in Gaza: local authorities",
+      "link": "https://www.japantimes.co.jp/news/2026/11/08/world/heavy-rain-shelter-gaza/",
+      "source": "Japan Times",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105750988
+    },
+    {
+      "hash": "7cbfb3d25241",
+      "title": "China US$300 dating app ‘marriage-or-refund’ guarantee sparks intense online buzz",
+      "summary": "China US$300 dating app ‘marriage-or-refund’ guarantee sparks intense online buzz",
+      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3373674/china-us300-dating-app-marriage-or-refund-guarantee-sparks-intense-online-buzz",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105746764
+    },
+    {
+      "hash": "68425681072c",
+      "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
+      "summary": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "AE",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794105743215
+    },
+    {
+      "hash": "1ce992a714d3",
+      "title": "Paraguay’s prosecutors charge Santiago Peña and seek his pre-trial detention over the Ueno Bank collapse",
+      "summary": "Paraguay’s prosecutors charge Santiago Peña and seek his pre-trial detention over the Ueno Bank collapse",
+      "link": "<![CDATA[https://en.mercopress.com/2026/11/08/paraguay-s-prosecutors-charge-santiago-pena-and-seek-his-pre-trial-detention-over-the-ueno-bank-collapse?utm_source=feed&utm_medium=rss&utm_content=main&utm_campaign=rss]]>",
+      "source": "MercoPress",
+      "countryCode": "CL",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1794105740271
+    },
+    {
+      "hash": "243fe6d65024",
+      "title": "Riot police unleash tear gas on French protesters (VIDEOS)",
+      "summary": "Riot police unleash tear gas on French protesters (VIDEOS)",
+      "link": "<![CDATA[https://rt-english.com/news/648561-paris-protest-tear-gas/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105737448
+    },
+    {
+      "hash": "2a4c03d8bbb6",
+      "title": "السعودية تعلن «زوال الخطر» عن 4 مدن بعد إطلاق الإنذار المبكر",
+      "summary": "السعودية تعلن «زوال الخطر» عن 4 مدن بعد إطلاق الإنذار المبكر",
+      "link": "https://aawsat.com/node/5338789",
+      "source": "الشرق الأوسط",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105734743
+    },
+    {
+      "hash": "9613382a2e8b",
+      "title": "نصف المصابين بمشكلات قلبية بسبب \"الكافيين\" من الشباب",
+      "summary": "نصف المصابين بمشكلات قلبية بسبب \"الكافيين\" من الشباب",
+      "link": "https://www.skynewsarabia.com/technology/1903317-%D9%86%D8%B5%D9%81-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%A8%D9%8A%D9%86-%D8%A8%D9%85%D8%B4%D9%83%D9%84%D8%A7%D8%AA-%D9%82%D9%84%D8%A8%D9%8A%D8%A9-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A7%D9%84%D9%83%D8%A7%D9%81%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D8%A8",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105732082
+    },
+    {
+      "hash": "8d050fd64b58",
+      "title": "\"الذكاء الاصطناعي\" يشخص أمراض القلب والسكري عبر العين",
+      "summary": "\"الذكاء الاصطناعي\" يشخص أمراض القلب والسكري عبر العين",
+      "link": "https://www.skynewsarabia.com/technology/1903248-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%8A%D8%B4%D8%AE%D8%B5-%D8%A3%D9%85%D8%B1%D8%A7%D8%B6-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D9%88%D8%A7%D9%84%D8%B3%D9%83%D8%B1%D9%8A-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%B9%D9%8A%D9%86",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794105728636
+    },
+    {
+      "hash": "99b482527cd1",
+      "title": "\"حريق متعمد\" يدمر منزل شرطي فرنسي.. والسلطات تتوعد",
+      "summary": "\"حريق متعمد\" يدمر منزل شرطي فرنسي.. والسلطات تتوعد",
+      "link": "https://www.skynewsarabia.com/world/1903318-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AA%D8%B9%D9%85%D8%AF-%D9%8A%D8%AF%D9%85%D8%B1-%D9%85%D9%86%D8%B2%D9%84-%D8%B4%D8%B1%D8%B7%D9%8A-%D9%81%D8%B1%D9%86%D8%B3%D9%8A-%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D8%AA-%D8%AA%D8%AA%D9%88%D8%B9%D8%AF",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1794105725294
+    },
     {
       "hash": "c10baa6635b5",
       "title": "Live: Christopher Luxon says he intends to build a relationship with Opportunity Party",
@@ -7936,253 +8185,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1794044360227
-    },
-    {
-      "hash": "bbfaa52e6d22",
-      "title": "Iran executes Baluch militant over armed attack on police station",
-      "summary": "Iran executes Baluch militant over armed attack on police station",
-      "link": "https://www.straitstimes.com/world/iran-executes-baluch-militant-over-armed-attack-on-police-station",
-      "source": "Straits Times",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794044356461
-    },
-    {
-      "hash": "e08311a3ad91",
-      "title": "Environmental groups embrace AI, even as they warn of data centre impacts",
-      "summary": "Environmental groups embrace AI, even as they warn of data centre impacts",
-      "link": "https://www.straitstimes.com/world/environmental-groups-embrace-ai-even-as-they-warn-of-data-centre-impacts",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794044352963
-    },
-    {
-      "hash": "6f442c9a4980",
-      "title": "Guatemalan lawmaker, three police officers killed in attack",
-      "summary": "Guatemalan lawmaker, three police officers killed in attack",
-      "link": "https://www.straitstimes.com/world/guatemalan-lawmaker-three-police-officers-killed-in-attack",
-      "source": "Straits Times",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794044349210
-    },
-    {
-      "hash": "e84eb15ce183",
-      "title": "'Not supported by tests': Centre rejects over 20% ethanol blending in Karnataka",
-      "summary": "'Not supported by tests': Centre rejects over 20% ethanol blending in Karnataka",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/not-supported-by-tests-petroleum-ministry-rejects-over-20-ethanol-blending-in-karnataka/articleshow/135631902.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044345383
-    },
-    {
-      "hash": "351128cc7cc5",
-      "title": "Trump to get 'Trumpier' as hardliner Miller set to take charge; impact on India",
-      "summary": "Trump to get 'Trumpier' as hardliner Miller set to take charge; impact on India",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/trump-to-get-trumpier-as-hardliner-stephen-miller-takes-charge-of-white-house-what-it-means-for-india/articleshow/135631339.cms]]>",
-      "source": "Times of India",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044341292
-    },
-    {
-      "hash": "adca7640cced",
-      "title": "Police outpost blast: 'Tehreek-ul-Mujahideen Hindustan' post puts agencies on alert",
-      "summary": "Police outpost blast: 'Tehreek-ul-Mujahideen Hindustan' post puts agencies on alert",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/noida/blast-at-ghaziabad-police-outpost-social-media-post-by-obscure-group-tehreek-ul-mujahideen-hindustan-claiming-responsibility-puts-intelligence-agencies-on-alert/articleshow/135627419.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044337502
-    },
-    {
-      "hash": "42a160a21cea",
-      "title": "MTR Corporation halts unauthorised remedial works at station after column concerns",
-      "summary": "MTR Corporation halts unauthorised remedial works at station after column concerns",
-      "link": "https://www.scmp.com/news/hong-kong/transport/article/3373646/mtr-corporation-halts-unauthorised-remedial-works-station-after-column-concerns",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044332435
-    },
-    {
-      "hash": "43a182e95e6e",
-      "title": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
-      "summary": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
-      "link": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "IR",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794044328586
-    },
-    {
-      "hash": "9c0d797d2da2",
-      "title": "US Senator Abdul El-Sayed launches ‘Habibi’ political action committee",
-      "summary": "US Senator Abdul El-Sayed launches ‘Habibi’ political action committee",
-      "link": "https://www.aljazeera.com/news/2026/11/7/el-sayed-launches-habibi-pac-days-after-historic-michigan-senate-win?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044319856
-    },
-    {
-      "hash": "551bd50447e1",
-      "title": "Zamfara govt inaugurates anti-illegal mining committee",
-      "summary": "Zamfara govt inaugurates anti-illegal mining committee",
-      "link": "https://www.premiumtimesng.com/promoted/923359-zamfara-govt-inaugurates-anti-illegal-mining-committee.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044316254
-    },
-    {
-      "hash": "bcd4bb053446",
-      "title": "Japan vs Nigeria Preview: Flamingos chase historic U-17 Women&#8217;s World Cup glory in Morocco",
-      "summary": "Japan vs Nigeria Preview: Flamingos chase historic U-17 Women&#8217;s World Cup glory in Morocco",
-      "link": "https://www.premiumtimesng.com/news/headlines/923379-japan-vs-nigeria-preview-flamingos-chase-historic-u-17-womens-world-cup-glory-in-morocco.html",
-      "source": "Premium Times",
-      "countryCode": "MA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044312592
-    },
-    {
-      "hash": "bb6901f88782",
-      "title": "Power minister explains recent nationwide outages",
-      "summary": "Power minister explains recent nationwide outages",
-      "link": "https://www.premiumtimesng.com/news/top-news/923390-power-minister-explains-recent-nationwide-outages.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1794044308660
-    },
-    {
-      "hash": "16ff3ad5d34b",
-      "title": "Falsa biomédica é indiciada por realizar procedimentos estéticos invasivos ilegalmente",
-      "summary": "Falsa biomédica é indiciada por realizar procedimentos estéticos invasivos ilegalmente",
-      "link": "https://g1.globo.com/sp/santos-regiao/noticia/2026/11/07/falsa-biomedica-e-indiciada-por-realizar-procedimentos-esteticos-invasivos-ilegalmente.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044304133
-    },
-    {
-      "hash": "ab2ea3bad64a",
-      "title": "Homem com deficiência visual cai de janela de prédio ao ir ao banheiro de madrugada no litoral de SP",
-      "summary": "Homem com deficiência visual cai de janela de prédio ao ir ao banheiro de madrugada no litoral de SP",
-      "link": "https://g1.globo.com/sp/santos-regiao/noticia/2026/11/07/homem-com-deficiencia-visual-cai-de-janela-de-predio-ao-ir-ao-banheiro-de-madrugada-no-litoral-de-sp.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044299642
-    },
-    {
-      "hash": "4e39942466c9",
-      "title": "Em prisão domiciliar, Peña é transferido para instalação militar durante a madrugada, diz jornal",
-      "summary": "Em prisão domiciliar, Peña é transferido para instalação militar durante a madrugada, diz jornal",
-      "link": "https://g1.globo.com/mundo/noticia/2026/11/07/pena-transferido-para-instalacao-militar-prisao-domiciliar.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044295857
-    },
-    {
-      "hash": "59e6145cb076",
-      "title": "EN DIRECT, mobilisations du 7 novembre : suivez le quatrième samedi de manifestations",
-      "summary": "EN DIRECT, mobilisations du 7 novembre : suivez le quatrième samedi de manifestations",
-      "link": "https://www.lemonde.fr/societe/live/2026/11/07/en-direct-mobilisations-du-7-novembre-suivez-le-quatrieme-samedi-de-manifestations_6808254_3224.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044291989
-    },
-    {
-      "hash": "a4b594dcd763",
-      "title": "US Secret Service arrests man parked near White House with 'multiple guns' in vehicle",
-      "summary": "US Secret Service arrests man parked near White House with 'multiple guns' in vehicle",
-      "link": "https://www.euronews.com/2026/11/07/us-secret-service-arrests-man-parked-near-white-house-with-multiple-guns-in-vehicle",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044288329
-    },
-    {
-      "hash": "f9909fb8e01e",
-      "title": "Germany news: Frankfurt braces for Iran protests",
-      "summary": "Germany news: Frankfurt braces for Iran protests",
-      "link": "https://www.dw.com/en/germany-news-frankfurt-braces-for-iran-protests/live-79883533?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "DE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044284708
-    },
-    {
-      "hash": "1cabfa6749bc",
-      "title": "Ukraine: Russia hits Kyiv with airstrikes ahead of trilateral talks",
-      "summary": "Ukraine: Russia hits Kyiv with airstrikes ahead of trilateral talks",
-      "link": "https://www.dw.com/en/ukraine-russia-hits-kyiv-with-airstrikes-ahead-of-trilateral-talks/a-79883851?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794044281078
     }
   ]
 }
