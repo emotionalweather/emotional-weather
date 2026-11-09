@@ -1,25 +1,116 @@
 {
-  "updated_at": "2026-11-09T02:01:38.627Z",
+  "updated_at": "2026-11-09T02:50:34.097Z",
   "total": 600,
-  "new_count": 35,
+  "new_count": 25,
   "ai_success": 0,
-  "ai_fallback": 35,
+  "ai_fallback": 25,
   "global": {
     "score": 46,
     "totalArticles": 600,
     "categories": {
-      "politics": 475,
-      "war": 58,
+      "politics": 476,
+      "war": 59,
+      "health": 4,
+      "disaster": 7,
+      "positive": 5,
       "economy": 9,
-      "culture": 19,
-      "disaster": 8,
-      "positive": 4,
-      "health": 3,
-      "crisis": 14,
-      "sports": 10
+      "culture": 18,
+      "crisis": 13,
+      "sports": 9
     }
   },
   "countries": {
+    "FR": {
+      "score": 56,
+      "articleCount": 7,
+      "categories": {
+        "politics": 6,
+        "culture": 1
+      }
+    },
+    "AU": {
+      "score": 28,
+      "articleCount": 8,
+      "categories": {
+        "war": 1,
+        "politics": 7
+      }
+    },
+    "IN": {
+      "score": 50,
+      "articleCount": 6,
+      "categories": {
+        "politics": 6
+      }
+    },
+    "JP": {
+      "score": 37,
+      "articleCount": 8,
+      "categories": {
+        "politics": 5,
+        "disaster": 3
+      }
+    },
+    "CN": {
+      "score": 51,
+      "articleCount": 21,
+      "categories": {
+        "politics": 20,
+        "culture": 1
+      }
+    },
+    "SG": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "IQ": {
+      "score": 8,
+      "articleCount": 13,
+      "categories": {
+        "war": 8,
+        "politics": 5
+      }
+    },
+    "RO": {
+      "score": 50,
+      "articleCount": 1,
+      "categories": {
+        "politics": 1
+      }
+    },
+    "SA": {
+      "score": 47,
+      "articleCount": 9,
+      "categories": {
+        "politics": 6,
+        "economy": 2,
+        "war": 1
+      }
+    },
+    "UA": {
+      "score": 38,
+      "articleCount": 14,
+      "categories": {
+        "positive": 1,
+        "politics": 8,
+        "war": 4,
+        "culture": 1
+      }
+    },
+    "IL": {
+      "score": 42,
+      "articleCount": 29,
+      "categories": {
+        "politics": 23,
+        "war": 2,
+        "crisis": 2,
+        "economy": 1,
+        "culture": 1
+      }
+    },
     "NZ": {
       "score": 50,
       "articleCount": 5,
@@ -42,22 +133,6 @@
         "politics": 1
       }
     },
-    "CN": {
-      "score": 51,
-      "articleCount": 19,
-      "categories": {
-        "politics": 18,
-        "culture": 1
-      }
-    },
-    "IN": {
-      "score": 47,
-      "articleCount": 7,
-      "categories": {
-        "politics": 6,
-        "disaster": 1
-      }
-    },
     "RU": {
       "score": 50,
       "articleCount": 5,
@@ -77,14 +152,6 @@
       "articleCount": 1,
       "categories": {
         "politics": 1
-      }
-    },
-    "IQ": {
-      "score": 10,
-      "articleCount": 12,
-      "categories": {
-        "war": 7,
-        "politics": 5
       }
     },
     "AR": {
@@ -138,14 +205,6 @@
         "war": 1
       }
     },
-    "AU": {
-      "score": 53,
-      "articleCount": 8,
-      "categories": {
-        "politics": 7,
-        "culture": 1
-      }
-    },
     "GB": {
       "score": 50,
       "articleCount": 5,
@@ -187,17 +246,6 @@
         "politics": 3
       }
     },
-    "IL": {
-      "score": 41,
-      "articleCount": 28,
-      "categories": {
-        "politics": 22,
-        "war": 2,
-        "crisis": 2,
-        "economy": 1,
-        "culture": 1
-      }
-    },
     "NG": {
       "score": 55,
       "articleCount": 9,
@@ -216,28 +264,11 @@
         "politics": 1
       }
     },
-    "FR": {
-      "score": 58,
-      "articleCount": 7,
-      "categories": {
-        "culture": 1,
-        "politics": 6
-      }
-    },
     "JO": {
       "score": 0,
       "articleCount": 1,
       "categories": {
         "war": 1
-      }
-    },
-    "SA": {
-      "score": 40,
-      "articleCount": 10,
-      "categories": {
-        "economy": 2,
-        "politics": 6,
-        "war": 2
       }
     },
     "LY": {
@@ -257,18 +288,9 @@
     },
     "ZA": {
       "score": 50,
-      "articleCount": 5,
+      "articleCount": 4,
       "categories": {
-        "politics": 5
-      }
-    },
-    "UA": {
-      "score": 27,
-      "articleCount": 13,
-      "categories": {
-        "politics": 8,
-        "war": 4,
-        "culture": 1
+        "politics": 4
       }
     },
     "TR": {
@@ -278,14 +300,6 @@
         "war": 2,
         "crisis": 1,
         "politics": 2
-      }
-    },
-    "JP": {
-      "score": 34,
-      "articleCount": 7,
-      "categories": {
-        "politics": 4,
-        "disaster": 3
       }
     },
     "PE": {
@@ -386,23 +400,334 @@
       "categories": {
         "culture": 1
       }
-    },
-    "MX": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "KR": {
-      "score": 20,
-      "articleCount": 1,
-      "categories": {
-        "crisis": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "b8f5c0baf8d1",
+      "title": "Pacific Island teams fall short in RLWC semifinals despite historic campaigns",
+      "summary": "Pacific Island teams fall short in RLWC semifinals despite historic campaigns",
+      "link": "https://www.rnz.co.nz/news/pacific/2465317/pacific-island-teams-fall-short-in-rlwc-semifinals-despite-historic-campaigns",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192633094
+    },
+    {
+      "hash": "c0ec1332f11f",
+      "title": "Kaikohe's long-awaited community hub and library opens its doors",
+      "summary": "Kaikohe's long-awaited community hub and library opens its doors",
+      "link": "https://www.rnz.co.nz/news/regions_northland/2448799/kaikohe-s-long-awaited-community-hub-and-library-opens-its-doors",
+      "source": "RNZ",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192629403
+    },
+    {
+      "hash": "63234a640a3e",
+      "title": "Man in waiting room dies after car crashes into medical centre",
+      "summary": "Man in waiting room dies after car crashes into medical centre",
+      "link": "https://www.abc.net.au/news/2026-11-09/man-dies-after-car-crashes-into-medical-centre/107364182",
+      "source": "ABC Australia",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192625522
+    },
+    {
+      "hash": "38ac0fa278f4",
+      "title": "Alcaraz downs Shelton in final to claim maiden Paris Masters title",
+      "summary": "Alcaraz downs Shelton in final to claim maiden Paris Masters title",
+      "link": "https://www.abc.net.au/news/2026-11-09/tennis-carlos-alcaraz-beats-ben-shelton-paris-masters-final/107364040",
+      "source": "ABC Australia",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192621119
+    },
+    {
+      "hash": "2bc70ba318f2",
+      "title": "Teenage boy avoids jail over Sydney terror attack planning",
+      "summary": "Teenage boy avoids jail over Sydney terror attack planning",
+      "link": "https://www.abc.net.au/news/2026-11-09/nsw-teen-avoids-jail-sydney-opera-house-potential-terror-plot/107364030",
+      "source": "ABC Australia",
+      "countryCode": "AU",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794192616444
+    },
+    {
+      "hash": "249a7ed65310",
+      "title": "Trump says he backs energy permitting Bill on eve of Senate vote",
+      "summary": "Trump says he backs energy permitting Bill on eve of Senate vote",
+      "link": "https://www.straitstimes.com/world/united-states/trump-says-he-backs-energy-permitting-bill-on-eve-of-senate-vote",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192612541
+    },
+    {
+      "hash": "6f3942dcab03",
+      "title": "Ex-US president Biden limits his memoir promotion with hint at health struggles",
+      "summary": "Ex-US president Biden limits his memoir promotion with hint at health struggles",
+      "link": "https://www.straitstimes.com/world/united-states/ex-us-president-biden-limits-his-memoir-promotion-with-hint-at-health-struggles",
+      "source": "Straits Times",
+      "countryCode": null,
+      "category": "health",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 55,
+      "timestamp": 1794192608185
+    },
+    {
+      "hash": "0217eacbfad0",
+      "title": "Delhi's air quality slips into 'severe' category on Diwali; Mumbai's AQI at 170",
+      "summary": "Delhi's air quality slips into 'severe' category on Diwali; Mumbai's AQI at 170",
+      "link": "<![CDATA[https://timesofindia.indiatimes.com/city/delhi/delhis-air-quality-slips-into-severe-category-on-diwali-aqi-at-404/articleshow/135667552.cms]]>",
+      "source": "Times of India",
+      "countryCode": "IN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192602047
+    },
+    {
+      "hash": "18398005bc61",
+      "title": "Japan says three-day yen intervention lifted currency in summer",
+      "summary": "Japan says three-day yen intervention lifted currency in summer",
+      "link": "https://www.japantimes.co.jp/business/2026/11/09/markets/japan-july-sept-yen-intervention/",
+      "source": "Japan Times",
+      "countryCode": "JP",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192597719
+    },
+    {
+      "hash": "671957bbf3b8",
+      "title": "Cities turn to private parking garages for vehicle storage amid flood risks",
+      "summary": "Cities turn to private parking garages for vehicle storage amid flood risks",
+      "link": "https://www.japantimes.co.jp/news/2026/11/09/japan/society/multistory-parking-floods/",
+      "source": "Japan Times",
+      "countryCode": null,
+      "category": "disaster",
+      "sentiment": "negative",
+      "mood": "sad",
+      "impact": 80,
+      "timestamp": 1794192593621
+    },
+    {
+      "hash": "1e55f00580c7",
+      "title": "Nvidia CEO’s affair engulfs AI giant in Chinese spying probe",
+      "summary": "Nvidia CEO’s affair engulfs AI giant in Chinese spying probe",
+      "link": "https://www.japantimes.co.jp/business/2026/11/09/tech/nvidia-board-spying-ceo-affair/",
+      "source": "Japan Times",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192589530
+    },
+    {
+      "hash": "f9c393b05460",
+      "title": "Low pay, fatigue and staff shortages put Hong Kong’s aviation hub status at risk: unions",
+      "summary": "Low pay, fatigue and staff shortages put Hong Kong’s aviation hub status at risk: unions",
+      "link": "https://www.scmp.com/news/hong-kong/transport/article/3373714/low-pay-fatigue-and-staff-shortages-put-hong-kongs-aviation-hub-status-risk-unions",
+      "source": "SCMP",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192585441
+    },
+    {
+      "hash": "3a4b3c1c6b2d",
+      "title": "China digital bed bug map lets travellers flag hotels nationwide upon spotting pests",
+      "summary": "China digital bed bug map lets travellers flag hotels nationwide upon spotting pests",
+      "link": "https://www.scmp.com/news/people-culture/trending-china/article/3373726/china-digital-bed-bug-map-lets-travellers-flag-hotels-nationwide-upon-spotting-pests",
+      "source": "SCMP",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192581183
+    },
+    {
+      "hash": "4ce4b95a7dc3",
+      "title": "Singapore minister says Cop31 has ‘enough to work on’ without new targets",
+      "summary": "Singapore minister says Cop31 has ‘enough to work on’ without new targets",
+      "link": "https://www.scmp.com/news/asia/southeast-asia/article/3373729/singapore-minister-says-cop31-has-enough-work-without-new-targets",
+      "source": "SCMP",
+      "countryCode": "SG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794192577256
+    },
+    {
+      "hash": "58c13d2e7f4f",
+      "title": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
+      "summary": "Drone attack on Iraqi Kurdistan gas field triggers mass blackout",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/drone-attack-on-iraqi-kurdistan-gas-field-triggers-mass-blackout?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "IQ",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794192571686
+    },
+    {
+      "hash": "12f6ab9c5975",
+      "title": "Moldova launches new power line to Romania to cut reliance on Russia",
+      "summary": "Moldova launches new power line to Romania to cut reliance on Russia",
+      "link": "https://www.aljazeera.com/news/2026/11/9/moldova-launches-new-power-line-to-romania-to-cut-reliance-on-russia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "countryCode": "RO",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192567114
+    },
+    {
+      "hash": "8e2a67aa8a45",
+      "title": "Lorena Betts chegou aos EUA como babá e é uma dos sete brasileiros eleitos deputados",
+      "summary": "Lorena Betts chegou aos EUA como babá e é uma dos sete brasileiros eleitos deputados",
+      "link": "https://g1.globo.com/fantastico/noticia/2026/11/08/brasileiros-eleitos-deputados.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192562864
+    },
+    {
+      "hash": "f50dcb7dd74b",
+      "title": "1º dia de Enem: confira o gabarito extraoficial e vídeo das respostas",
+      "summary": "1º dia de Enem: confira o gabarito extraoficial e vídeo das respostas",
+      "link": "https://g1.globo.com/educacao/enem/2026/ao-vivo/enem-2026-gabarito-correcao-das-questoes-videos-cadernos-prova.ghtml",
+      "source": "Globo",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192558147
+    },
+    {
+      "hash": "fb84aa302aa8",
+      "title": "Still haven't filed your taxes? Here's what you need to know",
+      "summary": "Still haven't filed your taxes? Here's what you need to know",
+      "link": "https://www.cnn.com/2023/04/13/success/tax-filing-tips/index.html",
+      "source": "CNN World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192554327
+    },
+    {
+      "hash": "0726c2b44d58",
+      "title": "Saudi Aramco tower damaged in Houthi strike (VIDEOS)",
+      "summary": "Saudi Aramco tower damaged in Houthi strike (VIDEOS)",
+      "link": "<![CDATA[https://rt-english.com/news/648584-saudi-aramco-tower-damaged/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192550005
+    },
+    {
+      "hash": "239d74e3474e",
+      "title": "Europe to press US on Ukraine peace and Iran at Paris G7 talks",
+      "summary": "Europe to press US on Ukraine peace and Iran at Paris G7 talks",
+      "link": "https://www.france24.com/en/france/20261109-europa-us-ukraine-peace-iran-paris-g7-ministers",
+      "source": "France24 English",
+      "countryCode": "UA",
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1794192545964
+    },
+    {
+      "hash": "dc49da5c1b3c",
+      "title": "تدمير  منصات صواريخ استخدمت لاستهداف الرياض والمنطقة الشرقية",
+      "summary": "تدمير  منصات صواريخ استخدمت لاستهداف الرياض والمنطقة الشرقية",
+      "link": "https://aawsat.com/node/5339104",
+      "source": "الشرق الأوسط",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192540361
+    },
+    {
+      "hash": "e72597b05e90",
+      "title": "الخطيب وتنكر وآل سالم... تجارب ملهمة لنجومية متأخرة",
+      "summary": "الخطيب وتنكر وآل سالم... تجارب ملهمة لنجومية متأخرة",
+      "link": "https://aawsat.com/node/5339105",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192536183
+    },
+    {
+      "hash": "4645ab613759",
+      "title": "هل ودع المنتخب السعودي حقبة «الأسماء الرنانة»؟",
+      "summary": "هل ودع المنتخب السعودي حقبة «الأسماء الرنانة»؟",
+      "link": "https://aawsat.com/node/5339106",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192530204
+    },
+    {
+      "hash": "5d6a894ab70a",
+      "title": "ترامب يتحدث عن ما قدمه لإسرائيل.. ويقارن آيزنكوت ونتنياهو",
+      "summary": "ترامب يتحدث عن ما قدمه لإسرائيل.. ويقارن آيزنكوت ونتنياهو",
+      "link": "https://www.skynewsarabia.com/world/1903430-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%AA%D8%AD%D8%AF%D8%AB-%D8%B9%D9%86-%D9%82%D8%AF%D9%85%D9%87-%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D9%88%D9%8A%D9%82%D8%A7%D8%B1%D9%86-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%88%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88",
+      "source": "Sky News عربية",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794192526406
+    },
     {
       "hash": "2ea8b2f62f60",
       "title": "选后分析：33.9万张特殊选票将怎样决定Luxon的胜负",
@@ -7877,331 +8202,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1794127336244
-    },
-    {
-      "hash": "f04377050683",
-      "title": "Live: Kangaroos make late change in World Cup final rematch with Samoa",
-      "summary": "Live: Kangaroos make late change in World Cup final rematch with Samoa",
-      "link": "https://www.abc.net.au/news/2026-11-08/live-kangaroos-and-jillaroos-rugby-league-world-cup-semifinals/107361250",
-      "source": "ABC Australia",
-      "countryCode": null,
-      "category": "sports",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1794127333052
-    },
-    {
-      "hash": "51112228a315",
-      "title": "Riyadh financial district targeted, Aramco tower damaged: Witnesses",
-      "summary": "Riyadh financial district targeted, Aramco tower damaged: Witnesses",
-      "link": "https://www.straitstimes.com/world/middle-east/riyadh-financial-district-targeted-aramco-tower-damaged-witnesses",
-      "source": "Straits Times",
-      "countryCode": "SA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127328124
-    },
-    {
-      "hash": "4cd5a28e02ac",
-      "title": "The great White mix-up: Did Trump offer White House job to the wrong Dana?",
-      "summary": "The great White mix-up: Did Trump offer White House job to the wrong Dana?",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/world/us/the-great-white-mix-up-did-trump-offer-white-house-job-to-the-wrong-dana-white/articleshow/135653662.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127323943
-    },
-    {
-      "hash": "cc491a74a8ff",
-      "title": "'First since end of Naxalism': PM Modi celebrates Diwali with security personnel in Bastar",
-      "summary": "'First since end of Naxalism': PM Modi celebrates Diwali with security personnel in Bastar",
-      "link": "<![CDATA[https://timesofindia.indiatimes.com/india/first-since-end-of-naxalism-pm-modi-celebrates-diwali-with-security-personnel-in-bastar-video/articleshow/135653522.cms]]>",
-      "source": "Times of India",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127320673
-    },
-    {
-      "hash": "38e97889063b",
-      "title": "JCG-discovered ‘Godzilla’ seafloor formation wins heritage status",
-      "summary": "JCG-discovered ‘Godzilla’ seafloor formation wins heritage status",
-      "link": "https://www.japantimes.co.jp/news/2026/11/08/japan/godzilla-megamullion-heritage/",
-      "source": "Japan Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127317683
-    },
-    {
-      "hash": "a6a8db966281",
-      "title": "3 hikers injured after being hit by landing paraglider in Hong Kong country park",
-      "summary": "3 hikers injured after being hit by landing paraglider in Hong Kong country park",
-      "link": "https://www.scmp.com/news/hong-kong/society/article/3373685/3-hikers-injured-after-being-hit-landing-paraglider-hong-kong-country-park",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127314316
-    },
-    {
-      "hash": "cbc74193faad",
-      "title": "52% of Hong Kong’s underprivileged children spend over 2 hours a day on devices",
-      "summary": "52% of Hong Kong’s underprivileged children spend over 2 hours a day on devices",
-      "link": "https://www.scmp.com/news/hong-kong/education/article/3373686/52-hong-kongs-underprivileged-children-spend-over-2-hours-day-devices",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127310746
-    },
-    {
-      "hash": "e5c892f1cbb9",
-      "title": "Winter’s knocking? Cold front to slash Hong Kong temperatures to 16 degrees",
-      "summary": "Winter’s knocking? Cold front to slash Hong Kong temperatures to 16 degrees",
-      "link": "https://www.scmp.com/weather/hong-kong/article/3373687/winters-knocking-cold-front-slash-hong-kong-temperatures-16-degrees",
-      "source": "SCMP",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127306384
-    },
-    {
-      "hash": "12b04949e05f",
-      "title": "Saudi Arabia intercepts Houthi missiles targeting Riyadh, Eastern province",
-      "summary": "Saudi Arabia intercepts Houthi missiles targeting Riyadh, Eastern province",
-      "link": "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province?traffic_source=rss",
-      "source": "Al Jazeera",
-      "countryCode": "SA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127302595
-    },
-    {
-      "hash": "19df51a927cc",
-      "title": "Baze University acquires two aircraft as founder expands aviation education",
-      "summary": "Baze University acquires two aircraft as founder expands aviation education",
-      "link": "https://www.premiumtimesng.com/business/business-news/923676-baze-university-acquires-two-aircraft-as-founder-expands-aviation-education.html",
-      "source": "Premium Times",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127298476
-    },
-    {
-      "hash": "696d6112bcf3",
-      "title": "Descoberta de segredo de cadeado encontrado em naufrágio desvenda mistério de 400 anos",
-      "summary": "Descoberta de segredo de cadeado encontrado em naufrágio desvenda mistério de 400 anos",
-      "link": "https://g1.globo.com/noticia/2026/11/08/descoberta-de-segredo-de-cadeado-encontrado-em-naufragio-desvenda-misterio-de-400-anos.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127295099
-    },
-    {
-      "hash": "566c15a32fb2",
-      "title": "Enem 2026: mais de 57 mil candidatos do Vale do Paraíba e região fazem prova neste domingo; veja número por cidade",
-      "summary": "Enem 2026: mais de 57 mil candidatos do Vale do Paraíba e região fazem prova neste domingo; veja número por cidade",
-      "link": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/11/08/enem-2026-mais-de-57-mil-candidatos-do-vale-do-paraiba-e-regiao-fazem-prova-neste-domingo-veja-numero-por-cidade.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127291836
-    },
-    {
-      "hash": "d9068ecc9c30",
-      "title": "Igreja em Fortaleza faz missa para abençoar canetas de candidatos do Enem",
-      "summary": "Igreja em Fortaleza faz missa para abençoar canetas de candidatos do Enem",
-      "link": "https://g1.globo.com/ce/ceara/educacao/noticia/2026/11/08/igreja-em-fortaleza-faz-missa-para-abencoar-canetas-de-candidatos-do-enem.ghtml",
-      "source": "Globo",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127288295
-    },
-    {
-      "hash": "cf4636b77078",
-      "title": "South Africa’s Politics May Never Be the Same Again",
-      "summary": "South Africa’s Politics May Never Be the Same Again",
-      "link": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html",
-      "source": "NY Times",
-      "countryCode": "ZA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127284041
-    },
-    {
-      "hash": "b51d66ec07b2",
-      "title": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
-      "summary": "Polluted Delhi Tries ‘Green’ Fireworks to Clear the Air at Diwali",
-      "link": "https://www.nytimes.com/2026/11/08/world/asia/delhi-pollution-green-fireworks-diwali.html",
-      "source": "NY Times",
-      "countryCode": "IN",
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1794127280226
-    },
-    {
-      "hash": "dbaf83e8a066",
-      "title": "India: Delhi chokes on most polluted Diwali eve in 10 years",
-      "summary": "India: Delhi chokes on most polluted Diwali eve in 10 years",
-      "link": "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "IN",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127276608
-    },
-    {
-      "hash": "9e950c8d6b20",
-      "title": "France beat Fiji to reclaim top spot in Nations Championship",
-      "summary": "France beat Fiji to reclaim top spot in Nations Championship",
-      "link": "https://www.france24.com/en/sport/20261107-france-beat-fiji-to-reclaim-top-spot-in-nations-championship",
-      "source": "France24 English",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127272138
-    },
-    {
-      "hash": "7ba17d35d6b8",
-      "title": "Gunman kills six in Krakow, three more bodies found at his house",
-      "summary": "Gunman kills six in Krakow, three more bodies found at his house",
-      "link": "https://www.france24.com/en/gunmen-kills-six-in-krakow-three-more-bodies-found-at-his-house",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127268989
-    },
-    {
-      "hash": "b77b54730399",
-      "title": "سائقا «فيراري» يؤكدان تسوية الخلاف بشأن سباق المكسيك",
-      "summary": "سائقا «فيراري» يؤكدان تسوية الخلاف بشأن سباق المكسيك",
-      "link": "https://aawsat.com/node/5338831",
-      "source": "الشرق الأوسط",
-      "countryCode": "MX",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127264957
-    },
-    {
-      "hash": "4707a0e0c6e6",
-      "title": "ظلّ معروضاً في متحف لـ 80عاماً... دفن هيكل عظمي لمهاجر ألماني في أستراليا",
-      "summary": "ظلّ معروضاً في متحف لـ 80عاماً... دفن هيكل عظمي لمهاجر ألماني في أستراليا",
-      "link": "https://aawsat.com/node/5338836",
-      "source": "الشرق الأوسط",
-      "countryCode": "AU",
-      "category": "culture",
-      "sentiment": "positive",
-      "mood": "joy",
-      "impact": 35,
-      "timestamp": 1794127261136
-    },
-    {
-      "hash": "4847f4b85fa0",
-      "title": "راسل غاضب بعد إيقاف لفته أثناء التنافس على الانطلاق أولاً في ساو باولو",
-      "summary": "راسل غاضب بعد إيقاف لفته أثناء التنافس على الانطلاق أولاً في ساو باولو",
-      "link": "https://aawsat.com/node/5338839",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127258108
-    },
-    {
-      "hash": "449d09b5d672",
-      "title": "سوني تطرح سماعة رأس بتصميم مستوحى من الثمانينيات",
-      "summary": "سوني تطرح سماعة رأس بتصميم مستوحى من الثمانينيات",
-      "link": "https://www.skynewsarabia.com/technology/1903339-%D8%B3%D9%88%D9%86%D9%8A-%D8%AA%D8%B7%D8%B1%D8%AD-%D8%B3%D9%85%D8%A7%D8%B9%D8%A9-%D8%B1%D8%A3%D8%B3-%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D8%B3%D8%AA%D9%88%D8%AD%D9%89-%D8%A7%D9%84%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D9%86%D9%8A%D8%A7%D8%AA",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794127254701
-    },
-    {
-      "hash": "dbda18e86cc0",
-      "title": "أزمة المواليد تفرغ مدارس كوريا.. تراجع قياسي للتلاميذ الجدد",
-      "summary": "أزمة المواليد تفرغ مدارس كوريا.. تراجع قياسي للتلاميذ الجدد",
-      "link": "https://www.skynewsarabia.com/world/1903343-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%84%D9%8A%D8%AF-%D8%AA%D9%81%D8%B1%D8%BA-%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-%D9%83%D9%88%D8%B1%D9%8A%D8%A7-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A-%D9%84%D9%84%D8%AA%D9%84%D8%A7%D9%85%D9%8A%D8%B0-%D8%A7%D9%84%D8%AC%D8%AF%D8%AF",
-      "source": "Sky News عربية",
-      "countryCode": "KR",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794127251684
-    },
-    {
-      "hash": "ef33df4b72fd",
-      "title": "تهمتان لرئيس باراغواي المعزول على خلفية انهيار بنك \"أوينو\"",
-      "summary": "تهمتان لرئيس باراغواي المعزول على خلفية انهيار بنك \"أوينو\"",
-      "link": "https://www.skynewsarabia.com/world/1903347-%D8%AA%D9%87%D9%85%D8%AA%D8%A7%D9%86-%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A8%D8%A7%D8%B1%D8%A7%D8%BA%D9%88%D8%A7%D9%8A-%D8%A7%D9%84%D9%85%D8%B9%D8%B2%D9%88%D9%84-%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A8%D9%86%D9%83-%D8%A3%D9%88%D9%8A%D9%86%D9%88",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "disaster",
-      "sentiment": "negative",
-      "mood": "sad",
-      "impact": 80,
-      "timestamp": 1794127248389
-    },
-    {
-      "hash": "352e27881866",
-      "title": "مباشر: استهداف مركز الملك عبدالله المالي في الرياض حسب شهود في هجوم الحوثيين",
-      "summary": "مباشر: استهداف مركز الملك عبدالله المالي في الرياض حسب شهود في هجوم الحوثيين",
-      "link": "https://www.france24.com/ar/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261108-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%AA%D8%B6%D8%B1%D8%B1-%D9%85%D8%A8%D9%86%D9%89-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%87%D8%AC%D9%88%D9%85-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86",
-      "source": "France24 عربي",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794127245067
     }
   ]
 }
