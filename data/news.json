@@ -1,38 +1,115 @@
 {
-  "updated_at": "2026-11-14T08:32:10.874Z",
+  "updated_at": "2026-11-14T15:32:43.705Z",
   "total": 320,
   "new_count": 40,
   "ai_success": 0,
   "ai_fallback": 40,
   "global": {
-    "score": 46,
+    "score": 47,
     "totalArticles": 320,
     "categories": {
-      "politics": 239,
-      "culture": 6,
-      "crisis": 13,
       "war": 31,
-      "disaster": 2,
-      "positive": 17,
+      "politics": 238,
       "economy": 8,
-      "health": 3,
-      "sports": 1
+      "sports": 2,
+      "culture": 7,
+      "positive": 19,
+      "crisis": 10,
+      "disaster": 2,
+      "health": 3
     }
   },
   "countries": {
-    "US": {
-      "score": 26,
-      "articleCount": 18,
+    "GB": {
+      "score": 0,
+      "articleCount": 2,
       "categories": {
-        "politics": 11,
+        "war": 1,
+        "positive": 1
+      }
+    },
+    "RU": {
+      "score": 50,
+      "articleCount": 8,
+      "categories": {
+        "politics": 6,
+        "positive": 2
+      }
+    },
+    "UA": {
+      "score": 46,
+      "articleCount": 24,
+      "categories": {
+        "politics": 14,
+        "culture": 1,
+        "war": 3,
+        "positive": 6
+      }
+    },
+    "FR": {
+      "score": 35,
+      "articleCount": 10,
+      "categories": {
+        "politics": 6,
+        "crisis": 2,
+        "culture": 2
+      }
+    },
+    "TR": {
+      "score": 38,
+      "articleCount": 5,
+      "categories": {
+        "war": 2,
+        "positive": 2,
+        "politics": 1
+      }
+    },
+    "PH": {
+      "score": 63,
+      "articleCount": 1,
+      "categories": {
+        "economy": 1
+      }
+    },
+    "CN": {
+      "score": 50,
+      "articleCount": 7,
+      "categories": {
+        "politics": 6,
+        "war": 1
+      }
+    },
+    "US": {
+      "score": 33,
+      "articleCount": 17,
+      "categories": {
+        "politics": 10,
         "war": 4,
         "crisis": 1,
         "disaster": 1,
         "economy": 1
       }
     },
+    "PS": {
+      "score": 75,
+      "articleCount": 10,
+      "categories": {
+        "positive": 2,
+        "politics": 6,
+        "war": 1,
+        "health": 1
+      }
+    },
+    "EG": {
+      "score": 38,
+      "articleCount": 7,
+      "categories": {
+        "politics": 5,
+        "crisis": 2
+      }
+    },
     "DE": {
-      "score": 54,
+      "score": 52,
       "articleCount": 8,
       "categories": {
         "politics": 6,
@@ -40,12 +117,13 @@
         "sports": 1
       }
     },
-    "RU": {
-      "score": 50,
-      "articleCount": 7,
+    "IR": {
+      "score": 9,
+      "articleCount": 8,
       "categories": {
-        "politics": 5,
-        "positive": 2
+        "war": 3,
+        "disaster": 1,
+        "politics": 4
       }
     },
     "CA": {
@@ -69,23 +147,6 @@
         "politics": 1
       }
     },
-    "FR": {
-      "score": 42,
-      "articleCount": 9,
-      "categories": {
-        "politics": 6,
-        "crisis": 1,
-        "culture": 2
-      }
-    },
-    "CN": {
-      "score": 43,
-      "articleCount": 6,
-      "categories": {
-        "politics": 5,
-        "war": 1
-      }
-    },
     "SD": {
       "score": 50,
       "articleCount": 1,
@@ -107,24 +168,6 @@
         "politics": 2
       }
     },
-    "IR": {
-      "score": 22,
-      "articleCount": 9,
-      "categories": {
-        "disaster": 1,
-        "politics": 6,
-        "war": 2
-      }
-    },
-    "UA": {
-      "score": 59,
-      "articleCount": 19,
-      "categories": {
-        "politics": 11,
-        "positive": 6,
-        "war": 2
-      }
-    },
     "SY": {
       "score": 80,
       "articleCount": 3,
@@ -134,19 +177,11 @@
         "politics": 1
       }
     },
-    "EG": {
-      "score": 26,
-      "articleCount": 6,
-      "categories": {
-        "crisis": 2,
-        "politics": 4
-      }
-    },
     "IQ": {
       "score": 21,
-      "articleCount": 3,
+      "articleCount": 2,
       "categories": {
-        "politics": 2,
+        "politics": 1,
         "war": 1
       }
     },
@@ -167,10 +202,9 @@
     },
     "ES": {
       "score": 50,
-      "articleCount": 5,
+      "articleCount": 2,
       "categories": {
-        "politics": 3,
-        "crisis": 2
+        "politics": 2
       }
     },
     "AF": {
@@ -186,81 +220,529 @@
       "categories": {
         "politics": 4
       }
-    },
-    "TR": {
-      "score": 39,
-      "articleCount": 3,
-      "categories": {
-        "war": 1,
-        "positive": 1,
-        "politics": 1
-      }
-    },
-    "PS": {
-      "score": 50,
-      "articleCount": 10,
-      "categories": {
-        "politics": 6,
-        "positive": 1,
-        "war": 2,
-        "health": 1
-      }
-    },
-    "IL": {
-      "score": 50,
-      "articleCount": 5,
-      "categories": {
-        "politics": 4,
-        "war": 1
-      }
-    },
-    "PT": {
-      "score": 20,
-      "articleCount": 1,
-      "categories": {
-        "health": 1
-      }
-    },
-    "MX": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
-    "KR": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "SA": {
-      "score": 50,
-      "articleCount": 5,
-      "categories": {
-        "politics": 3,
-        "positive": 1,
-        "war": 1
-      }
-    },
-    "OM": {
-      "score": 0,
-      "articleCount": 2,
-      "categories": {
-        "war": 1,
-        "politics": 1
-      }
-    },
-    "LY": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
     }
   },
   "articles": [
+    {
+      "hash": "88bac08569fa",
+      "title": "‘Get Focused on London’: How Iran’s Agents Attacked European Targets",
+      "summary": "‘Get Focused on London’: How Iran’s Agents Attacked European Targets",
+      "link": "https://www.nytimes.com/2026/11/13/world/europe/iran-attacks-europe-britain.html",
+      "source": "NY Times",
+      "countryCode": "GB",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794670362705
+    },
+    {
+      "hash": "221311194e17",
+      "title": "A ‘Generational Clash’ Is Fueling Europe’s Protests",
+      "summary": "A ‘Generational Clash’ Is Fueling Europe’s Protests",
+      "link": "https://www.nytimes.com/2026/11/14/world/europe/student-protests-pensions-generations.html",
+      "source": "NY Times",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670358438
+    },
+    {
+      "hash": "9ce936b7c5c1",
+      "title": "‘Let them play’: Fans push back against Russia’s hockey ban",
+      "summary": "‘Let them play’: Fans push back against Russia’s hockey ban",
+      "link": "<![CDATA[https://rt-english.com/news/648803-let-them-play-russia-hockey/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670354548
+    },
+    {
+      "hash": "277bf5c42113",
+      "title": "OpenAI security chiefs discuss Ukraine military ties with Russian pranksters (VIDEO)",
+      "summary": "OpenAI security chiefs discuss Ukraine military ties with Russian pranksters (VIDEO)",
+      "link": "<![CDATA[https://rt-english.com/news/648832-russian-pranksters-openai-ukraine/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670349783
+    },
+    {
+      "hash": "e7708973b30c",
+      "title": "Moscow to host international human rights forum",
+      "summary": "Moscow to host international human rights forum",
+      "link": "<![CDATA[https://rt-english.com/news/648837-forum-moscow-human-rights/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670345468
+    },
+    {
+      "hash": "8c36d1a55f29",
+      "title": "Colau contrapone su propuesta para ampliar la cobertura de la sanidad pública con el modelo “debilitado” del PP en Andalucía",
+      "summary": "Colau contrapone su propuesta para ampliar la cobertura de la sanidad pública con el modelo “debilitado” del PP en Andalucía",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-11-14/colau-contrapone-su-propuesta-para-ampliar-la-cobertura-de-la-sanidad-publica-con-el-modelo-debilitado-del-pp-en-andalucia.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670341414
+    },
+    {
+      "hash": "e9aa7860cad7",
+      "title": "Feijóo reclama en Galicia el impulso para llegar a La Moncloa: “Sigo siendo el mismo”",
+      "summary": "Feijóo reclama en Galicia el impulso para llegar a La Moncloa: “Sigo siendo el mismo”",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-11-14/feijoo-reclama-en-galicia-el-impulso-para-llegar-a-la-moncloa-sigo-siendo-el-mismo.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670336627
+    },
+    {
+      "hash": "517b1d404a02",
+      "title": "Sánchez pide “el voto europeísta” para frenar a  Abascal",
+      "summary": "Sánchez pide “el voto europeísta” para frenar a  Abascal",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-11-14/sanchez-pide-el-voto-europeista-para-frenar-a-abascal.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670332354
+    },
+    {
+      "hash": "671b0e805017",
+      "title": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky affirme que les Etats-Unis ont évoqué des concessions territoriales en échange d’une adhésion à l’OTAN",
+      "summary": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky affirme que les Etats-Unis ont évoqué des concessions territoriales en échange d’une adhésion à l’OTAN",
+      "link": "https://www.lemonde.fr/international/live/2026/11/14/en-direct-guerre-en-ukraine-volodymyr-zelensky-affirme-que-les-etats-unis-ont-evoque-des-concessions-territoriales-en-echange-d-une-adhesion-a-l-otan_6808609_3210.html",
+      "source": "Le Monde",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670325055
+    },
+    {
+      "hash": "45ec3a7bccb0",
+      "title": "IA : comment Huawei est devenu le navire amiral de la Chine dans la bataille des puces",
+      "summary": "IA : comment Huawei est devenu le navire amiral de la Chine dans la bataille des puces",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/14/ia-comment-huawei-est-devenu-le-navire-amiral-de-la-chine-dans-la-bataille-des-puces_6810315_3234.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670321404
+    },
+    {
+      "hash": "ef9e8bc81b63",
+      "title": "Manifestations du 14 novembre : un samedi de mobilisation dans toute la France, contre la vie chère, pour la protection des enfants ou davantage de moyens pour l’éducation",
+      "summary": "Manifestations du 14 novembre : un samedi de mobilisation dans toute la France, contre la vie chère, pour la protection des enfants ou davantage de moyens pour l’éducation",
+      "link": "https://www.lemonde.fr/politique/article/2026/11/14/mobilisations-sociales-une-cinquantaine-de-corteges-attendus-partout-en-france-pour-cet-acte-v-sur-fond-de-revendications-diverses_6809818_823448.html",
+      "source": "Le Monde",
+      "countryCode": "FR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670317748
+    },
+    {
+      "hash": "bbc414b9180f",
+      "title": "Armed and ready to quack: German military launches rubber ducks with assault rifles",
+      "summary": "Armed and ready to quack: German military launches rubber ducks with assault rifles",
+      "link": "https://www.euronews.com/2026/11/14/armed-and-ready-to-quack-german-military-launches-rubber-ducks-with-assault-rifles",
+      "source": "Euronews English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670314196
+    },
+    {
+      "hash": "f8adfb39cd87",
+      "title": "Qatar and Turkey sign defence agreement for “unified position” facing external attacks",
+      "summary": "Qatar and Turkey sign defence agreement for “unified position” facing external attacks",
+      "link": "https://www.euronews.com/2026/11/14/qatar-and-turkey-sign-defence-agreement-for-unified-position-facing-external-attacks",
+      "source": "Euronews English",
+      "countryCode": "TR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794670310435
+    },
+    {
+      "hash": "b242752778bf",
+      "title": "Canada and the Philippines conclude talks on free trade deal, Mark Carney says",
+      "summary": "Canada and the Philippines conclude talks on free trade deal, Mark Carney says",
+      "link": "https://www.euronews.com/2026/11/14/canada-and-the-philippines-conclude-talks-on-free-trade-deal-mark-carney-says",
+      "source": "Euronews English",
+      "countryCode": "PH",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1794670306214
+    },
+    {
+      "hash": "74d27e3b35b4",
+      "title": "New facilities in Laos and Cambodia: Is China expanding its military presence in Southeast Asia?",
+      "summary": "New facilities in Laos and Cambodia: Is China expanding its military presence in Southeast Asia?",
+      "link": "https://www.dw.com/en/new-facilities-in-laos-and-cambodia-is-china-expanding-its-military-presence-in-southeast-asia/a-79944798?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "CN",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670302288
+    },
+    {
+      "hash": "b379e08085b4",
+      "title": "Ukraine: Zelenskyy says security deal could go to referendum",
+      "summary": "Ukraine: Zelenskyy says security deal could go to referendum",
+      "link": "https://www.dw.com/en/ukraine-zelenskyy-says-security-deal-could-go-to-referendum/a-79947535?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670297696
+    },
+    {
+      "hash": "8b37562f10b4",
+      "title": "Werner Holzer Prize awarded to Katja Gloger and DW&apos;s Jaafar Abdul Karim",
+      "summary": "Werner Holzer Prize awarded to Katja Gloger and DW&apos;s Jaafar Abdul Karim",
+      "link": "https://www.dw.com/en/werner-holzer-prize-awarded-to-katja-gloger-and-dw-s-jaafar-abdul-karim/a-79946916?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794670293624
+    },
+    {
+      "hash": "ebdec9d44a5c",
+      "title": "USA: All passengers survive after tanker hits docked river cruise ship in New Orleans",
+      "summary": "USA: All passengers survive after tanker hits docked river cruise ship in New Orleans",
+      "link": "https://www.france24.com/en/usa-all-passengers-survive-after-tanker-hits-docked-river-cruise-ship-in-new-orleans",
+      "source": "France24 English",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670287665
+    },
+    {
+      "hash": "4533df49d32b",
+      "title": "'I never imagined my father was a Nazi': Born in a German-run 'baby factory'",
+      "summary": "'I never imagined my father was a Nazi': Born in a German-run 'baby factory'",
+      "link": "https://www.france24.com/en/france/20261114-i-never-imagined-my-father-was-a-nazi-born-in-a-german-run-baby-factory",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670283776
+    },
+    {
+      "hash": "89854b4b4f9f",
+      "title": "DR Congo, Rwanda clash over Francophonie leadership as Macron seeks compromise",
+      "summary": "DR Congo, Rwanda clash over Francophonie leadership as Macron seeks compromise",
+      "link": "https://www.france24.com/en/africa/20261114-dr-congo-rwanda-clash-over-francophonie-leadership-as-macron-seeks-compromise",
+      "source": "France24 English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670280166
+    },
+    {
+      "hash": "9bc1a2a2a999",
+      "title": "Goalkeeper given 12-game ban for fatal collision with Tenerife striker",
+      "summary": "Goalkeeper given 12-game ban for fatal collision with Tenerife striker",
+      "link": "https://news.sky.com/story/goalkeeper-jesus-owono-given-12-game-ban-for-fatal-collision-with-tenerife-striker-jesus-de-miguel-13612126",
+      "source": "Sky News",
+      "countryCode": null,
+      "category": "sports",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1794670276699
+    },
+    {
+      "hash": "70d39f4c38d7",
+      "title": "Trump, Xi and Putin to hold unprecedented meeting, White House says",
+      "summary": "Trump, Xi and Putin to hold unprecedented meeting, White House says",
+      "link": "https://news.sky.com/story/trump-xi-and-putin-to-hold-unprecedented-meeting-white-house-says-13612124",
+      "source": "Sky News",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670273042
+    },
+    {
+      "hash": "e6b30ac71fdb",
+      "title": "US asked if Ukraine would give up parts of Donbas for NATO membership, Zelenskyy says",
+      "summary": "US asked if Ukraine would give up parts of Donbas for NATO membership, Zelenskyy says",
+      "link": "https://news.sky.com/story/us-asks-if-ukraine-would-give-up-parts-of-donbas-for-nato-membership-zelenskyy-says-13612188",
+      "source": "Sky News",
+      "countryCode": "UA",
+      "category": "culture",
+      "sentiment": "positive",
+      "mood": "joy",
+      "impact": 35,
+      "timestamp": 1794670267996
+    },
+    {
+      "hash": "f7862b8fd535",
+      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "summary": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670264441
+    },
+    {
+      "hash": "d07e3aee4813",
+      "title": "What we know about the ground stop and what to do if you're affected",
+      "summary": "What we know about the ground stop and what to do if you're affected",
+      "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670256727
+    },
+    {
+      "hash": "7b6a3cf9b728",
+      "title": "رودي غارسيا يفتح خزائن أسراره: قرار بالوغون ظننته مزحة... وكواليس تدريب رونالدو",
+      "summary": "رودي غارسيا يفتح خزائن أسراره: قرار بالوغون ظننته مزحة... وكواليس تدريب رونالدو",
+      "link": "https://aawsat.com/node/5341190",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670252661
+    },
+    {
+      "hash": "ab2c86ed3c80",
+      "title": "السعودية و17 دولة عربية وإسلامية تدين استهداف «مجمع ناصر الطبي» في غزة",
+      "summary": "السعودية و17 دولة عربية وإسلامية تدين استهداف «مجمع ناصر الطبي» في غزة",
+      "link": "https://aawsat.com/node/5341191",
+      "source": "الشرق الأوسط",
+      "countryCode": "PS",
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1794670240639
+    },
+    {
+      "hash": "2de516ee9dcc",
+      "title": "انطلاقة علي ماهر النارية مع «الفراعنة» تبهج المصريين",
+      "summary": "انطلاقة علي ماهر النارية مع «الفراعنة» تبهج المصريين",
+      "link": "https://aawsat.com/node/5341192",
+      "source": "الشرق الأوسط",
+      "countryCode": "EG",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670236365
+    },
+    {
+      "hash": "56ce1c5ab22a",
+      "title": "قطر وتركيا.. تحالف دفاعي بمعادلة &#8220;الحماية مقابل المال&#8221;  اتفاق يجمع بين القدرات والصناعات الدفاعية التركية، وإمكانات قطر المالية، وسط تساؤلات عن انعكاساتها على موازين القوى وعلاقات البلدين مع إسرائيل وإيران.",
+      "summary": "قطر وتركيا.. تحالف دفاعي بمعادلة &#8220;الحماية مقابل المال&#8221;  اتفاق يجمع بين القدرات والصناعات الدفاعية التركية، وإمكانات قطر المالية، وسط تساؤلات عن انعكاساتها على موازين القوى وعلاقات البلدين مع إسرائيل وإيران.",
+      "link": "https://alhurra.com/54712",
+      "source": "الحرة",
+      "countryCode": "TR",
+      "category": "positive",
+      "sentiment": "positive",
+      "mood": "hope",
+      "impact": 75,
+      "timestamp": 1794670232747
+    },
+    {
+      "hash": "8db2b2659d23",
+      "title": "وجهة غير متوقعة لدي بروين.. مفاوضات تهز سوق الانتقالات",
+      "summary": "وجهة غير متوقعة لدي بروين.. مفاوضات تهز سوق الانتقالات",
+      "link": "https://www.skynewsarabia.com/sport/1904784-%D9%88%D8%AC%D9%87%D8%A9-%D9%85%D8%AA%D9%88%D9%82%D8%B9%D8%A9-%D9%84%D8%AF%D9%8A-%D8%A8%D8%B1%D9%88%D9%8A%D9%86-%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D8%AA%D9%87%D8%B2-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1794670229122
+    },
+    {
+      "hash": "6dd41b6bcd57",
+      "title": "مشروع المقاتلة المستقبلية.. إيطاليا تؤيد انضمام ألمانيا",
+      "summary": "مشروع المقاتلة المستقبلية.. إيطاليا تؤيد انضمام ألمانيا",
+      "link": "https://www.skynewsarabia.com/world/1904791-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%AA%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%D9%8A%D8%A9-%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7-%D8%AA%D8%A4%D9%8A%D8%AF-%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85-%D8%A3%D9%84%D9%85%D8%A7%D9%86%D9%8A%D8%A7",
+      "source": "Sky News عربية",
+      "countryCode": "DE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670225370
+    },
+    {
+      "hash": "c8498f71a13c",
+      "title": "الطيران الأميركي يعود تدريجيا.. وتأخير الرحلات مستمر",
+      "summary": "الطيران الأميركي يعود تدريجيا.. وتأخير الرحلات مستمر",
+      "link": "https://www.skynewsarabia.com/world/1904787-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D9%8A%D8%B9%D9%88%D8%AF-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A%D8%A7-%D9%88%D8%AA%D8%A3%D8%AE%D9%8A%D8%B1-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA-%D9%85%D8%B3%D8%AA%D9%85%D8%B1",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670220127
+    },
+    {
+      "hash": "90bf7e6be62a",
+      "title": "فرنسا: احتجاجات جديدة بمطالب اجتماعية واعتراضات على قانون يسهل تبرير استخدام الشرطة للسلاح",
+      "summary": "فرنسا: احتجاجات جديدة بمطالب اجتماعية واعتراضات على قانون يسهل تبرير استخدام الشرطة للسلاح",
+      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261114-%D9%81%D8%B1%D9%86%D8%B3%D8%A7-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6%D8%A7%D8%AA-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%AA%D8%B3%D9%87%D9%8A%D9%84-%D8%AA%D8%A8%D8%B1%D9%8A%D8%B1-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%B3%D9%84%D8%A7%D8%AD",
+      "source": "France24 عربي",
+      "countryCode": "FR",
+      "category": "crisis",
+      "sentiment": "negative",
+      "mood": "anxious",
+      "impact": 70,
+      "timestamp": 1794670215992
+    },
+    {
+      "hash": "82dc536b3291",
+      "title": "الحرب في أوكرانيا: زيلينسكي يكشف عن اقتراح أمريكي بالتنازل عن إقليم دونباس مقابل الانضمام إلى الناتو",
+      "summary": "الحرب في أوكرانيا: زيلينسكي يكشف عن اقتراح أمريكي بالتنازل عن إقليم دونباس مقابل الانضمام إلى الناتو",
+      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261114-%D8%AD%D8%B1%D8%A8-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D8%B2%D9%8A%D9%84%D9%8A%D9%86%D8%B3%D9%83%D9%8A-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%AD-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D8%AA%D9%86%D8%A7%D8%B2%D9%84-%D8%A5%D9%82%D9%84%D9%8A%D9%85-%D8%AF%D9%88%D9%86%D8%A8%D8%A7%D8%B3-%D8%A7%D9%86%D8%B6%D9%85%D8%A7%D9%85-%D9%86%D8%A7%D8%AA%D9%88",
+      "source": "France24 عربي",
+      "countryCode": "UA",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794670212161
+    },
+    {
+      "hash": "51f3a354ea56",
+      "title": "التحقيقات تكشف أن مخطط تفجير\"بنك أوف أمريكا\" بباريس يمتد إلى الولايات المتحدة مرورا ببلجيكا",
+      "summary": "التحقيقات تكشف أن مخطط تفجير\"بنك أوف أمريكا\" بباريس يمتد إلى الولايات المتحدة مرورا ببلجيكا",
+      "link": "https://www.france24.com/ar/%D9%81%D8%B1%D9%86%D8%B3%D8%A7/20261114-%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%85%D8%AE%D8%B7%D8%B7-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A8%D9%86%D9%83-%D8%A3%D9%88%D9%81-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D8%A8%D9%84%D8%AC%D9%8A%D9%83%D8%A7",
+      "source": "France24 عربي",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670208606
+    },
+    {
+      "hash": "ba34912bd7c5",
+      "title": "عطل مايكروسوفت يكشف المستور .. هل وضع العالم كل بيضه الرقمي في سلة واحدة؟",
+      "summary": "عطل مايكروسوفت يكشف المستور .. هل وضع العالم كل بيضه الرقمي في سلة واحدة؟",
+      "link": "https://www.dw.com/ar/عطل-مايكروسوفت-يكشف-المستور-هل-وضع-العالم-كل-بيضه-الرقمي-في-سلة-واحدة؟/a-79947815?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670204190
+    },
+    {
+      "hash": "0eb567ba1a39",
+      "title": "صحف أوروبية: العواصم الأوروبية تناور لكسر التهميش الأمريكي في الملف الأوكراني",
+      "summary": "صحف أوروبية: العواصم الأوروبية تناور لكسر التهميش الأمريكي في الملف الأوكراني",
+      "link": "https://www.dw.com/ar/صحف-أوروبية-العواصم-الأوروبية-تناور-لكسر-التهميش-الأمريكي-في-الملف-الأوكراني/a-79940855?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670200416
+    },
+    {
+      "hash": "7d022c4e3862",
+      "title": "زيلينسكي يرفض الحياد ويكشف مقترحاً أمريكياً: التخلي عن دونباس مقابل عضوية الناتو",
+      "summary": "زيلينسكي يرفض الحياد ويكشف مقترحاً أمريكياً: التخلي عن دونباس مقابل عضوية الناتو",
+      "link": "https://www.dw.com/ar/زيلينسكي-يرفض-الحياد-ويكشف-مقترحاً-أمريكياً-التخلي-عن-دونباس-مقابل-عضوية-الناتو/a-79948386?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670196676
+    },
+    {
+      "hash": "5d27b68506aa",
+      "title": "\"غريب في قبري!\"",
+      "summary": "\"غريب في قبري!\"",
+      "link": "https://www.bbc.com/arabic/articles/crwy41p2vxvvo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794670192911
+    },
+    {
+      "hash": "758194a83505",
+      "title": "ترامب يدرس تعليق الضربات على إيران وسط ضغوط سعودية وتركية وتحركات عسكرية أمريكية جديدة",
+      "summary": "ترامب يدرس تعليق الضربات على إيران وسط ضغوط سعودية وتركية وتحركات عسكرية أمريكية جديدة",
+      "link": "https://www.bbc.com/arabic/articles/cwp9dznjmpllo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "IR",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794670189245
+    },
     {
       "hash": "ac0cc3bf178c",
       "title": "U.S. flights cleared to take off again after ground stop order caused thousands of delays and cancellations",
@@ -3900,526 +4382,6 @@
       "mood": "angry",
       "impact": 90,
       "timestamp": 1794508835967
-    },
-    {
-      "hash": "33dc8898c4f3",
-      "title": "El discurso de Pablo Motos y “¿cuál es mi cámara?”: los momentos destacados de Feijóo en ‘El hormiguero’",
-      "summary": "El discurso de Pablo Motos y “¿cuál es mi cámara?”: los momentos destacados de Feijóo en ‘El hormiguero’",
-      "link": "https://elpais.com/television/2026-11-11/el-discurso-de-pablo-motos-y-cual-es-mi-camara-los-momentos-destacados-de-feijoo-en-el-hormiguero.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479958364
-    },
-    {
-      "hash": "a650aec6883c",
-      "title": "¿Puede ganar el PSOE? Lo que dicen las encuestas",
-      "summary": "¿Puede ganar el PSOE? Lo que dicen las encuestas",
-      "link": "https://elpais.com/podcasts/2026-11-12/puede-ganar-el-psoe-lo-que-dicen-las-encuestas.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479950511
-    },
-    {
-      "hash": "cd89594f9337",
-      "title": "El mapa electoral: ¿Qué dicen las encuestas en cada provincia?",
-      "summary": "El mapa electoral: ¿Qué dicen las encuestas en cada provincia?",
-      "link": "https://elpais.com/espana/elecciones-generales/2026-11-12/el-mapa-electoral-los-escanos-en-juego-en-cada-provincia-segun-las-encuestas.html",
-      "source": "El País",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479946560
-    },
-    {
-      "hash": "cad66df8beac",
-      "title": "En Allemagne, l’économie va mieux qu’en France, mais l’envolée de la dette fait craindre une « crise budgétaire » d’envergure",
-      "summary": "En Allemagne, l’économie va mieux qu’en France, mais l’envolée de la dette fait craindre une « crise budgétaire » d’envergure",
-      "link": "https://www.lemonde.fr/economie/article/2026/11/12/en-allemagne-l-economie-va-mieux-qu-en-france-mais-l-envolee-de-la-dette-fait-craindre-une-crise-budgetaire-d-envergure_6809071_3234.html",
-      "source": "Le Monde",
-      "countryCode": "FR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479942139
-    },
-    {
-      "hash": "756b876e6a25",
-      "title": "EN DIRECT, présidentielle 2027 | Suivez le grand oral de huit candidats sur les services publics : Gabriel Attal se redit « favorable » à une primaire du centre et de la droite",
-      "summary": "EN DIRECT, présidentielle 2027 | Suivez le grand oral de huit candidats sur les services publics : Gabriel Attal se redit « favorable » à une primaire du centre et de la droite",
-      "link": "https://www.lemonde.fr/politique/live/2026/11/12/en-direct-presidentielle-2027-suivez-le-grand-oral-de-huit-candidats-sur-les-services-publics_6809070_823448.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479936454
-    },
-    {
-      "hash": "2a6b74921bb8",
-      "title": "Présidentielle 2027 : comment les influenceurs attisent les convoitises des équipes de campagne",
-      "summary": "Présidentielle 2027 : comment les influenceurs attisent les convoitises des équipes de campagne",
-      "link": "https://www.lemonde.fr/pixels/article/2026/11/12/presidentielle-2027-comment-les-influenceurs-attisent-les-convoitises-des-equipes-de-campagne_6809062_4408996.html",
-      "source": "Le Monde",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479929780
-    },
-    {
-      "hash": "b18388223d97",
-      "title": "Why are Northern Europeans snubbing EPSO and the EU institutions?",
-      "summary": "Why are Northern Europeans snubbing EPSO and the EU institutions?",
-      "link": "https://www.euronews.com/2026/11/12/why-are-northern-europeans-snubbing-epso-and-the-eu-institutions",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479925280
-    },
-    {
-      "hash": "44e0f37bfb53",
-      "title": "UK economy grows 0.7% in third quarter as AI demand lifts output",
-      "summary": "UK economy grows 0.7% in third quarter as AI demand lifts output",
-      "link": "https://www.euronews.com/2026/11/12/uk-economy-grows-07-in-third-quarter-as-ai-demand-lifts-output",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1794479905447
-    },
-    {
-      "hash": "1eedbf7921da",
-      "title": "Ranked: The world's 10 quietest cities to visit in 2027 – and all are in Europe",
-      "summary": "Ranked: The world's 10 quietest cities to visit in 2027 – and all are in Europe",
-      "link": "https://www.euronews.com/2026/11/12/ranked-the-worlds-10-quietest-cities-to-visit-in-2027-and-all-are-in-europe",
-      "source": "Euronews English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479901100
-    },
-    {
-      "hash": "e5012f3c51c3",
-      "title": "Bundeswehr study exposes widespread sexual harassment in German military",
-      "summary": "Bundeswehr study exposes widespread sexual harassment in German military",
-      "link": "https://www.dw.com/en/bundeswehr-study-exposes-widespread-sexual-harassment-in-german-military/a-79926359?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479893744
-    },
-    {
-      "hash": "6f1d1d4cafc6",
-      "title": "Australian teen found alive after six days in the bush",
-      "summary": "Australian teen found alive after six days in the bush",
-      "link": "https://www.dw.com/en/australian-teen-found-alive-after-six-days-in-the-bush/a-79926046?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "AU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479889650
-    },
-    {
-      "hash": "7ee730206f26",
-      "title": "Germany news: Police raid chapters of Gremium MC biker gang",
-      "summary": "Germany news: Police raid chapters of Gremium MC biker gang",
-      "link": "https://www.dw.com/en/germany-news-police-raid-chapters-of-gremium-mc-biker-gang/live-79926275?maca=en-rss-en-all-1573-rdf",
-      "source": "DW English",
-      "countryCode": "DE",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479881683
-    },
-    {
-      "hash": "d58712ec15e5",
-      "title": "Kylian Mbappé to miss Thursday's Nations League clash against Italy",
-      "summary": "Kylian Mbappé to miss Thursday's Nations League clash against Italy",
-      "link": "https://www.france24.com/en/tv-shows/sports/20261112-kylian-mbapp%C3%A9-miss-thursday-nations-league-clash-against-italy",
-      "source": "France24 English",
-      "countryCode": "IT",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479877183
-    },
-    {
-      "hash": "40fec31567e5",
-      "title": "Hybrid warfare: Hoax bomb alerts sent to schools in Italy, UK in latest disruption",
-      "summary": "Hybrid warfare: Hoax bomb alerts sent to schools in Italy, UK in latest disruption",
-      "link": "https://www.france24.com/en/video/20261112-hybrid-warfare-hoax-bomb-alerts-sent-to-schools-in-italy-uk-in-latest-disruption",
-      "source": "France24 English",
-      "countryCode": "IT",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794479872934
-    },
-    {
-      "hash": "50346c645fbb",
-      "title": "Two dead, several injured after New York building collapses",
-      "summary": "Two dead, several injured after New York building collapses",
-      "link": "https://www.france24.com/en/video/20261112-two-dead-several-injured-after-new-york-building-collapses",
-      "source": "France24 English",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794479868499
-    },
-    {
-      "hash": "194c38e5fc36",
-      "title": "Fiery clashes erupt in Spain as millions join general strike",
-      "summary": "Fiery clashes erupt in Spain as millions join general strike",
-      "link": "https://news.sky.com/story/fiery-clashes-erupt-in-spain-as-millions-join-general-strike-13611270",
-      "source": "Sky News",
-      "countryCode": "ES",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479857691
-    },
-    {
-      "hash": "68d2709ba52c",
-      "title": "Bomb alert at Calais train station affects Eurostar",
-      "summary": "Bomb alert at Calais train station affects Eurostar",
-      "link": "https://news.sky.com/story/bomb-alert-at-calais-train-station-affects-eurostar-13611403",
-      "source": "Sky News",
-      "countryCode": null,
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794479838746
-    },
-    {
-      "hash": "def6a5c30628",
-      "title": "Democrat Scott Colom makes history as Mississippi elects first black senator in 150 years",
-      "summary": "Democrat Scott Colom makes history as Mississippi elects first black senator in 150 years",
-      "link": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479834201
-    },
-    {
-      "hash": "62a9cd681935",
-      "title": "New York building collapse kills at least two, officials say",
-      "summary": "New York building collapse kills at least two, officials say",
-      "link": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": null,
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794479829871
-    },
-    {
-      "hash": "541d0ad719f0",
-      "title": "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
-      "summary": "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
-      "link": "https://www.bbc.co.uk/news/articles/cr1ewpd95d21o?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC World",
-      "countryCode": "RU",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479826066
-    },
-    {
-      "hash": "819ac5c45b77",
-      "title": "«سيكون شرفاً لي»... إيلون ماسك يبدي استعداده لتوظيف رئيس «إنفيديا»",
-      "summary": "«سيكون شرفاً لي»... إيلون ماسك يبدي استعداده لتوظيف رئيس «إنفيديا»",
-      "link": "https://aawsat.com/node/5340422",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 30,
-      "timestamp": 1794479821556
-    },
-    {
-      "hash": "905d6d1cad9e",
-      "title": "غوارديولا والحلم الأميركي... هل يخلف بوكتينيو في تدريب الولايات المتحدة؟",
-      "summary": "غوارديولا والحلم الأميركي... هل يخلف بوكتينيو في تدريب الولايات المتحدة؟",
-      "link": "https://aawsat.com/node/5340423",
-      "source": "الشرق الأوسط",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479817760
-    },
-    {
-      "hash": "98c868eabe68",
-      "title": "عقود «ناسداك 100» تتصدر خسائر «وول ستريت» بعد هبوط أسهم «إنفيديا»",
-      "summary": "عقود «ناسداك 100» تتصدر خسائر «وول ستريت» بعد هبوط أسهم «إنفيديا»",
-      "link": "https://aawsat.com/node/5340424",
-      "source": "الشرق الأوسط",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479813421
-    },
-    {
-      "hash": "223b3b55fe6f",
-      "title": "اقتصاد بريطانيا ينمو 0.7% في الربع الثالث مدفوعاً بزيادة الطلب على الذكاء الاصطناعي",
-      "summary": "اقتصاد بريطانيا ينمو 0.7% في الربع الثالث مدفوعاً بزيادة الطلب على الذكاء الاصطناعي",
-      "link": "https://arabic.euronews.com/2026/11/12/uk-economy-grows-07-in-third-quarter-as-ai-demand-lifts-output",
-      "source": "Euronews عربي",
-      "countryCode": "GB",
-      "category": "economy",
-      "sentiment": "slightly_positive",
-      "mood": "calm",
-      "impact": 45,
-      "timestamp": 1794479808290
-    },
-    {
-      "hash": "3acbdfeaad2d",
-      "title": "احتراق ناقلتي نفط في هرمز.. مسؤولون إيرانيون يتوعدون واشنطن وتل أبيب برد مدمر في حال تجدد المواجهة",
-      "summary": "احتراق ناقلتي نفط في هرمز.. مسؤولون إيرانيون يتوعدون واشنطن وتل أبيب برد مدمر في حال تجدد المواجهة",
-      "link": "https://arabic.euronews.com/2026/11/12/fire-two-oil-tankers-strait-of-hormuz-revolutionary-guard",
-      "source": "Euronews عربي",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479804155
-    },
-    {
-      "hash": "1ff7e74301fc",
-      "title": "مدن أوروبية تتصدر قائمة أهدأ 10 وجهات عالمية للزيارة في 2027",
-      "summary": "مدن أوروبية تتصدر قائمة أهدأ 10 وجهات عالمية للزيارة في 2027",
-      "link": "https://arabic.euronews.com/2026/11/12/ranked-the-worlds-10-quietest-cities-to-visit-in-2027-and-all-are-in-europe",
-      "source": "Euronews عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479799417
-    },
-    {
-      "hash": "24b8dd968efc",
-      "title": "مفاوضات أبوظبي.. اتفاق على الأسرى وتعثر في إنهاء حرب أوكرانيا  لم يكن الاتفاق على تبادل الأسرى كافيا لإخفاء حجم الخلافات التي بقيت قائمة بين روسيا وأوكرانيا في أبوظبي.",
-      "summary": "مفاوضات أبوظبي.. اتفاق على الأسرى وتعثر في إنهاء حرب أوكرانيا  لم يكن الاتفاق على تبادل الأسرى كافيا لإخفاء حجم الخلافات التي بقيت قائمة بين روسيا وأوكرانيا في أبوظبي.",
-      "link": "https://alhurra.com/54206",
-      "source": "الحرة",
-      "countryCode": "AE",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794479794589
-    },
-    {
-      "hash": "1c863959f4fe",
-      "title": "هجمات إيرانية خطيرة.. وأوروبا تستعد لرد موحد  هجمات على ثلاجات المتاجر إلى بنوك الدم ومرافق المياه تنقل المواجهة الأوروبية مع إيران إلى استهداف البنى التحتية المدنية.",
-      "summary": "هجمات إيرانية خطيرة.. وأوروبا تستعد لرد موحد  هجمات على ثلاجات المتاجر إلى بنوك الدم ومرافق المياه تنقل المواجهة الأوروبية مع إيران إلى استهداف البنى التحتية المدنية.",
-      "link": "https://alhurra.com/54213",
-      "source": "الحرة",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479790121
-    },
-    {
-      "hash": "85cec90ccf9e",
-      "title": "إسبانيا تشهد أول إضراب عام منذ 14 عاما بسبب الغلاء",
-      "summary": "إسبانيا تشهد أول إضراب عام منذ 14 عاما بسبب الغلاء",
-      "link": "https://www.skynewsarabia.com/business/1904320-%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7-%D8%AA%D8%B4%D9%87%D8%AF-%D8%A5%D8%B6%D8%B1%D8%A7%D8%A8-%D8%B9%D8%A7%D9%85-14-%D8%B9%D8%A7%D9%85%D8%A7-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A7%D9%84%D8%BA%D9%84%D8%A7%D8%A1",
-      "source": "Sky News عربية",
-      "countryCode": "ES",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794479786179
-    },
-    {
-      "hash": "ec2c76e15fee",
-      "title": "رغم هبوط الأرباح.. \"سيمنس\" تحقق عاما قياسيا",
-      "summary": "رغم هبوط الأرباح.. \"سيمنس\" تحقق عاما قياسيا",
-      "link": "https://www.skynewsarabia.com/business/1904325-%D8%B1%D8%BA%D9%85-%D9%87%D8%A8%D9%88%D8%B7-%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%A7%D8%AD-%D8%B3%D9%8A%D9%85%D9%86%D8%B3-%D8%AA%D8%AD%D9%82%D9%82-%D8%B9%D8%A7%D9%85%D8%A7-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A%D8%A7",
-      "source": "Sky News عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479781442
-    },
-    {
-      "hash": "f9173657eb5d",
-      "title": "رشوة 350 ألف دولار تقود وكيل وزارة الصناعة العراقية للسجن",
-      "summary": "رشوة 350 ألف دولار تقود وكيل وزارة الصناعة العراقية للسجن",
-      "link": "https://www.skynewsarabia.com/middle-east/1904338-%D8%B1%D8%B4%D9%88%D8%A9-350-%D8%A3%D9%84%D9%81-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%AA%D9%82%D9%88%D8%AF-%D9%88%D9%83%D9%8A%D9%84-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%84%D9%84%D8%B3%D8%AC%D9%86",
-      "source": "Sky News عربية",
-      "countryCode": "IQ",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479776979
-    },
-    {
-      "hash": "0563329b52b6",
-      "title": "إضراب عام يشل إسبانيا.. غلاء المعيشة يشعل غضب الشارع قبل الانتخابات",
-      "summary": "إضراب عام يشل إسبانيا.. غلاء المعيشة يشعل غضب الشارع قبل الانتخابات",
-      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261112-%D8%A5%D8%B6%D8%B1%D8%A7%D8%A8-%D8%B9%D8%A7%D9%85-%D9%8A%D8%B4%D9%84-%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7-%D8%BA%D9%84%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%B9%D9%8A%D8%B4%D8%A9-%D9%8A%D8%B4%D8%B9%D9%84-%D8%BA%D8%B6%D8%A8-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%B9-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA",
-      "source": "France24 عربي",
-      "countryCode": "ES",
-      "category": "crisis",
-      "sentiment": "negative",
-      "mood": "anxious",
-      "impact": 70,
-      "timestamp": 1794479771947
-    },
-    {
-      "hash": "756da87804b0",
-      "title": "\"توأم نتنياهو\" في طهران يشعل الجدل",
-      "summary": "\"توأم نتنياهو\" في طهران يشعل الجدل",
-      "link": "https://www.france24.com/ar/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC/%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/20261112-%D8%AA%D9%88%D8%A3%D9%85-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%81%D9%8A-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D9%8A%D8%B4%D8%B9%D9%84-%D8%A7%D9%84%D8%AC%D8%AF%D9%84",
-      "source": "France24 عربي",
-      "countryCode": "IR",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479768014
-    },
-    {
-      "hash": "58a67e71ae99",
-      "title": "ويتكوف وكوشنر في موسكو للقاء بوتين على وقع تبادل الهجمات بين روسيا وأوكرانيا",
-      "summary": "ويتكوف وكوشنر في موسكو للقاء بوتين على وقع تبادل الهجمات بين روسيا وأوكرانيا",
-      "link": "https://www.france24.com/ar/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/20261112-%D8%A7%D9%84%D9%85%D8%A8%D8%B9%D9%88%D8%AB%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A7%D9%86-%D9%88%D9%8A%D8%AA%D9%83%D9%88%D9%81-%D9%83%D9%88%D8%B4%D9%86%D8%B1-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D9%86%D8%B2%D8%A7%D8%B9-%D9%87%D8%AC%D9%85%D8%A7%D8%AA",
-      "source": "France24 عربي",
-      "countryCode": "UA",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479763667
-    },
-    {
-      "hash": "abbaab666c6a",
-      "title": "أمريكا تنسحب من مونديال قطر للناشئين.. ما الأسباب؟",
-      "summary": "أمريكا تنسحب من مونديال قطر للناشئين.. ما الأسباب؟",
-      "link": "https://www.dw.com/ar/أمريكا-تنسحب-من-مونديال-قطر-للناشئين-ما-الأسباب؟/live-79926107?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": "US",
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479756589
-    },
-    {
-      "hash": "8368eb53b674",
-      "title": "سحب الحماية ليس نهاية المطاف.. كيف يواجه السوريون قرارات الترحيل؟",
-      "summary": "سحب الحماية ليس نهاية المطاف.. كيف يواجه السوريون قرارات الترحيل؟",
-      "link": "https://www.dw.com/ar/سحب-الحماية-ليس-نهاية-المطاف-كيف-يواجه-السوريون-قرارات-الترحيل؟/a-79926174?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479739259
-    },
-    {
-      "hash": "81964e934576",
-      "title": "\"الجوع الخفي\" ... نقص العناصر الغذائية الحيوية آفة موجودة حتى في الدول الصناعية والغنية",
-      "summary": "\"الجوع الخفي\" ... نقص العناصر الغذائية الحيوية آفة موجودة حتى في الدول الصناعية والغنية",
-      "link": "https://www.dw.com/ar/الجوع-الخفي-نقص-العناصر-الغذائية-الحيوية-آفة-موجودة-حتى-في-الدول-الصناعية-والغنية/a-79873809?maca=ara-rss-ar-all-1125-rdf",
-      "source": "DW عربية",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479733958
-    },
-    {
-      "hash": "ca34d617446b",
-      "title": "مقتل ستة أشخاص في غارة إسرائيلية استهدفت مستشفى ناصر جنوبي قطاع غزة",
-      "summary": "مقتل ستة أشخاص في غارة إسرائيلية استهدفت مستشفى ناصر جنوبي قطاع غزة",
-      "link": "https://www.bbc.com/arabic/articles/c6wy9j09zp0wo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "PS",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794479729614
-    },
-    {
-      "hash": "eda4eba3b6c5",
-      "title": "حين تخذلنا التكنولوجيا.. هل تصبح الحياة في خطر؟",
-      "summary": "حين تخذلنا التكنولوجيا.. هل تصبح الحياة في خطر؟",
-      "link": "https://www.bbc.com/arabic/articles/cr5ynyq2e71do?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794479725083
-    },
-    {
-      "hash": "7dbb98d87ed8",
-      "title": "السعودية تعلن اعتراض مُسيرة في الرياض، وسقوط شظايا صاروخين باليستيين أطلقهما الحوثيون باتجاه منطقة مكة المكرمة",
-      "summary": "السعودية تعلن اعتراض مُسيرة في الرياض، وسقوط شظايا صاروخين باليستيين أطلقهما الحوثيون باتجاه منطقة مكة المكرمة",
-      "link": "https://www.bbc.com/arabic/articles/crgj3vw6jq4xo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "SA",
-      "category": "war",
-      "sentiment": "very_negative",
-      "mood": "angry",
-      "impact": 90,
-      "timestamp": 1794479719931
     }
   ]
 }
