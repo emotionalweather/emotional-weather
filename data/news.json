@@ -1,40 +1,145 @@
 {
-  "updated_at": "2026-11-15T15:16:47.982Z",
-  "total": 320,
+  "updated_at": "2026-11-15T20:46:35.773Z",
+  "total": 358,
   "new_count": 40,
   "ai_success": 0,
   "ai_fallback": 40,
   "global": {
     "score": 46,
-    "totalArticles": 320,
+    "totalArticles": 358,
     "categories": {
-      "politics": 231,
+      "politics": 267,
+      "war": 34,
+      "economy": 12,
       "health": 4,
-      "economy": 11,
       "crisis": 13,
-      "positive": 12,
-      "war": 32,
+      "positive": 11,
       "culture": 9,
       "disaster": 4,
       "sports": 4
     }
   },
   "countries": {
-    "UA": {
-      "score": 35,
-      "articleCount": 21,
+    "IL": {
+      "score": 25,
+      "articleCount": 7,
       "categories": {
-        "politics": 11,
+        "politics": 5,
+        "war": 2
+      }
+    },
+    "RU": {
+      "score": 50,
+      "articleCount": 8,
+      "categories": {
+        "politics": 8
+      }
+    },
+    "GB": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
+        "war": 1
+      }
+    },
+    "US": {
+      "score": 50,
+      "articleCount": 15,
+      "categories": {
+        "politics": 10,
+        "war": 2,
+        "crisis": 1,
+        "disaster": 1,
+        "economy": 1
+      }
+    },
+    "EE": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 3
+      }
+    },
+    "CZ": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "UA": {
+      "score": 41,
+      "articleCount": 22,
+      "categories": {
+        "politics": 12,
         "war": 4,
         "culture": 2,
         "positive": 4
       }
     },
-    "EE": {
+    "YE": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "IQ": {
+      "score": 50,
+      "articleCount": 6,
+      "categories": {
+        "politics": 4,
+        "economy": 1,
+        "war": 1
+      }
+    },
+    "TR": {
+      "score": 63,
+      "articleCount": 4,
+      "categories": {
+        "economy": 1,
+        "war": 2,
+        "positive": 1
+      }
+    },
+    "IR": {
+      "score": 29,
+      "articleCount": 10,
+      "categories": {
+        "politics": 6,
+        "war": 3,
+        "disaster": 1
+      }
+    },
+    "PT": {
+      "score": 50,
+      "articleCount": 3,
+      "categories": {
+        "politics": 2,
+        "crisis": 1
+      }
+    },
+    "MA": {
       "score": 50,
       "articleCount": 1,
       "categories": {
         "politics": 1
+      }
+    },
+    "SD": {
+      "score": 50,
+      "articleCount": 2,
+      "categories": {
+        "politics": 2
+      }
+    },
+    "SA": {
+      "score": 18,
+      "articleCount": 3,
+      "categories": {
+        "politics": 1,
+        "war": 2
       }
     },
     "CN": {
@@ -42,14 +147,6 @@
       "articleCount": 7,
       "categories": {
         "politics": 7
-      }
-    },
-    "IL": {
-      "score": 36,
-      "articleCount": 5,
-      "categories": {
-        "politics": 4,
-        "war": 1
       }
     },
     "EG": {
@@ -91,32 +188,6 @@
         "politics": 3
       }
     },
-    "PT": {
-      "score": 43,
-      "articleCount": 2,
-      "categories": {
-        "politics": 1,
-        "crisis": 1
-      }
-    },
-    "IR": {
-      "score": 18,
-      "articleCount": 9,
-      "categories": {
-        "war": 3,
-        "politics": 5,
-        "disaster": 1
-      }
-    },
-    "IQ": {
-      "score": 52,
-      "articleCount": 5,
-      "categories": {
-        "politics": 3,
-        "economy": 1,
-        "war": 1
-      }
-    },
     "BR": {
       "score": 37,
       "articleCount": 2,
@@ -126,7 +197,7 @@
       }
     },
     "DE": {
-      "score": 63,
+      "score": 64,
       "articleCount": 10,
       "categories": {
         "culture": 1,
@@ -148,15 +219,8 @@
         "politics": 1
       }
     },
-    "SA": {
-      "score": 0,
-      "articleCount": 2,
-      "categories": {
-        "war": 2
-      }
-    },
     "FR": {
-      "score": 41,
+      "score": 50,
       "articleCount": 11,
       "categories": {
         "politics": 8,
@@ -171,7 +235,7 @@
       }
     },
     "PS": {
-      "score": 48,
+      "score": 50,
       "articleCount": 8,
       "categories": {
         "politics": 5,
@@ -203,7 +267,7 @@
       }
     },
     "PH": {
-      "score": 55,
+      "score": 50,
       "articleCount": 2,
       "categories": {
         "politics": 1,
@@ -217,72 +281,529 @@
         "politics": 3,
         "positive": 1
       }
-    },
-    "CL": {
-      "score": 20,
-      "articleCount": 1,
-      "categories": {
-        "crisis": 1
-      }
-    },
-    "BG": {
-      "score": 50,
-      "articleCount": 1,
-      "categories": {
-        "politics": 1
-      }
-    },
-    "PE": {
-      "score": 50,
-      "articleCount": 2,
-      "categories": {
-        "politics": 2
-      }
-    },
-    "SY": {
-      "score": 0,
-      "articleCount": 3,
-      "categories": {
-        "war": 1,
-        "culture": 1,
-        "positive": 1
-      }
-    },
-    "RU": {
-      "score": 50,
-      "articleCount": 6,
-      "categories": {
-        "politics": 6
-      }
-    },
-    "US": {
-      "score": 50,
-      "articleCount": 13,
-      "categories": {
-        "politics": 8,
-        "war": 2,
-        "crisis": 1,
-        "disaster": 1,
-        "economy": 1
-      }
-    },
-    "GB": {
-      "score": 0,
-      "articleCount": 1,
-      "categories": {
-        "war": 1
-      }
-    },
-    "TR": {
-      "score": 38,
-      "articleCount": 4,
-      "categories": {
-        "war": 2,
-        "positive": 2
-      }
     }
   },
   "articles": [
+    {
+      "hash": "d1affb1e7706",
+      "title": "Israel Kidnapped Iranian Generals in Hunt for Ron Arad",
+      "summary": "Israel Kidnapped Iranian Generals in Hunt for Ron Arad",
+      "link": "https://www.nytimes.com/2026/11/15/world/europe/ron-arad-missing-israel-iran-asgari-hunt.html",
+      "source": "NY Times",
+      "countryCode": "IL",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775594771
+    },
+    {
+      "hash": "da8baf7e9b1e",
+      "title": "UK must be ready to strike Russian Arctic – ex-PM",
+      "summary": "UK must be ready to strike Russian Arctic – ex-PM",
+      "link": "<![CDATA[https://rt-english.com/news/648865-uk-ready-attack-russia-arctic/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775591697
+    },
+    {
+      "hash": "36f6ee19113f",
+      "title": "Boris Johnson’s vodka ‘punishment’ claim gets a sobering response from Moscow",
+      "summary": "Boris Johnson’s vodka ‘punishment’ claim gets a sobering response from Moscow",
+      "link": "<![CDATA[https://rt-english.com/news/648862-boris-johnson-lavrov-vodka/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": "RU",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775587447
+    },
+    {
+      "hash": "66649373963d",
+      "title": "NATO cancels 2027 leaders’ summit",
+      "summary": "NATO cancels 2027 leaders’ summit",
+      "link": "<![CDATA[https://rt-english.com/news/648866-nato-cancels-leaders-summit/?utm_source=rss&utm_medium=rss&utm_campaign=RSS]]>",
+      "source": "RT",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775585151
+    },
+    {
+      "hash": "6babe5585bba",
+      "title": "Feijóo hará campaña en Guipuzkoa tras la agresión a jóvenes de Nuevas Generaciones en Hernani",
+      "summary": "Feijóo hará campaña en Guipuzkoa tras la agresión a jóvenes de Nuevas Generaciones en Hernani",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-11-15/feijoo-hara-campana-en-guipuzcoa-tras-la-agresion-a-jovenes-de-nuevas-generaciones-en-hernani.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775576419
+    },
+    {
+      "hash": "55bbcc1bb118",
+      "title": "Claves | De un nuevo impuesto a los grandes empresarios a la “unión de la amistad”: el programa del PSOE para el 29-N",
+      "summary": "Claves | De un nuevo impuesto a los grandes empresarios a la “unión de la amistad”: el programa del PSOE para el 29-N",
+      "link": "https://elpais.com/espana/elecciones-generales/2026-11-15/claves-de-un-nuevo-impuesto-a-los-grandes-empresarios-a-la-union-de-la-amistad-el-programa-del-psoe-para-el-29-n.html",
+      "source": "El País",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775574263
+    },
+    {
+      "hash": "f117825b1cac",
+      "title": "Au Cambodge, qui organise le sommet de l’Organisation internationale de la francophonie, le long déclin de la langue française",
+      "summary": "Au Cambodge, qui organise le sommet de l’Organisation internationale de la francophonie, le long déclin de la langue française",
+      "link": "https://www.lemonde.fr/international/article/2026/11/15/au-cambodge-qui-organise-le-sommet-de-l-organisation-internationale-de-la-francophonie-le-long-declin-de-la-langue-francaise_6811037_3210.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775571111
+    },
+    {
+      "hash": "8ef13005a85b",
+      "title": "Elections législatives : le chantier sans cesse repoussé du redécoupage électoral",
+      "summary": "Elections législatives : le chantier sans cesse repoussé du redécoupage électoral",
+      "link": "https://www.lemonde.fr/politique/article/2026/11/15/elections-legislatives-le-chantier-sans-cesse-repousse-du-redecoupage-electoral_6811034_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794775568721
+    },
+    {
+      "hash": "a79e18fd979c",
+      "title": "« Fractures françaises » : un paysage politique clivé, dans lequel l’élection présidentielle n’est plus vue comme une solution",
+      "summary": "« Fractures françaises » : un paysage politique clivé, dans lequel l’élection présidentielle n’est plus vue comme une solution",
+      "link": "https://www.lemonde.fr/politique/article/2026/11/15/fractures-francaises-un-paysage-politique-clive-dans-lequel-l-election-presidentielle-n-est-plus-vue-comme-une-solution_6811038_823448.html",
+      "source": "Le Monde",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775566545
+    },
+    {
+      "hash": "1b706d7f2075",
+      "title": "UK: London's Santa School trains Father Christmas performers for 2026",
+      "summary": "UK: London's Santa School trains Father Christmas performers for 2026",
+      "link": "https://www.euronews.com/video/2026/11/15/uk-londons-santa-school-trains-father-christmas-performers-for-2026",
+      "source": "Euronews English",
+      "countryCode": "GB",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775564420
+    },
+    {
+      "hash": "2a089f70c2ef",
+      "title": "Hundreds of thousands in Prague protest Czech government's public media funding plans",
+      "summary": "Hundreds of thousands in Prague protest Czech government's public media funding plans",
+      "link": "https://www.euronews.com/2026/11/15/hundreds-of-thousands-in-prague-protest-czech-governments-public-media-funding-plans",
+      "source": "Euronews English",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794775557391
+    },
+    {
+      "hash": "ba7b1a9bbbe3",
+      "title": "19 slow worms mistaken for vipers rescued from water meter chamber",
+      "summary": "19 slow worms mistaken for vipers rescued from water meter chamber",
+      "link": "https://www.euronews.com/2026/11/15/19-slow-worms-mistaken-for-vipers-rescued-from-water-meter-chamber",
+      "source": "Euronews English",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775555312
+    },
+    {
+      "hash": "69492e4c4eee",
+      "title": "Estonia closes border to Russia after suspected drone factory arson",
+      "summary": "Estonia closes border to Russia after suspected drone factory arson",
+      "link": "https://www.dw.com/en/estonia-closes-border-to-russia-after-suspected-drone-factory-arson/a-79953115?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "EE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775553127
+    },
+    {
+      "hash": "4d2f7756f7f8",
+      "title": "Czechia: Scores protest against public media reform",
+      "summary": "Czechia: Scores protest against public media reform",
+      "link": "https://www.dw.com/en/czechia-scores-protest-against-public-media-reform/a-79953057?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "CZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775550845
+    },
+    {
+      "hash": "c395ef8bbf26",
+      "title": "Zelenskyy urges removal of Starshield limits on Ukraine",
+      "summary": "Zelenskyy urges removal of Starshield limits on Ukraine",
+      "link": "https://www.dw.com/en/zelenskyy-urges-removal-of-starshield-limits-on-ukraine/a-79953300?maca=en-rss-en-all-1573-rdf",
+      "source": "DW English",
+      "countryCode": "UA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775548691
+    },
+    {
+      "hash": "7b922f6641bb",
+      "title": "Estonia to close Russian border crossings after 'sabotage' attempt at drone factory",
+      "summary": "Estonia to close Russian border crossings after 'sabotage' attempt at drone factory",
+      "link": "https://www.france24.com/en/europe/20261115-estonia-to-close-russian-border-crossings-after-sabotage-attempt-at-drone-factory",
+      "source": "France24 English",
+      "countryCode": "EE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775546744
+    },
+    {
+      "hash": "fd8f479d1ab1",
+      "title": "Pragues's fight for public TV - Why Renowned Presenter Will Leave Czech TV Over Reforms",
+      "summary": "Pragues's fight for public TV - Why Renowned Presenter Will Leave Czech TV Over Reforms",
+      "link": "https://www.france24.com/en/tv-shows/spotlight/20261115-pragues-s-fight-for-public-tv-why-renowned-presenter-will-leave-czech-tv-over-reforms",
+      "source": "France24 English",
+      "countryCode": "CZ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775544607
+    },
+    {
+      "hash": "f98b33cf61f4",
+      "title": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+      "summary": "Yemen's Houthis advance on Aden as government forces retreat to defend their capital",
+      "link": "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say",
+      "source": "France24 English",
+      "countryCode": "YE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794775542284
+    },
+    {
+      "hash": "55250ef59cb5",
+      "title": "Company caught up in Nvidia controversy launches internal investigation",
+      "summary": "Company caught up in Nvidia controversy launches internal investigation",
+      "link": "https://news.sky.com/story/company-caught-up-in-nvidia-controversy-launches-internal-investigation-13612539",
+      "source": "Sky News",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775539973
+    },
+    {
+      "hash": "28a9bc986b79",
+      "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "summary": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "link": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC World",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775537777
+    },
+    {
+      "hash": "35a661006366",
+      "title": "الهزاع والحماد لـ«الشرق الأوسط»: لا لرحيل دونيس",
+      "summary": "الهزاع والحماد لـ«الشرق الأوسط»: لا لرحيل دونيس",
+      "link": "https://aawsat.com/node/5341661",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775535607
+    },
+    {
+      "hash": "3db696c070f2",
+      "title": "تبون يعلن المواجهة الشاملة ضد ثلاثي الإرهاب والمخدرات والفساد",
+      "summary": "تبون يعلن المواجهة الشاملة ضد ثلاثي الإرهاب والمخدرات والفساد",
+      "link": "https://aawsat.com/node/5341662",
+      "source": "الشرق الأوسط",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775533129
+    },
+    {
+      "hash": "ad8eb0fff6b1",
+      "title": "أستراليا وكندا وإيطاليا وبريطانيا تحث إسرائيل على إدخال المساعدات لغزة",
+      "summary": "أستراليا وكندا وإيطاليا وبريطانيا تحث إسرائيل على إدخال المساعدات لغزة",
+      "link": "https://aawsat.com/node/5341663",
+      "source": "الشرق الأوسط",
+      "countryCode": "GB",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775530828
+    },
+    {
+      "hash": "7214263ceac6",
+      "title": "بعد شلل حركة الطيران في أميركا.. ترامب يفتح النار على إدارة بايدن ويحمّلها المسؤولية",
+      "summary": "بعد شلل حركة الطيران في أميركا.. ترامب يفتح النار على إدارة بايدن ويحمّلها المسؤولية",
+      "link": "https://arabic.euronews.com/2026/11/15/trump-blames-the-biden-administration-for-the-deterioration-of-air-traffic-control-calls",
+      "source": "Euronews عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775528490
+    },
+    {
+      "hash": "b0c41d1da96b",
+      "title": "العراق.. كتائب حزب الله تنفي اتهامات تهريب النفط: نتعرّض للابتزاز والزيدي نقض عهده",
+      "summary": "العراق.. كتائب حزب الله تنفي اتهامات تهريب النفط: نتعرّض للابتزاز والزيدي نقض عهده",
+      "link": "https://arabic.euronews.com/2026/11/15/iraqs-kataib-hezbollah-denies-oil-smuggling-allegations-al-zaidi-broke-his-pledge-and",
+      "source": "Euronews عربي",
+      "countryCode": "IQ",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775526285
+    },
+    {
+      "hash": "8358217ee4a1",
+      "title": "من \"تلغرام\" إلى تصوير مدخل قاعدة عسكرية.. توجيه اتهام ضدّ مواطن من شمال إسرائيل بالتجسّس لصالح إيران",
+      "summary": "من \"تلغرام\" إلى تصوير مدخل قاعدة عسكرية.. توجيه اتهام ضدّ مواطن من شمال إسرائيل بالتجسّس لصالح إيران",
+      "link": "https://arabic.euronews.com/2026/11/15/from-telegram-to-filming-the-entrance-to-a-military-base-northern-israel-resident-charged",
+      "source": "Euronews عربي",
+      "countryCode": "IL",
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794775520343
+    },
+    {
+      "hash": "b3c6850022bf",
+      "title": "نجل أردوغان في لبنان.. لماذا الآن؟  زيارة بلال أردوغان إلى لبنان تفتح باب التكهنات بشأن مساعي تركيا لتعزيز حضورها السياسي والاقتصادي والثقافي.",
+      "summary": "نجل أردوغان في لبنان.. لماذا الآن؟  زيارة بلال أردوغان إلى لبنان تفتح باب التكهنات بشأن مساعي تركيا لتعزيز حضورها السياسي والاقتصادي والثقافي.",
+      "link": "https://alhurra.com/54773",
+      "source": "الحرة",
+      "countryCode": "TR",
+      "category": "economy",
+      "sentiment": "slightly_positive",
+      "mood": "calm",
+      "impact": 45,
+      "timestamp": 1794775518160
+    },
+    {
+      "hash": "640ed0548247",
+      "title": "ماذا وراء أطول توقف للرحلات الجوية في أميركا منذ هجمات 11 سبتمبر؟  تعافٍ تدريجي لحركة الطيران في الولايات المتحدة بعد توقف الرحلات على مستوى البلاد بسبب خلل وقع خلال أعمال صيانة اعتيادية، وسط توقعات باستمرار الاضطرابات وتأخر عودة شركات الطيران إلى جداول تشغيلها الطبيعية حتى وقت متأخر من يوم الأحد.",
+      "summary": "ماذا وراء أطول توقف للرحلات الجوية في أميركا منذ هجمات 11 سبتمبر؟  تعافٍ تدريجي لحركة الطيران في الولايات المتحدة بعد توقف الرحلات على مستوى البلاد بسبب خلل وقع خلال أعمال صيانة اعتيادية، وسط توقعات باستمرار الاضطرابات وتأخر عودة شركات الطيران إلى جداول تشغيلها الطبيعية حتى وقت متأخر من يوم الأحد.",
+      "link": "https://alhurra.com/54880",
+      "source": "الحرة",
+      "countryCode": "US",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775515743
+    },
+    {
+      "hash": "e07e37fd640e",
+      "title": "الزيدي: الشعب سيواجه مهربي النفط إذا عجزت القوات",
+      "summary": "الزيدي: الشعب سيواجه مهربي النفط إذا عجزت القوات",
+      "link": "https://www.skynewsarabia.com/middle-east/1904920-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8-%D8%B3%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D9%85%D9%87%D8%B1%D8%A8%D9%8A-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%B9%D8%AC%D8%B2%D8%AA-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775513179
+    },
+    {
+      "hash": "e3b59298ce30",
+      "title": "\"جزيرة القمامة\".. ترامب يدافع عن مشروع ملعب غولف",
+      "summary": "\"جزيرة القمامة\".. ترامب يدافع عن مشروع ملعب غولف",
+      "link": "https://www.skynewsarabia.com/world/1904918-%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D9%85%D8%A7%D9%85%D8%A9-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%AF%D8%A7%D9%81%D8%B9-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%84%D8%B9%D8%A8-%D8%BA%D9%88%D9%84%D9%81",
+      "source": "Sky News عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775511018
+    },
+    {
+      "hash": "fa89039d1bc7",
+      "title": "مولين: المسيرات أكبر مخاوفي ونتلقى تهديدات \"يومية\" من إيران",
+      "summary": "مولين: المسيرات أكبر مخاوفي ونتلقى تهديدات \"يومية\" من إيران",
+      "link": "https://www.skynewsarabia.com/world/1904923-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%AE%D8%A7%D9%88%D9%81%D9%8A",
+      "source": "Sky News عربية",
+      "countryCode": "IR",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775508383
+    },
+    {
+      "hash": "24f589bddb80",
+      "title": "رونالدو \"جونيور\" يسجل ظهوره الأول مع منتخب البرتغال تحت 17 عاما بعد اعتزال والده دوليا",
+      "summary": "رونالدو \"جونيور\" يسجل ظهوره الأول مع منتخب البرتغال تحت 17 عاما بعد اعتزال والده دوليا",
+      "link": "https://www.france24.com/ar/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/20261115-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D8%AC%D9%88%D9%86%D9%8A%D9%88%D8%B1-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D8%A7%D9%84%D8%A8%D8%B1%D8%AA%D8%BA%D8%A7%D9%84-%D8%A7%D8%B9%D8%AA%D8%B2%D8%A7%D9%84-%D8%AF%D9%88%D9%84%D9%8A%D8%A7",
+      "source": "France24 عربي",
+      "countryCode": "PT",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775506098
+    },
+    {
+      "hash": "9b4fef25d0e8",
+      "title": "مراسلون في العمق.. بعد كشف الحقيقة..من يتحمل مسؤولية هجوم دوما الكيميائي؟",
+      "summary": "مراسلون في العمق.. بعد كشف الحقيقة..من يتحمل مسؤولية هجوم دوما الكيميائي؟",
+      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261115-%D9%85%D8%B1%D8%A7%D8%B3%D9%84%D9%88%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82-%D8%A8%D8%B9%D8%AF-%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D9%85%D9%86-%D9%8A%D8%AA%D8%AD%D9%85%D9%84-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D9%87%D8%AC%D9%88%D9%85-%D8%AF%D9%88%D9%85%D8%A7-%D8%A7%D9%84%D9%83%D9%8A%D9%85%D9%8A%D8%A7%D8%A6%D9%8A",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "war",
+      "sentiment": "very_negative",
+      "mood": "angry",
+      "impact": 90,
+      "timestamp": 1794775503620
+    },
+    {
+      "hash": "f119ffe1d521",
+      "title": "ما أهمية تولي ليبرمان رئاسة لجنة الدفاع والخارجية في الكنيسيت؟",
+      "summary": "ما أهمية تولي ليبرمان رئاسة لجنة الدفاع والخارجية في الكنيسيت؟",
+      "link": "https://www.france24.com/ar/%D9%81%D9%8A%D8%AF%D9%8A%D9%88/20261115-%D9%85%D8%A7-%D8%A3%D9%87%D9%85%D9%8A%D8%A9-%D8%AA%D9%88%D9%84%D9%8A-%D9%84%D9%8A%D8%A8%D8%B1%D9%85%D8%A7%D9%86-%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9-%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D9%88%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%86%D9%8A%D8%B3%D9%8A%D8%AA",
+      "source": "France24 عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775501436
+    },
+    {
+      "hash": "073030ecb29e",
+      "title": "اليمن..\"إعادة تموضع\" حكومي من باب المندب وسط حديث عن \"انتكاسة\" ميدانية",
+      "summary": "اليمن..\"إعادة تموضع\" حكومي من باب المندب وسط حديث عن \"انتكاسة\" ميدانية",
+      "link": "https://www.dw.com/ar/اليمن-إعادة-تموضع-حكومي-من-باب-المندب-وسط-حديث-عن-انتكاسة-ميدانية/a-79952909?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "YE",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775495392
+    },
+    {
+      "hash": "07acb806773b",
+      "title": "وائل محيا: المغرب جزء من عائلتي.. لكن كلوب أقنعني بالانضمام إلى منتخب ألمانيا",
+      "summary": "وائل محيا: المغرب جزء من عائلتي.. لكن كلوب أقنعني بالانضمام إلى منتخب ألمانيا",
+      "link": "https://www.dw.com/ar/وائل-محيا-المغرب-جزء-من-عائلتي-لكن-كلوب-أقنعني-بالانضمام-إلى-منتخب-ألمانيا/a-79953168?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": "MA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775493279
+    },
+    {
+      "hash": "c8275e1b1d36",
+      "title": "من واتساب إلى الذكاء الاصطناعي.. كيف تهدد المعلومات المضللة الديمقراطية في أفريقيا؟",
+      "summary": "من واتساب إلى الذكاء الاصطناعي.. كيف تهدد المعلومات المضللة الديمقراطية في أفريقيا؟",
+      "link": "https://www.dw.com/ar/من-واتساب-إلى-الذكاء-الاصطناعي-كيف-تهدد-المعلومات-المضللة-الديمقراطية-في-أفريقيا؟/a-79915143?maca=ara-rss-ar-all-1125-rdf",
+      "source": "DW عربية",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775489801
+    },
+    {
+      "hash": "f77ddfc2c899",
+      "title": "محمد عثمان الميرغني: شيخ الطريقة الذي اعتلى منبر السياسة ونادى بـ \"وحدة السودان أرضاً وشعباً\"",
+      "summary": "محمد عثمان الميرغني: شيخ الطريقة الذي اعتلى منبر السياسة ونادى بـ \"وحدة السودان أرضاً وشعباً\"",
+      "link": "https://www.bbc.com/arabic/articles/cmz74w51j9xzo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SD",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775487699
+    },
+    {
+      "hash": "dd375813fce4",
+      "title": "ميغا سبييد: المشتبه بها بالتجسس للصين والتي ارتبط اسمها بالرئيس السابق لإنفيديا غادرت منصبها في 2025",
+      "summary": "ميغا سبييد: المشتبه بها بالتجسس للصين والتي ارتبط اسمها بالرئيس السابق لإنفيديا غادرت منصبها في 2025",
+      "link": "https://www.bbc.com/arabic/articles/ck5y1xwvq2jeo?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": null,
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 30,
+      "timestamp": 1794775485375
+    },
+    {
+      "hash": "9d2f0eada1ef",
+      "title": "جماعة أنصار الله تستهدف محطتي ضخ في خط شرق-غرب للنفط في الرياض، واعتراض مسيرات فوق مكة والمدينة",
+      "summary": "جماعة أنصار الله تستهدف محطتي ضخ في خط شرق-غرب للنفط في الرياض، واعتراض مسيرات فوق مكة والمدينة",
+      "link": "https://www.bbc.com/arabic/articles/c8zx9vqx3w22o?at_medium=RSS&amp;at_campaign=rss",
+      "source": "BBC عربي",
+      "countryCode": "SA",
+      "category": "politics",
+      "sentiment": "neutral",
+      "mood": "neutral",
+      "impact": 25,
+      "timestamp": 1794775483166
+    },
     {
       "hash": "b9731b6edcf8",
       "title": "Feijóo hará campaña en Guipúzcoa tras la agresión a jóvenes de Nuevas Generaciones en Hernani",
@@ -4416,32 +4937,6 @@
       "mood": "neutral",
       "impact": 25,
       "timestamp": 1794602682579
-    },
-    {
-      "hash": "631786d487bf",
-      "title": "مايكروسوفت تقول إنها لا تستطيع تحديد موعد لحدوث تعافٍ كامل",
-      "summary": "مايكروسوفت تقول إنها لا تستطيع تحديد موعد لحدوث تعافٍ كامل",
-      "link": "https://www.bbc.co.uk/arabic/live/c5y4jdpw3ldzt?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": null,
-      "category": "politics",
-      "sentiment": "neutral",
-      "mood": "neutral",
-      "impact": 25,
-      "timestamp": 1794602678969
-    },
-    {
-      "hash": "3597c0c1b534",
-      "title": "تركيا وقطر توقعان اتفاقية دفاع مشترك",
-      "summary": "تركيا وقطر توقعان اتفاقية دفاع مشترك",
-      "link": "https://www.bbc.com/arabic/articles/cvn0d3e5d5lwo?at_medium=RSS&amp;at_campaign=rss",
-      "source": "BBC عربي",
-      "countryCode": "TR",
-      "category": "positive",
-      "sentiment": "positive",
-      "mood": "hope",
-      "impact": 75,
-      "timestamp": 1794602675811
     }
   ]
 }
